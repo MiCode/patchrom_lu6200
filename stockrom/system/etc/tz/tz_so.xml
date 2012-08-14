@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<area code="7">
+    <iso name="AR" zoneid="America/Argentina/Buenos_Aires" multiple="true"/>
+    <iso name="AW" zoneid="America/Aruba" multiple="false"/>
+    <iso name="BO" zoneid="America/La_Paz" multiple="false"/>
+    <iso name="BQ" zoneid="America/Kralendijk" multiple="false"/>
+    <iso name="BR" zoneid="America/Noronha" multiple="true"/>
+    <iso name="CL" zoneid="America/Santiago" multiple="true"/>
+    <iso name="CO" zoneid="America/Bogota" multiple="false"/>
+    <iso name="CW" zoneid="America/Curacao" multiple="false"/>
+    <iso name="EC" zoneid="America/Guayaquil" multiple="true"/>
+    <iso name="FK" zoneid="Atlantic/Stanley" multiple="false"/>
+    <iso name="GF" zoneid="America/Cayenne" multiple="false"/>
+    <iso name="GS" zoneid="Atlantic/South_Georgia" multiple="false"/>
+    <iso name="GY" zoneid="America/Guyana" multiple="false"/>
+    <iso name="PE" zoneid="America/Lima" multiple="false"/>
+    <iso name="PY" zoneid="America/Asuncion" multiple="false"/>
+    <iso name="SR" zoneid="America/Paramaribo" multiple="false"/>
+    <iso name="SX" zoneid="America/Lower_Princes" multiple="false"/>
+    <iso name="TT" zoneid="America/Port_of_Spain" multiple="false"/>
+    <iso name="UY" zoneid="America/Montevideo" multiple="false"/>
+    <iso name="VE" zoneid="America/Caracas" multiple="false"/>
+</area>

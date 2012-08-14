@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<area code="6">
+    <iso name="AG" zoneid="America/Antigua" multiple="false"/>
+    <iso name="AI" zoneid="America/Anguilla" multiple="false"/>
+    <iso name="BB" zoneid="America/Barbados" multiple="false"/>
+    <iso name="BL" zoneid="America/St_Barthelemy" multiple="false"/>
+    <iso name="BM" zoneid="Atlantic/Bermuda" multiple="false"/>
+    <iso name="BS" zoneid="America/Nassau" multiple="false"/>
+    <iso name="BZ" zoneid="America/Belize" multiple="false"/>
+    <iso name="CA" zoneid="America/St_Johns" multiple="true"/>
+    <iso name="CR" zoneid="America/Costa_Rica" multiple="false"/>
+    <iso name="CU" zoneid="America/Havana" multiple="false"/>
+    <iso name="DM" zoneid="America/Dominica" multiple="false"/>
+    <iso name="DO" zoneid="America/Santo_Domingo" multiple="false"/>
+    <iso name="GD" zoneid="America/Grenada" multiple="false"/>
+    <iso name="GP" zoneid="America/Guadeloupe" multiple="false"/>
+    <iso name="GT" zoneid="America/Guatemala" multiple="false"/>
+    <iso name="HN" zoneid="America/Tegucigalpa" multiple="false"/>
+    <iso name="HT" zoneid="America/Port-au-Prince" multiple="false"/>
+    <iso name="JM" zoneid="America/Jamaica" multiple="false"/>
+    <iso name="KN" zoneid="America/St_Kitts" multiple="false"/>
+    <iso name="KY" zoneid="America/Cayman" multiple="false"/>
+    <iso name="LC" zoneid="America/St_Lucia" multiple="false"/>
+    <iso name="MF" zoneid="America/Marigot" multiple="false"/>
+    <iso name="MQ" zoneid="America/Martinique" multiple="false"/>
+    <iso name="MS" zoneid="America/Montserrat" multiple="false"/>
+    <iso name="MX" zoneid="America/Mexico_City" multiple="true"/>
+    <iso name="NI" zoneid="America/Managua" multiple="false"/>
+    <iso name="PA" zoneid="America/Panama" multiple="false"/>
+    <iso name="PM" zoneid="America/Miquelon" multiple="false"/>
+    <iso name="PR" zoneid="America/Puerto_Rico" multiple="false"/>
+    <iso name="SV" zoneid="America/El_Salvador" multiple="false"/>
+    <iso name="TC" zoneid="America/Grand_Turk" multiple="false"/>
+    <iso name="US" zoneid="America/New_York" multiple="true"/>
+    <iso name="VC" zoneid="America/St_Vincent" multiple="false"/>
+    <iso name="VG" zoneid="America/Tortola" multiple="false"/>
+    <iso name="VI" zoneid="America/St_Thomas" multiple="false"/>
+</area>

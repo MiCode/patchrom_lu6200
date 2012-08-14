@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <!-- LGT_CONTENTS, [LGU][smile.kim@lge.com], 2012-02-16 -->
+    <permission name="android.permission.LGT_CONTENTS">
+        <group gid="lgt_gid" />
+    </permission>
+</permissions>

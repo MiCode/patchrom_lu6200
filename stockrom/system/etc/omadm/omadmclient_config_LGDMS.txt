@@ -1,0 +1,49 @@
+#OMA DM Account Configuration
+
+activeAccountDMVersion=12
+dm12root=./DMAcc
+#4.8 removed
+#isExclusiveDmAccount=true  
+updateInactiveDMAccount=false
+serverType=mform
+
+
+#OMA DM Msg Configuration
+#notiVerificationMode info: 0:DISABLED, 1:RESET_NONCE, 2:REVERIFY, 3:STRICT
+msgEncodingFormat=WBXML
+bootstrapOverwriteAccount=true
+bootstrapCpCredSwap=false
+notiVerificationMode=0
+
+#Connection Configuration
+connectionTimeOut=60
+numOfRetryConnent=3
+
+#Battery Check
+BatteryCheckAtLeast=35
+#postpone limit check info: 0: No Limit 
+postponeLimit=1
+
+#OMA DM UI Configuration
+#2012-02-07 a change from 24 hours check to onetime check
+checkLastRequestTime=true
+checkOnetimeRequest=true
+backgroundDownloadSupport=false
+
+
+#fill the proxy if needed & open the '#'
+#dmproxy=http://
+#dlproxy=http://
+
+#fill the proxy if needed & open the '#'
+#dm_proxy_auth_level=basic
+#dm_proxy_auth_username=
+#dm_proxy_auth_password=
+#dl_proxy_auth_level=basic
+#dl_proxy_auth_username=
+#dl_proxy_auth_password=
+
+#Add because vDM 4.7(110616)
+dl_resume_cmp_url=true
+dl_resume_cmp_url_return=true
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Profiles>
+
+	<FeatureSet>
+	<!-- Message Start-->
+		<item name="MMSHiddenConfig">true</item>
+		<item name="OperatorMessage">true</item>
+		<item name="spam">false</item>
+		<item name="LGUspam">true</item>
+		<item name="change_MemoryFull_Threshold">true</item>
+		<item name="limitless_unauthorized_SMS_usage">true</item>
+	    	<item name="KREncodingScheme">true</item>
+	    	<item name="KROperator">true</item>
+	    <item name="KRVMSType">true</item>
+		<!-- LGU Message Start-->
+		<item name="lgu_cbs">true</item>
+		<item name="dtmf_error_handle">true</item>
+		<item name="timestamp_correction">true</item>
+		<item name="lgu_dispatch">true</item>
+		<item name="kr_address_spec">true</item>
+		<item name="lgu_address_spec">true</item>
+		<item name="lgu_userdata_encoding">true</item>
+		<item name="save_usim_3gpp_in_cdma">true</item>
+		<item name="lgu_gsm_submit_encoding_type">true</item>
+		<item name="sms_full_exception_case">true</item>
+	        <item name="replyAddress">true</item>
+	        <item name="use_reply_address_in_usim_restore">true</item>
+	    <!-- constants -->	
+		<item name="MemoryFull_Threshold">10485760</item>
+	    <item name="max_user_data_bytes_ex">80</item>
+	    <item name="limit_user_data_septeps">160</item>
+	    <item name="max_user_data_septeps_ex">91</item>
+		<item name="doNotUse_AP_retry">true</item>    
+		<item name="lgu_gsm_operator_message">true</item>    
+		<!-- LGU Message End-->
+		
+		<item name="copy_submit_to_uicc">true</item>
+		<item name="cdma_sms_callback">true</item>
+	<!-- <item name="seperate_processing_sms_uicc">true</item>-->		
+	<!-- Message End-->	     
+
+	<!-- Telephony Start-->
+        <item name="LGU_roaming_ecclist">112,119,122,911</item>
+        <item name="LGU_ecclist">119,111,112,113,122,125,127</item>
+        <item name="support_send_burst_dtmf">true</item>
+        <item name="NotDisableDataCallInEmergencyCall">true</item>
+        <item name="NotSupportOtaSpNumber">true</item>
+        <item name="KEY_DISPLAY_OF_REDIRECT_NUM">true</item>
+        <item name="SAVE_NETWORK_OPERATOR_SHORT_NAME">true</item>
+        <item name="RingBackTone">true</item>
+        <item name="Korea_RAD">true</item>
+        <item name="Korea_CNAP">true</item>
+        <item name="Korea_CDNIP">true</item>
+        <item name="Korea_USSD">true</item>
+        <item name="KR_Modem_Item">true</item>
+        <item name="KR_RAD_TEST">true</item>
+        <item name="LGU_CDMA_ERI_TEXT">true</item>
+        <item name="Is_QCRIL">true</item>
+        <item name="KR_REJECT_CAUSE">true</item>
+        <item name="lgu_global_roaming">true</item>
+        <item name="MANAGED_TIME_SETTING">true</item>
+        <item name="NITZ_WAITING_TIMEOUT">10000</item><!--miliseconds-->
+        <item name="MANAGED_TIME_LOCAL_AREAS">450</item>
+        <item name="CHANGE_CDMA_SUBSCRIPTION_TO_RUIM">true</item>
+        <item name="SKT_FIRST_ROAMING_DIALOG">false</item>
+        <item name="OEM_RAD_DIALER_POPUP">true</item>
+        <item name="USIM_PERSONAL_LOCK">false</item>
+        <item name="SHOW_NETWORK_NAME_WHEN_MANUAL_NETWORK_SETTING_FAIL">true</item>
+        <item name="KoreaNumberFormat">true</item>
+        <item name="2_CHIP_DELAY_FOR_NT_MODE_CHANGE">15000</item>
+        <item name="LGE_PHONE_NUMBER_QUERY">true</item>
+	<!-- Telephony END-->
+	</FeatureSet>
+	
+</Profiles>	

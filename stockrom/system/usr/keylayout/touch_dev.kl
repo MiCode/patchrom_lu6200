@@ -1,0 +1,16 @@
+#
+# Copyright (c) 2011, LG Electronics
+#
+
+key 115   VOLUME_UP         WAKE_DROPPED
+key 114   VOLUME_DOWN       WAKE_DROPPED
+
+key 116   POWER				WAKE
+
+key 158	  BACK				WAKE_DROPPED
+key 102   HOME
+key 172   HOME
+key 139   MENU
+
+key 231   CALL
+key 107   ENDCALL		WAKE_DROPPED

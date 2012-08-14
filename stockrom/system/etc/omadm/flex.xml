@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DMACC_NAME_I value="LG-DMS" />
+<DMACC_ADDR_ADDR_I value="http://ai.gdms.lge.com/DevMgmt/dm" />
+<DMACC_ADDR_PORT_PORTNBR_I value="7005" />
+<DMACC_AUTH_AUTHTYPE_I value="BASIC" />
+<DMACC_SERVERID_I value="LG-DMS" />
+<SOFTWARE_UPDATE_ENABLE_MENU_I value="1" />
+<SOFTWARE_UPDATE_AGENT_MODE value="2" />
+<DMS_SERVICE_TYPE value="Full" />
+<!--   <DMS_PACKAGE_SIZE_CHECK value="true" /> -->
+<DMS_PACKAGE_LIMIT_SIZE value="30" />
+<DMS_ENGINE_LOG_FLAG value="true" />
+<DMS_DATA_CHARGE_POPUP value="0" />

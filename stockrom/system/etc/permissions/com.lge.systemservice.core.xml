@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+	<library name="com.lge.systemservice.core"
+		file="/system/framework/com.lge.systemservice.core.jar"/>
+	<permission name="android.permission.LGE_ACCESS_WIFI">
+		<group gid="wifi"/>
+	</permission>
+</permissions>

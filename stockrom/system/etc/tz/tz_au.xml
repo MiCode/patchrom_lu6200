@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<area code="4">
+    <iso name="AS" zoneid="Pacific/Pago_Pago" multiple="false"/>
+    <iso name="AU" zoneid="Australia/Lord_Howe" multiple="true"/>
+    <iso name="CC" zoneid="Indian/Cocos" multiple="false"/>
+    <iso name="CK" zoneid="Pacific/Rarotonga" multiple="false"/>
+    <iso name="CX" zoneid="Indian/Christmas" multiple="false"/>
+    <iso name="FJ" zoneid="Pacific/Fiji" multiple="false"/>
+    <iso name="FM" zoneid="Pacific/Chuuk" multiple="true"/>
+    <iso name="GU" zoneid="Pacific/Guam" multiple="false"/>
+    <iso name="KI" zoneid="Pacific/Tarawa" multiple="true"/>
+    <iso name="MH" zoneid="Pacific/Majuro" multiple="false"/>
+    <iso name="MP" zoneid="Pacific/Saipan" multiple="false"/>
+    <iso name="NC" zoneid="Pacific/Noumea" multiple="false"/>
+    <iso name="NF" zoneid="Pacific/Norfolk" multiple="false"/>
+    <iso name="NR" zoneid="Pacific/Nauru" multiple="false"/>
+    <iso name="NU" zoneid="Pacific/Niue" multiple="false"/>
+    <iso name="NZ" zoneid="Pacific/Auckland" multiple="true"/>
+    <iso name="PF" zoneid="Pacific/Tahiti" multiple="true"/>
+    <iso name="PG" zoneid="Pacific/Port_Moresby" multiple="false"/>
+    <iso name="PN" zoneid="Pacific/Pitcairn" multiple="false"/>
+    <iso name="PW" zoneid="Pacific/Palau" multiple="false"/>
+    <iso name="SB" zoneid="Pacific/Guadalcanal" multiple="false"/>
+    <iso name="TK" zoneid="Pacific/Fakaofo" multiple="false"/>
+    <iso name="TO" zoneid="Pacific/Tongatapu" multiple="false"/>
+    <iso name="TV" zoneid="Pacific/Funafuti" multiple="false"/>
+    <iso name="UM" zoneid="Pacific/Johnston" multiple="true"/>
+    <iso name="VU" zoneid="Pacific/Efate" multiple="false"/>
+    <iso name="WF" zoneid="Pacific/Wallis" multiple="false"/>
+    <iso name="WS" zoneid="Pacific/Apia" multiple="false"/>
+</area>

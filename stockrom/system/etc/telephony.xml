@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Profiles>
+
+	<!-- Operator -->
+	<Profile operator="LGU" country="KR" mcc="450" mnc="06" gid="" spn="" imsi="" default="true">
+		<item name="VMS">*88</item>
+		<item name="RVMS"></item>
+		<item name="ECCList">119,111,112,113,114,122,125,127</item>		
+		<item name="SEND_CALL_WITHOUT_CALL">0,08</item>			
+		<item name="PREFERRED_NETWORK_MODE">10</item>
+	</Profile>
+	
+</Profiles>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<area code="2">
+    <iso name="AQ" zoneid="Antarctica/McMurdo" multiple="true"/>
+    <iso name="TF" zoneid="Indian/Kerguelen" multiple="false"/>
+</area>

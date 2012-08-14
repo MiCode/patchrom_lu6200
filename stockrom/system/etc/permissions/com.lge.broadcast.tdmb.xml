@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+
+    <library name="com.lge.broadcast.tdmb"
+            file="/system/framework/com.lge.broadcast.tdmb.jar"/>
+</permissions>
+

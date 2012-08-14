@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+<Korean>
+<string name="service_disabled">서비스 안됨</string>
+<string name="NO_SERVICE_AREA">서비스 지역이 아닙니다.</string>
+<!--  START LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2010. 8. 19. LAB1_FK : Lock Order -->
+<string name="lgt_unregister">등록이 필요합니다.\n휴대폰을 껐다 켜주시고\n재발시 LG U+ 고객센터(114)로\n연락해주세요.</string>
+<string name="lgt_unauthenticated">인증이 필요합니다.\n휴대폰을 껐다 켜주시고\n재발시 LG U+ 고객센터(114)로\n연락해주세요.</string>
+<string name="lgt_hdr_network_error">데이터 인증에 실패했습니다\n114로 문의해주시기 바랍니다.</string>
+<!--  END LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2010. 8. 19. LAB1_FK : Lock Order -->
+<!--  START LGE_LAB1_FWK_TEL yongjin.her@lge.com : HDR message -->
+<string name="HDRONLYMODE_ORIG1">HDR전용모드에서는 음성통화가 되지 않습니다</string>
+<string name="HDRONLYMODE_ORIG2">EV-DO 전용 모드에서는 음성통화가 되지 않습니다</string>
+<!--  END LGE_LAB1_FWK_TEL yongjin.her@lge.com : HDR message -->
+<!--  START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/06/15: SKT Network Rejected Code -->
+<!-- Reject Cause(decimal), String-->
+<!--  2--> <string name="SKT_NRC_02_IMSI_UNKNOWN_IN_HLR">"등록되지 않은 전화번호입니다. 고객센터(1599-0011)에 문의해 주세요.(2)"</string>
+<!--  2--> <string name="SKT_NRC_02_INTER_IMSI_UNKNOWN_IN_HLR">"등록되지 않은 전화번호입니다. 고객센터(+82-2-6343-9011)에 문의해 주세요.(2)"</string>
+<!--  3--> <string name="SKT_NRC_03_ILLEGAL_MS">"가입자 인증에 실패하였습니다. 고객센터(1599-0011)에 문의해 주세요.(3)"</string>
+<!--  3--> <string name="SKT_NRC_03_INTER_ILLEGAL_MS">"가입자 인증에 실패하였습니다. 고객센터(+82-2-6343-9011)에 문의해 주세요.(3)"</string>
+<!--  6--> <string name="SKT_NRC_06_ILLEGAL_ME">"미인증 단말기입니다. 고객센터(1599-0011)에 문의해 주세요.(6)"</string>
+<!--  6--> <string name="SKT_NRC_06_INTER_ILLEGAL_ME">"미인증 단말기입니다. 고객센터(+82-2-6343-9011)에 문의해 주세요.(6)"</string>
+<!--  7--> <string name="SKT_NRC_07_GPRS_NOT_ALLOWED">"데이터 서비스가 지원되지 않습니다.(7)"</string>
+<!-- 14--> <string name="SKT_NRC_14_GPRS_NOT_ALLOWED_IN_THIS_PLMN">"현재 사업자에서는 데이터 서비스가 지원되지 않습니다.(14)"</string>
+<!--  8--> <string name="SKT_NRC_08_GPRS_AND_NON_GPRS_NOT_ALLOWED">"위치등록에 실패하였습니다. 고객센터(1599-0011)에 문의해 주세요.(8)"</string>
+<!--  8--> <string name="SKT_NRC_08_INTER_GPRS_AND_NON_GPRS_NOT_ALLOWED">"위치등록에 실패하였습니다. 고객센터(+82-2-6343-9011)에 문의해 주세요.(8)"</string>
+<!-- 11--> <string name="SKT_NRC_11_PLMN_NOT_ALLOWED">"위치등록에 실패하였습니다.(11)"</string>
+<!-- 12--> <string name="SKT_NRC_12_LOCATION_AREA_NOT_ALLOWED">"위치등록에 실패하였습니다.(12)"</string>
+<!-- 13--> <string name="SKT_NRC_13_ROAMING_NOT_ALLOWED_IN_THIS_LOCATION_AREA">"위치등록에 실패하였습니다.(13)"</string>
+<!-- 15--> <string name="SKT_NRC_15_NO_SUITABLE_CELLS_IN_LOCATION_AREA">"위치등록에 실패하였습니다.(15)"</string>
+<!-- 16--> <string name="SKT_NRC_16_MSC_TEMPORARILY_NOT_REACHABLE">"네트웍 등록이 지연되고 있습니다. 등록 실패 시 고객센터(1599-0011)에 문의해 주세요(16)"</string>
+<!-- 16--> <string name="SKT_NRC_16_INTER_MSC_TEMPORARILY_NOT_REACHABLE">"네트웍 등록이 지연되고 있습니다. 등록 실패 시 고객센터(+82-2-6343-9011)에 문의해 주세요(16)"</string>
+<!-- 17--> <string name="SKT_NRC_17_NETWORK_FAILURE">"네트웍 등록이 지연되고 있습니다. 등록 실패 시 고객센터(1599-0011)에 문의해 주세요(17)"</string>
+<!-- 17--> <string name="SKT_NRC_17_INTER_NETWORK_FAILURE">"네트웍 등록이 지연되고 있습니다. 등록 실패 시 고객센터(+82-2-6343-9011)에 문의해 주세요(17)"</string>
+<!-- 22--> <string name="SKT_NRC_22_CONGESTION">"네트웍 등록이 지연되고 있습니다. 등록 실패 시 고객센터(1599-0011)에 문의해 주세요(22)"</string>
+<!-- 22--> <string name="SKT_NRC_22_INTER_CONGESTION">"네트웍 등록이 지연되고 있습니다. 등록 실패 시 고객센터(+82-2-6343-9011)에 문의해 주세요(22)"</string>
+<!--  END LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/06/15: SKT Network Rejected Code -->
+<!--  START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2011/04/26: SKT Network Rejected Code for NOT-SKT SIM -->
+<!--  2--> <string name="sp_SKT_NRC_02_NO_NUM_NORMAL">"등록되지 않은 전화번호입니다. 고객센터에 문의해 주세요.(2)"</string>
+<!--  3--> <string name="sp_SKT_NRC_03_NO_NUM_NORMAL">"가입자 인증에 실패하였습니다. 고객센터에 문의해 주세요.(3)"</string>
+<!--  6--> <string name="sp_SKT_NRC_06_NO_NUM_NORMAL">"미인증 단말기입니다. 고객센터에 문의해 주세요.(6)"</string>
+<!--  8--> <string name="sp_SKT_NRC_08_NO_NUM_NORMAL">"위치등록에 실패하였습니다. 고객센터에 문의해 주세요.(8)"</string>
+<!-- 16--> <string name="sp_SKT_NRC_16_NO_NUM_NORMAL">"네트웍 등록이 지연되고 있습니다. 등록 실패 시 고객센터에 문의해 주세요(16)"</string>
+<!-- 17--> <string name="sp_SKT_NRC_17_NO_NUM_NORMAL">"네트웍 등록이 지연되고 있습니다. 등록 실패 시 고객센터에 문의해 주세요(17)"</string>
+<!-- 22--> <string name="sp_SKT_NRC_22_NO_NUM_NORMAL">"네트웍 등록이 지연되고 있습니다. 등록 실패 시 고객센터에 문의해 주세요(22)"</string>
+<!--  END LGE_LAB1_FWK_TEL yongjin.her@lge.com 2011/04/26: SKT Network Rejected Code for NOT-SKT SIM  -->
+<!--  START LGE_LAB1_FWK_TEL heesoo.kang@lge.com 2011/08/25: U+ Network Rejected Code for Global roaming  -->
+<string name="UPLUS_NRC_02_IMSI_UNKNOWN_IN_HLR">등록되지 않은 전화번호입니다. 문제가 지속될 경우 고객센터(+82-2-3416-7010)에 문의해 주세요.(2)</string>
+<string name="UPLUS_NRC_03_ILLEGAL_MS">가입자 인증에 실패하였습니다. 문제가 지속될 경우 고객센터(+82-2-3416-7010)에 문의해 주세요.(3)</string>
+<string name="UPLUS_NRC_06_ILLEGAL_ME">기기인증에 실패하였습니다. 문제가 지속될 경우 고객센터(+82-2-3416-7010)에 문의해 주세요.(6)</string>
+<string name="UPLUS_NRC_07_GPRS_NOT_ALLOWED">데이터 서비스가 지원되지 않습니다(7)"</string>
+<string name="UPLUS_NRC_08_GPRS_AND_NON_GPRS_NOT_ALLOWED">위치등록에 실패하였습니다. 문제가 지속될 경우 고객센터(+82-2-3416-7010)에 문의해 주세요.(8)</string>
+<string name="UPLUS_NRC_11_PLMN_NOT_ALLOWED">위치등록에 실패하였습니다. 문제가 지속될 경우 고객센터(+82-2-3416-7010)에 문의해 주세요.(11)</string>
+<string name="UPLUS_NRC_12_LOCATION_AREA_NOT_ALLOWED">위치등록에 실패하였습니다. 문제가 지속될 경우 고객센터(+82-2-3416-7010)에 문의해 주세요.(12)</string>
+<string name="UPLUS_NRC_13_ROAMING_NOT_ALLOWED_IN_THIS_LOCATION_AREA">위치등록에 실패하였습니다. 문제가 지속될 경우 고객센터(+82-2-3416-7010)에 문의해 주세요.(13)</string>
+<string name="UPLUS_NRC_14_GPRS_NOT_ALLOWED_IN_THIS_PLMN">현재 사업자에서는 데이터 서비스가 지원되지 않습니다.(14)</string>
+<string name="UPLUS_NRC_15_NO_SUITABLE_CELLS_IN_LOCATION_AREA">위치등록에 실패하였습니다.문제가 지속될 경우 고객센터(+82-2-3416-7010)에 문의해 주세요.(15)</string>
+<string name="UPLUS_NRC_16_MSC_TEMPORARILY_NOT_REACHABLE">네트워크 사용량이 많습니다. 잠시 후 다시 시도해 주세요.(16)</string>
+<string name="UPLUS_NRC_17_NETWORK_FAILURE">네트워크 사용량이 많습니다. 잠시 후 다시 시도해 주세요.(17)</string>
+<string name="UPLUS_NRC_22_INTER_CONGESTION">네트워크 사용량이 많습니다. 잠시 후 다시 시도해 주세요.(22)</string>
+<string name="UPLUS_NRC_ETC">네트워크에 연결할 수 없습니다. 문제가 지속될 경우 고객센터(+82-2-3416-7010)로 문의해주세요.</string>
+<!--  END LGE_LAB1_FWK_TEL heesoo.kang@lge.com 2011/08/25: U+ Network Rejected Code for Global roaming  -->
+<!--  START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/04/15 : Add USIM error popup message -->
+<string name="STR_USIM_ERR_RECHECK">"USIM 카드를 재장착한 후 재부팅하세요."</string>
+<!--  END LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/04/15 : Add USIM error popup message -->
+<!--  START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/04/27 : Add USIM OTA popup message -->
+<!--  yongjin.her@lge.com 2010/08/11 : KT auto reset with the Toast Message for USIM REFRESH event to meet KT UI Scenario Spec-->
+<string name="kt_regi_wtoa_cardregi">"카드에 해당정보를 등록하였습니다. 리셋하겠습니다."</string>
+<!--  END LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/04/27 : Add USIM OTA popup message -->
+<!--  START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/07/20 : add KT USSD Error Case-->
+    <string name="kt_ussd_err_code_0x09">"인증에 실패하였습니다."</string>
+    <string name="kt_ussd_err_code_0x0C">"기기 인증에 실패하였습니다.\n고객센터로 전화하여 주십시요."</string>
+    <string name="kt_ussd_err_code_0x1B">"종료된 부가서비스를 요청하였습니다."</string>
+    <string name="kt_ussd_err_code_0x22">"시스템 오류입니다.\n잠시후에 다시 시도하여 주십시오."</string>
+    <string name="kt_ussd_err_code_0x23">"입력하신 값이 빠져 있습니다.\n입력 값을 확인하시고 재시도하시기 바랍니다."</string>
+    <string name="kt_ussd_err_code_0x24">"입력하신 값이 범위를 벗어났습니다.\n입력값을 확인하시고 재시도하시기 바랍니다."</string>
+    <string name="kt_ussd_err_code_0x47">"지원하지 않는 알파벳/언어 형식입니다."</string>
+    <string name="kt_ussd_err_code_0x48">"요청하신 서비스는 진행중인 다른 부가서비스로 인해 동작되지 않습니다."</string>
+<!--  END LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/07/20 : add KT USSD Error Case-->
+<!--  START LGE_LAB1_FWK_TEL yongjin.her @lge.com 2010/07/30 : KT Network Reject Code -->
+    <string name="kt_network_rej_code_status_imsi_unknown">"개통이 필요합니다. 고객센터 또는 대리점으로 방문하여 주십시오."</string>
+    <string name="kt_network_rej_code_status_illegal_ms">"인증에 실패 하였습니다. 전원을 껐다 켜신 후 지속 발생시 고객센터 또는 대리점으로 방문하여 주십시오."</string>
+    <string name="kt_network_rej_code_status_illegal_me">"기기인증에 실패하였습니다. 고객센터 또는 대리점으로 방문하여 주십시오."</string>
+    <string name="kt_network_rej_code_status_lu_fail">"네트워크 등록에 실패하였습니다."</string>
+    <string name="kt_network_rej_code_status_nw_skt_scannced">"주파수 검색 중입니다. 긴급호만 가능합니다."</string>
+    <string name="kt_network_rej_code_status_not_opened_number">"미개통된 번호입니다."</string>
+    <string name="kt_network_rej_code_status_nw_scanning">"네트워크에 등록중입니다."</string>
+    <string name="kt_network_rej_code_status_lu_proceed">"네트워크에 등록중입니다."</string>
+<!--  END LGE_LAB1_FWK_TEL yongjin.her @lge.com 2010/07/30 : KT Network Reject Code -->
+<!--  START LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 2. 10. 'OK' -->
+    <string name="telephony_dialog_ok_button">"확인"</string>
+    <string name="telephony_dialog_guide_button">"이용안내"</string>
+<!--  END LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 2. 10. 'OK' -->
+<!--  START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010-07-15 :popup the SKT Roaming notification by SKT WS_IRR_S_2.1 -->
+    <string name="skt_roaming_notification">"T로밍 서비스 지역입니다. [한국으로 발신],[기타지역으로 발신] 중 선택하시면 됩니다. 로밍 수신을 위한 국제전화사업자 변경은 T로밍고객센터에 문의하세요. 자세한 사항은 '이용안내'를 참조하세요."</string>
+<!--  END LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010-07-15 :popup the SKT Roaming notification by SKT WS_IRR_S_2.1 -->
+<!--  START LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 08. 12. emergency_calls_only -->
+    <string name="emergency_calls_only_skt">"긴급 통화만 가능합니다."</string>
+    <string name="emergency_calls_only_kt">"비상 전화만 가능합니다."</string>
+<!--  END LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 08. 12. emergency_calls_only -->
+<!--  START LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 09. 05. : AccessClassBarring For RP Request -->
+    <string name="kt_network_registration_error_3">“통화량이 많아 접속이 지연되고 있습니다.”</string>
+<!--  END LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 09. 05. : AccessClassBarring For RP Request -->
+  <!-- START LGE_LAB1_FWK_TEL heesoo.kang@lge.com 2011.9.8 :  LTE EMM reject -->
+   <string name="lgt_lteemmreject">데이터 위치 등록에 실패하였습니다.</string>
+   <string name="lgt_lteemmreject_sub">고객센터(019-114)로 연락하세요.</string>
+  <!-- END LGE_LAB1_FWK_TEL heesoo.kang@lge.com 2011.9.8 :  LTE EMM reject -->
+<!-- LGE_CHANGE_S [hayoung.lee@lge.com] 2010-07-16 : Managed time setting dialog -->
+    <string name="managed_time_setting_dialog_content">"네트워크에 시간 정보가 없습니다.\n수동으로 시간을 설정하시겠습니까?"</string>
+<!-- LGE_CHANGE_E [hayoung.lee@lge.com] 2010-07-16 : Managed time setting dialog -->
+
+</Korean>
+
+<English>
+	<string name="service_disabled">Service disabled</string>
+    <string name="NO_SERVICE_AREA">Not in service area.</string>
+<!-- START LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2010. 8. 19. LAB1_FK : Lock Order -->
+    <string name="lgt_unregister">Unregistered.\nRestart the phone.\nIf it reoccurs, call LG U+ customer center(114).</string>
+    <string name="lgt_unauthenticated">Unauthenticated.\nRestart the phone.\nIf it reoccurs, call LG U+ customer center(114).</string>
+    <string name="lgt_hdr_network_error">No data service.\n114 just call.</string>
+<!-- END LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2010. 8. 19. LAB1_FK : Lock Order -->
+<!-- START LGE_LAB1_FWK_TEL yongjin.her@lge.com : HDR message -->
+    <string name="HDRONLYMODE_ORIG1">Voicecall is not allowed in HDR only mode</string>
+    <string name="HDRONLYMODE_ORIG2">Voicecall is not allowed in EV-DO only mode</string>
+<!-- END LGE_LAB1_FWK_TEL yongjin.her@lge.com : HDR message -->
+<!-- START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/06/15: SKT Network Rejected Code -->
+    <!--Reject Cause(decimal), String-->
+    <!-- 2--><string name="SKT_NRC_02_IMSI_UNKNOWN_IN_HLR">Unregistered number. Call customer center 1599-0011 (2).</string>
+    <!-- 2--><string name="SKT_NRC_02_INTER_IMSI_UNKNOWN_IN_HLR">Unregistered number. Call customer center +82-2-6343-9011 (2).</string>
+    <!-- 3--><string name="SKT_NRC_03_ILLEGAL_MS">Authenticate failed. Call customer center 1599-0011 (3).</string>
+    <!-- 3--><string name="SKT_NRC_03_INTER_ILLEGAL_MS">Authenticate failed. Call customer center +82-2-6343-9011 (3).</string>
+    <!-- 6--><string name="SKT_NRC_06_ILLEGAL_ME">Not confirmed phone. Call customer center 1599-0011 (6).</string>
+    <!-- 6--><string name="SKT_NRC_06_INTER_ILLEGAL_ME">Not confirmed phone. Call customer center +82-2-6343-9011 (6).</string>
+    <!-- 7--><string name="SKT_NRC_07_GPRS_NOT_ALLOWED">GPRS service is not allowed in this area (7).</string>
+    <!--14--><string name="SKT_NRC_14_GPRS_NOT_ALLOWED_IN_THIS_PLMN">GPRS service is not allowed in this area (14).</string>
+    <!-- 8--><string name="SKT_NRC_08_GPRS_AND_NON_GPRS_NOT_ALLOWED">Location Update Fail. Call customer center 1599-0011 (8).</string>
+    <!-- 8--><string name="SKT_NRC_08_INTER_GPRS_AND_NON_GPRS_NOT_ALLOWED">Location Update Fail. Call customer center +82-2-6343-9011 (8).</string>
+    <!--11--><string name="SKT_NRC_11_PLMN_NOT_ALLOWED">Location Update Fail (11).</string>
+    <!--12--><string name="SKT_NRC_12_LOCATION_AREA_NOT_ALLOWED">Location Update Fail (12).</string>
+    <!--13--><string name="SKT_NRC_13_ROAMING_NOT_ALLOWED_IN_THIS_LOCATION_AREA">Location Update Fail (13).</string>
+    <!--15--><string name="SKT_NRC_15_NO_SUITABLE_CELLS_IN_LOCATION_AREA">Location Update Fail (15).</string>
+    <!--16--><string name="SKT_NRC_16_MSC_TEMPORARILY_NOT_REACHABLE">Delayed network registration. Call customer center 1599-0011 (16).</string>
+    <!--16--><string name="SKT_NRC_16_INTER_MSC_TEMPORARILY_NOT_REACHABLE">Delayed network registration. Call customer center +82-2-6343-9011 (16).</string>
+    <!--17--><string name="SKT_NRC_17_NETWORK_FAILURE">Delayed network registration. Call customer center 1599-0011 (17).</string>
+    <!--17--><string name="SKT_NRC_17_INTER_NETWORK_FAILURE">Delayed network registration. Call customer center +82-2-6343-9011 (17).</string>
+    <!--22--><string name="SKT_NRC_22_CONGESTION">Delayed network registration. Call customer center 1599-0011 (22).</string>
+    <!--22--><string name="SKT_NRC_22_INTER_CONGESTION">Delayed network registration. Call customer center +82-2-6343-9011 (22).</string>
+<!-- END LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/06/15: SKT Network Rejected Code -->
+<!-- START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2011/04/26: SKT Network Rejected Code for NOT-SKT SIM -->
+    <!-- 2--><string name="sp_SKT_NRC_02_NO_NUM_NORMAL">Unregistered number. Call customer center (2).</string>
+    <!-- 3--><string name="sp_SKT_NRC_03_NO_NUM_NORMAL">Authenticate failed. Call customer center (3).</string>
+    <!-- 6--><string name="sp_SKT_NRC_06_NO_NUM_NORMAL">Not confirmed phone. Call customer center (6).</string>
+    <!-- 8--><string name="sp_SKT_NRC_08_NO_NUM_NORMAL"> Location Update Fail. Call customer center (8). </string>
+    <!--16--><string name="sp_SKT_NRC_16_NO_NUM_NORMAL">Delayed network registration. Call customer center (16).</string>
+    <!--17--><string name="sp_SKT_NRC_17_NO_NUM_NORMAL">Delayed network registration. Call customer center (17).</string>
+    <!--22--><string name="sp_SKT_NRC_22_NO_NUM_NORMAL">Delayed network registration. Call customer center (22).</string>
+<!-- END LGE_LAB1_FWK_TEL yongjin.her@lge.com 2011/04/26: SKT Network Rejected Code for NOT-SKT SIM  -->
+<!-- START LGE_LAB1_FWK_TEL heesoo.kang@lge.com 2011/08/25: U+ Network Rejected Code for Global roaming  -->
+    <string name="UPLUS_NRC_02_IMSI_UNKNOWN_IN_HLR">Unregistered number. Call customer center (+82-2-3416-7010) (2).</string>
+    <string name="UPLUS_NRC_03_ILLEGAL_MS">Authenticate failed. Call customer center (+82-2-3416-7010) (3).</string>
+    <string name="UPLUS_NRC_06_ILLEGAL_ME">Not confirmed phone. Call customer center (+82-2-3416-7010) (6).</string>
+    <string name="UPLUS_NRC_07_GPRS_NOT_ALLOWED">GPRS service is not allowed in this area (7).</string>
+    <string name="UPLUS_NRC_08_GPRS_AND_NON_GPRS_NOT_ALLOWED">Location Update Fail. Call customer center (+82-2-3416-7010) (8).</string>
+    <string name="UPLUS_NRC_11_PLMN_NOT_ALLOWED">Location Update Fail (11).</string>
+    <string name="UPLUS_NRC_12_LOCATION_AREA_NOT_ALLOWED">Location Update Fail (12).</string>
+    <string name="UPLUS_NRC_13_ROAMING_NOT_ALLOWED_IN_THIS_LOCATION_AREA">Location Update Fail (13).</string>
+    <string name="UPLUS_NRC_14_GPRS_NOT_ALLOWED_IN_THIS_PLMN">GPRS service is not allowed in this area (14).</string>
+    <string name="UPLUS_NRC_15_NO_SUITABLE_CELLS_IN_LOCATION_AREA">Location Update Fail (15).</string>
+    <string name="UPLUS_NRC_16_MSC_TEMPORARILY_NOT_REACHABLE">Delayed network registration. Try later again (16).</string>
+    <string name="UPLUS_NRC_17_NETWORK_FAILURE">Delayed network registration. Try later again (17).</string>
+    <string name="UPLUS_NRC_22_INTER_CONGESTION">Delayed network registration. Try later again (22).</string>
+    <string name="UPLUS_NRC_ETC">Cannot connect network. Call customer center (+82-2-3416-7010).</string>
+<!-- END LGE_LAB1_FWK_TEL heesoo.kang@lge.com 2011/08/25: U+ Network Rejected Code for Global roaming  -->
+<!-- START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/04/15 : Add USIM error popup message -->
+    <string name="STR_USIM_ERR_RECHECK">Install USIM card again.</string>
+<!-- END LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/04/15 : Add USIM error popup message -->
+<!-- START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/04/27 : Add USIM OTA popup message -->
+<!-- yongjin.her@lge.com 2010/08/11 : KT auto reset with the Toast Message for USIM REFRESH event to meet KT UI Scenario Spec-->
+    <string name="kt_regi_wtoa_cardregi">Please register the phone number.Auto Reset.</string>
+<!-- END LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/04/27 : Add USIM OTA popup message -->
+<!-- START LGE_LAB1_FWK_TEL yongjin.her @lge.com 2010/07/20 : add KT USSD Error Case-->
+    <string name="kt_ussd_err_code_0x09">Failed in the authentication procedure</string>
+    <string name="kt_ussd_err_code_0x0C">The IMEI is in the blacklist Contact the service center</string>
+    <string name="kt_ussd_err_code_0x1B">Subscriber has activated the detach service</string>
+    <string name="kt_ussd_err_code_0x22">System failed\nTry again</string>
+    <string name="kt_ussd_err_code_0x23">Data missing\nCheck and\ntry again</string>
+    <string name="kt_ussd_err_code_0x24">Unexpected\ndata value\nCheck data \nand try again</string>
+    <string name="kt_ussd_err_code_0x47">The alphabet/languabe used for the USSD operation is not known by the network</string>
+    <string name="kt_ussd_err_code_0x48">USSD is busy because of the on-going MMI or the existence of CISS transaction</string>
+<!-- END LGE_LAB1_FWK_TEL yongjin.her @lge.com 2010/07/20 : add KT USSD Error Case-->
+<!-- START LGE_LAB1_FWK_TEL yongjin.her@lge.com 2010/07/30 : KT Network Reject Code -->
+    <string name="kt_network_rej_code_status_imsi_unknown">Subscription required. Visit Service Center.</string>
+    <string name="kt_network_rej_code_status_illegal_ms">Auth fail. Visit Service Center.</string>
+    <string name="kt_network_rej_code_status_illegal_me">Not registered terminal. Visit Service Center.</string>
+    <string name="kt_network_rej_code_status_lu_fail">Network Update Failure</string>
+    <string name="kt_network_rej_code_status_nw_skt_scannced">Searching N/W Emergency call only</string>
+    <string name="kt_network_rej_code_status_not_opened_number">Unregistered number</string>
+    <string name="kt_network_rej_code_status_nw_scanning">Registering to network</string>
+    <string name="kt_network_rej_code_status_lu_proceed">Registering to network</string>
+<!-- END LGE_LAB1_FWK_TEL yongjin.her @lge.com 2010/07/30 : KT Network Reject Code -->
+<!-- START LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 2. 10. 'OK' -->
+    <string name="telephony_dialog_ok_button">OK</string>
+    <string name="telephony_dialog_guide_button">Help</string>
+<!-- END LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 2. 10. 'OK' -->
+<!-- START LGE_LAB1_FWK_TEL jungmin83.son@lge.com 2011. 12. 13. International Roaming Noti. popup -->
+    <string name="skt_roaming_notification">You are in the T-Roaming Servie Area. Called when you choose both [Call to South korea] and [Call to others]. </string>
+<!-- END LGE_LAB1_FWK_TEL jungmin83.son@lge.com 2011. 12. 13. International Roaming Noti. popup -->
+<!-- START LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 08. 12. emergency_calls_only -->
+    <string name="emergency_calls_only_skt">"Emergency calls only"</string>
+    <string name="emergency_calls_only_kt">"Emergency calls only"</string>
+<!-- END LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 08. 12. emergency_calls_only -->
+<!-- START LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 09. 05. : AccessClassBarring For RP Request -->
+    <string name="kt_network_registration_error_3">"Delayed network connection due to call congestion"</string>
+<!-- END LGE_LAB1_FWK_TEL hakmin.kim@lge.com 2011. 09. 05. : AccessClassBarring For RP Request -->
+  <!-- START LGE_LAB1_FWK_TEL heesoo.kang@lge.com 2011.9.8 :  LTE EMM reject -->
+   <string name="lgt_lteemmreject">No data service.</string>
+   <string name="lgt_lteemmreject_sub">019-114 just call.</string>
+  <!-- END LGE_LAB1_FWK_TEL heesoo.kang@lge.com 2011.9.8 :  LTE EMM reject -->
+<!-- LGE_CHANGE_S [hayoung.lee@lge.com] 2010-07-16 : Managed time setting dialog -->
+    <string name="managed_time_setting_dialog_content">"No time information from network.\nDo you want to set the time manually?"</string>
+<!-- LGE_CHANGE_E [hayoung.lee@lge.com] 2010-07-16 : Managed time setting dialog -->
+</English>
+</resources>
