@@ -9761,6 +9761,8 @@
 
     .line 3507
     :cond_3
+    invoke-static {v0}, Landroid/app/MiuiThemeHelper;->handleExtraConfigurationChanges(I)V
+
     iget-object v8, p1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
     if-eqz v8, :cond_4
@@ -11370,22 +11372,19 @@
 
     .line 1493
     .local v3, metrics:Landroid/util/DisplayMetrics;
-    new-instance v4, Landroid/content/res/Resources;
 
-    .end local v4           #r:Landroid/content/res/Resources;
     invoke-virtual {p0}, Landroid/app/ActivityThread;->getConfiguration()Landroid/content/res/Configuration;
 
     move-result-object v6
 
-    invoke-direct {v4, v0, v3, v6, p2}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;)V
+    invoke-static {v0, v3, v6, p2}, Landroid/content/res/MiuiClassFactory;->newResources(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;)Landroid/content/res/Resources;
 
-    .line 1500
-    .restart local v4       #r:Landroid/content/res/Resources;
+    move-result-object v4
+
     iget-object v7, p0, Landroid/app/ActivityThread;->mPackages:Ljava/util/HashMap;
 
     monitor-enter v7
 
-    .line 1501
     :try_start_1
     iget-object v6, p0, Landroid/app/ActivityThread;->mActiveResources:Ljava/util/HashMap;
 
@@ -14607,4 +14606,28 @@
     .line 4492
     :cond_0
     return-void
+.end method
+
+.method getTopLevelResources(Ljava/lang/String;Ljava/lang/String;Landroid/content/res/CompatibilityInfo;)Landroid/content/res/Resources;
+    .locals 2
+    .parameter "packageName"
+    .parameter "resDir"
+    .parameter "compInfo"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    invoke-virtual {p0, p2, p3}, Landroid/app/ActivityThread;->getTopLevelResources(Ljava/lang/String;Landroid/content/res/CompatibilityInfo;)Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    .local v0, r:Landroid/content/res/Resources;
+    move-object v1, v0
+
+    check-cast v1, Landroid/content/res/MiuiResources;
+
+    invoke-virtual {v1, p1}, Landroid/content/res/MiuiResources;->init(Ljava/lang/String;)V
+
+    return-object v0
 .end method

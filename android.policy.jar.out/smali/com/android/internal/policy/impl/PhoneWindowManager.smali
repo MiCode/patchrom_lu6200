@@ -310,7 +310,7 @@
 
 .field mForceStatusBar:Z
 
-.field mGlobalActions:[Lcom/android/internal/policy/impl/GlobalActions;
+.field mGlobalActions:[Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
 .field private mHDMIObserver:Landroid/os/UEventObserver;
 
@@ -420,7 +420,7 @@
 
 .field private mPowerKeyTriggered:Z
 
-.field private final mPowerLongPress:Ljava/lang/Runnable;
+.field mPowerLongPress:Ljava/lang/Runnable;
 
 .field mPowerManager:Landroid/os/LocalPowerManager;
 
@@ -454,7 +454,7 @@
 
 .field mScreenOnFully:Z
 
-.field private final mScreenshotChordLongPress:Ljava/lang/Runnable;
+.field final mScreenshotChordLongPress:Ljava/lang/Runnable;
 
 .field mScreenshotConnection:Landroid/content/ServiceConnection;
 
@@ -519,7 +519,7 @@
 
 .field private mVolumeDownKeyConsumedByQuickClipChord:Z
 
-.field private mVolumeDownKeyConsumedByScreenshotChord:Z
+.field mVolumeDownKeyConsumedByScreenshotChord:Z
 
 .field private mVolumeDownKeyTime:J
 
@@ -826,9 +826,9 @@
     .line 439
     const/4 v0, 0x2
 
-    new-array v0, v0, [Lcom/android/internal/policy/impl/GlobalActions;
+    new-array v0, v0, [Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
-    iput-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/GlobalActions;
+    iput-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
     .line 440
     iput v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
@@ -1635,7 +1635,7 @@
     return-void
 .end method
 
-.method private interceptPowerKeyUp(Z)Z
+.method interceptPowerKeyUp(Z)Z
     .locals 3
     .parameter "canceled"
 
@@ -7207,9 +7207,9 @@
     iput-object p4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPowerManager:Landroid/os/LocalPowerManager;
 
     .line 996
-    new-instance v6, Lcom/android/internal/policy/impl/KeyguardViewMediator;
+    invoke-static {p1, p0, p4}, Lcom/android/internal/policy/impl/MiuiClassFactory;->createKeyguardViewMediator(Landroid/content/Context;Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/os/LocalPowerManager;)Lcom/android/internal/policy/impl/KeyguardViewMediator;
 
-    invoke-direct {v6, p1, p0, p4}, Lcom/android/internal/policy/impl/KeyguardViewMediator;-><init>(Landroid/content/Context;Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/os/LocalPowerManager;)V
+    move-result-object v6
 
     iput-object v6, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/KeyguardViewMediator;
 
@@ -10928,7 +10928,6 @@
     invoke-static/range {v22 .. v23}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 3670
-    if-eqz v7, :cond_8
 
     move/from16 v0, p2
 
@@ -10947,8 +10946,16 @@
     .line 3672
     const/16 v22, 0x0
 
-    const/16 v23, 0x1
+    if-eqz v7, :cond_41
 
+    const/4 v23, 0x1
+
+    goto :goto_4e
+
+    :cond_41
+    const/16 v23, 0x2
+
+    :goto_4e
     const/16 v24, 0x0
 
     move-object/from16 v0, p0
@@ -11857,7 +11864,7 @@
     :cond_22
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v6}, Lcom/android/internal/policy/impl/PhoneWindowManager;->interceptPowerKeyUp(Z)Z
+    invoke-virtual {v0, v6}, Lcom/android/internal/policy/impl/PhoneWindowManager;->interceptPowerKeyUp(Z)Z
 
     move-result v22
 
@@ -12599,7 +12606,7 @@
 
     move/from16 v1, v22
 
-    invoke-direct {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->interceptPowerKeyUp(Z)Z
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->interceptPowerKeyUp(Z)Z
 
     move-result v22
 
@@ -12635,6 +12642,20 @@
     move-object/from16 v1, p0
 
     iput-boolean v0, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPendingPowerKeyUpCanceled:Z
+
+    iget-object v10, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
+
+    if-eqz v10, :cond_1
+
+    iget-object v10, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
+
+    new-instance v11, Landroid/content/Intent;
+
+    const-string v12, "android.intent.action.KEYCODE_POWER_UP"
+
+    invoke-direct {v11, v12}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v10, v11}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_3
 
@@ -17314,7 +17335,7 @@
 
     .prologue
     .line 867
-    iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/GlobalActions;
+    iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
     iget v5, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
 
@@ -17323,15 +17344,15 @@
     if-nez v4, :cond_0
 
     .line 868
-    iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/GlobalActions;
+    iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
     iget v5, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
 
-    new-instance v6, Lcom/android/internal/policy/impl/GlobalActions;
+    new-instance v6, Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
     iget-object v7, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    invoke-direct {v6, v7}, Lcom/android/internal/policy/impl/GlobalActions;-><init>(Landroid/content/Context;)V
+    invoke-direct {v6, v7}, Lcom/android/internal/policy/impl/MiuiGlobalActions;-><init>(Landroid/content/Context;)V
 
     aput-object v6, v4, v5
 
@@ -17345,13 +17366,13 @@
 
     .line 875
     .local v3, keyguardShowing:Z
-    iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/GlobalActions;
+    iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
     iget v5, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
 
     aget-object v4, v4, v5
 
-    invoke-virtual {v4}, Lcom/android/internal/policy/impl/GlobalActions;->isShowing()Z
+    invoke-virtual {v4}, Lcom/android/internal/policy/impl/MiuiGlobalActions;->isShowing()Z
 
     move-result v4
 
@@ -17417,7 +17438,7 @@
     .restart local v1       #fuel_level_cmd:Ljava/io/BufferedWriter;
     :cond_4
     :goto_1
-    iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/GlobalActions;
+    iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
     iget v5, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
 
@@ -17429,7 +17450,7 @@
 
     iget v6, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
 
-    invoke-virtual {v4, v3, v5, v6}, Lcom/android/internal/policy/impl/GlobalActions;->showDialog(ZZI)V
+    invoke-virtual {v4, v3, v5, v6}, Lcom/android/internal/policy/impl/MiuiGlobalActions;->showDialog(ZZI)V
 
     .line 901
     if-eqz v3, :cond_1

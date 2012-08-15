@@ -169,13 +169,13 @@
 
     .line 161
     :cond_1
-    new-instance v4, Landroid/webkit/HTML5VideoFullScreen;
+    new-instance v4, Landroid/webkit/MiuiHTML5VideoFullScreen;
 
     invoke-virtual {p2}, Landroid/webkit/HTML5VideoViewProxy;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
-    invoke-direct {v4, v5, p0, v2, v3}, Landroid/webkit/HTML5VideoFullScreen;-><init>(Landroid/content/Context;IIZ)V
+    invoke-direct {v4, v5, p0, v2, v3}, Landroid/webkit/MiuiHTML5VideoFullScreen;-><init>(Landroid/content/Context;IIZ)V
 
     sput-object v4, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->mHTML5VideoView:Landroid/webkit/HTML5VideoView;
 

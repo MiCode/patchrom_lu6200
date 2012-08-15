@@ -177,7 +177,7 @@
     if-nez v3, :cond_2
 
     .line 910
-    new-instance v7, Lcom/android/server/am/BlueErrorDialog;
+    new-instance v7, Lcom/android/server/am/AppErrorDialog;
 
     move-object/from16 v0, p0
 
@@ -191,7 +191,7 @@
 
     move-object/from16 v2, v25
 
-    invoke-direct {v7, v3, v0, v1, v2}, Lcom/android/server/am/BlueErrorDialog;-><init>(Landroid/content/Context;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;Landroid/app/ApplicationErrorReport$CrashInfo;)V
+    invoke-direct {v7, v3, v0, v1, v2}, Lcom/android/server/am/AppErrorDialog;-><init>(Landroid/content/Context;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;Landroid/app/ApplicationErrorReport$CrashInfo;)V
 
     .line 911
     .local v7, d:Landroid/app/Dialog;

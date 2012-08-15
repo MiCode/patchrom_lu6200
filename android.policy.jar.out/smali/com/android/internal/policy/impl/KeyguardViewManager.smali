@@ -147,8 +147,13 @@
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mServiceConnection:Landroid/content/ServiceConnection;
 
-    .line 105
-    iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mContext:Landroid/content/Context;
+    new-instance v0, Landroid/view/ContextThemeWrapper;
+
+    const v1, 0x103006b
+
+    invoke-direct {v0, p1, v1}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
+
+    iput-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mContext:Landroid/content/Context;
 
     .line 106
     iput-object p2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mViewManager:Landroid/view/ViewManager;
@@ -1180,7 +1185,7 @@
 
     .line 279
     .local v11, stretch:I
-    const v4, 0x10100800
+    const v4, 0x10100900
 
     .line 286
     .local v4, flags:I
@@ -1351,6 +1356,10 @@
 
     .line 323
     :cond_c
+    const/4 v1, 0x1
+
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->screenOrientation:I
+
     iget v1, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
     or-int/lit8 v1, v1, 0x8
@@ -1554,6 +1563,8 @@
 
     invoke-virtual {v1, v12}, Landroid/widget/FrameLayout;->setSystemUiVisibility(I)V
 
+    invoke-direct {p0}, Lcom/android/internal/policy/impl/KeyguardViewManager;->updateDisplayDesktopFlag()V
+
     .line 395
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mViewManager:Landroid/view/ViewManager;
 
@@ -1588,7 +1599,7 @@
     :try_start_3
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mWindowLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
-    const/4 v2, 0x5
+    const/4 v2, 0x1
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->screenOrientation:I
     :try_end_3
@@ -1788,6 +1799,76 @@
 
     .line 525
     const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method private updateDisplayDesktopFlag()V
+    .locals 3
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardView:Lcom/android/internal/policy/impl/KeyguardViewBase;
+
+    invoke-virtual {v0}, Lcom/android/internal/policy/impl/KeyguardViewBase;->isDisplayDesktop()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardViewProperties:Lcom/android/internal/policy/impl/KeyguardViewProperties;
+
+    invoke-interface {v0}, Lcom/android/internal/policy/impl/KeyguardViewProperties;->isSecure()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mWindowLayoutParams:Landroid/view/WindowManager$LayoutParams;
+
+    iget v1, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    const v2, -0x100001
+
+    and-int/2addr v1, v2
+
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mWindowLayoutParams:Landroid/view/WindowManager$LayoutParams;
+
+    iget v1, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
+
+    const/high16 v2, 0x4000
+
+    or-int/2addr v1, v2
+
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
+
+    :goto_0
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mWindowLayoutParams:Landroid/view/WindowManager$LayoutParams;
+
+    iget v1, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    const/high16 v2, 0x10
+
+    or-int/2addr v1, v2
+
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mWindowLayoutParams:Landroid/view/WindowManager$LayoutParams;
+
+    iget v1, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
+
+    const v2, -0x40000001
+
+    and-int/2addr v1, v2
+
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
     goto :goto_0
 .end method

@@ -14250,6 +14250,12 @@
     if-eqz v5, :cond_1
 
     .line 880
+    invoke-virtual {p0}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->isMmsDataEnabled()Z
+
+    move-result v5
+
+    if-nez v5, :cond_3
+
     iget-boolean v5, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mInternalDataEnabled:Z
 
     if-eqz v5, :cond_0
@@ -21107,6 +21113,12 @@
 
     const/4 v3, 0x1
 
+    invoke-direct {p0, p2, p1}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->getApnType(II)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mRequestedApnType:Ljava/lang/String;
+
     .line 2929
     iget-object v2, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mApnContexts:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -23342,5 +23354,34 @@
 
     invoke-virtual {v1, p0, v2, v3}, Lcom/android/internal/telephony/IccRecords;->registerForRecordsLoaded(Landroid/os/Handler;ILjava/lang/Object;)V
 
+    goto :goto_0
+.end method
+
+.method private getApnType(II)Ljava/lang/String;
+    .locals 2
+    .parameter "enabled"
+    .parameter "apnId"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    const/4 v1, 0x1
+
+    if-ne p1, v1, :cond_0
+
+    invoke-virtual {p0, p2}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->apnIdToType(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .local v0, requestedApnType:Ljava/lang/String;
+    :goto_0
+    return-object v0
+
+    .end local v0           #requestedApnType:Ljava/lang/String;
+    :cond_0
+    const-string v0, "default"
+
+    .restart local v0       #requestedApnType:Ljava/lang/String;
     goto :goto_0
 .end method

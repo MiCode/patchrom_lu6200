@@ -4268,7 +4268,10 @@
     .parameter "defaultCountryIso"
 
     .prologue
-    .line 1768
+    invoke-static {p0}, Lmiui/telephony/PhoneNumberUtils;->removeDashesAndBlanks(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -5548,6 +5551,10 @@
     .line 1911
     :cond_2
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->extractNetworkPortionAlt(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lmiui/telephony/PhoneNumberUtils;->parseNumber(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
