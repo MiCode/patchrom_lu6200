@@ -537,6 +537,18 @@
 
     check-cast v47, Lcom/android/server/am/AppErrorResult;
 
+    const-string v3, "crashinfo"
+
+    move-object/from16 v0, v26
+
+    invoke-virtual {v0, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v25
+
+    check-cast v25, Landroid/app/ApplicationErrorReport$CrashInfo;
+
+    .local v25, crash:Landroid/app/ApplicationErrorReport$CrashInfo;
+    
     .line 956
     .restart local v47       #res:Lcom/android/server/am/AppErrorResult;
     move-object/from16 v0, p0
@@ -568,7 +580,9 @@
 
     move-object/from16 v1, v43
 
-    invoke-direct {v7, v3, v0, v1}, Lcom/android/server/am/AppErrorDialog;-><init>(Landroid/content/Context;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;)V
+    move-object/from16 v2, v25
+    
+    invoke-direct {v7, v3, v0, v1, v2}, Lcom/android/server/am/AppErrorDialog;-><init>(Landroid/content/Context;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;Landroid/app/ApplicationErrorReport$CrashInfo;)V
 
     .line 958
     .restart local v7       #d:Landroid/app/Dialog;

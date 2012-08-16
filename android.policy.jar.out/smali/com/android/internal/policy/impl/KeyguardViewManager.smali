@@ -597,6 +597,7 @@
 
     move-result-object v2
 
+    goto :cond_0
     .line 539
     if-eqz v2, :cond_0
 
@@ -1104,7 +1105,8 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result-object v9
-
+    
+    goto :cond_0
     .line 252
     if-eqz v9, :cond_0
 

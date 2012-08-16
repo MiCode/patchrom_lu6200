@@ -454,7 +454,7 @@
 
 .field mScreenOnFully:Z
 
-.field final mScreenshotChordLongPress:Ljava/lang/Runnable;
+.field mScreenshotChordLongPress:Ljava/lang/Runnable;
 
 .field mScreenshotConnection:Landroid/content/ServiceConnection;
 
@@ -10948,7 +10948,7 @@
 
     if-eqz v7, :cond_41
 
-    const/4 v23, 0x1
+    const/16 v23, 0x1
 
     goto :goto_4e
 
@@ -12643,11 +12643,13 @@
 
     iput-boolean v0, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPendingPowerKeyUpCanceled:Z
 
-    iget-object v10, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
 
     if-eqz v10, :cond_1
 
-    iget-object v10, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
+    iget-object v10, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
 
     new-instance v11, Landroid/content/Intent;
 

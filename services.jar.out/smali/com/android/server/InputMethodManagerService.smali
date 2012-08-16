@@ -6654,25 +6654,6 @@
 
     .line 1473
     :cond_2
-    const-string v3, "InputManagerService"
-
-    const-string v4, "SoftKeypad Hide Broadcast"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1474
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v3, "android.softkeypad.intent.HIDE"
-
-    invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 1475
-    .local v0, intent:Landroid/content/Intent;
-    iget-object v3, p0, Lcom/android/server/InputMethodManagerService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
-
     .line 1478
     iget-boolean v3, p0, Lcom/android/server/InputMethodManagerService;->mInputShown:Z
 
