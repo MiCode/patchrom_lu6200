@@ -285,9 +285,9 @@
 
     aput-object v2, v0, v1
 
-    const-string/jumbo v1, "icc_index"
+    #const-string/jumbo v1, "icc_index"
 
-    aput-object v1, v0, v5
+    #aput-object v1, v0, v5
 
     sput-object v0, Lcom/android/internal/telephony/SMSDispatcher;->PDU_SEQUENCE_PORT_PROJECTION:[Ljava/lang/String;
 
@@ -310,9 +310,9 @@
 
     aput-object v2, v0, v1
 
-    const-string/jumbo v1, "icc_index"
+    #const-string/jumbo v1, "icc_index"
 
-    aput-object v1, v0, v5
+    #aput-object v1, v0, v5
 
     const-string/jumbo v1, "time"
 
