@@ -10968,30 +10968,30 @@
     invoke-virtual {p0, v5}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->log(Ljava/lang/String;)V
 
     .line 1255
-    iget-object v5, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mPhone:Lcom/android/internal/telephony/PhoneBase;
+    #iget-object v5, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mPhone:Lcom/android/internal/telephony/PhoneBase;
 
-    iget-object v5, v5, Lcom/android/internal/telephony/PhoneBase;->mCM:Lcom/android/internal/telephony/CommandsInterface;
+    #iget-object v5, v5, Lcom/android/internal/telephony/PhoneBase;->mCM:Lcom/android/internal/telephony/CommandsInterface;
 
-    invoke-interface {v5}, Lcom/android/internal/telephony/CommandsInterface;->getLGfeatures()Lcom/android/internal/telephony/LGfeature;
+    #invoke-interface {v5}, Lcom/android/internal/telephony/CommandsInterface;->getLGfeatures()Lcom/android/internal/telephony/LGfeature;
 
-    move-result-object v5
+    #move-result-object v5
 
-    iget-boolean v5, v5, Lcom/android/internal/telephony/LGfeature;->PAYPOPUP_KO:Z
+    #iget-boolean v5, v5, Lcom/android/internal/telephony/LGfeature;->PAYPOPUP_KO:Z
 
-    if-eqz v5, :cond_e
+    #if-eqz v5, :cond_e
 
     .line 1257
-    iget-object v5, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->payPopUp_kr:Lcom/android/internal/telephony/PayPopup_Korea;
+    #iget-object v5, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->payPopUp_kr:Lcom/android/internal/telephony/PayPopup_Korea;
 
-    invoke-virtual {p1}, Lcom/android/internal/telephony/ApnContext;->getReason()Ljava/lang/String;
+    #invoke-virtual {p1}, Lcom/android/internal/telephony/ApnContext;->getReason()Ljava/lang/String;
 
-    move-result-object v7
+    #move-result-object v7
 
-    invoke-virtual {v5, v7}, Lcom/android/internal/telephony/PayPopup_Korea;->startPayPopup(Ljava/lang/String;)Z
+    #invoke-virtual {v5, v7}, Lcom/android/internal/telephony/PayPopup_Korea;->startPayPopup(Ljava/lang/String;)Z
 
-    move-result v5
+    #move-result v5
 
-    if-eqz v5, :cond_0
+    #if-eqz v5, :cond_0
 
     .line 1268
     :cond_e

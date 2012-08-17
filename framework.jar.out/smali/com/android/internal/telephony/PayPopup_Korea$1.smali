@@ -555,7 +555,7 @@
 
     const-string/jumbo v5, "roam_to_domesic"
 
-    invoke-virtual {v4, v5}, Lcom/android/internal/telephony/PayPopup_Korea;->startPayPopup(Ljava/lang/String;)Z
+    #invoke-virtual {v4, v5}, Lcom/android/internal/telephony/PayPopup_Korea;->startPayPopup(Ljava/lang/String;)Z
 
     .line 258
     iget-object v4, p0, Lcom/android/internal/telephony/PayPopup_Korea$1;->this$0:Lcom/android/internal/telephony/PayPopup_Korea;

@@ -3986,31 +3986,20 @@
 
     if-eqz v2, :cond_0
 
+    .line 807
     iget-object v0, p2, Landroid/os/AsyncResult;->userObj:Ljava/lang/Object;
 
     .end local v0           #reason:Ljava/lang/String;
     check-cast v0, Ljava/lang/String;
 
+    .line 809
     .restart local v0       #reason:Ljava/lang/String;
     :cond_0
     sget-object v2, Lcom/android/internal/telephony/DataConnectionTracker$State;->IDLE:Lcom/android/internal/telephony/DataConnectionTracker$State;
 
     invoke-virtual {p0, v2}, Lcom/android/internal/telephony/cdma/CdmaDataConnectionTracker;->setState(Lcom/android/internal/telephony/DataConnectionTracker$State;)V
 
-    invoke-static {}, Lmiui/net/FirewallManager;->getInstance()Lmiui/net/FirewallManager;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/internal/telephony/cdma/CdmaDataConnectionTracker;->mActiveApn:Lcom/android/internal/telephony/ApnSetting;
-
-    invoke-static {v3}, Lmiui/net/FirewallManager;->encodeApnSetting(Lcom/android/internal/telephony/ApnSetting;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v2, v1, v3}, Lmiui/net/FirewallManager;->onDataDisconnected(ILjava/lang/String;)V
-
+    .line 813
     iget-boolean v2, p0, Lcom/android/internal/telephony/cdma/CdmaDataConnectionTracker;->mPendingRestartRadio:Z
 
     if-eqz v2, :cond_1

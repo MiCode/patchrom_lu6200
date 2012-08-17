@@ -6343,7 +6343,7 @@
     .line 3033
     iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarManager:Landroid/app/StatusBarManager;
 
-    invoke-virtual {v3, v5}, Landroid/app/StatusBarManager;->disableTouch(Z)V
+    #invoke-virtual {v3, v5}, Landroid/app/StatusBarManager;->disableTouch(Z)V
 
     .line 3092
     :cond_1
@@ -6491,7 +6491,7 @@
     .line 3060
     iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarManager:Landroid/app/StatusBarManager;
 
-    invoke-virtual {v3, v4}, Landroid/app/StatusBarManager;->disableTouch(Z)V
+    #invoke-virtual {v3, v4}, Landroid/app/StatusBarManager;->disableTouch(Z)V
 
     .line 3063
     :cond_8
@@ -6551,7 +6551,7 @@
     .line 3084
     iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarManager:Landroid/app/StatusBarManager;
 
-    invoke-virtual {v3, v5}, Landroid/app/StatusBarManager;->disableTouch(Z)V
+    #invoke-virtual {v3, v5}, Landroid/app/StatusBarManager;->disableTouch(Z)V
 
     goto/16 :goto_1
 
