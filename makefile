@@ -15,12 +15,12 @@ local-modified-jars :=
 
 local-miui-modified-apps := Mms MiuiHome Settings Phone ThemeManager
 # All apks from MIUI
-local-miui-removed-apps  := Stk
+local-miui-removed-apps  := Stk MediaProvider
 
 # All apps need to be reserved from original ZIP file
 local-phone-apps := ApplicationsProvider CameraApp CertInstaller CommonService DefaultContainerService DrmProvider \
 		DrmService FaceLock KeyChain LGU_ARMService MusicFX NativeLiveWallpapersPicker Nfc \
-		PackageInstaller UserDictionaryProvider
+		PackageInstaller UserDictionaryProvider MediaProvider
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
