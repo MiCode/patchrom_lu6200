@@ -1257,6 +1257,20 @@
 
     .prologue
     .line 117
+
+    const-string v0, "OperatorMessage"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x0
+
+    goto :goto_end
+
+    :cond_0
     invoke-static {p0}, Lcom/android/internal/telephony/lgeAutoProfiling;->setContext(Landroid/content/Context;)V
 
     .line 119
@@ -1266,6 +1280,7 @@
 
     move-result v0
 
+    :goto_end
     return v0
 .end method
 
