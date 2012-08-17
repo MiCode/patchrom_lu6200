@@ -17524,7 +17524,7 @@
     if-nez v13, :cond_c
 
     .line 1078
-    invoke-direct/range {p0 .. p0}, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->createManagedTimeSettingDialog()V
+    #invoke-direct/range {p0 .. p0}, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->createManagedTimeSettingDialog()V
 
     goto/16 :goto_0
 
@@ -17547,7 +17547,7 @@
     if-nez v13, :cond_0
 
     .line 1083
-    invoke-direct/range {p0 .. p0}, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->createManagedTimeSettingDialog()V
+    #invoke-direct/range {p0 .. p0}, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->createManagedTimeSettingDialog()V
 
     goto/16 :goto_0
 
