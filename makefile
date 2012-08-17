@@ -19,7 +19,7 @@ local-miui-removed-apps  := Stk
 
 # All apps need to be reserved from original ZIP file
 local-phone-apps := ApplicationsProvider CameraApp CertInstaller CommonService DefaultContainerService DrmProvider \
-		DrmService FaceLock KeyChain LGU_ARMService MusicFX NativeLiveWallpapersPicker Nfc oem_install_flash_player_ics \
+		DrmService FaceLock KeyChain LGU_ARMService MusicFX NativeLiveWallpapersPicker Nfc \
 		PackageInstaller UserDictionaryProvider
 
 # To include the local targets before and after zip the final ZIP file, 
