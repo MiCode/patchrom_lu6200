@@ -13,7 +13,7 @@ local-modified-apps :=
 
 local-modified-jars := 
 
-local-miui-modified-apps := Mms MiuiHome Settings Phone ThemeManager
+local-miui-modified-apps := Mms MiuiHome Settings ThemeManager
 # All apks from MIUI
 local-miui-removed-apps  := Stk MediaProvider
 
@@ -53,6 +53,10 @@ local-zip-misc:
 
 	@echo delete redundance files
 	rm -rf $(ZIP_DIR)/system/bin/su
+
+	@echo copy radio and firmware files
+	cp other/baseband.img $(ZIP_DIR)/
+	cp other/firmware.img $(ZIP_DIR)/
 
 local-test:
 #	rm -f $(local-out-zip-file)
