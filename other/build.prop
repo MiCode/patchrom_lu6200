@@ -223,6 +223,6 @@ net.bt.name=Android
 dalvik.vm.stack-trace-file=/data/anr/traces.txt
 
 persist.usb.android_config = 1
-persist.sys.usb.config=adb
+persist.sys.usb.config=mass_storage,adb
 
 
