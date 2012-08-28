@@ -17368,24 +17368,10 @@
 
     .line 875
     .local v3, keyguardShowing:Z
-    iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
-    iget v5, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
-
-    aget-object v4, v4, v5
-
-    invoke-virtual {v4}, Lcom/android/internal/policy/impl/MiuiGlobalActions;->isShowing()Z
-
-    move-result v4
+    const/4 v4, 0x0
 
     if-eqz v4, :cond_2
-
-    .line 877
-    const-string v4, "WindowManager"
-
-    const-string v5, "GlobalActionsDialog is showing. Ignore showGlobalActionsDialog"
-
-    invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 906
     :cond_1
@@ -17452,8 +17438,7 @@
 
     iget v6, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
 
-    invoke-virtual {v4, v3, v5, v6}, Lcom/android/internal/policy/impl/MiuiGlobalActions;->showDialog(ZZI)V
-
+    invoke-virtual {v4, v3, v5}, Lcom/android/internal/policy/impl/MiuiGlobalActions;->showDialog(ZZ)V
     .line 901
     if-eqz v3, :cond_1
 
