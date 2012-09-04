@@ -80,42 +80,42 @@
 
     .line 5142
     :cond_0
-    iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    #iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-object v2, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/GlobalActions;
+    #iget-object v2, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
-    iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    #iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget v3, v3, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
+    #iget v3, v3, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
 
-    aget-object v2, v2, v3
+    #aget-object v2, v2, v3
 
-    if-eqz v2, :cond_1
+    #if-eqz v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    #iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-object v2, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/GlobalActions;
+    #iget-object v2, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:[Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
-    iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    #iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget v3, v3, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
+    #iget v3, v3, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIdxGlobalDlg:I
 
-    aget-object v2, v2, v3
+    #aget-object v2, v2, v3
 
-    invoke-virtual {v2}, Lcom/android/internal/policy/impl/GlobalActions;->isShowing()Z
+    #invoke-virtual {v2}, Lcom/android/internal/policy/impl/GlobalActions;->isShowing()Z
 
-    move-result v2
+    #move-result v2
 
-    if-ne v2, v4, :cond_1
+    #if-ne v2, v4, :cond_1
 
     .line 5143
-    const-string v2, "WindowManager"
+    #const-string v2, "WindowManager"
 
-    const-string v3, "Skip menu long key -> search key injection in the global actions dialog."
+    #const-string v3, "Skip menu long key -> search key injection in the global actions dialog."
 
-    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    #invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_0
+    #goto :goto_0
 
     .line 5147
     :cond_1
