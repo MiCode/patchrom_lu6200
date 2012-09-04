@@ -1,5 +1,5 @@
 #
-# Makefile for u8860
+# Makefile for lu6200
 #
 
 # The original zip file, MUST be specified by each product
@@ -11,16 +11,16 @@ local-zip-file     := stockrom.zip
 # All apps from original ZIP, but has smali files chanded
 local-modified-apps := 
 
-local-modified-jars := 
+local-modified-jars := com.lge.bluetooth
 
-local-miui-modified-apps := Mms MiuiHome Settings ThemeManager
+local-miui-modified-apps := Mms MiuiHome ThemeManager Phone
 # All apks from MIUI
-local-miui-removed-apps  := Stk MediaProvider
+local-miui-removed-apps  := Stk MediaProvider Bluetooth
 
 # All apps need to be reserved from original ZIP file
 local-phone-apps := ApplicationsProvider CameraApp CertInstaller CommonService DefaultContainerService DrmProvider \
 		DrmService FaceLock KeyChain LGU_ARMService MusicFX NativeLiveWallpapersPicker Nfc \
-		PackageInstaller UserDictionaryProvider MediaProvider
+		PackageInstaller UserDictionaryProvider MediaProvider Bluetooth BluetoothServices
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:

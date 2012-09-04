@@ -328,6 +328,7 @@
     .parameter "svcName"
 
     .prologue
+
     const/4 v1, 0x1
 
     const/4 v2, 0x0
@@ -399,6 +400,10 @@
     .parameter "svcName"
 
     .prologue
+    const/4 v1, 0x1
+
+    return v1
+
     const/16 v10, 0xd
 
     const/16 v9, 0x8
