@@ -1,0 +1,25 @@
+From f61916c87ad1384ee9b45754d1a019522244e0ee Mon Sep 17 00:00:00 2001
+From: mochangming <mochangming@xiaomi.com>
+Date: Wed, 5 Sep 2012 14:51:52 +0800
+Subject: [PATCH] fix the bug ringtone play once
+
+---
+ Phone/smali/com/android/phone/Ringer$1.smali |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+--- a/Phone/smali/com/android/phone/Ringer$1.smali
++++ b/Phone/smali/com/android/phone/Ringer$1.smali
+@@ -185,7 +185,9 @@
+ 
+     invoke-static {}, Lcom/android/phone/PhoneUtils;->setAudioMode()V
+ 
+-    invoke-virtual {v0}, Landroid/media/Ringtone;->play()V
++    const/4 v1, 0x1
++
++    invoke-virtual {v0, v1}, Landroid/media/Ringtone;->play(Z)V
+ 
+     iget-object v2, p0, Lcom/android/phone/Ringer$1;->this$0:Lcom/android/phone/Ringer;
+
+-- 
+1.7.1
+

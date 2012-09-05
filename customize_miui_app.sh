@@ -22,6 +22,16 @@ if [ $1 = "Phone" ];then
         cat $file >> $dstfile
     done
 
+    cp $1/Ringer.patch out/
+    cd out
+    $GIT_APPLY Ringer.patch
+    cd ..
+    for file in `find $2 -name *.rej`
+    do
+	echo "Ringer patch fail"
+        exit 1
+    done
+
 	#echo "Merge Phone's xml"
 	#$XMLMERGYTOOL $1/res/values $2/res/values
 	echo "replace functions in Phone"
