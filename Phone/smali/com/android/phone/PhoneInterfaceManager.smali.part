@@ -1,0 +1,26 @@
+
+.method public isReservedCall()Z
+    .locals 1
+
+    .prologue
+    .line 1003
+    iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mApp:Lcom/android/phone/PhoneApp;
+
+    iget-object v0, v0, Lcom/android/phone/PhoneApp;->notifier:Lcom/android/phone/CallNotifier;
+
+    invoke-virtual {v0}, Lcom/android/phone/CallNotifier;->isRinging()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
