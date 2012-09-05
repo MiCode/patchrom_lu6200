@@ -2,6 +2,8 @@ import common
 import edify_generator
 
 def AddExtraAction(info):
+    common.ZipWriteStr(info.output_zip, "firmware.img", info.input_zip.read("RADIO/firmware.img"))
+    common.ZipWriteStr(info.output_zip, "baseband.img", info.input_zip.read("RADIO/baseband.img"))
     info.script.AppendExtra('ui_print("Update firmware...");');
     info.script.AppendExtra('package_extract_file("firmware.img", "/dev/block/mmcblk0p1");');
     info.script.AppendExtra('ui_print("Update baseband...");');
