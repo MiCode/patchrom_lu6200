@@ -989,15 +989,6 @@
     .line 783
     .end local v10           #i:I
     :cond_7
-    const-string v1, "content://media"
-
-    invoke-virtual {v9, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 788
     invoke-static {v9}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v7
@@ -1005,7 +996,36 @@
     .line 789
     if-eqz v7, :cond_1
 
+    invoke-virtual {v7}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_1
+
+    const-string v2, "file"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_8
+
+    invoke-virtual {v7}, Landroid/net/Uri;->getPath()Ljava/lang/String;
+
+    move-result-object v12
+
+    goto :goto_1
+
     .line 794
+    :cond_8
+    const-string v2, "content"
+    
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
     invoke-direct {p0, v7}, Landroid/media/Ringtone;->getFilepathFromContentUri(Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object v12
@@ -1812,6 +1832,8 @@
 
     .line 362
     :cond_9
+    move-object v7, v12
+
     if-nez v12, :cond_f
 
     .line 363
@@ -2066,7 +2088,7 @@
     :cond_f
     const-string/jumbo v0, "silent_ringtone"
 
-    if-ne v12, v0, :cond_10
+    if-ne v12, v0, :cond_a
 
     .line 369
     iget-object v0, p0, Landroid/media/Ringtone;->mAudio:Landroid/media/MediaPlayer;
