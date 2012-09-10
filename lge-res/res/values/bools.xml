@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="action_bar_embed_tabs">false</bool>
+    <bool name="split_action_bar_is_narrow">true</bool>
+    <bool name="preferences_prefer_dual_pane">false</bool>
+    <bool name="show_ongoing_ime_switcher">true</bool>
+    <bool name="action_bar_expanded_action_views_exclusive">true</bool>
+    <bool name="target_honeycomb_needs_options_menu">true</bool>
+    <bool name="enable_go_home_from_setupwizard">false</bool>
+    <bool name="enable_selectable_dockevent">false</bool>
+    <bool name="enable_LcdOffPowerLongKey">false</bool>
+    <bool name="enable_globalActionCancel">false</bool>
+    <bool name="config_systemui_feature_quicksetting">true</bool>
+    <bool name="config_systemui_feature_nfc">true</bool>
+    <bool name="config_systemui_feature_dualdisplay">false</bool>
+    <bool name="config_systemui_feature_multi_alc">true</bool>
+    <bool name="config_systemui_feature_airplane">false</bool>
+    <bool name="config_systemui_feature_recentapp">true</bool>
+    <bool name="config_systemui_feature_p2">false</bool>
+    <bool name="config_pouchEnablesAccelerometer">true</bool>
+</resources>

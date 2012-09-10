@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="138.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.internal.policy.impl.PointTouchUnlockFrame android:layout_gravity="center" android:id="@id/unlock_touch_point" android:layout_width="138.0dip" android:layout_height="fill_parent">
+        <ImageView android:id="@id/button_base" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_base" />
+        <ImageView android:id="@id/button_blinkfield" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center" android:id="@id/padlock_image" android:layout_width="84.0dip" android:layout_height="84.0dip" android:src="@drawable/btn_unlock_a" android:scaleType="fitXY" />
+    </com.android.internal.policy.impl.PointTouchUnlockFrame>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="30.0dip" android:textColor="#ffffffff" android:gravity="right" android:paddingRight="62.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@android:string/lockscreen_unlockframetext_left_nexti" android:includeFontPadding="false" android:shadowColor="#80000000" android:shadowDx="0.0" android:shadowDy="1.2" android:shadowRadius="0.0" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="left" android:paddingLeft="62.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@android:string/lockscreen_unlockframetext_right_nexti" android:includeFontPadding="false" android:shadowColor="#80000000" android:shadowDx="0.0" android:shadowDy="1.2" android:shadowRadius="0.0" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

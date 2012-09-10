@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sp_Device_Options_NORMAL">휴대전화 옵션</string>
+    <string name="global_action_power_restart">전원 끄고 다시 시작</string>
+    <string name="sp_turn_on_silent_mode_NORMAL">무음 모드 설정</string>
+    <string name="sp_turn_off_silent_mode_NORMAL">무음모드 해제하기</string>
+    <string name="sp_turn_on_flight_mode_NORMAL">비행기 모드 설정하기</string>
+    <string name="sp_turn_off_flight_mode_NORMAL">비행기 모드 해제하기</string>
+    <string name="sp_turn_on_airplane_mode_NORMAL">비행기 모드 설정하기</string>
+    <string name="sp_turn_off_airplane_mode_NORMAL">비행기 모드 해제하기</string>
+    <string name="sp_airplane_mode_on_NORMAL">비행기 모드 설정 상태 입니다.</string>
+    <string name="sp_airplane_mode_off_NORMAL">비행기 모드 해제 상태 입니다.</string>
+    <string name="sp_power_off_confirm_NORMAL">"휴대전화의 전원이 꺼집니다. 
+계속 하시겠습니까?"</string>
+    <string name="sp_restart_confirm_NORMAL">"휴대전화를 다시 시작합니다. 
+계속 하시겠습니까?"</string>
+    <string name="sp_restart_confirm_question_NORMAL">다시 시작 하겠습니까?</string>
+    <string name="unsupportedMmiCode">조정한 MMI 코드를 지원하지 않습니다.</string>
+    <string name="stkCcUssdToDial">UUSD 요청이 DIAL 요청으로 변경 되었습니다.</string>
+    <string name="stkCcUssdToSs">USSD 요청이 SS 요청으로 변경 되었습니다.</string>
+    <string name="stkCcUssdToUssd">USSD 요청이 새로운 USSD 요청으로 변경 되었습니다.</string>
+    <string name="stkCcSsToDial">SS 요청이 DIAL 요청으로 변경 되었습니다.</string>
+    <string name="stkCcSsToUssd">SS 요청이 UUSD 요청으로 변경 되었습니다.</string>
+    <string name="stkCcSsToSs">SS 요청이 새로운 SS 요청으로 변경 되었습니다.</string>
+    <string name="managed_roaming_title">로밍 관리</string>
+    <string name="managed_roaming_dialog_content">제한된 서비스를 이용하는 네트워크를 찾았습니다. 네트워크 검색을 시작하시겠습니까?</string>
+    <string name="managed_roaming_dialog_ok_button">예</string>
+    <string name="managed_roaming_dialog_cancel_button">아니오</string>
+    <string name="media_scan_status_message">미디어 검색 중입니다. 잠시 후 다시 시도해 주세요.</string>
+    <string name="sp_lgmdm_blockscreencapture_NORMAL">서버 정책에 의해서 화면 캡처를 할 수 없습니다.</string>
+    <string name="sp_lgmdm_block_gps_NORMAL">"서버 정책에 의해서  GPS를 사용할 수 없습니다."</string>
+    <string name="sp_lgmdm_blockbrowser_NORMAL">"서버 정책에 의해서  인터넷을 사용할 수 없습니다."</string>
+    <string name="sp_lgmdm_blocksms_NORMAL">"서버 정책에 의해서  메세지를 사용할 수 없습니다."</string>
+    <string name="sp_block_sending_message_NORMAL">"서버 정책에 의해서  메세지를 전달할 수 없습니다."</string>
+    <string name="sp_block_consummail_NORMAL">"서버 정책에 의해서  허가된 계정 만 사용할 수 있습니다."</string>
+    <string name="sp_lgmdm_factory_reset_NORMAL">서버 정책에 의해서 휴대폰의 모든 정보가 사라집니다.</string>
+    <string name="sp_lgmdm_control_autosync_NORMAL">자동 동기화(AutoSync)가 꺼져있습니다. 서버 정책에 따라 동기화가 수동으로 진행됩니다.</string>
+    <string name="sp_lgmdm_block_camera_NORMAL">"서버 정책에 의해서  카메라를 사용할 수 없습니다."</string>
+    <string name="sp_block_install_app_NORMAL">"서버 정책에 의해서  어플을 설치할 수 없습니다."</string>
+    <string name="sp_block_uninstall_app_NORMAL">"서버 정책에 의해서  어플을 제거할 수 없습니다."</string>
+    <string name="sp_block_enable_app_NORMAL">서버 정책에 의해서 애플리케이션을 실행할 수 없습니다.</string>
+    <string name="sp_block_enable_unsigned_app_NORMAL">"서버 정책에 의해서  허가되지 않은 애플리케이션을 실행할 수 없습니다."</string>
+    <string name="sp_block_pop3_imap4_NORMAL">"서버 정책에 의해서  POP3/IMAP4 계정을 사용할 수 없습니다."</string>
+    <string name="sp_lgmdm_wipe_sdcard_NORMAL">"서버 정책에 의해서  메모리 카드가 포멧됩니다."</string>
+    <string name="sp_lgmdm_clear_appdata_NORMAL">"서버 정책에 의해서  애플리케이션의 데이타가 지워집니다."</string>
+    <string name="sp_lgmdm_clear_appcache_NORMAL">"서버 정책에 의해서  애플리케이션의 캐시가 지워집니다."</string>
+    <string name="sp_lgmdm_clear_appdefault_NORMAL">"서버 정책에 의해서  애플리케이션의 기본 작업 정보가 지워집니다."</string>
+    <string name="sp_lgmdm_block_vpn_NORMAL">서버 정책에 의해서 VPN을 통해서만 Data 연결이 가능 합니다.</string>
+    <string name="sp_block_microphone_NORMAL">"서버 정책에 의해서  오디오를 사용할 수 없습니다."</string>
+    <string name="sp_lgmdm_block_osp_NORMAL">서버 정책에 의해서 OSP를 사용할 수 없습니다.</string>
+    <string name="sp_lgmdm_block_3gdata_NORMAL">서버 정책에 의해서 3G 데이터 연결을 할 수 없습니다.</string>
+    <string name="sp_lgmdm_block_message_NORMAL">서버 정책에 의해서 메시지를 전달할 수 없습니다.</string>
+    <string name="sp_lgmdm_block_app_NORMAL">서버 정책에 의해서 애플리케이션을 사용할 수 없습니다.</string>
+    <string name="sp_lgmdm_recovery_password_NORMAL">복구 암호를 입력 하세요. 서버 정책에 의해 제공된 복구 암호를 모르실 경우, 서버 관리자에게 문의하시기 바랍니다.</string>
+    <string name="sp_lgmdm_block_factoryreset_NORMAL">서버 정책에 의해서 휴대폰의 모든 정보를 제거할 수 없습니다.</string>
+    <string name="sp_lgmdm_lockout_NORMAL">서버에 의해 화면 잠금이 설정되었습니다. 잠금 해제는 서버 관리자에게 문의하세요.</string>
+    <string name="sp_lock_pw_repeated_NORMAL">"반복 문자 '%s' 가 허용되지 않습니다."</string>
+    <string name="sp_lock_pw_sequential_NORMAL">"연속 문자 '%s' 가 허용되지 않습니다."</string>
+    <string name="sp_lgmdm_blockwifi_NORMAL">"서버 정책에 의해서  Wi-Fi를 사용할 수 없습니다."</string>
+    <string name="wifi_notify_open_AP_connect">개방형 네트워크는 보안에 취약할 수 있으니 사용해 주의하시기 바랍니다.</string>
+    <string name="wifi_notify_wep_ap_connect">선택한 AP는 무선 보안에 취약한 보안 방식을 사용하고 있으니 사용에 주의하시기 바랍니다.</string>
+    <string name="sp_block_usb_thering_NORMAL">"서버 정책에 의해서  USB 테더링을 사용할 수 없습니다."</string>
+    <string name="sp_block_wifi_hotspot_NORMAL">서버 정책에 의해서 Wi-Fi 핫스팟을 사용할 수 없습니다.</string>
+    <string name="sp_block_bt_tethering_NORMAL">"서버 정책에 의해서  Bluetooth 테더링을 사용할 수 없습니다."</string>
+    <string name="sp_lgmdm_block_sdcard_NORMAL">"서버 정책에 의해서  메모리 카드를 사용할 수 없습니다."</string>
+    <string name="sp_block_unknownsource_NORMAL">"서버 정책에 의해서  시판되지 않은 애플리케이션을 설치할 수 없습니다."</string>
+    <string name="sp_block_usb_debugging_NORMAL">"서버 정책에 의해서  USB 디버깅을 사용할 수 없습니다."</string>
+    <string name="remove_device_block_NORMAL">서버 정책에 의해서 기기 관리자를 제거할 수 없습니다.</string>
+    <string name="sp_lgmdm_EAS_password_SU_NORMAL">기호, 대문자중 하나를 입력하시오.</string>
+    <string name="sp_lgmdm_EAS_password_SL_NORMAL">기호, 소문자중 하나를 입력하시오.</string>
+    <string name="sp_lgmdm_block_loaction_NORMAL">서버 정책에 의해서 위치 서비스를 사용할 수 없습니다.</string>
+    <string name="sp_lgmdm_block_bluetooth_NORMAL">"서버 정책에 의해서  Bluetooth를 사용할 수 없습니다."</string>
+    <string name="sp_lgmdm_only_audio_bluetooth_NORMAL">서버 정책에 의해서 헤드셋만 사용할 수 있습니다.</string>
+    <string name="sp_lgmdm_block_media_sync_NORMAL">서버 정책에 의해서 미디어 동기화를 사용할 수 없습니다.</string>
+    <string name="sp_lgmdm_block_lg_software_NORMAL">서버 정책에 의해서 LG 소프트웨어를 사용할 수 없습니다.</string>
+    <string name="sp_lgmdm_block_camera_ptp_NORMAL">서버 정책에 의해서 카메라(PTP)를 사용할 수 없습니다.</string>
+    <string name="sp_block_usb_mass_storage_NORMAL">서버 정책에 의해서 대용량 저장장치를 사용할 수 없습니다.</string>
+    <string name="sp_lgmdm_erase_sdcard_NORMAL">서버 정책에 의해서 SD 카드를 지울 수 없습니다.</string>
+    <string name="sp_lgmdm_block_erase_memory_NORMAL">서버 정책에 의해서 내장 메모리를 지울 수 없습니다.</string>
+    <string name="sp_block_data_roaming_NORMAL">서버 정책에 의해서 데이터 로밍을 사용할 수 없습니다.</string>
+    <string name="sp_lgmdm_block_data_NORMAL">서버 정책에 의해서 데이터 연결을 할 수 없습니다.</string>
+    <string name="password_expired">암호가 만료되었습니다. 계속 사용하려면 암호를 변경해야합니다.</string>
+    <string name="sp_lgmdm_make_visible_NORMAL">비밀번호 표시</string>
+    <string name="password_expire_warn">비밀 번호는 %d일 후에 만료됩니다. 지금 비밀 번호를 변경하시겠습니까?</string>
+    <string name="sp_mdm_recovery_password_not_match">복구용 비밀번호가 일치하지 않습니다.</string>
+    <string name="reset_password_title">비밀번호 재설정</string>
+    <string name="reset_password_description">"복구 암호를 입력하세요. 이것은 귀하의 Outlook Web Access의 '계정> 옵션> 모바일 장치> 디스플레이 복구 암호'에서 찾을 수 있습니다."</string>
+    <string name="reset_password_next">다음</string>
+    <string name="reset_password_back">뒤로</string>
+    <string name="resetPassword">비밀번호 재설정</string>
+    <string name="sp_recovery_password_NORMAL">비밀번호 재설정</string>
+    <string name="sp_lgmdm_proceed_encrytion_NORMAL">서버 정책에 의해서 휴대전화 암호화를 진행합니다.</string>
+    <string name="sp_lgmdm_block_storage_encryption_NORMAL">서버 정책에 의해서 저장소 암호화를 사용할 수 없습니다.</string>
+    <string name="sp_Encryption_SHORT">암호화</string>
+    <string name="sp_encrypt_enabling_NORMAL">암호화 활성화 중...</string>
+    <string name="lockscreen_failed_attempts_almost_at_lockout" formatted="false">"전화기 잠금 해제에 %d 번 실패 하셨습니다. %d 번 더 실패 하면, 전화기가 락 아웃 상태가 됩니다. "</string>
+    <string name="lockscreen_failed_attempts_now_lockouting">전화기를 잠금 해제 하는데 %d 번 실패 하셨습니다. 전화기가 락 아웃 상태가 됩니다.</string>
+    <string name="sp_lgmdm_desc_install_app_NORMAL">사용자 동의 없이 애플리케이션 설치한다.</string>
+    <string name="sp_lgmdm_desc_uninstall_app_NORMAL">사용자 동의 없이 애플리케이션 제거한다.</string>
+    <string name="sp_lgmdm_desc_remove_admin_NORMAL">사용자가 관리자 앱을 삭제하는 것을 방지한다.</string>
+    <string name="sp_lgmdm_desc_dis_app_NORMAL">애플리케이션 실행을 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_install_app_NORMAL">애플리케이션 설치를 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_uninstall_app_NORMAL">애플리케이션 삭제를 제한한다.</string>
+    <string name="sp_lgmdm_desc_wipe_appdata_NORMAL">애플리케이션 정보를 삭제한다.</string>
+    <string name="sp_lgmdm_desc_dis_browser_NORMAL">인터넷 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_message_NORMAL">메시지 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_certification_NORMAL">자격증명을 관리한다.</string>
+    <string name="sp_lgmdm_desc_VPN_config_NORMAL">VPN을 설정한다.</string>
+    <string name="sp_lgmdm_desc_WiFi_config_NORMAL">Wi-Fi를 설정한다.</string>
+    <string name="sp_lgmdm_desc_dis_consumer_email_NORMAL">이메일 계정 등록을 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_popimap_email_NORMAL">POP/IMAP 이메일 개정 등록을 제한한다.</string>
+    <string name="sp_lgmdm_desc_manual_sync_roaming_NORMAL">로밍중에 동기화를 수동으로 하게한다.</string>
+    <string name="sp_lgmdm_desc_set_email_NORMAL">이메일 설정 과 계정 등록, 삭제를 한다.</string>
+    <string name="sp_lgmdm_desc_dis_data_roaming_NORMAL">데이터 로밍 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_enforce_lockout_NORMAL">폰 잠금을 강제한다.</string>
+    <string name="sp_lgmdm_desc_dis_mobile_data_NORMAL">모바일 네트워크 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_bluetooth_NORMAL">블루투스 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_tethering_NORMAL">테더링 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_external_memory_NORMAL">SD 카드 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_WiFi_NORMAL">Wi-Fi 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_usb_NORMAL">USB 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_gps_NORMAL">GPS 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_dis_screen_capture_NORMAL">화면 캡처 사용을 제한한다.</string>
+    <string name="sp_lgmdm_desc_recovery_password_NORMAL">비밀번호 재설정을 하게 한다.</string>
+    <string name="sp_lgmdm_desc_dis_network_location_NORMAL">네트워크를 통한 위치정보 사용을 제한한다.</string>
+    <string name="sp_lgmdm_lab_install_app_NORMAL">관리자에 의한 애플리케이션 설치</string>
+    <string name="sp_lgmdm_lab_uninstall_app_NORMAL">관리자에 의한 애플리케이션 제거</string>
+    <string name="sp_lgmdm_lab_remove_admin_NORMAL">관리자앱 삭제 방지</string>
+    <string name="sp_lgmdm_lab_dis_app_NORMAL">애플리케이션 실행 제한</string>
+    <string name="sp_lgmdm_lab_dis_install_app_NORMAL">애플리케이션 설치 제한</string>
+    <string name="sp_lgmdm_lab_dis_uninstall_app_NORMAL">애플리케이션 삭제 제한</string>
+    <string name="sp_lgmdm_lab_wipe_appdata_NORMAL">애플리케이션 정보 삭제</string>
+    <string name="sp_lgmdm_lab_dis_browser_NORMAL">인터넷 사용 제한</string>
+    <string name="sp_lgmdm_lab_dis_message_NORMAL">메시지 사용을 제한한다.</string>
+    <string name="sp_lgmdm_lab_certification_NORMAL">자격증명 관리</string>
+    <string name="sp_lgmdm_lab_VPN_config_NORMAL">VPN 설정</string>
+    <string name="sp_lgmdm_lab_WiFi_config_NORMAL">Wi-Fi 설정</string>
+    <string name="sp_lgmdm_lab_dis_consumer_email_NORMAL">이메일 계정등록 사용 제한</string>
+    <string name="sp_lgmdm_lab_dis_popimap_email_NORMAL">POP/IMAP 이메일 계정등록 사용 제한</string>
+    <string name="sp_lgmdm_lab_manual_sync_roaming_NORMAL">로밍 중 동기화 설정</string>
+    <string name="sp_lgmdm_lab_set_email_NORMAL">이메일 설정</string>
+    <string name="sp_lgmdm_lab_dis_data_roaming_NORMAL">데이터 로밍 사용 제한</string>
+    <string name="sp_lgmdm_lab_enforce_lockout_NORMAL">폰 잠금</string>
+    <string name="sp_lgmdm_lab_dis_mobile_data_NORMAL">모바일 네트워크 사용 제한</string>
+    <string name="sp_lgmdm_lab_dis_bluetooth_NORMAL">블루투스 사용 제한</string>
+    <string name="sp_lgmdm_lab_dis_tethering_NORMAL">테더링 사용 제한</string>
+    <string name="sp_lgmdm_lab_dis_external_memory_NORMAL">SD 카드 사용 제한</string>
+    <string name="sp_lgmdm_lab_dis_WiFi_NORMAL">Wi-Fi 사용 제한</string>
+    <string name="sp_lgmdm_lab_dis_usb_NORMAL">USB 사용 제한</string>
+    <string name="sp_lgmdm_lab_dis_gps_NORMAL">GPS 사용 제한</string>
+    <string name="sp_lgmdm_lab_dis_screen_capture_NORMAL">화면 캡처 사용 제한</string>
+    <string name="sp_lgmdm_lab_recovery_password_NORMAL">비밀번호 재설정</string>
+    <string name="sp_lgmdm_lab_dis_network_location_NORMAL">위치 정보 사용 제한</string>
+    <string name="STR_TITLETEXT_UICC_TYPEPUK_COMMON_SHORT">PUK 코드 입력</string>
+    <string name="STR_TITLETEXT_UICC_INVAILDPUK_COMMON_SHORT">"PUK 코드가 잘못되었습니다!
+남은 횟수 : %d회"</string>
+    <string name="STR_TITLETEXT_UICC_NEWPIN_COMMON_SHORT">새 PIN</string>
+    <string name="STR_TITLETEXT_UICC_VERIFYPIN_COMMON_SHORT">확인을 위해 새 SIM PIN 코드를 다시 입력하세요.</string>
+    <string name="STR_TITLETEXT_UICC_MISMATCHPINS_COMMON_SHORT">입력한 SIM PIN이 일치하지 않습니다. 다시 시도해 주세요.</string>
+    <string name="STR_TITLETEXT_UICC_REMAINING_COMMON_SHORT">"남은 횟수: "</string>
+    <string name="STR_TITLETEXT_UICC_PERMBLOCK_COMMON_SHORT">PUK이 차단되었습니다!</string>
+    <string name="STR_TITLETEXT_UICC_INVAILDPIN_COMMON_SHORT">"잘못된 PIN 코드 입니다! 
+남은 횟수 : %d 번"</string>
+    <string name="lockscreen_sim_pin_blocked">PIN1 잠김 상태입니다. PUK1 코드를 입력해 주세요.</string>
+    <string name="sp_keyguard_password_enter_pin_code_for_sub_NORMAL">PIN 코드를 입력하여 주세요</string>
+    <string name="CnapMmi">발신자 번호표시</string>
+    <string name="lockscreen_perso_locked_message">SIM/RUIM 카드가 Perso 잠김 상태입니다</string>
+    <string name="sp_sim_permlocked_alert_NORMAL">PUK를 10번 잘못 입력하여 SIM 카드가 잠겼습니다. 고객 센터에 문의해 주세요.</string>
+    <string name="sp_sim_puk_alert_NORMAL">시도가 한 번 더 실패하면 SIM 영구 잠김</string>
+    <string name="sp_3times_simpin_fail_NORMAL">PIN 코드 차단됨. PUK 코드를 입력하거나 사용자 지침 참조/고객 서비스 부서에 문의</string>
+    <string name="sp_sim_incorrect_puk_NORMAL">PUK 코드가 잘못되었습니다!</string>
+    <string name="sp_sim_remaining_count_NORMAL">남은 횟수: %d 회</string>
+    <string name="cancel_pin_screen">취소</string>
+    <string name="keyguard_pin_accepted">코드가 승인되었습니다!</string>
+    <string name="sp_enter_SIM_PIN_NORMAL">4-8 자리의 SIM PIN을 입력하세요.</string>
+    <string name="sp_not_match_SIM_PIN_NORMAL">죄송합니다, 입력한 값이 SIM PIN와 일치 하지 않습니다. 4-8자리의 PIN을 다시 입력해 주세요. %d번의 시도가 남았습니다.</string>
+    <string name="sp_last_attempt_SIM_PIN_NORMAL">"PIN을 입력하는 마지막 시도를 하여 SIM 카드가 잠겼습니다. 잠금을 해제 하려면 무선 서비스 제공 업체에 문의 하시길 바랍니다. SIM 카드를 잠금 해제 하기 위해 PUK을 입력하려면 계속을 누르세요. "</string>
+    <string name="sp_enter_SIM_PUK_NORMAL">8자리 SIM PUK 코드를 입력 해 주세요.</string>
+    <string name="sp_unlocked_puk_NORMAL">휴대폰이 잠금 해제되었습니다.</string>
+    <string name="sp_not_match_SIM_PUK_NORMAL">입력한 값이 PUK와 일치 하지 않습니다. 8자리의 PUK를 다시 입력해 주세요. %d번의 시도가 남았습니다.</string>
+    <string name="sp_permanently_blocked_NORMAL">PUK를 10회 잘못 입력하여 SIM 카드를 사용할 수 없습니다. 다른 SIM 카드를 사용하려면 통신사에 문의해 주세요.</string>
+    <string name="sp_dcm_puk_code_NORMAL">PUK코드 입력</string>
+    <string name="sp_dcm_wrong_pin_code_NORMAL">비밀번호입력오류</string>
+    <string name="sp_dcm_pin_not_recognized_NORMAL">인식되지 않는 PUK 코드</string>
+    <string name="sp_dcm_puknot_recognized_NORMAL">인식되지 않는 PUK 코드</string>
+    <string name="sp_addToDictionary_NORMAL">사전에 추가</string>
+    <string name="mismatchPin2_LGEres">입력한 PIN2가 일치하지 않습니다.</string>
+    <string name="invalidPin2">4-8자리 수로 구성된 PIN2를 입력합니다.</string>
+    <string name="STR_POPUPMESSAGE_SECURITY_SETPINCODEREQON_COMMON_NORMAL">핀 코드 요청을 설정하세요</string>
+    <string name="sp_pin2_is_blocked_NORMAL">PIN2 기능이 정지되어 변경할 수 없습니다.</string>
+    <string name="PUK2_blocked_LGEres">PUK2가 차단되었습니다.</string>
+    <string name="Pin2Mmi">PIN2 변경</string>
+    <string name="PukMmi">PUK 변경</string>
+    <string name="Puk2Mmi">PUK2 변경</string>
+    <string name="badPuk2">입력한 PUK2가 올바르지 않습니다. 다시 시도해 주세요.</string>
+    <string name="badPin2_LGEres">이전 PIN2이 올바르지 않습니다.</string>
+    <string name="STR_res_USA_NORMAL">미국</string>
+    <string name="STR_res_ALGERIA_NORMAL">알제리</string>
+    <string name="STR_res_ANGOLA_NORMAL">앙골라</string>
+    <string name="STR_res_ARGENTINA_NORMAL">아르헨티나</string>
+    <string name="STR_res_BAHAMAS_NORMAL">바하마</string>
+    <string name="STR_res_BANGLADESH_NORMAL">방글레데시</string>
+    <string name="STR_res_BARBADOS_NORMAL">바베이도스</string>
+    <string name="STR_res_BELARUS_NORMAL">벨로루시</string>
+    <string name="STR_res_BELIZE_NORMAL">벨리즈</string>
+    <string name="STR_res_BERMUDA_NORMAL">버뮤다(UK)</string>
+    <string name="STR_res_BOTSWANA_NORMAL">보츠와나</string>
+    <string name="STR_res_BRAZIL_NORMAL">브라질</string>
+    <string name="STR_res_BRITISHVIRGINISLANDS_NORMAL">영국령 버진 아일랜드 (영국)</string>
+    <string name="STR_res_CAMEROON_NORMAL">카메룬</string>
+    <string name="STR_res_CANADA_NORMAL">캐나다</string>
+    <string name="STR_res_CAPEVERDE_NORMAL">카보베르데</string>
+    <string name="STR_res_CAYMANISLANDS_NORMAL">케이맨 제도 (영국)</string>
+    <string name="STR_res_CENTRALAFRICANREP_SHORT">중앙 아프리카 공화국</string>
+    <string name="STR_res_CHILE_NORMAL">칠레</string>
+    <string name="STR_res_CHINA_NORMAL">중국</string>
+    <string name="STR_res_COLOMBIA_NORMAL">콜롬비아</string>
+    <string name="STR_res_COTEDIVOIRE_NORMAL">코트디부아르</string>
+    <string name="STR_res_CZECHREPUBLIC_NORMAL">체코</string>
+    <string name="STR_res_DEMOCRATICREPCONGO_SHORT">콩고 민주 공화국</string>
+    <string name="STR_res_DENMARK_NORMAL">덴마크</string>
+    <string name="STR_res_DJIBOUTI_NORMAL">지부티</string>
+    <string name="STR_res_DOMINICANREP_SHORT">도미니카 공화국</string>
+    <string name="STR_res_ECUADOR_NORMAL">에콰도르</string>
+    <string name="STR_res_EGYPT_NORMAL">이집트</string>
+    <string name="STR_res_ELSALVADOR_NORMAL">엘살바도르</string>
+    <string name="STR_res_ESTONIA_NORMAL">에스토니아</string>
+    <string name="STR_res_ETHIOPIA_NORMAL">에티오피아</string>
+    <string name="STR_res_FIJI_NORMAL">피지</string>
+    <string name="STR_res_GAMBIA_NORMAL">감비아</string>
+    <string name="STR_res_GHANA_NORMAL">가나</string>
+    <string name="STR_res_GUAM_NORMAL">괌 (미국)</string>
+    <string name="STR_res_GUATEMALA_NORMAL">과테말라</string>
+    <string name="STR_res_HAITI_NORMAL">아이티</string>
+    <string name="STR_res_HONDURAS_NORMAL">온두라스</string>
+    <string name="STR_res_HONGKONG_NORMAL">홍콩 (중화 인민 공화국)</string>
+    <string name="STR_res_HUNGARY_NORMAL">헝가리</string>
+    <string name="STR_res_ICELAND_NORMAL">아이슬란드</string>
+    <string name="STR_res_INDIA_NORMAL">인도</string>
+    <string name="STR_res_INDONESIA_NORMAL">인도네시아</string>
+    <string name="STR_res_IRAQ_NORMAL">이라크</string>
+    <string name="STR_res_IRELAND_NORMAL">아일랜드</string>
+    <string name="STR_res_ISRAEL_NORMAL">이스라엘</string>
+    <string name="STR_res_JAMAICA_NORMAL">자메이카</string>
+    <string name="STR_res_JAPAN_NORMAL">일본</string>
+    <string name="STR_res_JORDAN_NORMAL">요르단</string>
+    <string name="STR_res_KENYA_NORMAL">케냐</string>
+    <string name="STR_res_KOREANORTH_NORMAL">북한</string>
+    <string name="STR_res_KOREASOUTH_NORMAL">대한민국</string>
+    <string name="STR_res_KUWAIT_NORMAL">쿠웨이트</string>
+    <string name="STR_res_LAOS_NORMAL">라오스</string>
+    <string name="STR_res_LATVIA_NORMAL">라트비아</string>
+    <string name="STR_res_MADAGASCAR_NORMAL">마다가스카르</string>
+    <string name="STR_res_MALAYSIA_NORMAL">말레이시아</string>
+    <string name="STR_res_MALI_NORMAL">말리</string>
+    <string name="STR_res_MAURITANIA_NORMAL">모리타니아</string>
+    <string name="STR_res_MAURITIUS_NORMAL">모리셔스</string>
+    <string name="STR_res_MEXICO_NORMAL">멕시코</string>
+    <string name="STR_res_MOLDOVA_NORMAL">몰도바</string>
+    <string name="STR_res_MONGOLIA_NORMAL">몽골</string>
+    <string name="STR_res_MOROCCO_NORMAL">모로코</string>
+    <string name="STR_res_MOZAMBIQUE_NORMAL">모잠비크</string>
+    <string name="STR_res_MYANMAR_NORMAL">미얀마</string>
+    <string name="STR_res_NAMIBIA_NORMAL">나미비아</string>
+    <string name="STR_res_NETHERLANDASANTILLES_NORMAL">네덜란드령 안틸레스 (네덜란드)</string>
+    <string name="STR_res_NEWZEALAND_NORMAL">뉴질랜드</string>
+    <string name="STR_res_NICARAGUA_NORMAL">니카라과</string>
+    <string name="STR_res_NIGER_NORMAL">니제르</string>
+    <string name="STR_res_NIGERIA_NORMAL">나이지리아</string>
+    <string name="STR_res_NORTHERNMARIANAISLD_NORMAL">북 마리 아나 제도, 사이판 (미국)</string>
+    <string name="STR_res_NORWAY_NORMAL">노르웨이</string>
+    <string name="STR_res_OMAN_NORMAL">오만</string>
+    <string name="STR_res_PAKISTAN_NORMAL">파키스탄</string>
+    <string name="STR_res_PERU_NORMAL">페루</string>
+    <string name="STR_res_POLAND_NORMAL">폴란드</string>
+    <string name="STR_res_PORTUGAL_NORMAL">포르투갈</string>
+    <string name="STR_res_PUERTORICO_NORMAL">푸에르 토리코 (미국)</string>
+    <string name="STR_res_ROMANIA_NORMAL">루마니아</string>
+    <string name="STR_res_RUSSIANFEDERATION_NORMAL">러시아 연방</string>
+    <string name="STR_res_RWANDESEREPUBLIC_NORMAL">Rwandese 공화국</string>
+    <string name="STR_res_SAUDIARABIA_NORMAL">사우디아라비아</string>
+    <string name="STR_res_SOUTHAFRICA_NORMAL">남아프리카 공화국</string>
+    <string name="STR_res_SURINAME_NORMAL">수리남</string>
+    <string name="STR_res_SWAZILAND_NORMAL">스와질란드</string>
+    <string name="STR_res_SWEDEN_NORMAL">스웨덴</string>
+    <string name="STR_res_TANZANIA_NORMAL">탄자니아</string>
+    <string name="STR_res_THAILAND_NORMAL">태국</string>
+    <string name="STR_res_TOGOLESSREPUBLIC_NORMAL">Togolese 공화국</string>
+    <string name="STR_res_TONGA_NORMAL">통가</string>
+    <string name="STR_res_TRINIDADANDTOBAGO_NORMAL">트리니다드 토바고</string>
+    <string name="STR_res_UGANDA_NORMAL">우간다</string>
+    <string name="STR_res_UKRAINE_NORMAL">우크라이나</string>
+    <string name="STR_res_USVIRGINISLANDS_NORMAL">미국 버진 아일랜드(미국)</string>
+    <string name="STR_res_UZBERKISTAN_NORMAL">우즈베키스탄</string>
+    <string name="STR_res_VENEZUELA_NORMAL">베네수엘라</string>
+    <string name="STR_res_YEMEN_NORMAL">예멘</string>
+    <string name="STR_res_ZAMBIA_NORMAL">잠비아</string>
+    <string name="STR_res_AFGHANISTAN_NORMAL">아프카니스칸</string>
+    <string name="STR_res_ALBALIA_NORMAL">알바니아</string>
+    <string name="STR_res_AMERICANSAMOA_NORMAL">아메리칸 사모아 (미국)</string>
+    <string name="STR_res_ANDORRA_NORMAL">안도라</string>
+    <string name="STR_res_ANGUILLA_NORMAL">앙귈라</string>
+    <string name="STR_res_ANTIGUAANDBARBUDA_NORMAL">앤티가바부다</string>
+    <string name="STR_res_ARMENIA_NORMAL">아르메니아</string>
+    <string name="STR_res_ARUBA_NORMAL">아루바</string>
+    <string name="STR_res_AUSTRALIA_NORMAL">오스트레일리아</string>
+    <string name="STR_res_AUSTRIA_NORMAL">오스트리아</string>
+    <string name="STR_res_AZERBAIJANIREPUBLIC_NORMAL">아제르바이잔어 공화국</string>
+    <string name="STR_res_BAHRAIN_NORMAL">바레인</string>
+    <string name="STR_res_BELGIUM_NORMAL">벨기에</string>
+    <string name="STR_res_BENIN_NORMAL">베냉</string>
+    <string name="STR_res_BHUTAN_NORMAL">부탄</string>
+    <string name="STR_res_BOLIVIA_NORMAL">볼리비아</string>
+    <string name="STR_res_BOSNIAANDHERZEGOVINA_NORMAL">보스니아 헤르체고비나</string>
+    <string name="STR_res_BRUNEIDARUSSALAM_NORMAL">브루나이</string>
+    <string name="STR_res_BULGARIA_NORMAL">불가리아</string>
+    <string name="STR_res_BURKINAFASO_NORMAL">부르키나 파소</string>
+    <string name="STR_res_BURUNDI_NORMAL">부룬디</string>
+    <string name="STR_res_CAMBODIA_NORMAL">캄보디아</string>
+    <string name="STR_res_CHAD_NORMAL">차드</string>
+    <string name="STR_res_COMOROS_NORMAL">코모로</string>
+    <string name="STR_res_COOKISLAND_NORMAL">쿡 제도 (뉴질랜드)</string>
+    <string name="STR_res_COSTARICA_NORMAL">코스타리카</string>
+    <string name="STR_res_CROATIA_NORMAL">크로아티아</string>
+    <string name="STR_res_CUBA_NORMAL">쿠바</string>
+    <string name="STR_res_CYPRUS_NORMAL">키프로스</string>
+    <string name="STR_res_DOMINICA_NORMAL">도미니카</string>
+    <string name="STR_res_EASTTIMOR_NORMAL">동티모르</string>
+    <string name="STR_res_EQUATORIALGUINEA_NORMAL">적도기니</string>
+    <string name="STR_res_ERITREA_NORMAL">에리트레아</string>
+    <string name="STR_res_FAROEISLANDS_NORMAL">파로에 군도 (덴마크)</string>
+    <string name="STR_res_FEDERATEDSMICRONESIA_NORMAL">미크로네시아 연방</string>
+    <string name="STR_res_FINLAND_NORMAL">핀란드</string>
+    <string name="STR_res_FRANCE_NORMAL">프랑스</string>
+    <string name="STR_res_FRENCHGUIANA_NORMAL">프랑스령 기아나 (프랑스)</string>
+    <string name="STR_res_FRENCHPOLYNESIA_NORMAL">프랑스령 폴리네시아 (프랑스)</string>
+    <string name="STR_res_GABONESEREPUBLIC_NORMAL">Gabonese 공화국</string>
+    <string name="STR_res_GEORGIA_NORMAL">그루지야</string>
+    <string name="STR_res_GERMANY_NORMAL">독일</string>
+    <string name="STR_res_GIBRALTAR_NORMAL">지브롤터 (영국)</string>
+    <string name="STR_res_GREECE_NORMAL">그리스</string>
+    <string name="STR_res_GREENLAND_NORMAL">그린랜드 (덴마크)</string>
+    <string name="STR_res_GRENADA_NORMAL">그레나다</string>
+    <string name="STR_res_GUADELOUPE_NORMAL">과들루프 (프랑스)</string>
+    <string name="STR_res_GUINEA_NORMAL">기니</string>
+    <string name="STR_res_GUINEABISSAU_NORMAL">기니 비사우</string>
+    <string name="STR_res_GUYANA_NORMAL">가이아나</string>
+    <string name="STR_res_IRAN_NORMAL">이란</string>
+    <string name="STR_res_ITALY_NORMAL">이탈리아</string>
+    <string name="STR_res_KAZAKHSTAN_NORMAL">카자흐스탄</string>
+    <string name="STR_res_KIRIBATI_NORMAL">키리바시</string>
+    <string name="STR_res_KYRGYZREPUBLIC_NORMAL">키르 키즈 공화국</string>
+    <string name="STR_res_LEBANON_NORMAL">레바논</string>
+    <string name="STR_res_LESOTHO_NORMAL">레소토</string>
+    <string name="STR_res_LIBERIA_NORMAL">라이베리아</string>
+    <string name="STR_res_LIBYA_NORMAL">리비아</string>
+    <string name="STR_res_LIECHTENSTEIN_NORMAL">리히텐슈타인</string>
+    <string name="STR_res_LITHUANIA_NORMAL">리투아니아</string>
+    <string name="STR_res_LUXEMBOURG_NORMAL">룩셈부르크</string>
+    <string name="STR_res_MACAO_NORMAL">마카오 (중화 인민 공화국)</string>
+    <string name="STR_res_MALAWI_NORMAL">말라위</string>
+    <string name="STR_res_MALDIVES_NORMAL">몰디브</string>
+    <string name="STR_res_MALTA_NORMAL">몰타</string>
+    <string name="STR_res_MARITIME_NORMAL">마리 타임</string>
+    <string name="STR_res_MARSHALL_NORMAL">마셜 제도</string>
+    <string name="STR_res_MARTINIQUE_NORMAL">마르티니크 (프랑스)</string>
+    <string name="STR_res_MONACO_NORMAL">모나코</string>
+    <string name="STR_res_MONTSERRAT_NORMAL">몬트 세 라트 (영국)</string>
+    <string name="STR_res_NAURU_NORMAL">나우루</string>
+    <string name="STR_res_NEPAL_NORMAL">네팔</string>
+    <string name="STR_res_NETHERLANDS_NORMAL">네덜란드</string>
+    <string name="STR_res_NEWCALEDONIA_NORMAL">뉴 칼레도니아 (프랑스)</string>
+    <string name="STR_res_PALAU_NORMAL">팔라우</string>
+    <string name="STR_res_PANAMA_NORMAL">파나마</string>
+    <string name="STR_res_PAPUANEWGUINEA_NORMAL">파푸아뉴기니</string>
+    <string name="STR_res_PARAGUAY_NORMAL">파라과이</string>
+    <string name="STR_res_PHILIPPINESS_NORMAL">필리핀</string>
+    <string name="STR_res_QATAR_NORMAL">카타르</string>
+    <string name="STR_res_REUNION_NORMAL">레위니옹 (프랑스)</string>
+    <string name="STR_res_REMACEDONIA_NORMAL">마케도니아 공화국</string>
+    <string name="STR_res_RECONGO_NORMAL">콩고 공화국</string>
+    <string name="STR_res_SAOTOME_NORMAL">상 프린시페</string>
+    <string name="STR_res_SAINTKITTS_NORMAL">세인트 키츠 네비스</string>
+    <string name="STR_res_SAINTLUCIA_NORMAL">세인트 루시아</string>
+    <string name="STR_res_SAINTPIERRE_NORMAL">세인트 피에르 미퀠론 (프랑스)</string>
+    <string name="STR_res_SAINTVINCENT_NORMAL">세인트 빈센트 그레나딘</string>
+    <string name="STR_res_SAMOA_NORMAL">사모아</string>
+    <string name="STR_res_SANMARINO_NORMAL">산마리노</string>
+    <string name="STR_res_SENEGAL_NORMAL">세네갈</string>
+    <string name="STR_res_SERBIAMONTENEGRO_NORMAL">세르비아 몬테네그로</string>
+    <string name="STR_res_SEYCHELLES_NORMAL">세이쉘</string>
+    <string name="STR_res_SIERRALEONE_NORMAL">시에라리온</string>
+    <string name="STR_res_SINGAPORE_NORMAL">싱가포르</string>
+    <string name="STR_res_SLOVAKIA_NORMAL">슬로바키아</string>
+    <string name="STR_res_SLOVENIA_NORMAL">슬로베니아</string>
+    <string name="STR_res_SOLOMONISLANDS_NORMAL">솔로몬제도</string>
+    <string name="STR_res_SOMALIA_NORMAL">소말리아</string>
+    <string name="STR_res_SPAIN_NORMAL">스페인</string>
+    <string name="STR_res_SRILANKA_NORMAL">스리랑카</string>
+    <string name="STR_res_SUDAN_NORMAL">수단</string>
+    <string name="STR_res_SWITZERLAND_NORMAL">스위스</string>
+    <string name="STR_res_SYRIA_NORMAL">시리아</string>
+    <string name="STR_res_TAIWAN_NORMAL">대만</string>
+    <string name="STR_res_TAJIKISTAN_NORMAL">타자키스탄</string>
+    <string name="STR_res_TUNISIA_NORMAL">튀니지</string>
+    <string name="STR_res_TURKEY_NORMAL">터키</string>
+    <string name="STR_res_TURKMENISTAN_NORMAL">투르크메니스탄</string>
+    <string name="STR_res_TURKSANDCAICOS_NORMAL">터크스 케이 커스 제도 (영국)</string>
+    <string name="STR_res_UNITEDARABEMIRATES2_NORMAL">아랍에미리트</string>
+    <string name="STR_res_ABUDHABI_NORMAL">아랍 에미레이트 (아부 다비)</string>
+    <string name="STR_res_UNITEDARABEMIRATES_NORMAL">아랍 에미레이트 (두바이)</string>
+    <string name="STR_res_UNITEDKINGDOM_NORMAL">영국</string>
+    <string name="STR_res_URUGUAY_NORMAL">우루과이</string>
+    <string name="STR_res_VANUATU_NORMAL">바누아투</string>
+    <string name="STR_res_VATICANCITYSTATE_NORMAL">바티칸 시티 주</string>
+    <string name="STR_res_VIETNAM_NORMAL">베트남</string>
+    <string name="STR_res_WALLISNADFUTUNA_NORMAL">월리스 푸 투나 (프랑스)</string>
+    <string name="STR_res_ZIMBABWE_NORMAL">짐바브웨</string>
+    <string name="STR_res_NEWCOUNTRY_NORMAL">새 국가_1</string>
+    <string name="keyguard_password_enter_pin_code">비밀번호(PIN)입력</string>
+    <string name="sp_backup_pin_NORMAL">백업 PIN</string>
+    <string name="sp_backup_pin_intruction_NORMAL">Google 계정을 잊었을 경우 백업 PIN을 입력하세요.</string>
+    <string name="limited_service">긴급통화만 가능합니다.</string>
+    <string name="authentication_reject">SIM 카드 허용불가</string>
+    <string name="imsi_unknown_hlr">제공되지 않는 SIM MM #2</string>
+    <string name="illegal_ms">SIM 카드 허용불가 MM #3</string>
+    <string name="illegal_me">전화 허용불가 MM #6</string>
+    <string name="sp_lockscreen_emergencycall_press_and_hold_MLINE">"긴급 통화
+길게 누르세요"</string>
+    <string name="sp_restart_confirm_new_NORMAL">휴대전화를 다시 시작합니다. 계속하시겠습니까?</string>
+    <string name="sp_connection_modem_NORMAL">모뎀을 통한 인터넷 연결</string>
+    <string name="sp_connection_ethernet_NORMAL">이더넷을 통한 인터넷 연결</string>
+    <string name="sp_charge_only_title_NORMAL">충전이 시작되었습니다.</string>
+    <string name="sp_usb_tethering_title_NORMAL">인터넷 공유가 시작 되었습니다.</string>
+    <string name="sp_media_sync_title_NORMAL">미디어 싱크가 시작되었습니다.</string>
+    <string name="sp_pc_software_title_NORMAL">PC소프트웨어로 연결합니다.</string>
+    <string name="sp_audio_vol_down_automatically_toast_NORMAL">청력 보호를 위해 미디어 볼륨을 자동으로 줄입니다.</string>
+    <string name="sp_RestrictedWaitTitle_NORMAL">잠시만 기다려 주세요.</string>
+    <string name="sp_RestrictedOnCs_NORMAL">음성 서비스는 제한 됩니다.</string>
+    <string name="sp_RestrictedOnPs_NORMAL">데이터 서비스는 제한 됩니다.</string>
+    <string name="sp_RestrictedOnCsPs_NORMAL">음성/데이터 서비스가 제한 됩니다.</string>
+    <string name="kt_lockscreen_network_locked_message">"지원할 수 없는 카드입니다.
+카드를 교체하여 주십시요."</string>
+    <string name="kt_block_pukcode_message">"PUK 연속10회 입력오류
+USIM카드 사용불가
+USIM카드 재 구매 필요"</string>
+    <string name="kt_msg_pin_code_block">"PIN 연속3회 입력오류
+'지점'방문필요
+PUK연속10회
+입력오류시
+카드 사용불가"</string>
+    <string name="skt_title_password_enter_pin_code">비밀번호(PIN)입력</string>
+    <string name="skt_password_guide_pin_code">비밀번호(PIN)를 4~8자리 숫자로 입력해 주세요.</string>
+    <string name="skt_title_password_wrong_pin_code">비밀번호입력오류</string>
+    <string name="skt_msg_password_wrong_pin_code">"비밀번호(PIN)가
+잘못 입력되었습니다.
+추가 입력 기회는
+%d번 입니다.
+다시 확인하시고
+입력해 주세요."</string>
+    <string name="skt_msg_pin_code_block">"비밀번호(PIN)가 3회
+잘못 입력되었습니다.
+해제코드(PUK)를
+입력해 주시기 바랍니다.
+해제코드를 10회 잘못 
+입력하면 USIM카드가 
+영구 폐기됩니다."</string>
+    <string name="skt_password_guide_puk_code">해제코드(PUK)를 입력해 주세요.</string>
+    <string name="skt_msg_puk_code_block">"USIM 카드 사용불가
+해제코드(PUK)가 10회 잘못
+입력되어 USIM카드를 더 이상
+사용하실 수 없습니다.
+새 USIM카드를 구매하시기
+바랍니다."</string>
+    <string name="skt_msg_password_wrong_puk_code" formatted="false">"해제코드(PUK)가 %d회
+잘못 입력되었습니다.
+남은 입력기회는 %d번입니다.
+해제코드를 모르실 경우 즉시
+대리점으로 방문해 주시기 바랍니다."</string>
+    <string name="skt_password_guide_new_pin_code">"새 비밀번호(PIN)를 4~8자리 숫자로
+입력해 주세요."</string>
+    <string name="skt_password_guide_verify_new_pin_code">"새 비밀번호(PIN)를 4~8자리 숫자로
+(재)입력해 주세요."</string>
+    <string name="skt_title_password_enter_puk_code">해제코드(PUK) 입력</string>
+    <string name="skt_title_password_wrong_puk_code">해제코드입력오류</string>
+    <string name="skt_title_password_enter_new_pin_code">새 비밀번호(PIN)입력</string>
+    <string name="skt_msg_verify_new_pin_error">"새 비밀번호(PIN)입력 값과
+재입력 값이 틀립니다.
+새 비밀번호(PIN)를 
+다시 입력해 주십시오."</string>
+    <string name="skt_title_puk_code_block">USIM카드 사용불가</string>
+    <string name="skt_title_usim_persocheck">타 USIM 사용 제한</string>
+    <string name="skt_password_guide_usim_perso">"비밀번호를 4자리 숫자로
+입력해 주십시오."</string>
+    <string name="skt_title_usim_persocheck_error">비밀번호 입력 오류</string>
+    <string name="skt_msg_password_wrong_usim_perso">"비밀번호가
+잘못 입력되었습니다.
+다시 확인하시고
+입력해 주십시오."</string>
+    <string name="skt_msg_registered_new_pin_code">"새 비밀번호(PIN)가
+성공적으로
+등록되었습니다."</string>
+    <string name="skt_msg_unsupport_overseas_card">미지원 해외 USIM카드 입니다.</string>
+    <string name="lgt_msg_password_wrong_pin_code">"PIN 입력 오류 남은 횟수 %d 회.
+연속 3회 입력 오류시 영업점 방문 필요합니다."</string>
+    <string name="lgt_msg_password_wrong_puk_code" formatted="false">"잘못된 해제 코드(PUK)가 %d회 입력되었습니다.
+남은 입력 기회는 %d번 입니다.
+해제 코드가 기억나지 않는 경우 대리점을 방문해 주시기 바랍니다."</string>
+    <string name="lgt_msg_pin_code_block">"PIN 입력 연속 3회 오류.
+영업점을 방문하세요."</string>
+    <string name="lgt_msg_puk_code_block">"PUK 입력 연속 10회 오류로 UICC 영구 사용 불가.
+UICC 교체를 위해 영업점을 방문하세요."</string>
+    <string name="sp_copied_to_clipboard_NORMAL">클립보드에 복사되었습니다.</string>
+    <string name="sp_security_check_NORMAL">보안 확인</string>
+    <string name="sp_half_failed_attempt_NORMAL">아래의 문장을 빈칸 포함하여 모두 입력하세요.</string>
+    <string name="sp_wrong_password_NORMAL">비밀번호 오류</string>
+    <string name="sp_failed_attempt_alert_NORMAL">한번 더 비밀번호를 잘못 입력하면 휴대전화의 모든 데이터가 삭제 됩니다.</string>
+    <string name="lockscreen_network_locked_message">네트워크 잠김</string>
+    <string name="lockscreen_service_provider_locked_message">서비스 제공자 잠금</string>
+    <string name="lockscreen_sim_network_subset_locked_message">휴대전화가 SIM 네트워크 부분잠김 상태입니다.</string>
+    <string name="lockscreen_sim_corporate_locked_message">휴대전화가 SIM 기업 잠김 상태입니다.</string>
+    <string name="lockscreen_sim_sim_locked_message">휴대전화가 SIM 잠김 상태입니다.</string>
+    <string name="lockscreen_otp_failed_locked_message">보안 에러</string>
+    <string name="skt_lockscreen_sim_unlock_progress_dialog_message">USIM 카드 잠금 해제 중...</string>
+    <string name="sp_wifi_hotspot_maxClientReached_title_NORMAL">최대 연결허용 개수를 초과하였습니다.</string>
+    <string name="sp_wifi_hotspot_maxClientReached_message_NORMAL">새로운 장치를 연결하려면 연결되어 있는 장치 중 하나 이상의 장치를 해제해 주세요.</string>
+    <string name="sp_wifi_block_remove_att_ssid_NORMAL">AT&amp;T SSID 를 제거할 수 없습니다.</string>
+    <string name="cannot_ringtone">보호된 파일입니다. 벨소리로 설정할 수 없습니다.</string>
+    <string name="STR_TITLETEXT_UICC_USIMPERSOCHECK">USIM 잠금 설정</string>
+    <string name="STR_TITLETEXT_USIMPERSO_CODE_RETRY_LEFT">"잘못된 타 USIM 제한 번호입니다.
+(%d/5)회 남았습니다."</string>
+    <string name="STR_TITLETEXT_USIMPERSO_CODE_CHANGE_EXCEED">"해제 시도 횟수를 초과하였습니다.
+핸드폰을 재시작 하시거나, 가까운
+서비스 센터를 방문하여 주십시오."</string>
+    <string name="kt_msg_password_wrong_puk_code">"PUK 입력오류.
+연속10회 입력오류시
+USIM카드 영구사용불가
+현재 남은횟수 (%d/10)회
+사이버 고객센터에서
+본인인증후 조회하거나
+반드시 가까운 지점을
+방문하시기 바랍니다."</string>
+    <string name="sp_Restart_NORMAL">전원 끄고 다시 시작</string>
+    <string name="sp_usb_charger_title_NORMAL">충전 전용</string>
+    <string name="sp_usbtype_mtp_title_NORMAL">미디어 파일 전송(MTP)</string>
+    <string name="sp_usb_tethering_NORMAL">인터넷 공유(테더링)</string>
+    <string name="sp_lg_software_NORMAL">LG 소프트웨어</string>
+    <string name="usb_ptp_title">사진전송(PTP)</string>
+    <string name="sp_warning_not_available_during_call_NORMAL">음성 통화중 이거나 긴급통화 모드일 때는 사용할 수 없습니다.</string>
+</resources>

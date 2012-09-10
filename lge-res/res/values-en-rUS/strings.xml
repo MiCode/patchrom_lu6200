@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="global_action_power_restart">Power off and restart</string>
+    <string name="unsupportedMmiCode">Dialed MMI Code is not supported.</string>
+    <string name="media_scan_status_message">Try again after scanning media files.</string>
+    <string name="sp_lock_pw_repeated_NORMAL">"Repeated characters '%s' are not allowed."</string>
+    <string name="sp_lock_pw_sequential_NORMAL">"Sequential characters '%s' are not allowed."</string>
+    <string name="wifi_notify_open_AP_connect">Open networks may be vulnerable to security. Be careful to use.</string>
+    <string name="wifi_notify_wep_ap_connect">The selected AP using a wireless security system is vulnerable to security. Be careful to use.</string>
+    <string name="sp_lgmdm_block_media_sync_NORMAL">Media sync (MTP) is disabled by server policy</string>
+    <string name="sp_lgmdm_block_camera_ptp_NORMAL">Camera (PTP) is disabled by server policy</string>
+    <string name="sp_mdm_recovery_password_not_match">Recovery Password does not match</string>
+    <string name="reset_password_description">"Enter recovery password. It could be found under Outlook Web Access's Account > Option > Mobile devices > Display recovery password."</string>
+    <string name="sp_lgmdm_desc_dis_app_NORMAL">Disable the ability to run applications</string>
+    <string name="sp_lgmdm_desc_dis_install_app_NORMAL">Disable the ability to install applications</string>
+    <string name="sp_lgmdm_desc_dis_uninstall_app_NORMAL">Disable the ability to uninstall applications</string>
+    <string name="sp_lgmdm_desc_dis_browser_NORMAL">Disable the use of the browser</string>
+    <string name="sp_lgmdm_desc_dis_popimap_email_NORMAL">Prevent to configure POP3/IMAP email account</string>
+    <string name="sp_lgmdm_desc_set_email_NORMAL">Add/delete email account and edit email setting</string>
+    <string name="sp_lgmdm_desc_dis_data_roaming_NORMAL">Disable the use of data roaming</string>
+    <string name="sp_lgmdm_desc_dis_mobile_data_NORMAL">Disable the use of the mobile network</string>
+    <string name="sp_lgmdm_desc_dis_bluetooth_NORMAL">Disable the use of Bluetooth</string>
+    <string name="sp_lgmdm_desc_dis_tethering_NORMAL">Disable the use of tethering</string>
+    <string name="sp_lgmdm_desc_dis_external_memory_NORMAL">Disable the use of the SD card</string>
+    <string name="sp_lgmdm_desc_dis_WiFi_NORMAL">Disable the use of Wi-Fi</string>
+    <string name="sp_lgmdm_desc_dis_usb_NORMAL">Disable the use of the USB</string>
+    <string name="sp_lgmdm_desc_dis_gps_NORMAL">Disable the use of GPS</string>
+    <string name="sp_lgmdm_desc_dis_screen_capture_NORMAL">Disable the ability to capture the screen</string>
+    <string name="sp_lgmdm_desc_dis_network_location_NORMAL">Disable the use of location information through the network</string>
+    <string name="sp_lgmdm_lab_dis_consumer_email_NORMAL">Disable consumer email setting</string>
+    <string name="sp_lgmdm_lab_dis_popimap_email_NORMAL">Disable POP3/IMAP email setting</string>
+    <string name="sp_lgmdm_lab_set_email_NORMAL">Setup Email</string>
+    <string name="sp_sim_remaining_count_NORMAL">Remains: %d time(s)</string>
+    <string name="keyguard_pin_accepted">Code accepted!</string>
+    <string name="sp_permanently_blocked_NORMAL">"Your 10th attempt to enter a PUK has permanently disabled your SIM card. Please contact your wireless service provider to obtain another SIM card.
+"</string>
+    <string name="STR_res_BERMUDA_NORMAL">Bermuda (UK)</string>
+    <string name="STR_res_COTEDIVOIRE_NORMAL">"Cote d'lvoire"</string>
+    <string name="STR_res_REUNION_NORMAL">Reunion(France)</string>
+    <string name="STR_res_TURKSANDCAICOS_NORMAL">Turks and Caicos Islands (UK)</string>
+    <string name="STR_res_VIETNAM_NORMAL">Vietnam</string>
+    <string name="limited_service">Emergency calls only</string>
+    <string name="sp_charge_only_title_NORMAL">Charging has started.</string>
+    <string name="sp_usb_tethering_title_NORMAL">USB tethering has started.</string>
+    <string name="sp_media_sync_title_NORMAL">Media sync has started.</string>
+    <string name="sp_audio_vol_down_automatically_toast_NORMAL">Volume is automatically turned down to protect your ears.</string>
+    <string name="skt_msg_password_wrong_pin_code">"You have entered
+an incorrect PIN.
+You can try to enter
+your PIN %d time(s)
+Enter the PIN again."</string>
+    <string name="skt_msg_pin_code_block">"You have entered
+an incorrect PIN
+3 times
+Enter the PUK
+If you enter
+an incorrect PUK
+10 times
+device will be permanently locked."</string>
+    <string name="skt_password_guide_puk_code">Enter PUK Code</string>
+    <string name="skt_msg_puk_code_block">"Unable to use USIM. You have entered
+an incorrect PUK 10 times and
+the USIM card is
+no longer valid
+Please buy new
+USIM card."</string>
+    <string name="skt_msg_password_wrong_puk_code" formatted="false">"You have entered
+an incorrect PUK%dtime(s)
+Remaining PUK attempts %dtime(s)
+Call 114 for assistance."</string>
+    <string name="skt_password_guide_verify_new_pin_code">"Re-enter new PIN code
+using 4~8 digits."</string>
+    <string name="skt_title_password_enter_puk_code">Enter PUK Code</string>
+    <string name="skt_msg_verify_new_pin_error">"Unable to use USIM. You have re-entered
+an incorrect new PIN
+Enter new PIN again."</string>
+    <string name="skt_title_usim_persocheck">Restrict other SIM</string>
+    <string name="skt_password_guide_usim_perso">Enter SIM lock code using 4 digits.</string>
+    <string name="skt_msg_password_wrong_usim_perso">"You have entered
+an incorrect password
+Enter new password again."</string>
+    <string name="skt_msg_unsupport_overseas_card">Card unsupported overseas</string>
+    <string name="lgt_msg_password_wrong_pin_code">"You have entered an incorrect PIN.
+You can try to enter your PIN %dtime(s) remains.
+Enter the PIN again."</string>
+    <string name="lgt_msg_password_wrong_puk_code" formatted="false">"You have entered an incorrect PUK.
+Incorrect PUK %dtime(s) enter.
+%dtime(s) remains.
+Enter the PUK again."</string>
+    <string name="lgt_msg_pin_code_block">"You have entered an incorrect PIN 3 times.
+Enter the PUK.
+If you enter an incorrect PUK 10 times device will be permanently locked."</string>
+    <string name="lgt_msg_puk_code_block">"Unable to use USIM.
+You have entered an incorrect PUK 10 times
+and the USIM card is no longer valid.
+Please buy new USIM card."</string>
+    <string name="skt_lockscreen_sim_unlock_progress_dialog_message">Unlocking USIM card …</string>
+    <string name="sp_wifi_block_remove_att_ssid_NORMAL">cannot remove the AT&amp;T SSID</string>
+    <string name="cannot_ringtone">Protected file. Cannot be set as ringtone.</string>
+    <string name="STR_TITLETEXT_USIMPERSO_CODE_RETRY_LEFT">"Invalid USIM lockcode.
+Remain (%d/5)"</string>
+    <string name="STR_TITLETEXT_USIMPERSO_CODE_CHANGE_EXCEED">"Exceed the number of times to unlock.
+Reboot the phone or visit nearest
+service center"</string>
+    <string name="kt_msg_password_wrong_puk_code">"Wrong PUK code.
+If you enter wrong
+code for 10 times,
+(%d/10)
+USIM card will be
+permanently blocked.
+Please visit customer center."</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/scroll" android:scrollbars="none" android:fadingEdgeLength="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:requiresFadingEdge="horizontal">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tracks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="#ffcccccc" android:showDividers="middle" android:dividerPadding="8.0dip" />
+    </HorizontalScrollView>
+</RelativeLayout>

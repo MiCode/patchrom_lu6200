@@ -58,6 +58,9 @@ local-zip-misc:
 	cp other/baseband.img $(ZIP_DIR)/
 	cp other/firmware.img $(ZIP_DIR)/
 
+	@customize lge-res
+	./customize_lge-res.sh
+
 local-test:
 #	rm -f $(local-out-zip-file)
 #	cp .build/$(local-out-zip-file) .

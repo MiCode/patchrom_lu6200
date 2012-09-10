@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sp_Device_Options_NORMAL">Device options</string>
+    <string name="global_action_power_restart">Restart</string>
+    <string name="sp_turn_on_silent_mode_NORMAL">Turn on Silent mode</string>
+    <string name="sp_turn_off_silent_mode_NORMAL">Turn off Silent mode</string>
+    <string name="sp_turn_on_flight_mode_NORMAL">Turn on Flight mode</string>
+    <string name="sp_turn_off_flight_mode_NORMAL">Turn off Flight mode</string>
+    <string name="sp_turn_on_airplane_mode_NORMAL">Turn on Airplane mode</string>
+    <string name="sp_turn_off_airplane_mode_NORMAL">Turn off Airplane mode</string>
+    <string name="sp_airplane_mode_on_NORMAL">Airplane mode is ON</string>
+    <string name="sp_airplane_mode_off_NORMAL">Airplane mode is OFF</string>
+    <string name="sp_power_off_confirm_NORMAL">"Device will power off.
+Continue?"</string>
+    <string name="sp_restart_confirm_NORMAL">"Device will restart.
+Continue?"</string>
+    <string name="sp_restart_confirm_question_NORMAL">Would you like to restart?</string>
+    <string name="unsupportedMmiCode">Dialled MMI Code is not supported.</string>
+    <string name="stkCcUssdToDial">USSD request is modified to DIAL request.</string>
+    <string name="stkCcUssdToSs">USSD request is modified to SS request.</string>
+    <string name="stkCcUssdToUssd">USSD request is modified to new USSD request.</string>
+    <string name="stkCcSsToDial">SS request is modified to DIAL request.</string>
+    <string name="stkCcSsToUssd">SS request is modified to USSD request.</string>
+    <string name="stkCcSsToSs">SS request is modified to new SS request.</string>
+    <string name="managed_roaming_title">Managed Roaming</string>
+    <string name="managed_roaming_dialog_content">Network with Limited Service found. Do you want to initiate a Network Search?</string>
+    <string name="managed_roaming_dialog_ok_button">Yes</string>
+    <string name="managed_roaming_dialog_cancel_button">No</string>
+    <string name="media_scan_status_message">Media Scanner is running.</string>
+    <string name="sp_lgmdm_blockscreencapture_NORMAL">Screen Capture is disabled by server policy</string>
+    <string name="sp_lgmdm_block_gps_NORMAL">GPS is disabled by server policy</string>
+    <string name="sp_lgmdm_blockbrowser_NORMAL">Browser is disabled by server policy</string>
+    <string name="sp_lgmdm_blocksms_NORMAL">Sending SMS is disabled by server policy</string>
+    <string name="sp_block_sending_message_NORMAL">Sending message is disabled by server policy</string>
+    <string name="sp_block_consummail_NORMAL">Only enabled email account by server policy is available.</string>
+    <string name="sp_lgmdm_factory_reset_NORMAL">Factory reset is proceeded by server policy</string>
+    <string name="sp_lgmdm_control_autosync_NORMAL">AutoSync is disabled. Synchronization is enabled manually by server policy.</string>
+    <string name="sp_lgmdm_block_camera_NORMAL">Camera is disabled by server policy</string>
+    <string name="sp_block_install_app_NORMAL">Installing application is disabled by server policy</string>
+    <string name="sp_block_uninstall_app_NORMAL">Uninstalling application is disabled by server policy</string>
+    <string name="sp_block_enable_app_NORMAL">Running application is disabled by server policy</string>
+    <string name="sp_block_enable_unsigned_app_NORMAL">Running unsigned application is disabled by server policy</string>
+    <string name="sp_block_pop3_imap4_NORMAL">POP3/IMAP4 accounts are disabled by server policy</string>
+    <string name="sp_lgmdm_wipe_sdcard_NORMAL">SD card is formatted by server policy</string>
+    <string name="sp_lgmdm_clear_appdata_NORMAL">Application data is cleared by server policy</string>
+    <string name="sp_lgmdm_clear_appcache_NORMAL">Application cache is cleared by server policy</string>
+    <string name="sp_lgmdm_clear_appdefault_NORMAL">Application defaults is cleared by server policy</string>
+    <string name="sp_lgmdm_block_vpn_NORMAL">Network connection via VPN is available by server policy</string>
+    <string name="sp_block_microphone_NORMAL">Microphone is disabled by server policy</string>
+    <string name="sp_lgmdm_block_osp_NORMAL">OSP is disabled by server policy</string>
+    <string name="sp_lgmdm_block_3gdata_NORMAL">3G Data connection is disabled by server policy</string>
+    <string name="sp_lgmdm_block_message_NORMAL">Messaging is disabled by server policy</string>
+    <string name="sp_lgmdm_block_app_NORMAL">Application is disabled by server policy</string>
+    <string name="sp_lgmdm_recovery_password_NORMAL">Enter recovery password. Please contact server administrator to find out the recovery password given by server policy.</string>
+    <string name="sp_lgmdm_block_factoryreset_NORMAL">Factory reset is disabled by server policy</string>
+    <string name="sp_lgmdm_lockout_dialog_title_NORMAL">Lockout</string>
+    <string name="sp_lgmdm_lockout_NORMAL">Screen locked by server policy. Please contact server administrator to unlock.</string>
+    <string name="sp_lgmdm_lockout_dialog_confirm_SHORT">Confirm</string>
+    <string name="sp_lock_pw_repeated_NORMAL">Repeated characters %s are not allowed.</string>
+    <string name="sp_lock_pw_sequential_NORMAL">Sequential characters %s are not allowed.</string>
+    <string name="sp_lgmdm_blockwifi_NORMAL">Wi-Fi is disabled by server policy</string>
+    <string name="wifi_notify_open_AP_connect">Open network is not secured</string>
+    <string name="wifi_notify_wep_ap_connect">Selected AP is not secured for the wireless connection</string>
+    <string name="sp_block_usb_thering_NORMAL">USB Tethering is disabled by server policy</string>
+    <string name="sp_block_wifi_hotspot_NORMAL">Wi-Fi hotspot is disabled by server policy</string>
+    <string name="sp_block_bt_tethering_NORMAL">BT Tethering is disabled by server policy</string>
+    <string name="sp_lgmdm_block_sdcard_NORMAL">SD card is disabled by server policy</string>
+    <string name="sp_block_unknownsource_NORMAL">Unknown source installation is disabled by server policy</string>
+    <string name="sp_block_usb_debugging_NORMAL">USB debugging is disabled by server policy</string>
+    <string name="remove_device_block_NORMAL">Removal of device administrator is disabled by server policy</string>
+    <string name="sp_lgmdm_EAS_password_SU_NORMAL">Must enter one of symbols or upper case letters</string>
+    <string name="sp_lgmdm_EAS_password_SL_NORMAL">Must enter one of symbols or lower case letters</string>
+    <string name="sp_lgmdm_block_loaction_NORMAL">Location service is disabled by server policy</string>
+    <string name="sp_lgmdm_block_bluetooth_NORMAL">Bluetooth is disabled by server policy</string>
+    <string name="sp_lgmdm_only_audio_bluetooth_NORMAL">Only headset is available by server policy</string>
+    <string name="sp_lgmdm_block_media_sync_NORMAL">Media sync(MTP) is disabled by server policy</string>
+    <string name="sp_lgmdm_block_lg_software_NORMAL">LG software is disabled by server policy</string>
+    <string name="sp_lgmdm_block_camera_ptp_NORMAL">Camera(PTP) is disabled by server policy</string>
+    <string name="sp_block_usb_mass_storage_NORMAL">USB mass storage is disabled by server policy</string>
+    <string name="sp_lgmdm_erase_sdcard_NORMAL">Erase SD card is disabled by server policy</string>
+    <string name="sp_lgmdm_block_erase_memory_NORMAL">Erase internal memory is disabled by server policy</string>
+    <string name="sp_block_data_roaming_NORMAL">Data roaming is disabled by server policy</string>
+    <string name="sp_lgmdm_block_data_NORMAL">Data connection is disabled by server policy</string>
+    <string name="password_expired">The password expired. You must change the password to continue using this device.</string>
+    <string name="sp_lgmdm_make_visible_NORMAL">Make visible</string>
+    <string name="password_expire_warn">The password expires in %d days. Change your password now?</string>
+    <string name="sp_mdm_recovery_password_not_match">Recovery Password does not match.</string>
+    <string name="reset_password_title">Reset password</string>
+    <string name="reset_password_description">"Enter recovery password. It can be found from your Outlook Web Access's Account > Option > Mobile devices > Display recovery password."</string>
+    <string name="reset_password_next">Next</string>
+    <string name="reset_password_back">Back</string>
+    <string name="resetPassword">Reset password</string>
+    <string name="sp_recovery_password_NORMAL">Recovery password</string>
+    <string name="encryption_policy_popup">Encryption is proceeded by server policy</string>
+    <string name="encryption_policy_title">Encryption</string>
+    <string name="sp_lgmdm_proceed_encrytion_NORMAL">Encryption is proceeded by server policy</string>
+    <string name="sp_lgmdm_block_storage_encryption_NORMAL">Storage encryption is disabled by server policy</string>
+    <string name="sp_Encryption_SHORT">Encryption</string>
+    <string name="sp_encrypt_enabling_NORMAL">Enabling encryption...</string>
+    <string name="lockscreen_failed_attempts_almost_at_lockout" formatted="false">You have incorrectly attempted to unlock the phone %d times. After %d more unsuccessful attempts, the phone will be lockout.</string>
+    <string name="lockscreen_failed_attempts_now_lockouting">You have incorrectly attempted to unlock the phone %d times. The phone will now be lockout.</string>
+    <string name="sp_lgmdm_desc_install_app_NORMAL">Install application without user agreement</string>
+    <string name="sp_lgmdm_desc_uninstall_app_NORMAL">Uninstall application without user agreement</string>
+    <string name="sp_lgmdm_desc_remove_admin_NORMAL">Prevent the removal of rights about client for administrator</string>
+    <string name="sp_lgmdm_desc_dis_app_NORMAL">Disable to run the application</string>
+    <string name="sp_lgmdm_desc_dis_install_app_NORMAL">Disable to install the application</string>
+    <string name="sp_lgmdm_desc_dis_uninstall_app_NORMAL">Disable to uninstall the application</string>
+    <string name="sp_lgmdm_desc_wipe_appdata_NORMAL">Delete application data/cache/defaults</string>
+    <string name="sp_lgmdm_desc_dis_browser_NORMAL">Disable to use Browser</string>
+    <string name="sp_lgmdm_desc_dis_message_NORMAL">Disable messaging</string>
+    <string name="sp_lgmdm_desc_certification_NORMAL">Manage to add/update/remove certificates</string>
+    <string name="sp_lgmdm_desc_VPN_config_NORMAL">Set VPN configuration</string>
+    <string name="sp_lgmdm_desc_WiFi_config_NORMAL">Set Wi-Fi configuration</string>
+    <string name="sp_lgmdm_desc_dis_consumer_email_NORMAL">Prevent to configure the email account which is not enabled by server</string>
+    <string name="sp_lgmdm_desc_dis_popimap_email_NORMAL">Prevent to configure POP3/IMAP e-mail account</string>
+    <string name="sp_lgmdm_desc_manual_sync_roaming_NORMAL">Synchronize manually while roaming</string>
+    <string name="sp_lgmdm_desc_set_email_NORMAL">Add/delete e-mail account and edit e-mail setting</string>
+    <string name="sp_lgmdm_desc_dis_data_roaming_NORMAL">Disable to use data roaming</string>
+    <string name="sp_lgmdm_desc_enforce_lockout_NORMAL">Enforce to lock out</string>
+    <string name="sp_lgmdm_desc_dis_mobile_data_NORMAL">Disable to use mobile network</string>
+    <string name="sp_lgmdm_desc_dis_bluetooth_NORMAL">Disable to use Bluetooth</string>
+    <string name="sp_lgmdm_desc_dis_tethering_NORMAL">Disable to use tethering</string>
+    <string name="sp_lgmdm_desc_dis_external_memory_NORMAL">Disable to use SD card</string>
+    <string name="sp_lgmdm_desc_dis_WiFi_NORMAL">Disable to use Wi-Fi</string>
+    <string name="sp_lgmdm_desc_dis_usb_NORMAL">Disable to use USB</string>
+    <string name="sp_lgmdm_desc_dis_gps_NORMAL">Disable to use GPS</string>
+    <string name="sp_lgmdm_desc_dis_screen_capture_NORMAL">Disable to capture the screen</string>
+    <string name="sp_lgmdm_desc_recovery_password_NORMAL">Generate a recovery password</string>
+    <string name="sp_lgmdm_desc_dis_network_location_NORMAL">Disable to use location information through network</string>
+    <string name="sp_lgmdm_lab_install_app_NORMAL">Install application by admin</string>
+    <string name="sp_lgmdm_lab_uninstall_app_NORMAL">Uninstall application by admin</string>
+    <string name="sp_lgmdm_lab_remove_admin_NORMAL">Prevent removing admin client</string>
+    <string name="sp_lgmdm_lab_dis_app_NORMAL">Disable running the application</string>
+    <string name="sp_lgmdm_lab_dis_install_app_NORMAL">Disable installing the application</string>
+    <string name="sp_lgmdm_lab_dis_uninstall_app_NORMAL">Disable uninstalling the application</string>
+    <string name="sp_lgmdm_lab_wipe_appdata_NORMAL">Wipe application data</string>
+    <string name="sp_lgmdm_lab_dis_browser_NORMAL">Disable Browser</string>
+    <string name="sp_lgmdm_lab_dis_message_NORMAL">Disable messaging</string>
+    <string name="sp_lgmdm_lab_certification_NORMAL">Certification management</string>
+    <string name="sp_lgmdm_lab_VPN_config_NORMAL">VPN configuration</string>
+    <string name="sp_lgmdm_lab_WiFi_config_NORMAL">Wi-Fi configuration</string>
+    <string name="sp_lgmdm_lab_dis_consumer_email_NORMAL">Disable consumer e-mail setting</string>
+    <string name="sp_lgmdm_lab_dis_popimap_email_NORMAL">Disable POP3/IMAP e-mail setting</string>
+    <string name="sp_lgmdm_lab_manual_sync_roaming_NORMAL">Manual sync in roaming</string>
+    <string name="sp_lgmdm_lab_set_email_NORMAL">Setup E-mail</string>
+    <string name="sp_lgmdm_lab_dis_data_roaming_NORMAL">Disable data roaming</string>
+    <string name="sp_lgmdm_lab_enforce_lockout_NORMAL">Enforce Lock-out</string>
+    <string name="sp_lgmdm_lab_dis_mobile_data_NORMAL">Disable mobile data</string>
+    <string name="sp_lgmdm_lab_dis_bluetooth_NORMAL">Disable Bluetooth</string>
+    <string name="sp_lgmdm_lab_dis_tethering_NORMAL">Disable tethering</string>
+    <string name="sp_lgmdm_lab_dis_external_memory_NORMAL">Disable SD card</string>
+    <string name="sp_lgmdm_lab_dis_WiFi_NORMAL">Disable Wi-Fi</string>
+    <string name="sp_lgmdm_lab_dis_usb_NORMAL">Disable USB</string>
+    <string name="sp_lgmdm_lab_dis_gps_NORMAL">Disable GPS</string>
+    <string name="sp_lgmdm_lab_dis_screen_capture_NORMAL">Disable screen capture</string>
+    <string name="sp_lgmdm_lab_recovery_password_NORMAL">Recovery password</string>
+    <string name="sp_lgmdm_lab_dis_network_location_NORMAL">Disable location information</string>
+    <string name="STR_TITLETEXT_UICC_TYPEPUK_COMMON_SHORT">Type PUK code</string>
+    <string name="STR_TITLETEXT_UICC_INVAILDPUK_COMMON_SHORT">"Incorrect PUK code! 
+Remains : %d time(s)"</string>
+    <string name="STR_TITLETEXT_UICC_NEWPIN_COMMON_SHORT">New PIN</string>
+    <string name="STR_TITLETEXT_UICC_VERIFYPIN_COMMON_SHORT">Confirm new PIN</string>
+    <string name="STR_TITLETEXT_UICC_MISMATCHPINS_COMMON_SHORT">The PINs you entered do not match.</string>
+    <string name="STR_TITLETEXT_UICC_REMAINING_COMMON_SHORT">"Remains: "</string>
+    <string name="STR_TITLETEXT_UICC_PERMBLOCK_COMMON_SHORT">PUK blocked</string>
+    <string name="STR_TITLETEXT_UICC_INVAILDPIN_COMMON_SHORT">"Incorrect PIN code! 
+Remains : %d time(s)"</string>
+    <string name="lockscreen_sim_pin_blocked">PIN1 Blocked! Enter PUK1 to unblock PIN1.</string>
+    <string name="sp_keyguard_password_enter_pin_code_for_sub_NORMAL">Enter PIN code for Subscription</string>
+    <string name="CnapMmi">Calling name presentation</string>
+    <string name="lockscreen_perso_locked_message">SIM/RUIM is Perso locked</string>
+    <string name="sp_sim_permlocked_alert_NORMAL">Wrong PUK code entered 10 times. Your SIM is permanently locked. Contact customer service.</string>
+    <string name="sp_sim_puk_alert_NORMAL">With one more failed attempt your SIM will be permanently locked.</string>
+    <string name="sp_3times_simpin_fail_NORMAL">PIN code blocked. Please enter PUK code, or see the user guide/contact customer service.</string>
+    <string name="sp_sim_incorrect_puk_NORMAL">Incorrect PUK code!</string>
+    <string name="sp_sim_remaining_count_NORMAL">Remains : %d time(s)</string>
+    <string name="cancel_pin_screen">Cancel</string>
+    <string name="keyguard_pin_accepted">Code Accepted!</string>
+    <string name="sp_enter_SIM_PIN_NORMAL">Please enter your 4-8 digit SIM PIN.</string>
+    <string name="sp_not_match_SIM_PIN_NORMAL">Sorry, your entry does not match the SIM PIN. Please re-enter your 4-8 digit PIN. You have %d more chances.</string>
+    <string name="sp_last_attempt_SIM_PIN_NORMAL">Your last attempt to enter a PIN has locked this SIM card. Please contact your wireless service provider to unlock your SIM card. Press continue to enter your PUK to unlock your SIM card.</string>
+    <string name="sp_enter_SIM_PUK_NORMAL">Please enter your 8-digit SIM PUK.</string>
+    <string name="sp_unlocked_puk_NORMAL">Your phone is now unlocked.</string>
+    <string name="sp_not_match_SIM_PUK_NORMAL">Sorry, your entry does not match the PUK. Please re-enter your 8 digit PUK. You have %d more chances.</string>
+    <string name="sp_permanently_blocked_NORMAL">Your 10th attempt to enter a PUK has permanently disabled your SIM card. Please contact your wireless service provider to obtain another SIM card.</string>
+    <string name="sp_dcm_puk_code_NORMAL">Enter PUK</string>
+    <string name="sp_dcm_wrong_pin_code_NORMAL">PIN code error</string>
+    <string name="sp_dcm_pin_not_recognized_NORMAL">PIN code not recognized</string>
+    <string name="sp_dcm_puknot_recognized_NORMAL">PUK code not recognized</string>
+    <string name="sp_addToDictionary_NORMAL">Add to dictionary</string>
+    <string name="mismatchPin2_LGEres">The PIN2s you entered do not match.</string>
+    <string name="invalidPin2">Type a PIN2 that is 4 to 8 numbers.</string>
+    <string name="STR_POPUPMESSAGE_SECURITY_SETPINCODEREQON_COMMON_NORMAL">Set PIN code request on</string>
+    <string name="sp_pin2_is_blocked_NORMAL">PIN2 cannot be changed when PIN2 is blocked</string>
+    <string name="PUK2_blocked_LGEres">PUK2 blocked.</string>
+    <string name="Pin2Mmi">PIN2 change</string>
+    <string name="PukMmi">PUK change</string>
+    <string name="Puk2Mmi">PUK2 change</string>
+    <string name="badPuk2">The PUK2 you typed is not correct. Please try again.</string>
+    <string name="badPin2_LGEres">The old PIN2 you typed is not correct.</string>
+    <string name="STR_res_USA_NORMAL">United States of America</string>
+    <string name="STR_res_ALGERIA_NORMAL">Algeria</string>
+    <string name="STR_res_ANGOLA_NORMAL">Angola</string>
+    <string name="STR_res_ARGENTINA_NORMAL">Argentina</string>
+    <string name="STR_res_BAHAMAS_NORMAL">Bahamas</string>
+    <string name="STR_res_BANGLADESH_NORMAL">Bangladesh</string>
+    <string name="STR_res_BARBADOS_NORMAL">Barbados</string>
+    <string name="STR_res_BELARUS_NORMAL">Belarus</string>
+    <string name="STR_res_BELIZE_NORMAL">Belize</string>
+    <string name="STR_res_BERMUDA_NORMAL">Bermuda(UK)</string>
+    <string name="STR_res_BOTSWANA_NORMAL">Botswana</string>
+    <string name="STR_res_BRAZIL_NORMAL">Brazil</string>
+    <string name="STR_res_BRITISHVIRGINISLANDS_NORMAL">British Virgin Islands(UK)</string>
+    <string name="STR_res_CAMEROON_NORMAL">Cameroon</string>
+    <string name="STR_res_CANADA_NORMAL">Canada</string>
+    <string name="STR_res_CAPEVERDE_NORMAL">Cape Verde</string>
+    <string name="STR_res_CAYMANISLANDS_NORMAL">Cayman Islands(UK)</string>
+    <string name="STR_res_CENTRALAFRICANREP_SHORT">Central African Republic</string>
+    <string name="STR_res_CHILE_NORMAL">Chile</string>
+    <string name="STR_res_CHINA_NORMAL">China</string>
+    <string name="STR_res_COLOMBIA_NORMAL">Colombia</string>
+    <string name="STR_res_COTEDIVOIRE_NORMAL">"Cote d'Ivoire"</string>
+    <string name="STR_res_CZECHREPUBLIC_NORMAL">Czech Republic</string>
+    <string name="STR_res_DEMOCRATICREPCONGO_SHORT">Democratic Republic of the Congo</string>
+    <string name="STR_res_DENMARK_NORMAL">Denmark</string>
+    <string name="STR_res_DJIBOUTI_NORMAL">Djibouti</string>
+    <string name="STR_res_DOMINICANREP_SHORT">Dominican Republic</string>
+    <string name="STR_res_ECUADOR_NORMAL">Ecuador</string>
+    <string name="STR_res_EGYPT_NORMAL">Egypt</string>
+    <string name="STR_res_ELSALVADOR_NORMAL">El Salvador</string>
+    <string name="STR_res_ESTONIA_NORMAL">Estonia</string>
+    <string name="STR_res_ETHIOPIA_NORMAL">Ethiopia</string>
+    <string name="STR_res_FIJI_NORMAL">Fiji</string>
+    <string name="STR_res_GAMBIA_NORMAL">Gambia</string>
+    <string name="STR_res_GHANA_NORMAL">Ghana</string>
+    <string name="STR_res_GUAM_NORMAL">Guam(US)</string>
+    <string name="STR_res_GUATEMALA_NORMAL">Guatemala</string>
+    <string name="STR_res_HAITI_NORMAL">Haiti</string>
+    <string name="STR_res_HONDURAS_NORMAL">Honduras</string>
+    <string name="STR_res_HONGKONG_NORMAL">Hong Kong(PRC)</string>
+    <string name="STR_res_HUNGARY_NORMAL">Hungary</string>
+    <string name="STR_res_ICELAND_NORMAL">Iceland</string>
+    <string name="STR_res_INDIA_NORMAL">India</string>
+    <string name="STR_res_INDONESIA_NORMAL">Indonesia</string>
+    <string name="STR_res_IRAQ_NORMAL">Iraq</string>
+    <string name="STR_res_IRELAND_NORMAL">Ireland</string>
+    <string name="STR_res_ISRAEL_NORMAL">Israel</string>
+    <string name="STR_res_JAMAICA_NORMAL">Jamaica</string>
+    <string name="STR_res_JAPAN_NORMAL">Japan</string>
+    <string name="STR_res_JORDAN_NORMAL">Jordan</string>
+    <string name="STR_res_KENYA_NORMAL">Kenya</string>
+    <string name="STR_res_KOREANORTH_NORMAL">Korea,North</string>
+    <string name="STR_res_KOREASOUTH_NORMAL">Korea,South</string>
+    <string name="STR_res_KUWAIT_NORMAL">Kuwait</string>
+    <string name="STR_res_LAOS_NORMAL">Laos</string>
+    <string name="STR_res_LATVIA_NORMAL">Latvia</string>
+    <string name="STR_res_MADAGASCAR_NORMAL">Madagascar</string>
+    <string name="STR_res_MALAYSIA_NORMAL">Malaysia</string>
+    <string name="STR_res_MALI_NORMAL">Mali</string>
+    <string name="STR_res_MAURITANIA_NORMAL">Mauritania</string>
+    <string name="STR_res_MAURITIUS_NORMAL">Mauritius</string>
+    <string name="STR_res_MEXICO_NORMAL">Mexico</string>
+    <string name="STR_res_MOLDOVA_NORMAL">Moldova</string>
+    <string name="STR_res_MONGOLIA_NORMAL">Mongolia</string>
+    <string name="STR_res_MOROCCO_NORMAL">Morocco</string>
+    <string name="STR_res_MOZAMBIQUE_NORMAL">Mozambique</string>
+    <string name="STR_res_MYANMAR_NORMAL">Myanmar</string>
+    <string name="STR_res_NAMIBIA_NORMAL">Namibia</string>
+    <string name="STR_res_NETHERLANDASANTILLES_NORMAL">Netherlands Antilles(Netherlands)</string>
+    <string name="STR_res_NEWZEALAND_NORMAL">New Zealand</string>
+    <string name="STR_res_NICARAGUA_NORMAL">Nicaragua</string>
+    <string name="STR_res_NIGER_NORMAL">Niger</string>
+    <string name="STR_res_NIGERIA_NORMAL">Nigeria</string>
+    <string name="STR_res_NORTHERNMARIANAISLD_NORMAL">Northern Mariana Islands, Saipan(US)</string>
+    <string name="STR_res_NORWAY_NORMAL">Norway</string>
+    <string name="STR_res_OMAN_NORMAL">Oman</string>
+    <string name="STR_res_PAKISTAN_NORMAL">Pakistan</string>
+    <string name="STR_res_PERU_NORMAL">Peru</string>
+    <string name="STR_res_POLAND_NORMAL">Poland</string>
+    <string name="STR_res_PORTUGAL_NORMAL">Portugal</string>
+    <string name="STR_res_PUERTORICO_NORMAL">Puerto Rico(US)</string>
+    <string name="STR_res_ROMANIA_NORMAL">Romania</string>
+    <string name="STR_res_RUSSIANFEDERATION_NORMAL">Russian Federation</string>
+    <string name="STR_res_RWANDESEREPUBLIC_NORMAL">Rwandese Republic</string>
+    <string name="STR_res_SAUDIARABIA_NORMAL">Saudi Arabia</string>
+    <string name="STR_res_SOUTHAFRICA_NORMAL">South Africa</string>
+    <string name="STR_res_SURINAME_NORMAL">Suriname</string>
+    <string name="STR_res_SWAZILAND_NORMAL">Swaziland</string>
+    <string name="STR_res_SWEDEN_NORMAL">Sweden</string>
+    <string name="STR_res_TANZANIA_NORMAL">Tanzania</string>
+    <string name="STR_res_THAILAND_NORMAL">Thailand</string>
+    <string name="STR_res_TOGOLESSREPUBLIC_NORMAL">Togolese Republic</string>
+    <string name="STR_res_TONGA_NORMAL">Tonga</string>
+    <string name="STR_res_TRINIDADANDTOBAGO_NORMAL">Trinidad and Tobago</string>
+    <string name="STR_res_UGANDA_NORMAL">Uganda</string>
+    <string name="STR_res_UKRAINE_NORMAL">Ukraine</string>
+    <string name="STR_res_USVIRGINISLANDS_NORMAL">United States Virgin Islands(US)</string>
+    <string name="STR_res_UZBERKISTAN_NORMAL">Uzbekistan</string>
+    <string name="STR_res_VENEZUELA_NORMAL">Venezuela</string>
+    <string name="STR_res_YEMEN_NORMAL">Yemen</string>
+    <string name="STR_res_ZAMBIA_NORMAL">Zambia</string>
+    <string name="STR_res_NEWCOUNTRYPHONE_NORMAL">New Country</string>
+    <string name="STR_res_AFGHANISTAN_NORMAL">Afghanistan</string>
+    <string name="STR_res_ALBALIA_NORMAL">Albania</string>
+    <string name="STR_res_AMERICANSAMOA_NORMAL">American Samoa(US)</string>
+    <string name="STR_res_ANDORRA_NORMAL">Andorra</string>
+    <string name="STR_res_ANGUILLA_NORMAL">Anguilla</string>
+    <string name="STR_res_ANTIGUAANDBARBUDA_NORMAL">Antigua and Barbuda</string>
+    <string name="STR_res_ARMENIA_NORMAL">Armenia</string>
+    <string name="STR_res_ARUBA_NORMAL">Aruba</string>
+    <string name="STR_res_AUSTRALIA_NORMAL">Australia</string>
+    <string name="STR_res_AUSTRIA_NORMAL">Austria</string>
+    <string name="STR_res_AZERBAIJANIREPUBLIC_NORMAL">Azerbaijani Republic</string>
+    <string name="STR_res_BAHRAIN_NORMAL">Bahrain</string>
+    <string name="STR_res_BELGIUM_NORMAL">Belgium</string>
+    <string name="STR_res_BENIN_NORMAL">Benin</string>
+    <string name="STR_res_BHUTAN_NORMAL">Bhutan</string>
+    <string name="STR_res_BOLIVIA_NORMAL">Bolivia</string>
+    <string name="STR_res_BOSNIAANDHERZEGOVINA_NORMAL">Bosnia and Herzegovina</string>
+    <string name="STR_res_BRUNEIDARUSSALAM_NORMAL">Brunei Darussalam</string>
+    <string name="STR_res_BULGARIA_NORMAL">Bulgaria</string>
+    <string name="STR_res_BURKINAFASO_NORMAL">Burkina Faso</string>
+    <string name="STR_res_BURUNDI_NORMAL">Burundi</string>
+    <string name="STR_res_CAMBODIA_NORMAL">Cambodia</string>
+    <string name="STR_res_CHAD_NORMAL">Chad</string>
+    <string name="STR_res_COMOROS_NORMAL">Comoros</string>
+    <string name="STR_res_COOKISLAND_NORMAL">Cook Islands(NZ)</string>
+    <string name="STR_res_COSTARICA_NORMAL">Costa Rica</string>
+    <string name="STR_res_CROATIA_NORMAL">Croatia</string>
+    <string name="STR_res_CUBA_NORMAL">Cuba</string>
+    <string name="STR_res_CYPRUS_NORMAL">Cyprus</string>
+    <string name="STR_res_DOMINICA_NORMAL">Dominica</string>
+    <string name="STR_res_EASTTIMOR_NORMAL">East Timor</string>
+    <string name="STR_res_EQUATORIALGUINEA_NORMAL">Equatorial Guinea</string>
+    <string name="STR_res_ERITREA_NORMAL">Eritrea</string>
+    <string name="STR_res_FAROEISLANDS_NORMAL">Faroe Islands(Denmark)</string>
+    <string name="STR_res_FEDERATEDSMICRONESIA_NORMAL">Federated States of Micronesia</string>
+    <string name="STR_res_FINLAND_NORMAL">Finland</string>
+    <string name="STR_res_FRANCE_NORMAL">France</string>
+    <string name="STR_res_FRENCHGUIANA_NORMAL">French Guiana(France)</string>
+    <string name="STR_res_FRENCHPOLYNESIA_NORMAL">French Polynesia(France)</string>
+    <string name="STR_res_GABONESEREPUBLIC_NORMAL">Gabonese Republic</string>
+    <string name="STR_res_GEORGIA_NORMAL">Georgia</string>
+    <string name="STR_res_GERMANY_NORMAL">Germany</string>
+    <string name="STR_res_GIBRALTAR_NORMAL">Gibraltar(UK)</string>
+    <string name="STR_res_GREECE_NORMAL">Greece</string>
+    <string name="STR_res_GREENLAND_NORMAL">Greenland(Denmark)</string>
+    <string name="STR_res_GRENADA_NORMAL">Grenada</string>
+    <string name="STR_res_GUADELOUPE_NORMAL">Guadeloupe(France)</string>
+    <string name="STR_res_GUINEA_NORMAL">Guinea</string>
+    <string name="STR_res_GUINEABISSAU_NORMAL">Guinea Bissau</string>
+    <string name="STR_res_GUYANA_NORMAL">Guyana</string>
+    <string name="STR_res_IRAN_NORMAL">Iran</string>
+    <string name="STR_res_ITALY_NORMAL">Italy</string>
+    <string name="STR_res_KAZAKHSTAN_NORMAL">Kazakhstan</string>
+    <string name="STR_res_KIRIBATI_NORMAL">Kiribati</string>
+    <string name="STR_res_KYRGYZREPUBLIC_NORMAL">Kyrgyz Republic</string>
+    <string name="STR_res_LEBANON_NORMAL">Lebanon</string>
+    <string name="STR_res_LESOTHO_NORMAL">Lesotho</string>
+    <string name="STR_res_LIBERIA_NORMAL">Liberia</string>
+    <string name="STR_res_LIBYA_NORMAL">Libya</string>
+    <string name="STR_res_LIECHTENSTEIN_NORMAL">Liechtenstein</string>
+    <string name="STR_res_LITHUANIA_NORMAL">Lithuania</string>
+    <string name="STR_res_LUXEMBOURG_NORMAL">Luxembourg</string>
+    <string name="STR_res_MACAO_NORMAL">Macao(PRC)</string>
+    <string name="STR_res_MALAWI_NORMAL">Malawi</string>
+    <string name="STR_res_MALDIVES_NORMAL">Maldives</string>
+    <string name="STR_res_MALTA_NORMAL">Malta</string>
+    <string name="STR_res_MARITIME_NORMAL">Maritime</string>
+    <string name="STR_res_MARSHALL_NORMAL">Marshall Islands</string>
+    <string name="STR_res_MARTINIQUE_NORMAL">Martinique(France)</string>
+    <string name="STR_res_MONACO_NORMAL">Monaco</string>
+    <string name="STR_res_MONTSERRAT_NORMAL">Montserrat(UK)</string>
+    <string name="STR_res_NAURU_NORMAL">Nauru</string>
+    <string name="STR_res_NEPAL_NORMAL">Nepal</string>
+    <string name="STR_res_NETHERLANDS_NORMAL">Netherlands</string>
+    <string name="STR_res_NEWCALEDONIA_NORMAL">New Caledonia(France)</string>
+    <string name="STR_res_PALAU_NORMAL">Palau</string>
+    <string name="STR_res_PANAMA_NORMAL">Panama</string>
+    <string name="STR_res_PAPUANEWGUINEA_NORMAL">Papua New Guinea</string>
+    <string name="STR_res_PARAGUAY_NORMAL">Paraguay</string>
+    <string name="STR_res_PHILIPPINESS_NORMAL">Philippines</string>
+    <string name="STR_res_QATAR_NORMAL">Qatar</string>
+    <string name="STR_res_REUNION_NORMAL">Réunion(France)</string>
+    <string name="STR_res_REMACEDONIA_NORMAL">Republic of Macedonia</string>
+    <string name="STR_res_RECONGO_NORMAL">Republic of the Congo</string>
+    <string name="STR_res_SAOTOME_NORMAL">Sao Tome and Principe</string>
+    <string name="STR_res_SAINTKITTS_NORMAL">Saint Kitts and Nevis</string>
+    <string name="STR_res_SAINTLUCIA_NORMAL">Saint Lucia</string>
+    <string name="STR_res_SAINTPIERRE_NORMAL">Saint Pierre and Miquelon(France)</string>
+    <string name="STR_res_SAINTVINCENT_NORMAL">Saint Vincent and the Grenadines</string>
+    <string name="STR_res_SAMOA_NORMAL">Samoa</string>
+    <string name="STR_res_SANMARINO_NORMAL">San Marino</string>
+    <string name="STR_res_SENEGAL_NORMAL">Senegal</string>
+    <string name="STR_res_SERBIAMONTENEGRO_NORMAL">Serbia and Montenegro</string>
+    <string name="STR_res_SEYCHELLES_NORMAL">Seychelles</string>
+    <string name="STR_res_SIERRALEONE_NORMAL">Sierra Leone</string>
+    <string name="STR_res_SINGAPORE_NORMAL">Singapore</string>
+    <string name="STR_res_SLOVAKIA_NORMAL">Slovakia</string>
+    <string name="STR_res_SLOVENIA_NORMAL">Slovenia</string>
+    <string name="STR_res_SOLOMONISLANDS_NORMAL">Solomon Islands</string>
+    <string name="STR_res_SOMALIA_NORMAL">Somalia</string>
+    <string name="STR_res_SPAIN_NORMAL">Spain</string>
+    <string name="STR_res_SRILANKA_NORMAL">Sri Lanka</string>
+    <string name="STR_res_SUDAN_NORMAL">Sudan</string>
+    <string name="STR_res_SWITZERLAND_NORMAL">Switzerland</string>
+    <string name="STR_res_SYRIA_NORMAL">Syria</string>
+    <string name="STR_res_TAIWAN_NORMAL">Taiwan</string>
+    <string name="STR_res_TAJIKISTAN_NORMAL">Tajikistan</string>
+    <string name="STR_res_TUNISIA_NORMAL">Tunisia</string>
+    <string name="STR_res_TURKEY_NORMAL">Turkey</string>
+    <string name="STR_res_TURKMENISTAN_NORMAL">Turkmenistan</string>
+    <string name="STR_res_TURKSANDCAICOS_NORMAL">Turks and Caicos Islands(UK)</string>
+    <string name="STR_res_UNITEDARABEMIRATES2_NORMAL">United Arab Emirates</string>
+    <string name="STR_res_ABUDHABI_NORMAL">United Arab Emirates(Abu Dhabi)</string>
+    <string name="STR_res_UNITEDARABEMIRATES_NORMAL">United Arab Emirates(Dubai)</string>
+    <string name="STR_res_UNITEDKINGDOM_NORMAL">United Kingdom</string>
+    <string name="STR_res_URUGUAY_NORMAL">Uruguay</string>
+    <string name="STR_res_VANUATU_NORMAL">Vanuatu</string>
+    <string name="STR_res_VATICANCITYSTATE_NORMAL">Vatican City State</string>
+    <string name="STR_res_VIETNAM_NORMAL">VietNam</string>
+    <string name="STR_res_WALLISNADFUTUNA_NORMAL">Wallis and Futuna(France)</string>
+    <string name="STR_res_ZIMBABWE_NORMAL">Zimbabwe</string>
+    <string name="STR_res_NEWCOUNTRY_NORMAL">New Country_1</string>
+    <string name="lgt_unregister">"Unregistered.
+Restart the phone.
+If it reoccurs, call LG U+ customer center(114)."</string>
+    <string name="lgt_unauthenticated">"Unauthenticated.
+Restart the phone.
+If it reoccurs, call LG U+ customer center(114)."</string>
+    <string name="lgt_hdr_network_error">"No data service.
+114 just call."</string>
+    <string name="HDRONLYMODE_ORIG1">Voicecall is not allowed in HDR only mode</string>
+    <string name="HDRONLYMODE_ORIG2">Voicecall is not allowed in EV-DO only mode</string>
+    <string name="SKT_NRC_02_IMSI_UNKNOWN_IN_HLR">Unregistered number. Call customer center 1599-0011 (2).</string>
+    <string name="SKT_NRC_02_INTER_IMSI_UNKNOWN_IN_HLR">Unregistered number. Call customer center +82-2-6343-9011 (2).</string>
+    <string name="SKT_NRC_03_ILLEGAL_MS">Authenticate failed. Call customer center 1599-0011 (3).</string>
+    <string name="SKT_NRC_03_INTER_ILLEGAL_MS">Authenticate failed. Call customer center +82-2-6343-9011 (3).</string>
+    <string name="SKT_NRC_06_ILLEGAL_ME">Not confirmed phone. Call customer center 1599-0011 (6).</string>
+    <string name="SKT_NRC_06_INTER_ILLEGAL_ME">Not confirmed phone. Call customer center +82-2-6343-9011 (6).</string>
+    <string name="SKT_NRC_07_GPRS_NOT_ALLOWED">GPRS service is not allowed in this area (7).</string>
+    <string name="SKT_NRC_14_GPRS_NOT_ALLOWED_IN_THIS_PLMN">GPRS service is not allowed in this area (14).</string>
+    <string name="SKT_NRC_08_GPRS_AND_NON_GPRS_NOT_ALLOWED">Location Update Fail. Call customer center 1599-0011 (8).</string>
+    <string name="SKT_NRC_08_INTER_GPRS_AND_NON_GPRS_NOT_ALLOWED">Location Update Fail. Call customer center +82-2-6343-9011 (8).</string>
+    <string name="SKT_NRC_11_PLMN_NOT_ALLOWED">Location Update Fail (11).</string>
+    <string name="SKT_NRC_12_LOCATION_AREA_NOT_ALLOWED">Location Update Fail (12).</string>
+    <string name="SKT_NRC_13_ROAMING_NOT_ALLOWED_IN_THIS_LOCATION_AREA">Location Update Fail (13).</string>
+    <string name="SKT_NRC_15_NO_SUITABLE_CELLS_IN_LOCATION_AREA">Location Update Fail (15).</string>
+    <string name="SKT_NRC_16_MSC_TEMPORARILY_NOT_REACHABLE">Delayed network registration. Call customer center 1599-0011 (16).</string>
+    <string name="SKT_NRC_16_INTER_MSC_TEMPORARILY_NOT_REACHABLE">Delayed network registration. Call customer center +82-2-6343-9011 (16).</string>
+    <string name="SKT_NRC_17_NETWORK_FAILURE">Delayed network registration. Call customer center 1599-0011 (17).</string>
+    <string name="SKT_NRC_17_INTER_NETWORK_FAILURE">Delayed network registration. Call customer center +82-2-6343-9011 (17).</string>
+    <string name="SKT_NRC_22_CONGESTION">Delayed network registration. Call customer center 1599-0011 (22).</string>
+    <string name="SKT_NRC_22_INTER_CONGESTION">Delayed network registration. Call customer center +82-2-6343-9011 (22).</string>
+    <string name="sp_SKT_NRC_02_NO_NUM_NORMAL">Unregistered number. Call customer center (2).</string>
+    <string name="sp_SKT_NRC_03_NO_NUM_NORMAL">Authenticate failed. Call customer center (3).</string>
+    <string name="sp_SKT_NRC_06_NO_NUM_NORMAL">Not confirmed phone. Call customer center (6).</string>
+    <string name="sp_SKT_NRC_08_NO_NUM_NORMAL">Location Update Fail. Call customer center (8).</string>
+    <string name="sp_SKT_NRC_16_NO_NUM_NORMAL">Delayed network registration. Call customer center (16).</string>
+    <string name="sp_SKT_NRC_17_NO_NUM_NORMAL">Delayed network registration. Call customer center (17).</string>
+    <string name="sp_SKT_NRC_22_NO_NUM_NORMAL">Delayed network registration. Call customer center (22).</string>
+    <string name="UPLUS_NRC_02_IMSI_UNKNOWN_IN_HLR">Unregistered number. Call customer center (+82-2-3416-7010) (2).</string>
+    <string name="UPLUS_NRC_03_ILLEGAL_MS">Authenticate failed. Call customer center (+82-2-3416-7010) (3).</string>
+    <string name="UPLUS_NRC_06_ILLEGAL_ME">Not confirmed phone. Call customer center (+82-2-3416-7010) (6).</string>
+    <string name="UPLUS_NRC_07_GPRS_NOT_ALLOWED">GPRS service is not allowed in this area (7).</string>
+    <string name="UPLUS_NRC_08_GPRS_AND_NON_GPRS_NOT_ALLOWED">Location Update Fail. Call customer center (+82-2-3416-7010) (8).</string>
+    <string name="UPLUS_NRC_11_PLMN_NOT_ALLOWED">Location Update Fail (11).</string>
+    <string name="UPLUS_NRC_12_LOCATION_AREA_NOT_ALLOWED">Location Update Fail (12).</string>
+    <string name="UPLUS_NRC_13_ROAMING_NOT_ALLOWED_IN_THIS_LOCATION_AREA">Location Update Fail (13).</string>
+    <string name="UPLUS_NRC_14_GPRS_NOT_ALLOWED_IN_THIS_PLMN">GPRS service is not allowed in this area (14).</string>
+    <string name="UPLUS_NRC_15_NO_SUITABLE_CELLS_IN_LOCATION_AREA">Location Update Fail (15).</string>
+    <string name="UPLUS_NRC_16_MSC_TEMPORARILY_NOT_REACHABLE">Delayed network registration. Try later again (16).</string>
+    <string name="UPLUS_NRC_17_NETWORK_FAILURE">Delayed network registration. Try later again (17).</string>
+    <string name="UPLUS_NRC_22_INTER_CONGESTION">Delayed network registration. Try later again (22).</string>
+    <string name="UPLUS_NRC_ETC">Cannot connect network. Call customer center (+82-2-3416-7010).</string>
+    <string name="STR_USIM_ERR_RECHECK">Install USIM card again.</string>
+    <string name="kt_regi_wtoa_cardregi">Please register the phone number.Auto Reset.</string>
+    <string name="kt_ussd_err_code_0x09">Failed in the authentication procedure</string>
+    <string name="kt_ussd_err_code_0x0C">The IMEI is in the blacklist Contact the service center</string>
+    <string name="kt_ussd_err_code_0x1B">Subscriber has activated the detach service</string>
+    <string name="kt_ussd_err_code_0x22">"System failed
+Try again"</string>
+    <string name="kt_ussd_err_code_0x23">"Data missing
+Check and
+try again"</string>
+    <string name="kt_ussd_err_code_0x24">"Unexpected
+data value
+Check data 
+and try again"</string>
+    <string name="kt_ussd_err_code_0x47">The alphabet/languabe used for the USSD operation is not known by the network</string>
+    <string name="kt_ussd_err_code_0x48">USSD is busy because of the on-going MMI or the existence of CISS transaction</string>
+    <string name="kt_network_rej_code_status_imsi_unknown">Subscription required. Visit Service Center.</string>
+    <string name="kt_network_rej_code_status_illegal_ms">Auth fail. Visit Service Center.</string>
+    <string name="kt_network_rej_code_status_illegal_me">Not registered terminal. Visit Service Center.</string>
+    <string name="kt_network_rej_code_status_lu_fail">Network Update Failure</string>
+    <string name="kt_network_rej_code_status_nw_skt_scannced">Searching N/W Emergency call only</string>
+    <string name="kt_network_rej_code_status_not_opened_number">Unregistered number</string>
+    <string name="kt_network_rej_code_status_nw_scanning">Registering to network</string>
+    <string name="kt_network_rej_code_status_lu_proceed">Registering to network</string>
+    <string name="telephony_dialog_ok_button">OK</string>
+    <string name="telephony_dialog_guide_button">Help</string>
+    <string name="skt_roaming_notification">You are in the T-Roaming Servie Area. Called when you choose both [Call to South korea] and [Call to others].</string>
+    <string name="emergency_calls_only_skt">Emergency calls only</string>
+    <string name="emergency_calls_only_kt">Emergency calls only</string>
+    <string name="kt_network_registration_error_3">Delayed network connection due to call congestion</string>
+    <string name="keyguard_password_enter_pin_code">Enter PIN code</string>
+    <string name="sp_backup_pin_NORMAL">Backup PIN</string>
+    <string name="sp_backup_pin_intruction_NORMAL">If you forgot your Google account, enter your backup PIN</string>
+    <string name="sp_PIN_NORMAL">PIN</string>
+    <string name="limited_service">Emergency Calls Only</string>
+    <string name="authentication_reject">SIM not allowed</string>
+    <string name="imsi_unknown_hlr">SIM not provisioned MM #2</string>
+    <string name="illegal_ms">SIM not allowed MM #3</string>
+    <string name="illegal_me">Phone not allowed MM #6</string>
+    <string name="sp_lockscreen_emergencycall_press_and_hold_MLINE">"Emergency call
+Press and hold"</string>
+    <string name="sp_restart_confirm_new_NORMAL">Your phone will restart.</string>
+    <string name="sp_connection_modem_NORMAL">Internet connection via modem</string>
+    <string name="sp_connection_ethernet_NORMAL">Internet connection via ethernet</string>
+    <string name="sp_charge_only_title_NORMAL">Charging is started.</string>
+    <string name="sp_usb_tethering_title_NORMAL">USB tethering is started.</string>
+    <string name="sp_media_sync_title_NORMAL">Media sync is started.</string>
+    <string name="sp_pc_software_title_NORMAL">PC software is started.</string>
+    <string name="sp_audio_vol_down_automatically_toast_NORMAL">The volume is automatically turned down to protect your ears.</string>
+    <string name="sp_RestrictedWaitTitle_NORMAL">Please wait for a while.</string>
+    <string name="sp_RestrictedOnCs_NORMAL">Voice service is restricted.</string>
+    <string name="sp_RestrictedOnPs_NORMAL">Data service is restricted.</string>
+    <string name="sp_RestrictedOnCsPs_NORMAL">Voice/Data service is restricted.</string>
+    <string name="kt_lockscreen_network_locked_message">"Unsupported card
+Check the USIM card."</string>
+    <string name="kt_block_pukcode_message">"PUK code is blocked
+Required 114 just call."</string>
+    <string name="kt_msg_pin_code_block">"PIN code is blocked
+Cell phone function
+is limited"</string>
+    <string name="skt_title_password_enter_pin_code">Enter PIN code</string>
+    <string name="skt_password_guide_pin_code">Enter PIN code using 4~8 digits</string>
+    <string name="skt_title_password_wrong_pin_code">PIN code error</string>
+    <string name="skt_msg_password_wrong_pin_code">"You have entered
+an incorrect PIN.
+You can try to enter
+your PIN %dtime(s)
+Enter the PIN again."</string>
+    <string name="skt_msg_pin_code_block">"You have entered
+an incorrect PIN
+3 times
+Enter the PUK
+If you enter
+an incorrect PUK
+10 times,
+fail into disuse"</string>
+    <string name="skt_password_guide_puk_code">Enter PUK code</string>
+    <string name="skt_msg_puk_code_block">"Unable to use USIM.You have entered
+an incorrect PUK 10 times and
+the USIM card is
+no longer valid
+Please buy new
+USIM card"</string>
+    <string name="skt_msg_password_wrong_puk_code" formatted="false">"You have entered
+an incorrect PUK%dtime(s)
+Remaining PUK%dtime(s)
+Required 114 just call"</string>
+    <string name="skt_password_guide_new_pin_code">"Enter new PIN code
+using 4~8 digits"</string>
+    <string name="skt_password_guide_verify_new_pin_code">"Reenter new PIN code
+using 4~8 digits"</string>
+    <string name="skt_title_password_enter_puk_code">Enter PUK code</string>
+    <string name="skt_title_password_wrong_puk_code">PUK code error</string>
+    <string name="skt_title_password_enter_new_pin_code">Enter new PIN code</string>
+    <string name="skt_msg_verify_new_pin_error">"Unable to use USIM.You have reentered
+an incorrect new PIN
+Enter new PIN again"</string>
+    <string name="skt_title_puk_code_block">Unable to use USIM</string>
+    <string name="skt_title_usim_persocheck">Restrict other USIM</string>
+    <string name="skt_password_guide_usim_perso">Enter USIM lockcode using 4 digits</string>
+    <string name="skt_title_usim_persocheck_error">Password error</string>
+    <string name="skt_msg_password_wrong_usim_perso">"You have entered
+an incorrect password
+Enter new password again"</string>
+    <string name="skt_msg_registered_new_pin_code">"Registered
+new PIN code successfully"</string>
+    <string name="skt_msg_unsupport_overseas_card">Unsupported overseas card</string>
+    <string name="lgt_msg_password_wrong_pin_code">"You have entered an incorrect PIN. You can try to enter your PIN %dtime(s) remains.
+Enter the PIN again."</string>
+    <string name="lgt_msg_password_wrong_puk_code" formatted="false">"You have entered an incorrect PUK. Incorrect PUK %dtime(s) enter.%dtime(s) remains.
+Enter the PUK again."</string>
+    <string name="lgt_msg_pin_code_block">"You have entered an incorrect PIN
+3 times.
+Enter the PUK
+If you enter an incorrect PUK 10 times,
+fail into disuse."</string>
+    <string name="lgt_msg_puk_code_block">"Unable to use USIM.
+You have entered an incorrect PUK 10 times and
+the USIM card is no longer valid
+Please buy new USIM card."</string>
+    <string name="sp_copied_to_clipboard_NORMAL">Copied to clipboard</string>
+    <string name="sp_security_check_NORMAL">Security check</string>
+    <string name="sp_half_failed_attempt_NORMAL">Please type the sentence including the space in the box below.</string>
+    <string name="sp_wrong_password_NORMAL">Wrong password</string>
+    <string name="sp_failed_attempt_alert_NORMAL">With one more failed attempt, all the data in this device will be erased.</string>
+    <string name="lockscreen_network_locked_message">Network locked</string>
+    <string name="lockscreen_service_provider_locked_message">Service Provider locked</string>
+    <string name="lockscreen_sim_network_subset_locked_message">Phone is SIM Network Subset locked</string>
+    <string name="lockscreen_sim_corporate_locked_message">Phone is SIM Corporate locked</string>
+    <string name="lockscreen_sim_sim_locked_message">Phone is SIM locked</string>
+    <string name="lockscreen_otp_failed_locked_message">SECURITY ERROR</string>
+    <string name="spcExcessFailTitle">SPC ERR</string>
+    <string name="spcExcessFail">"
+
+
+ EXCESS SPC FAILURES 
+
+"</string>
+    <string name="skt_lockscreen_sim_unlock_progress_dialog_message">Unlocking SIM card...</string>
+    <string name="sp_wifi_hotspot_maxClientReached_title_NORMAL">Maximum Mobile Hotspot connections reached.</string>
+    <string name="sp_wifi_hotspot_maxClientReached_message_NORMAL">Please disconnect one or more device to enable the new device connection.</string>
+    <string name="sp_wifi_block_remove_att_ssid_NORMAL">cannot remove AT&amp;T SSID</string>
+    <string name="cannot_ringtone">Protected file. Cannot be set as ringtone</string>
+    <string name="STR_TITLETEXT_UICC_USIMPERSOCHECK">Setting USIM lock</string>
+    <string name="STR_TITLETEXT_USIMPERSO_CODE_RETRY_LEFT">"Invalid USIM
+lockcode Remain (%d/5)"</string>
+    <string name="STR_TITLETEXT_USIMPERSO_CODE_CHANGE_EXCEED">"Exceed the number
+of times to unlock.
+Reboot the phone 
+or visit nearest
+service center"</string>
+    <string name="kt_msg_password_wrong_puk_code">"Wrong PUK code.
+If you enter wrong
+code for 10 times,
+(%d/10)
+USIM card will be
+permanently blocked.
+Please visit olleh
+customer center."</string>
+    <string name="sp_Restart_NORMAL">Power off and restart</string>
+    <string name="sp_usb_charger_title_NORMAL">Charge only</string>
+    <string name="sp_usbtype_mtp_title_NORMAL">Media sync (MTP)</string>
+    <string name="sp_usb_tethering_NORMAL">USB tethering</string>
+    <string name="sp_lg_software_NORMAL">LG software</string>
+    <string name="usb_ptp_title">Camera (PTP)</string>
+    <string name="sp_warning_not_available_during_call_NORMAL">Not available during voice call or emergency callback mode.</string>
+</resources>

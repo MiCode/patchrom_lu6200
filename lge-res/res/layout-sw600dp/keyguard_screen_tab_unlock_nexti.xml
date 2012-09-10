@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tabunlock="http://schemas.android.com/apk/res/com.android.tabunlock">
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center" android:id="@id/transport_bg_protect" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_gravity="fill" android:id="@android:id/transport" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_column="0" android:layout_row="0" android:layout_rowSpan="3" android:layout_columnSpan="1" layout="@*android:layout/keyguard_transport_control" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="512.0dip" android:layout_centerInParent="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <com.android.internal.policy.impl.LockDigitalClock android:id="@android:id/time" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="120.0dip" android:textColor="#ffffffff" android:ellipsize="none" android:id="@android:id/timeDisplayBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        <TextView android:textSize="120.0dip" android:textColor="#ffffffff" android:ellipsize="none" android:id="@android:id/timeDisplayForeground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#80000000" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="0.0" android:layout_alignLeft="@android:id/timeDisplayBackground" android:layout_alignTop="@android:id/timeDisplayBackground" />
+                        <TextView android:textSize="32.0dip" android:textColor="#ffffffff" android:ellipsize="none" android:id="@android:id/am_pm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:singleLine="true" android:shadowColor="#80000000" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="0.0" android:layout_toRightOf="@android:id/timeDisplayBackground" android:layout_alignBaseline="@android:id/timeDisplayBackground" />
+                    </com.android.internal.policy.impl.LockDigitalClock>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_marginBottom="6.0dip">
+                        <TextView android:textSize="18.0dip" android:id="@android:id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:shadowColor="#80000000" android:shadowDx="0.0" android:shadowDy="1.2" android:shadowRadius="0.0" />
+                        <TextView android:textSize="18.0dip" android:ellipsize="marquee" android:id="@android:id/alarm_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:includeFontPadding="false" android:shadowColor="#80000000" android:shadowDx="0.0" android:shadowDy="1.2" android:shadowRadius="0.0" android:drawablePadding="4.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="18.0dip" android:ellipsize="marquee" android:id="@android:id/status1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:shadowColor="#80000000" android:shadowDx="0.0" android:shadowDy="1.2" android:shadowRadius="0.0" android:drawablePadding="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/chara" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="24.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <include android:id="@id/point_touch_unlock_frame" layout="@layout/touch_point_unlock_frame" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/doc_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="378.0dip" android:layout_height="90.0dip">
+                <LinearLayout android:gravity="center" android:layout_width="90.0dip" android:layout_height="90.0dip">
+                    <FrameLayout android:id="@id/doc_frame_camera" android:layout_width="90.0dip" android:layout_height="90.0dip">
+                        <ImageView android:layout_gravity="center" android:id="@id/doc_imageView_camera" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/btn_dock_camera_nexti" android:scaleType="fitXY" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="54.0dip" android:layout_marginRight="54.0dip">
+                    <FrameLayout android:id="@id/doc_frame2" android:layout_width="90.0dip" android:layout_height="90.0dip">
+                        <ImageView android:layout_gravity="center" android:id="@id/doc_imageView2" android:layout_width="72.0dip" android:layout_height="72.0dip" android:src="@drawable/ic_launcher_phone_nexti" android:scaleType="fitXY" />
+                        <ImageView android:id="@id/doc_atticon2" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitXY" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="90.0dip" android:layout_height="90.0dip">
+                    <FrameLayout android:id="@id/doc_frame3" android:layout_width="90.0dip" android:layout_height="90.0dip">
+                        <ImageView android:layout_gravity="center" android:id="@id/doc_imageView3" android:layout_width="72.0dip" android:layout_height="72.0dip" android:src="@drawable/ic_launcher_mail" android:scaleType="fitXY" />
+                        <ImageView android:id="@id/doc_atticon3" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitXY" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="21.0dip" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center" android:id="@android:id/carrier" android:layout_width="fill_parent" android:layout_height="0.0dip" android:singleLine="true" android:includeFontPadding="false" android:shadowColor="#80000000" android:shadowDx="0.0" android:shadowDy="1.2" android:shadowRadius="0.0" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="1000" android:drawable="@drawable/btn_base" />
+    <item android:duration="60" android:drawable="@drawable/weit_blink_in01" />
+    <item android:duration="60" android:drawable="@drawable/weit_blink_in02" />
+    <item android:duration="700" android:drawable="@drawable/weit_blink_max" />
+    <item android:duration="60" android:drawable="@drawable/weit_blink_out01" />
+    <item android:duration="60" android:drawable="@drawable/weit_blink_out02" />
+    <item android:duration="60" android:drawable="@drawable/weit_blink_out03" />
+    <item android:duration="60" android:drawable="@drawable/weit_blink_out04" />
+    <item android:duration="60" android:drawable="@drawable/weit_blink_out05" />
+    <item android:duration="60" android:drawable="@drawable/weit_blink_out06" />
+</animation-list>
