@@ -180,9 +180,6 @@ ro.com.google.clientidbase.gmm=android-lge
 ro.com.google.clientidbase.yt=android-lge
 ro.com.google.clientidbase.am=android-lgu-kr
 ro.com.google.clientidbase.ms=android-lgu-kr
-ro.config.ringtone=01_Beyond_the_Dream.ogg
-ro.config.notification_sound=04_Pebble.ogg
-ro.config.alarm_alert=Alarm_Beep01.ogg
 persist.radio.apm_sim_not_pwdn=1
 ro.afwdata.LGfeatureset=LGTBASE
 ro.com.google.gmsversion=4.0.3_r1
@@ -225,4 +222,8 @@ dalvik.vm.stack-trace-file=/data/anr/traces.txt
 persist.usb.android_config = 1
 persist.sys.usb.config=mass_storage,adb
 
-
+ro.config.notification_sound=FadeIn.ogg
+ro.config.alarm_alert=GoodMorning.ogg
+ro.config.ringtone=MI.ogg
+ro.config.sms_received_sound=FadeIn.ogg
+ro.config.sms_delivered_sound=MessageComplete.ogg
