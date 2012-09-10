@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/init" android:tag="NO_R2L" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/stub_preview" android:layout="@layout/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_quick_function" android:layout="@layout/quick_function" android:layout_width="@dimen/quickfunction_preview.width" android:layout_height="@dimen/quickfunction_preview.height" />
+    <ViewStub android:id="@id/stub_submenu_view" android:layout="@layout/submenu_view" android:layout_width="@dimen/quickfunction_preview.width" android:layout_height="@dimen/quickfunction_preview.height" />
+    <ViewStub android:id="@id/stub_zoom" android:layout="@layout/zoom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_brightness" android:layout="@layout/brightness" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_beautyshot" android:layout="@layout/beautyshot" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_camera_indicator" android:paddingTop="@dimen/layout_preview_indicators.paddingTop" android:paddingRight="@dimen/layout_preview_indicators.paddingRight" android:clipChildren="false" android:clipToPadding="false" android:layout="@layout/camera_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_preview_indicators.marginRight" />
+    <ViewStub android:id="@id/stub_camcorder_indicator" android:paddingTop="@dimen/layout_preview_indicators.paddingTop" android:paddingRight="@dimen/layout_preview_indicators.paddingRight" android:clipChildren="false" android:clipToPadding="false" android:layout="@layout/camcorder_indicator" android:layout_width="@dimen/layout_preview_indicators.width" android:layout_height="@dimen/layout_preview_indicators.height" android:layout_marginRight="@dimen/layout_preview_indicators.marginRight" />
+    <ViewStub android:id="@id/stub_focus" android:layout="@layout/focus" android:layout_width="@dimen/layout_preview.width" android:layout_height="@dimen/layout_preview.height" android:layout_marginLeft="@dimen/layout_preview_marginLeft" />
+    <ViewStub android:orientation="horizontal" android:id="@id/stub_rec_indicator" android:layout="@layout/rec_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_panorama" android:layout="@layout/panorama_view" android:layout_width="@dimen/panorama_view_layout_width" android:layout_height="@dimen/panorama_view_layout_height" android:layout_marginLeft="@dimen/panorama_view_layout_marginLeft" />
+    <ViewStub android:id="@id/stub_timer" android:layout="@layout/timer_view" android:layout_width="@dimen/timer_view_layout.width" android:layout_height="@dimen/timer_view_layout.height" android:layout_marginLeft="@dimen/layout_preview_marginLeft" />
+    <ViewStub android:id="@id/stub_preview_panel" android:layout="@layout/preview_panel" android:layout_width="@dimen/preview_panel.width" android:layout_height="@dimen/preview_panel.height" android:layout_alignParentRight="true" />
+    <ViewStub android:id="@id/stub_loading_screen" android:layout="@layout/init_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_live_effect_menu" android:layout="@layout/live_effect_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/live_effect_background_message" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/effect_menu_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lge.camera.components.RotateLayout android:id="@id/effect_menu_rotate_view" android:tag="NO_R2L" android:layout_width="@dimen/liveeffect_layout.width" android:layout_height="@dimen/liveeffect_layout.height">
+        <RelativeLayout android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="@drawable/effect_menu_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <RelativeLayout android:tag="NO_R2L" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/liveeffect_title_layout.marginLeft" android:layout_marginTop="@dimen/liveeffect_title_layout.marginTop">
+                <TextView android:id="@id/id_silly_face_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_silly_face_title_NORMAL" style="@style/live_effect_title" />
+            </RelativeLayout>
+            <HorizontalScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/face_effect_menu_view" android:tag="NO_R2L" android:layout_width="@dimen/liveeffect_scrollview.width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/liveeffect_scrollview.marginLeft" android:layout_marginTop="@dimen/liveeffect_scrollview.marginTop">
+                <RelativeLayout android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/face_effect_menu" android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:id="@id/face_effect_title" android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-30.0dip" android:layout_below="@id/face_effect_menu" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+            <RelativeLayout android:tag="NO_R2L" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/liveeffect_title_layout.marginLeft" android:layout_marginTop="@dimen/liveeffect_title_layout.marginTop2">
+                <TextView android:id="@id/id_background_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_background_title_NORMAL" style="@style/live_effect_title" />
+            </RelativeLayout>
+            <HorizontalScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/back_effect_menu_view" android:tag="NO_R2L" android:layout_width="@dimen/liveeffect_scrollview.width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/liveeffect_scrollview.marginLeft" android:layout_marginTop="@dimen/liveeffect_scrollview.marginTop2">
+                <RelativeLayout android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/back_effect_menu" android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:id="@id/back_effect_title" android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-30.0dip" android:layout_below="@id/back_effect_menu" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </com.lge.camera.components.RotateLayout>
+</RelativeLayout>

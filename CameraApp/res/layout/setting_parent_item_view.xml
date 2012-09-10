@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/config_item_layout" android:layout_width="@dimen/config_item_layout.width" android:layout_height="@dimen/config_item_layout.height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/setting_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_icon.marginLeft" android:layout_centerVertical="true" />
+    <TextView android:gravity="left|center" android:id="@id/config_item_text" android:paddingLeft="@dimen/config_item_text.paddingLeft" android:layout_width="@dimen/config_parent_item_text.width" android:layout_height="@dimen/config_item_text.height" style="@style/config_item_text" />
+</RelativeLayout>

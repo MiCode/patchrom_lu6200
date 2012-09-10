@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_background_cyan">#ff02edea</color>
+    <color name="halftrans_red">#80ff0000</color>
+    <color name="halftrans_green">#8000ff00</color>
+    <color name="halftrans_blue">#800000ff</color>
+</resources>

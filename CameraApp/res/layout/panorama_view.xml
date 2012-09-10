@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/panorama_view_layout" android:tag="NO_R2L" android:layout_width="@dimen/panorama_view_layout_width" android:layout_height="@dimen/panorama_view_layout_height" android:layout_marginLeft="@dimen/panorama_view_layout_marginLeft"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/panorama_arrow_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/panorama_arrow_left.marginLeft" android:layout_marginTop="@dimen/progress_bar.marginTop" android:src="@drawable/panorama_left_arrow_normal" />
+    <com.lge.camera.components.PanoProgressBar android:id="@id/progress_bar_custom" android:background="@drawable/panorama_bar_bg" android:layout_width="@dimen/progress_bar.width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/progress_bar.marginLeft" android:layout_marginTop="@dimen/progress_bar.marginTop" android:src="@drawable/panorama_bar_bg_full" />
+    <ImageView android:id="@id/panorama_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/panorama_arrow_right.marginLeft" android:layout_marginTop="@dimen/progress_bar.marginTop" android:src="@drawable/panorama_right_arrow" />
+    <com.lge.camera.components.RotateLayout android:id="@id/warning_fast_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/warning_fast_view" android:tag="NO_R2L" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/warning_fast_text" android:background="@drawable/toast_frame_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/onScreenHint_text_view" />
+        </RelativeLayout>
+    </com.lge.camera.components.RotateLayout>
+</RelativeLayout>

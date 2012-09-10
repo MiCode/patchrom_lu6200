@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lge.camera.components.RotateLayout android:layout_gravity="center" android:id="@id/rotate_toast" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/toast_frame_camera" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/onScreenHint_text_view" />
+    </FrameLayout>
+</com.lge.camera.components.RotateLayout>

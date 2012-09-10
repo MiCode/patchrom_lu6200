@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sharedPreferenceName" format="string" />
+    <attr name="key" format="reference|string" />
+    <attr name="title" format="string" />
+    <attr name="menuViewId" format="reference" />
+    <attr name="menuIcons" format="reference" />
+    <attr name="menuCommand" format="reference|string" />
+    <attr name="entryCommand" format="reference|string" />
+    <attr name="defaultValue" format="reference|string" />
+    <attr name="entries" format="reference" />
+    <attr name="entryValues" format="reference" />
+    <attr name="entryIcons" format="reference" />
+    <attr name="entryViewIds" format="reference" />
+    <attr name="indicatorIcons" format="reference" />
+    <attr name="extraInfos" format="reference" />
+    <attr name="persist" format="boolean" />
+    <attr name="extraInfos2" format="reference" />
+    <attr name="extraInfos3" format="reference" />
+    <attr name="background" format="reference" />
+    <attr name="text" format="reference|string" />
+    <attr name="textSize" format="dimension" />
+    <attr name="textColor" format="reference|color" />
+    <attr name="textPaddingTop" format="dimension" />
+    <attr name="textPaddingBottom" format="dimension" />
+    <attr name="textPaddingLeft" format="dimension" />
+    <attr name="textPaddingRight" format="dimension" />
+    <attr name="textGravity">
+        <flag name="center_vertical" value="0x00000001" />
+        <flag name="top" value="0x00000002" />
+        <flag name="bottom" value="0x00000004" />
+        <flag name="center_horizontal" value="0x00000010" />
+        <flag name="left" value="0x00000020" />
+        <flag name="right" value="0x00000040" />
+        <flag name="center" value="0x00000011" />
+    </attr>
+    <attr name="textShadowColor" format="reference|color" />
+    <attr name="textShadowRadius" format="float" />
+    <attr name="rotateInsideView" format="boolean" />
+    <attr name="rotateIconOnly" format="boolean" />
+    <attr name="pivotLeft" format="dimension" />
+    <attr name="pivotTop" format="dimension" />
+    <attr name="ellipsis" format="boolean" />
+</resources>

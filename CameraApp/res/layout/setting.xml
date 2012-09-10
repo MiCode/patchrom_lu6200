@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_settings" android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/parent_settingview" android:background="#80000000" android:layout_width="@dimen/parent_settingview.width" android:layout_height="@dimen/parent_settingview.height" android:layout_marginLeft="@dimen/parent_settingview.marginLeft" android:layout_marginTop="@dimen/parent_settingview.marginTop" android:cacheColorHint="#00000000" android:divider="@drawable/camera_setting_list_line" />
+    <ListView android:id="@id/child_settingview" android:background="#80000000" android:layout_width="@dimen/child_settingview.width" android:layout_height="@dimen/child_settingview.height" android:layout_marginLeft="@dimen/child_settingview.marginLeft" android:layout_marginTop="@dimen/child_settingview.marginTop" android:cacheColorHint="#00000000" android:divider="@drawable/camera_setting_list_line" />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="10010001" android:versionName="2.4.096" package="com.lge.camera"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="com.lge.vvm.permission.READ_VVM_DATA" />
+    <uses-permission android:name="com.lge.vvm.permission.READ_VVM_DATA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_ANIMATION_SCALE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="activecare.permission.READ_OMADM" />
+    <uses-permission android:name="activecare.permission.WRITE_OMADM" />
+    <application android:label="@string/app_name" android:icon="@drawable/topmenu_icon_camera" android:hardwareAccelerated="true" android:largeHeap="true">
+        <meta-data android:name="com.lge.bl.ms" android:value="true" />
+        <uses-library android:name="com.google.android.media.effects" android:required="false" />
+        <receiver android:name="com.lge.camera.listeners.CameraButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.CAMERA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/CustomThemeLoading" android:label="@string/app_name" android:name=".CamLoading" android:taskAffinity="com.lge.camera.CamLoading" android:clearTaskOnLaunch="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/CustomTheme" android:label="@string/app_name" android:name=".CameraApp" android:clearTaskOnLaunch="true" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.lge.autorun.start_ums" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/CustomTheme" android:label="@string/sp_Camcorder_NORMAL" android:icon="@drawable/ic_launcher_camera_record" android:name=".Camcorder" android:clearTaskOnLaunch="true" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAMERA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/CustomTheme" android:label="@string/app_name" android:name="com.lge.camera.PostviewActivity" android:clearTaskOnLaunch="true" android:screenOrientation="user" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden" android:hardwareAccelerated="true" />
+        <activity android:label="@string/help_title" android:name=".CameraHelp" android:screenOrientation="fullSensor" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden" />
+        <meta-data android:name="com.lge.layoutdirection" android:value="Locale" />
+    </application>
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="15" />
+</manifest>

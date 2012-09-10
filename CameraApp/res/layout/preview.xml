@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/preview" android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lge.camera.components.CameraPreview android:id="@id/preview_holder_surface" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <com.lge.camera.components.OpenGLSurfaceView android:id="@id/preview_render_surface" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <SurfaceView android:id="@id/preview_render_surface_extra" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/preview_render_surface_extra.marginLeft" android:layout_marginTop="@dimen/preview_render_surface_extra.marginTop" />
+    <ImageView android:id="@id/focus_touch_move" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/focus_guide" />
+    <ImageView android:id="@id/on_delay_off_ani" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+</RelativeLayout>

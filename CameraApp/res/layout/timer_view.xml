@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/timer_view_layout" android:tag="NO_R2L" android:layout_width="@dimen/timer_view_layout.width" android:layout_height="@dimen/timer_view_layout.height" android:layout_marginLeft="@dimen/layout_preview_marginLeft"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lge.camera.components.RotateImageView android:id="@id/timer_count" android:background="@drawable/timer_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <com.lge.camera.components.RotateImageView android:id="@id/countdown_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timer_01" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

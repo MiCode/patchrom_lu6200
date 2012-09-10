@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/postview_main" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:camera="http://schemas.android.com/apk/res/com.lge.camera">
+    <ViewStub android:id="@id/stub_camera_postview" android:layout="@layout/camera_postview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_camera_postview_menu" android:layout="@layout/camera_postview_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <ViewStub android:id="@id/stub_camera_postview_panel" android:layout="@layout/camera_postview_panel" android:layout_width="fill_parent" android:layout_height="@dimen/preview_panel.width" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/stub_camera_postview_attach" android:visibility="invisible" android:layout="@layout/camera_postview_attach" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+</RelativeLayout>

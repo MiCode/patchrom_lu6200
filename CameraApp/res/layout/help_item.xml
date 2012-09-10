@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow android:gravity="center_vertical" android:id="@id/help_layout_item" android:paddingTop="@dimen/help_layout_item.paddingTop" android:paddingBottom="@dimen/help_layout_item.paddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/help_item_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <TextView android:gravity="right|center" android:id="@id/help_item_menu" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.3" style="@style/help_item_menu" />
+        <TextView android:gravity="left|center" android:id="@id/help_item_desc" android:paddingRight="@dimen/help_item_desc.paddingRight" android:paddingBottom="@dimen/help_item_desc.paddingBottom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/help_item_desc.marginLeft" android:layout_marginBottom="@dimen/help_item_desc.marginBottom" android:layout_weight="0.7" style="@style/help_item_desc" />
+    </LinearLayout>
+</TableRow>

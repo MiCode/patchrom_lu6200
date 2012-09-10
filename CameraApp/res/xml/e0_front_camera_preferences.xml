@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceGroup camera:sharedPreferenceName="front_camera"
+  xmlns:camera="http://schemas.android.com/apk/res/com.lge.camera" />

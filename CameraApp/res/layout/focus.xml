@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/focus" android:tag="NO_R2L" android:visibility="invisible" android:layout_width="@dimen/focus_guide.width" android:layout_height="@dimen/focus_guide.height" android:layout_marginLeft="@dimen/layout_preview_marginLeft"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lge.camera.components.CameraFocusView android:id="@id/layout_cam_focus" android:tag="NO_R2L" android:layout_width="@dimen/focus_guide.width" android:layout_height="@dimen/focus_guide.height">
+        <com.lge.camera.components.FocusRectangle android:id="@id/focus_guide" android:background="#00000000" android:layout_width="@dimen/focus_guide.width" android:layout_height="@dimen/focus_guide.height" />
+        <ImageView android:id="@id/focus_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/focus_indicator_marginLeft_landscape" android:layout_marginTop="@dimen/focus_indicator_marginTop_landscape" />
+    </com.lge.camera.components.CameraFocusView>
+</RelativeLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="videosize_modes">
+        <item>vga</item>
+        <item>qvga</item>
+        <item>qcif</item>
+    </string-array>
+    <string-array name="preview_size_on_device">
+        <item>640x480</item>
+        <item>320x240</item>
+        <item>176x144</item>
+    </string-array>
+    <string-array name="preview_size_on_screen">
+        <item>640x480</item>
+        <item>640x480</item>
+        <item>586x480</item>
+    </string-array>
+    <array name="videosize_icons">
+        <item>@drawable/cam_icon_line0_06</item>
+        <item>@drawable/cam_icon_line0_07</item>
+        <item>@drawable/cam_icon_line0_13</item>
+    </array>
+    <string-array name="resolution_modes">
+        <item>5m</item>
+        <item>3m</item>
+        <item>2m</item>
+        <item>1m</item>
+        <item>vga</item>
+        <item>qvga</item>
+    </string-array>
+    <string-array name="focus_modes">
+        <item>auto</item>
+        <item>macro</item>
+        <item>face_tracking</item>
+        <item>manual</item>
+        <item>empty</item>
+    </string-array>
+    <array name="focus_icons">
+        <item>@drawable/cam_icon_indicator_focus_auto</item>
+        <item>@drawable/cam_icon_indicator_focus_macro</item>
+        <item>@drawable/cam_icon_indicator_focus_face</item>
+        <item>@drawable/cam_icon_indicator_focus_manual</item>
+        <item>@drawable/cam_icon_empty</item>
+    </array>
+    <array name="pref_front_camera_picturesize_entries">
+        <item>@string/image_size_1m</item>
+        <item>@string/sp_imgsize_1m_1536x864_NORMAL</item>
+    </array>
+    <string-array name="pref_front_camera_picturesize_entryvalues">
+        <item>1280x960</item>
+        <item>1536x864</item>
+    </string-array>
+    <array name="scene_modes">
+        <item>@string/sp_scene_mode_normal_NORMAL</item>
+        <item>@string/scene_mode_portrait</item>
+        <item>@string/scene_mode_landscape</item>
+        <item>@string/scene_mode_sports</item>
+        <item>@string/scene_mode_night</item>
+        <item>@string/scene_mode_sunset</item>
+        <item>@string/sp_scene_mode_normal_NORMAL</item>
+    </array>
+    <string-array name="scene_modes_entryvalues">
+        <item>normal</item>
+        <item>portrait</item>
+        <item>landscape</item>
+        <item>sports</item>
+        <item>night</item>
+        <item>sunset</item>
+        <item>empty</item>
+    </string-array>
+    <array name="pref_camera_iso_entries">
+        <item>@string/auto</item>
+        <item>@string/iso_400</item>
+        <item>@string/iso_200</item>
+        <item>@string/iso_100</item>
+    </array>
+    <string-array name="pref_camera_iso_entryvalues">
+        <item>auto</item>
+        <item>ISO400</item>
+        <item>ISO200</item>
+        <item>ISO100</item>
+    </string-array>
+    <array name="pref_camera_jpegquality_entries">
+        <item>@string/quality_super_fine</item>
+        <item>@string/quality_fine</item>
+        <item>@string/sp_quality_normal_NORMAL</item>
+    </array>
+    <string-array name="pref_camera_jpegquality_entryvalues">
+        <item>superfine</item>
+        <item>fine</item>
+        <item>normal</item>
+    </string-array>
+    <array name="pref_video_quality_entries">
+        <item>@string/quality_super_fine</item>
+        <item>@string/quality_fine</item>
+        <item>@string/sp_quality_normal_NORMAL</item>
+    </array>
+    <string-array name="pref_video_quality_entryvalues">
+        <item>superfine</item>
+        <item>fine</item>
+        <item>normal</item>
+    </string-array>
+    <array name="scene_icons">
+        <item>@drawable/cam_icon_line1_1</item>
+        <item>@drawable/cam_icon_line1_5</item>
+        <item>@drawable/cam_icon_line1_3</item>
+        <item>@drawable/cam_icon_line1_2</item>
+        <item>@drawable/cam_icon_line1_4</item>
+        <item>@drawable/cam_icon_line3_11</item>
+        <item>@drawable/cam_icon_empty</item>
+    </array>
+    <string-array name="scene_modes_video">
+        <item>normal</item>
+        <item>portrait</item>
+        <item>landscape</item>
+        <item>sports</item>
+        <item>night</item>
+        <item>sunset</item>
+    </string-array>
+    <array name="scene_icons_video">
+        <item>@drawable/cam_icon_line1_1</item>
+        <item>@drawable/cam_icon_line1_5</item>
+        <item>@drawable/cam_icon_line1_3</item>
+        <item>@drawable/cam_icon_line1_2</item>
+        <item>@drawable/cam_icon_line1_4</item>
+        <item>@drawable/cam_icon_line3_11</item>
+    </array>
+    <string-array name="timer_modes">
+        <item>0ff</item>
+        <item>3sec</item>
+        <item>5sec</item>
+        <item>10sec</item>
+    </string-array>
+    <array name="timer_icons">
+        <item>@drawable/cam_icon_empty</item>
+        <item>@drawable/cam_icon_line2_3</item>
+        <item>@drawable/cam_icon_line2_2</item>
+        <item>@drawable/cam_icon_line2_1</item>
+    </array>
+    <string-array name="shot_modes">
+        <item>none</item>
+        <item>continuous</item>
+        <item>face</item>
+        <item>beauty</item>
+        <item>art</item>
+        <item>panorama</item>
+        <item>faceeffect</item>
+        <item>cartoon</item>
+        <item>stitch</item>
+        <item>facedetect</item>
+        <item>smiledetect</item>
+        <item>outfocus</item>
+    </string-array>
+    <array name="shot_icons">
+        <item>@drawable/cam_icon_empty</item>
+        <item>@drawable/cam_icon_line3_6</item>
+        <item>@drawable/cam_icon_line3_5</item>
+        <item>@drawable/cam_icon_line3_4</item>
+        <item>@drawable/cam_icon_line3_3</item>
+        <item>@drawable/cam_icon_line3_1</item>
+        <item>@drawable/cam_icon_line3_7</item>
+        <item>@drawable/cam_icon_line3_9</item>
+        <item>@drawable/cam_icon_line3_10</item>
+        <item>@drawable/cam_icon_line3_7</item>
+        <item>@drawable/cam_icon_line3_8</item>
+        <item>@drawable/cam_icon_line3_2</item>
+    </array>
+    <string-array name="geotag_modes">
+        <item>off</item>
+        <item>searching</item>
+        <item>searched</item>
+    </string-array>
+    <array name="geotag_icons">
+        <item>@drawable/cam_icon_empty</item>
+        <item>@drawable/cam_icon_line4_1</item>
+        <item>@drawable/cam_icon_line4_2</item>
+    </array>
+    <string-array name="is_modes">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+    <array name="is_icons">
+        <item>@drawable/cam_icon_empty</item>
+        <item>@drawable/cam_icon_line6</item>
+    </array>
+    <string-array name="storage_modes">
+        <item>internal</item>
+        <item>external</item>
+    </string-array>
+    <array name="storage_icons">
+        <item>@drawable/cam_icon_indicator_storage_internal</item>
+        <item>@drawable/cam_icon_line5_1</item>
+    </array>
+    <string-array name="newmsg_modes">
+        <item>none</item>
+        <item>new1</item>
+        <item>new2</item>
+        <item>new3</item>
+        <item>new4</item>
+    </string-array>
+    <array name="newmsg_icons">
+        <item>@drawable/cam_icon_empty</item>
+        <item>@drawable/cam_icon_line7_1</item>
+        <item>@drawable/cam_icon_line7_2</item>
+        <item>@drawable/cam_icon_line7_3</item>
+        <item>@drawable/cam_icon_line7_4</item>
+    </array>
+    <string-array name="voice_mail_modes">
+        <item>none</item>
+        <item>new</item>
+    </string-array>
+    <array name="voice_mail_icons">
+        <item>@drawable/cam_icon_empty</item>
+        <item>@drawable/cam_icon_indicator_vvm</item>
+    </array>
+    <string-array name="batt_modes">
+        <item>level1</item>
+        <item>level2</item>
+        <item>level3</item>
+        <item>level4</item>
+        <item>level5</item>
+        <item>level6</item>
+        <item>level7</item>
+        <item>level8</item>
+        <item>level9</item>
+        <item>level10</item>
+        <item>level11</item>
+        <item>level12</item>
+        <item>level13</item>
+        <item>level14</item>
+    </string-array>
+    <array name="batt_icons">
+        <item>@drawable/cam_icon_line8_01</item>
+        <item>@drawable/cam_icon_line8_02</item>
+        <item>@drawable/cam_icon_line8_03</item>
+        <item>@drawable/cam_icon_line8_04</item>
+        <item>@drawable/cam_icon_line8_05</item>
+        <item>@drawable/cam_icon_line8_06</item>
+        <item>@drawable/cam_icon_line8_07</item>
+        <item>@drawable/cam_icon_line8_08</item>
+        <item>@drawable/cam_icon_line8_09</item>
+        <item>@drawable/cam_icon_line8_10</item>
+        <item>@drawable/cam_icon_line8_11</item>
+        <item>@drawable/cam_icon_line8_12</item>
+        <item>@drawable/cam_icon_line8_13</item>
+        <item>@drawable/cam_icon_line8_14</item>
+    </array>
+    <string-array name="voice_modes">
+        <item>On</item>
+        <item>mute</item>
+    </string-array>
+    <array name="voice_icons">
+        <item>@drawable/voice_record</item>
+        <item>@drawable/voice_record_mute</item>
+    </array>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_postview_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+  xmlns:camera="http://schemas.android.com/apk/res/com.lge.camera"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/postview_menu" android:layout_width="@dimen/postview_menu_button.width" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/button_send" android:background="@drawable/selector_after_capture_menu_top" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.lge.camera.components.RotateTextView android:id="@id/button_send_view" android:layout_width="fill_parent" android:layout_height="fill_parent" camera:text="@string/share" camera:textPaddingTop="0.0dip" camera:textPaddingBottom="0.0dip" camera:textPaddingLeft="8.0dip" camera:textPaddingRight="8.0dip" camera:textGravity="center" camera:textShadowColor="#ff000000" camera:textShadowRadius="1.0" style="@style/shot_menu_title_rotate_text_view" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/button_set_as" android:background="@drawable/selector_after_capture_menu_bottom" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.lge.camera.components.RotateTextView android:id="@id/button_set_as_view" android:layout_width="fill_parent" android:layout_height="fill_parent" camera:text="@string/sp_set_as_twoline_SHORT" camera:textPaddingTop="0.0dip" camera:textPaddingBottom="0.0dip" camera:textPaddingLeft="8.0dip" camera:textPaddingRight="8.0dip" camera:textGravity="center" camera:textShadowColor="#ff000000" camera:textShadowRadius="1.0" style="@style/shot_menu_title_rotate_text_view" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

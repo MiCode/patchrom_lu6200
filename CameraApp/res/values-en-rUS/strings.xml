@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sp_message_filename_limit_NORMAL">"File name length limit exceeded
+(limit : %d characters)"</string>
+    <string name="color_effect">Color effect</string>
+    <string name="color_effect_negative_sepia">Negative Sepia</string>
+    <string name="sp_save_direction_NORMAL">Save direction</string>
+    <string name="sp_note_voiceshutter_NORMAL">Say \"%s\" when you get ready to take a photo.</string>
+    <string name="sp_voiceshutter_say_NORMAL">Say \"%s\" to take a photo.</string>
+    <string name="note_color_effect_change">Color effect is turned off.</string>
+    <string name="sp_note_color_effect_change_NORMAL">Color effect is turned %s.</string>
+    <string name="sp_note_brightness_set_to_zero_NORMAL">Brightness is set to zero</string>
+    <string name="error_write_file_exist">Already exist!</string>
+    <string name="help_image_size_menu_vga_desc">Best for sending as an email attachment (takes small amount of memory).</string>
+    <string name="help_image_size_menu_qvga_desc">Best for sending as an email attachment (takes small amount of memory).</string>
+    <string name="help_white_balance_menu_desc">Rendering color under a wide range of lighting conditions.</string>
+    <string name="help_white_balance_menu_auto_desc">Automatically adjusting color.</string>
+    <string name="help_color_effect_menu_desc">Applies artistic effects to the pictures.</string>
+    <string name="help_color_effect_menu_off_desc">No color effect will be applied.</string>
+    <string name="help_color_effect_menu_negative_desc">Applying negative filter effect to invert the color of the picture.</string>
+    <string name="help_color_effect_menu_vivid_desc">Applies vividy color effect to pictures.</string>
+    <string name="help_color_effect_menu_negative_sepia_desc">Applies Negative sepia color effect to pictures.</string>
+    <string name="help_color_effect_menu_blue_desc">Applies Blue color effect to pictures.</string>
+    <string name="help_color_effect_menu_posterize_desc">Applies Posterize color effect to pictures.</string>
+    <string name="help_color_effect_menu_aqua_desc">Applies Aqua color effect to pictures.</string>
+    <string name="help_color_effect_menu_pastel_desc">Applies Pastel color effect to pictures.</string>
+    <string name="sp_help_anti_banding_menu_desc_NORMAL">Prevents color distortion.</string>
+    <string name="sp_help_storage_NORMAL">Select storage to save images.</string>
+    <string name="sp_help_storage_innner_NORMAL">Save images to internal memory.</string>
+    <string name="sp_help_storage_sd_NORMAL">Save images to SD card.</string>
+    <string name="help_video_size_176x144_desc">Best for sending as an email attachment (takes small amount of memory).</string>
+    <string name="help_video_scene_mode_menu_desc">Finds the color and light settings appropriate for the current environment.</string>
+    <string name="help_video_white_balance_menu_desc">Improves color qualities under different lighting conditions.</string>
+    <string name="help_video_white_balance_menu_auto_desc">Automatically adjusts color.</string>
+    <string name="help_video_color_effect_menu_desc">Setting special colored filter effects.</string>
+    <string name="help_video_color_effect_menu_off_desc">No color effect will be applied.</string>
+    <string name="sp_help_video_color_effect_menu_off_desc_NORMAL">Applying no colored filter effect.</string>
+    <string name="help_video_color_effect_menu_negative_desc">Applying negative filter effect to invert the color of the video.</string>
+    <string name="help_video_color_effect_menu_vivid_desc">Applies vividy color effect to videos.</string>
+    <string name="help_video_color_effect_menu_negative_sepia_desc">Applies Negative sepia color effect to videos.</string>
+    <string name="help_video_color_effect_menu_blue_desc">Applies Blue color effect to videos.</string>
+    <string name="help_video_color_effect_menu_posterize_desc">Applies Posterize color effect to videos.</string>
+    <string name="help_video_color_effect_menu_aqua_desc">Applies Aqua color effect to videos.</string>
+    <string name="help_video_color_effect_menu_pastel_desc">Applies Pastel color effect to videos.</string>
+    <string name="sp_help_videostorage_NORMAL">Select storage to save videos.</string>
+    <string name="sp_help_videostorage_in_NORMAL">Save videos to internal memory.</string>
+    <string name="sp_help_videostorage_sd_NORMAL">Save videos to SD card.</string>
+    <string name="camera_application_stopped">Camera Stopped.</string>
+    <string name="camera_driver_needs_reset">Camera has stopped unexpectedly,need to restart.</string>
+    <string name="sp_video_length_dialog_title_NORMAL">Video Length</string>
+    <string name="pref_camera_settings_category">Camera Settings</string>
+    <string name="sp_popup_storage_maxsize_NORMAL">"Max. recording size reached.
+Recording will end soon."</string>
+    <string name="sp_message_recording_limit_NORMAL">Attachment file size limit is smaller than the min. recording size.</string>
+    <string name="sp_resol_mms_qcif_NORMAL">MMS (QCIF-176x144)</string>
+    <string name="sp_resol_mms_qvga_NORMAL">MMS (QVGA-320x240)</string>
+    <string name="sp_bg_replacement_message_NORMAL">"Place your device on a steady surface and be sure there is no movement behind you.
+
+Then step out of the camera view."</string>
+    <string name="sp_help_withe_balance_desc_v2_NORMAL">Adjust image color temperatures that are preset according to the light source</string>
+    <string name="sp_help_color_effect_desc_v2_NORMAL">Set colored filter effect when take pictures</string>
+    <string name="sp_help_color_effect_off_desc_v2_NORMAL">No color effect</string>
+    <string name="sp_help_color_effect_negative_desc_v2_NORMAL">Capture images with color inverted</string>
+    <string name="sp_help_storage_v2_NORMAL">Select storage to save images.</string>
+    <string name="sp_help_storage_inner_v2_NORMAL">Save images to internal memory.</string>
+    <string name="sp_help_storage_sd_v2_NORMAL">Save images to SD card.</string>
+    <string name="sp_help_video_color_effect_desc_v2_NORMAL">Set colored filter effect when record videos</string>
+    <string name="sp_help_video_color_effect_negative_desc_v2_NORMAL">Record videos with color inverted</string>
+    <string name="sp_help_video_voice_desc_v2_NORMAL">Set the sound while recording video</string>
+    <string name="sp_help_videostorage_v2_NORMAL">Select storage to save videos.</string>
+    <string name="sp_help_videostorage_in_v2_NORMAL">Save videos to internal memory.</string>
+    <string name="sp_help_videostorage_sd_v2_NORMAL">Save videos to SD card.</string>
+    <string name="sp_help_guide_beauty_shot_desc_NORMAL">Beauty shot makes the facial skin to appear brighter and smoother.</string>
+    <string name="sp_help_guide_continuous_shot_desc_NORMAL">Continuous shot takes six photos immediately one after another. Managing photos are available when auto review is on.</string>
+    <string name="sp_help_guide_hdr_desc_NORMAL">HDR combines photos taken at different exposures to one optimal photo while compensating for backlight by enhancing multiple exposure control.</string>
+    <string name="sp_help_guide_live_effect_desc_NORMAL">Live effect provides various visual effects when recording a video. Choose an effect, and begin recording.</string>
+    <string name="sp_help_guide_panorama_shot_desc_NORMAL">"Continuous photos are assembled into one single panoramic image. 
+Press shutter to start and slowly turn the camera across from one end to the other. "</string>
+    <string name="sp_gps_setting_msg_NORMAL">Enable location services to use geotagging.</string>
+    <string name="sp_photoimage_SHORT">Picture</string>
+    <string name="sp_timemachine_bubble_popup_jp_NORMAL">To display the photos that were captured 1 second before the moment of shutter release, press this button.</string>
+    <string name="sp_center_NORMAL">Center</string>
+</resources>

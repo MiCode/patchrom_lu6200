@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/camcorder_indicator" android:tag="NO_R2L" android:paddingTop="@dimen/layout_preview_indicators.paddingTop" android:paddingRight="@dimen/layout_preview_indicators.paddingRight" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/layout_preview_indicators.width" android:layout_height="@dimen/layout_preview_indicators.height" android:layout_marginRight="@dimen/layout_preview_indicators.marginRight"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:camera="http://schemas.android.com/apk/res/com.lge.camera">
+    <com.lge.camera.components.RotateImageView android:id="@id/icon_vvm_message" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.lge.camera.components.RotateImageView android:id="@id/icon_voice_mail" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.lge.camera.components.RotateImageView android:id="@id/icon_message" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.lge.camera.components.RotateImageView android:id="@id/icon_geo_tag" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.lge.camera.components.RotateImageView android:id="@id/icon_voice" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.lge.camera.components.RotateImageView android:id="@id/icon_flash" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.lge.camera.components.RotateImageView android:id="@id/icon_video_size" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.lge.camera.components.RotateImageView android:id="@id/icon_storage" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.lge.camera.components.RotateImageView android:id="@id/icon_battery" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.lge.camera.components.RotateImageView android:id="@id/icon_scene_mode" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

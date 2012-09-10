@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/submenu_view" android:tag="NO_R2L" android:background="@android:color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lge.camera.components.RotateImageButton android:id="@id/osd_btn2_ani" android:visibility="gone" android:layout_width="@dimen/osd_btn2_ani.width" android:layout_height="@dimen/osd_btn2_ani.height" android:layout_marginLeft="@dimen/quickfunction_layout.marginLeft" android:layout_marginTop="@dimen/osd_btn2_ani.marginTop" />
+    <com.lge.camera.components.RotateImageButton android:id="@id/osd_btn3_ani" android:visibility="gone" android:layout_width="@dimen/osd_btn3_ani.width" android:layout_height="@dimen/osd_btn3_ani.height" android:layout_marginLeft="@dimen/quickfunction_layout.marginLeft" android:layout_marginTop="@dimen/osd_btn3_ani.marginTop" />
+    <com.lge.camera.components.RotateImageButton android:id="@id/osd_btn4_ani" android:visibility="gone" android:layout_width="@dimen/osd_btn4_ani.width" android:layout_height="@dimen/osd_btn4_ani.height" android:layout_marginLeft="@dimen/quickfunction_layout.marginLeft" android:layout_marginTop="@dimen/osd_btn4_ani.marginTop" />
+    <include layout="@layout/submenu_2_item" />
+    <include layout="@layout/submenu_3_item" />
+    <include layout="@layout/submenu_4_item" />
+    <include layout="@layout/submenu_5_item" />
+    <include layout="@layout/submenu_6_item" />
+</RelativeLayout>

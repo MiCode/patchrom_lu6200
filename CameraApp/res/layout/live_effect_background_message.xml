@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/effect_background_message" android:tag="NO_R2L" android:background="#77000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="onProtectiveCurtainClick"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lge.camera.components.RotateLayout android:id="@id/bg_replace_message" android:tag="NO_R2L" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:tag="NO_R2L" android:background="@android:drawable/dialog_holo_light_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:padding="32.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="@string/sp_bg_replacement_message_NORMAL" style="@style/live_effect_message" />
+            <View android:background="#ffaaaaaa" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <Button android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center" android:id="@id/bg_replace_cancel_button" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@android:string/cancel" android:onClick="onCancelBackgroundMessage" style="@style/dialog_button" />
+        </LinearLayout>
+    </com.lge.camera.components.RotateLayout>
+</RelativeLayout>

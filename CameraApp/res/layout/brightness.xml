@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/brightness" android:tag="NO_R2L" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:camera="http://schemas.android.com/apk/res/com.lge.camera">
+    <com.lge.camera.components.RotateLayout android:id="@id/brightness_rotate_view" android:tag="NO_R2L" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/brightness_bar.marginLeft" android:layout_marginTop="@dimen/brightness_bar.marginTop">
+        <com.lge.camera.components.BrightnessBar android:id="@id/brightness_bar" android:tag="NO_R2L" android:background="#00000000" android:clipChildren="false" android:layout_width="@dimen/brightness_bar.width" android:layout_height="@dimen/brightness_bar.height">
+            <RelativeLayout android:id="@id/adj_minus_button_view" android:tag="NO_R2L" android:clipChildren="false" android:layout_width="@dimen/adj_minus_button_view.width" android:layout_height="@dimen/adj_minus_button_view.height" android:layout_marginLeft="@dimen/adj_minus_button_view.marginLeft" android:layout_marginTop="@dimen/adj_minus_button_view.marginTop">
+                <com.lge.camera.components.RotateImageButton android:id="@id/adj_minus_button" android:background="@drawable/selector_zoom_btn" android:layout_width="@dimen/adj_minus_button.width" android:layout_height="@dimen/adj_minus_button.height" android:src="@drawable/camera_preview_brightness_minus" android:layout_centerInParent="true" style="@style/NoFocusableButton" />
+            </RelativeLayout>
+            <RelativeLayout android:tag="NO_R2L" android:layout_width="@dimen/adj_cursor_bg.width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/adj_index_bar.marginLeft" android:layout_marginTop="@dimen/adj_index_bar.marginTop">
+                <ImageView android:id="@id/adj_index_bar" android:background="@drawable/camera_preview_brightness_bar_value" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/adj_cursor_bg" android:background="@drawable/camera_preview_brightness_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/adj_cursor_bg.marginTop" />
+                <ImageView android:id="@id/adj_cursor" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/adj_cursor.marginLeft" android:layout_marginTop="@dimen/adj_cursor_bg.marginTop" android:src="@drawable/selector_ev_cursor" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/adj_plus_button_view" android:tag="NO_R2L" android:clipChildren="false" android:layout_width="@dimen/adj_plus_button_view.width" android:layout_height="@dimen/adj_plus_button_view.height" android:layout_marginLeft="@dimen/adj_plus_button_view.marginLeft" android:layout_marginTop="@dimen/adj_plus_button_view.marginTop">
+                <com.lge.camera.components.RotateImageButton android:id="@id/adj_plus_button" android:background="@drawable/selector_zoom_btn" android:layout_width="@dimen/adj_minus_button.width" android:layout_height="@dimen/adj_minus_button.height" android:src="@drawable/camera_preview_brightness_plus" android:layout_centerInParent="true" style="@style/NoFocusableButton" />
+            </RelativeLayout>
+        </com.lge.camera.components.BrightnessBar>
+    </com.lge.camera.components.RotateLayout>
+</RelativeLayout>

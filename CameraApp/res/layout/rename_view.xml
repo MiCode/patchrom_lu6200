@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RenameView" android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/RenameEditor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scrollHorizontally="true" android:maxLength="80" android:inputType="textImeMultiLine" style="@style/rename_edit_text">
+        <requestFocus />
+    </EditText>
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonPanel" android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:divider="?android:dividerHorizontal" android:showDividers="beginning" android:dividerPadding="0.0dip">
+        <LinearLayout android:orientation="horizontal" android:tag="NO_R2L" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerVertical" android:measureWithLargestChild="true" android:showDividers="middle" android:dividerPadding="0.0dip" style="?android:attr/buttonBarStyle">
+            <Button android:layout_gravity="left" android:id="@id/button2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/dialog_button" />
+            <Button android:layout_gravity="right" android:id="@id/button1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/dialog_button" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

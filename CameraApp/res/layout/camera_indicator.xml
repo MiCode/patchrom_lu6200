@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_indicator" android:tag="NO_R2L" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:camera="http://schemas.android.com/apk/res/com.lge.camera"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/camera_indicator_sub1" android:tag="NO_R2L" android:paddingTop="@dimen/layout_preview_indicators.paddingTop" android:paddingRight="@dimen/layout_preview_indicators.paddingRight" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/layout_preview_indicators.width" android:layout_height="@dimen/layout_preview_indicators.height" android:layout_marginRight="@dimen/layout_preview_indicators.marginRight"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:camera="http://schemas.android.com/apk/res/com.lge.camera">
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_voice_shutter" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_vvm_message" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_message" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_timer" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_scene_mode" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_geo_tag" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_flash" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_resolution" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_focus" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_storage" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lge.camera.components.RotateImageView android:id="@id/icon_battery" android:paddingLeft="@dimen/layout_preview_indicators.gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="left" android:id="@id/camera_indicator_sub2" android:tag="NO_R2L" android:paddingRight="@dimen/layout_preview_indicators.paddingRight" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/layout_preview_indicators.width" android:layout_height="@dimen/layout_preview_indicators.height_sub" android:layout_marginLeft="@dimen/layout_preview_indicators_sub.marginLeft" android:layout_marginTop="@dimen/layout_preview_indicators_sub.marginTop"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.lge.camera.components.RotateTextView android:id="@id/icon_text_remain" android:layout_width="@dimen/icon_text_remain.width" android:layout_height="@dimen/icon_text_remain.height" camera:textPaddingTop="@dimen/icon_text_remain.paddingTop" camera:textPaddingBottom="0.0dip" camera:textPaddingLeft="0.0dip" camera:textPaddingRight="@dimen/icon_text_remain.paddingRight" camera:textGravity="top|left" camera:textShadowColor="#ff000000" camera:textShadowRadius="1.0" style="@style/indi_text_rotate_text_view" />
+    </RelativeLayout>
+</RelativeLayout>

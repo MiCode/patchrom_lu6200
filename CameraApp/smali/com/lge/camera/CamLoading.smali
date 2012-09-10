@@ -1,0 +1,413 @@
+.class public Lcom/lge/camera/CamLoading;
+.super Landroid/app/Activity;
+.source "CamLoading.java"
+
+
+# instance fields
+.field private mCheckCameraOut:Ljava/lang/Runnable;
+
+.field private mHandler:Lcom/lge/camera/util/MainHandler;
+
+.field private mLoadingComplete:Ljava/lang/Runnable;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 18
+    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+
+    .line 16
+    new-instance v0, Lcom/lge/camera/util/MainHandler;
+
+    invoke-direct {v0}, Lcom/lge/camera/util/MainHandler;-><init>()V
+
+    iput-object v0, p0, Lcom/lge/camera/CamLoading;->mHandler:Lcom/lge/camera/util/MainHandler;
+
+    .line 24
+    new-instance v0, Lcom/lge/camera/CamLoading$1;
+
+    invoke-direct {v0, p0}, Lcom/lge/camera/CamLoading$1;-><init>(Lcom/lge/camera/CamLoading;)V
+
+    iput-object v0, p0, Lcom/lge/camera/CamLoading;->mLoadingComplete:Ljava/lang/Runnable;
+
+    .line 35
+    new-instance v0, Lcom/lge/camera/CamLoading$2;
+
+    invoke-direct {v0, p0}, Lcom/lge/camera/CamLoading$2;-><init>(Lcom/lge/camera/CamLoading;)V
+
+    iput-object v0, p0, Lcom/lge/camera/CamLoading;->mCheckCameraOut:Ljava/lang/Runnable;
+
+    .line 19
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Lcom/lge/camera/util/Common;->checkEnteringTime(Z)V
+
+    .line 20
+    sget v0, Lcom/lge/camera/util/Common;->APP_CAMLOADING_INSTANCE_COUNT:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    sput v0, Lcom/lge/camera/util/Common;->APP_CAMLOADING_INSTANCE_COUNT:I
+
+    .line 21
+    const-string v0, "CameraApp"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "construct CAMLOADING app_instance_cnt = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    sget v2, Lcom/lge/camera/util/Common;->APP_CAMLOADING_INSTANCE_COUNT:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/lge/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 22
+    return-void
+.end method
+
+.method static synthetic access$000(Lcom/lge/camera/CamLoading;)Ljava/lang/Runnable;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 15
+    iget-object v0, p0, Lcom/lge/camera/CamLoading;->mCheckCameraOut:Ljava/lang/Runnable;
+
+    return-object v0
+.end method
+
+.method static synthetic access$100(Lcom/lge/camera/CamLoading;)Lcom/lge/camera/util/MainHandler;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 15
+    iget-object v0, p0, Lcom/lge/camera/CamLoading;->mHandler:Lcom/lge/camera/util/MainHandler;
+
+    return-object v0
+.end method
+
+.method static synthetic access$200(Lcom/lge/camera/CamLoading;)Ljava/lang/Runnable;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 15
+    iget-object v0, p0, Lcom/lge/camera/CamLoading;->mLoadingComplete:Ljava/lang/Runnable;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method protected finalize()V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Throwable;
+        }
+    .end annotation
+
+    .prologue
+    .line 123
+    sget v0, Lcom/lge/camera/util/Common;->APP_CAMLOADING_INSTANCE_COUNT:I
+
+    add-int/lit8 v0, v0, -0x1
+
+    sput v0, Lcom/lge/camera/util/Common;->APP_CAMLOADING_INSTANCE_COUNT:I
+
+    .line 124
+    const-string v0, "CameraApp"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "destroy CAMLOADING app_instance_cnt = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    sget v2, Lcom/lge/camera/util/Common;->APP_CAMLOADING_INSTANCE_COUNT:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/lge/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 125
+    invoke-super {p0}, Ljava/lang/Object;->finalize()V
+
+    .line 126
+    return-void
+.end method
+
+.method public getActivity()Landroid/app/Activity;
+    .locals 0
+
+    .prologue
+    .line 79
+    return-object p0
+.end method
+
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 4
+    .parameter "savedInstanceState"
+
+    .prologue
+    const/4 v3, 0x1
+
+    .line 44
+    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 45
+    sput-boolean v3, Lcom/lge/camera/properties/ProjectVariables;->bEnterSetting:Z
+
+    .line 47
+    invoke-static {}, Lcom/lge/camera/properties/ProjectVariables;->useRootWindowLoading()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 48
+    const/4 v2, 0x0
+
+    invoke-static {p0, v2}, Lcom/lge/camera/util/Common;->checkEnterApplication(Landroid/app/Activity;Z)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 49
+    const-string v2, "CameraApp"
+
+    const-string v3, "CameraLoading:onCreate()-end, checkEnterApplication fail."
+
+    invoke-static {v2, v3}, Lcom/lge/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 51
+    :try_start_0
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    .line 52
+    const-wide/16 v2, 0x3e8
+
+    invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 56
+    :goto_0
+    invoke-static {p0}, Lcom/lge/camera/util/Common;->checkCameraOut(Landroid/app/Activity;)V
+
+    .line 76
+    :goto_1
+    return-void
+
+    .line 53
+    :catch_0
+    move-exception v0
+
+    .line 54
+    .local v0, e:Ljava/lang/InterruptedException;
+    const-string v2, "CameraApp"
+
+    const-string v3, "CameraLoading:onCreate() InterruptedException "
+
+    invoke-static {v2, v3, v0}, Lcom/lge/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    goto :goto_0
+
+    .line 59
+    .end local v0           #e:Ljava/lang/InterruptedException;
+    :cond_0
+    invoke-static {}, Lcom/lge/camera/properties/ProjectVariables;->useTurnOffAnimation()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 60
+    invoke-static {}, Lcom/lge/camera/util/Common;->turnOffAnimation()V
+
+    .line 62
+    :cond_1
+    invoke-static {p0}, Lcom/lge/camera/util/Common;->showLoadingWindow(Landroid/app/Activity;)V
+
+    .line 63
+    iget-object v2, p0, Lcom/lge/camera/CamLoading;->mLoadingComplete:Ljava/lang/Runnable;
+
+    invoke-interface {v2}, Ljava/lang/Runnable;->run()V
+
+    goto :goto_1
+
+    .line 66
+    :cond_2
+    invoke-static {}, Lcom/lge/camera/properties/ProjectVariables;->useTurnOffAnimation()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    .line 67
+    invoke-static {}, Lcom/lge/camera/util/Common;->turnOffAnimation()V
+
+    .line 69
+    :cond_3
+    invoke-virtual {p0}, Lcom/lge/camera/CamLoading;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    .line 70
+    .local v1, window:Landroid/view/Window;
+    invoke-virtual {p0, v3}, Lcom/lge/camera/CamLoading;->requestWindowFeature(I)Z
+
+    .line 71
+    const/16 v2, 0x400
+
+    invoke-virtual {v1, v2}, Landroid/view/Window;->addFlags(I)V
+
+    .line 72
+    invoke-static {p0}, Lcom/lge/camera/util/Common;->setQuickClipScreenCaptureLimit(Landroid/app/Activity;)V
+
+    .line 74
+    const v2, 0x7f03000d
+
+    invoke-virtual {p0, v2}, Lcom/lge/camera/CamLoading;->setContentView(I)V
+
+    .line 75
+    const-string v2, "CameraApp"
+
+    const-string v3, "onCreate()-end"
+
+    invoke-static {v2, v3}, Lcom/lge/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_1
+.end method
+
+.method public onDestroy()V
+    .locals 2
+
+    .prologue
+    .line 112
+    const-string v0, "CameraApp"
+
+    const-string v1, "TIME_CHECK CamLoading onDestroy()-start"
+
+    invoke-static {v0, v1}, Lcom/lge/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 113
+    invoke-static {}, Lcom/lge/camera/properties/ProjectVariables;->useRootWindowLoading()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 114
+    invoke-static {}, Lcom/lge/camera/util/Common;->deleteLoadingWindow()V
+
+    .line 116
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/lge/camera/CamLoading;->mHandler:Lcom/lge/camera/util/MainHandler;
+
+    .line 117
+    invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
+
+    .line 118
+    const-string v0, "CameraApp"
+
+    const-string v1, "onDestroy()-end"
+
+    invoke-static {v0, v1}, Lcom/lge/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 119
+    return-void
+.end method
+
+.method public onPause()V
+    .locals 2
+
+    .prologue
+    .line 105
+    const-string v0, "CameraApp"
+
+    const-string v1, "TIME_CHECK CamLoading onPause()-start"
+
+    invoke-static {v0, v1}, Lcom/lge/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 106
+    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+
+    .line 107
+    const-string v0, "CameraApp"
+
+    const-string v1, "onPause()-end"
+
+    invoke-static {v0, v1}, Lcom/lge/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 108
+    return-void
+.end method
+
+.method public onResume()V
+    .locals 3
+
+    .prologue
+    .line 84
+    const-string v1, "CameraApp"
+
+    const-string v2, "TIME_CHECK CamLoading onResume()-start"
+
+    invoke-static {v1, v2}, Lcom/lge/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 85
+    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+
+    .line 88
+    new-instance v0, Ljava/lang/Thread;
+
+    new-instance v1, Lcom/lge/camera/CamLoading$3;
+
+    invoke-direct {v1, p0}, Lcom/lge/camera/CamLoading$3;-><init>(Lcom/lge/camera/CamLoading;)V
+
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    .line 98
+    .local v0, checkThread:Ljava/lang/Thread;
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    .line 100
+    const-string v1, "CameraApp"
+
+    const-string v2, "onResume()-end"
+
+    invoke-static {v1, v2}, Lcom/lge/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 101
+    return-void
+.end method
