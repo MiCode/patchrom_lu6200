@@ -1,0 +1,23 @@
+From 83dadaa7a5848132a51d59b43a050fe9ce8df58e Mon Sep 17 00:00:00 2001
+From: mochangming <mochangming@xiaomi.com>
+Date: Tue, 11 Sep 2012 14:34:27 +0800
+Subject: [PATCH] modify telephonyprovider
+
+---
+ .../TelephonyProvider$DatabaseHelper.smali         |  228 ++++++++++----------
+ 1 files changed, 114 insertions(+), 114 deletions(-)
+
+--- a/TelephonyProvider/smali/com/android/providers/telephony/TelephonyProvider$DatabaseHelper.smali
++++ b/TelephonyProvider/smali/com/android/providers/telephony/TelephonyProvider$DatabaseHelper.smali
+@@ -1122,7 +1122,7 @@
+     .parameter "db"
+ 
+     .prologue
+-    const-string v0, "CREATE TABLE carriers(_id INTEGER PRIMARY KEY,name TEXT,numeric TEXT,mcc TEXT,mnc TEXT,apn TEXT,user TEXT,server TEXT,password TEXT,proxy TEXT,port TEXT,mmsproxy TEXT,mmsport TEXT,mmsc TEXT,authtype INTEGER,type TEXT,current INTEGER,protocol TEXT,roaming_protocol TEXT,carrier_enabled BOOLEAN,bearer INTEGER);"
++    const-string v0, "CREATE TABLE carriers(_id INTEGER PRIMARY KEY,name TEXT,numeric TEXT,mcc TEXT,mnc TEXT,apn TEXT,user TEXT,server TEXT,password TEXT,proxy TEXT,port TEXT,mmsproxy TEXT,mmsport TEXT,mmsc TEXT,authtype INTEGER,type TEXT,current INTEGER,protocol TEXT,profile_type TEXT,roaming_protocol TEXT,carrier_enabled BOOLEAN,extraid TEXT,defaultsetting INTEGER,usercreatesetting INTEGER,bearer INTEGER);"
+ 
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
+-- 
+1.7.1
+

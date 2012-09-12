@@ -34,6 +34,7 @@ if [ $1 = "Phone" ];then
 
 	#echo "Merge Phone's xml"
 	#$XMLMERGYTOOL $1/res/values $2/res/values
+
 	echo "replace functions in Phone"
 	$PORT_ROOT/lu6200/replace_functions_in_phone.sh $2
 fi
@@ -52,4 +53,16 @@ fi
 
 if [ $1 = "MiuiGallery" ];then
     $XMLMERGYTOOL $1/res/values $2/res/values
+fi
+
+if [ $1 = "TelephonyProvider" ];then
+    cp $1/TelephonyProvider.patch out/
+	cd out
+	$GIT_APPLY TelephonyProvider.patch
+	cd ..
+	for file in `find $2 -name *.rej`
+	do
+	echo "TelephonyProvider patch fail"
+		exit 1
+	done
 fi
