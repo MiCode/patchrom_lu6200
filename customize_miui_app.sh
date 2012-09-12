@@ -23,12 +23,14 @@ if [ $1 = "Phone" ];then
     done
 
     cp $1/Ringer.patch out/
+    cp $1/Phone_Settings.patch out/
     cd out
     $GIT_APPLY Ringer.patch
+    $GIT_APPLY Phone_Settings.patch
     cd ..
     for file in `find $2 -name *.rej`
     do
-	echo "Ringer patch fail"
+	echo "Phone patch fail"
         exit 1
     done
 

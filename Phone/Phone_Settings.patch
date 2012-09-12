@@ -1,0 +1,23 @@
+From f36615fd5e253ed67e77d14e249118590d86ced8 Mon Sep 17 00:00:00 2001
+From: mochangming <mochangming@xiaomi.com>
+Date: Wed, 12 Sep 2012 11:38:53 +0800
+Subject: [PATCH] remove network mode preference
+
+---
+ Phone/smali/com/android/phone/Settings.smali |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+--- a/Phone/smali/com/android/phone/Settings.smali
++++ b/Phone/smali/com/android/phone/Settings.smali
+@@ -446,7 +446,7 @@
+ 
+     if-ne v7, v8, :cond_4
+ 
+-    move v1, v8
++    move v1, v9
+ 
+     .local v1, isLteOnCdma:Z
+     :goto_1
+-- 
+1.7.1
+
