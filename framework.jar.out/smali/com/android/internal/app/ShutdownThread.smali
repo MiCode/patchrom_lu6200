@@ -787,9 +787,9 @@
     .local v0, closer:Lcom/android/internal/app/ShutdownThread$CloseDialogReceiver;
     new-instance v6, Landroid/app/AlertDialog$Builder;
 
-    const v5, 0x20a01cb
+    #const v5, 0x20a01cb
 
-    invoke-direct {v6, p0, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v6, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     sget-boolean v5, Lcom/android/internal/app/ShutdownThread;->mReboot:Z
 
