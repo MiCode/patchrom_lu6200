@@ -13,7 +13,7 @@ local-modified-apps := CameraApp
 
 local-modified-jars := com.lge.bluetooth
 
-local-miui-modified-apps := Mms MiuiHome ThemeManager Phone MiuiGallery TelephonyProvider
+local-miui-modified-apps := Mms MiuiHome ThemeManager Phone MiuiGallery TelephonyProvider MiuiSystemUI
 # All apks from MIUI
 local-miui-removed-apps  := Stk MediaProvider Bluetooth
 

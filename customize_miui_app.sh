@@ -68,3 +68,7 @@ if [ $1 = "TelephonyProvider" ];then
 		exit 1
 	done
 fi
+
+if [ $1 = "MiuiSystemUI" ];then
+    $XMLMERGYTOOL $1/res/values $2/res/values
+fi
