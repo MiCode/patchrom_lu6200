@@ -9,7 +9,7 @@
 		<item name="spam">false</item>
 		<item name="LGUspam">false</item>
 		<item name="change_MemoryFull_Threshold">true</item>
-		<item name="limitless_unauthorized_SMS_usage">true</item>
+		<item name="limitless_unauthorized_SMS_usage">false</item>
 	    	<item name="KREncodingScheme">true</item>
 	    	<item name="KROperator">true</item>
 	    <item name="KRVMSType">true</item>
