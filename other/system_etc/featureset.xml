@@ -24,7 +24,7 @@
 		<item name="save_usim_3gpp_in_cdma">true</item>
 		<item name="lgu_gsm_submit_encoding_type">true</item>
 		<item name="sms_full_exception_case">true</item>
-	        <item name="replyAddress">true</item>
+	        <item name="replyAddress">false</item>
 	        <item name="use_reply_address_in_usim_restore">true</item>
 	    <!-- constants -->	
 		<item name="MemoryFull_Threshold">10485760</item>
