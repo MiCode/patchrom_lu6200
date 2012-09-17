@@ -37,8 +37,8 @@ if [ $1 = "Phone" ];then
 	#echo "Merge Phone's xml"
 	#$XMLMERGYTOOL $1/res/values $2/res/values
 
-	echo "replace functions in Phone"
-	$PORT_ROOT/lu6200/replace_functions_in_phone.sh $2
+	echo "replace functions"
+	$PORT_ROOT/lu6200/replace_functions_IccCard.sh $2
 fi
 
 if [ $1 = "MiuiHome" ];then
@@ -47,6 +47,9 @@ fi
 
 if [ $1 = "Settings" ];then
     $XMLMERGYTOOL $1/res/values $2/res/values
+
+	echo "replace functions"
+	$PORT_ROOT/lu6200/replace_functions_IccCard.sh $2
 fi
 
 if [ $1 = "ThemeManager" ];then
