@@ -67,7 +67,7 @@
         <item name="OEM_RAD_DIALER_POPUP">true</item>
         <item name="USIM_PERSONAL_LOCK">false</item>
         <item name="SHOW_NETWORK_NAME_WHEN_MANUAL_NETWORK_SETTING_FAIL">true</item>
-        <item name="KoreaNumberFormat">true</item>
+        <item name="KoreaNumberFormat">false</item>
         <item name="2_CHIP_DELAY_FOR_NT_MODE_CHANGE">15000</item>
         <item name="LGE_PHONE_NUMBER_QUERY">false</item>
 	<!-- Telephony END-->
