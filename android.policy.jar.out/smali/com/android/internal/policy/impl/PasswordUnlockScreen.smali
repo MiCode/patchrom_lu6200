@@ -138,7 +138,6 @@
     const/4 v2, 0x2
 
     if-eq v1, v2, :cond_6
-
     .line 127
     const v1, 0x109004f
 
@@ -198,7 +197,6 @@
     iget-object v1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mPasswordEntry:Landroid/widget/EditText;
 
     invoke-virtual {v1, p0}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
-
     .line 140
     sget-object v1, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->sOperator:Ljava/lang/String;
 
@@ -246,6 +244,9 @@
 
     .line 158
     :goto_2
+    
+    goto/16 :goto_3
+    
     sget-object v1, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->sOperator:Ljava/lang/String;
 
     const-string v2, "DCM"
@@ -290,9 +291,9 @@
     check-cast v1, Landroid/widget/Button;
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mResetPassword:Landroid/widget/Button;
-
     .line 164
     iget-object v1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mResetPassword:Landroid/widget/Button;
+
 
     new-instance v2, Lcom/android/internal/policy/impl/PasswordUnlockScreen$1;
 
@@ -580,7 +581,7 @@
     .end local v13           #quality:I
     .end local v14           #switchImeButton:Landroid/view/View;
     :cond_6
-    const v1, 0x109004f
+    const v1, 0x109004e
 
     const/4 v2, 0x1
 
