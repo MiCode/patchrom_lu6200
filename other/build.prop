@@ -227,3 +227,4 @@ ro.config.alarm_alert=GoodMorning.ogg
 ro.config.ringtone=MI.ogg
 ro.config.sms_received_sound=FadeIn.ogg
 ro.config.sms_delivered_sound=MessageComplete.ogg
+ro.hwui.texture_cache_size=48
