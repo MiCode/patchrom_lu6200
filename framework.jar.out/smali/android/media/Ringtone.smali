@@ -1250,6 +1250,19 @@
 
     .line 219
     :cond_6
+    :try_start_merge1
+    invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
+    :try_end_merge2
+    .catchall {:try_start_merge1 .. :try_end_merge2} :catchall_0
+
+    move-result-object v12
+
+    if-eqz v10, :cond_0
+
+    invoke-interface {v10}, Landroid/database/Cursor;->close()V
+
+    goto/16 :goto_0
+
     const/4 v11, 0x0
 
     .line 221
