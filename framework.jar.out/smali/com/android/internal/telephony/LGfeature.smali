@@ -548,7 +548,7 @@
     iput v6, p0, Lcom/android/internal/telephony/LGfeature;->IMSPowerOffdelaytime:I
 
     .line 343
-    iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->PAYPOPUP_KO:Z
+    #iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->PAYPOPUP_KO:Z
 
     .line 344
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->disallowed1xDataCall:Z
@@ -566,7 +566,7 @@
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->APN_SELECTION:Z
 
     .line 349
-    iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->SUPPORT_MODE_CHANGE:Z
+    #iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->SUPPORT_MODE_CHANGE:Z
 
     .line 350
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->MANUAL_NET_SEARCH:Z
