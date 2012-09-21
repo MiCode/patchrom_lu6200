@@ -10737,8 +10737,19 @@
 
     move-result v11
 
+    if-nez v11, :cond_merge1
+
+    const-string v11, "zh_CN"
+
+    const-string v12, "LGU"
+
+    invoke-static {v11, v12}, Lcom/android/internal/telephony/lgeAutoProfiling;->isOperatorCountry(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v11
+
     if-eqz v11, :cond_5
 
+    :cond_merge1
     iget-boolean v11, v1, Lcom/android/internal/telephony/DriverCall;->isMT:Z
 
     if-eqz v11, :cond_5
@@ -11138,9 +11149,20 @@
 
     move-result v11
 
+    if-nez v11, :cond_merge2
+
+    const-string v11, "zh_CN"
+
+    const-string v12, "LGU"
+
+    invoke-static {v11, v12}, Lcom/android/internal/telephony/lgeAutoProfiling;->isOperatorCountry(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v11
+
     if-eqz v11, :cond_7
 
     .line 4534
+    :cond_merge2
     const/4 v11, 0x0
 
     iput v11, v1, Lcom/android/internal/telephony/DriverCall;->signal:I
