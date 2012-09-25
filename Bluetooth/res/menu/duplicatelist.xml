@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@android:drawable/ic_menu_add" android:id="@id/dup_menu_add_all" android:title="@string/dup_menu_add_all" />
+    <item android:icon="@android:drawable/ic_menu_edit" android:id="@id/dup_menu_update_all" android:title="@string/dup_menu_update_all" />
+    <item android:icon="@android:drawable/ic_menu_delete" android:id="@id/dup_menu_ignore_all" android:title="@string/dup_menu_ignore_all" />
+</menu>

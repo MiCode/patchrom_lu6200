@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/loadedimage" android:visibility="visible" android:layout_width="233.0dip" android:layout_height="298.0dip" />
+        <ListView android:id="@android:id/list" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+    </LinearLayout>
+    <RelativeLayout android:background="@android:drawable/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_alignParentBottom="true">
+        <Button android:id="@id/set_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/sp_pouch_set_screen_NORMAL" android:drawablePadding="10.0dip" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

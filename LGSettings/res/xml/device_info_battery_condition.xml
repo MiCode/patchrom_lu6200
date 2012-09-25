@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_battery_condition_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/device_battery_condition_info" android:title="" android:key="battery_verygood" />
+    <PreferenceCategory android:layout="@layout/device_battery_condition_info_good" android:title="" android:key="battery_good" />
+    <PreferenceCategory android:layout="@layout/device_battery_condtion_info_bad" android:title="" android:key="battery_bad" />
+    <PreferenceCategory android:title="@string/sp_alarm_battery_condition_NORMAL" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_alarm_battery_condition_NORMAL" android:key="battery_condition_alarm" android:summary="@string/sp_alarm_battery_condition_summary_NORMAL" android:disableDependentsState="true" />
+</PreferenceScreen>

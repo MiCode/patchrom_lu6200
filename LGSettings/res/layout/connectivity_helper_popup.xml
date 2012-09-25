@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/charge_help" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_usb_charger_title_NORMAL" />
+            <TextView android:id="@id/charge_help_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_connectivity_help_02_NORMAL" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/mass_storage_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:id="@id/mass_storage_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_mass_storage_NORMAL" />
+            <TextView android:id="@id/mass_storage_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_connectivity_help_mass_storage_NORMAL" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/mtp_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_usbtype_mtp_title_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/sp_connectivity_help_04_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_05_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_06_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_07_NORMAL" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/internet_connection_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_internet_connection_NORMAL" />
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:id="@id/modem_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/sp_modem_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_modem_NORMAL" />
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:id="@id/ethernet_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/data_usage_tab_ethernet" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/sp_connectivity_help_09_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_10_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_11_NORMAL" />
+            <TextView android:autoLink="web" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_12_NORMAL" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/tether_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <TextView android:textSize="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_connectivity_help_08_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/sp_connectivity_help_09_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_10_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_11_NORMAL" />
+            <TextView android:autoLink="web" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_12_NORMAL" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lg_software_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:id="@id/software_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_lg_software_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/sp_connectivity_help_15_NORMAL" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ptp_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/usb_ptp_title" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/sp_connectivity_help_18_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_19_NORMAL" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sp_connectivity_help_20_NORMAL" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

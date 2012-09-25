@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_internet_connection_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@xml/wifi_settings_as_setupwizard_layout" android:title="@string/sp_internet_connection_desc_NORMAL" android:key="internet_connection">
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_mobile_network_NORMAL" android:key="mobile_network" android:summary="@string/sp_Mobile_Network_Charge_NORMAL" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/wifi_settings" android:key="wifi_on" android:summary="@string/sp_wifi_description_NORMAL" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_wifi_access_point_category_NORMAL" android:key="wifi_access_point" />
+    <Preference android:persistent="false" android:title="@string/wifi_add_network" android:key="add_network" android:dependency="wifi_on" />
+</PreferenceScreen>

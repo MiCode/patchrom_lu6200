@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="data_network_mode_entry_label">
+        <item>@string/data_network_mode_enabled</item>
+        <item>@string/data_network_mode_disabled</item>
+        <item>@string/data_network_mode_ask_at_boot</item>
+    </array>
+    <array name="data_network_mode_entry_label_lgu">
+        <item>@string/sp_data_network_mode_enabled_lgu_NORMAL</item>
+        <item>@string/sp_data_network_mode_disabled_lgu_NORMAL</item>
+        <item>@string/sp_data_network_mode_ask_at_boot_lgu_NORMAL</item>
+    </array>
+    <array name="data_network_mode_entry_label_lgu_3g">
+        <item>@string/sp_data_network_mode_enabled_lgu_3G_NORMAL</item>
+        <item>@string/sp_data_network_mode_disabled_lgu_3G_NORMAL</item>
+        <item>@string/sp_data_network_mode_ask_at_boot_lgu_NORMAL</item>
+    </array>
+    <integer-array name="data_network_mode_entry_mode">
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="data_network_mode_entry_type">
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+    <array name="data_network_mode_entry_description">
+        <item>@string/data_network_mode_enabled_description</item>
+        <item>@string/data_network_mode_disabled_description</item>
+        <item>@string/data_network_mode_ask_at_boot_description</item>
+    </array>
+    <array name="data_network_mode_entry_description_lgu">
+        <item>@string/sp_data_network_mode_enabled_desc_lgu_NORMAL</item>
+        <item>@string/sp_data_network_mode_disabled_desc_lgu_NORMAL</item>
+        <item>@string/sp_data_network_mode_ask_at_boot_lgu_desc_NORMAL</item>
+    </array>
+    <array name="data_network_mode_entry_description_lgu_3g">
+        <item>@string/sp_data_network_mode_enabled_desc_lgu_3G_NORMAL</item>
+        <item>@string/sp_data_network_mode_disabled_desc_lgu_3G_NORMAL</item>
+        <item>@string/sp_data_network_mode_ask_at_boot_lgu_desc3G_NORMAL</item>
+    </array>
+    <string-array name="timezone_filters">
+        <item>America</item>
+        <item>Europe</item>
+        <item>Africa</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pacific</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="date_format_values">
+        <item></item>
+        <item>MM-dd-yyyy</item>
+        <item>dd-MM-yyyy</item>
+        <item>yyyy-MM-dd</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="screen_timeout_values">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1000000000</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Clock 1</item>
+        <item>Clock 2</item>
+        <item>Clock 3</item>
+        <item>Clock 4</item>
+        <item>Clock 5</item>
+        <item>Clock 6</item>
+        <item>Clock 7</item>
+        <item>Clock 8</item>
+    </string-array>
+    <integer-array name="sp_pouch_default_clock_values_NORMAL">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </integer-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analog</item>
+        <item>Digital</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_values1_NORMAL">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Center</item>
+        <item>Top right</item>
+        <item>Top left</item>
+        <item>Bottom right</item>
+        <item>Bottom left</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_values1_NORMAL">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Font name1</item>
+        <item>Font name2</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_values1_NORMAL">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Sound</item>
+        <item>Vibrate only</item>
+        <item>Silent</item>
+    </string-array>
+    <string-array name="sp_sound_profile_values_NORMAL">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Never</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+    <string-array name="dream_timeout_values">
+        <item>0</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Immediately</item>
+        <item>5 seconds</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+    <string-array name="lock_after_timeout_values">
+        <item>0</item>
+        <item>5000</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Immediately</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_values_NORMAL">
+        <item>0</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="entryvalues_font_size">
+        <item>0.85</item>
+        <item>1.0</item>
+        <item>1.15</item>
+        <item>1.30</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Very slow</item>
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+        <item>Very fast</item>
+    </string-array>
+    <string-array name="tts_rate_values">
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Very low</item>
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+        <item>Very high</item>
+    </string-array>
+    <string-array name="tts_pitch_values">
+        <item>50</item>
+        <item>80</item>
+        <item>100</item>
+        <item>120</item>
+        <item>150</item>
+    </string-array>
+    <string-array name="tts_demo_strings">
+        <item>This is an example of speech synthesis in English.</item>
+        <item>Voici un échantillon de synthèse vocale en français.</item>
+        <item>Dies ist ein Beispiel für Sprachsynthese in Deutsch.</item>
+        <item>Questo è un esempio di sintesi vocale in italiano.</item>
+        <item>Este es un ejemplo de síntesis de voz en español.</item>
+    </string-array>
+    <string-array name="tts_demo_string_langs">
+        <item>eng</item>
+        <item>fra</item>
+        <item>deu</item>
+        <item>ita</item>
+        <item>spa</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Scanning...</item>
+        <item>Connecting...</item>
+        <item>Authenticating...</item>
+        <item>Obtaining IP address...</item>
+        <item>Connected</item>
+        <item>Suspended</item>
+        <item>Disconnecting...</item>
+        <item>Disconnected</item>
+        <item>Unsuccessful</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Scanning...</item>
+        <item>Connecting to %1$s...</item>
+        <item>Authenticating with %1$s...</item>
+        <item>Obtaining IP address from %1$s...</item>
+        <item>Connected to %1$s</item>
+        <item>Suspended</item>
+        <item>Disconnecting from %1$s...</item>
+        <item>Disconnected</item>
+        <item>Unsuccessful</item>
+    </string-array>
+    <array name="wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap</item>
+    </array>
+    <array name="wifi_security_no_eap">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+    </array>
+    <string-array name="wifi_ap_security">
+        <item>Open</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_ap_security_kr">
+        <item>Open</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>FAST</item>
+    </string-array>
+    <string-array name="wifi_eap_method_ext_sim">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>SIM</item>
+        <item>AKA</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Push button</item>
+        <item>PIN from this device</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Connected</item>
+        <item>Connecting</item>
+        <item>Unsuccessful</item>
+        <item>Available</item>
+        <item>Out-of-range</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>1 hour</item>
+        <item>Never time out</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Poor</item>
+        <item>Fair</item>
+        <item>Good</item>
+        <item>Excellent</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Always</item>
+        <item>Only when plugged in</item>
+        <item>Never (increases data usage)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Always</item>
+        <item>Only when plugged in</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_values_kr">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Auto</item>
+        <item>5 GHz only</item>
+        <item>2.4 GHz only</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Usage time</item>
+        <item>Launch count</item>
+        <item>App name</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>SIM</item>
+        <item>AKA</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Off</item>
+        <item>Push button</item>
+        <item>PIN from access point</item>
+        <item>PIN from this device</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Static</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>None</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Off</item>
+        <item>Alert</item>
+        <item>Vibrate</item>
+    </string-array>
+    <string-array name="emergency_tone_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="special_locale_codes">
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+        <item>zh_HK</item>
+    </string-array>
+    <string-array name="special_locale_names">
+        <item>中文 (简体)</item>
+        <item>中文 (繁體)</item>
+        <item>中文 (香港)</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP or CHAP</item>
+    </string-array>
+    <string-array name="apn_auth_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="apn_protocol_entries">
+        <item>IPv4</item>
+        <item>IPv6</item>
+        <item>IPv4/IPv6</item>
+    </string-array>
+    <string-array name="apn_protocol_values">
+        <item>IP</item>
+        <item>IPV6</item>
+        <item>IPV4V6</item>
+    </string-array>
+    <string-array name="apn_protocol_entries_ds_2pdp">
+        <item>IPv4</item>
+        <item>IPv6</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Unspecified</item>
+    </string-array>
+    <string-array name="bearer_values">
+        <item>14</item>
+        <item>13</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Internal device storage</item>
+        <item>Removable SD card</item>
+        <item>Let the system decide</item>
+    </string-array>
+    <string-array name="app_install_location_values">
+        <item>device</item>
+        <item>sdcard</item>
+        <item>auto</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Always</item>
+        <item>Never</item>
+        <item>Only in silent mode</item>
+        <item>Only when not in silent mode</item>
+    </string-array>
+    <string-array name="vibrate_values">
+        <item>always</item>
+        <item>never</item>
+        <item>silent</item>
+        <item>notsilent</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Short</item>
+        <item>Medium</item>
+        <item>Long</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Never check</item>
+        <item>Check for DRM content only</item>
+        <item>Always check</item>
+    </string-array>
+    <string-array name="hdcp_checking_values">
+        <item>never</item>
+        <item>drm-only</item>
+        <item>always</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Never use HDCP checking</item>
+        <item>Use HDCP checking for DRM content only</item>
+        <item>Always use HDCP checking</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale .5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="window_animation_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale .5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standard limit</item>
+        <item>No background processes</item>
+        <item>At most 1 process</item>
+        <item>At most 2 processes</item>
+        <item>At most 3 processes</item>
+        <item>At most 4 processes</item>
+    </string-array>
+    <string-array name="app_process_limit_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="vpn_types">
+        <item>PPTP</item>
+        <item>L2TP/IPSec PSK</item>
+        <item>L2TP/IPSec RSA</item>
+        <item>IPSec Xauth PSK</item>
+        <item>IPSec Xauth RSA</item>
+        <item>IPSec Hybrid RSA</item>
+    </string-array>
+    <string-array name="vpn_types_for_authentec">
+        <item>PPTP</item>
+        <item>L2TP/IPSec PSK</item>
+        <item>L2TP/IPSec CRT</item>
+        <item>IPSec PSK</item>
+        <item>IPSec CRT</item>
+        <item>IPSec EAP</item>
+        <item>IPSec Hybrid RSA</item>
+    </string-array>
+    <array name="vpn_types_long_for_authentec">
+        <item>@string/sp_vpn_type_long_pptp_NORMAL</item>
+        <item>@string/sp_vpn_types_long_l2tp_psk_NORMAL</item>
+        <item>@string/sp_vpn_types_long_l2tp_crt_NORMAL</item>
+        <item>@string/sp_vpn_type_long_ipsec_psk_NORMAL</item>
+        <item>@string/sp_vpn_type_long_ipsec_crt_NORMAL</item>
+        <item>@string/sp_vpn_type_long_ipsec_eap_NORMAL</item>
+        <item>@string/sp_vpn_types_long_ipsec_rsa_NORMAL</item>
+    </array>
+    <array name="vpn_ipsec_psk_templates">
+        <item>@string/vpn_template_psk_v1</item>
+        <item>@string/sp_vpn_template_psk_v1_uauth_MLINE</item>
+        <item>@string/sp_vpn_template_psk_v1_uauth_agg_MLINE</item>
+        <item>@string/vpn_template_psk_v2</item>
+    </array>
+    <array name="vpn_ipsec_crt_templates">
+        <item>@string/vpn_template_crt_v1</item>
+        <item>@string/sp_vpn_template_crt_v1_uauth_MLINE</item>
+        <item>@string/sp_vpn_template_crt_v1_uauth_agg_MLINE</item>
+        <item>@string/vpn_template_crt_v2</item>
+    </array>
+    <array name="vpn_l2tp_ipsec_psk_templates">
+        <item>@string/vpn_template_psk_v1</item>
+        <item>@string/sp_vpn_template_psk_v1_uauth_agg_MLINE</item>
+    </array>
+    <array name="vpn_l2tp_ipsec_crt_templates">
+        <item>@string/vpn_template_crt_v1</item>
+        <item>@string/sp_vpn_template_crt_v1_uauth_agg_MLINE</item>
+    </array>
+    <array name="vpn_ipsec_ike_id_types">
+        <item>@string/vpn_ike_type_email_address</item>
+        <item>@string/vpn_ike_type_dn</item>
+        <item>@string/vpn_ike_type_dns</item>
+        <item>@string/vpn_ike_type_key_id</item>
+        <item>@string/vpn_ike_type_ip</item>
+    </array>
+    <string-array name="vpn_ipsec_ike_id_types_save">
+        <item>user-fqdn</item>
+        <item>distinguished-name</item>
+        <item>fqdn</item>
+        <item>key-identifier</item>
+        <item>ip-address</item>
+    </string-array>
+    <array name="ipsec_encryption_types">
+        <item>@string/vpn_algorithm_auto</item>
+        <item>3DES-CBC</item>
+        <item>AES-CBC-128</item>
+        <item>AES-CBC-192</item>
+        <item>AES-CBC-256</item>
+        <item>AES-CTR-128</item>
+        <item>AES-CTR-192</item>
+        <item>AES-CTR-256</item>
+        <item>AES-GCM-128</item>
+        <item>AES-GCM-192</item>
+        <item>AES-GCM-256</item>
+    </array>
+    <string-array name="ipsec_encryption_types_save">
+        <item>any</item>
+        <item>3des-cbc</item>
+        <item>aes-cbc-128</item>
+        <item>aes-cbc-192</item>
+        <item>aes-cbc-256</item>
+        <item>aes-ctr-128</item>
+        <item>aes-ctr-192</item>
+        <item>aes-ctr-256</item>
+        <item>aes-gcm-128</item>
+        <item>aes-gcm-192</item>
+        <item>aes-gcm-256</item>
+    </string-array>
+    <array name="ipsec_integrity_types">
+        <item>@string/vpn_algorithm_auto</item>
+        <item>HMAC-MD5-96</item>
+        <item>HMAC-SHA1-96</item>
+        <item>AES-XCBC-MAC-96 (IKEv2 only)</item>
+        <item>HMAC-SHA-256-128</item>
+        <item>HMAC-SHA-384-192</item>
+        <item>HMAC-SHA-512-256</item>
+        <item>Null</item>
+    </array>
+    <string-array name="ipsec_integrity_types_save">
+        <item>any</item>
+        <item>hmac-md5-96</item>
+        <item>hmac-sha1-96</item>
+        <item>aes-xcbc-mac-96</item>
+        <item>hmac-sha-256-128</item>
+        <item>hmac-sha-384-192</item>
+        <item>hmac-sha-512-256</item>
+        <item>null</item>
+    </string-array>
+    <array name="vpn_ike_versions">
+        <item>@string/vpn_ike_version_1</item>
+        <item>@string/vpn_ike_version_2</item>
+    </array>
+    <array name="ike_encryption_types">
+        <item>@string/vpn_algorithm_auto</item>
+        <item>3DES-CBC</item>
+        <item>AES-CBC-128</item>
+        <item>AES-CBC-192</item>
+        <item>AES-CBC-256</item>
+        <item>AES-CTR-128</item>
+        <item>AES-CTR-192</item>
+        <item>AES-CTR-256</item>
+        <item>AES-GCM-128</item>
+        <item>AES-GCM-192</item>
+        <item>AES-GCM-256</item>
+    </array>
+    <string-array name="ike_encryption_types_save">
+        <item>any</item>
+        <item>3des-cbc</item>
+        <item>aes-cbc-128</item>
+        <item>aes-cbc-192</item>
+        <item>aes-cbc-256</item>
+        <item>aes-ctr-128</item>
+        <item>aes-ctr-192</item>
+        <item>aes-ctr-256</item>
+        <item>aes-gcm-128</item>
+        <item>aes-gcm-192</item>
+        <item>aes-gcm-256</item>
+    </string-array>
+    <array name="ike_integrity_types">
+        <item>@string/vpn_algorithm_auto</item>
+        <item>HMAC-MD5-96</item>
+        <item>HMAC-SHA1-96</item>
+        <item>AES-XCBC-MAC-96 (IKEv2 only)</item>
+        <item>HMAC-SHA-256-128</item>
+        <item>HMAC-SHA-384-192</item>
+        <item>HMAC-SHA-512-256</item>
+    </array>
+    <string-array name="ike_integrity_types_save">
+        <item>any</item>
+        <item>hmac-md5-96</item>
+        <item>hmac-sha1-96</item>
+        <item>aes-xcbc-mac-96</item>
+        <item>hmac-sha-256-128</item>
+        <item>hmac-sha-384-192</item>
+        <item>hmac-sha-512-256</item>
+    </string-array>
+    <array name="ike_group_types">
+        <item>@string/vpn_algorithm_auto</item>
+        <item>Group 1(MODP-768)</item>
+        <item>Group 2(MODP-1024)</item>
+        <item>Group 5(MODP-1536)</item>
+        <item>Group 14(MODP-2048)</item>
+        <item>Group 15(MODP-3072)</item>
+        <item>Group 16(MODP-4096)</item>
+        <item>Group 17(MODP-6144)</item>
+        <item>Group 18(MODP-8192)</item>
+        <item>Group 19(ECP-256)</item>
+        <item>Group 20(ECP-384)</item>
+        <item>Group 21(ECP-521)</item>
+        <item>Group 22(MODP-1024-160)</item>
+        <item>Group 23(MODP-2048-224)</item>
+        <item>Group 24(MODP-2048-256)</item>
+        <item>Group 25(ECP-192)</item>
+        <item>Group 26(ECP-224)</item>
+    </array>
+    <string-array name="ike_group_types_save">
+        <item>any</item>
+        <item>modp-768</item>
+        <item>modp-1024</item>
+        <item>modp-1536</item>
+        <item>modp-2048</item>
+        <item>modp-3072</item>
+        <item>modp-4096</item>
+        <item>modp-6144</item>
+        <item>modp-8192</item>
+        <item>ecp-256</item>
+        <item>ecp-384</item>
+        <item>ecp-521</item>
+        <item>modp-1024-160</item>
+        <item>modp-2048-224</item>
+        <item>modp-2048-256</item>
+        <item>ecp-192</item>
+        <item>ecp-224</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN with pre-shared keys</item>
+        <item>L2TP/IPSec VPN with certificates</item>
+        <item>IPSec VPN with pre-shared keys and Xauth authentication</item>
+        <item>IPSec VPN with certificates and Xauth authentication</item>
+        <item>IPSec VPN with certificates and hybrid authentication</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Disconnected</item>
+        <item>Initializing...</item>
+        <item>Connecting...</item>
+        <item>Connected</item>
+        <item>Timeout</item>
+        <item>Unsuccessful</item>
+    </string-array>
+    <string-array name="multi_sim_entries">
+        <item>Subscription 1</item>
+        <item>Subscription 2</item>
+    </string-array>
+    <string-array name="multi_sim_summaries">
+        <item>Subscription 1</item>
+        <item>Subscription 2</item>
+    </string-array>
+    <string-array name="multi_sim_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="multi_sim_entries_voice">
+        <item>Subscription 1</item>
+        <item>Subscription 2</item>
+        <item>Prompt</item>
+    </string-array>
+    <string-array name="multi_sim_summaries_voice">
+        <item>Subscription 1</item>
+        <item>Subscription 2</item>
+        <item>Prompt User</item>
+    </string-array>
+    <string-array name="multi_sim_values_voice">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="dimmed_display_font_list">
+        <item>ar</item>
+        <item>fa</item>
+        <item>zh</item>
+        <item>th</item>
+        <item>ur</item>
+        <item>hi</item>
+        <item>iw</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>All devices</item>
+        <item>Headset</item>
+        <item>PC</item>
+        <item>Phone</item>
+        <item>Peripheral</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>User image</item>
+        <item>Clock 1</item>
+        <item>Clock 2</item>
+        <item>Clock 3</item>
+        <item>Clock 4</item>
+        <item>Clock 5</item>
+    </string-array>
+    <integer-array name="sp_pouch_clock_values_NORMAL">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="network_mode_values">
+        <item>11</item>
+        <item>10</item>
+        <item>9</item>
+        <item>8</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="network_mode_entries">
+        <item>LTE</item>
+        <item>Global</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>EvDo only</item>
+        <item>CDMA w/o EvDo</item>
+        <item>CDMA / EvDo auto</item>
+        <item>GSM / WCDMA auto</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM / WCDMA preferred</item>
+    </string-array>
+    <string-array name="cdma_settings_A_values">
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="cdma_settings_A_entries">
+        <item>Home only</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="cdma_settings_B_values">
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="cdma_settings_B_entries">
+        <item>Home only</item>
+        <item>Automatic A</item>
+        <item>Automatic B</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 seconds</item>
+        <item>3 seconds</item>
+        <item>5 seconds</item>
+        <item>Always on</item>
+    </string-array>
+    <string-array name="sp_frontkey_led_timeout_values_NORMAL">
+        <item>1500</item>
+        <item>2700</item>
+        <item>5000</item>
+        <item>1000000000</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 seconds</item>
+        <item>6 seconds</item>
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+    </string-array>
+    <string-array name="sp_frontkey_led_timeout_values_l1_NORMAL">
+        <item>2700</item>
+        <item>6000</item>
+        <item>10000</item>
+        <item>30000</item>
+    </string-array>
+    <string-array name="vzw_network_mode_values">
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <array name="vzw_network_mode_entries">
+        <item>@string/sp_global_mode_NORMAL</item>
+        <item>@string/sp_lte_cdma_mode_NORMAL</item>
+        <item>@string/sp_lte_gsm_umts_mode_NORMAL</item>
+        <item>@string/sp_cdma_mode_NORMAL</item>
+    </array>
+    <string-array name="vzw_network_submode_values">
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <array name="vzw_network_submode_entries">
+        <item>@string/sp_lte_legacy_NORMAL</item>
+        <item>@string/sp_gsm_gprs_edge_NORMAL</item>
+        <item>@string/sp_umts_hspa_only_NORMAL</item>
+        <item>@string/sp_lte_only_NORMAL</item>
+    </array>
+    <string-array name="vzw_network_mode_list_2_values">
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <array name="vzw_network_mode_list_2_entries">
+        <item>@string/sp_lte_cdma_mode_NORMAL</item>
+        <item>@string/sp_cdma_mode_NORMAL</item>
+    </array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_values_NORMAL">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <array name="usb_internet_conncection_entries">
+        <item>@string/data_usage_tab_ethernet</item>
+        <item>@string/sp_modem_NORMAL</item>
+    </array>
+    <string-array name="sp_wifi_available_networks_settings_NORMAL">
+        <item>Off</item>
+        <item>Open networks</item>
+        <item>Any Wi-Fi networks</item>
+    </string-array>
+    <string-array name="sp_wifi_available_networks_values_NORMAL">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <array name="preferences_labels">
+        <item>@string/sp_vibrate_type_one_SHORT</item>
+        <item>@string/sp_vibrate_type_two_SHORT</item>
+        <item>@string/sp_vibrate_type_three_SHORT</item>
+        <item>@string/sp_vibrate_type_four_SHORT</item>
+    </array>
+    <string-array name="preferences_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="disable_blocked_apps">
+        <item>com.lguplus.common.wificm.mwlan</item>
+        <item>com.lguplus.common_api_impl</item>
+        <item>com.lguplus.downloader</item>
+        <item>com.lguplus.appstore</item>
+        <item>com.lguplus.installer</item>
+        <item>com.lgt.arm</item>
+        <item>com.lguplus.common</item>
+        <item>com.lguplus.wipi</item>
+        <item>com.lguplus.common.contents.manager</item>
+        <item>android.lgt.appstore</item>
+        <item>com.lguplus.pushagent</item>
+        <item>com.uplus.onphone</item>
+        <item>lg.uplusbox</item>
+        <item>com.lge.tdmb</item>
+        <item>com.android.providers.calendar</item>
+        <item>com.lge.camera</item>
+        <item>com.android.contacts</item>
+        <item>com.android.providers.contacts</item>
+        <item>com.android.email</item>
+        <item>com.lge.email</item>
+        <item>com.android.gallery3d</item>
+        <item>com.lge.ime</item>
+        <item>com.lge.app.richnote</item>
+        <item>com.lge.streamingplayer</item>
+        <item>com.android.mms</item>
+        <item>com.lge.smartshare</item>
+        <item>com.lge.lockscreensettings</item>
+        <item>com.android.providers.media</item>
+        <item>com.vodafone.vodafone360updates</item>
+        <item>com.skt.skaf.CID00SID02</item>
+        <item>com.skt.skaf.Z0000TSEED</item>
+        <item>com.skt.skaf.Z0000OMPDL</item>
+        <item>com.skt.skaf.Z0000SLOAD</item>
+        <item>com.skt.skaf.OA00018282</item>
+        <item>com.skt.skaf.Z000Z00028</item>
+        <item>com.skt.skaf.Z00000TAPI</item>
+        <item>com.skt.skaf.OA00199800</item>
+        <item>com.nttdocomo.android.accountauthenticator</item>
+        <item>com.nttdocomo.android.store</item>
+        <item>com.nttdocomo.android.applicationmanager</item>
+        <item>com.kt.olleh.storefront</item>
+        <item>kt.navi</item>
+        <item>com.kt.otv</item>
+        <item>com.ktmusic.geniemusic</item>
+        <item>com.android.smspush</item>
+        <item>com.lge.ims.rcsim</item>
+        <item>com.lge.ims.rcsstarter</item>
+        <item>com.lguplus.rcs.map</item>
+    </string-array>
+    <string-array name="hidden_apps">
+        <item>com.lge.CDGHiddenMenu</item>
+        <item>com.lge.LgHiddenMenu</item>
+        <item>com.android.ltetestapp</item>
+        <item>com.lge.VerizonHiddenMenu</item>
+        <item>com.lge.autoruntest</item>
+        <item>com.sdcard.test</item>
+        <item>com.innopath.activecare.dev.oem</item>
+        <item>com.lge.iot_hidden_menu</item>
+        <item>com.lge.phonetestmode</item>
+        <item>com.lge.cameratest</item>
+        <item>com.lge.snc</item>
+        <item>com.lge.mlt</item>
+        <item>com.lge.hiddenmenu</item>
+        <item>com.lge.defaultaccount</item>
+        <item>com.lge.DeviceTest</item>
+        <item>com.lge.hiddenpersomenu</item>
+        <item>com.lge.internal</item>
+        <item>com.qualcomm.permission.locapi</item>
+        <item>com.qualcomm.privinit</item>
+        <item>com.synchronoss.sm</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% brightness</item>
+        <item>20% brightness</item>
+        <item>30% brightness</item>
+        <item>50% brightness</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_values_NORMAL">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 seconds</item>
+        <item>Always off</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_values_NORMAL">
+        <item>1500</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% battery</item>
+        <item>20% battery</item>
+        <item>30% battery</item>
+        <item>50% battery</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_values_NORMAL">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Immediately</item>
+        <item>10% battery</item>
+        <item>20% battery</item>
+        <item>30% battery</item>
+        <item>50% battery</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_values_NORMAL">
+        <item>100</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+    <array name="input_method_selector_titles">
+        <item>@string/input_method_selector_show_automatically_title</item>
+        <item>@string/input_method_selector_always_show_title</item>
+        <item>@string/input_method_selector_always_hide_title</item>
+    </array>
+    <array name="input_method_selector_values">
+        <item>@string/input_method_selector_show_automatically_value</item>
+        <item>@string/input_method_selector_always_show_value</item>
+        <item>@string/input_method_selector_always_hide_value</item>
+    </array>
+    <string-array name="entries_font_size">
+        <item>&lt;font size="16" align="middle">Small&lt;/font></item>
+        <item>&lt;font size="18" align="middle">Normal&lt;/font></item>
+        <item>&lt;font size="21" align="middle">Large&lt;/font></item>
+        <item>&lt;font size="24" align="middle">Extra large&lt;/font></item>
+    </string-array>
+    <array name="font_type_select_menunames_entries">
+        <item>@string/sp_default_font_NORMAL</item>
+        <item>@string/sp_lgfont3_NORMAL</item>
+        <item>@string/sp_lgfont4_NORMAL</item>
+        <item>@string/sp_lgfont1_NORMAL</item>
+    </array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+    </string-array>
+    <string-array name="hotspot_timeout_values">
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Never timeout</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_values_mx_NORMAL">
+        <item>-1</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_values">
+        <item>900000</item>
+        <item>1800000</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Show</item>
+        <item>Hide</item>
+    </string-array>
+    <string-array name="sp_hotspot_max_client">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="sp_hotspot_max_client_val">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <integer-array name="config_distinctiveVibrationType1">
+        <item>0</item>
+        <item>2000</item>
+        <item>200</item>
+    </integer-array>
+    <integer-array name="config_distinctiveVibrationType2">
+        <item>0</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+    </integer-array>
+    <integer-array name="config_distinctiveVibrationType3">
+        <item>0</item>
+        <item>400</item>
+        <item>600</item>
+        <item>400</item>
+        <item>600</item>
+        <item>400</item>
+        <item>600</item>
+    </integer-array>
+    <integer-array name="config_distinctiveVibrationType4">
+        <item>0</item>
+        <item>800</item>
+        <item>200</item>
+        <item>800</item>
+        <item>200</item>
+        <item>800</item>
+        <item>200</item>
+    </integer-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>All devices</item>
+        <item>Headset</item>
+        <item>Mobile phone</item>
+        <item>PC</item>
+        <item>Input device (keyboard, mouse, etc.)</item>
+    </string-array>
+    <string-array name="sig_battery_entries">
+        <item>Send Level 1</item>
+        <item>Send Level 3</item>
+        <item>Send Level 5</item>
+    </string-array>
+    <string-array name="sig_battery_entries_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="sig_svc_entries">
+        <item>No Service</item>
+        <item>In Service</item>
+    </string-array>
+    <string-array name="sig_svc_entries_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="sig_roam_entries">
+        <item>In Home</item>
+        <item>On Roming</item>
+    </string-array>
+    <string-array name="sig_roam_entries_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <item type="array" name="APKTOOL_DUMMY_008c">false</item>
+</resources>

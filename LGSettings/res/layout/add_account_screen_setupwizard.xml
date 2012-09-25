@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.659973dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.329987dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="left" android:id="@id/email_sns_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_email_sns_summary_NORMAL" android:lineSpacingExtra="1.3299866dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/empty" android:background="@com.lge.internal:drawable/ab_command_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0sp" android:layout_alignParentBottom="true">
+        <Button android:textSize="18.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/back_button" android:background="@drawable/button_background" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="3.3299866dip" android:text="@string/wifi_setup_back" android:singleLine="true" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/next_button" android:background="@drawable/button_background" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="3.3299866dip" android:text="@string/wifi_setup_next" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

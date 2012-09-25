@@ -9,7 +9,7 @@ local-zip-file     := stockrom.zip
 # local-out-zip-file :=
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := CameraApp 
+local-modified-apps := CameraApp LGSettings Bluetooth BluetoothServices
 
 local-modified-jars := com.lge.bluetooth
 
@@ -19,8 +19,8 @@ local-miui-removed-apps  := Stk MediaProvider Bluetooth
 
 # All apps need to be reserved from original ZIP file
 local-phone-apps := ApplicationsProvider CameraApp CertInstaller CommonService DefaultContainerService DrmProvider \
-		DrmService FaceLock KeyChain LGU_ARMService MusicFX NativeLiveWallpapersPicker Nfc \
-		PackageInstaller UserDictionaryProvider MediaProvider Bluetooth BluetoothServices
+		DrmService FaceLock KeyChain LGU_ARMService MusicFX NativeLiveWallpapersPicker Nfc Stk\
+		PackageInstaller UserDictionaryProvider MediaProvider
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:

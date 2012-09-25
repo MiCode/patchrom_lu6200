@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RadioGroup android:orientation="vertical" android:id="@id/menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@id/dup_action_add_as_new">
+            <RadioButton android:id="@id/dup_action_replace" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" />
+            <RadioButton android:id="@id/dup_action_add_as_new" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" />
+            <EditText android:enabled="true" android:gravity="center" android:id="@id/existingFileName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginRight="20.0dip" android:text="@string/default_result" android:cursorVisible="true" android:singleLine="true" android:editable="true" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

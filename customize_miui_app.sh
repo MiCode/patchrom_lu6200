@@ -48,6 +48,16 @@ fi
 if [ $1 = "Settings" ];then
     $XMLMERGYTOOL $1/res/values $2/res/values
 
+    cp $1/Settings.patch out/
+    cd out
+    $GIT_APPLY Settings.patch
+    cd ..
+    for file in `find $2 -name *.rej`
+    do
+	echo "Settings patch fail"
+        exit 1
+    done
+
 	echo "replace functions"
 	$PORT_ROOT/lu6200/replace_functions_IccCard.sh $2
 fi

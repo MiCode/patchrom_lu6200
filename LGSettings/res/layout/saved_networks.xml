@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/sp_saved_networks_NORMAL" style="@style/HeaderTitle" />
+    <TextView android:text="@string/sp_saved_networks_summary_NORMAL" style="@style/HeaderDescription" />
+    <RelativeLayout android:id="@id/list_section" style="@style/MovableListWrapper">
+        <com.android.settings_ex.wifi.MovableListView android:id="@id/movable_list" style="@style/MovableList" />
+    </RelativeLayout>
+    <LinearLayout android:background="@com.lge.internal:drawable/ab_command_holo_light" style="@style/ButtonsLayout">
+        <Button android:id="@id/button_manage_reset" android:text="@string/sp_reset_to_default_NORMAL" style="@style/ButtonBottom" />
+        <Button android:id="@id/button_manage_save" android:text="@string/sp_save_NORMAL" style="@style/ButtonBottom" />
+        <Button android:id="@id/button_manage_cancel" android:text="@string/sp_cancel_NORMAL" style="@style/ButtonBottom" />
+    </LinearLayout>
+</LinearLayout>

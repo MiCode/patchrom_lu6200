@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="radioInfo_menu_viewFDN">View Fixed Dialing Numbers</string>
+    <string name="radioInfo_menu_viewSDN">View Service Dialing Numbers</string>
+    <string name="bluetooth_is_discoverable_always">"Being visible on other devices.
+Tap to stop  being visible."</string>
+    <string name="bluetooth_lock_voice_dialing">Lock voice dialing</string>
+    <string name="bluetooth_lock_voice_dialing_summary">Prevent use of the bluetooth dialer when the screen is locked</string>
+    <string name="bluetooth_disconnect_all_profiles">This will end your connection with:&lt;br>&lt;b>%1$s&lt;/b></string>
+    <string name="bluetooth_disable_profile_title">Disable profile</string>
+    <string name="bluetooth_disable_profile_message">&lt;b>%1$s&lt;/b> will be disabled for &lt;b>%2$s&lt;/b>&lt;br>Continue?</string>
+    <string name="bluetooth_connection_permission_request">Bluetooth Connection Request</string>
+    <string name="bluetooth_connection_notif_message">Touch to connect to \"%1$s\"</string>
+    <string name="radio_info_neighboring_location_label">Neighboring CID:</string>
+    <string name="battery_info_label">Battery Info</string>
+    <string name="radio_controls_title">More ...</string>
+    <string name="zone_auto_summaryOn">Use network provided time zone</string>
+    <string name="zone_auto_summaryOff">Use network provided time zone</string>
+    <string name="crypt_keeper_final_desc">"Encrypt phone? This operation is irreversible and if you interrupt it, you will lose data.
+    Encryption takes an hour or more, during which the phone will restart several times."</string>
+    <string name="bluetooth_enter_pin_msg">"To pair with:&lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br>Type the device's required PIN:"</string>
+    <string name="bluetooth_enter_passkey_msg">"To pair with:&lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br>Type the device's required passkey:"</string>
+    <string name="bluetooth_confirm_passkey_msg">To pair with:&lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br>Make sure it is showing this passkey:&lt;br>&lt;b>%2$s&lt;/b></string>
+    <string name="bluetooth_incoming_pairing_msg">From:&lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br>Pair with this device?</string>
+    <string name="bluetooth_display_passkey_pin_msg">To pair with:&lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br>Type on it:&lt;br>&lt;b>%2$s&lt;/b>, then press Return or Enter.</string>
+    <string name="bluetooth_preference_device_settings">Device Settings</string>
+    <string name="bluetooth_profile_pan">Internet Access</string>
+    <string name="nfc_quick_toggle_summary">Allow data exchange when the phone touches another device</string>
+    <string name="sp_nfc_card_off_NORMAL">Enable to use NFC service and manage Android BEAM</string>
+    <string name="sp_use_p2p_title_SHORT">Use P2P</string>
+    <string name="sp_p2p_body_on_NORMAL">Receive NFC information by P2P</string>
+    <string name="sp_p2p_body_off_NORMAL">P2P is not available. NFC turned off</string>
+    <string name="sp_attention_disable_nfc_NORMAL">When disabling NFC, you cannot use Credit and transport Card</string>
+    <string name="sp_android_beam_when_p2poff_NORMAL">Android Beam not available. Read and Write/P2P turned off</string>
+    <string name="sp_android_beam_when_p2poff_a_NORMAL">Android Beam not available. Read and Write/P2P turned off</string>
+    <string name="sp_SoundOn_NORMAL">Sound on</string>
+    <string name="sp_sub_sim1_ringtone_title_NORMAL">SIM1 phone ringtone</string>
+    <string name="sp_sub_sim2_ringtone_title_NORMAL">SIM2 phone ringtone</string>
+    <string name="sp_sub_sim1_notification_sound_title_NORMAL">SIM1 notification sound</string>
+    <string name="sp_sub_sim2_notification_sound_title_NORMAL">SIM2 notification sound</string>
+    <string name="sp_BatterySummary_NORMAL">Battery status, battery level, etc.</string>
+    <string name="sp_HWversion_NORMAL">Wi-Fi MAC address, Bluetooth address</string>
+    <string name="sp_LegalInfoSummary_NORMAL">Open source licenses, Google legal</string>
+    <string name="sp_HWVersion_NORMAL">HW Version</string>
+    <string name="device_additional_status_summary">Phone number, Signal, IMEI, etc.</string>
+    <string name="device_additional_status">Additional Status Info</string>
+    <string name="sp_status_eri_version_NORMAL">ERI version</string>
+    <string name="apn_auth_type">Authentication Type</string>
+    <string name="error_name_empty">The Name field cannot be empty.</string>
+    <string name="restore_default_apn">Restoring default APN settings.</string>
+    <string name="clear_data_failed">Unable to clear application data.</string>
+    <string name="sp_App_Disable_DLG_Text_NORMAL">If you disable a built-in app, you cannot see this app in the phone and an unexpected error may occur in other apps.</string>
+    <string name="service_manage_description">"%1$s: currently in use.  Touch Settings to control it."</string>
+    <string name="auto_caps">Auto-capitalization</string>
+    <string name="auto_caps_summary">Capitalize first letter in sentences</string>
+    <string name="user_dict_settings_all_languages">All Languages</string>
+    <string name="testing_battery_info">Battery Information</string>
+    <string name="enable_adb_summary">Turn on debug mode when USB is connected</string>
+    <string name="keep_screen_on_summary">Screen will never timeout while charging</string>
+    <string name="battery_history_seconds">%1$d s</string>
+    <string name="accessibility_script_injection_button_disallow">Don’t allow</string>
+    <string name="accessibility_service_disable_warning_summary">Touching OK will stop %1$s</string>
+    <string name="accessibility_service_no_apps_message">TalkBack provides spoken feedback to help blind and low-vision users. Do you want to install it for free from Google Play Store?</string>
+    <string name="battery_stats_gps_on_label">GPS On</string>
+    <string name="battery_sugg_bluetooth_basic">"Turn off bluetooth when you aren't using it"</string>
+    <string name="battery_sugg_bluetooth_headset">Try connecting to a different bluetooth device</string>
+    <string name="sp_vpn_template_psk_v1_agg_NORMAL">PSK v1 (Aggressive)</string>
+    <string name="vpn_ike_type_dn">DN (Distinguished name)</string>
+    <string name="sp_data_received_NORMAL">Received:</string>
+    <string name="credentials_not_erased">"Credential storage couldn't be erased"</string>
+    <string name="emergency_tone_summary">Set behavior when an emergency call is placed</string>
+    <string name="local_backup_password_summary_none">No password set for device backup to desktop</string>
+    <string name="local_backup_password_summary_change">Change or remove password for device backup to desktop</string>
+    <string name="device_admin_status">This administrator is active and allows the app %1$s to perform the following operations.</string>
+    <string name="wifi_setup_refresh_list">Refresh List</string>
+    <string name="sync_enabled">Sync is ON</string>
+    <string name="sync_disabled">Sync is OFF</string>
+    <string name="header_data_and_synchronization">Data &amp; synchronization</string>
+    <string name="hdcp_checking_title">HDCP check</string>
+    <string name="hdcp_checking_dialog_title">Set HDCP checking behavior</string>
+    <string name="strict_mode">Enable strict mode</string>
+    <string name="strict_mode_summary">Flash screen when apps operates for a long time on main thread</string>
+    <string name="pointer_location">Show touch data</string>
+    <string name="pointer_location_summary">Touch data is visible on screen</string>
+    <string name="show_touches_summary">Show visual feedback when screen is touched</string>
+    <string name="show_screen_updates_summary">Flash updated screen area</string>
+    <string name="show_cpu_usage_summary">CPU usage is visible on screen</string>
+    <string name="immediately_destroy_activities_summary">Force quit every activity on exiting apps</string>
+    <string name="sel_sub_title">Configure Subscriptions</string>
+    <string name="sel_sub_summary">Select the Subscription for SUB1 and SUB2</string>
+    <string name="select_subscription">Select Subscription</string>
+    <string name="multi_sim_settings_title">Multi SIM Settings</string>
+    <string name="multi_sim_settings_summary">Set up Multi SIM Settings for Voice, Data and SMS</string>
+    <string name="voice_summary">Select Subscription for Voice Call</string>
+    <string name="data_summary">Select Subscription for Data Call</string>
+    <string name="sms_summary">Select the Subscription for sending SMS</string>
+    <string name="sp_location_gps_lgu_popup_NORMAL">Using assistant GPS data improves location searching speed. It may incur data charges.</string>
+    <string name="sp_location_gps_vzw_NORMAL">Standalone GPS Services</string>
+    <string name="sp_warning_msg_vzw_service_NORMAL">By selecting “VZW Location Services”, you are enabling Verizon Wireless and third party authenticated and validated location services to access certain location information available through this device and/or the network.</string>
+    <string name="sp_security_device_title_NORMAL">Device administrators settings</string>
+    <string name="sp_gesture_summary_alarms_NOMAL">Flip device to snooze/stop alarm</string>
+    <string name="sp_gesture_help_desc_flip_NOMAL">Flip device to mute incoming calls, snooze/stop alarm or pause playing video</string>
+    <string name="sp_ges_help_flip_video_NORMAL">Flip (Video Player)</string>
+    <string name="sp_rcs_e_terms_title_NORMAL">Terms and Conditions</string>
+    <string name="sp_pouch_message_title_NORMAL">Messages</string>
+    <string name="sp_pouch_voice_message_title_NORMAL">Voice messages</string>
+    <string name="sp_pouch_calendar_events_title_NORMAL">calendar events</string>
+    <string name="sp_screen_timeout_sub_title_NORMAL">Screen turns off automatically.</string>
+    <string name="sp_usb_always_ask_desc_NORMAL">Ask for USB connection mode when connecting to a computer</string>
+    <string name="sp_connectivity_help_03_NORMAL"><b>Media sync (MTP)</b></string>
+    <string name="sp_connectivity_help_04_NORMAL">You can synchronize your phone with Windows media player to facilitate the transfer and management of media files</string>
+    <string name="sp_connectivity_help_06_NORMAL">● MTP also works with Windows XP if Windows media player 10 or latest versions is installed</string>
+    <string name="sp_connectivity_help_09_NORMAL">"You can tether your phone to your computer with a USB cable to share your phone's Internet connection with your computer"</string>
+    <string name="sp_connectivity_help_17_NORMAL"><b>Camera (PTP)</b></string>
+    <string name="sp_usbtype_mtp_summary_NORMAL">Transfer files or synchronize with Windows media player</string>
+    <string name="sp_tether_exc_code_33_NORMAL">To enable tethering on this device go to www.att.com/mywireless or dial 611.</string>
+    <string name="sp_usb_tether_intro_usc_title_NORMAL">Introduction for Tethering</string>
+    <string name="sp_usb_tether_intro_usc_text2_NORMAL">This feature consumes battery power and increase your data usage. This service requires a subscription to the applicable modem plan. Please ensure you have subscribed to the appropriate data plan prior to use. Dial 1-877-872-2249 if you need assistance.</string>
+    <string name="sp_usb_tethering_help_content2_NORMAL">Set USB connection mode to \"Internet connection\"</string>
+    <string name="sp_usb_tethering_help_content3_NORMAL">Turn on \"Mobile Broadband Connect\" to start sharing internet connection with your PC</string>
+    <string name="sp_usb_tethering_help_content4_NORMAL">Mobile Broadband Connect is now active</string>
+    <string name="sp_usb_tethering_help_content5_NORMAL">"Turn off \"Mobile Broadband Connect\" or simply disconnect the USB cable to stop sharing phone's internet connection"</string>
+    <string name="sp_cdma_roaming_mode_NORMAL">CDMA Roaming Mode</string>
+    <string name="data_network_settings_summary">Enable data access over mobile network</string>
+    <string name="def_ask_remove_all_dialog_message">All numbers will be deleted.</string>
+    <string name="sp_apn_settings_NORMAL">Access Point Names</string>
+    <string name="sp_airplane_mode_on_NORMAL">Unable to make calls while in Airplane mode.</string>
+    <string name="sp_format_not_support_NORMAL">"'%s' format not supported"</string>
+    <string name="sp_regulatory_information_NORMAL">"Regulatory information "</string>
+    <string name="sp_battery_condition_verygood_NORMAL">Battery will deteriorate over time. Current condition is very good.</string>
+    <string name="sp_osp_pc_installation_guide_NORMAL">"In order to use On-Screen Phone, you must first install the ‘On-Screen Phone’ software onto your PC.
+On-Screen Phone allows you to remotely control your mobile device through your PC via USB, Bluetooth, or Wi-Fi connection."</string>
+    <string name="sp_wifi_auto_on_summary_NORMAL">Automatically turn on Wi-Fi when launching apps, if Wi-Fi is turned off</string>
+    <string name="sp_email_sns_accounts_NORMAL">Email/SNS accounts</string>
+    <string name="sp_email_sns_desc_NORMAL">These accounts set up email, social networks</string>
+    <string name="roamingpopup_set">Used</string>
+    <string name="roamingpopup_block">Not used</string>
+    <string name="roamingnotification_for_lgt">International roaming charge will be applied while using roaming service (messaging and voice) from abroad.</string>
+    <string name="roamingquery_for_lgt">"Data service can be used overseas if Data Roaming is enabled. However, using Data Roaming overseas can result in heavy extra fees being incurred.
+
+Enable data roaming?"</string>
+    <string name="roamingquery_for_lgt_disable">"Data service can be used overseas if Data Roaming is enabled. However, using Data Roaming overseas can result in heavy extra fees being incurred.
+
+Enable data roaming?"</string>
+    <string name="roamingquery_allowed_for_lgt">Data roaming can be used. Please be advised that using Data Roaming overseas can result in heavy extra fees being incurred.</string>
+    <string name="data_roaming_allow_skt_info">"Data roaming service has been basically blocked for overseas roaming since &lt;font color=#FF0000>automatic update function for application, email and other services incur additional data roaming charges.&lt;/font>&lt;br>&lt;br>Press 'Allow' when you want data roaming.&lt;br>&lt;br>※ Automatic update application:&lt;br>Google account synchronization, Messenger, Game and etc"</string>
+    <string name="sp_mobile_network_summary_NORMAL">Available if you have a data plan</string>
+    <string name="sp_wifi_summary_NORMAL">Wi-Fi connects to networks within range and consumes more battery</string>
+    <string name="sp_email_accounts_NORMAL">Email Accounts</string>
+    <string name="sp_email_sns_summary_NORMAL">"You can set up email or social network service  for most accounts in just a few steps."</string>
+    <string name="sp_email_summary_NORMAL">You can set up email for most accounts in just a few steps.</string>
+    <string name="sp_quiet_time_summary_NORMAL">Set times to turn off all sounds except alarm and media</string>
+    <string name="sp_sim_change_failed_enable_sim_lock_NORMAL">"Unable to Change SIM/RUIM PIN.
+ Enable SIM/RUIM LOCK."</string>
+    <string name="sp_sim_lock_change_not_supported_NORMAL">"Unable to Change SIM PIN.
+ Enable SIM LOCK."</string>
+    <string name="sp_kr_location_network_check_NORMAL">Can see more accurate location by turning on Wi-Fi.</string>
+    <string name="sp_set_email_sns_accounts_NORMAL">Set email/SNS accounts</string>
+    <string name="sp_set_email_accounts_NORMAL">Set email accounts</string>
+    <string name="sp_kr_contact_lost_skt_summary_NORMAL">Show contact on lock screen when lost</string>
+    <string name="sp_screen_widget_shorcuts_NORMAL">Clocks &amp; shortcuts</string>
+    <string name="sp_widget_shorcuts_summary_NORMAL">Customize clocks &amp; shortcuts on lock screen</string>
+    <string name="sp_lock_pw_sequential_NORMAL">"Sequential characters '%s' are not allowed."</string>
+    <string name="sp_lgmdm_block_media_sync_NORMAL">Media sync (MTP) is disabled by server policy</string>
+    <string name="sp_lgmdm_block_camera_ptp_NORMAL">Camera (PTP) is disabled by server policy</string>
+    <string name="sp_encrypt_device_summary_NORMAL">Require a PIN or password to decrypt your phone each time you power it on</string>
+    <string name="sp_sd_encryptin_storage_summary_NORMAL">Require a PIN or password to decrypt your storage each time you insert SD card</string>
+    <string name="sp_credentials_configure_lock_screen_hint_NORMAL">You must change screen lock before you use credential storage.</string>
+    <string name="sp_usc_gps_popup_fourth_NORMAL"><b>You consent to the disclosure of the location of this handset from U.S. Cellular to third-party providers of location-based services by turning location \"ON\".</b></string>
+    <string name="sp_account_update_NORMAL">"Touch to update now
+%1$s"</string>
+    <string name="sp_no_entitlement_NORMAL">The APN type cannot be set to entitlement</string>
+    <string name="can_not_save_one_letter_word">Cannot save one-letter word.</string>
+    <string name="sp_data_network_mode_enabled_desc_lgu_NORMAL">"It will incur additional charges if you are not using a flat rate pricing plan or you are using pay-services.
+Allow 3G/4G connection?"</string>
+    <string name="sp_data_network_mode_disabled_desc_lgu_NORMAL">"Data services will be limited when data connection is disallowed.
+Disallow 3G/4G connection?"</string>
+    <string name="sp_battery_info_status_charging_wireless_NORMAL">(Wireless)</string>
+    <string name="sp_sd_encryption_summary_NORMAL">Require a PIN or password to decrypt your phone each time you power it on</string>
+    <string name="sp_sd_card_encryption_desc_MLINE">"You can encrypt your accounts, settings, downloaded apps and their data, media, and other files. You can disable encryption by performing disabling storage encryption.
+
+Only data created on storage after enabling storage encryption will be encrypted. Encrypted data cannot be read in other devices. By disabling storage will not be encrypted.
+
+If you interrupt the process, you will lose some or all of your data."</string>
+    <string name="sp_mount_sdcard_fail_pin_desc_NORMAL">"Failed to read data on SD card. Access to encrypted data is not allowed. Current PIN is required every time SD card is mounted. "</string>
+    <string name="sp_mount_sdcard_fail_password_desc_NORMAL">"Failed to read data on SD card. Access to encrypted data is not allowed. Current password is required every time SD card is mounted. "</string>
+    <string name="sp_quad_core_control_NORMAL">Quad core control</string>
+    <string name="sp_quad_core_control_help_MLINE">"Eco mode extends battery life by dynamically optimizing CPU control policy.\\n\\n
+When Eco mode is turned off, Automatic mode is used to control the Quad cores to provide optimized system performance."</string>
+    <string name="sp_tap_update_NORMAL">"Tap to update
+%1$s"</string>
+    <string name="sp_tuto_backuppin_desc2_MLINE">"If you fail to draw the correct pattern 5 times, press the button on the bottom of the screen, and the PIN code entry appears.
+Create a backup PIN code that is easy to remember (e.g.: Birthday, anniversary etc.)."</string>
+    <string name="sp_pattern_guide_kr_MLINE">"After 5 failed pattern attempts you can use Google account to unlock phone. (You can reset the pattern lock at \"http://www.lgmobile.co.kr/\")
+
+Ready to start? Touch Next."</string>
+    <string name="sp_vpn_iwlan_running_NORMAL">WLAN is running. Try it later.</string>
+    <string name="sp_data_transfer_err_tether_dialog_msg_NORMAL">Change the Wi-Fi setting to \"OFF\", USB debugging to \"OFF\" and USB connection type setting to \"Charge only\".</string>
+    <string name="sp_vibrate_type_title_SHORT">Vibrate Type</string>
+    <string name="sp_notification_summary_NORMAL">Blink LED light for notifications</string>
+    <string name="sp_title_notification_flash_setting_NORMAL">Notification flash items</string>
+    <string name="sp_checkbox_front_calendar_reminder_NORMAL">Calendar Reminder</string>
+    <string name="sp_checkbox_front_key_social_event_NORMAL">Social + event</string>
+    <string name="sp_checkbox_front_key_felica_NORMAL">FeliCa</string>
+    <string name="sp_develop_enter_popup_NORMAL">Turning on developer options might result in irregular behaviour in your device. These options are recommended only for advanced users.</string>
+    <string name="sp_lock_title_time_NORMAL">Lock time</string>
+    <string name="authdlg_title">Bluetooth Authorization Request</string>
+    <string name="authdlg_service_opp">this phone to transfer contacts</string>
+    <string name="bluetooth_authorize_ticker">Bluetooth authorization request</string>
+    <string name="bluetooth_authorize_title">Authorization request</string>
+    <string name="bluetooth_authorize_message">"Select to authorize connection with "</string>
+    <string name="bluetooth_profile_pbap">Access to Phonebook</string>
+    <string name="airplane_error_msg">"You can't use Bluetooth when the phone is in airplane mode."</string>
+    <string name="enabling_progress_content">Turning on bluetooth…</string>
+    <string name="bt_pref_fmtx_svc">FM Transmitter</string>
+    <string name="bt_pref_opp_svc">OPP</string>
+    <string name="bt_pref_bpp_svc">BPP</string>
+    <string name="bluetooth_available_services_title">Device Profiles</string>
+    <string name="bluetooth_pointing_device_connected_confirmation_text">"Connection with %1$s has been established successfully. To confirm that the correct mouse is being connected, please use it to click the %2$s button.
+
+Time remaining: %3$d seconds"</string>
+    <string name="toast_ftp_no_sdcard">Unable to accept request. Please insert SD Card.</string>
+    <string name="ErrorNoSpaceLeft">Unable to receive %1$s. Insufficient space on SD Card.</string>
+    <string name="sp_bt_vcard_option_lbl_SHORT">Contact transfer setting</string>
+    <string name="sp_lgfont3_NORMAL">HYSerif</string>
+    <string name="sp_apply_to_unicode_NORMAL">Apply Unicode (UTF-8)</string>
+    <string name="sp_wifi_apply_unicode_summary_NORMAL">Apply Unicode (UTF-8) to network SSID and password when typing in Korean</string>
+    <string name="sp_wifi_hotspot_enable_warning_toast_NORMAL">Allowing other devices to connect to the 3G/4G network through the Wi-Fi hot spot on this mobile phone may incur data charges and consumes more battery power.</string>
+    <string name="sp_wifi_enable_warning_NORMAL">Allowing other devices to connect to the 3G/4G network through the Wi-Fi hot spot on this mobile phone may incur data charges.</string>
+    <string name="sp_mwlan_permission_summary_2_NORMAL">Enable the secure connection for the service requiring payments</string>
+    <string name="sp_power_saver_select_sync_summary_NORMAL">Turn off Sync when not syncing</string>
+    <string name="sp_power_saver_select_animation_summary_NORMAL">Turn off Animation effect</string>
+    <string name="sp_power_save_warning_popup_battery_NORMAL">%1$s battery remains</string>
+    <string name="sp_power_save_tips_sync_NORMAL">AutoSync</string>
+    <string name="sp_power_save_battery_information_NORMAL">Battery Information</string>
+    <string name="sp_power_save_tips_auto_sync_text_NORMAL">Applications such as Email, Calendar, Contacts and Facebook(listed under Settings - Accounts &amp; sync) are auto-synched using the mobile or Wi-Fi network. Turning off Auto-sync can extend battery life.</string>
+    <string name="sp_personal_dictionary_exist_word_title_NORMAL">Notice</string>
+    <string name="sp_user_dict_setting_maxletterwarning_NORMAL">Exceeded the text limit that can be saved</string>
+    <string name="sp_wifidirect_go_SHORT">Group Owner</string>
+    <string name="sp_saved_networks_NORMAL">Saved Networks</string>
+    <string name="sp_save_NORMAL">Save</string>
+    <string name="sp_cancel_NORMAL">Cancel</string>
+    <string name="sp_without_internet_connection_msg_swd_NORMAL">Without internet connection, next settings may not be available. Continue?</string>
+    <string name="sp_wifi_Notify_MHP_ON_NORMAL">Wi-Fi and Mobile Hotspot cannot run at the same time. Do you want turn Mobile Hotspot off?</string>
+    <string name="sp_wifi_MHP_offtoast_NORMAL">Mobile Hotspot is now turned off</string>
+    <string name="sp_hotspot_off_wifi_on_NORMAL">"Mobile Hotspot has been turned off.
+Wi-Fi is now on."</string>
+    <string name="sp_wifi_not_on_hotspot_still_active_NORMAL">"Wi-Fi has not been turned on.
+Mobile Hotspot is still active."</string>
+    <string name="wifi_stopping_dcm">Turning off Wi-Fi…</string>
+    <string name="sp_auto_on_NORMAL">Auto On</string>
+    <string name="sp_wifi_hotspot_eanble_warning_consent_NORMAL">As other devices are connected to Wi-Fi hotspot through 3G/4G network on this device, it may incur data charges and battery may run out quickly. Apply this?</string>
+    <string name="sp_notify_usbtethering_to_wifi_NORMAL">Activated Mobile Broadband Connect. To use Wi-Fi, Mobile Broadband Connect must be deactivated.</string>
+    <string name="sp_tether_attention_msg_NORMAL">As other devices are connected to Wi-Fi hotspot through 3G network on this device, it may incur data charges and battery may run out quickly. Apply this?</string>
+    <string name="sp_auto_connect_on_NORMAL">Auto On</string>
+    <string name="do_not_use_wifi">"Do not use Wi-Fi,
+remind me later"</string>
+    <string name="network_detect_when_ap_launched_wifi_off">"Wi-Fi was turned-on. 
+Select a network if you would like to connect to Wi-Fi."</string>
+    <string name="never_anto_turn_on_wifi">"Do not automatically
+turn-on Wi-Fi"</string>
+    <string name="turn_off_wifi_remind_me_land">Turn off Wi-Fi, remind me later</string>
+    <string name="do_not_remind">Do not display this reminder in the future.</string>
+    <string name="sp_turnoff_wifi_on_cell_NORMAL">Turn-off Wi-Fi and use cellular</string>
+    <string name="sp_goto_settings_toconfig_NORMAL">To never have Wi-Fi automatically turned on, go to \"Wi-Fi settings\"</string>
+    <string name="sp_bt_stop_visible_lbl_SHORT">Stop device visibility</string>
+    <string name="sp_visible_description_NORMAL">Allow finding my phone via other Bluetooth devices</string>
+    <string name="sp_bluetooth_being_visible_NORMAL">"Being visible on other devices.
+Tap to stop  being visible."</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_dialog_items">
+        <item>Share contacts in group</item>
+        <item>Get contact</item>
+        <item>Exchange contacts</item>
+    </string-array>
+    <string-array name="contact_groups">
+        <item>All displayed</item>
+        <item>Contacts with phone numbers</item>
+        <item>Starred in Android</item>
+    </string-array>
+    <item type="array" name="APKTOOL_DUMMY_0003">false</item>
+</resources>

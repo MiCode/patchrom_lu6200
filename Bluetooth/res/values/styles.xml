@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Holo.CustomDialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@drawable/filled_box</item>
+    </style>
+    <style name="Bluetooth.Theme.Holo.CustomDialog" parent="@com.lge.internal:style/Theme.LGE.White.Dialog">
+        <item name="android:windowBackground">@drawable/filled_box</item>
+    </style>
+    <style name="Bluetooth.Theme.Holo.Dialog.Alert" parent="@com.lge.internal:style/Theme.LGE.White.Dialog.Alert" />
+</resources>

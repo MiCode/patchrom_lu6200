@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>One page per side</item>
+        <item>Two page per side</item>
+        <item>Four pages per side</item>
+    </string-array>
+    <string-array name="sides">
+        <item>One sided</item>
+        <item>Two sided, long edge</item>
+        <item>Two sided, short edge</item>
+    </string-array>
+</resources>

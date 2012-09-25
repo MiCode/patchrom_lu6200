@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_dialog_items">
+        <item>연락처 그룹으로 공유</item>
+        <item>연락처 가져오기</item>
+        <item>연락처 교환</item>
+    </string-array>
+    <string-array name="contact_groups">
+        <item>전화번호가 포함된 주소록</item>
+        <item>전화번호가 포함된 주소록</item>
+        <item>선호 연락처로 지정됨</item>
+    </string-array>
+</resources>

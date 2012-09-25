@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:orientation="vertical" android:id="@id/rootPref" android:layout_width="fill_parent" android:layout_height="fill_parent" android:key="rootPref"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:icon="@drawable/easy_ic_settings_security" android:id="@id/security_settings" android:title="@string/security_settings_title" android:key="security_settings">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.Settings$SecuritySettingsActivity" />
+    </Preference>
+    <Preference android:icon="@drawable/easy_ic_settings_language" android:id="@id/language_settings" android:title="@string/language_settings" android:key="language_settings">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.Settings$InputMethodAndLanguageSettingsActivity" />
+    </Preference>
+    <Preference android:icon="@drawable/easy_ic_settings_backup" android:id="@id/privacy_settings" android:title="@string/privacy_settings" android:key="privacy_settings">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.Settings$PrivacySettingsActivity" />
+    </Preference>
+    <Preference android:icon="@drawable/ic_settings_dock" android:id="@id/dock_settings" android:title="@string/dock_settings" android:key="dock_settings">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.DockSettings" />
+    </Preference>
+    <Preference android:icon="@drawable/easy_ic_settings_date_time" android:id="@id/date_time_settings" android:title="@string/date_and_time_settings_title" android:key="date_time_settings">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.Settings$DateTimeSettingsActivity" />
+    </Preference>
+    <Preference android:icon="@drawable/easy_ic_settings_accessibility" android:id="@id/accessibility_settings" android:title="@string/accessibility_settings" android:key="accessibility_settings">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.Settings$AccessibilitySettingsActivity" />
+    </Preference>
+    <Preference android:icon="@drawable/easy_ic_settings_development" android:id="@id/development_settings" android:title="@string/development_settings_title" android:key="development_settings">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.Settings$DevelopmentSettingsActivity" />
+    </Preference>
+    <Preference android:icon="@drawable/easy_ic_settings_about" android:id="@id/about_settings" android:title="@string/about_settings" android:key="about_settings">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.Settings$DeviceInfoSettingsActivity" />
+    </Preference>
+    <Preference android:icon="@drawable/easy_ic_settings_about" android:id="@id/about_settings_lge" android:title="@string/about_settings" android:key="about_settings_lge">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.Settings$DeviceInfoLgeActivity" />
+    </Preference>
+</PreferenceScreen>

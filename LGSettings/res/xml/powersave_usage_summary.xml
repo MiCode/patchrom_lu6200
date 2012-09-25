@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/sp_power_save_battery_use_detail_NORMAL" android:key="app_list" />
+    <PreferenceCategory android:title="@string/sp_power_save_battery_usage_level_NORMAL" android:key="graph" />
+</PreferenceScreen>

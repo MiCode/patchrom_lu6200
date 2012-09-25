@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/unlock_set_unlock_off_title" android:key="unlock_set_off" android:summary="@string/sp_none_lock_NORMAL" />
+    <PreferenceScreen android:persistent="false" android:title="@string/sp_swipe_screen_NORMAL" android:key="unlock_set_none" android:summary="@string/sp_swipe_lock_NORMAL" />
+    <PreferenceScreen android:persistent="false" android:title="@string/unlock_set_unlock_biometric_weak_title" android:key="unlock_set_biometric_weak" android:summary="@string/sp_face_lock_NORMAL" />
+    <PreferenceScreen android:persistent="false" android:title="@string/unlock_set_unlock_pattern_title" android:key="unlock_set_pattern" android:summary="@string/sp_pattern_lock_NORMAL" />
+    <PreferenceScreen android:persistent="false" android:title="@string/unlock_set_unlock_pin_title" android:key="unlock_set_pin" android:summary="@string/sp_pin_lock_NORMAL" />
+    <PreferenceScreen android:persistent="false" android:title="@string/sp_lock_password_NORMAL" android:key="unlock_set_password" android:summary="@string/sp_pass_lock_NORMAL" />
+</PreferenceScreen>

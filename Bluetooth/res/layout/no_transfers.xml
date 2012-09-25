@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="20.0dip" android:gravity="center" android:id="@id/no_transfers_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sp_no_history_opp_SHORT"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

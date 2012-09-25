@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_front_key_light_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <CheckBoxPreference android:title="@string/sp_checkbox_front_key_light_NORMAL" android:key="checkbox_front_key_light" android:summary="@string/sp_checkbox_front_key_light_summury_NORMAL" android:defaultValue="false" />
+    <com.android.settings_ex.DoubleTitleListPreference android:entries="@array/sp_front_key_light_NORMAL" android:title="@string/sp_front_key_light_duration_NORMAL" android:key="front_key_light_duration" android:dependency="checkbox_front_key_light" android:entryValues="@array/sp_frontkey_led_timeout_values_NORMAL" />	/>
+</PreferenceScreen>

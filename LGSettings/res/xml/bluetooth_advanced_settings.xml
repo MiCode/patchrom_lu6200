@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/wifi_menu_advanced"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/bluetooth_device_advanced_profile_header_title" android:key="profile_container" android:order="100">
+        <CheckBoxPreference android:title="@string/bt_pref_ftp_svc" android:key="bt_ftp_svc" />
+        <CheckBoxPreference android:title="@string/bt_pref_pbap_svc" android:key="bt_pbap_svc" />
+    </PreferenceCategory>
+    <Preference android:title="@string/tethering_help_button_text" android:key="bt_svc_help" />
+</PreferenceScreen>

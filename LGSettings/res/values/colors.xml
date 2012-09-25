@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="white">#ffffffff</color>
+    <color name="grey">#806e6a6b</color>
+    <color name="memory_used">#ffff0000</color>
+    <color name="memory_avail">#ff333333</color>
+    <color name="memory_apps_usage">#ff77831a</color>
+    <color name="memory_downloads">#ff476093</color>
+    <color name="memory_dcim">#ff793a7f</color>
+    <color name="memory_music">#ff8e562a</color>
+    <color name="memory_misc">#ff7c3030</color>
+    <color name="crypt_keeper_clock_background">#ff9a9a9a</color>
+    <color name="crypt_keeper_clock_foreground">#ff666666</color>
+    <color name="crypt_keeper_clock_am_pm">#ff9a9a9a</color>
+    <color name="divider_color">#806e6a6b</color>
+    <color name="title_color">@android:color/holo_blue_light</color>
+    <color name="vzw_storage_app">#ff459a21</color>
+    <color name="vzw_storage_pictures">#ffaed135</color>
+    <color name="vzw_storage_audio">#ff8453a2</color>
+    <color name="vzw_storage_downloads">#ff7ac1ff</color>
+    <color name="vzw_storage_misc">#ffe16668</color>
+    <color name="vzw_storage_avail">#ffc6c6c6</color>
+    <color name="vzw_storage_about_used">#ff343331</color>
+    <color name="app_textcolor">#ff000000</color>
+    <color name="app_shadowcolor">#ffcccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_view_background">#ffe2e2e2</color>
+</resources>

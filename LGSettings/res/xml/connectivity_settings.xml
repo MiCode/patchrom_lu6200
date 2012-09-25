@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_connectivity_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/sp_usb_connection_NORMAL" android:key="usb_connection">
+        <Preference android:title="@string/sp_usb_connection_type_NORMAL" android:key="usb_connection_type" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/sp_ask_on_connection_title_NORMAL" android:key="usb_always_ask" android:summary="@string/sp_askon_summary_NORMAL" />
+        <Preference android:title="@string/sp_connectivity_helper_NORMAL" android:key="connectivity_helper">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.ConnectivityHelperPopup" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_auto_launch_NORMAL" android:key="auto_launch">
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_car_home_NORMAL" android:key="car_home" android:summary="@string/sp_car_home_summary_NORMAL" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_desk_home_NORMAL" android:key="desk_home" android:summary="@string/sp_desk_home_summary_NORMAL" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_media_home_NORMAL" android:key="media_home" android:summary="@string/sp_media_home_summary_NORMAL" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_pouch_mode_NORMAL" android:key="pouch_mode" android:summary="@string/sp_pouch_mode_summary_NORMAL" />
+        <Preference android:persistent="false" android:title="@string/sp_pouch_launch_noti_title_NORMAL" android:key="pouch_notification" android:summary="@string/sp_pouch_launch_noti_summury_NORMAL" android:dependency="pouch_mode">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.ConnectivityPouchNotification" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_lg_software_NORMAL" android:key="lg_category">
+        <Preference android:persistent="false" android:title="@string/sp_lg_software_wifi_connection_summary_NORMAL" android:selectable="false" android:key="lg_category_summary" style="@style/PowersavePreference_information" />
+        <PreferenceScreen android:title="@string/sp_osp_title_NORMAL" android:key="osp_settings" android:summary="@string/osp_settings_summary">
+            <intent android:targetPackage="com.lge.osp" android:action="android.intent.action.MAIN" android:targetClass="com.lge.osp.OSPSettings" />
+        </PreferenceScreen>
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_link_cloud_category_NORMAL" android:key="wifi_pcsuite_connection_onoff" android:summary="@string/sp_pc_suite_wifi_connection_summary_NORMAL" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_osp_title_NORMAL" android:key="wifi_osp_connection_onoff" android:summary="@string/sp_osp_wifi_connection_summary_NORMAL" />
+        <Preference android:title="@string/sp_connectivity_helper_NORMAL" android:key="lg_software_help">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.LGSoftwareHelp" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

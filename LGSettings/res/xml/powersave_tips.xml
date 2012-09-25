@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_power_saver_tips_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/sp_power_save_auto_sync_NORMAL">
+        <Preference android:persistent="false" android:title="@string/sp_power_save_tips_auto_sync_text_NORMAL" android:selectable="false" style="@style/PowersavePreference_information" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_power_save_tips_wifi_NORMAL">
+        <Preference android:persistent="false" android:title="@string/sp_power_save_tips_wifi_text2_NORMAL" android:selectable="false" style="@style/PowersavePreference_information" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_power_save_tips_bluetooth_NORMAL">
+        <Preference android:persistent="false" android:title="@string/sp_power_save_tips_bluetooth_text2_NORMAL" android:selectable="false" style="@style/PowersavePreference_information" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_eco_mode_NORMAL" android:key="power_save_tip_eco_mode">
+        <Preference android:persistent="false" android:title="@string/sp_power_save_eco_mode_tip_NORMAL" android:selectable="false" style="@style/PowersavePreference_information" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_power_saver_select_touch_NORMAL" android:key="power_save_touch">
+        <Preference android:persistent="false" android:title="@string/sp_power_save_tips_touch_text_NORMAL" android:selectable="false" style="@style/PowersavePreference_information" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_power_save_tips_brightness_NORMAL">
+        <Preference android:persistent="false" android:title="@string/sp_power_save_tips_brightness_text_NORMAL" android:selectable="false" style="@style/PowersavePreference_information" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_power_saver_select_screen_timeout_NORMAL">
+        <Preference android:persistent="false" android:title="@string/sp_power_save_tips_screen_timeout_text_NORMAL" android:selectable="false" style="@style/PowersavePreference_information" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_power_saver_select_front_light_NORMAL" android:key="power_save_front_light">
+        <Preference android:persistent="false" android:title="@string/sp_power_save_tips_front_light_text_NORMAL" android:selectable="false" style="@style/PowersavePreference_information" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/location_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/e911_only_title" android:key="e911_only" android:summary="@string/e911_only_summary" />
+    <CheckBoxPreference android:title="@string/sp_location_vzw_lbs_NORMAL" android:key="location_vzw_lbs" android:summary="@string/sp_location_vzw_lbs_summary_NORMAL" />
+    <CheckBoxPreference android:title="@string/sp_location_gps_vzw_NORMAL" android:key="location_gps_vzw" android:summary="@string/sp_location_street_level_vzw_NORMAL" />
+    <CheckBoxPreference android:title="@string/location_network_based" android:key="location_network" android:summary="@string/location_neighborhood_level" />
+    <CheckBoxPreference android:title="@string/location_gps" android:key="location_gps" android:summary="@string/location_street_level" />
+    <CheckBoxPreference android:title="@string/assisted_gps" android:key="assisted_gps" android:summary="@string/sp_lgu_gps_desc_NORMAL" />
+</PreferenceScreen>

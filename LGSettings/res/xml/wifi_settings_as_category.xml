@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/wifi_settings_category"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_wifi_notify_networks_NORMAL" android:key="wifi_notify_networks" android:summary="@string/sp_wifi_notify_networks_summary_NORMAL" />
+    <com.android.settings_ex.wifi.WifiProgressCategory android:title="@string/sp_wifi_access_point_category_NORMAL" android:key="wifi_access_point" />
+</PreferenceScreen>

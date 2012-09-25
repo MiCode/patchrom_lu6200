@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bluetooth Services</string>
+    <string name="title_bt_pref_svccfg">Advanced Bluetooth settings</string>
+    <string name="title_bt_pref_svccfg_dun">Dial-up networking settings</string>
+    <string name="bt_pref_svccfg">Advanced settings</string>
+    <string name="bt_pref_ftp_svc">FTP server</string>
+    <string name="bt_pref_ftp_svc_name">FTP</string>
+    <string name="bt_pref_pbap_svc">Phonebook access</string>
+    <string name="bt_pref_pbap_svc_name">PBAP</string>
+    <string name="bt_pref_sap_svc">SIM access</string>
+    <string name="bt_pref_sap_svc_name">SAP</string>
+    <string name="bt_pref_dun_svc">Dialup networking</string>
+    <string name="bt_pref_dun_svc_name">DUN</string>
+    <string name="bt_pref_pan_svc">PAN-NAP</string>
+    <string name="bt_pref_pan_svc_name">PAN-NAP</string>
+    <string name="bt_pref_panu_svc">PANU</string>
+    <string name="bt_pref_panu_svc_name">PANU</string>
+    <string name="bt_pref_fm_svc">FM radio</string>
+    <string name="bt_pref_fm_svc_name">FM RX</string>
+    <string name="bt_pref_fmtx_svc">FM Transmit</string>
+    <string name="bt_pref_fmtx_svc_name">FM TX</string>
+    <string name="bt_pref_map_svc">Message access</string>
+    <string name="bt_pref_map_svc_name">MAP</string>
+    <string name="bt_pref_opp_svc">Object push</string>
+    <string name="bt_pref_opp_svc_name">OPP</string>
+    <string name="bt_pref_bpp_svc">Basic printing</string>
+    <string name="bt_pref_bpp_svc_name">BPP</string>
+    <string name="bt_pref_testmode_svc">Bluetooth test mode</string>
+    <string name="bt_pref_testmode_svc_name">Test mode</string>
+    <string name="bt_pref_dun_status">Get connection status</string>
+    <string name="summary_bt_svc_off">Turn off service</string>
+    <string name="summary_bt_svc_on">Turn on service</string>
+    <string name="summary_bt_svc_turning_off">Turning off. Please wait...</string>
+    <string name="summary_bt_svc_turning_on">Turning on. Please wait...</string>
+    <string name="summary_bt_pref_svccfg">Setup Bluetooth services</string>
+    <string name="summary_bt_svc_not_available">Service not available</string>
+    <string name="progress_status">Retrieving...</string>
+    <string name="bt_dun_connections">Dialup connections</string>
+    <string name="bt_map_extra_settings">Message access settings</string>
+</resources>

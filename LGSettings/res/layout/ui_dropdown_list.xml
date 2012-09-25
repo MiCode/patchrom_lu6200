@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/headerLayout" android:layout_width="fill_parent" style="@style/Dropdown.Header">
+        <LinearLayout android:background="@drawable/drop_down_list_bg_up" style="@style/Dropdown.ButtonContainer">
+            <Button android:id="@id/dropdownButton" style="@style/Dropdown.Button" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/contentsLayout" style="@style/Dropdown.ListViewContainer">
+        <ListView android:id="@android:id/list" android:visibility="gone" style="@style/Dropdown.ListView" />
+    </LinearLayout>
+</LinearLayout>

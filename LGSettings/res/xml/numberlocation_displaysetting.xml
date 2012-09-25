@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_numlocdisplay_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <ListPreference android:entries="@array/sp_numlocdisp_entries_NORMAL" android:title="@string/sync_contacts" android:key="button_numlocsettings_pb_key" android:entryValues="@array/sp_numlocdisp_values_NORMAL" />
+    <ListPreference android:entries="@array/sp_numlocdisp_entries_NORMAL" android:title="@string/sp_Message_NORMAL" android:key="button_numlocsettings_sms_key" android:entryValues="@array/sp_numlocdisp_values_NORMAL" />
+    <ListPreference android:entries="@array/sp_numlocdisp_entries_NORMAL" android:title="@string/sp_Call_NORMAL" android:key="button_numlocsettings_call_key" android:entryValues="@array/sp_numlocdisp_values_NORMAL" />
+</PreferenceScreen>

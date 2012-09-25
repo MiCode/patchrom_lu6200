@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/display_settings" android:key="display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.android.settings_ex.BrightnessPreference android:title="@string/brightness" android:key="brightness" android:dialogTitle="@string/brightness" />
+    <CheckBoxPreference android:title="@string/accelerometer_title" android:key="accelerometer" android:summary="@string/sp_accelerometer_summary_NORMAL" />
+    <com.android.settings_ex.DoubleTitleListPreference android:persistent="false" android:entries="@array/sp_screen_timeout_entries2_NORMAL" android:title="@string/sp_screen_timeout_NORMAL" android:key="screen_timeout" android:summary="@string/screen_timeout_summary" android:entryValues="@array/screen_timeout_values" />
+    <ListPreference android:persistent="false" android:title="@string/sp_fonttype_title_NORMAL" android:key="font_type" android:summary="@string/sp_fonttype_summary_NORMAL" />
+    <com.android.settings_ex.FontSettingsPreference android:persistent="false" android:title="@string/sp_fonttype_NORMAL" android:key="font_type_select" android:dialogTitle="@string/sp_fonttype_NORMAL" />
+    <ListPreference android:entries="@array/entries_font_size" android:title="@string/dialog_title_font_size" android:key="font_size" android:summary="@string/summary_font_size" android:dialogTitle="@string/dialog_title_font_size" android:entryValues="@array/entryvalues_font_size" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/notification_pulse_title" android:key="notification_pulse" />
+    <Preference android:persistent="false" android:title="@string/sp_aspect_ratio_correction_NORMAL" android:key="autofit_screen" android:summary="@string/sp_autofit_screen_summary_NORMAL" />
+    <Preference android:persistent="false" android:title="@string/sp_accelerometer_calibration_title_NORMAL" android:key="accelerometer_calibration" android:summary="@string/sp_accelerometer_calibration_summary_NORMAL">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.AccelerometerCalibration" />
+    </Preference>
+    <PreferenceScreen android:title="@string/sp_pouch_clock_screen_title_NORMAL" android:key="pouch_settings" android:fragment="com.android.settings_ex.lge.PouchClockType" />
+    <Preference android:persistent="false" android:title="@string/sp_front_key_light_NORMAL" android:key="frontkey_led_timeout">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.FrontKeyLight" />
+    </Preference>
+    <PreferenceScreen android:title="@string/sp_notification_flash_NORMAL" android:key="notification_flash">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.LedLightSetting" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="@string/sp_sensor_NORMAL" android:key="sensor_category">
+        <Preference android:persistent="false" android:title="@string/sp_motion_sensor_calibration_NORMAL" android:key="motion_sensor_calibration" android:summary="@string/sp_motion_sensor_calibration_summary_NORMAL">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.MotionSensorCalibration" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

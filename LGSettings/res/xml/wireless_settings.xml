@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/wireless_networks_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/airplane_mode" android:key="toggle_airplane" android:disableDependentsState="true" />
+    <PreferenceScreen android:title="@string/network_storage_settings" android:key="network_storage_settings" android:summary="@string/network_storage_settings_info">
+        <intent android:targetPackage="com.lge.app.network_folder" android:action="android.intent.action.MAIN" android:targetClass="com.lge.app.network_folder.NetworkStorageSettings" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:persistent="false" android:title="@string/wifi_p2p_settings_title" android:key="toggle_wifi_p2p" />
+    <PreferenceScreen android:title="@string/wifi_p2p_settings_title" android:key="wifi_p2p_settings" android:summary="@string/wifi_p2p_settings_summary" android:fragment="com.android.settings_ex.wifi.p2p.WifiP2pSettings" />
+    <PreferenceScreen android:persistent="false" android:title="@string/sp_wifi_calling_mode_title_NORMAL" android:key="button_wifi_calling_key" android:fragment="com.movial.ipphone.WifiCallCheckBoxPreference" />
+    <Preference android:persistent="false" android:title="@string/sp_wifi_calling_settings_title_NORMAL" android:key="button_wifi_calling_settings_key" android:summary="@string/sp_wifi_calling_settings_summary_NORMAL" />
+    <PreferenceScreen android:title="@string/tether_settings_title_wifi" android:key="tether_settings" android:summary="@string/sp_wifi_tether_summary_NORMAL" android:fragment="com.android.settings_ex.TetherSettings" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/bluetooth_tether_checkbox_text" android:key="enable_bluetooth_tethering" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/nfc_quick_toggle_title" android:key="toggle_nfc" android:summary="@string/nfc_quick_toggle_summary" />
+    <com.android.settings_ex.nfc.NfcSwitchPreference android:persistent="false" android:title="@string/nfc_quick_toggle_title" android:key="toggle_nfc_switch" android:summary="@string/nfc_quick_toggle_summary" android:fragment="com.android.settings_ex.nfc.AndroidBeam" />
+    <PreferenceScreen android:title="@string/android_beam_settings_title" android:key="android_beam_settings" android:fragment="com.android.settings_ex.nfc.AndroidBeam" />
+    <PreferenceScreen android:title="@string/data_network_settings_title" android:key="data_network_settings" />
+    <PreferenceScreen android:title="@string/vpn_title" android:key="vpn_settings" android:summary="@string/sp_vpn_settings_summary_NORMAL" android:fragment="com.android.settings_ex.vpn2.VpnSettings" />
+    <PreferenceScreen android:title="@string/network_settings_title" android:key="mobile_network_settings" android:dependency="toggle_airplane">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.Settings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/network_settings_title" android:key="mobile_network_settings_dualsim" android:dependency="toggle_airplane">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.MobileSettings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/proxy_settings_title" android:key="proxy_settings" android:fragment="com.android.settings_ex.ProxySelector" />
+</PreferenceScreen>

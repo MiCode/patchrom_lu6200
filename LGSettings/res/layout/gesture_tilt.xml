@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:measureAllChildren="false">
+        <ImageView android:id="@id/gesture_anim_tilt" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/gesture_anim_facing" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/gesture_anim_tap" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ViewFlipper>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageView android:id="@id/navi_zero" android:background="@drawable/gesture_ani_navi_active" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/navi_one" android:background="@drawable/gesture_ani_navi_unactive" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/navi_two" android:background="@drawable/gesture_ani_navi_unactive" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="120.0dip">
+        <TextView android:textSize="@dimen/settings_fontsize_18" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tilt_test_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_gesture_tilt_test_text_NOMAL" android:shadowColor="#7f000000" android:shadowDx="3.0" android:shadowDy="3.0" android:shadowRadius="1.5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/icon" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tilt_test_button_normal" />
+    </LinearLayout>
+</FrameLayout>

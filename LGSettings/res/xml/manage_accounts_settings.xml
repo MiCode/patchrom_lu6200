@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="accountGroup"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/sp_vzw_account_NORMAL" android:key="backupAssistantCategory">
+        <Preference android:icon="@drawable/icon_backup" android:title="@string/sp_preference_bua_plus_title_NORMAL" android:key="manageAccountsBUAPlus" android:summary="@string/sp_vzw_backup_summary_NORMAL" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_general_accounts_NORMAL" android:key="generalAccountsCategory" />
+    <PreferenceCategory android:title="@string/sp_account_for_LG_NORMAL" android:key="lgAccountsCategory" />
+</PreferenceScreen>

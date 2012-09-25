@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.settings_ex.CheckableRelativeLayout android:gravity="center_vertical" android:paddingRight="?android:scrollbarSize" android:layout_width="fill_parent" android:layout_height="wrap_content" ringlist:is_checkable="@id/ringtone_list_item_radio"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ringlist="http://schemas.android.com/apk/res/com.android.settings_ex">
+    <RadioButton android:id="@id/ringtone_list_item_radio" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?android:textAppearanceListItemSmall" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ringtone_list_item_entry_title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/ringtone_list_item_radio" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</com.android.settings_ex.CheckableRelativeLayout>

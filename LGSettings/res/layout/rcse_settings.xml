@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="rcse_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/sp_network_settings_NORMAL">
+        <CheckBoxPreference android:title="@string/sp_rcs_e_service_NORMAL" android:key="rcs_e_service" android:summary="@string/sp_summary_rcs_e_service_NORMAL" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_rich_chat_settings_NORMAL">
+        <PreferenceScreen android:title="@string/sp_rich_chat_settings_NORMAL" android:key="rcs_e_chat_settings" android:summary="@string/sp_summary_rich_chat_settings_NORMAL">
+            <intent android:targetPackage="com.lge.ims.rcsim" android:action="com.lge.ims.rcsim.SETTINGS" android:targetClass="com.lge.ims.rcsim.ChatSettings" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_rcs_e_about_service_NORMAL">
+        <PreferenceScreen android:title="@string/sp_rcs_e_service_agree_title_NORMAL" android:key="container" android:summary="@string/sp_rcs_e_service_agree_sum_NORMAL">
+            <PreferenceScreen android:title="@string/sp_rcs_e_terms_title_NORMAL" android:key="rcs_e_terms">
+                <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings_ex.RcsSettings" />
+            </PreferenceScreen>
+            <PreferenceScreen android:title="@string/sp_rcs_e_privacy_title_NORMAL" android:key="rcs_e_privacy">
+                <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings_ex.RcsAgreeSettings" />
+            </PreferenceScreen>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/sp_rcs_e_notices_NORMAL" android:key="rcs_e_notice" android:summary="@string/sp_summary_rcs_e_notices_NORMAL">
+            <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings_ex.RcseNotiList" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

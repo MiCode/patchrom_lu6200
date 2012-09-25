@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">蓝牙服务</string>
+    <string name="title_bt_pref_svccfg">高级蓝牙设置</string>
+    <string name="title_bt_pref_svccfg_dun">拨号网络设置</string>
+    <string name="bt_pref_svccfg">高级设置</string>
+    <string name="bt_pref_ftp_svc">FTP 服务器</string>
+    <string name="bt_pref_ftp_svc_name">FTP</string>
+    <string name="bt_pref_pbap_svc">电话簿访问</string>
+    <string name="bt_pref_pbap_svc_name">PBAP</string>
+    <string name="bt_pref_sap_svc">SIM卡访问</string>
+    <string name="bt_pref_sap_svc_name">SAP</string>
+    <string name="bt_pref_dun_svc">拨号网络</string>
+    <string name="bt_pref_dun_svc_name">DUN</string>
+    <string name="bt_pref_pan_svc">PAN-NAP</string>
+    <string name="bt_pref_pan_svc_name">PAN-NAP</string>
+    <string name="bt_pref_panu_svc">PANU</string>
+    <string name="bt_pref_panu_svc_name">PANU</string>
+    <string name="bt_pref_fm_svc">FM radio</string>
+    <string name="bt_pref_fm_svc_name">FM RX</string>
+    <string name="bt_pref_fmtx_svc">FM Transmit</string>
+    <string name="bt_pref_fmtx_svc_name">FM TX</string>
+    <string name="bt_pref_map_svc">消息访问</string>
+    <string name="bt_pref_map_svc_name">MAP</string>
+    <string name="bt_pref_opp_svc">Object push</string>
+    <string name="bt_pref_opp_svc_name">OPP</string>
+    <string name="bt_pref_bpp_svc">基本打印</string>
+    <string name="bt_pref_bpp_svc_name">BPP</string>
+    <string name="bt_pref_testmode_svc">蓝牙测试模式</string>
+    <string name="bt_pref_testmode_svc_name">测试模式</string>
+    <string name="bt_pref_dun_status">获取连接状态</string>
+    <string name="summary_bt_svc_off">关闭服务</string>
+    <string name="summary_bt_svc_on">开启服务</string>
+    <string name="summary_bt_svc_turning_off">正在关闭。请稍候...</string>
+    <string name="summary_bt_svc_turning_on">正在开启。请稍候...</string>
+    <string name="summary_bt_pref_svccfg">设置蓝牙服务</string>
+    <string name="summary_bt_svc_not_available">服务不可用</string>
+    <string name="progress_status">正在检索...</string>
+    <string name="bt_dun_connections">拨号连接</string>
+    <string name="bt_map_extra_settings">消息访问设置</string>
+</resources>

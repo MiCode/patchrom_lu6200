@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:title="@string/header_category_wireless_networks" />
+    <header android:icon="@drawable/ic_list_dualsim" android:id="@id/dualsim_settings" android:title="@string/sp_dual_sim_menu_NORMAL">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.DualSim" />
+    </header>
+    <header android:icon="@drawable/ic_settings_wireless" android:id="@id/wifi_settings" android:title="@string/wifi_settings_title" android:fragment="com.android.settings_ex.wifi.WifiSettings" />
+    <header android:icon="@drawable/ic_settings_bluetooth2" android:id="@id/bluetooth_settings" android:title="@string/bluetooth_settings_title" android:fragment="com.android.settings_ex.bluetooth.BluetoothSettings" />
+    <header android:icon="@drawable/ic_settings_data_usage" android:id="@id/data_usage_settings" android:title="@string/data_usage_summary_title" android:fragment="com.android.settings_ex.DataUsageSummary" />
+    <header android:icon="@drawable/ic_settings_call_settings" android:id="@id/call_settings" android:title="@string/sp_settings_call_NORMAL">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.CallFeaturesSetting" />
+    </header>
+    <header android:icon="@drawable/ic_settings_call_settings" android:id="@id/dualsim_call_settings" android:title="@string/sp_settings_call_NORMAL">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.MSimCallFeaturesSetting" />
+    </header>
+    <header android:icon="@drawable/ic_settings_wireless" android:id="@id/wifi_screen_settings" android:title="@string/sp_wifi_screen_share_NORMAL" android:fragment="com.android.settings_ex.wifi.wifiscreen.WifiScreenSettings" />
+    <header android:icon="@drawable/ic_settings_roaming_lgt" android:id="@id/roaming_lgt" android:title="@string/roaming_lgt_title" android:key="lgt_roaming" android:fragment="com.android.settings_ex.LgtRoamingSettings" />
+    <header android:icon="@drawable/ic_settings_rcs" android:id="@id/rcs_setting" android:title="@string/sp_joyn_title_NORMAL" android:key="rcs_setting" android:fragment="com.android.settings_ex.RcseSettings" />
+    <header android:id="@id/operator_settings" android:fragment="com.android.settings_ex.WirelessSettings">
+        <intent android:action="com.android.settings_ex.OPERATOR_APPLICATION_SETTING" />
+    </header>
+    <header android:icon="@drawable/empty_icon" android:id="@id/wireless_settings" android:title="@string/radio_controls_title" android:fragment="com.android.settings_ex.WirelessSettings" android:breadCrumbTitle="@string/wireless_networks_settings_title" />
+    <header android:title="@string/header_category_device" />
+    <header android:icon="@drawable/ic_settings_sound" android:id="@id/sound_settings" android:title="@string/sound_settings" android:fragment="com.android.settings_ex.SoundSettings" />
+    <header android:icon="@drawable/ic_settings_display" android:id="@id/display_settings" android:title="@string/display_settings" android:fragment="com.android.settings_ex.DisplaySettings" />
+    <header android:icon="@drawable/ic_home_white" android:id="@id/home_settings" android:title="@string/sp_screen_home_screen_title_NORMAL">
+        <intent android:targetPackage="com.lge.launcher2" android:action="android.intent.action.MAIN" android:targetClass="com.lge.launcher2.homesettings.HomeSettingsPrefActivity" />
+    </header>
+    <header android:icon="@drawable/ic_lockscreen_white" android:id="@id/lock_settings" android:title="@string/sp_screen_lock_screen_title_NORMAL" android:fragment="com.android.settings_ex.LockSettings" />
+    <header android:icon="@drawable/ic_settings_gesture" android:id="@id/gesture_settings" android:title="@string/gesture_settings" android:fragment="com.android.settings_ex.GestureSettings" />
+    <header android:icon="@drawable/ic_settings_storage" android:id="@id/storage_settings" android:title="@string/storage_settings" android:fragment="com.android.settings_ex.deviceinfo.Memory" />
+    <header android:icon="@drawable/ic_settings_powersave" android:id="@id/powersave_settings" android:title="@string/sp_power_saver_NORMAL" android:fragment="com.android.settings_ex.powersave.PowerSaveSettings" />
+    <header android:icon="@drawable/ic_settings_applications" android:id="@id/application_settings" android:title="@string/applications_settings" android:fragment="com.android.settings_ex.applications.ManageApplications" />
+    <header android:icon="@drawable/ic_settings_quadcore" android:id="@id/quad_gearbox_settings" android:title="@string/sp_quad_core_control_NORMAL">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.QuadGearBox" />
+    </header>
+    <header android:id="@id/manufacturer_settings" android:fragment="com.android.settings_ex.WirelessSettings">
+        <intent android:action="com.android.settings_ex.MANUFACTURER_APPLICATION_SETTING" />
+    </header>
+    <header android:title="@string/header_category_personal" />
+    <header android:icon="@drawable/ic_settings_docomo" android:id="@id/docomo_settings" android:title="@string/docomo_settings_title">
+        <intent android:targetPackage="com.nttdocomo.android.docomoset" android:action="android.intent.action.MAIN" android:targetClass="com.nttdocomo.android.docomoset.DocomoServiceSetting" />
+    </header>
+    <header android:id="@id/timezone" android:fragment="com.android.settings_ex.ZonePicker" />
+    <header android:icon="@drawable/ic_settings_sync" android:id="@id/sync_settings" android:title="@string/sync_settings" android:fragment="com.android.settings_ex.accounts.ManageAccountsSettings" />
+    <header android:icon="@drawable/ic_settings_location" android:id="@id/location_settings" android:title="@string/location_settings_title" android:fragment="com.android.settings_ex.LocationSettings" />
+    <header android:icon="@drawable/ic_settings_security" android:id="@id/security_settings" android:title="@string/security_settings_title" android:fragment="com.android.settings_ex.SecuritySettings" />
+    <header android:icon="@drawable/ic_settings_language" android:id="@id/language_settings" android:title="@string/language_settings" android:fragment="com.android.settings_ex.inputmethod.InputMethodAndLanguageSettings" />
+    <header android:icon="@drawable/ic_settings_backup" android:id="@id/privacy_settings" android:title="@string/privacy_settings" android:fragment="com.android.settings_ex.PrivacySettings" />
+    <header android:title="@string/header_category_system" />
+    <header android:icon="@drawable/ic_settings_dock" android:id="@id/dock_settings" android:title="@string/dock_settings" android:fragment="com.android.settings_ex.DockSettings" />
+    <header android:icon="@drawable/ic_settings_date_time" android:id="@id/date_time_settings" android:title="@string/date_and_time_settings_title" android:fragment="com.android.settings_ex.DateTimeSettings" />
+    <header android:icon="@drawable/ic_settings_accessibility" android:id="@id/accessibility_settings" android:title="@string/accessibility_settings" android:fragment="com.android.settings_ex.AccessibilitySettings" />
+    <header android:icon="@drawable/connectivity" android:id="@id/connectivity_settings" android:title="@string/sp_connectivity_NORMAL" android:fragment="com.android.settings_ex.lge.ConnectivitySettings" />
+    <header android:icon="@drawable/ic_settings_development" android:id="@id/development_settings" android:title="@string/development_settings_title" android:fragment="com.android.settings_ex.DevelopmentSettings" />
+    <header android:icon="@drawable/connectivity" android:id="@id/activate_device_settings" android:title="@string/sp_settings_activate_this_device_title_NORMAL" android:fragment="com.android.settings_ex.DSSLoader" />
+    <header android:icon="@drawable/connectivity" android:id="@id/system_update_spr" android:title="@string/system_update_settings_list_item_title" android:fragment="com.android.settings_ex.PhoneUpdates" />
+    <header android:icon="@drawable/ic_settings_about" android:id="@id/about_settings" android:title="@string/about_settings" android:fragment="com.android.settings_ex.DeviceInfoSettings" />
+    <header android:icon="@drawable/ic_settings_about" android:id="@id/about_settings_lge" android:title="@string/about_settings" android:fragment="com.android.settings_ex.lge.DeviceInfoLge" />
+</preference-headers>

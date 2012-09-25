@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip">a
+<TextView android:textSize="22.0sp" android:id="@id/noti_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/next_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_next_page" android:layout_alignParentRight="true" />
+        <TextView android:id="@id/noti_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_toLeftOf="@id/next_page" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_joynchat_new" android:layout_toLeftOf="@id/noti_date" />
+    </RelativeLayout>
+</LinearLayout>

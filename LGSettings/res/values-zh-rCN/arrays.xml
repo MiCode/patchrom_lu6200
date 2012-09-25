@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>美洲</item>
+        <item>欧洲</item>
+        <item>非洲</item>
+        <item>亚洲</item>
+        <item>澳大利亚</item>
+        <item>太平洋</item>
+        <item>全部</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 秒</item>
+        <item>30 秒</item>
+        <item>1 分钟</item>
+        <item>2 分钟</item>
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>从不</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>时钟 1</item>
+        <item>时钟 2</item>
+        <item>时钟 3</item>
+        <item>时钟 4</item>
+        <item>时钟 5</item>
+        <item>时钟 6</item>
+        <item>时钟 7</item>
+        <item>时钟 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>模拟</item>
+        <item>数字</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>中心</item>
+        <item>右上</item>
+        <item>左上</item>
+        <item>右下</item>
+        <item>左下</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>字体名称 1</item>
+        <item>字体名称 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>声音</item>
+        <item>仅振动</item>
+        <item>静音</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>从不</item>
+        <item>15 秒</item>
+        <item>30 秒</item>
+        <item>1 分钟</item>
+        <item>2 分钟</item>
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>30 分钟</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>立即</item>
+        <item>5 秒</item>
+        <item>15 秒</item>
+        <item>30 秒</item>
+        <item>1 分钟</item>
+        <item>2 分钟</item>
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>30 分钟</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>立即</item>
+        <item>15 秒</item>
+        <item>30 秒</item>
+        <item>1 分钟</item>
+        <item>2 分钟</item>
+        <item>10 分钟</item>
+        <item>30 分钟</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>很慢</item>
+        <item>慢</item>
+        <item>正常</item>
+        <item>快</item>
+        <item>很快</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>很低</item>
+        <item>低</item>
+        <item>正常</item>
+        <item>高</item>
+        <item>很高</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>正在扫描...</item>
+        <item>正在连接...</item>
+        <item>正在进行身份验证…</item>
+        <item>正在获取 IP 地址…</item>
+        <item>已连接</item>
+        <item>已暂停</item>
+        <item>正在断开连接...</item>
+        <item>已断开连接</item>
+        <item>失败</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>正在扫描...</item>
+        <item>连接至 %1$s...</item>
+        <item>正在通过 %1$s 进行身份验证...</item>
+        <item>正在从 %1$s获取 IP 地址...</item>
+        <item>已连接到 %1$s</item>
+        <item>已暂停</item>
+        <item>正在断开与 %1$s 的连接...</item>
+        <item>已断开连接</item>
+        <item>失败</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>开放</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>按钮</item>
+        <item>此设备中的 PIN 码</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>已连接</item>
+        <item>正在连接</item>
+        <item>失败</item>
+        <item>可用</item>
+        <item>超出范围</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 分钟</item>
+        <item>5 分钟</item>
+        <item>1 小时</item>
+        <item>从不超时</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>弱</item>
+        <item>强</item>
+        <item>较强</item>
+        <item>极强</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>总是</item>
+        <item>只在充电时</item>
+        <item>从不（增加数据使用）</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>总是</item>
+        <item>只在充电时</item>
+        <item>从不</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>自动</item>
+        <item>仅使用 5 GHz 频带</item>
+        <item>仅使用 2.4 GHz 频带</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>使用时间</item>
+        <item>启动次数</item>
+        <item>应用程序名称</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>无</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>关闭</item>
+        <item>按钮</item>
+        <item>接入点中的 PIN 码</item>
+        <item>此设备中的 PIN 码</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>静态</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>无</item>
+        <item>手动</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>关闭</item>
+        <item>提示</item>
+        <item>振动</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>无</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP 或 CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>未指定</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>设备内部存储</item>
+        <item>可卸载的 SD 卡</item>
+        <item>由系统确定</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>总是</item>
+        <item>从不</item>
+        <item>仅在静音模式下来电振动</item>
+        <item>仅适用于非静音模式</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>短</item>
+        <item>中</item>
+        <item>长</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>从不检查</item>
+        <item>仅检查 DRM 内容</item>
+        <item>总是检查</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>从不使用 HDCP 检查</item>
+        <item>仅使用 HDCP 检查 DRM 内容</item>
+        <item>总是使用 HDCP 检查</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>关闭动画</item>
+        <item>动画缩放 0.5 倍</item>
+        <item>动画缩放 1 倍</item>
+        <item>动画缩放 1. 5 倍</item>
+        <item>动画缩放 2 倍</item>
+        <item>动画缩放 5 倍</item>
+        <item>动画缩放 10 倍</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>关闭动画</item>
+        <item>动画缩放 0.5 倍</item>
+        <item>动画缩放 1 倍</item>
+        <item>动画缩放 1. 5 倍</item>
+        <item>动画缩放 2 倍</item>
+        <item>动画缩放 5 倍</item>
+        <item>动画缩放 10 倍</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>标准限制</item>
+        <item>无后台进程</item>
+        <item>至多 1 道流程</item>
+        <item>至多 2 道流程</item>
+        <item>至多 3 道流程</item>
+        <item>至多 4 道流程</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>带有预共享密钥的 L2TP/IPSec VPN</item>
+        <item>带有证书的 L2TP/IPSec VPN</item>
+        <item>带有预共享密钥和 Xauth 认证的 IPSec VPN</item>
+        <item>带有证书和 Xauth 认证的 IPSec VPN</item>
+        <item>带有证书和混合认证的 IPSec VPN</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>已断开连接</item>
+        <item>正在初始化...</item>
+        <item>正在连接...</item>
+        <item>已连接</item>
+        <item>超时</item>
+        <item>失败</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>所有设备</item>
+        <item>耳机</item>
+        <item>PC</item>
+        <item>手机</item>
+        <item>外围设备</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>用户图像</item>
+        <item>时钟 1</item>
+        <item>时钟 2</item>
+        <item>时钟 3</item>
+        <item>时钟 4</item>
+        <item>时钟 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 秒</item>
+        <item>3 秒</item>
+        <item>5 秒</item>
+        <item>始终开</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>解除</item>
+        <item>激活</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% 亮度</item>
+        <item>20% 亮度</item>
+        <item>30% 亮度</item>
+        <item>50% 亮度</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 秒</item>
+        <item>30 秒</item>
+        <item>1 分钟</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 秒</item>
+        <item>始终关闭</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% 电池电量</item>
+        <item>20% 电池电量</item>
+        <item>30% 电池电量</item>
+        <item>50% 电池电量</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>立即</item>
+        <item>10% 电池电量</item>
+        <item>20% 电池电量</item>
+        <item>30% 电池电量</item>
+        <item>50% 电池电量</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>小号</item>
+        <item>正常</item>
+        <item>大号</item>
+        <item>特大</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>15 分钟</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>从不</item>
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>15 分钟</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 分钟</item>
+        <item>30 分钟</item>
+        <item>永不休眠</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>显示</item>
+        <item>隐藏</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>所有设备</item>
+        <item>耳机</item>
+        <item>手机</item>
+        <item>PC</item>
+        <item>输入设备（键盘、鼠标等）</item>
+    </string-array>
+</resources>

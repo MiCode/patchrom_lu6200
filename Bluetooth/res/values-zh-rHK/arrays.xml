@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_dialog_items">
+        <item>共享群组中的联系人</item>
+        <item>获取联系人</item>
+        <item>Exchange联系人</item>
+    </string-array>
+    <string-array name="contact_groups">
+        <item>全部显示</item>
+        <item>包含电话号码联系人</item>
+        <item>Starred in Android</item>
+    </string-array>
+</resources>

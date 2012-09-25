@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@xml/wifi_account_as_setupwizard_preferencecategory" android:title="@string/sp_general_accounts_NORMAL" android:key="other_accounts" />
+    <PreferenceCategory android:layout="@xml/wifi_account_as_setupwizard_preferencecategory" android:title="@string/sp_account_for_LG_NORMAL" android:key="lg_accounts" />
+</PreferenceScreen>

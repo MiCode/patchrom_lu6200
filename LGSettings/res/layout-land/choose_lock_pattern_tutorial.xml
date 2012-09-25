@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:orientation="vertical" android:id="@id/topLayout" android:background="@drawable/setting_lock_pattern_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.android.internal.widget.LockPatternView android:id="@id/lockPattern" android:layout_width="275.0dip" android:layout_height="275.0dip" />
+                <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center_horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lock_title" style="?android:attr/textAppearanceLarge" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/settings_fontsize_18" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_lock_into_message_NORMAL" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/settings_fontsize_18" android:id="@id/guide_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_pattern_guide_MLINE" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/skip_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/lockpattern_tutorial_cancel_label" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/next_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/lockpattern_tutorial_continue_label" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>

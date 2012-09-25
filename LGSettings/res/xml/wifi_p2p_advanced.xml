@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:persistent="false" android:entries="@array/wifi_p2p_timeout_entries" android:title="@string/wifi_p2p_timeout" android:key="wifi_p2p_timeout" android:summary="@string/wifi_p2p_timeout_summary" android:entryValues="@array/wifi_p2p_timeout_values" />
+    <Preference android:title="@string/wifi_ip_address" android:key="wifi_p2p_ipaddress" android:summary="@string/status_unavailable" style="?android:attr/preferenceInformationStyle" />
+    <PreferenceScreen android:persistent="false" android:title="@string/sp_gesture_category_help_NOMAL" android:key="wifi_p2p_help" android:summary="@string/sp_gesture_title_help_NOMAL" android:fragment="com.android.settings_ex.wifi.p2p.WifiP2pHelp" />
+</PreferenceScreen>
