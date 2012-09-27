@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_mtp_function_name">mtp_only</string>
+    <string name="config_ptp_function_name">ptp_only</string>
+</resources>

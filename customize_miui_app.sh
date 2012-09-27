@@ -49,8 +49,10 @@ if [ $1 = "Settings" ];then
     $XMLMERGYTOOL $1/res/values $2/res/values
 
     cp $1/Settings.patch out/
+    cp $1/MiuiUsbSettings.patch out/
     cd out
     $GIT_APPLY Settings.patch
+    $GIT_APPLY MiuiUsbSettings.patch
     cd ..
     for file in `find $2 -name *.rej`
     do
