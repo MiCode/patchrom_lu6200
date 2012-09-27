@@ -9,7 +9,7 @@ local-zip-file     := stockrom.zip
 # local-out-zip-file :=
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := CameraApp LGSettings Bluetooth BluetoothServices
+local-modified-apps := CameraApp LGSettings Bluetooth BluetoothServices MediaProvider
 
 local-modified-jars := com.lge.bluetooth
 
