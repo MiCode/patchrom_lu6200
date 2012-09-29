@@ -21202,6 +21202,8 @@
 
     const/4 v6, 0x1
 
+    goto :goto_merge0
+
     .line 1456
     const-string v8, "KR"
 
@@ -21221,6 +21223,7 @@
 
     .line 1462
     :cond_1
+    :goto_merge0
     iget-object v8, p0, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->phone:Lcom/android/internal/telephony/gsm/GSMPhone;
 
     iget-object v8, v8, Lcom/android/internal/telephony/PhoneBase;->mIccRecords:Lcom/android/internal/telephony/IccRecords;
