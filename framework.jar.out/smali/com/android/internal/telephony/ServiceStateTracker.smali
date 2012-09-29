@@ -1784,29 +1784,29 @@
     iput-boolean p1, p0, Lcom/android/internal/telephony/ServiceStateTracker;->mDesiredPowerState:Z
 
     .line 273
-    iget-boolean v0, p0, Lcom/android/internal/telephony/ServiceStateTracker;->mRadioPowerIsInProgress:Z
+    #iget-boolean v0, p0, Lcom/android/internal/telephony/ServiceStateTracker;->mRadioPowerIsInProgress:Z
 
-    if-nez v0, :cond_0
+    #if-nez v0, :cond_0
 
     .line 274
-    const/4 v0, 0x1
+    #const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/internal/telephony/ServiceStateTracker;->mRadioPowerIsInProgress:Z
+    #iput-boolean v0, p0, Lcom/android/internal/telephony/ServiceStateTracker;->mRadioPowerIsInProgress:Z
 
     .line 275
     invoke-virtual {p0}, Lcom/android/internal/telephony/ServiceStateTracker;->setPowerStateToDesired()V
 
     .line 279
-    :goto_0
+    #:goto_0
     return-void
 
     .line 277
-    :cond_0
-    const-string v0, "Previous radio power request is in progress ignore current request"
+    #:cond_0
+    #const-string v0, "Previous radio power request is in progress ignore current request"
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/telephony/ServiceStateTracker;->log(Ljava/lang/String;)V
+    #invoke-virtual {p0, v0}, Lcom/android/internal/telephony/ServiceStateTracker;->log(Ljava/lang/String;)V
 
-    goto :goto_0
+    #goto :goto_0
 .end method
 
 .method public abstract set_ifacename_ipv6_blocked_by_ip6table(Ljava/lang/String;)V
