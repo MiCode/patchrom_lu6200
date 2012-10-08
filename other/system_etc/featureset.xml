@@ -52,7 +52,7 @@
         <item name="Korea_RAD">true</item>
         <item name="Korea_CNAP">true</item>
         <item name="Korea_CDNIP">true</item>
-        <item name="Korea_USSD">true</item>
+        <item name="Korea_USSD">false</item>
         <item name="KR_Modem_Item">true</item>
         <item name="KR_RAD_TEST">true</item>
         <item name="LGU_CDMA_ERI_TEXT">true</item>
