@@ -1194,7 +1194,7 @@
     <string name="choose_account_label">选择一个帐号</string>
     <string name="add_account_label">添加一个帐号</string>
     <string name="choose_account_text">您要使用哪一个账户?</string>
-    <string name="add_account_button_label">添加账户t</string>
+    <string name="add_account_button_label">添加账户</string>
     <string name="number_picker_increment_button">增加</string>
     <string name="number_picker_decrement_button">减少</string>
     <string name="number_picker_increment_scroll_mode">%s 点击按住.</string>
