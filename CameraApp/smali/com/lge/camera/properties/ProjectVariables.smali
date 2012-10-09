@@ -4542,9 +4542,11 @@
     const/4 v7, 0x1
 
     .line 1463
-    invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v8}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
+
+    goto :goto_0
 
     .line 1464
     .local v0, result:Ljava/lang/Boolean;
@@ -4870,16 +4872,16 @@
 
     .line 1511
     .local v0, result:Ljava/lang/Boolean;
-    invoke-static {}, Lcom/lge/camera/properties/ProjectVariables;->IsForcedShutterSound()Z
+    #invoke-static {}, Lcom/lge/camera/properties/ProjectVariables;->IsForcedShutterSound()Z
 
-    move-result v2
+    #move-result v2
 
-    if-eqz v2, :cond_0
+    #if-eqz v2, :cond_0
 
     .line 1512
-    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    #invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object v0
+    #move-result-object v0
 
     .line 1513
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
