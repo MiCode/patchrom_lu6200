@@ -54,10 +54,6 @@ local-zip-misc:
 	@echo delete redundance files
 	rm -rf $(ZIP_DIR)/system/bin/su
 
-	@echo copy radio and firmware files
-	cp other/baseband.img $(ZIP_DIR)/
-	cp other/firmware.img $(ZIP_DIR)/
-
 	@echo customize lge-res
 	./customize_lge-res.sh
 
