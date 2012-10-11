@@ -21,9 +21,9 @@ def IncrementalOTA_InstallEnd(info):
     source_file = info.source_zip.read("RADIO/firmware.img")
     target_file = info.target_zip.read("RADIO/firmware.img")
     if source_file != target_file:
-      common.ZipWriteStr(info.output_zip, "firmware.img", info.target_file.read("RADIO/firmware.img"))
+      common.ZipWriteStr(info.output_zip, "firmware.img", info.target_zip.read("RADIO/firmware.img"))
     source_file = info.source_zip.read("RADIO/baseband.img")
     target_file = info.target_zip.read("RADIO/baseband.img")
     if source_file != target_file:
-      common.ZipWriteStr(info.output_zip, "baseband.img", info.target_file.read("RADIO/baseband.img"))
+      common.ZipWriteStr(info.output_zip, "baseband.img", info.target_zip.read("RADIO/baseband.img"))
     AddExtraAction(info)
