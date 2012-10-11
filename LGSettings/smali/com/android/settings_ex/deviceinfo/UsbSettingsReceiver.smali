@@ -1620,7 +1620,7 @@
     .line 478
     new-instance v1, Landroid/content/ComponentName;
 
-    const-string v2, "com.android.settings"
+    const-string v2, "com.android.settings_ex"
 
     const-string v3, "com.android.settings_ex.UsbSettings"
 

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2998
+    .line 3040
     iput-object p1, p0, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker$5;->this$0:Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 
     const/4 v4, 0x0
 
-    .line 3000
+    .line 3042
     iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker$5;->this$0:Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;
 
     #getter for: Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;->mAudioManager:Landroid/media/AudioManager;
@@ -65,7 +65,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/media/AudioManager;->setStreamVolume(III)V
 
-    .line 3002
+    .line 3044
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker$5;->this$0:Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;
 
@@ -76,7 +76,7 @@
 
     invoke-virtual {v1}, Landroid/media/MediaPlayer;->stop()V
 
-    .line 3003
+    .line 3045
     iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker$5;->this$0:Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;
 
     #getter for: Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;->mMediaPlayer:Landroid/media/MediaPlayer;
@@ -86,14 +86,14 @@
 
     invoke-virtual {v1}, Landroid/media/MediaPlayer;->release()V
 
-    .line 3004
+    .line 3046
     iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker$5;->this$0:Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;
 
     const/4 v2, 0x0
 
     iput-boolean v2, v1, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;->isVZWERISoundPlaying:Z
 
-    .line 3005
+    .line 3047
     iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker$5;->this$0:Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;
 
     iget-boolean v1, v1, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;->isEriRingtoneStart:Z
@@ -102,14 +102,14 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 3006
+    .line 3048
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.android.finishEriSound"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 3007
+    .line 3049
     .local v0, finishEriSound:Landroid/content/Intent;
     iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker$5;->this$0:Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;
 
@@ -121,7 +121,7 @@
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 3008
+    .line 3050
     iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker$5;->this$0:Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;
 
     const/4 v2, 0x0
@@ -130,7 +130,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3011
+    .line 3053
     .end local v0           #finishEriSound:Landroid/content/Intent;
     :cond_0
     iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker$5;->this$0:Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;
@@ -138,10 +138,10 @@
     #setter for: Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {v1, v5}, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;->access$602(Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
 
-    .line 3013
+    .line 3055
     return-void
 
-    .line 3011
+    .line 3053
     :catchall_0
     move-exception v1
 

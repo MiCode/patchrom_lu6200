@@ -543,21 +543,18 @@
 
     if-eqz v4, :cond_0
 
-    .line 256
     const-string v4, "[LGE_PayPopUp_ko] "
 
-    const-string/jumbo v5, "roam_to_domesic : mcc_change"
+    const-string v5, "roam_to_domesic : mcc_change"
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 257
     iget-object v4, p0, Lcom/android/internal/telephony/PayPopup_Korea$1;->this$0:Lcom/android/internal/telephony/PayPopup_Korea;
 
-    const-string/jumbo v5, "roam_to_domesic"
+    const-string v5, "roam_to_domesic"
 
     #invoke-virtual {v4, v5}, Lcom/android/internal/telephony/PayPopup_Korea;->startPayPopup(Ljava/lang/String;)Z
 
-    .line 258
     iget-object v4, p0, Lcom/android/internal/telephony/PayPopup_Korea$1;->this$0:Lcom/android/internal/telephony/PayPopup_Korea;
 
     const/4 v5, 0x0

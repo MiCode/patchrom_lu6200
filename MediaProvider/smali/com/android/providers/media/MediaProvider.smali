@@ -17441,12 +17441,10 @@
 
     if-eqz v1, :cond_7
 
-    .line 2268
     const/4 v1, 0x1
 
     invoke-virtual {v2, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->setDistinct(Z)V
 
-    .line 2271
     :cond_7
     const/4 v6, 0x0
 
@@ -17460,11 +17458,9 @@
 
     goto/16 :goto_0
 
-    .line 2273
     :cond_MIUI_ADD_1
     sparse-switch v11, :sswitch_data_0
 
-    .line 2698
     new-instance v1, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;

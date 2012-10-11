@@ -15,7 +15,7 @@
 
     .prologue
     .line 23
-    const/16 v0, 0x24
+    const/16 v0, 0x25
 
     new-array v0, v0, [S
 
@@ -63,6 +63,7 @@
         0x29t 0x0t
         0x2at 0x0t
         0x2bt 0x0t
+        0x2ct 0x0t
         0x33t 0x0t
         0x34t 0x0t
         0x35t 0x0t
@@ -78,6 +79,8 @@
     .end array-data
 
     .line 30
+    nop
+
     :array_1
     .array-data 0x2
         0x2ct 0x1t
@@ -111,7 +114,7 @@
 .end method
 
 .method public static format(Landroid/text/Editable;)V
-    .locals 11
+    .locals 14
     .parameter "text"
 
     .prologue
@@ -120,50 +123,50 @@
 
     .line 37
     .local v0, MAX_DDD_NUM:I
-    const/4 v6, 0x0
+    const/4 v9, 0x0
 
     .line 38
-    .local v6, tmp1stHyphen:I
-    const/4 v7, 0x0
+    .local v9, tmp1stHyphen:I
+    const/4 v10, 0x0
 
     .line 40
-    .local v7, tmp2ndHyphen:I
+    .local v10, tmp2ndHyphen:I
     invoke-interface {p0}, Landroid/text/Editable;->length()I
 
-    move-result v4
+    move-result v7
 
     .line 42
-    .local v4, length:I
-    const/4 v5, 0x0
+    .local v7, length:I
+    const/4 v8, 0x0
 
     .line 43
-    .local v5, p:I
+    .local v8, p:I
     :goto_0
     invoke-interface {p0}, Landroid/text/Editable;->length()I
 
-    move-result v9
+    move-result v12
 
-    if-ge v5, v9, :cond_1
+    if-ge v8, v12, :cond_1
 
     .line 44
-    invoke-interface {p0, v5}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v8}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x2d
+    const/16 v13, 0x2d
 
-    if-ne v9, v10, :cond_0
+    if-ne v12, v13, :cond_0
 
     .line 45
-    add-int/lit8 v9, v5, 0x1
+    add-int/lit8 v12, v8, 0x1
 
-    invoke-interface {p0, v5, v9}, Landroid/text/Editable;->delete(II)Landroid/text/Editable;
+    invoke-interface {p0, v8, v12}, Landroid/text/Editable;->delete(II)Landroid/text/Editable;
 
     goto :goto_0
 
     .line 47
     :cond_0
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v8, v8, 0x1
 
     goto :goto_0
 
@@ -171,64 +174,64 @@
     :cond_1
     invoke-interface {p0}, Landroid/text/Editable;->length()I
 
-    move-result v4
+    move-result v7
 
     .line 54
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    .local v1, i:I
+    .local v2, i:I
     :goto_1
-    if-ge v1, v4, :cond_5
+    if-ge v2, v7, :cond_5
 
     .line 55
-    invoke-interface {p0, v1}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v2}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x30
+    const/16 v13, 0x30
 
-    if-lt v9, v10, :cond_2
+    if-lt v12, v13, :cond_2
 
-    invoke-interface {p0, v1}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v2}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x39
+    const/16 v13, 0x39
 
-    if-le v9, v10, :cond_4
+    if-le v12, v13, :cond_4
 
     :cond_2
-    invoke-interface {p0, v1}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v2}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x2a
+    const/16 v13, 0x2a
 
-    if-eq v9, v10, :cond_4
+    if-eq v12, v13, :cond_4
 
-    invoke-interface {p0, v1}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v2}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x23
+    const/16 v13, 0x23
 
-    if-eq v9, v10, :cond_4
+    if-eq v12, v13, :cond_4
 
-    invoke-interface {p0, v1}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v2}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x57
+    const/16 v13, 0x57
 
-    if-eq v9, v10, :cond_4
+    if-eq v12, v13, :cond_4
 
-    invoke-interface {p0, v1}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v2}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x50
+    const/16 v13, 0x50
 
-    if-eq v9, v10, :cond_4
+    if-eq v12, v13, :cond_4
 
     .line 194
     :cond_3
@@ -236,812 +239,834 @@
 
     .line 54
     :cond_4
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
     .line 69
     :cond_5
-    const/4 v9, 0x2
+    const/4 v12, 0x2
 
-    if-lt v4, v9, :cond_3
+    if-lt v7, v12, :cond_3
 
     .line 72
-    const-string v9, "*"
+    const-string v12, "*"
 
-    invoke-virtual {p0, v9}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v12}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    move-result v9
+    move-result v12
 
-    if-nez v9, :cond_3
+    if-nez v12, :cond_3
 
-    const-string v9, "#"
+    const-string v12, "#"
 
-    invoke-virtual {p0, v9}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v12}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    move-result v9
+    move-result v12
 
-    if-nez v9, :cond_3
+    if-nez v12, :cond_3
 
     .line 75
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x30
+    const/16 v13, 0x30
 
-    if-ne v9, v10, :cond_6
+    if-ne v12, v13, :cond_6
 
-    const/4 v9, 0x1
+    const/4 v12, 0x1
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x32
+    const/16 v13, 0x32
 
-    if-ne v9, v10, :cond_6
+    if-ne v12, v13, :cond_6
 
     .line 76
-    const/4 v6, 0x2
+    const/4 v9, 0x2
 
     .line 79
     :cond_6
-    const/4 v9, 0x3
+    const/4 v12, 0x3
 
-    if-lt v4, v9, :cond_7
+    if-lt v7, v12, :cond_7
 
     .line 80
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x30
+    const/16 v13, 0x30
 
-    if-ne v9, v10, :cond_7
+    if-ne v12, v13, :cond_7
 
-    const/4 v9, 0x1
+    const/4 v12, 0x1
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x32
+    const/16 v13, 0x32
 
-    if-ne v9, v10, :cond_7
+    if-ne v12, v13, :cond_7
 
-    const/4 v9, 0x2
+    const/4 v12, 0x2
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x30
+    const/16 v13, 0x30
 
-    if-ne v9, v10, :cond_7
+    if-ne v12, v13, :cond_7
 
     .line 81
-    const/4 v6, 0x3
+    const/4 v9, 0x3
 
     .line 86
     :cond_7
-    const/4 v9, 0x4
+    const/4 v12, 0x4
 
-    if-lt v4, v9, :cond_8
+    if-lt v7, v12, :cond_8
 
     .line 88
-    const-string v9, "KR"
+    const-string v12, "KR"
 
-    const-string v10, "KT"
+    const-string v13, "KT"
 
-    invoke-static {v9, v10}, Lcom/android/internal/telephony/lgeAutoProfiling;->isOperatorCountry(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v12, v13}, Lcom/android/internal/telephony/lgeAutoProfiling;->isOperatorCountry(Ljava/lang/String;Ljava/lang/String;)Z
 
-    move-result v9
+    move-result v12
 
-    if-eqz v9, :cond_12
+    if-eqz v12, :cond_12
 
     .line 89
-    const/4 v9, 0x4
+    const/4 v12, 0x4
 
-    if-ne v4, v9, :cond_10
+    if-ne v7, v12, :cond_10
 
     .line 90
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    add-int/lit8 v9, v9, -0x30
+    add-int/lit8 v12, v12, -0x30
 
-    mul-int/lit16 v9, v9, 0x3e8
+    mul-int/lit16 v12, v12, 0x3e8
 
-    const/4 v10, 0x1
+    const/4 v13, 0x1
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    mul-int/lit8 v10, v10, 0x64
+    mul-int/lit8 v13, v13, 0x64
 
-    add-int/2addr v9, v10
+    add-int/2addr v12, v13
 
-    const/4 v10, 0x2
+    const/4 v13, 0x2
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    mul-int/lit8 v10, v10, 0xa
+    mul-int/lit8 v13, v13, 0xa
 
-    add-int/2addr v9, v10
+    add-int/2addr v12, v13
 
-    const/4 v10, 0x3
+    const/4 v13, 0x3
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    add-int v8, v9, v10
+    add-int v11, v12, v13
 
     .line 92
-    .local v8, tmpDDDNumber:I
-    const/16 v9, 0x7d4
+    .local v11, tmpDDDNumber:I
+    const/16 v12, 0x7d4
 
-    if-ne v8, v9, :cond_8
+    if-ne v11, v12, :cond_8
 
     .line 93
-    const/4 v6, 0x0
-
-    .line 114
-    .end local v8           #tmpDDDNumber:I
-    :cond_8
-    const/4 v9, 0x4
-
-    if-ne v4, v9, :cond_b
-
-    .line 115
     const/4 v9, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    .line 114
+    .end local v11           #tmpDDDNumber:I
+    :cond_8
+    const/4 v12, 0x4
 
-    move-result v9
+    if-ne v7, v12, :cond_b
 
-    add-int/lit8 v9, v9, -0x30
+    .line 115
+    const/4 v12, 0x0
 
-    mul-int/lit16 v9, v9, 0x3e8
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    const/4 v10, 0x1
+    move-result v12
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    add-int/lit8 v12, v12, -0x30
 
-    move-result v10
+    mul-int/lit16 v12, v12, 0x3e8
 
-    add-int/lit8 v10, v10, -0x30
+    const/4 v13, 0x1
 
-    mul-int/lit8 v10, v10, 0x64
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    add-int/2addr v9, v10
+    move-result v13
 
-    const/4 v10, 0x2
+    add-int/lit8 v13, v13, -0x30
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    mul-int/lit8 v13, v13, 0x64
 
-    move-result v10
+    add-int/2addr v12, v13
 
-    add-int/lit8 v10, v10, -0x30
+    const/4 v13, 0x2
 
-    mul-int/lit8 v10, v10, 0xa
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    add-int/2addr v9, v10
+    move-result v13
 
-    const/4 v10, 0x3
+    add-int/lit8 v13, v13, -0x30
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    mul-int/lit8 v13, v13, 0xa
 
-    move-result v10
+    add-int/2addr v12, v13
 
-    add-int/lit8 v10, v10, -0x30
+    const/4 v13, 0x3
 
-    add-int v8, v9, v10
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
+
+    move-result v13
+
+    add-int/lit8 v13, v13, -0x30
+
+    add-int v11, v12, v13
 
     .line 116
-    .restart local v8       #tmpDDDNumber:I
-    const/16 v9, 0x1f4
+    .restart local v11       #tmpDDDNumber:I
+    const/16 v12, 0x1f4
 
-    if-lt v8, v9, :cond_9
+    if-lt v11, v12, :cond_9
 
-    const/16 v9, 0x1fd
+    const/16 v12, 0x1fd
 
-    if-le v8, v9, :cond_a
+    if-le v11, v12, :cond_a
 
     :cond_9
-    const/16 v9, 0x82
+    const/16 v12, 0x82
 
-    if-ne v8, v9, :cond_b
+    if-ne v11, v12, :cond_b
 
     .line 117
     :cond_a
-    const/4 v6, 0x0
-
-    .line 120
-    .end local v8           #tmpDDDNumber:I
-    :cond_b
-    const/4 v9, 0x4
-
-    if-le v4, v9, :cond_e
-
-    .line 121
     const/4 v9, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    .line 120
+    .end local v11           #tmpDDDNumber:I
+    :cond_b
+    const/4 v12, 0x4
 
-    move-result v9
+    if-le v7, v12, :cond_e
 
-    add-int/lit8 v9, v9, -0x30
+    .line 121
+    const/4 v12, 0x0
 
-    mul-int/lit16 v9, v9, 0x3e8
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    const/4 v10, 0x1
+    move-result v12
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    add-int/lit8 v12, v12, -0x30
 
-    move-result v10
+    mul-int/lit16 v12, v12, 0x3e8
 
-    add-int/lit8 v10, v10, -0x30
+    const/4 v13, 0x1
 
-    mul-int/lit8 v10, v10, 0x64
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    add-int/2addr v9, v10
+    move-result v13
 
-    const/4 v10, 0x2
+    add-int/lit8 v13, v13, -0x30
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    mul-int/lit8 v13, v13, 0x64
 
-    move-result v10
+    add-int/2addr v12, v13
 
-    add-int/lit8 v10, v10, -0x30
+    const/4 v13, 0x2
 
-    mul-int/lit8 v10, v10, 0xa
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    add-int/2addr v9, v10
+    move-result v13
 
-    const/4 v10, 0x3
+    add-int/lit8 v13, v13, -0x30
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    mul-int/lit8 v13, v13, 0xa
 
-    move-result v10
+    add-int/2addr v12, v13
 
-    add-int/lit8 v10, v10, -0x30
+    const/4 v13, 0x3
 
-    add-int v8, v9, v10
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
+
+    move-result v13
+
+    add-int/lit8 v13, v13, -0x30
+
+    add-int v11, v12, v13
 
     .line 122
-    .restart local v8       #tmpDDDNumber:I
-    const/16 v9, 0x1f4
+    .restart local v11       #tmpDDDNumber:I
+    const/16 v12, 0x1f4
 
-    if-lt v8, v9, :cond_c
+    if-lt v11, v12, :cond_c
 
-    const/16 v9, 0x1fd
+    const/16 v12, 0x1fd
 
-    if-le v8, v9, :cond_d
+    if-le v11, v12, :cond_d
 
     :cond_c
-    const/16 v9, 0x82
+    const/16 v12, 0x82
 
-    if-ne v8, v9, :cond_e
+    if-ne v11, v12, :cond_e
 
     .line 123
     :cond_d
-    const/4 v6, 0x4
+    const/4 v9, 0x4
 
     .line 126
-    .end local v8           #tmpDDDNumber:I
+    .end local v11           #tmpDDDNumber:I
     :cond_e
-    const/4 v9, 0x6
+    const/4 v12, 0x6
 
-    if-lt v4, v9, :cond_14
+    if-lt v7, v12, :cond_14
 
-    const/4 v9, 0x1
+    const/4 v12, 0x1
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x30
+    const/16 v13, 0x30
 
-    if-ne v9, v10, :cond_14
+    if-ne v12, v13, :cond_14
 
     .line 127
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    add-int/lit8 v9, v9, -0x30
+    add-int/lit8 v12, v12, -0x30
 
-    mul-int/lit16 v9, v9, 0x2710
+    mul-int/lit16 v12, v12, 0x2710
 
-    const/4 v10, 0x1
+    const/4 v13, 0x1
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    mul-int/lit16 v10, v10, 0x3e8
+    mul-int/lit16 v13, v13, 0x3e8
 
-    add-int/2addr v9, v10
+    add-int/2addr v12, v13
 
-    const/4 v10, 0x2
+    const/4 v13, 0x2
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    mul-int/lit8 v10, v10, 0x64
+    mul-int/lit8 v13, v13, 0x64
 
-    add-int/2addr v9, v10
+    add-int/2addr v12, v13
 
-    const/4 v10, 0x3
+    const/4 v13, 0x3
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    mul-int/lit8 v10, v10, 0xa
+    mul-int/lit8 v13, v13, 0xa
 
-    add-int/2addr v9, v10
+    add-int/2addr v12, v13
 
-    const/4 v10, 0x4
+    const/4 v13, 0x4
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    add-int v8, v9, v10
+    add-int v11, v12, v13
 
     .line 128
-    .restart local v8       #tmpDDDNumber:I
-    const/4 v1, 0x0
+    .restart local v11       #tmpDDDNumber:I
+    sget-object v1, Landroid/telephony/LGKoreanPhoneNumberFormatter;->DDD_5_Number:[S
 
+    .local v1, arr$:[S
+    array-length v6, v1
+
+    .local v6, len$:I
+    const/4 v3, 0x0
+
+    .local v3, i$:I
     :goto_2
-    const/16 v9, 0x11
+    if-ge v3, v6, :cond_14
 
-    if-ge v1, v9, :cond_14
+    aget-short v2, v1, v3
 
     .line 129
-    sget-object v9, Landroid/telephony/LGKoreanPhoneNumberFormatter;->DDD_5_Number:[S
-
-    aget-short v9, v9, v1
-
-    if-ne v8, v9, :cond_f
+    if-ne v2, v11, :cond_f
 
     .line 130
-    const/4 v6, 0x5
+    const/4 v9, 0x5
 
     .line 128
     :cond_f
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_2
 
     .line 97
-    .end local v8           #tmpDDDNumber:I
+    .end local v1           #arr$:[S
+    .end local v3           #i$:I
+    .end local v6           #len$:I
+    .end local v11           #tmpDDDNumber:I
     :cond_10
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    add-int/lit8 v9, v9, -0x30
+    add-int/lit8 v12, v12, -0x30
 
-    mul-int/lit8 v9, v9, 0x64
+    mul-int/lit8 v12, v12, 0x64
 
-    const/4 v10, 0x1
+    const/4 v13, 0x1
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    mul-int/lit8 v10, v10, 0xa
+    mul-int/lit8 v13, v13, 0xa
 
-    add-int/2addr v9, v10
+    add-int/2addr v12, v13
 
-    const/4 v10, 0x2
+    const/4 v13, 0x2
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    add-int v8, v9, v10
+    add-int v11, v12, v13
 
     .line 98
-    .restart local v8       #tmpDDDNumber:I
-    const/4 v1, 0x0
+    .restart local v11       #tmpDDDNumber:I
+    sget-object v1, Landroid/telephony/LGKoreanPhoneNumberFormatter;->DDD_3_Number:[S
 
+    .restart local v1       #arr$:[S
+    array-length v6, v1
+
+    .restart local v6       #len$:I
+    const/4 v3, 0x0
+
+    .restart local v3       #i$:I
     :goto_3
-    if-ge v1, v0, :cond_8
+    if-ge v3, v6, :cond_8
+
+    aget-short v2, v1, v3
 
     .line 99
-    sget-object v9, Landroid/telephony/LGKoreanPhoneNumberFormatter;->DDD_3_Number:[S
-
-    aget-short v9, v9, v1
-
-    if-ne v8, v9, :cond_11
+    if-ne v2, v11, :cond_11
 
     .line 100
-    const/4 v6, 0x3
+    const/4 v9, 0x3
 
     .line 98
     :cond_11
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_3
 
     .line 105
-    .end local v8           #tmpDDDNumber:I
+    .end local v1           #arr$:[S
+    .end local v3           #i$:I
+    .end local v6           #len$:I
+    .end local v11           #tmpDDDNumber:I
     :cond_12
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    add-int/lit8 v9, v9, -0x30
+    add-int/lit8 v12, v12, -0x30
 
-    mul-int/lit8 v9, v9, 0x64
+    mul-int/lit8 v12, v12, 0x64
 
-    const/4 v10, 0x1
+    const/4 v13, 0x1
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    mul-int/lit8 v10, v10, 0xa
+    mul-int/lit8 v13, v13, 0xa
 
-    add-int/2addr v9, v10
+    add-int/2addr v12, v13
 
-    const/4 v10, 0x2
+    const/4 v13, 0x2
 
-    invoke-interface {p0, v10}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v13}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v10
+    move-result v13
 
-    add-int/lit8 v10, v10, -0x30
+    add-int/lit8 v13, v13, -0x30
 
-    add-int v8, v9, v10
+    add-int v11, v12, v13
 
     .line 106
-    .restart local v8       #tmpDDDNumber:I
-    const/4 v1, 0x0
+    .restart local v11       #tmpDDDNumber:I
+    sget-object v1, Landroid/telephony/LGKoreanPhoneNumberFormatter;->DDD_3_Number:[S
 
+    .restart local v1       #arr$:[S
+    array-length v6, v1
+
+    .restart local v6       #len$:I
+    const/4 v3, 0x0
+
+    .restart local v3       #i$:I
     :goto_4
-    if-ge v1, v0, :cond_8
+    if-ge v3, v6, :cond_8
+
+    aget-short v2, v1, v3
 
     .line 107
-    sget-object v9, Landroid/telephony/LGKoreanPhoneNumberFormatter;->DDD_3_Number:[S
-
-    aget-short v9, v9, v1
-
-    if-ne v8, v9, :cond_13
+    if-ne v2, v11, :cond_13
 
     .line 108
-    const/4 v6, 0x3
+    const/4 v9, 0x3
 
     .line 106
     :cond_13
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_4
 
     .line 134
-    .end local v8           #tmpDDDNumber:I
+    .end local v1           #arr$:[S
+    .end local v3           #i$:I
+    .end local v6           #len$:I
+    .end local v11           #tmpDDDNumber:I
     :cond_14
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
     .line 136
-    .local v2, j:I
-    if-lez v6, :cond_1f
+    .local v4, j:I
+    if-lez v9, :cond_1f
 
     .line 137
-    const/4 v1, 0x0
-
     const/4 v2, 0x0
 
+    const/4 v4, 0x0
+
     :goto_5
-    if-ge v1, v4, :cond_16
+    if-ge v2, v7, :cond_16
 
     .line 138
-    invoke-interface {p0, v1}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v2}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x50
+    const/16 v13, 0x50
 
-    if-eq v9, v10, :cond_15
+    if-eq v12, v13, :cond_15
 
-    invoke-interface {p0, v1}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v2}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x57
+    const/16 v13, 0x57
 
-    if-ne v9, v10, :cond_1a
+    if-ne v12, v13, :cond_1a
 
     .line 139
     :cond_15
-    move v2, v1
+    move v4, v2
 
     .line 143
     :cond_16
-    if-eqz v2, :cond_1b
+    if-eqz v4, :cond_1b
 
     .line 144
-    move v7, v2
+    move v10, v4
 
     .line 178
     :cond_17
     :goto_6
-    const/4 v3, 0x0
+    const/4 v5, 0x0
 
-    .local v3, k:I
+    .local v5, k:I
     :goto_7
-    if-ge v3, v4, :cond_3
+    if-ge v5, v7, :cond_3
 
     .line 179
-    if-ne v3, v6, :cond_18
+    if-ne v5, v9, :cond_18
 
-    if-eqz v3, :cond_18
+    if-eqz v5, :cond_18
 
     .line 180
-    const-string v9, "-"
+    const-string v12, "-"
 
-    invoke-interface {p0, v3, v9}, Landroid/text/Editable;->insert(ILjava/lang/CharSequence;)Landroid/text/Editable;
+    invoke-interface {p0, v5, v12}, Landroid/text/Editable;->insert(ILjava/lang/CharSequence;)Landroid/text/Editable;
 
     .line 182
     :cond_18
-    const/4 v9, 0x4
+    const/4 v12, 0x4
 
-    if-le v7, v9, :cond_24
+    if-le v10, v12, :cond_24
 
     .line 183
-    add-int/lit8 v9, v3, 0x1
+    add-int/lit8 v12, v5, 0x1
 
-    if-ne v9, v7, :cond_19
+    if-ne v12, v10, :cond_19
 
-    if-eqz v3, :cond_19
+    if-eqz v5, :cond_19
 
     .line 184
-    add-int/lit8 v9, v3, 0x1
+    add-int/lit8 v12, v5, 0x1
 
-    const-string v10, "-"
+    const-string v13, "-"
 
-    invoke-interface {p0, v9, v10}, Landroid/text/Editable;->insert(ILjava/lang/CharSequence;)Landroid/text/Editable;
+    invoke-interface {p0, v12, v13}, Landroid/text/Editable;->insert(ILjava/lang/CharSequence;)Landroid/text/Editable;
 
     .line 178
     :cond_19
     :goto_8
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_7
 
     .line 137
-    .end local v3           #k:I
+    .end local v5           #k:I
     :cond_1a
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_5
 
     .line 147
     :cond_1b
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x30
+    const/16 v13, 0x30
 
-    if-ne v9, v10, :cond_1c
+    if-ne v12, v13, :cond_1c
 
-    const/4 v9, 0x1
+    const/4 v12, 0x1
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x31
+    const/16 v13, 0x31
 
-    if-ne v9, v10, :cond_1c
+    if-ne v12, v13, :cond_1c
 
-    const/4 v9, 0x2
+    const/4 v12, 0x2
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x30
+    const/16 v13, 0x30
 
-    if-ne v9, v10, :cond_1c
+    if-ne v12, v13, :cond_1c
 
     .line 148
-    add-int/lit8 v7, v6, 0x5
+    add-int/lit8 v10, v9, 0x5
 
     goto :goto_6
 
     .line 150
     :cond_1c
-    add-int/lit8 v9, v6, 0x8
+    add-int/lit8 v12, v9, 0x8
 
-    if-lt v4, v9, :cond_1d
+    if-lt v7, v12, :cond_1d
 
-    add-int/lit8 v9, v4, -0x1
+    add-int/lit8 v12, v7, -0x1
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x23
+    const/16 v13, 0x23
 
-    if-ne v9, v10, :cond_1d
+    if-ne v12, v13, :cond_1d
 
     .line 151
-    add-int/lit8 v7, v6, 0x4
+    add-int/lit8 v10, v9, 0x4
 
     goto :goto_6
 
     .line 153
     :cond_1d
-    add-int/lit8 v9, v6, 0x8
+    add-int/lit8 v12, v9, 0x8
 
-    if-lt v4, v9, :cond_1e
+    if-lt v7, v12, :cond_1e
 
     .line 154
-    add-int/lit8 v7, v6, 0x5
+    add-int/lit8 v10, v9, 0x5
 
     goto :goto_6
 
     .line 156
     :cond_1e
-    add-int/lit8 v7, v6, 0x4
+    add-int/lit8 v10, v9, 0x4
 
     goto :goto_6
 
     .line 162
     :cond_1f
-    const/4 v6, 0x0
+    const/4 v9, 0x0
 
     .line 163
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x2a
+    const/16 v13, 0x2a
 
-    if-eq v9, v10, :cond_20
+    if-eq v12, v13, :cond_20
 
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    invoke-interface {p0, v9}, Landroid/text/Editable;->charAt(I)C
+    invoke-interface {p0, v12}, Landroid/text/Editable;->charAt(I)C
 
-    move-result v9
+    move-result v12
 
-    const/16 v10, 0x23
+    const/16 v13, 0x23
 
-    if-ne v9, v10, :cond_21
+    if-ne v12, v13, :cond_21
 
     .line 164
     :cond_20
-    const/4 v7, 0x0
+    const/4 v10, 0x0
 
     goto :goto_6
 
     .line 166
     :cond_21
-    const/16 v9, 0x8
+    const/16 v12, 0x8
 
-    if-lt v4, v9, :cond_23
+    if-lt v7, v12, :cond_23
 
     .line 167
-    const/4 v7, 0x4
+    const/4 v10, 0x4
 
     .line 171
     :goto_9
-    const/4 v9, 0x4
+    const/4 v12, 0x4
 
-    if-ne v4, v9, :cond_17
+    if-ne v7, v12, :cond_17
 
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    const/4 v10, 0x3
+    const/4 v13, 0x3
 
-    invoke-interface {p0, v9, v10}, Landroid/text/Editable;->subSequence(II)Ljava/lang/CharSequence;
+    invoke-interface {p0, v12, v13}, Landroid/text/Editable;->subSequence(II)Ljava/lang/CharSequence;
 
-    move-result-object v9
+    move-result-object v12
 
-    invoke-virtual {v9}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v12
 
-    const-string v10, "050"
+    const-string v13, "050"
 
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v12, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v9
+    move-result v12
 
-    if-nez v9, :cond_22
+    if-nez v12, :cond_22
 
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    const/4 v10, 0x4
+    const/4 v13, 0x4
 
-    invoke-interface {p0, v9, v10}, Landroid/text/Editable;->subSequence(II)Ljava/lang/CharSequence;
+    invoke-interface {p0, v12, v13}, Landroid/text/Editable;->subSequence(II)Ljava/lang/CharSequence;
 
-    move-result-object v9
+    move-result-object v12
 
-    invoke-virtual {v9}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v12
 
-    const-string v10, "0130"
+    const-string v13, "0130"
 
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v12, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v9
+    move-result v12
 
-    if-eqz v9, :cond_17
+    if-eqz v12, :cond_17
 
     .line 172
     :cond_22
-    const/4 v7, 0x0
+    const/4 v10, 0x0
 
     goto/16 :goto_6
 
     .line 169
     :cond_23
-    const/4 v7, 0x3
+    const/4 v10, 0x3
 
     goto :goto_9
 
     .line 187
-    .restart local v3       #k:I
+    .restart local v5       #k:I
     :cond_24
-    if-ne v3, v7, :cond_19
+    if-ne v5, v10, :cond_19
 
-    if-eqz v3, :cond_19
+    if-eqz v5, :cond_19
 
     .line 188
-    const-string v9, "-"
+    const-string v12, "-"
 
-    invoke-interface {p0, v3, v9}, Landroid/text/Editable;->insert(ILjava/lang/CharSequence;)Landroid/text/Editable;
+    invoke-interface {p0, v5, v12}, Landroid/text/Editable;->insert(ILjava/lang/CharSequence;)Landroid/text/Editable;
 
     goto/16 :goto_8
 .end method

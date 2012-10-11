@@ -87,7 +87,7 @@
 
     .line 114
     .local v0, intent:Landroid/content/Intent;
-    const-string v2, "com.android.settings"
+    const-string v2, "com.android.settings_ex"
 
     const-string v3, "com.android.settings_ex.ConfirmLockPassword"
 
@@ -181,7 +181,7 @@
     invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;
 
     .line 97
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-string v2, "com.android.settings_ex.ConfirmLockPattern"
 

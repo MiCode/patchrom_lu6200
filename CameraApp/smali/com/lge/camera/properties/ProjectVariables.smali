@@ -4541,14 +4541,12 @@
 
     const/4 v7, 0x1
 
-    .line 1463
     invoke-static {v8}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 1464
     .local v0, result:Ljava/lang/Boolean;
     const-string v4, "ro.build.target_country"
 
@@ -4878,28 +4876,23 @@
 
     #if-eqz v2, :cond_0
 
-    .line 1512
     #invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     #move-result-object v0
 
-    .line 1513
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v2
 
     sput-boolean v2, Lcom/lge/camera/properties/ProjectVariables;->mShutterSoundOff:Z
 
-    .line 1514
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v2
 
-    .line 1566
     :goto_0
     return v2
 
-    .line 1516
     :cond_0
     const-string v2, "ro.build.target_country"
 

@@ -27,7 +27,7 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 10
-    const-string v0, "http://schemas.android.com/apk/res/com.android.settings"
+    const-string v0, "http://schemas.android.com/apk/res/com.android.settings_ex"
 
     iput-object v0, p0, Lcom/android/settings_ex/CheckableRelativeLayout;->NS:Ljava/lang/String;
 
@@ -37,7 +37,7 @@
     iput-object v0, p0, Lcom/android/settings_ex/CheckableRelativeLayout;->ATTR:Ljava/lang/String;
 
     .line 18
-    const-string v0, "http://schemas.android.com/apk/res/com.android.settings"
+    const-string v0, "http://schemas.android.com/apk/res/com.android.settings_ex"
 
     const-string v1, "is_checkable"
 

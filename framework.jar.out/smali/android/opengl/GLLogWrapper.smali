@@ -8071,7 +8071,7 @@
 
     .prologue
     .line 1648
-    const-string v0, "glFogxv"
+    const-string/jumbo v0, "glFogxv"
 
     invoke-direct {p0, v0}, Landroid/opengl/GLLogWrapper;->begin(Ljava/lang/String;)V
 
@@ -8116,7 +8116,7 @@
 
     .prologue
     .line 1637
-    const-string v0, "glFogxv"
+    const-string/jumbo v0, "glFogxv"
 
     invoke-direct {p0, v0}, Landroid/opengl/GLLogWrapper;->begin(Ljava/lang/String;)V
 
@@ -8167,7 +8167,7 @@
 
     .prologue
     .line 3557
-    const-string v0, "glFramebufferRenderbufferOES"
+    const-string/jumbo v0, "glFramebufferRenderbufferOES"
 
     invoke-direct {p0, v0}, Landroid/opengl/GLLogWrapper;->begin(Ljava/lang/String;)V
 

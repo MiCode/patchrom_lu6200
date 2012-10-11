@@ -535,81 +535,56 @@
 
     if-eqz v0, :cond_2
 
-    .line 339
     iput v3, p0, Lcom/android/internal/telephony/LGfeature;->MPDNset:I
 
-    .line 340
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->poweroffdelayneed:Z
 
-    .line 341
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->PDNsyncWithModem:Z
 
-    .line 342
     iput v6, p0, Lcom/android/internal/telephony/LGfeature;->IMSPowerOffdelaytime:I
 
-    .line 343
     #iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->PAYPOPUP_KO:Z
 
-    .line 344
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->disallowed1xDataCall:Z
 
-    .line 345
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->wifiduringtethering:Z
 
-    .line 346
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->imsstarttiming:Z
 
-    .line 347
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->PDP_REJECT_UI_DEBUG_FILE:Z
 
-    .line 348
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->APN_SELECTION:Z
 
-    .line 349
     #iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->SUPPORT_MODE_CHANGE:Z
 
-    .line 350
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->MANUAL_NET_SEARCH:Z
 
-    .line 351
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->PowerOff_OnlyDettach:Z
 
-    .line 352
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->closeDelayForIms:Z
 
-    .line 353
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->IsPossibleSetMobileNOSVC:Z
 
-    .line 354
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->bypassforuplus:Z
 
-    .line 355
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->ENABLE_MPDN:Z
 
-    .line 356
     iput v4, p0, Lcom/android/internal/telephony/LGfeature;->Current_build_type:I
 
-    .line 357
     iput-boolean v3, p0, Lcom/android/internal/telephony/LGfeature;->DisconnectOnly_ChangePDN:Z
 
-    .line 358
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->rilResetWhenMismatchState:Z
 
-    .line 359
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->NO_Retry_DualIP_PartialFail:Z
 
-    .line 360
     iput v4, p0, Lcom/android/internal/telephony/LGfeature;->sigstrengthtype:I
 
-    .line 361
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->SUPPORT_UPDATE_TCP_BUF_CDMA:Z
 
-    .line 362
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->RETURN_OTHERTYPE:Z
 
     goto :goto_0
 
-    .line 364
     :cond_2
     const-string v0, "ATANDT"
 

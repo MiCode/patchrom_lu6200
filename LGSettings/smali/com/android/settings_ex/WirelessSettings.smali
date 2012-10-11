@@ -2500,7 +2500,7 @@
 
     .line 145
     .local v5, mIntent:Landroid/content/Intent;
-    const-string v7, "com.android.settings"
+    const-string v7, "com.android.settings_ex"
 
     const-string v8, "com.android.settings_ex.lgesetting.wireless.DataNetworkModeSetting"
 

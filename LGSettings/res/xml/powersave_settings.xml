@@ -4,7 +4,7 @@
   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex">
     <com.android.settings_ex.powersave.PowerSaveListPreference android:persistent="false" android:entries="@array/sp_power_save_mode2_entries_NORMAL" android:title="@string/sp_power_saver_on_NORMAL" android:key="power_save_mode" android:entryValues="@array/sp_power_save_mode2_values_NORMAL" />
     <PreferenceScreen android:title="@string/sp_power_saver_tips_NORMAL" android:key="power_saver_tips">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.powersave.PowerSaverTips" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.powersave.PowerSaverTips" />
     </PreferenceScreen>
     <PreferenceCategory android:title="@string/sp_power_saver_items_NORMAL" android:key="power_saving_items_category">
         <Preference android:persistent="false" android:title="@string/sp_power_saver_select2_NORMAL" android:selectable="false" style="@style/PowersavePreference_information" />

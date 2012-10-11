@@ -993,7 +993,6 @@
 
     move-result-object v7
 
-    .line 789
     if-eqz v7, :cond_1
 
     invoke-virtual {v7}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
@@ -1016,7 +1015,6 @@
 
     goto :goto_1
 
-    .line 794
     :cond_8
     const-string v2, "content"
     
@@ -1032,14 +1030,12 @@
 
     goto :goto_1
 
-    .line 754
     .end local v8           #count:I
     :catch_0
     move-exception v1
 
     goto :goto_0
 
-    .line 750
     :catch_1
     move-exception v1
 
@@ -1248,7 +1244,6 @@
 
     goto :goto_2
 
-    .line 219
     :cond_6
     :try_start_merge1
     invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
@@ -1265,7 +1260,6 @@
 
     const/4 v11, 0x0
 
-    .line 221
     .local v11, defaultpath:Ljava/lang/String;
     const/4 v2, 0x2
 
@@ -1843,18 +1837,15 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 362
     :cond_9
     move-object v7, v12
 
     if-nez v12, :cond_f
 
-    .line 363
     invoke-direct {p0}, Landroid/media/Ringtone;->getDefaultPath()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 364
     .restart local v7       #defaultPath:Ljava/lang/String;
     sget-boolean v0, Landroid/media/Ringtone;->LGE_DEBUG:Z
 
@@ -2094,16 +2085,14 @@
 
     goto/16 :goto_3
 
-    .line 368
     .end local v6           #bCanHandle:Z
     .end local v8           #ex:Ljava/lang/Exception;
     .end local v9           #mDrmManagerClient:Landroid/drm/DrmManagerClient;
     :cond_f
-    const-string/jumbo v0, "silent_ringtone"
+    const-string v0, "silent_ringtone"
 
     if-ne v12, v0, :cond_a
 
-    .line 369
     iget-object v0, p0, Landroid/media/Ringtone;->mAudio:Landroid/media/MediaPlayer;
 
     iget-object v1, p0, Landroid/media/Ringtone;->mContext:Landroid/content/Context;

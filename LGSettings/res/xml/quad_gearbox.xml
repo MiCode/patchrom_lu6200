@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/sp_quad_core_control_NORMAL"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex">
     <CheckBoxPreference android:title="@string/sp_eco_mode_NORMAL" android:key="checkbox_quad_gearbox" android:summary="@string/sp_eco_mode_desc_NORMAL" android:defaultValue="false" />
     <PreferenceCategory android:title="@string/tethering_help_button_text" android:key="quad_gearbox_help">
         <com.android.settings_ex.CustomImagePreference2 android:key="quad_gearbox_image" android:summary="@string/sp_quad_core_control_help_MLINE" />

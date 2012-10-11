@@ -50,7 +50,7 @@
 
     .line 83
     .local v0, intent:Landroid/content/Intent;
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-string v2, "com.android.settings_ex.powersave.PowerSaveService"
 

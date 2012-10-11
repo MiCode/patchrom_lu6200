@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/accessibility_settings_title"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex">
     <PreferenceCategory android:title="@string/accessibility_services_title" android:key="services_category" />
     <PreferenceCategory android:title="@string/accessibility_system_title" android:key="system_category">
         <CheckBoxPreference android:persistent="false" android:title="@string/accessibility_toggle_large_text_title" android:key="toggle_large_text_preference" android:order="1" />

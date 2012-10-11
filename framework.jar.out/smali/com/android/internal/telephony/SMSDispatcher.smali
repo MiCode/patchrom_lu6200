@@ -285,22 +285,21 @@
 
     aput-object v2, v0, v1
 
-    #const-string/jumbo v1, "icc_index"
+    #const-string v1, "icc_index"
 
     #aput-object v1, v0, v5
 
     sput-object v0, Lcom/android/internal/telephony/SMSDispatcher;->PDU_SEQUENCE_PORT_PROJECTION:[Ljava/lang/String;
 
-    .line 133
     const/4 v0, 0x5
 
     new-array v0, v0, [Ljava/lang/String;
 
-    const-string/jumbo v1, "pdu"
+    const-string v1, "pdu"
 
     aput-object v1, v0, v3
 
-    const-string/jumbo v1, "sequence"
+    const-string v1, "sequence"
 
     aput-object v1, v0, v4
 
@@ -310,33 +309,29 @@
 
     aput-object v2, v0, v1
 
-    #const-string/jumbo v1, "icc_index"
+    #const-string v1, "icc_index"
 
     #aput-object v1, v0, v5
 
-    const-string/jumbo v1, "time"
+    const-string v1, "time"
 
     aput-object v1, v0, v6
 
     sput-object v0, Lcom/android/internal/telephony/SMSDispatcher;->VZW_PDU_SEQUENCE_PORT_PROJECTION:[Ljava/lang/String;
 
-    .line 217
     const/4 v0, -0x1
 
     sput v0, Lcom/android/internal/telephony/SMSDispatcher;->vp:I
 
-    .line 283
     sput-boolean v3, Lcom/android/internal/telephony/SMSDispatcher;->mIms:Z
 
-    .line 284
     sget-object v0, Lcom/android/internal/telephony/CommandsInterface$RadioTechnologyFamily;->RADIO_TECH_UNKNOWN:Lcom/android/internal/telephony/CommandsInterface$RadioTechnologyFamily;
 
     sput-object v0, Lcom/android/internal/telephony/SMSDispatcher;->mImsSmsEncoding:Lcom/android/internal/telephony/CommandsInterface$RadioTechnologyFamily;
 
-    .line 299
     sget-object v0, Landroid/provider/Telephony$Sms;->CONTENT_URI:Landroid/net/Uri;
 
-    const-string/jumbo v1, "raw"
+    const-string v1, "raw"
 
     invoke-static {v0, v1}, Landroid/net/Uri;->withAppendedPath(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
 
@@ -2629,27 +2624,23 @@
 
     :cond_0
         
-    .line 2025
     const-string v1, "SMSDispatcher"
 
     const-string v2, "dispatchPdus()-parameter: pdus"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2026
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.provider.Telephony.SMS_RECEIVED"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 2027
     .local v0, intent:Landroid/content/Intent;
-    const-string/jumbo v1, "pdus"
+    const-string v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 2028
     const-string v1, "format"
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
@@ -2669,13 +2660,11 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 2031
     const-string v1, "android.permission.RECEIVE_SMS"
 
     invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/SMSDispatcher;->dispatch(Landroid/content/Intent;Ljava/lang/String;)V
 
     :goto_0
-    .line 2032
     return-void
 .end method
 
@@ -2685,17 +2674,14 @@
     .parameter "intent"
 
     .prologue
-    .line 2054
-    const-string/jumbo v0, "pdus"
+    const-string v0, "pdus"
 
     invoke-virtual {p2, v0, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 2055
     const-string v0, "android.permission.RECEIVE_SMS"
 
     invoke-virtual {p0, p2, v0}, Lcom/android/internal/telephony/SMSDispatcher;->dispatch(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 2056
     return-void
 .end method
 
@@ -2705,27 +2691,23 @@
     .parameter "indexOnIcc"
 
     .prologue
-    .line 2043
     const-string v1, "SMSDispatcher"
 
     const-string v2, "dispatchPdus()-parameter: pdus and indexOnIcc"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2044
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.provider.Telephony.SMS_RECEIVED"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 2045
     .local v0, intent:Landroid/content/Intent;
-    const-string/jumbo v1, "pdus"
+    const-string v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 2046
     const-string v1, "format"
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
@@ -2793,7 +2775,6 @@
 
     move-result-object v1
 
-    .line 2095
     .local v1, uri:Landroid/net/Uri;
     new-instance v0, Landroid/content/Intent;
 
@@ -2801,13 +2782,11 @@
 
     invoke-direct {v0, v2, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 2096
     .local v0, intent:Landroid/content/Intent;
-    const-string/jumbo v2, "pdus"
+    const-string v2, "pdus"
 
     invoke-virtual {v0, v2, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 2097
     const-string v2, "format"
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
@@ -2816,8 +2795,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 2098
-    const-string/jumbo v2, "subscription"
+    const-string v2, "subscription"
 
     iget-object v3, p0, Lcom/android/internal/telephony/SMSDispatcher;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -2840,25 +2818,23 @@
     .parameter "pdus"
 
     .prologue
-    .line 2113
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.lge.snc.SMS_RECEIVED"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 2114
     .local v0, intent:Landroid/content/Intent;
-    const-string/jumbo v1, "pdus"
+    const-string v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 2115
+    .line 2031
     const-string v1, "android.permission.RECEIVE_SMS"
 
     invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/SMSDispatcher;->dispatch(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 2116
+    .line 2032
     return-void
 .end method
 

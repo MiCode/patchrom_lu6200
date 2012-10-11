@@ -242,14 +242,14 @@
 
     const/4 v5, 0x0
 
-    .line 1446
+    .line 1450
     rem-int/lit8 v6, p1, 0xa
 
     if-ne v6, v7, :cond_3
 
     move v2, v4
 
-    .line 1447
+    .line 1451
     .local v2, ones_digit_is_nine:I
     :goto_0
     div-int/lit8 v6, p1, 0xa
@@ -260,7 +260,7 @@
 
     move v3, v4
 
-    .line 1448
+    .line 1452
     .local v3, tens_digit_is_nine:I
     :goto_1
     div-int/lit8 v6, p1, 0x64
@@ -269,46 +269,46 @@
 
     move v0, v4
 
-    .line 1449
+    .line 1453
     .local v0, hundreds_digit_is_nine:I
     :goto_2
     add-int/lit8 v4, p1, 0x6f
 
     int-to-short p1, v4
 
-    .line 1450
+    .line 1454
     if-eqz v2, :cond_0
 
-    .line 1451
+    .line 1455
     add-int/lit8 v4, p1, -0xa
 
     int-to-short p1, v4
 
-    .line 1452
+    .line 1456
     :cond_0
     if-eqz v3, :cond_1
 
-    .line 1453
+    .line 1457
     add-int/lit8 v4, p1, -0x64
 
     int-to-short p1, v4
 
-    .line 1454
+    .line 1458
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 1455
+    .line 1459
     add-int/lit16 v4, p1, -0x3e8
 
     int-to-short p1, v4
 
-    .line 1457
+    .line 1461
     :cond_2
     const/16 v4, 0xa
 
     if-ge p1, v4, :cond_6
 
-    .line 1458
+    .line 1462
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -327,7 +327,7 @@
 
     move-result-object v1
 
-    .line 1464
+    .line 1468
     .local v1, num_str:Ljava/lang/String;
     :goto_3
     return-object v1
@@ -339,31 +339,31 @@
     :cond_3
     move v2, v5
 
-    .line 1446
+    .line 1450
     goto :goto_0
 
     .restart local v2       #ones_digit_is_nine:I
     :cond_4
     move v3, v5
 
-    .line 1447
+    .line 1451
     goto :goto_1
 
     .restart local v3       #tens_digit_is_nine:I
     :cond_5
     move v0, v5
 
-    .line 1448
+    .line 1452
     goto :goto_2
 
-    .line 1459
+    .line 1463
     .restart local v0       #hundreds_digit_is_nine:I
     :cond_6
     const/16 v4, 0x64
 
     if-ge p1, v4, :cond_7
 
-    .line 1460
+    .line 1464
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -385,7 +385,7 @@
     .restart local v1       #num_str:Ljava/lang/String;
     goto :goto_3
 
-    .line 1462
+    .line 1466
     .end local v1           #num_str:Ljava/lang/String;
     :cond_7
     new-instance v4, Ljava/lang/StringBuilder;
@@ -457,7 +457,40 @@
     .parameter "isIRM"
 
     .prologue
-    .line 1471
+    .line 1475
+    const-string v12, "KR"
+
+    const-string/jumbo v13, "ro.build.target_country"
+
+    const-string v14, "COM"
+
+    invoke-static {v13, v14}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-virtual {v12, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_5
+
+    const-string v12, "SKT"
+
+    const-string/jumbo v13, "ro.build.target_operator"
+
+    const-string v14, "OPEN"
+
+    invoke-static {v13, v14}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-virtual {v12, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_5
+
+    .line 1476
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getSimState()I
 
     move-result v12
@@ -466,43 +499,43 @@
 
     if-eq v12, v13, :cond_0
 
-    .line 1472
+    .line 1477
     const-string v12, "UAField"
 
     const-string v13, "USIM STATE is not READY"
 
     invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1473
+    .line 1478
     const/4 v8, 0x0
 
-    .line 1514
+    .line 1521
     :goto_0
     return-object v8
 
-    .line 1476
+    .line 1481
     :cond_0
     const/4 v1, 0x0
 
-    .line 1478
+    .line 1483
     .local v1, byteReadFromSIM:[B
     :try_start_0
     new-instance v5, Lcom/android/internal/telephony/UsimService;
 
     invoke-direct {v5}, Lcom/android/internal/telephony/UsimService;-><init>()V
 
-    .line 1479
+    .line 1484
     .local v5, mUsimService:Lcom/android/internal/telephony/UsimService;
     if-nez p1, :cond_1
 
-    .line 1480
+    .line 1485
     const/16 v12, 0x4f22
 
     invoke-virtual {v5, v12}, Lcom/android/internal/telephony/UsimService;->ReadFromSIM(I)[B
 
     move-result-object v1
 
-    .line 1484
+    .line 1489
     :goto_1
     new-instance v12, Ljava/lang/String;
 
@@ -510,12 +543,12 @@
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1489
+    .line 1494
     const/4 v12, 0x5
 
     new-array v0, v12, [B
 
-    .line 1490
+    .line 1495
     .local v0, byteMIN:[B
     const/4 v3, 0x0
 
@@ -525,19 +558,19 @@
 
     if-ge v3, v12, :cond_2
 
-    .line 1491
+    .line 1496
     add-int/lit8 v12, v3, 0x1
 
     aget-byte v12, v1, v12
 
     aput-byte v12, v0, v3
 
-    .line 1490
+    .line 1495
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_2
 
-    .line 1482
+    .line 1487
     .end local v0           #byteMIN:[B
     .end local v3           #i:I
     :cond_1
@@ -552,12 +585,12 @@
 
     goto :goto_1
 
-    .line 1485
+    .line 1490
     .end local v5           #mUsimService:Lcom/android/internal/telephony/UsimService;
     :catch_0
     move-exception v2
 
-    .line 1486
+    .line 1491
     .local v2, exception:Ljava/lang/RuntimeException;
     const-string v12, "UAField"
 
@@ -565,12 +598,12 @@
 
     invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1487
+    .line 1492
     const/4 v8, 0x0
 
     goto :goto_0
 
-    .line 1495
+    .line 1500
     .end local v2           #exception:Ljava/lang/RuntimeException;
     .restart local v0       #byteMIN:[B
     .restart local v3       #i:I
@@ -604,7 +637,7 @@
 
     or-int v6, v12, v13
 
-    .line 1496
+    .line 1501
     .local v6, min1:I
     const/4 v12, 0x1
 
@@ -630,11 +663,11 @@
 
     int-to-short v7, v12
 
-    .line 1501
+    .line 1506
     .local v7, min2:S
     const-string v8, "0000000000"
 
-    .line 1502
+    .line 1507
     .local v8, num_string:Ljava/lang/String;
     const/16 v12, 0x10
 
@@ -642,7 +675,7 @@
 
     fill-array-data v11, :array_0
 
-    .line 1503
+    .line 1508
     .local v11, uafield_bcd_to_binary:[I
     const v12, 0xffc000
 
@@ -650,7 +683,7 @@
 
     shr-int/lit8 v9, v12, 0xe
 
-    .line 1504
+    .line 1509
     .local v9, prefix:I
     and-int/lit16 v12, v6, 0x3c00
 
@@ -658,13 +691,13 @@
 
     aget v10, v11, v12
 
-    .line 1505
+    .line 1510
     .local v10, thousands:I
     and-int/lit16 v12, v6, 0x3ff
 
     shr-int/lit8 v4, v12, 0x0
 
-    .line 1506
+    .line 1511
     .local v4, last_3_digits:I
     const/16 v12, 0x3e7
 
@@ -676,7 +709,7 @@
 
     if-le v4, v12, :cond_4
 
-    .line 1507
+    .line 1512
     :cond_3
     const-string v12, "UAField"
 
@@ -720,12 +753,12 @@
 
     invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1508
+    .line 1513
     const/4 v8, 0x0
 
     goto/16 :goto_0
 
-    .line 1510
+    .line 1515
     :cond_4
     new-instance v12, Ljava/lang/StringBuilder;
 
@@ -767,10 +800,27 @@
 
     move-result-object v8
 
-    .line 1514
+    .line 1519
     goto/16 :goto_0
 
-    .line 1502
+    .line 1521
+    .end local v0           #byteMIN:[B
+    .end local v1           #byteReadFromSIM:[B
+    .end local v3           #i:I
+    .end local v4           #last_3_digits:I
+    .end local v5           #mUsimService:Lcom/android/internal/telephony/UsimService;
+    .end local v6           #min1:I
+    .end local v7           #min2:S
+    .end local v8           #num_string:Ljava/lang/String;
+    .end local v9           #prefix:I
+    .end local v10           #thousands:I
+    .end local v11           #uafield_bcd_to_binary:[I
+    :cond_5
+    const-string v8, "N/A"
+
+    goto/16 :goto_0
+
+    .line 1507
     :array_0
     .array-data 0x4
         0xfft 0xfft 0xfft 0xfft
@@ -1029,13 +1079,46 @@
 
     .prologue
     .line 1424
+    const-string v3, "KR"
+
+    const-string/jumbo v4, "ro.build.target_country"
+
+    const-string v5, "COM"
+
+    invoke-static {v4, v5}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    const-string v3, "SKT"
+
+    const-string/jumbo v4, "ro.build.target_operator"
+
+    const-string v5, "OPEN"
+
+    invoke-static {v4, v5}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    .line 1425
     sget-object v3, Landroid/telephony/TelephonyManager;->sInstance:Landroid/telephony/TelephonyManager;
 
     invoke-direct {v3}, Landroid/telephony/TelephonyManager;->makeUAField()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1425
+    .line 1426
     .local v0, ua:Ljava/lang/String;
     const-string v3, "UAField"
 
@@ -1059,17 +1142,17 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1426
+    .line 1427
     if-nez v0, :cond_0
 
-    .line 1427
+    .line 1428
     const/4 v1, 0x0
 
-    .line 1428
+    .line 1429
     .local v1, uaProfile:Ljava/lang/String;
     const-string v2, "8CLGEP4511720999362216"
 
-    .line 1429
+    .line 1430
     .local v2, uaProfileFileData:Ljava/lang/String;
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1095,144 +1178,154 @@
 
     move-result-object v1
 
-    .line 1432
+    .line 1435
+    .end local v0           #ua:Ljava/lang/String;
     .end local v1           #uaProfile:Ljava/lang/String;
     .end local v2           #uaProfileFileData:Ljava/lang/String;
     :goto_0
     return-object v1
 
+    .restart local v0       #ua:Ljava/lang/String;
     :cond_0
     move-object v1, v0
+
+    .line 1433
+    goto :goto_0
+
+    .line 1435
+    .end local v0           #ua:Ljava/lang/String;
+    :cond_1
+    const-string v1, "N/A"
 
     goto :goto_0
 .end method
 
 .method private makeUAField()Ljava/lang/String;
-    .locals 35
+    .locals 34
 
     .prologue
-    .line 1524
-    const/16 v29, 0x0
+    .line 1532
+    const-string v31, "KR"
 
-    .line 1525
-    .local v29, uaProfile:Ljava/lang/String;
-    const-string v31, "8CLGEP4511720999362216"
+    const-string/jumbo v32, "ro.build.target_country"
 
-    .line 1530
-    .local v31, uaProfileFileData:Ljava/lang/String;
-    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getSimState()I
+    const-string v33, "COM"
 
-    move-result v32
-
-    packed-switch v32, :pswitch_data_0
-
-    .line 1544
-    const-string v32, "UAField"
-
-    const-string/jumbo v33, "makeUAField USIM STATE is not READY"
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1545
-    new-instance v32, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v33, "010"
-
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static/range {v32 .. v33}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v32
 
-    move-object/from16 v0, v32
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-object/from16 v1, v31
+    move-result v31
+
+    if-eqz v31, :cond_1a
+
+    const-string v31, "SKT"
+
+    const-string/jumbo v32, "ro.build.target_operator"
+
+    const-string v33, "OPEN"
+
+    invoke-static/range {v32 .. v33}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v32
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v31
+
+    if-eqz v31, :cond_1a
+
+    .line 1533
+    const/16 v29, 0x0
+
+    .line 1534
+    .local v29, uaProfile:Ljava/lang/String;
+    const-string v30, "8CLGEP4511720999362216"
+
+    .line 1539
+    .local v30, uaProfileFileData:Ljava/lang/String;
+    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getSimState()I
+
+    move-result v31
+
+    packed-switch v31, :pswitch_data_0
+
+    .line 1553
+    const-string v31, "UAField"
+
+    const-string/jumbo v32, "makeUAField USIM STATE is not READY"
+
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1554
+    new-instance v31, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v32, "010"
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    move-object/from16 v0, v31
+
+    move-object/from16 v1, v30
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, "00000000;"
+    const-string v32, "00000000;"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    move-object/from16 v30, v29
-
-    .line 1764
+    .line 1775
     .end local v29           #uaProfile:Ljava/lang/String;
-    .local v30, uaProfile:Ljava/lang/String;
+    .end local v30           #uaProfileFileData:Ljava/lang/String;
     :goto_0
-    return-object v30
+    return-object v29
 
-    .line 1532
-    .end local v30           #uaProfile:Ljava/lang/String;
+    .line 1541
     .restart local v29       #uaProfile:Ljava/lang/String;
+    .restart local v30       #uaProfileFileData:Ljava/lang/String;
     :pswitch_0
     invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, "45005"
+    const-string v32, "45005"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v32
+    move-result v31
 
-    if-nez v32, :cond_0
+    if-nez v31, :cond_0
 
-    .line 1533
-    const-string v32, "UAField"
+    .line 1542
+    const-string v31, "UAField"
 
-    new-instance v33, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v34, "Not SKT SIM : "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
-
-    move-result-object v34
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1534
     new-instance v32, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v33, "010"
+    const-string v33, "Not SKT SIM : "
 
     invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v32
 
-    move-object/from16 v0, v32
+    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
 
-    move-object/from16 v1, v31
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v32
-
-    const-string v33, "00000000;"
+    move-result-object v33
 
     invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1240,207 +1333,265 @@
 
     invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    move-result-object v32
+
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1543
+    new-instance v31, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v32, "010"
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    move-object/from16 v0, v31
+
+    move-object/from16 v1, v30
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    const-string v32, "00000000;"
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     move-result-object v29
 
-    move-object/from16 v30, v29
-
-    .line 1535
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
+    .line 1544
     goto :goto_0
 
-    .line 1551
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
+    .line 1560
     :cond_0
     invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->isNetworkRoaming()Z
 
-    move-result v32
+    move-result v31
 
-    if-eqz v32, :cond_4
+    if-eqz v31, :cond_4
 
-    .line 1553
-    const/16 v32, 0x1
+    .line 1562
+    const/16 v31, 0x1
 
     move-object/from16 v0, p0
 
-    move/from16 v1, v32
+    move/from16 v1, v31
 
     invoke-direct {v0, v1}, Landroid/telephony/TelephonyManager;->getMinStr(Z)Ljava/lang/String;
 
     move-result-object v24
 
-    .line 1554
+    .line 1563
     .local v24, strIRM:Ljava/lang/String;
     if-eqz v24, :cond_1
 
     invoke-virtual/range {v24 .. v24}, Ljava/lang/String;->length()I
 
-    move-result v32
+    move-result v31
 
-    const/16 v33, 0xa
+    const/16 v32, 0xa
 
-    move/from16 v0, v32
+    move/from16 v0, v31
 
-    move/from16 v1, v33
+    move/from16 v1, v32
 
     if-ge v0, v1, :cond_3
 
-    .line 1555
+    .line 1564
     :cond_1
     if-nez v24, :cond_2
 
-    .line 1557
+    .line 1566
     invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;
 
-    move-result-object v32
+    move-result-object v31
 
-    const/16 v33, 0x1
+    const/16 v32, 0x1
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v24
 
-    .line 1558
+    .line 1567
     if-nez v24, :cond_3
 
-    .line 1560
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1569
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v33, "010"
+    const-string v32, "010"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
-    move-object/from16 v1, v31
+    move-object/from16 v1, v30
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, "00000000;"
+    const-string v32, "00000000;"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    move-object/from16 v30, v29
-
-    .line 1561
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
+    .line 1570
     goto/16 :goto_0
 
-    .line 1566
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
+    .line 1575
     :cond_2
-    const-string v32, "UAField"
+    const-string v31, "UAField"
 
-    const-string v33, "Roaming IRM= "
+    const-string v32, "Roaming IRM= "
 
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1567
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1576
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v33, "010"
+    const-string v32, "010"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
-    move-object/from16 v1, v31
+    move-object/from16 v1, v30
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, "00000000;"
+    const-string v32, "00000000;"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    move-object/from16 v30, v29
-
-    .line 1568
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
+    .line 1577
     goto/16 :goto_0
 
-    .line 1573
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
+    .line 1582
     :cond_3
-    new-instance v32, Ljava/lang/StringBuilder;
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v33, "I"
+    const-string v32, "I"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const/16 v33, 0x0
+    const/16 v32, 0x0
 
-    const/16 v34, 0x2
+    const/16 v33, 0x2
 
     move-object/from16 v0, v24
 
-    move/from16 v1, v33
+    move/from16 v1, v32
 
-    move/from16 v2, v34
+    move/from16 v2, v33
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object v33
+    move-result-object v32
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    move-object/from16 v0, v31
+
+    move-object/from16 v1, v30
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    const/16 v32, 0x2
+
+    move-object/from16 v0, v24
+
+    move/from16 v1, v32
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v32
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    const-string v32, ";"
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v29
+
+    .line 1642
+    .end local v24           #strIRM:Ljava/lang/String;
+    :goto_1
+    const-string v31, "UAField"
+
+    new-instance v32, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v33, "getPhoneType= "
 
     invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v32
 
-    move-object/from16 v0, v32
+    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getPhoneType()I
 
-    move-object/from16 v1, v31
+    move-result v33
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    const-string v33, " != "
+
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v32
 
     const/16 v33, 0x2
 
-    move-object/from16 v0, v24
-
-    move/from16 v1, v33
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v32
 
-    const-string v33, ";"
+    const-string v33, "? "
 
     invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1448,112 +1599,87 @@
 
     invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v29
+    move-result-object v32
 
-    .line 1633
-    .end local v24           #strIRM:Ljava/lang/String;
-    :goto_1
-    const-string v32, "UAField"
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v33, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v34, "getPhoneType= "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
+    .line 1643
     invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getPhoneType()I
 
-    move-result v34
+    move-result v31
 
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const/16 v32, 0x2
 
-    move-result-object v33
+    move/from16 v0, v31
 
-    const-string v34, " != "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    const/16 v34, 0x2
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    const-string v34, "? "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1634
-    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getPhoneType()I
-
-    move-result v32
-
-    const/16 v33, 0x2
-
-    move/from16 v0, v32
-
-    move/from16 v1, v33
+    move/from16 v1, v32
 
     if-ne v0, v1, :cond_12
 
-    .line 1636
+    .line 1645
     invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getNetworkType()I
 
     move-result v23
 
-    .line 1637
+    .line 1646
     .local v23, networkType:I
-    const-string v32, "UAField"
+    const-string v31, "UAField"
 
-    new-instance v33, Ljava/lang/StringBuilder;
+    new-instance v32, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v34, "getNetworkType= "
+    const-string v33, "getNetworkType= "
 
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v33
+    move-result-object v32
 
     invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getNetworkType()I
 
-    move-result v34
+    move-result v33
 
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v33
+    move-result-object v32
 
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v33
+    move-result-object v32
 
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1638
+    .line 1647
     const/16 v16, 0x0
 
-    .line 1639
+    .line 1648
     .local v16, bStr:Ljava/lang/String;
     packed-switch v23, :pswitch_data_1
 
-    .line 1651
-    const/16 v32, 0x3
+    .line 1660
+    const/16 v31, 0x3
 
-    const/16 v33, 0x4
+    const/16 v32, 0x4
+
+    move-object/from16 v0, v29
+
+    move/from16 v1, v31
+
+    move/from16 v2, v32
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v16
+
+    .line 1663
+    :goto_2
+    new-instance v31, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
+
+    const/16 v32, 0x0
+
+    const/16 v33, 0x3
 
     move-object/from16 v0, v29
 
@@ -1563,390 +1689,351 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object v16
-
-    .line 1654
-    :goto_2
-    new-instance v32, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
-
-    const/16 v33, 0x0
-
-    const/16 v34, 0x3
-
-    move-object/from16 v0, v29
-
-    move/from16 v1, v33
-
-    move/from16 v2, v34
-
-    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     move-result-object v32
 
-    move-object/from16 v0, v32
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v16
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const/16 v33, 0x4
+    const/16 v32, 0x4
 
     move-object/from16 v0, v29
 
-    move/from16 v1, v33
+    move/from16 v1, v32
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
-    move-result-object v33
-
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     move-result-object v32
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    .line 1657
+    .line 1666
     invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getCellLocation()Landroid/telephony/CellLocation;
 
     move-result-object v21
 
     check-cast v21, Landroid/telephony/cdma/CdmaCellLocation;
 
-    .line 1658
+    .line 1667
     .local v21, loc:Landroid/telephony/cdma/CdmaCellLocation;
     if-nez v21, :cond_10
 
-    .line 1659
-    const-string v32, "UAField"
+    .line 1668
+    const-string v31, "UAField"
 
-    new-instance v33, Ljava/lang/StringBuilder;
+    new-instance v32, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v34, "loc is null ... uaProfile= "
+    const-string/jumbo v33, "loc is null ... uaProfile= "
 
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v33
+    move-result-object v32
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v32
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v33
+    move-result-object v32
 
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v33
+    move-result-object v32
 
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-object/from16 v30, v29
-
-    .line 1660
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 1577
+    .line 1586
     .end local v16           #bStr:Ljava/lang/String;
     .end local v21           #loc:Landroid/telephony/cdma/CdmaCellLocation;
     .end local v23           #networkType:I
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
     :cond_4
-    const/16 v32, 0x0
+    const/16 v31, 0x0
 
     move-object/from16 v0, p0
 
-    move/from16 v1, v32
+    move/from16 v1, v31
 
     invoke-direct {v0, v1}, Landroid/telephony/TelephonyManager;->getMinStr(Z)Ljava/lang/String;
 
     move-result-object v25
 
-    .line 1578
+    .line 1587
     .local v25, strMIN:Ljava/lang/String;
     if-eqz v25, :cond_5
 
     invoke-virtual/range {v25 .. v25}, Ljava/lang/String;->length()I
 
-    move-result v32
+    move-result v31
 
-    const/16 v33, 0xa
+    const/16 v32, 0xa
 
-    move/from16 v0, v32
+    move/from16 v0, v31
 
-    move/from16 v1, v33
+    move/from16 v1, v32
 
     if-ge v0, v1, :cond_7
 
-    .line 1579
+    .line 1588
     :cond_5
     if-nez v25, :cond_6
 
-    .line 1581
+    .line 1590
     invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;
 
     move-result-object v25
 
-    .line 1582
+    .line 1591
     if-nez v25, :cond_7
 
-    .line 1584
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1593
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v33, "010"
+    const-string v32, "010"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
-    move-object/from16 v1, v31
+    move-object/from16 v1, v30
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, "00000000;"
+    const-string v32, "00000000;"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    move-object/from16 v30, v29
-
-    .line 1585
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
+    .line 1594
     goto/16 :goto_0
 
-    .line 1590
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
+    .line 1599
     :cond_6
-    const-string v32, "UAField"
+    const-string v31, "UAField"
 
-    const-string v33, "MIN= "
+    const-string v32, "MIN= "
 
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1591
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1600
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v33, "010"
+    const-string v32, "010"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
-    move-object/from16 v1, v31
+    move-object/from16 v1, v30
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, "00000000;"
+    const-string v32, "00000000;"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    move-object/from16 v30, v29
-
-    .line 1592
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
+    .line 1601
     goto/16 :goto_0
 
-    .line 1596
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
+    .line 1605
     :cond_7
-    const/16 v32, 0x0
+    const/16 v31, 0x0
 
-    const/16 v33, 0x1
+    const/16 v32, 0x1
 
     move-object/from16 v0, v25
 
-    move/from16 v1, v32
+    move/from16 v1, v31
 
-    move/from16 v2, v33
+    move/from16 v2, v32
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v27
 
-    .line 1598
+    .line 1607
     .local v27, strProvider:Ljava/lang/String;
-    const-string v32, "0"
+    const-string v31, "0"
 
     move-object/from16 v0, v27
 
-    move-object/from16 v1, v32
+    move-object/from16 v1, v31
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v32
+    move-result v31
 
-    if-eqz v32, :cond_9
+    if-eqz v31, :cond_9
 
-    .line 1599
-    const/16 v32, 0x1
+    .line 1608
+    const/16 v31, 0x1
 
-    const/16 v33, 0x3
+    const/16 v32, 0x3
 
     move-object/from16 v0, v25
 
-    move/from16 v1, v32
+    move/from16 v1, v31
 
-    move/from16 v2, v33
+    move/from16 v2, v32
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v27
 
-    .line 1600
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1609
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v33, "0"
+    const-string v32, "0"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const/16 v33, 0x3
+    const/16 v32, 0x3
 
     move-object/from16 v0, v25
 
-    move/from16 v1, v33
+    move/from16 v1, v32
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
-    move-result-object v33
-
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     move-result-object v32
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v26
 
-    .line 1605
+    .line 1614
     .local v26, strMinBody:Ljava/lang/String;
     :goto_3
-    const-string v32, "10"
+    const-string v31, "10"
 
     move-object/from16 v0, v27
 
-    move-object/from16 v1, v32
+    move-object/from16 v1, v31
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v32
+    move-result v31
 
-    if-eqz v32, :cond_a
+    if-eqz v31, :cond_a
 
-    .line 1606
+    .line 1615
     const-string v27, "010"
 
-    .line 1629
+    .line 1638
     :cond_8
     :goto_4
-    new-instance v32, Ljava/lang/StringBuilder;
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v27
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
-    move-object/from16 v1, v31
+    move-object/from16 v1, v30
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v26
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, ";"
+    const-string v32, ";"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
     goto/16 :goto_1
 
-    .line 1602
+    .line 1611
     .end local v26           #strMinBody:Ljava/lang/String;
     :cond_9
-    const/16 v32, 0x0
+    const/16 v31, 0x0
 
-    const/16 v33, 0x2
+    const/16 v32, 0x2
 
     move-object/from16 v0, v25
 
-    move/from16 v1, v32
+    move/from16 v1, v31
 
-    move/from16 v2, v33
+    move/from16 v2, v32
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v27
 
-    .line 1603
-    const/16 v32, 0x2
+    .line 1612
+    const/16 v31, 0x2
 
     move-object/from16 v0, v25
 
-    move/from16 v1, v32
+    move/from16 v1, v31
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
@@ -1955,124 +2042,124 @@
     .restart local v26       #strMinBody:Ljava/lang/String;
     goto :goto_3
 
-    .line 1608
+    .line 1617
     :cond_a
-    const-string v32, "11"
+    const-string v31, "11"
 
     move-object/from16 v0, v27
 
-    move-object/from16 v1, v32
+    move-object/from16 v1, v31
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v32
+    move-result v31
 
-    if-eqz v32, :cond_b
+    if-eqz v31, :cond_b
 
-    .line 1609
+    .line 1618
     const-string v27, "SKT"
 
     goto :goto_4
 
-    .line 1611
+    .line 1620
     :cond_b
-    const-string v32, "16"
+    const-string v31, "16"
 
     move-object/from16 v0, v27
 
-    move-object/from16 v1, v32
+    move-object/from16 v1, v31
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v32
+    move-result v31
 
-    if-eqz v32, :cond_c
+    if-eqz v31, :cond_c
 
-    .line 1612
+    .line 1621
     const-string v27, "KTF"
 
     goto :goto_4
 
-    .line 1614
+    .line 1623
     :cond_c
-    const-string v32, "17"
+    const-string v31, "17"
 
     move-object/from16 v0, v27
 
-    move-object/from16 v1, v32
+    move-object/from16 v1, v31
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v32
+    move-result v31
 
-    if-eqz v32, :cond_d
+    if-eqz v31, :cond_d
 
-    .line 1615
+    .line 1624
     const-string v27, "STI"
 
     goto :goto_4
 
-    .line 1617
+    .line 1626
     :cond_d
-    const-string v32, "18"
+    const-string v31, "18"
 
     move-object/from16 v0, v27
 
-    move-object/from16 v1, v32
+    move-object/from16 v1, v31
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v32
+    move-result v31
 
-    if-eqz v32, :cond_e
+    if-eqz v31, :cond_e
 
-    .line 1618
+    .line 1627
     const-string v27, "HSP"
 
     goto :goto_4
 
-    .line 1620
+    .line 1629
     :cond_e
-    const-string v32, "19"
+    const-string v31, "19"
 
     move-object/from16 v0, v27
 
-    move-object/from16 v1, v32
+    move-object/from16 v1, v31
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v32
+    move-result v31
 
-    if-eqz v32, :cond_f
+    if-eqz v31, :cond_f
 
-    .line 1621
+    .line 1630
     const-string v27, "LGT"
 
     goto/16 :goto_4
 
-    .line 1623
+    .line 1632
     :cond_f
-    const-string v32, "98"
+    const-string v31, "98"
 
     move-object/from16 v0, v27
 
-    move-object/from16 v1, v32
+    move-object/from16 v1, v31
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v32
+    move-result v31
 
-    if-eqz v32, :cond_8
+    if-eqz v31, :cond_8
 
-    .line 1624
+    .line 1633
     const-string v27, "989"
 
-    .line 1625
-    const/16 v32, 0x1
+    .line 1634
+    const/16 v31, 0x1
 
     move-object/from16 v0, v26
 
-    move/from16 v1, v32
+    move/from16 v1, v31
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
@@ -2080,7 +2167,7 @@
 
     goto/16 :goto_4
 
-    .line 1641
+    .line 1650
     .end local v25           #strMIN:Ljava/lang/String;
     .end local v26           #strMinBody:Ljava/lang/String;
     .end local v27           #strProvider:Ljava/lang/String;
@@ -2089,203 +2176,203 @@
     :pswitch_1
     const-string v16, "1"
 
-    .line 1642
+    .line 1651
     goto/16 :goto_2
 
-    .line 1645
+    .line 1654
     :pswitch_2
     const-string v16, "5"
 
-    .line 1646
+    .line 1655
     goto/16 :goto_2
 
-    .line 1648
+    .line 1657
     :pswitch_3
     const-string v16, "4"
 
-    .line 1649
+    .line 1658
     goto/16 :goto_2
 
-    .line 1662
+    .line 1671
     .restart local v21       #loc:Landroid/telephony/cdma/CdmaCellLocation;
     :cond_10
     invoke-virtual/range {v21 .. v21}, Landroid/telephony/cdma/CdmaCellLocation;->getNetworkId()I
 
     move-result v7
 
-    .line 1663
+    .line 1672
     .local v7, NID:I
-    const-string/jumbo v32, "ril.cdma.regZone"
+    const-string/jumbo v31, "ril.cdma.regZone"
 
-    const/16 v33, -0x1
+    const/16 v32, -0x1
 
-    invoke-static/range {v32 .. v33}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+    invoke-static/range {v31 .. v32}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
     move-result v12
 
-    .line 1664
+    .line 1673
     .local v12, Reg_zone:I
     invoke-virtual/range {v21 .. v21}, Landroid/telephony/cdma/CdmaCellLocation;->getBaseStationId()I
 
     move-result v3
 
-    .line 1665
+    .line 1674
     .local v3, Base_ID:I
-    const-string/jumbo v32, "ril.cdma.pilotPN"
+    const-string/jumbo v31, "ril.cdma.pilotPN"
 
-    const/16 v33, -0x1
+    const/16 v32, -0x1
 
-    invoke-static/range {v32 .. v33}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+    invoke-static/range {v31 .. v32}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
     move-result v10
 
-    .line 1666
+    .line 1675
     .local v10, Pilot_pn:I
     invoke-virtual/range {v21 .. v21}, Landroid/telephony/cdma/CdmaCellLocation;->getSystemId()I
 
     move-result v13
 
-    .line 1667
+    .line 1676
     .local v13, SID:I
-    new-instance v32, Ljava/lang/StringBuilder;
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, ";"
+    const-string v32, ";"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    .line 1668
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1677
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, ";"
+    const-string v32, ";"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    .line 1669
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1678
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, ";"
+    const-string v32, ";"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    .line 1670
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1679
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, ";"
+    const-string v32, ";"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    .line 1671
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1680
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    .line 1742
+    .line 1751
     .end local v3           #Base_ID:I
     .end local v7           #NID:I
     .end local v10           #Pilot_pn:I
@@ -2295,18 +2382,18 @@
     :goto_5
     const/4 v15, 0x0
 
-    .line 1744
+    .line 1753
     .local v15, bIsWiFi:Z
     :try_start_0
     invoke-direct/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
 
     move-result-object v28
 
-    .line 1745
+    .line 1754
     .local v28, telephony:Lcom/android/internal/telephony/ITelephony;
     if-eqz v28, :cond_11
 
-    .line 1746
+    .line 1755
     invoke-interface/range {v28 .. v28}, Lcom/android/internal/telephony/ITelephony;->getWiFiForUA()Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
@@ -2314,28 +2401,28 @@
 
     move-result v15
 
-    .line 1755
+    .line 1764
     :cond_11
-    const/16 v32, 0x1
+    const/16 v31, 0x1
 
-    move/from16 v0, v32
+    move/from16 v0, v31
 
     if-ne v15, v0, :cond_19
 
-    .line 1756
+    .line 1765
     invoke-virtual/range {v29 .. v29}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v17
 
-    .line 1757
+    .line 1766
     .local v17, byteuaProfile:[B
-    const/16 v32, 0x3
+    const/16 v31, 0x3
 
-    const/16 v33, 0x44
+    const/16 v32, 0x44
 
-    aput-byte v33, v17, v32
+    aput-byte v32, v17, v31
 
-    .line 1758
+    .line 1767
     new-instance v29, Ljava/lang/String;
 
     .end local v29           #uaProfile:Ljava/lang/String;
@@ -2345,112 +2432,17 @@
 
     invoke-direct {v0, v1}, Ljava/lang/String;-><init>([B)V
 
-    .line 1763
+    .line 1772
     .end local v17           #byteuaProfile:[B
     .restart local v29       #uaProfile:Ljava/lang/String;
     :goto_6
-    const-string v32, "UAField"
+    const-string v31, "UAField"
 
-    new-instance v33, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v34, "retrun uaProfile= "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    move-object/from16 v0, v33
-
-    move-object/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-object/from16 v30, v29
-
-    .line 1764
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
-    goto/16 :goto_0
-
-    .line 1675
-    .end local v15           #bIsWiFi:Z
-    .end local v16           #bStr:Ljava/lang/String;
-    .end local v23           #networkType:I
-    .end local v28           #telephony:Lcom/android/internal/telephony/ITelephony;
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
-    :cond_12
-    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getNetworkType()I
-
-    move-result v23
-
-    .line 1676
-    .restart local v23       #networkType:I
-    const-string v32, "UAField"
-
-    new-instance v33, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v34, "getNetworkType= "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getNetworkType()I
-
-    move-result v34
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1677
-    const/16 v16, 0x0
-
-    .line 1678
-    .restart local v16       #bStr:Ljava/lang/String;
-    sparse-switch v23, :sswitch_data_0
-
-    .line 1692
-    const-string v16, "6"
-
-    .line 1695
-    :goto_7
     new-instance v32, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
 
-    const/16 v33, 0x0
-
-    const/16 v34, 0x3
-
-    move-object/from16 v0, v29
-
-    move/from16 v1, v33
-
-    move/from16 v2, v34
-
-    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v33
+    const-string/jumbo v33, "retrun uaProfile= "
 
     invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2458,366 +2450,79 @@
 
     move-object/from16 v0, v32
 
-    move-object/from16 v1, v16
+    move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v32
-
-    const/16 v33, 0x4
-
-    move-object/from16 v0, v29
-
-    move/from16 v1, v33
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v32
 
     invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v29
+    move-result-object v32
 
-    .line 1698
-    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-result-object v22
-
-    .line 1699
-    .local v22, networkOperator:Ljava/lang/String;
-    if-nez v22, :cond_14
-
-    .line 1700
-    const-string v32, "UAField"
-
-    const-string/jumbo v33, "networkOperator is null!"
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1701
-    const-string v22, "00000"
-
-    .line 1709
-    :cond_13
-    :goto_8
-    const-string v32, "UAField"
-
-    new-instance v33, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v34, "networkOperator= "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    move-object/from16 v0, v33
-
-    move-object/from16 v1, v22
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    const-string v34, ", 45005 is SKT?"
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1710
-    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getCellLocation()Landroid/telephony/CellLocation;
-
-    move-result-object v21
-
-    check-cast v21, Landroid/telephony/gsm/GsmCellLocation;
-
-    .line 1711
-    .local v21, loc:Landroid/telephony/gsm/GsmCellLocation;
-    if-nez v21, :cond_16
-
-    .line 1712
-    const-string v32, "UAField"
-
-    new-instance v33, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v34, "loc is null !!! uaProfile= "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    move-object/from16 v0, v33
-
-    move-object/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-object/from16 v30, v29
-
-    .line 1713
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
     goto/16 :goto_0
-
-    .line 1680
-    .end local v21           #loc:Landroid/telephony/gsm/GsmCellLocation;
-    .end local v22           #networkOperator:Ljava/lang/String;
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
-    :sswitch_0
-    const-string v16, "B"
-
-    .line 1681
-    goto/16 :goto_7
-
-    .line 1683
-    :sswitch_1
-    const-string v16, "8"
 
     .line 1684
-    goto/16 :goto_7
+    .end local v15           #bIsWiFi:Z
+    .end local v16           #bStr:Ljava/lang/String;
+    .end local v23           #networkType:I
+    .end local v28           #telephony:Lcom/android/internal/telephony/ITelephony;
+    :cond_12
+    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getNetworkType()I
+
+    move-result v23
+
+    .line 1685
+    .restart local v23       #networkType:I
+    const-string v31, "UAField"
+
+    new-instance v32, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v33, "getNetworkType= "
+
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getNetworkType()I
+
+    move-result v33
+
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v32
+
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 1686
-    :sswitch_2
-    const-string v16, "9"
+    const/16 v16, 0x0
 
     .line 1687
-    goto/16 :goto_7
+    .restart local v16       #bStr:Ljava/lang/String;
+    sparse-switch v23, :sswitch_data_0
 
-    .line 1702
-    .restart local v22       #networkOperator:Ljava/lang/String;
-    :cond_14
-    invoke-virtual/range {v22 .. v22}, Ljava/lang/String;->length()I
-
-    move-result v32
-
-    const/16 v33, 0x1
-
-    move/from16 v0, v32
-
-    move/from16 v1, v33
-
-    if-ge v0, v1, :cond_15
-
-    .line 1703
-    const-string v32, "UAField"
-
-    const-string/jumbo v33, "networkOperator is empty!"
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    .line 1701
+    const-string v16, "6"
 
     .line 1704
-    const-string v22, "00000"
+    :goto_7
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    goto :goto_8
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1705
-    :cond_15
-    invoke-virtual/range {v22 .. v22}, Ljava/lang/String;->length()I
-
-    move-result v32
-
-    const/16 v33, 0x3
-
-    move/from16 v0, v32
-
-    move/from16 v1, v33
-
-    if-gt v0, v1, :cond_13
-
-    .line 1706
-    const-string v32, "UAField"
-
-    new-instance v33, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v34, "networkOperator is invaild(length <= 3)! networkOperator size = "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {v22 .. v22}, Ljava/lang/String;->length()I
-
-    move-result v34
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1707
-    const-string v22, "00000"
-
-    goto/16 :goto_8
-
-    .line 1715
-    .restart local v21       #loc:Landroid/telephony/gsm/GsmCellLocation;
-    :cond_16
-    invoke-virtual/range {v21 .. v21}, Landroid/telephony/gsm/GsmCellLocation;->getCid()I
-
-    move-result v18
-
-    .line 1716
-    .local v18, cid:I
-    shr-int/lit8 v32, v18, 0x4
-
-    and-int/lit8 v32, v32, 0x7
-
-    move/from16 v0, v32
-
-    int-to-byte v14, v0
-
-    .line 1717
-    .local v14, Sector_ID:B
-    shr-int/lit8 v32, v18, 0x8
-
-    move/from16 v0, v32
-
-    and-int/lit16 v0, v0, 0xff
-
-    move/from16 v32, v0
-
-    move/from16 v0, v32
-
-    int-to-byte v8, v0
-
-    .line 1718
-    .local v8, NodeB_ID:B
-    shr-int/lit8 v32, v18, 0x10
-
-    and-int/lit8 v32, v32, 0x1f
-
-    move/from16 v0, v32
-
-    int-to-byte v11, v0
-
-    .line 1719
-    .local v11, RNC_ID:B
-    shr-int/lit8 v32, v18, 0x15
-
-    and-int/lit8 v32, v32, 0x7f
-
-    move/from16 v0, v32
-
-    int-to-byte v6, v0
-
-    .line 1721
-    .local v6, MSC_ID:B
-    const/16 v20, 0x4000
-
-    .line 1722
-    .local v20, flag_bit:S
-    shl-int/lit8 v32, v8, 0x3
-
-    move/from16 v0, v32
-
-    int-to-short v0, v0
-
-    move/from16 v32, v0
-
-    add-int v32, v32, v20
-
-    add-int v32, v32, v14
-
-    move/from16 v0, v32
-
-    int-to-short v9, v0
-
-    .line 1723
-    .local v9, NodeB_Sector_ID:S
-    const-string v5, ""
-
-    .line 1724
-    .local v5, MNC:Ljava/lang/String;
-    const/16 v32, 0x3
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v32
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 1725
-    if-nez v5, :cond_17
-
-    .line 1726
-    const-string v32, "UAField"
-
-    new-instance v33, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v34, "MNC is null !!! uaProfile= "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    move-object/from16 v0, v33
-
-    move-object/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v33
-
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-object/from16 v30, v29
-
-    .line 1727
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
-    goto/16 :goto_0
-
-    .line 1729
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
-    :cond_17
-    const-string v4, ""
-
-    .line 1730
-    .local v4, MCC:Ljava/lang/String;
     const/16 v32, 0x0
 
     const/16 v33, 0x3
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v29
 
     move/from16 v1, v32
 
@@ -2825,52 +2530,115 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v32
 
-    .line 1731
-    if-nez v4, :cond_18
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1732
-    const-string v32, "UAField"
+    move-result-object v31
 
-    new-instance v33, Ljava/lang/StringBuilder;
+    move-object/from16 v0, v31
 
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v34, "MCC is null !!! uaProfile= "
-
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v33
-
-    move-object/from16 v0, v33
-
-    move-object/from16 v1, v29
+    move-object/from16 v1, v16
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v33
+    move-result-object v31
 
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/16 v32, 0x4
 
-    move-result-object v33
+    move-object/from16 v0, v29
 
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    move/from16 v1, v32
 
-    move-object/from16 v30, v29
+    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
-    .line 1733
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
-    goto/16 :goto_0
+    move-result-object v32
 
-    .line 1735
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
-    :cond_18
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v29
+
+    .line 1707
+    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;
+
+    move-result-object v22
+
+    .line 1708
+    .local v22, networkOperator:Ljava/lang/String;
+    if-nez v22, :cond_14
+
+    .line 1709
+    const-string v31, "UAField"
+
+    const-string/jumbo v32, "networkOperator is null!"
+
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1710
+    const-string v22, "00000"
+
+    .line 1718
+    :cond_13
+    :goto_8
+    const-string v31, "UAField"
+
     new-instance v32, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v33, "networkOperator= "
+
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    move-object/from16 v0, v32
+
+    move-object/from16 v1, v22
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    const-string v33, ", 45005 is SKT?"
+
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v32
+
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1719
+    invoke-virtual/range {p0 .. p0}, Landroid/telephony/TelephonyManager;->getCellLocation()Landroid/telephony/CellLocation;
+
+    move-result-object v21
+
+    check-cast v21, Landroid/telephony/gsm/GsmCellLocation;
+
+    .line 1720
+    .local v21, loc:Landroid/telephony/gsm/GsmCellLocation;
+    if-nez v21, :cond_16
+
+    .line 1721
+    const-string v31, "UAField"
+
+    new-instance v32, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v33, "loc is null !!! uaProfile= "
+
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v32
 
     move-object/from16 v0, v32
 
@@ -2880,141 +2648,432 @@
 
     move-result-object v32
 
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v32
+
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    .line 1689
+    .end local v21           #loc:Landroid/telephony/gsm/GsmCellLocation;
+    .end local v22           #networkOperator:Ljava/lang/String;
+    :sswitch_0
+    const-string v16, "B"
+
+    .line 1690
+    goto/16 :goto_7
+
+    .line 1692
+    :sswitch_1
+    const-string v16, "8"
+
+    .line 1693
+    goto/16 :goto_7
+
+    .line 1695
+    :sswitch_2
+    const-string v16, "9"
+
+    .line 1696
+    goto/16 :goto_7
+
+    .line 1711
+    .restart local v22       #networkOperator:Ljava/lang/String;
+    :cond_14
+    invoke-virtual/range {v22 .. v22}, Ljava/lang/String;->length()I
+
+    move-result v31
+
+    const/16 v32, 0x1
+
+    move/from16 v0, v31
+
+    move/from16 v1, v32
+
+    if-ge v0, v1, :cond_15
+
+    .line 1712
+    const-string v31, "UAField"
+
+    const-string/jumbo v32, "networkOperator is empty!"
+
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1713
+    const-string v22, "00000"
+
+    goto :goto_8
+
+    .line 1714
+    :cond_15
+    invoke-virtual/range {v22 .. v22}, Ljava/lang/String;->length()I
+
+    move-result v31
+
+    const/16 v32, 0x3
+
+    move/from16 v0, v31
+
+    move/from16 v1, v32
+
+    if-gt v0, v1, :cond_13
+
+    .line 1715
+    const-string v31, "UAField"
+
+    new-instance v32, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v33, "networkOperator is invaild(length <= 3)! networkOperator size = "
+
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    invoke-virtual/range {v22 .. v22}, Ljava/lang/String;->length()I
+
+    move-result v33
+
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v32
+
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1716
+    const-string v22, "00000"
+
+    goto/16 :goto_8
+
+    .line 1724
+    .restart local v21       #loc:Landroid/telephony/gsm/GsmCellLocation;
+    :cond_16
+    invoke-virtual/range {v21 .. v21}, Landroid/telephony/gsm/GsmCellLocation;->getCid()I
+
+    move-result v18
+
+    .line 1725
+    .local v18, cid:I
+    shr-int/lit8 v31, v18, 0x4
+
+    and-int/lit8 v31, v31, 0x7
+
+    move/from16 v0, v31
+
+    int-to-byte v14, v0
+
+    .line 1726
+    .local v14, Sector_ID:B
+    shr-int/lit8 v31, v18, 0x8
+
+    move/from16 v0, v31
+
+    and-int/lit16 v0, v0, 0xff
+
+    move/from16 v31, v0
+
+    move/from16 v0, v31
+
+    int-to-byte v8, v0
+
+    .line 1727
+    .local v8, NodeB_ID:B
+    shr-int/lit8 v31, v18, 0x10
+
+    and-int/lit8 v31, v31, 0x1f
+
+    move/from16 v0, v31
+
+    int-to-byte v11, v0
+
+    .line 1728
+    .local v11, RNC_ID:B
+    shr-int/lit8 v31, v18, 0x15
+
+    and-int/lit8 v31, v31, 0x7f
+
+    move/from16 v0, v31
+
+    int-to-byte v6, v0
+
+    .line 1730
+    .local v6, MSC_ID:B
+    const/16 v20, 0x4000
+
+    .line 1731
+    .local v20, flag_bit:S
+    shl-int/lit8 v31, v8, 0x3
+
+    move/from16 v0, v31
+
+    int-to-short v0, v0
+
+    move/from16 v31, v0
+
+    add-int v31, v31, v20
+
+    add-int v31, v31, v14
+
+    move/from16 v0, v31
+
+    int-to-short v9, v0
+
+    .line 1732
+    .local v9, NodeB_Sector_ID:S
+    const-string v5, ""
+
+    .line 1733
+    .local v5, MNC:Ljava/lang/String;
+    const/16 v31, 0x3
+
+    move-object/from16 v0, v22
+
+    move/from16 v1, v31
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 1734
+    if-nez v5, :cond_17
+
+    .line 1735
+    const-string v31, "UAField"
+
+    new-instance v32, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v33, "MNC is null !!! uaProfile= "
+
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
     move-object/from16 v0, v32
+
+    move-object/from16 v1, v29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v32
+
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    .line 1738
+    :cond_17
+    const-string v4, ""
+
+    .line 1739
+    .local v4, MCC:Ljava/lang/String;
+    const/16 v31, 0x0
+
+    const/16 v32, 0x3
+
+    move-object/from16 v0, v22
+
+    move/from16 v1, v31
+
+    move/from16 v2, v32
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 1740
+    if-nez v4, :cond_18
+
+    .line 1741
+    const-string v31, "UAField"
+
+    new-instance v32, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v33, "MCC is null !!! uaProfile= "
+
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    move-object/from16 v0, v32
+
+    move-object/from16 v1, v29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v32
+
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v32
+
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    .line 1744
+    :cond_18
+    new-instance v31, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
+
+    move-object/from16 v0, v31
+
+    move-object/from16 v1, v29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v31
+
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, ";"
+    const-string v32, ";"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    .line 1737
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1746
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, ";"
+    const-string v32, ";"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    .line 1738
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1747
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, ";"
+    const-string v32, ";"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    .line 1739
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1748
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, ";"
+    const-string v32, ";"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
-    .line 1740
-    new-instance v32, Ljava/lang/StringBuilder;
+    .line 1749
+    new-instance v31, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    const-string v33, "0"
+    const-string v32, "0"
 
-    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v32
+    move-result-object v31
 
-    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v29
 
     goto/16 :goto_5
 
-    .line 1748
+    .line 1757
     .end local v4           #MCC:Ljava/lang/String;
     .end local v5           #MNC:Ljava/lang/String;
     .end local v6           #MSC_ID:B
@@ -3030,104 +3089,102 @@
     :catch_0
     move-exception v19
 
-    .line 1749
+    .line 1758
     .local v19, ex:Landroid/os/RemoteException;
-    const-string v32, "UAField"
+    const-string v31, "UAField"
 
-    new-instance v33, Ljava/lang/StringBuilder;
+    new-instance v32, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v34, "(check Wi-Fi) RemoteException !!!"
+    const-string v33, "(check Wi-Fi) RemoteException !!!"
 
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v33
+    move-result-object v32
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v32
 
     move-object/from16 v1, v19
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v33
+    move-result-object v32
 
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v33
+    move-result-object v32
 
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-object/from16 v30, v29
-
-    .line 1750
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 1751
+    .line 1760
     .end local v19           #ex:Landroid/os/RemoteException;
-    .end local v30           #uaProfile:Ljava/lang/String;
-    .restart local v29       #uaProfile:Ljava/lang/String;
     :catch_1
     move-exception v19
 
-    .line 1752
+    .line 1761
     .local v19, ex:Ljava/lang/NullPointerException;
-    const-string v32, "UAField"
+    const-string v31, "UAField"
 
-    new-instance v33, Ljava/lang/StringBuilder;
+    new-instance v32, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v33 .. v33}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v34, "(check Wi-Fi) NullPointerException !!!"
+    const-string v33, "(check Wi-Fi) NullPointerException !!!"
 
-    invoke-virtual/range {v33 .. v34}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v33
+    move-result-object v32
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v32
 
     move-object/from16 v1, v19
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v33
+    move-result-object v32
 
-    invoke-virtual/range {v33 .. v33}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v33
+    move-result-object v32
 
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-object/from16 v30, v29
-
-    .line 1753
-    .end local v29           #uaProfile:Ljava/lang/String;
-    .restart local v30       #uaProfile:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 1761
+    .line 1770
     .end local v19           #ex:Ljava/lang/NullPointerException;
-    .end local v30           #uaProfile:Ljava/lang/String;
     .restart local v28       #telephony:Lcom/android/internal/telephony/ITelephony;
-    .restart local v29       #uaProfile:Ljava/lang/String;
     :cond_19
-    const-string v32, "UAField"
+    const-string v31, "UAField"
 
-    const-string v33, "WiFi off..."
+    const-string v32, "WiFi off..."
 
-    invoke-static/range {v32 .. v33}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v31 .. v32}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_6
 
-    .line 1530
+    .line 1775
+    .end local v15           #bIsWiFi:Z
+    .end local v16           #bStr:Ljava/lang/String;
+    .end local v23           #networkType:I
+    .end local v28           #telephony:Lcom/android/internal/telephony/ITelephony;
+    .end local v29           #uaProfile:Ljava/lang/String;
+    .end local v30           #uaProfileFileData:Ljava/lang/String;
+    :cond_1a
+    const-string v29, "N/A"
+
+    goto/16 :goto_0
+
+    .line 1539
     :pswitch_data_0
     .packed-switch 0x5
         :pswitch_0
     .end packed-switch
 
-    .line 1639
+    .line 1648
     :pswitch_data_1
     .packed-switch 0x4
         :pswitch_1
@@ -3136,7 +3193,7 @@
         :pswitch_3
     .end packed-switch
 
-    .line 1678
+    .line 1687
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_0
@@ -4962,17 +5019,17 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1817
+    .line 1829
     :try_start_0
     invoke-direct {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
 
     move-result-object v1
 
-    .line 1818
+    .line 1830
     .local v1, telephony:Lcom/android/internal/telephony/ITelephony;
     if-eqz v1, :cond_0
 
-    .line 1819
+    .line 1831
     invoke-interface {v1}, Lcom/android/internal/telephony/ITelephony;->isInEmergencyCall()Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
@@ -4980,26 +5037,26 @@
 
     move-result v2
 
-    .line 1829
+    .line 1841
     .end local v1           #telephony:Lcom/android/internal/telephony/ITelephony;
     :cond_0
     :goto_0
     return v2
 
-    .line 1824
+    .line 1836
     :catch_0
     move-exception v0
 
-    .line 1826
+    .line 1838
     .local v0, ex:Landroid/os/RemoteException;
     goto :goto_0
 
-    .line 1827
+    .line 1839
     .end local v0           #ex:Landroid/os/RemoteException;
     :catch_1
     move-exception v0
 
-    .line 1829
+    .line 1841
     .local v0, ex:Ljava/lang/NullPointerException;
     goto :goto_0
 .end method
@@ -5133,17 +5190,17 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1795
+    .line 1807
     :try_start_0
     invoke-direct {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
 
     move-result-object v1
 
-    .line 1796
+    .line 1808
     .local v1, telephony:Lcom/android/internal/telephony/ITelephony;
     if-eqz v1, :cond_0
 
-    .line 1797
+    .line 1809
     invoke-interface {v1}, Lcom/android/internal/telephony/ITelephony;->isVoiceInService()Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
@@ -5151,26 +5208,26 @@
 
     move-result v2
 
-    .line 1807
+    .line 1819
     .end local v1           #telephony:Lcom/android/internal/telephony/ITelephony;
     :cond_0
     :goto_0
     return v2
 
-    .line 1802
+    .line 1814
     :catch_0
     move-exception v0
 
-    .line 1804
+    .line 1816
     .local v0, ex:Landroid/os/RemoteException;
     goto :goto_0
 
-    .line 1805
+    .line 1817
     .end local v0           #ex:Landroid/os/RemoteException;
     :catch_1
     move-exception v0
 
-    .line 1807
+    .line 1819
     .local v0, ex:Ljava/lang/NullPointerException;
     goto :goto_0
 .end method
@@ -5260,7 +5317,7 @@
     .locals 1
 
     .prologue
-    .line 1781
+    .line 1793
     :try_start_0
     invoke-direct {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
 
@@ -5271,17 +5328,17 @@
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1788
+    .line 1800
     :goto_0
     return-void
 
-    .line 1784
+    .line 1796
     :catch_0
     move-exception v0
 
     goto :goto_0
 
-    .line 1782
+    .line 1794
     :catch_1
     move-exception v0
 

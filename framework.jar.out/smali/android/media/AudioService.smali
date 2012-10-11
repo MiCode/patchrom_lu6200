@@ -6941,15 +6941,12 @@
     .parameter "flags"
 
     .prologue
-    .line 503
     and-int/lit8 v1, p3, 0x20
 
     if-eqz v1, :cond_2
 
-    .line 504
     move v0, p2
 
-    .line 510
     .local v0, streamType:I
     :goto_0
     and-int/lit8 v1, p3, 0x4
@@ -6976,11 +6973,11 @@
 
     if-eqz v1, :cond_1
 
-    .line 513
+    .line 581
     :cond_0
     and-int/lit8 p3, p3, -0x5
 
-    .line 516
+    .line 585
     :cond_1
     invoke-direct {p0, p3, p1}, Landroid/media/AudioService;->adjustDirection(II)I
 
@@ -6988,10 +6985,8 @@
 
     invoke-virtual {p0, v0, p1, p3}, Landroid/media/AudioService;->adjustStreamVolume(III)V
 
-    .line 517
     return-void
 
-    .line 506
     .end local v0           #streamType:I
     :cond_2
     invoke-direct {p0, p2}, Landroid/media/AudioService;->getActiveStreamType(I)I

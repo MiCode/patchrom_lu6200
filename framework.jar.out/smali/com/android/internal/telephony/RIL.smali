@@ -11161,18 +11161,15 @@
 
     if-eqz v11, :cond_7
 
-    .line 4534
     :cond_merge2
     const/4 v11, 0x0
 
     iput v11, v1, Lcom/android/internal/telephony/DriverCall;->signal:I
 
-    .line 4535
     invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
 
     goto/16 :goto_9
 
-    .line 4544
     :cond_14
     const/4 v11, 0x0
 

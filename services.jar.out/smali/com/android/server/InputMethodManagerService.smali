@@ -6654,7 +6654,6 @@
 
     .line 1473
     :cond_2
-    .line 1478
     iget-boolean v3, p0, Lcom/android/server/InputMethodManagerService;->mInputShown:Z
 
     if-eqz v3, :cond_4

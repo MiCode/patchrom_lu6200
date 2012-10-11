@@ -108,7 +108,6 @@
 
     #if-ne v2, v4, :cond_1
 
-    .line 5143
     #const-string v2, "WindowManager"
 
     #const-string v3, "Skip menu long key -> search key injection in the global actions dialog."

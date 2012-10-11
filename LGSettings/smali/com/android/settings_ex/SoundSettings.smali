@@ -4111,7 +4111,7 @@
     .line 1169
     new-instance v2, Landroid/content/ComponentName;
 
-    const-string v3, "com.android.settings"
+    const-string v3, "com.android.settings_ex"
 
     const-string v4, "com.android.settings_ex.RingtonePicker"
 
@@ -4143,7 +4143,7 @@
     .line 1177
     new-instance v3, Landroid/content/ComponentName;
 
-    const-string v4, "com.android.settings"
+    const-string v4, "com.android.settings_ex"
 
     const-string v5, "com.android.settings_ex.RingtonePicker"
 
@@ -4175,7 +4175,7 @@
     .line 1183
     new-instance v2, Landroid/content/ComponentName;
 
-    const-string v3, "com.android.settings"
+    const-string v3, "com.android.settings_ex"
 
     const-string v4, "com.android.settings_ex.RingtonePicker"
 
@@ -4209,7 +4209,7 @@
     .line 1189
     new-instance v2, Landroid/content/ComponentName;
 
-    const-string v3, "com.android.settings"
+    const-string v3, "com.android.settings_ex"
 
     const-string v4, "com.android.settings_ex.RingtonePicker"
 
@@ -4243,7 +4243,7 @@
     .line 1196
     new-instance v2, Landroid/content/ComponentName;
 
-    const-string v3, "com.android.settings"
+    const-string v3, "com.android.settings_ex"
 
     const-string v4, "com.android.settings_ex.RingtonePicker"
 
@@ -4303,7 +4303,7 @@
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
     .line 1212
-    const-string v3, "com.android.settings"
+    const-string v3, "com.android.settings_ex"
 
     const-string v4, "com.android.settings_ex.TimedSilentSettings"
 
@@ -4326,7 +4326,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 1222
-    const-string v2, "com.android.settings"
+    const-string v2, "com.android.settings_ex"
 
     const-string v3, "com.android.settings_ex.VibrateTypePreference"
 

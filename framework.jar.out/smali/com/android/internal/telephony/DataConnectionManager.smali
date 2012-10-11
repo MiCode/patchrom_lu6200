@@ -1711,14 +1711,13 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 195
     iget-object v2, p0, Lcom/android/internal/telephony/DataConnectionManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
-    const-string/jumbo v3, "preferred_data_network_mode"
+    const-string v3, "preferred_data_network_mode"
 
     const/4 v1, 0x0
 
@@ -1726,11 +1725,9 @@
 
     move-result v0
 
-    .line 196
     .local v0, mode:I
     const/4 v1, 0x0
 
-    .line 198
     .local v1, network_mode:I
     const-string v2, "LGE_DCM "
 

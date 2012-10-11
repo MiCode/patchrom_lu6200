@@ -328,7 +328,6 @@
     .parameter "svcName"
 
     .prologue
-
     const/4 v1, 0x1
 
     const/4 v2, 0x0

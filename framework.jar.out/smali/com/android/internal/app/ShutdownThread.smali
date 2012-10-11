@@ -155,54 +155,44 @@
 
     check-cast v2, Landroid/media/AudioManager;
 
-    .line 243
     .local v2, mAudioManager:Landroid/media/AudioManager;
     const/4 v4, 0x2
 
     invoke-virtual {v2, v8, v6, v4}, Landroid/media/AudioManager;->requestAudioFocus(Landroid/media/AudioManager$OnAudioFocusChangeListener;II)I
 
-    .line 245
     sget-object v5, Lcom/android/internal/app/ShutdownThread;->sIsStartedGuard:Ljava/lang/Object;
 
     monitor-enter v5
 
-    .line 246
     :try_start_0
     sget-boolean v4, Lcom/android/internal/app/ShutdownThread;->sIsStarted:Z
 
     if-eqz v4, :cond_0
 
-    .line 247
     const-string v4, "ShutdownThread"
 
     const-string v6, "Shutdown sequence already running, returning."
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 248
     monitor-exit v5
 
-    .line 308
     :goto_0
     return-void
 
-    .line 250
     :cond_0
     const/4 v4, 0x1
 
     sput-boolean v4, Lcom/android/internal/app/ShutdownThread;->sIsStarted:Z
 
-    .line 251
     monitor-exit v5
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 255
     new-instance v3, Landroid/app/ProgressDialog;
 
     invoke-direct {v3, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    .line 256
     .local v3, pd:Landroid/app/ProgressDialog;
     const v4, 0x60c0191
 
@@ -212,7 +202,6 @@
 
     invoke-virtual {v3, v4}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 257
     const v4, 0x60c01aa
 
     invoke-virtual {p0, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
@@ -236,18 +225,15 @@
 
     invoke-virtual {v4, v5}, Landroid/view/Window;->setType(I)V
 
-    .line 262
     invoke-static {p0}, Lcom/android/internal/app/ShutdownThread;->createShutDownDialog(Landroid/content/Context;)V
 
-    .line 264
     sget-object v4, Lcom/android/internal/app/ShutdownThread;->sInstance:Lcom/android/internal/app/ShutdownThread;
 
     iput-object p0, v4, Lcom/android/internal/app/ShutdownThread;->mContext:Landroid/content/Context;
 
-    .line 265
     sget-object v5, Lcom/android/internal/app/ShutdownThread;->sInstance:Lcom/android/internal/app/ShutdownThread;
 
-    const-string/jumbo v4, "power"
+    const-string v4, "power"
 
     invoke-virtual {p0, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -673,21 +659,18 @@
 
     move-result v3
 
-    .line 145
     .local v3, longPressBehavior:I
     sget-boolean v5, Lcom/android/internal/app/ShutdownThread;->mReboot:Z
 
     if-eqz v5, :cond_2
 
-    .line 146
     if-ne v3, v7, :cond_1
 
     const v4, 0x1040137
 
-    .line 156
     .local v4, resourceId:I
     :goto_1
-    const-string/jumbo v5, "ro.monkey"
+    const-string v5, "ro.monkey"
 
     const/4 v6, 0x0
 
@@ -722,14 +705,12 @@
 
     throw v5
 
-    .line 146
     .restart local v3       #longPressBehavior:I
     :cond_1
     const v4, 0x1040136
 
     goto :goto_1
 
-    .line 150
     :cond_2
     if-ne v3, v7, :cond_3
 

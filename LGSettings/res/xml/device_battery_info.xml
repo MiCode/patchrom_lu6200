@@ -2,6 +2,6 @@
 <PreferenceScreen android:title="@string/sp_power_save_battery_NORMAL"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceScreen android:title="@string/sp_battery_condition_NORMAL" android:key="battery_condition_dcm">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.BatteryCondition" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.BatteryCondition" />
     </PreferenceScreen>
 </PreferenceScreen>

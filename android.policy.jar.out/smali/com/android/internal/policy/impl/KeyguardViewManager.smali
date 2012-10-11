@@ -109,38 +109,28 @@
 
     const/4 v1, 0x0
 
-    .line 104
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 73
     iput-boolean v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mNeedsInput:Z
 
-    .line 78
     iput-boolean v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mScreenOn:Z
 
-    .line 80
     iput v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mDockMode:I
 
-    .line 82
     iput-object v2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mLockPackageManager:Lcom/android/internal/policy/impl/LgeLockScreenPackageManager;
 
-    .line 85
     iput-boolean v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mIsWaitingForBootComplete:Z
 
-    .line 86
     iput-boolean v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mIsBootCompleted:Z
 
-    .line 128
     new-instance v1, Lcom/android/internal/policy/impl/KeyguardViewManager$1;
 
     invoke-direct {v1, p0}, Lcom/android/internal/policy/impl/KeyguardViewManager$1;-><init>(Lcom/android/internal/policy/impl/KeyguardViewManager;)V
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mBroadCastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 182
     iput-object v2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mRemoteViews:Landroid/widget/RemoteViews;
 
-    .line 184
     new-instance v1, Lcom/android/internal/policy/impl/KeyguardViewManager$2;
 
     invoke-direct {v1, p0}, Lcom/android/internal/policy/impl/KeyguardViewManager$2;-><init>(Lcom/android/internal/policy/impl/KeyguardViewManager;)V
@@ -155,31 +145,24 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mContext:Landroid/content/Context;
 
-    .line 106
     iput-object p2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mViewManager:Landroid/view/ViewManager;
 
-    .line 107
     iput-object p3, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mCallback:Lcom/android/internal/policy/impl/KeyguardViewCallback;
 
-    .line 108
     iput-object p4, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardViewProperties:Lcom/android/internal/policy/impl/KeyguardViewProperties;
 
-    .line 110
     iput-object p5, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    .line 112
     sget-boolean v1, Lcom/lge/config/ConfigBuildFlags;->CAPP_LOCKSCREEN:Z
 
     if-eqz v1, :cond_0
 
-    .line 113
     invoke-static {}, Lcom/android/internal/policy/impl/LgeLockScreenPackageManager;->getInstance()Lcom/android/internal/policy/impl/LgeLockScreenPackageManager;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mLockPackageManager:Lcom/android/internal/policy/impl/LgeLockScreenPackageManager;
 
-    .line 115
     :cond_0
     sget-object v1, Lcom/android/internal/policy/impl/KeyguardViewManager;->sOperator:Ljava/lang/String;
 
@@ -598,17 +581,14 @@
     move-result-object v2
 
     goto :cond_0
-    .line 539
     if-eqz v2, :cond_0
 
-    .line 540
     :try_start_1
     invoke-interface {v2}, Lcom/android/internal/statusbar/IStatusBarService;->disableTransparentStatusbar()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 549
     .end local v2           #mStatusService:Lcom/android/internal/statusbar/IStatusBarService;
     :cond_0
     :goto_0
@@ -1107,17 +1087,14 @@
     move-result-object v9
     
     goto :cond_0
-    .line 252
     if-eqz v9, :cond_0
 
-    .line 254
     :try_start_1
     invoke-interface {v9}, Lcom/android/internal/statusbar/IStatusBarService;->disableTransparentStatusbar()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 264
     .end local v9           #mStatusService:Lcom/android/internal/statusbar/IStatusBarService;
     :cond_0
     :goto_0
@@ -1182,25 +1159,20 @@
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardHost:Landroid/widget/FrameLayout;
 
-    .line 278
     const/4 v11, -0x1
 
-    .line 279
     .local v11, stretch:I
     const v4, 0x10100900
 
-    .line 286
     .local v4, flags:I
     sget-boolean v1, Lcom/lge/config/ConfigBuildFlags;->CAPP_LOCKSCREEN:Z
 
     if-eqz v1, :cond_4
 
-    .line 287
     const v1, 0x10100
 
     or-int/2addr v4, v1
 
-    .line 291
     :cond_4
     sget-boolean v1, Lcom/lge/config/ConfigBuildFlags;->CAPP_LOCKSCREEN:Z
 
@@ -1546,20 +1518,17 @@
 
     if-nez v1, :cond_f
 
-    .line 379
     sget-object v1, Lcom/android/internal/policy/impl/KeyguardViewManager;->TAG:Ljava/lang/String;
 
     const-string v2, "KeyguardViewManager.show(): can\'t connect IScreenLockService"
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 389
     .end local v0           #lp:Landroid/view/ViewGroup$LayoutParams;
     .end local v8           #intent2:Landroid/content/Intent;
     :cond_f
     const/high16 v12, 0x60
 
-    .line 393
     .local v12, visFlags:I
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardHost:Landroid/widget/FrameLayout;
 
@@ -1567,7 +1536,6 @@
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/KeyguardViewManager;->updateDisplayDesktopFlag()V
 
-    .line 395
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mViewManager:Landroid/view/ViewManager;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardHost:Landroid/widget/FrameLayout;

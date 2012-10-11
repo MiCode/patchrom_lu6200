@@ -281,10 +281,8 @@
 
     #move-result-object v2
 
-    .line 62
     const/4 v3, 0x0
 
-    .line 64
     .local v3, intent:Landroid/content/Intent;
     #iget-boolean v7, v2, Landroid/content/pm/ApplicationInfo;->enabled:Z
 
@@ -292,7 +290,6 @@
 
     if-nez v7, :cond_6
 
-    .line 65
     invoke-virtual {p0}, Lcom/lge/camera/command/ShowGallery;->getMediator()Lcom/lge/camera/Mediator;
 
     move-result-object v7

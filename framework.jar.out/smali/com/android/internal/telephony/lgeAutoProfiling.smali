@@ -1256,7 +1256,6 @@
     .parameter "key"
 
     .prologue
-    .line 117
 
     const-string v0, "OperatorMessage"
 
@@ -1281,7 +1280,6 @@
     :cond_0
     invoke-static {p0}, Lcom/android/internal/telephony/lgeAutoProfiling;->setContext(Landroid/content/Context;)V
 
-    .line 119
     const/4 v0, 0x1
 
     invoke-static {p0, p1, v0}, Lcom/android/internal/telephony/lgeAutoProfiling;->getBoolean(Landroid/content/Context;Ljava/lang/String;Z)Z

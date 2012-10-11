@@ -480,14 +480,12 @@
 
     iput-object v2, v0, Lcom/android/server/ConnectivityService;->mPolicyListener:Landroid/net/INetworkPolicyListener;
 
-    .line 460
     const-string v2, "ConnectivityService starting up"
 
     move-object/from16 v0, p0
 
     invoke-direct {v0, v2}, Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
 
-    .line 462
     invoke-static/range {p1 .. p1}, Lcom/miui/server/FirewallService;->setupService(Landroid/content/Context;)V
 
     new-instance v13, Landroid/os/HandlerThread;
@@ -496,11 +494,9 @@
 
     invoke-direct {v13, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    .line 463
     .local v13, handlerThread:Landroid/os/HandlerThread;
     invoke-virtual {v13}, Landroid/os/HandlerThread;->start()V
 
-    .line 464
     new-instance v2, Lcom/android/server/ConnectivityService$MyHandler;
 
     invoke-virtual {v13}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -20178,16 +20174,13 @@
 
     if-eqz v27, :cond_1e
 
-    .line 1717
     invoke-direct/range {p0 .. p0}, Lcom/android/server/ConnectivityService;->writePidtoProperty()V
 
-    .line 1721
     :cond_1e
     monitor-exit p0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 1730
     invoke-static {}, Lmiui/net/FirewallManager;->getInstance()Lmiui/net/FirewallManager;
 
     move-result-object v31
@@ -20206,7 +20199,6 @@
 
     if-ltz v21, :cond_1f
 
-    .line 1732
     const-string v27, "ro.afwdata.LGfeatureset"
 
     const-string v28, "none"

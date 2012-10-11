@@ -45,14 +45,9 @@ local-zip-misc:
 	rm $(ZIP_DIR)/system/bin/bootanimation
 	cp other/bootanimation $(ZIP_DIR)/system/bin/bootanimation
 
-	@echo add system app
-
 	@echo add system config
 	cp other/system_etc/* $(ZIP_DIR)/system/etc/
 	cp other/system_xbin/* $(ZIP_DIR)/system/xbin/
-
-	@echo delete redundance files
-	rm -rf $(ZIP_DIR)/system/bin/su
 
 	@echo customize lge-res
 	./customize_lge-res.sh

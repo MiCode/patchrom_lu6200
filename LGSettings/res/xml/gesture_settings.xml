@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:icon="@drawable/ic_settings_gesture" android:title="@string/gesture_settings" android:key="gesture_settings"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex">
     <CheckBoxPreference android:title="@string/sp_gesture_title_home_NORMAL" android:key="gesture_homescreen" android:summary="@string/sp_gesture_summary_home_NORMAL" />
     <Preference android:title="@string/sp_gesture_title_home_tilt_NOMAL" android:key="tilt_sensitivity" android:summary="@string/sp_gesture_summary_home_tilt_NORMAL" />
     <CheckBoxPreference android:title="@string/sp_gesture_title_call_NORMAL" android:key="gesture_calls" android:summary="@string/sp_gesture_summary_calls_NOMAL" />
@@ -11,6 +11,6 @@
     <CheckBoxPreference android:title="@string/sp_gesture_title_gallery_browse_NORMAL" android:key="gesture_gallery" android:summary="@string/sp_gesture_summary_gallery_browse_NORMAL" />
     <CheckBoxPreference android:title="@string/sp_gesture_title_ime_NORMAL" android:key="gesture_input_method" android:summary="@string/sp_gesture_summary_text_NOMAL" />
     <PreferenceScreen android:title="@string/sp_gesture_category_help_NOMAL" android:key="gesture_help">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.GestureHelp" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.GestureHelp" />
     </PreferenceScreen>
 </PreferenceScreen>

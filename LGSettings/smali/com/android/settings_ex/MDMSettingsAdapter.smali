@@ -3319,7 +3319,7 @@
 
     const-string v8, "string"
 
-    const-string v9, "com.android.settings"
+    const-string v9, "com.android.settings_ex"
 
     invoke-virtual {v6, v7, v8, v9}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
@@ -3335,7 +3335,7 @@
 
     const-string v8, "string"
 
-    const-string v9, "com.android.settings"
+    const-string v9, "com.android.settings_ex"
 
     invoke-virtual {v6, v7, v8, v9}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
@@ -3373,7 +3373,7 @@
 
     const-string v8, "string"
 
-    const-string v9, "com.android.settings"
+    const-string v9, "com.android.settings_ex"
 
     invoke-virtual {v6, v7, v8, v9}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
@@ -3389,7 +3389,7 @@
 
     const-string v8, "string"
 
-    const-string v9, "com.android.settings"
+    const-string v9, "com.android.settings_ex"
 
     invoke-virtual {v6, v7, v8, v9}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
@@ -3405,7 +3405,7 @@
 
     const-string v8, "string"
 
-    const-string v9, "com.android.settings"
+    const-string v9, "com.android.settings_ex"
 
     invoke-virtual {v6, v7, v8, v9}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
@@ -3421,7 +3421,7 @@
 
     const-string v8, "string"
 
-    const-string v9, "com.android.settings"
+    const-string v9, "com.android.settings_ex"
 
     invoke-virtual {v6, v7, v8, v9}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 

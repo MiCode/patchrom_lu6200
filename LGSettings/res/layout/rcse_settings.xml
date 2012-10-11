@@ -12,14 +12,14 @@
     <PreferenceCategory android:title="@string/sp_rcs_e_about_service_NORMAL">
         <PreferenceScreen android:title="@string/sp_rcs_e_service_agree_title_NORMAL" android:key="container" android:summary="@string/sp_rcs_e_service_agree_sum_NORMAL">
             <PreferenceScreen android:title="@string/sp_rcs_e_terms_title_NORMAL" android:key="rcs_e_terms">
-                <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings_ex.RcsSettings" />
+                <intent android:targetPackage="com.android.settings_ex" android:targetClass="com.android.settings_ex.RcsSettings" />
             </PreferenceScreen>
             <PreferenceScreen android:title="@string/sp_rcs_e_privacy_title_NORMAL" android:key="rcs_e_privacy">
-                <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings_ex.RcsAgreeSettings" />
+                <intent android:targetPackage="com.android.settings_ex" android:targetClass="com.android.settings_ex.RcsAgreeSettings" />
             </PreferenceScreen>
         </PreferenceScreen>
         <PreferenceScreen android:title="@string/sp_rcs_e_notices_NORMAL" android:key="rcs_e_notice" android:summary="@string/sp_summary_rcs_e_notices_NORMAL">
-            <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings_ex.RcseNotiList" />
+            <intent android:targetPackage="com.android.settings_ex" android:targetClass="com.android.settings_ex.RcseNotiList" />
         </PreferenceScreen>
     </PreferenceCategory>
 </PreferenceScreen>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/sound_settings" android:key="sound_settings"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex">
     <ListPreference android:persistent="false" android:entries="@array/sp_sound_profile_entries_NORMAL" android:title="@string/sp_sound_profile_title_NORMAL" android:key="sound_profile" android:summary="@string/sp_sound_profile_title_NORMAL" android:entryValues="@array/sp_sound_profile_values_NORMAL" />
     <com.android.settings_ex.VibrateVolumePreference android:persistent="false" android:title="@string/vibrate_volume_title" android:key="vibrate_volume" android:summary="@string/vibrate_volume_summary" android:dialogTitle="@string/vibrate_volume_title" />
     <com.android.settings_ex.RingerVolumePreference android:persistent="false" android:title="@string/all_volume_title" android:key="ring_volume" android:dialogTitle="@string/all_volume_title" android:streamType="ring" />
@@ -11,25 +11,25 @@
     <PreferenceCategory android:title="@string/sound_category_calls_and_notification_title" android:key="category_calls_and_notification">
         <com.android.settings_ex.DefaultRingtonePreference android:persistent="false" android:title="@string/ringtone_title" android:key="ringtone" android:dialogTitle="@string/ringtone_title" android:ringtoneType="ringtone" />
         <Preference android:title="@string/ringtone_title" android:key="lg_ringtone">
-            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
+            <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
         </Preference>
         <Preference android:title="@string/sp_vc_ringtone_title_NORMAL" android:key="vt_ringtone">
-            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
+            <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
         </Preference>
         <Preference android:title="@string/sp_sub_sim2_ringtone_title_NORMAL" android:key="sub_ringtone">
-            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
+            <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
         </Preference>
         <Preference android:title="@string/sp_sound_noti_NORMAL" android:key="lg_notification">
-            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
+            <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
         </Preference>
         <Preference android:title="@string/sp_sub_sim2_notification_sound_title_NORMAL" android:key="sub_notification_sound">
-            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
+            <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
         </Preference>
         <com.android.settings_ex.DefaultRingtonePreference android:persistent="false" android:title="@string/sp_sound_noti_NORMAL" android:key="notification_sound" android:dialogTitle="@string/notification_sound_title" android:ringtoneType="notification" />
         <CheckBoxPreference android:persistent="false" android:title="@string/sp_ringtone_with_vibration_title_NORMAL" android:key="ringtone_with_vibration" android:summary="@string/sp_ringtone_with_vibration_summary_NORMAL" />
         <CheckBoxPreference android:persistent="false" android:title="@string/sp_smart_ringtone_title_NORMAL" android:key="smart_ringtone_sound" android:summary="@string/sp_smart_ringtone_summary_NORMAL" />
         <Preference android:title="@string/sp_vibrate_type_title_SHORT" android:key="vibrate_type">
-            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
+            <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.RingtonePicker" />
         </Preference>
     </PreferenceCategory>
     <com.android.settings_ex.QuietTimeSwitchPreference android:title="@string/sp_quiet_time_NORMAL" android:key="timed_silent" android:summary="@string/sp_quiet_time_summary_NORMAL" android:defaultValue="false" />

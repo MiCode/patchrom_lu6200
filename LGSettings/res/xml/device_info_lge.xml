@@ -5,14 +5,14 @@
         <intent android:action="android.settings.SOFTWARE_UPDATE_SETTINGS" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/status_operator" android:key="network" android:summary="@string/sp_NetworkType_NORMAL">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.DeviceInfoLgeNetwork" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.DeviceInfoLgeNetwork" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/sp_phone_identity_NORMAL" android:key="phoneidentity">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.DeviceInfoLgePhoneIdentity" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.DeviceInfoLgePhoneIdentity" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/power_usage_summary_title" android:key="battery" android:summary="@string/sp_BatterySummary_NORMAL" android:fragment="com.android.settings_ex.lge.DeviceInfoLgeBattery" />
     <PreferenceScreen android:title="@string/sp_HardwareInfo_NORMAL" android:key="hardwareinformation" android:summary="@string/sp_HWversion_NORMAL">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.DeviceInfoLgeHardwareInformation" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lge.DeviceInfoLgeHardwareInformation" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/sp_Softwareinfo_NORMAL" android:key="softwareinformation" android:summary="@string/sp_SWSummary_NORMAL" android:fragment="com.android.settings_ex.lge.DeviceInfoLgeSoftwareInformation" />
     <PreferenceScreen android:title="@string/legal_information" android:key="container" android:summary="@string/sp_LegalInfoSummary_NORMAL">

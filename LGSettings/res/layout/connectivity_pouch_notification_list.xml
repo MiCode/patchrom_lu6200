@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex">
     <CheckBoxPreference android:title="@string/sp_pouch_missed_call_title_NORMAL" android:key="pouch_missed_call" android:summary="@string/sp_pouch_missed_call_summury_NORMAL" />
     <CheckBoxPreference android:title="@string/sp_pouch_message_title_NORMAL" android:key="pouch_message" android:summary="@string/sp_pouch_message_summury_NORMAL" />
     <CheckBoxPreference android:title="@string/sp_pouch_voice_message_title_NORMAL" android:key="pouch_voice_message" android:summary="@string/sp_pouch_voice_message_summury_NORMAL" />

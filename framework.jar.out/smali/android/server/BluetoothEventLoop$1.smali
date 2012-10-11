@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 295
+    .line 300
     iput-object p1, p0, Landroid/server/BluetoothEventLoop$1;->this$0:Landroid/server/BluetoothEventLoop;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +43,12 @@
     .parameter "proxy"
 
     .prologue
-    .line 297
+    .line 302
     const/4 v0, 0x2
 
     if-ne p1, v0, :cond_0
 
-    .line 298
+    .line 303
     iget-object v0, p0, Landroid/server/BluetoothEventLoop$1;->this$0:Landroid/server/BluetoothEventLoop;
 
     check-cast p2, Landroid/bluetooth/BluetoothA2dp;
@@ -57,7 +57,7 @@
     #setter for: Landroid/server/BluetoothEventLoop;->mA2dp:Landroid/bluetooth/BluetoothA2dp;
     invoke-static {v0, p2}, Landroid/server/BluetoothEventLoop;->access$902(Landroid/server/BluetoothEventLoop;Landroid/bluetooth/BluetoothA2dp;)Landroid/bluetooth/BluetoothA2dp;
 
-    .line 300
+    .line 305
     :cond_0
     return-void
 .end method
@@ -67,12 +67,12 @@
     .parameter "profile"
 
     .prologue
-    .line 302
+    .line 307
     const/4 v0, 0x2
 
     if-ne p1, v0, :cond_0
 
-    .line 303
+    .line 308
     iget-object v0, p0, Landroid/server/BluetoothEventLoop$1;->this$0:Landroid/server/BluetoothEventLoop;
 
     const/4 v1, 0x0
@@ -80,7 +80,7 @@
     #setter for: Landroid/server/BluetoothEventLoop;->mA2dp:Landroid/bluetooth/BluetoothA2dp;
     invoke-static {v0, v1}, Landroid/server/BluetoothEventLoop;->access$902(Landroid/server/BluetoothEventLoop;Landroid/bluetooth/BluetoothA2dp;)Landroid/bluetooth/BluetoothA2dp;
 
-    .line 305
+    .line 310
     :cond_0
     return-void
 .end method

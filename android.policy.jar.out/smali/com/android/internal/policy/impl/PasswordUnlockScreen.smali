@@ -138,6 +138,7 @@
     const/4 v2, 0x2
 
     if-eq v1, v2, :cond_6
+
     .line 127
     const v1, 0x109004f
 
@@ -197,6 +198,7 @@
     iget-object v1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mPasswordEntry:Landroid/widget/EditText;
 
     invoke-virtual {v1, p0}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
+
     .line 140
     sget-object v1, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->sOperator:Ljava/lang/String;
 
@@ -291,9 +293,9 @@
     check-cast v1, Landroid/widget/Button;
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mResetPassword:Landroid/widget/Button;
+
     .line 164
     iget-object v1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mResetPassword:Landroid/widget/Button;
-
 
     new-instance v2, Lcom/android/internal/policy/impl/PasswordUnlockScreen$1;
 
@@ -565,17 +567,14 @@
 
     if-eqz v1, :cond_11
 
-    .line 287
     invoke-direct {p0}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->handleAttemptLockoutNow()V
 
-    .line 293
     :cond_5
     :goto_7
     invoke-direct {p0}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->initLockByFindDevice()V
 
     return-void
 
-    .line 129
     .end local v8           #imeOrDeleteButtonVisible:Z
     .end local v9           #imm:Landroid/view/inputmethod/InputMethodManager;
     .end local v13           #quality:I
@@ -1412,17 +1411,14 @@
 
     invoke-interface {v3, v4}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->keyguardDone(Z)V
 
-    .line 421
     iget-object v3, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
     invoke-interface {v3}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->reportSuccessfulUnlockAttempt()V
 
-    .line 422
     iget-object v3, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mStatusViewManager:Lcom/android/internal/policy/impl/KeyguardStatusViewManager;
 
     invoke-virtual {v3, v6}, Lcom/android/internal/policy/impl/KeyguardStatusViewManager;->setInstructionText(Ljava/lang/String;)V
 
-    .line 423
     invoke-direct {p0, v2}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->clearPinLockForFindDevice(Ljava/lang/String;)V
 
 

@@ -688,7 +688,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 445
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-string v2, "com.android.settings_ex.EntitlementDialogActivity"
 
@@ -795,7 +795,7 @@
 
     .line 625
     .local v0, send:Landroid/content/Intent;
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-string v2, "com.android.settings_ex.deviceinfo.UsbTetherIntroUSCActivity"
 

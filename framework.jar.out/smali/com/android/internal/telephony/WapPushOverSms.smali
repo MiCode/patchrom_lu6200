@@ -1150,7 +1150,7 @@
 
     .line 338
     :cond_f
-    const-string v32, "smscAdd"
+    const-string/jumbo v32, "smscAdd"
 
     move-object/from16 v0, v16
 
@@ -1160,7 +1160,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 339
     const-string v32, "address"
 
     move-object/from16 v0, v16
@@ -1186,7 +1185,7 @@
     if-eqz v32, :cond_11
 
     .line 344
-    const-string v32, "pdu"
+    const-string/jumbo v32, "pdu"
 
     move-object/from16 v0, v16
 

@@ -8,10 +8,10 @@
         <intent android:action="android.settings.SOFTWARE_UPDATE_SETTINGS" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/device_status" android:key="status_info" android:summary="@string/device_status_summary">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.Status" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.Status" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/device_status" android:key="dualsim_status_info" android:summary="@string/device_status_summary">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.MobileStatusSettings" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.MobileStatusSettings" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/legal_information" android:key="container">
         <PreferenceScreen android:title="@string/copyright_title" android:key="copyright">
@@ -36,9 +36,9 @@
     <Preference android:persistent="false" android:title="@string/sp_HWVersion_NORMAL" android:key="rev_check" android:summary="@string/device_info_not_available" />
     <Preference android:title="@string/sp_status_pri_version_NORMAL" android:key="pri_version" android:summary="@string/device_info_default" style="?android:preferenceInformationStyle" />
     <PreferenceScreen android:title="@string/sp_power_save_battery_NORMAL" android:key="battery_dcm">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.Battery" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.Battery" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/sp_regulatory_information_NORMAL" android:key="regulatory_dcm">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.RegulatoryInformation" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.RegulatoryInformation" />
     </PreferenceScreen>
 </PreferenceScreen>

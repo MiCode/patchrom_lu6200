@@ -367,6 +367,7 @@
 
 .field private m_brightness:I
 
+
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
@@ -700,6 +701,7 @@
 
     iput-object v2, p0, Lcom/android/server/PowerManagerService;->mForceReenableScreenTask:Ljava/lang/Runnable;
 
+    .line 2575
     new-instance v2, Lcom/android/server/PowerManagerService$9;
 
     invoke-direct {v2, p0}, Lcom/android/server/PowerManagerService$9;-><init>(Lcom/android/server/PowerManagerService;)V
@@ -3857,12 +3859,15 @@
     .parameter "reason"
 
     .prologue
+    .line 1801
     iget-object v10, p0, Lcom/android/server/PowerManagerService;->mLocks:Lcom/android/server/PowerManagerService$LockList;
 
     monitor-enter v10
 
+    .line 1811
     if-eqz p2, :cond_0
 
+    .line 1812
     and-int/lit8 v9, p1, -0xf
 
     :try_start_0

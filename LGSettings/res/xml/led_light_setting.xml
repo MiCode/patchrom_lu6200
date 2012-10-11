@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/sp_notification_flash_NORMAL" android:key="front_key_screen"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex">
     <CheckBoxPreference android:title="@string/sp_notification_all_title_NORMAL" android:key="front_key_all" android:summary="@string/sp_notification_all_summary_NORMAL" android:defaultValue="false" />
     <PreferenceCategory android:title="@string/sp_title_notification_flash_setting_NORMAL" android:key="front_category">
         <Preference android:persistent="false" android:title="@string/sp_summary_select_notification_NORMAL" android:selectable="false" android:key="notification_summary" style="@style/PowersavePreference_information" />

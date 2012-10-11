@@ -1364,7 +1364,7 @@
     .locals 1
 
     .prologue
-    .line 692
+    .line 690
     const/4 v0, 0x0
 
     return v0
@@ -1455,10 +1455,10 @@
 .end method
 
 .method private setPopUp()V
-    .locals 7
+    .locals 6
 
     .prologue
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
     .line 565
     const-string v3, "CdmaRILEventDispatcher"
@@ -1467,19 +1467,23 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 566
+    .line 567
     const-string v1, ""
 
-    .line 567
-    .local v1, messageRes:Ljava/lang/String;
+    .line 568
+    .local v1, message:Ljava/lang/String;
     iget-boolean v3, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLGTUnregister:Z
 
     if-eqz v3, :cond_2
 
-    .line 568
-    const-string/jumbo v1, "lgt_unregister"
+    .line 569
+    const-string/jumbo v3, "lgt_unregister"
 
-    .line 606
+    invoke-static {v3}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 608
     :cond_0
     :goto_0
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -1494,56 +1498,112 @@
 
     if-nez v3, :cond_1
 
-    .line 607
+    .line 609
     invoke-direct {p0, v1}, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->showPopUp(Ljava/lang/String;)V
 
-    .line 609
+    .line 611
     :cond_1
     return-void
 
-    .line 569
+    .line 570
     :cond_2
     iget-boolean v3, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLGTUnauthenticated:Z
 
     if-eqz v3, :cond_3
 
-    .line 570
-    const-string/jumbo v1, "lgt_unauthenticated"
+    .line 571
+    const-string/jumbo v3, "lgt_unauthenticated"
+
+    invoke-static {v3}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
 
     goto :goto_0
 
-    .line 571
+    .line 572
     :cond_3
     iget-boolean v3, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLGTHDRNetworkError:Z
 
     if-eqz v3, :cond_4
 
-    .line 572
-    const-string/jumbo v1, "lgt_hdr_network_error"
+    .line 573
+    const-string/jumbo v3, "lgt_hdr_network_error"
+
+    invoke-static {v3}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
 
     goto :goto_0
 
-    .line 575
+    .line 576
     :cond_4
     iget-boolean v3, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLTEAuthError:Z
 
     if-eqz v3, :cond_5
 
-    .line 576
-    const-string/jumbo v1, "lgt_hdr_network_error"
+    .line 577
+    const-string/jumbo v3, "lgt_hdr_network_error"
+
+    invoke-static {v3}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
 
     goto :goto_0
 
-    .line 580
+    .line 581
     :cond_5
     iget-boolean v3, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLTEEMMReject:Z
 
     if-eqz v3, :cond_0
 
-    .line 581
-    const-string/jumbo v1, "lgt_lteemmreject"
-
     .line 583
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "lgt_lteemmreject"
+
+    invoke-static {v4}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string v4, "("
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    iget v4, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mRejectNum:I
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string v4, ") \n"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string/jumbo v4, "lgt_lteemmreject_sub"
+
+    invoke-static {v4}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 585
     iget v3, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mRejectNum:I
 
     const/4 v4, 0x5
@@ -1556,77 +1616,33 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 585
+    .line 587
     :cond_6
     iget-object v3, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mContext:Landroid/content/Context;
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    const/4 v4, 0x1
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {v1}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    const-string v5, "("
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    iget v5, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mRejectNum:I
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    const-string v5, ") \n"
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    const-string/jumbo v5, "lgt_lteemmreject_sub"
-
-    invoke-static {v5}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    const/4 v5, 0x1
-
-    invoke-static {v3, v4, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    invoke-static {v3, v1, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v2
 
-    .line 586
+    .line 588
     .local v2, toast:Landroid/widget/Toast;
     const/16 v3, 0x50
 
-    invoke-virtual {v2, v3, v6, v6}, Landroid/widget/Toast;->setGravity(III)V
-
-    .line 587
-    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
+    invoke-virtual {v2, v3, v5, v5}, Landroid/widget/Toast;->setGravity(III)V
 
     .line 589
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
+
+    .line 591
     new-instance v0, Landroid/content/Intent;
 
     const-string v3, "com.android.phone.EmergencyDialer.DIAL"
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 590
+    .line 592
     .local v0, intent:Landroid/content/Intent;
     const-string/jumbo v3, "rejectCode"
 
@@ -1634,183 +1650,88 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 592
+    .line 594
     if-eqz v0, :cond_7
 
-    .line 593
+    .line 595
     const/high16 v3, 0x1080
 
     invoke-virtual {v0, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 594
+    .line 596
     iget-object v3, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 596
+    .line 598
     :cond_7
     const-string v1, ""
 
-    .line 597
-    iput-boolean v6, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLTEEMMReject:Z
+    .line 599
+    iput-boolean v5, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLTEEMMReject:Z
 
-    iput-boolean v6, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLTEAuthError:Z
+    iput-boolean v5, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLTEAuthError:Z
 
-    iput-boolean v6, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLGTHDRNetworkError:Z
+    iput-boolean v5, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLGTHDRNetworkError:Z
 
-    iput-boolean v6, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLGTUnauthenticated:Z
+    iput-boolean v5, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLGTUnauthenticated:Z
 
-    iput-boolean v6, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLGTUnregister:Z
+    iput-boolean v5, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLGTUnregister:Z
 
-    .line 598
-    iput v6, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mRejectNum:I
+    .line 600
+    iput v5, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mRejectNum:I
 
     goto/16 :goto_0
 .end method
 
 .method private showPopUp(Ljava/lang/String;)V
-    .locals 5
-    .parameter "messageRes"
+    .locals 4
+    .parameter "message"
 
     .prologue
-    .line 614
+    .line 617
     invoke-static {}, Lcom/android/internal/telephony/TelephonyUtils;->isFactoryMode()Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_1
 
-    .line 666
+    .line 664
     :cond_0
     :goto_0
     return-void
 
-    .line 617
-    :cond_1
-    const-string v2, "CdmaRILEventDispatcher"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "showPopUp / messageRes : "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string v4, ", mLockOrderPopup : "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget-object v4, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string v4, ", mRejectNum = "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget v4, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mRejectNum:I
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
     .line 620
-    iget-object v2, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
+    :cond_1
+    const-string v1, "CdmaRILEventDispatcher"
 
-    if-eqz v2, :cond_3
-
-    .line 622
-    iget-boolean v2, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->debugFilter:Z
-
-    if-eqz v2, :cond_2
-
-    const-string v2, "CdmaRILEventDispatcher"
-
-    const-string v3, "New messageRes close previous popup"
-
-    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 623
-    :cond_2
-    iget-object v2, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
-
-    invoke-virtual {v2}, Landroid/app/AlertDialog;->dismiss()V
-
-    .line 624
-    const/4 v2, 0x0
-
-    iput-object v2, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
-
-    .line 627
-    :cond_3
-    iput-object p1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->curMessageRes:Ljava/lang/String;
-
-    .line 630
-    iget-object v2, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
-
-    if-nez v2, :cond_0
-
-    .line 631
-    new-instance v0, Landroid/app/AlertDialog$Builder;
-
-    iget-object v2, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    invoke-direct {v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    .line 633
-    .local v0, ad:Landroid/app/AlertDialog$Builder;
-    const-string v2, "CdmaRILEventDispatcher"
-
-    const-string/jumbo v3, "showPopUp / new AlertDialog.Builder"
-
-    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 636
-    iget-boolean v2, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mIsLTEEMMReject:Z
-
-    if-eqz v2, :cond_4
-
-    .line 637
-    const/4 v1, 0x0
-
-    .line 638
-    .local v1, msg:Ljava/lang/String;
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {p1}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
+    const-string/jumbo v3, "showPopUp / message : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    const-string v3, "("
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "  mLockOrderPopup:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, ", mRejectNum="
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1822,99 +1743,125 @@
 
     move-result-object v2
 
-    const-string v3, ") \n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string/jumbo v3, "lgt_lteemmreject_sub"
-
-    invoke-static {v3}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 623
+    iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
+
+    if-eqz v1, :cond_3
+
+    .line 625
+    iget-boolean v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->debugFilter:Z
+
+    if-eqz v1, :cond_2
+
+    const-string v1, "CdmaRILEventDispatcher"
+
+    const-string v2, "New messageRes close previous popup"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 626
+    :cond_2
+    iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
+
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
+
+    .line 627
+    const/4 v1, 0x0
+
+    iput-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
+
+    .line 633
+    :cond_3
+    iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
+
+    if-nez v1, :cond_0
+
+    .line 634
+    new-instance v0, Landroid/app/AlertDialog$Builder;
+
+    iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
+    invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    .line 636
+    .local v0, ad:Landroid/app/AlertDialog$Builder;
+    const-string v1, "CdmaRILEventDispatcher"
+
+    const-string/jumbo v2, "showPopUp / new AlertDialog.Builder"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
     .line 639
-    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-
-    .line 644
-    .end local v1           #msg:Ljava/lang/String;
-    :goto_1
-    const-string v2, "CdmaRILEventDispatcher"
-
-    const-string/jumbo v3, "showPopUp / setMessage"
-
-    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 646
-    const-string/jumbo v2, "telephony_dialog_ok_button"
-
-    invoke-static {v2}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v3, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher$2;
-
-    invoke-direct {v3, p0}, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher$2;-><init>(Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;)V
-
-    invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setNeutralButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    .line 657
-    const-string v2, "CdmaRILEventDispatcher"
-
-    const-string/jumbo v3, "showPopUp / setNeutralButton"
-
-    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 659
-    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
-
-    .line 660
-    iget-object v2, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
-
-    invoke-virtual {v2}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v2
-
-    const/16 v3, 0x7d8
-
-    invoke-virtual {v2, v3}, Landroid/view/Window;->setType(I)V
-
-    .line 662
-    iget-object v2, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
-
-    invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
-
-    .line 664
-    const-string v2, "CdmaRILEventDispatcher"
-
-    const-string/jumbo v3, "showPopUp / show"
-
-    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto/16 :goto_0
+    invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 642
-    :cond_4
-    invoke-static {p1}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
+    const-string v1, "CdmaRILEventDispatcher"
 
-    move-result-object v2
+    const-string/jumbo v2, "showPopUp / setMessage"
 
-    invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_1
+    .line 644
+    const-string/jumbo v1, "telephony_dialog_ok_button"
+
+    invoke-static {v1}, Lcom/android/internal/telephony/TelephonyUtils;->getTelephonyString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher$2;
+
+    invoke-direct {v2, p0}, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher$2;-><init>(Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    .line 655
+    const-string v1, "CdmaRILEventDispatcher"
+
+    const-string/jumbo v2, "showPopUp / setNeutralButton"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 657
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
+
+    .line 658
+    iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
+
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    const/16 v2, 0x7d8
+
+    invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
+
+    .line 660
+    iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderPopup:Landroid/app/AlertDialog;
+
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
+
+    .line 662
+    const-string v1, "CdmaRILEventDispatcher"
+
+    const-string/jumbo v2, "showPopUp / show"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
 .end method
 
 
@@ -1938,73 +1885,73 @@
     .locals 2
 
     .prologue
-    .line 698
+    .line 696
     const-string v0, "CdmaRILEventDispatcher"
 
     const-string v1, "CdmaRILEventDispatcher finalized"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 700
+    .line 698
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 701
+    .line 699
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mLockOrderReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 703
+    .line 701
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mCm:Lcom/android/internal/telephony/CommandsInterface;
 
     invoke-interface {v0, p0}, Lcom/android/internal/telephony/CommandsInterface;->unregisterForOtaSessionFail(Landroid/os/Handler;)V
 
-    .line 704
+    .line 702
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mCm:Lcom/android/internal/telephony/CommandsInterface;
 
     invoke-interface {v0, p0}, Lcom/android/internal/telephony/CommandsInterface;->unregisterForOtaSessionSuccess(Landroid/os/Handler;)V
 
-    .line 705
+    .line 703
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mCm:Lcom/android/internal/telephony/CommandsInterface;
 
     invoke-interface {v0, p0}, Lcom/android/internal/telephony/CommandsInterface;->unregisterForLockStateChanged(Landroid/os/Handler;)V
 
-    .line 706
+    .line 704
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mCm:Lcom/android/internal/telephony/CommandsInterface;
 
     invoke-interface {v0, p0}, Lcom/android/internal/telephony/CommandsInterface;->unregisterForCdmaSidChanged(Landroid/os/Handler;)V
 
-    .line 707
+    .line 705
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mCm:Lcom/android/internal/telephony/CommandsInterface;
 
     invoke-interface {v0, p0}, Lcom/android/internal/telephony/CommandsInterface;->unregisterForWpbxStateChanged(Landroid/os/Handler;)V
 
-    .line 708
+    .line 706
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mCm:Lcom/android/internal/telephony/CommandsInterface;
 
     invoke-interface {v0, p0}, Lcom/android/internal/telephony/CommandsInterface;->unregisterForNetworkErrorDisp(Landroid/os/Handler;)V
 
-    .line 709
+    .line 707
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mCm:Lcom/android/internal/telephony/CommandsInterface;
 
     invoke-interface {v0, p0}, Lcom/android/internal/telephony/CommandsInterface;->unregisterForHdrLock(Landroid/os/Handler;)V
 
-    .line 710
+    .line 708
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mCm:Lcom/android/internal/telephony/CommandsInterface;
 
     invoke-interface {v0, p0}, Lcom/android/internal/telephony/CommandsInterface;->unregisterForLteLock(Landroid/os/Handler;)V
 
-    .line 711
+    .line 709
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaRILEventDispatcher;->mCm:Lcom/android/internal/telephony/CommandsInterface;
 
     invoke-interface {v0, p0}, Lcom/android/internal/telephony/CommandsInterface;->unregisterForLteEmmReject(Landroid/os/Handler;)V
 
-    .line 712
+    .line 710
     return-void
 .end method
 

@@ -4267,7 +4267,6 @@
 
     move-result v1
 
-    .line 1769
     .local v1, len:I
     const/4 v0, 0x0
 
@@ -5536,10 +5535,8 @@
 
     move v9, v8
 
-    .line 1906
     goto :goto_0
 
-    .line 1911
     :cond_2
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->extractNetworkPortionAlt(Ljava/lang/String;)Ljava/lang/String;
 
@@ -5549,7 +5546,6 @@
 
     move-result-object p0
 
-    .line 1914
     const-string v10, "JP"
 
     const-string v11, "DCM"

@@ -9752,14 +9752,11 @@
 
     if-nez v8, :cond_3
 
-    .line 3500
     :cond_2
     iput-object p2, p0, Landroid/app/ActivityThread;->mResCompatibilityInfo:Landroid/content/res/CompatibilityInfo;
 
-    .line 3501
     or-int/lit16 v0, v0, 0xd00
 
-    .line 3507
     :cond_3
     invoke-static {v0}, Landroid/app/MiuiThemeHelper;->handleExtraConfigurationChanges(I)V
 
@@ -9767,36 +9764,28 @@
 
     if-eqz v8, :cond_4
 
-    .line 3508
     iget-object v8, p1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
     invoke-static {v8}, Ljava/util/Locale;->setDefault(Ljava/util/Locale;)V
 
-    .line 3512
     :cond_4
     sget-boolean v8, Lcom/lge/config/ConfigBuildFlags;->CAPP_FONTS:Z
 
     if-eqz v8, :cond_5
 
-    .line 3513
     and-int/lit16 v2, v0, 0x1000
 
-    .line 3514
     .local v2, fontChange:I
     if-eqz v2, :cond_5
 
-    .line 3515
     invoke-virtual {p0}, Landroid/app/ActivityThread;->updateFontConfigurationLocked()V
 
-    .line 3519
     .end local v2           #fontChange:I
     :cond_5
     invoke-static {p1, v1, p2}, Landroid/content/res/Resources;->updateSystemConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;Landroid/content/res/CompatibilityInfo;)V
 
-    .line 3521
     invoke-static {}, Landroid/app/ApplicationPackageManager;->configurationChanged()V
 
-    .line 3524
     iget-object v8, p0, Landroid/app/ActivityThread;->mActiveResources:Ljava/util/HashMap;
 
     invoke-virtual {v8}, Ljava/util/HashMap;->values()Ljava/util/Collection;

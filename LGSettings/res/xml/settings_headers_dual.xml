@@ -49,6 +49,6 @@
     <header android:icon="@drawable/connectivity" android:id="@id/connectivity_settings" android:title="@string/sp_connectivity_NORMAL" android:fragment="com.android.settings_ex.lge.ConnectivitySettings" />
     <header android:icon="@drawable/ic_settings_development" android:id="@id/development_settings" android:title="@string/development_settings_title" android:fragment="com.android.settings_ex.DevelopmentSettings" />
     <header android:icon="@drawable/ic_settings_about" android:id="@id/about_settings_dual" android:title="@string/about_settings">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.MobileStatusSettings" />
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.deviceinfo.MobileStatusSettings" />
     </header>
 </preference-headers>
