@@ -1595,15 +1595,15 @@
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setAudioStreamType(I)V
 
     .line 417
-    iget-object v0, p0, Landroid/media/Ringtone;->mOperator:Ljava/lang/String;
+    #iget-object v0, p0, Landroid/media/Ringtone;->mOperator:Ljava/lang/String;
 
-    iget-object v1, p0, Landroid/media/Ringtone;->strTargetOperator:Ljava/lang/String;
+    #iget-object v1, p0, Landroid/media/Ringtone;->strTargetOperator:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    #invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v0
+    #move-result v0
 
-    if-eqz v0, :cond_17
+    #if-eqz v0, :cond_17
 
     .line 419
     :try_start_0
