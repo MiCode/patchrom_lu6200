@@ -553,7 +553,7 @@
 
     iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->PDP_REJECT_UI_DEBUG_FILE:Z
 
-    iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->APN_SELECTION:Z
+    #iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->APN_SELECTION:Z
 
     #iput-boolean v2, p0, Lcom/android/internal/telephony/LGfeature;->SUPPORT_MODE_CHANGE:Z
 
