@@ -4086,40 +4086,13 @@
     .parameter "source"
 
     .prologue
-    .line 1433
+    .line 1143
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
     invoke-direct {v0, p0}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 1435
+    .line 1144
     .local v0, text:Landroid/text/SpannableStringBuilder;
-    const-string v1, "KR"
-
-    invoke-static {v1}, Lcom/android/internal/telephony/lgeAutoProfiling;->isCountry(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 1436
-    sget-object v1, Ljava/util/Locale;->KOREA:Ljava/util/Locale;
-
-    invoke-static {v1}, Landroid/telephony/PhoneNumberUtils;->getFormatTypeForLocale(Ljava/util/Locale;)I
-
-    move-result v1
-
-    invoke-static {v0, v1}, Landroid/telephony/PhoneNumberUtils;->formatNumber(Landroid/text/Editable;I)V
-
-    .line 1442
-    :goto_0
-    invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    return-object v1
-
-    .line 1440
-    :cond_0
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
@@ -4130,7 +4103,12 @@
 
     invoke-static {v0, v1}, Landroid/telephony/PhoneNumberUtils;->formatNumber(Landroid/text/Editable;I)V
 
-    goto :goto_0
+    .line 1145
+    invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    return-object v1
 .end method
 
 .method public static formatNumber(Ljava/lang/String;I)Ljava/lang/String;
@@ -4199,37 +4177,6 @@
     .line 1732
     .local v1, result:Ljava/lang/String;
     :try_start_0
-    const-string v3, "KR"
-
-    invoke-static {v3}, Lcom/android/internal/telephony/lgeAutoProfiling;->isCountry(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    const-string v3, "KR"
-
-    invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    .line 1733
-    sget-object v3, Ljava/util/Locale;->KOREA:Ljava/util/Locale;
-
-    invoke-static {v3}, Landroid/telephony/PhoneNumberUtils;->getFormatTypeForLocale(Ljava/util/Locale;)I
-
-    move-result v3
-
-    invoke-static {p0, v3}, Landroid/telephony/PhoneNumberUtils;->formatNumber(Ljava/lang/String;I)Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    .line 1736
-    :cond_2
     invoke-virtual {v2, p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->parseAndKeepRawInput(Ljava/lang/String;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     move-result-object v0
