@@ -11388,11 +11388,11 @@
 
     move-result v22
 
-    if-eqz v22, :cond_16
+    if-eqz v22, :cond_15
 
     and-int/lit8 v22, v19, 0x1
 
-    if-nez v22, :cond_16
+    if-nez v22, :cond_15
 
     .line 3784
     const/16 v22, 0x0
@@ -11521,11 +11521,11 @@
 
     move-result v22
 
-    if-eqz v22, :cond_1a
+    if-eqz v22, :cond_1
 
     and-int/lit8 v22, v19, 0x1
 
-    if-nez v22, :cond_1a
+    if-nez v22, :cond_1
 
     .line 3811
     const/16 v22, 0xa
