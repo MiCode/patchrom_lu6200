@@ -758,9 +758,6 @@
     .end local v1           #matcher:Ljava/util/regex/Matcher;
     :cond_0
     :goto_0
-    const/4 v3, 0x1
-
-    .line 1148
     const-string v4, "RILB"
 
     new-instance v5, Ljava/lang/StringBuilder;
