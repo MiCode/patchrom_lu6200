@@ -41,9 +41,9 @@ local-zip-misc:
 	@echo Update build.prop
 	cp other/build.prop $(ZIP_DIR)/system/build.prop
 
-	@echo update bootanimation
-	rm $(ZIP_DIR)/system/bin/bootanimation
-	cp other/bootanimation $(ZIP_DIR)/system/bin/bootanimation
+#	@echo update bootanimation
+#	rm $(ZIP_DIR)/system/bin/bootanimation
+#	cp other/bootanimation $(ZIP_DIR)/system/bin/bootanimation
 
 	@echo add system config
 	cp other/system_etc/* $(ZIP_DIR)/system/etc/
