@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 在线歌曲列表缓存size -->
+    <integer name="online_audio_list_cache_size">80</integer>
+
+    <!-- 本地专辑封面缓存size -->
+    <integer name="local_album_cache_size">50</integer>
+
+    <!-- 在线图片缓存size -->
+    <integer name="online_bm_cache_size">80</integer>
+</resources>
