@@ -1341,4 +1341,7 @@ to unlock"</string>
     <string name="RestrictedWaitTitle">Please wait for a while.</string>
     <string name="RestrictedWaitTitlePacket">Please wait for a while(packet)</string>
     <string name="sp_usb_massstorage_notification_title_NORMAL">Mass storage is started.</string>
+    <string name="lte_connection_for_kt">LTE data network connection.</string>
+    <string name="dataBlock_noti_error">Mobile network error</string>
+    <string name="PdpRejectedTitle">Use data roaming.</string>
 </resources>
