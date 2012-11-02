@@ -11,7 +11,7 @@
 		<item name="change_MemoryFull_Threshold">true</item>
 		<item name="limitless_unauthorized_SMS_usage">false</item>
 	    	<item name="KREncodingScheme">true</item>
-	    	<item name="KROperator">true</item>
+	    	<item name="KROperator">false</item>
 	    <item name="KRVMSType">true</item>
 		<!-- LGU Message Start-->
 		<item name="lgu_cbs">true</item>

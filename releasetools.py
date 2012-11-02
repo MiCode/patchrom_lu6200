@@ -6,6 +6,9 @@ def AddExtraAction(info):
     info.script.AppendExtra('package_extract_file("firmware.img", "/dev/block/mmcblk0p1");');
     info.script.AppendExtra('ui_print("Update baseband...");');
     info.script.AppendExtra('package_extract_file("baseband.img", "/dev/block/mmcblk0p14");');
+    info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/mmcblk0p28", "/data");');
+    info.script.AppendExtra('run_program("/sbin/busybox", "rm", "/data/data/com.android.phone/shared_prefs/telprofiling.xml", "-rf");');
+    info.script.AppendExtra('unmount("/data");');
     edify = info.script
     for i in xrange(len(edify.script)):
         if "assert" in edify.script[i]:
