@@ -2,4 +2,6 @@
 <resources>
     <bool name="mass_storage_enable">true</bool>
     <bool name="has_button_light">true</bool>
+    <bool name="has_dock_settings">false</bool>
+    <bool name="has_led">false</bool>
 </resources>
