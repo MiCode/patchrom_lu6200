@@ -18,9 +18,9 @@ local-miui-modified-apps := Mms MiuiHome ThemeManager Phone MiuiGallery Telephon
 local-miui-removed-apps  := Stk MediaProvider Bluetooth
 
 # All apps need to be reserved from original ZIP file
-local-phone-apps := ApplicationsProvider CameraApp CertInstaller CommonService DefaultContainerService DrmProvider \
-		DrmService FaceLock KeyChain LGU_ARMService MusicFX NativeLiveWallpapersPicker Nfc Stk\
-		PackageInstaller UserDictionaryProvider MediaProvider
+local-phone-apps := ApplicationsProvider BackupRestoreConfirmation CameraApp CertInstaller DefaultContainerService DrmProvider \
+		FaceLock MediaProvider NativeLiveWallpapersPicker Nfc PackageInstaller SharedStorageBackup Stk UserDictionaryProvider \
+		VpnDialogs WAPPushManager LGSettings Bluetooth BluetoothServices
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
