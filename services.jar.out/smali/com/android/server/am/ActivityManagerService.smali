@@ -131,7 +131,7 @@
 
 .field private static final MAX_DUP_SUPPRESSED_STACKS:I = 0x1388
 
-.field static final MAX_RECENT_TASKS:I = 0xa
+.field static final MAX_RECENT_TASKS:I = 0x14
 
 .field static final MAX_SERVICE_INACTIVITY:I = 0x1b7740
 
@@ -1367,8 +1367,9 @@
     .line 824
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mBooted:Z
 
-    .line 826
-    iput v9, p0, Lcom/android/server/am/ActivityManagerService;->mProcessLimit:I
+    const/16 v2, 0xf
+
+    iput v2, p0, Lcom/android/server/am/ActivityManagerService;->mProcessLimit:I
 
     .line 827
     const/4 v2, -0x1
@@ -31700,7 +31701,7 @@
     .line 2521
     .end local v4           #tr:Lcom/android/server/am/TaskRecord;
     :cond_4
-    const/16 v5, 0xa
+    const/16 v5, 0x14
 
     if-lt v0, v5, :cond_8
 
@@ -64453,7 +64454,7 @@
     .line 4562
     if-gez p1, :cond_0
 
-    const/16 v0, 0x19
+    const/16 v0, 0xf
 
     :goto_0
     :try_start_0
@@ -72631,8 +72632,7 @@
 
     iput v13, v0, Lcom/android/server/am/ActivityManagerService;->mNumServiceProcs:I
 
-    .line 14822
-    const/16 v13, 0xc
+    const/4 v13, 0x7
 
     if-gt v10, v13, :cond_10
 
