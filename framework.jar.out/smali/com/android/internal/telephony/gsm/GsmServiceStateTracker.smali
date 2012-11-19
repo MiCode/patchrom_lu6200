@@ -6479,7 +6479,40 @@
 
     move-result v0
 
-    .line 3198
+    if-nez v1, :cond_miui_1
+
+    if-nez v2, :cond_miui_1
+
+    const-string v10, "46000"
+
+    invoke-virtual {v5, v10}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_miui_1
+
+    const-string v10, "46002"
+
+    invoke-virtual {v6, v10}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v10
+
+    if-nez v10, :cond_miui_0
+
+    const-string v10, "46007"
+
+    invoke-virtual {v6, v10}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_miui_1
+
+    :cond_miui_0
+    const/4 v1, 0x1
+
+    const/4 v2, 0x1
+
+    :cond_miui_1
     :goto_2
     if-eqz p1, :cond_3
 
