@@ -48,16 +48,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 44
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 56
     iput-boolean v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->isSilentModeChecked:Z
 
-    .line 57
     iput-boolean v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->isVibrateChecked:Z
 
-    .line 65
     const/4 v0, 0x7
 
     new-array v0, v0, [I
@@ -66,19 +62,16 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->day:[I
 
-    .line 66
     const-string v0, "left"
 
     iput-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->position:Ljava/lang/String;
 
-    .line 70
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->dialog:Landroid/app/Dialog;
 
     return-void
 
-    .line 65
     :array_0
     .array-data 0x4
         0x0t 0x0t 0x0t 0x0t
@@ -95,7 +88,6 @@
     .locals 2
 
     .prologue
-    .line 241
     iget-boolean v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->isSilentModeChecked:Z
 
     if-nez v0, :cond_0
@@ -105,17 +97,14 @@
     :goto_0
     iput-boolean v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->isSilentModeChecked:Z
 
-    .line 242
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mTimedSilentSwitch:Landroid/widget/Switch;
 
     iget-boolean v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->isSilentModeChecked:Z
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setChecked(Z)V
 
-    .line 243
     return-void
 
-    .line 241
     :cond_0
     const/4 v0, 0x0
 
@@ -126,7 +115,6 @@
     .locals 2
 
     .prologue
-    .line 246
     iget-boolean v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->isVibrateChecked:Z
 
     if-nez v0, :cond_0
@@ -136,17 +124,14 @@
     :goto_0
     iput-boolean v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->isVibrateChecked:Z
 
-    .line 247
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->vibrateCheckBox:Landroid/widget/CheckedTextView;
 
     iget-boolean v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->isVibrateChecked:Z
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
-    .line 248
     return-void
 
-    .line 246
     :cond_0
     const/4 v0, 0x0
 
@@ -166,7 +151,6 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 130
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->toggleGroup:Lcom/lge/sui/widget/control/SUIToggleButtonGroup;
 
     invoke-virtual {v1, v0}, Lcom/lge/sui/widget/control/SUIToggleButtonGroup;->getChildAt(I)Landroid/view/View;
@@ -175,7 +159,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 131
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->toggleGroup:Lcom/lge/sui/widget/control/SUIToggleButtonGroup;
 
     invoke-virtual {v1, v0}, Lcom/lge/sui/widget/control/SUIToggleButtonGroup;->getChildAt(I)Landroid/view/View;
@@ -200,7 +183,6 @@
     .parameter "x0"
 
     .prologue
-    .line 44
     invoke-direct {p0}, Lcom/android/settings_ex/TimedSilentSettings;->OnSilentGroupClick()V
 
     return-void
@@ -212,7 +194,6 @@
     .parameter "x1"
 
     .prologue
-    .line 44
     invoke-direct {p0, p1}, Lcom/android/settings_ex/TimedSilentSettings;->setlayoutVisible(Z)V
 
     return-void
@@ -357,21 +338,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 259
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBStartTimeHour()I
 
     move-result v3
 
-    .line 260
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBStartTimeMinute()I
 
     move-result v4
 
-    .line 266
     :cond_0
     :goto_0
     new-instance v0, Landroid/app/TimePickerDialog;
@@ -392,19 +370,16 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->dialog:Landroid/app/Dialog;
 
-    .line 272
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->dialog:Landroid/app/Dialog;
 
     const v1, 0x7f08014f
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setTitle(I)V
 
-    .line 274
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->dialog:Landroid/app/Dialog;
 
     return-object v0
 
-    .line 261
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->position:Ljava/lang/String;
 
@@ -416,14 +391,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 262
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBEndTimeHour()I
 
     move-result v3
 
-    .line 263
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBEndTimeMinute()I
@@ -452,7 +425,6 @@
 
     if-ge v1, v3, :cond_2
 
-    .line 374
     iget-object v3, p0, Lcom/android/settings_ex/TimedSilentSettings;->toggleGroup:Lcom/lge/sui/widget/control/SUIToggleButtonGroup;
 
     invoke-virtual {v3, v1}, Lcom/lge/sui/widget/control/SUIToggleButtonGroup;->getChildAt(I)Landroid/view/View;
@@ -461,25 +433,21 @@
 
     check-cast v0, Landroid/widget/ToggleButton;
 
-    .line 376
     .local v0, dayBtn:Landroid/widget/ToggleButton;
     if-eqz v0, :cond_0
 
-    .line 377
     invoke-virtual {v0}, Landroid/widget/ToggleButton;->isChecked()Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 378
     iget-object v3, p0, Lcom/android/settings_ex/TimedSilentSettings;->day:[I
 
     const/4 v4, 0x1
 
     aput v4, v3, v1
 
-    .line 384
     :cond_0
     :goto_1
     iget-object v3, p0, Lcom/android/settings_ex/TimedSilentSettings;->day:[I
@@ -532,7 +500,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/Calendar;->setTimeInMillis(J)V
 
-    .line 141
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
@@ -545,7 +512,6 @@
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBStartTimeHour(I)V
 
-    .line 142
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
@@ -558,7 +524,6 @@
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBStartTimeMinute(I)V
 
-    .line 144
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/QuietTimeInfo;->getDBEndTime()J
@@ -567,7 +532,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/Calendar;->setTimeInMillis(J)V
 
-    .line 145
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
@@ -580,7 +544,6 @@
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBEndTimeHour(I)V
 
-    .line 146
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
@@ -603,7 +566,6 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 390
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     iget-object v2, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -614,14 +576,12 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/android/settings_ex/QuietTimeInfo;->setDBSaveTime(J)V
 
-    .line 391
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     iget-boolean v2, p0, Lcom/android/settings_ex/TimedSilentSettings;->isVibrateChecked:Z
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBVibrateMode(Z)V
 
-    .line 392
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-direct {p0}, Lcom/android/settings_ex/TimedSilentSettings;->getToggleDayToString()Ljava/lang/String;
@@ -630,7 +590,6 @@
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBDays(Ljava/lang/String;)V
 
-    .line 393
     iget-object v2, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mTimedSilentSwitch:Landroid/widget/Switch;
@@ -646,17 +605,14 @@
     :goto_0
     invoke-virtual {v2, v0}, Lcom/android/settings_ex/QuietTimeInfo;->setDBQuietTimeState(I)V
 
-    .line 394
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/QuietTimeInfo;->setDBFirstStartFlag(I)V
 
-    .line 395
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/QuietTimeInfo;->registerAlarm()V
 
-    .line 397
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mTimedSilentSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0}, Landroid/widget/Switch;->isChecked()Z
@@ -665,7 +621,6 @@
 
     if-nez v0, :cond_0
 
-    .line 398
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -744,22 +699,16 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 305
     if-eqz p1, :cond_0
 
-    .line 307
     invoke-direct {p0, v4}, Lcom/android/settings_ex/TimedSilentSettings;->showTextViewEnabled(Z)V
 
-    .line 308
     invoke-direct {p0, v4}, Lcom/android/settings_ex/TimedSilentSettings;->showTimeBtnEnabled(Z)V
 
-    .line 309
     invoke-direct {p0, v4}, Lcom/android/settings_ex/TimedSilentSettings;->showGroupEnabled(Z)V
 
-    .line 310
     invoke-direct {p0, v4}, Lcom/android/settings_ex/TimedSilentSettings;->showToggleDayEnabled(Z)V
 
-    .line 319
     :goto_0
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
@@ -769,20 +718,15 @@
 
     invoke-virtual {v0, v1, p1}, Lcom/android/settings_ex/QuietTimeInfo;->TimedSilentReceiverEnable(Landroid/content/Context;Z)V
 
-    .line 321
     return-void
 
-    .line 313
     :cond_0
     invoke-direct {p0, v3}, Lcom/android/settings_ex/TimedSilentSettings;->showTextViewEnabled(Z)V
 
-    .line 314
     invoke-direct {p0, v3}, Lcom/android/settings_ex/TimedSilentSettings;->showTimeBtnEnabled(Z)V
 
-    .line 315
     invoke-direct {p0, v3}, Lcom/android/settings_ex/TimedSilentSettings;->showGroupEnabled(Z)V
 
-    .line 316
     invoke-direct {p0, v3}, Lcom/android/settings_ex/TimedSilentSettings;->showToggleDayEnabled(Z)V
 
     goto :goto_0
@@ -793,12 +737,10 @@
     .parameter "b"
 
     .prologue
-    .line 344
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->vibrateGroup:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
-    .line 345
     return-void
 .end method
 
@@ -807,27 +749,22 @@
     .parameter "b"
 
     .prologue
-    .line 324
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->schedule:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    .line 325
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->repeat:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    .line 326
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->schedultTo:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    .line 327
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->desc0:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    .line 328
     return-void
 .end method
 
@@ -836,17 +773,14 @@
     .parameter "b"
 
     .prologue
-    .line 339
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->timeStartBtn:Landroid/widget/Button;
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 340
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->timeEndBtn:Landroid/widget/Button;
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 341
     return-void
 .end method
 
@@ -863,7 +797,6 @@
 
     if-ge v1, v3, :cond_2
 
-    .line 360
     iget-object v3, p0, Lcom/android/settings_ex/TimedSilentSettings;->toggleGroup:Lcom/lge/sui/widget/control/SUIToggleButtonGroup;
 
     invoke-virtual {v3, v1}, Lcom/lge/sui/widget/control/SUIToggleButtonGroup;->getChildAt(I)Landroid/view/View;
@@ -923,7 +856,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 349
     iget-object v2, p0, Lcom/android/settings_ex/TimedSilentSettings;->toggleGroup:Lcom/lge/sui/widget/control/SUIToggleButtonGroup;
 
     invoke-virtual {v2, v1}, Lcom/lge/sui/widget/control/SUIToggleButtonGroup;->getChildAt(I)Landroid/view/View;
@@ -958,25 +890,21 @@
     .parameter "view"
 
     .prologue
-    .line 210
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 238
     :goto_0
     :sswitch_0
     return-void
 
-    .line 212
     :sswitch_1
     const-string v0, "left"
 
     iput-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->position:Ljava/lang/String;
 
-    .line 213
     invoke-direct {p0}, Lcom/android/settings_ex/TimedSilentSettings;->createDialog()Landroid/app/Dialog;
 
     move-result-object v0
@@ -985,13 +913,11 @@
 
     goto :goto_0
 
-    .line 216
     :sswitch_2
     const-string v0, "right"
 
     iput-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->position:Ljava/lang/String;
 
-    .line 217
     invoke-direct {p0}, Lcom/android/settings_ex/TimedSilentSettings;->createDialog()Landroid/app/Dialog;
 
     move-result-object v0
@@ -1000,22 +926,18 @@
 
     goto :goto_0
 
-    .line 220
     :sswitch_3
     invoke-direct {p0}, Lcom/android/settings_ex/TimedSilentSettings;->OnVibrateGroupClick()V
 
     goto :goto_0
 
-    .line 223
     :sswitch_4
     invoke-direct {p0}, Lcom/android/settings_ex/TimedSilentSettings;->save()V
 
-    .line 224
     invoke-virtual {p0}, Lcom/android/settings_ex/TimedSilentSettings;->finish()V
 
     goto :goto_0
 
-    .line 210
     nop
 
     :sswitch_data_0
@@ -1042,15 +964,12 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 74
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 76
     const v1, 0x7f060044
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/TimedSilentSettings;->setContentView(I)V
 
-    .line 78
     const v1, 0x7f0b0283
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/TimedSilentSettings;->findViewById(I)Landroid/view/View;
@@ -1105,12 +1024,10 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->vibrateGroup:Landroid/widget/LinearLayout;
 
-    .line 85
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->vibrateGroup:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, p0}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 86
     const v1, 0x7f0b0294
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/TimedSilentSettings;->findViewById(I)Landroid/view/View;
@@ -1132,10 +1049,8 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->toggleGroup:Lcom/lge/sui/widget/control/SUIToggleButtonGroup;
 
-    .line 91
     invoke-direct {p0}, Lcom/android/settings_ex/TimedSilentSettings;->SetToggleButtonListener()V
 
-    .line 95
     const v1, 0x7f0b0284
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/TimedSilentSettings;->findViewById(I)Landroid/view/View;
@@ -1146,12 +1061,10 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->timeStartBtn:Landroid/widget/Button;
 
-    .line 96
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->timeStartBtn:Landroid/widget/Button;
 
     invoke-virtual {v1, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 97
     const v1, 0x7f0b0286
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/TimedSilentSettings;->findViewById(I)Landroid/view/View;
@@ -1162,12 +1075,10 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->timeEndBtn:Landroid/widget/Button;
 
-    .line 98
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->timeEndBtn:Landroid/widget/Button;
 
     invoke-virtual {v1, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 100
     new-instance v1, Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/TimedSilentSettings;->getApplicationContext()Landroid/content/Context;
@@ -1178,7 +1089,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
-    .line 102
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/QuietTimeInfo;->getToggleDayToArray()[I
@@ -1187,7 +1097,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->day:[I
 
-    .line 103
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/QuietTimeInfo;->isQuietTimeState()Z
@@ -1196,7 +1105,6 @@
 
     iput-boolean v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->isSilentModeChecked:Z
 
-    .line 104
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/QuietTimeInfo;->isVibrateMode()Z
@@ -1205,14 +1113,12 @@
 
     iput-boolean v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->isVibrateChecked:Z
 
-    .line 105
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->vibrateCheckBox:Landroid/widget/CheckedTextView;
 
     iget-boolean v2, p0, Lcom/android/settings_ex/TimedSilentSettings;->isVibrateChecked:Z
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
-    .line 106
     const-string v1, "TimedSilentSettings"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1241,14 +1147,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 108
     new-instance v1, Landroid/widget/Switch;
 
     invoke-direct {v1, p0}, Landroid/widget/Switch;-><init>(Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mTimedSilentSwitch:Landroid/widget/Switch;
 
-    .line 111
     invoke-virtual {p0}, Lcom/android/settings_ex/TimedSilentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -1259,20 +1163,17 @@
 
     move-result v0
 
-    .line 113
     .local v0, padding:I
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mTimedSilentSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v1, v4, v4, v0, v4}, Landroid/widget/Switch;->setPadding(IIII)V
 
-    .line 114
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mTimedSilentSwitch:Landroid/widget/Switch;
 
     iget-boolean v2, p0, Lcom/android/settings_ex/TimedSilentSettings;->isSilentModeChecked:Z
 
     invoke-virtual {v1, v2}, Landroid/widget/Switch;->setChecked(Z)V
 
-    .line 116
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/TimedSilentSettings;->getBaseContext()Landroid/content/Context;
@@ -1283,7 +1184,6 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/android/settings_ex/QuietTimeInfo;->TimedSilentReceiverEnable(Landroid/content/Context;Z)V
 
-    .line 118
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mTimedSilentSwitch:Landroid/widget/Switch;
 
     new-instance v2, Lcom/android/settings_ex/TimedSilentSettings$1;
@@ -1300,7 +1200,6 @@
     .locals 1
 
     .prologue
-    .line 333
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->dialog:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
@@ -1313,16 +1212,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 334
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->dialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 335
     :cond_0
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
-    .line 336
     return-void
 .end method
 
@@ -1358,13 +1254,10 @@
     .locals 0
 
     .prologue
-    .line 204
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 205
     invoke-direct {p0}, Lcom/android/settings_ex/TimedSilentSettings;->save()V
 
-    .line 206
     return-void
 .end method
 
@@ -1376,10 +1269,8 @@
 
     const/4 v2, 0x0
 
-    .line 183
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 185
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBFirstStartFlag()I
@@ -1388,7 +1279,6 @@
 
     if-nez v0, :cond_0
 
-    .line 186
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -1399,7 +1289,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBStartTime(J)V
 
-    .line 187
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -1432,7 +1321,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 195
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->timeEndBtn:Landroid/widget/Button;
 
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -1453,13 +1341,10 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 196
     invoke-direct {p0}, Lcom/android/settings_ex/TimedSilentSettings;->initDialogTime()V
 
-    .line 197
     invoke-direct {p0}, Lcom/android/settings_ex/TimedSilentSettings;->showToggleDayChecked()V
 
-    .line 198
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/QuietTimeInfo;->isQuietTimeState()Z
@@ -1468,21 +1353,17 @@
 
     iput-boolean v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->isSilentModeChecked:Z
 
-    .line 199
     iget-boolean v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->isSilentModeChecked:Z
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/TimedSilentSettings;->setlayoutVisible(Z)V
 
-    .line 200
     return-void
 
-    .line 190
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setTime(Z)V
 
-    .line 191
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0, v3}, Lcom/android/settings_ex/QuietTimeInfo;->setTime(Z)V
@@ -1498,17 +1379,14 @@
 
     const/4 v4, -0x2
 
-    .line 152
     invoke-super {p0}, Landroid/app/Activity;->onStart()V
 
-    .line 153
     invoke-virtual {p0}, Lcom/android/settings_ex/TimedSilentSettings;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
     invoke-virtual {v0, v1, v1}, Landroid/app/ActionBar;->setDisplayOptions(II)V
 
-    .line 155
     invoke-virtual {p0}, Lcom/android/settings_ex/TimedSilentSettings;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
@@ -1531,10 +1409,8 @@
     .locals 3
 
     .prologue
-    .line 164
     invoke-super {p0}, Landroid/app/Activity;->onStop()V
 
-    .line 165
     invoke-virtual {p0}, Lcom/android/settings_ex/TimedSilentSettings;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
@@ -1545,7 +1421,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/ActionBar;->setDisplayOptions(II)V
 
-    .line 166
     invoke-virtual {p0}, Lcom/android/settings_ex/TimedSilentSettings;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
@@ -1569,28 +1444,23 @@
 
     const/4 v3, 0x0
 
-    .line 278
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
 
-    .line 279
     .local v0, calendar:Ljava/util/Calendar;
     const/16 v1, 0x9
 
     invoke-virtual {v0, v1, v3}, Ljava/util/Calendar;->set(II)V
 
-    .line 280
     const/16 v1, 0xa
 
     invoke-virtual {v0, v1, p2}, Ljava/util/Calendar;->set(II)V
 
-    .line 281
     const/16 v1, 0xc
 
     invoke-virtual {v0, v1, p3}, Ljava/util/Calendar;->set(II)V
 
-    .line 283
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->position:Ljava/lang/String;
 
     const-string v2, "left"
@@ -1601,20 +1471,16 @@
 
     if-eqz v1, :cond_1
 
-    .line 284
     invoke-virtual {v0, v4, v3}, Ljava/util/Calendar;->set(II)V
 
-    .line 285
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v1, p2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBStartTimeHour(I)V
 
-    .line 286
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v1, p3}, Lcom/android/settings_ex/QuietTimeInfo;->setDBStartTimeMinute(I)V
 
-    .line 287
     const-string v1, "TimedSilentSettings"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1672,7 +1538,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 289
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
@@ -1681,7 +1546,6 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/android/settings_ex/QuietTimeInfo;->setDBStartTime(J)V
 
-    .line 290
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->timeStartBtn:Landroid/widget/Button;
 
     iget-object v2, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -1719,22 +1583,18 @@
 
     if-eqz v1, :cond_0
 
-    .line 292
     const/16 v1, 0x3b
 
     invoke-virtual {v0, v4, v1}, Ljava/util/Calendar;->set(II)V
 
-    .line 293
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v1, p2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBEndTimeHour(I)V
 
-    .line 294
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v1, p3}, Lcom/android/settings_ex/QuietTimeInfo;->setDBEndTimeMinute(I)V
 
-    .line 295
     const-string v1, "TimedSilentSettings"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1792,7 +1652,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 297
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
@@ -1801,7 +1660,6 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/android/settings_ex/QuietTimeInfo;->setDBEndTime(J)V
 
-    .line 298
     iget-object v1, p0, Lcom/android/settings_ex/TimedSilentSettings;->timeEndBtn:Landroid/widget/Button;
 
     iget-object v2, p0, Lcom/android/settings_ex/TimedSilentSettings;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;

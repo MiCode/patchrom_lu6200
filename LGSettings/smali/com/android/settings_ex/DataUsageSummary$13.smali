@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1412
     iput-object p1, p0, Lcom/android/settings_ex/DataUsageSummary$13;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,20 +40,17 @@
     .locals 2
 
     .prologue
-    .line 1415
     const-string v0, "DataUsage"
 
     const-string v1, "onInspectRangeChanged()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1416
     iget-object v0, p0, Lcom/android/settings_ex/DataUsageSummary$13;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #calls: Lcom/android/settings_ex/DataUsageSummary;->updateDetailData()V
     invoke-static {v0}, Lcom/android/settings_ex/DataUsageSummary;->access$2300(Lcom/android/settings_ex/DataUsageSummary;)V
 
-    .line 1417
     return-void
 .end method
 
@@ -62,7 +58,6 @@
     .locals 3
 
     .prologue
-    .line 1426
     iget-object v0, p0, Lcom/android/settings_ex/DataUsageSummary$13;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$13;->this$0:Lcom/android/settings_ex/DataUsageSummary;
@@ -87,7 +82,6 @@
     .locals 3
 
     .prologue
-    .line 1421
     iget-object v0, p0, Lcom/android/settings_ex/DataUsageSummary$13;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$13;->this$0:Lcom/android/settings_ex/DataUsageSummary;
@@ -112,7 +106,6 @@
     .locals 1
 
     .prologue
-    .line 1439
     #calls: Lcom/android/settings_ex/DataUsageSummary;->getPopupdisable()Z
     invoke-static {}, Lcom/android/settings_ex/DataUsageSummary;->access$3000()Z
 
@@ -120,18 +113,15 @@
 
     if-nez v0, :cond_0
 
-    .line 1440
     const/4 v0, 0x1
 
     #calls: Lcom/android/settings_ex/DataUsageSummary;->setPopupdisable(Z)V
     invoke-static {v0}, Lcom/android/settings_ex/DataUsageSummary;->access$3100(Z)V
 
-    .line 1441
     iget-object v0, p0, Lcom/android/settings_ex/DataUsageSummary$13;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-static {v0}, Lcom/android/settings_ex/DataUsageSummary$LimitEditorFragment;->show(Lcom/android/settings_ex/DataUsageSummary;)V
 
-    .line 1443
     :cond_0
     return-void
 .end method
@@ -140,7 +130,6 @@
     .locals 1
 
     .prologue
-    .line 1431
     #calls: Lcom/android/settings_ex/DataUsageSummary;->getPopupdisable()Z
     invoke-static {}, Lcom/android/settings_ex/DataUsageSummary;->access$3000()Z
 
@@ -148,18 +137,15 @@
 
     if-nez v0, :cond_0
 
-    .line 1432
     const/4 v0, 0x1
 
     #calls: Lcom/android/settings_ex/DataUsageSummary;->setPopupdisable(Z)V
     invoke-static {v0}, Lcom/android/settings_ex/DataUsageSummary;->access$3100(Z)V
 
-    .line 1433
     iget-object v0, p0, Lcom/android/settings_ex/DataUsageSummary$13;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-static {v0}, Lcom/android/settings_ex/DataUsageSummary$WarningEditorFragment;->show(Lcom/android/settings_ex/DataUsageSummary;)V
 
-    .line 1435
     :cond_0
     return-void
 .end method

@@ -18,13 +18,10 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 21
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 26
     iput-object v0, p0, Lcom/android/settings_ex/RcsAgreeSettings;->agreeTitle:Ljava/lang/String;
 
-    .line 27
     iput-object v0, p0, Lcom/android/settings_ex/RcsAgreeSettings;->agreeUrl:Ljava/lang/String;
 
     return-void
@@ -48,7 +45,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/RcsAgreeSettings;->mContentResolver:Landroid/content/ContentResolver;
 
-    .line 51
     iget-object v0, p0, Lcom/android/settings_ex/RcsAgreeSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "content://com.lge.ims.ac.termsprovider/terms"
@@ -217,18 +213,14 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 32
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 33
     const v2, 0x7f040089
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/RcsAgreeSettings;->setContentView(I)V
 
-    .line 34
     invoke-direct {p0}, Lcom/android/settings_ex/RcsAgreeSettings;->readTermDB()V
 
-    .line 35
     const v2, 0x7f0b0172
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/RcsAgreeSettings;->findViewById(I)Landroid/view/View;
@@ -258,19 +250,15 @@
 
     invoke-virtual {v1, v2}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
-    .line 43
     iget-object v2, p0, Lcom/android/settings_ex/RcsAgreeSettings;->agreeUrl:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
-    .line 44
     return-void
 
-    .line 38
     :catch_0
     move-exception v0
 
-    .line 40
     .local v0, e:Ljava/lang/NullPointerException;
     invoke-virtual {v0}, Ljava/lang/NullPointerException;->printStackTrace()V
 

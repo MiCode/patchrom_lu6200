@@ -27,13 +27,10 @@
     .parameter "title"
 
     .prologue
-    .line 27
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 28
     iput-object p1, p0, Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneSectionItem;->title:Ljava/lang/String;
 
-    .line 29
     return-void
 .end method
 
@@ -43,7 +40,6 @@
     .locals 1
 
     .prologue
-    .line 32
     iget-object v0, p0, Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneSectionItem;->title:Ljava/lang/String;
 
     return-object v0

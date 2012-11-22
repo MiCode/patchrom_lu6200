@@ -57,14 +57,11 @@
     .end annotation
 
     .prologue
-    .line 65
     .local p1, appList:Ljava/util/Map;,"Ljava/util/Map<Ljava/lang/String;Ljava/lang/CharSequence;>;"
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 66
     iput-object p1, p0, Lcom/android/settings_ex/UsageStats$AppNameComparator;->mAppLabelList:Ljava/util/Map;
 
-    .line 67
     return-void
 .end method
 
@@ -76,7 +73,6 @@
     .parameter "b"
 
     .prologue
-    .line 69
     iget-object v2, p0, Lcom/android/settings_ex/UsageStats$AppNameComparator;->mAppLabelList:Ljava/util/Map;
 
     iget-object v3, p1, Lcom/android/internal/os/PkgUsageStats;->packageName:Ljava/lang/String;

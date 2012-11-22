@@ -21,14 +21,11 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 20
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 21
     const v0, 0x7f040020
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsActivity;->setContentView(I)V
 
-    .line 22
     return-void
 .end method

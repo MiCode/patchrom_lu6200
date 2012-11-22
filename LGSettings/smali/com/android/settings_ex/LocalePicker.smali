@@ -11,13 +11,10 @@
     .locals 0
 
     .prologue
-    .line 36
     invoke-direct {p0}, Lcom/android/internal/app/LocalePicker;-><init>()V
 
-    .line 37
     invoke-virtual {p0, p0}, Lcom/android/settings_ex/LocalePicker;->setLocaleSelectionListener(Lcom/android/internal/app/LocalePicker$LocaleSelectionListener;)V
 
-    .line 38
     return-void
 .end method
 
@@ -28,10 +25,8 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 43
     invoke-super {p0, p1}, Lcom/android/internal/app/LocalePicker;->onActivityCreated(Landroid/os/Bundle;)V
 
-    .line 44
     invoke-virtual {p0}, Lcom/android/settings_ex/LocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -49,7 +44,6 @@
     .parameter "locale"
 
     .prologue
-    .line 51
     invoke-virtual {p0}, Lcom/android/settings_ex/LocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -64,17 +58,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 53
     invoke-virtual {p0}, Lcom/android/settings_ex/LocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/Activity;->onBackPressed()V
 
-    .line 54
     invoke-static {p1}, Lcom/android/settings_ex/LocalePicker;->updateLocale(Ljava/util/Locale;)V
 
-    .line 60
     invoke-virtual {p0}, Lcom/android/settings_ex/LocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0

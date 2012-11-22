@@ -32,14 +32,11 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 130
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 131
     const v0, 0x7f04002d
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/CryptKeeper$Blank;->setContentView(I)V
 
-    .line 132
     return-void
 .end method

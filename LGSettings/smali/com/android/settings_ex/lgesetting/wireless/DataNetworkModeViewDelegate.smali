@@ -12,7 +12,6 @@
     .locals 1
 
     .prologue
-    .line 18
     const-class v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeViewDelegate;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -30,10 +29,8 @@
     .parameter "aManager"
 
     .prologue
-    .line 21
     invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeViewDelegateBase;-><init>(Landroid/content/Context;Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;)V
 
-    .line 22
     return-void
 .end method
 
@@ -88,13 +85,11 @@
 
     check-cast v1, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeViewDelegateBase$AdapterItem;
 
-    .line 33
     .local v1, item:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeViewDelegateBase$AdapterItem;
     invoke-virtual {v1}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeViewDelegateBase$AdapterItem;->getValue()I
 
     move-result v3
 
-    .line 35
     .local v3, value:I
     invoke-virtual {v1}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeViewDelegateBase$AdapterItem;->isCheckable()Z
 
@@ -195,7 +190,6 @@
     .parameter "aItem"
 
     .prologue
-    .line 63
     invoke-virtual {p1}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeViewDelegateBase$AdapterItem;->isCheckable()Z
 
     move-result v0

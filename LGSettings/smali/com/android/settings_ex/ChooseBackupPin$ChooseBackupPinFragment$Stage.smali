@@ -52,7 +52,6 @@
 
     const/4 v4, 0x0
 
-    .line 132
     new-instance v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     const-string v1, "Introduction"
@@ -65,7 +64,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->Introduction:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
-    .line 135
     new-instance v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     const-string v1, "NeedToConfirm"
@@ -76,7 +74,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->NeedToConfirm:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
-    .line 138
     new-instance v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     const-string v1, "ConfirmWrong"
@@ -122,16 +119,12 @@
     .end annotation
 
     .prologue
-    .line 144
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 145
     iput p3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->numericHint:I
 
-    .line 146
     iput p4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->buttonText:I
 
-    .line 147
     return-void
 .end method
 
@@ -140,7 +133,6 @@
     .parameter
 
     .prologue
-    .line 130
     const-class v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -156,7 +148,6 @@
     .locals 1
 
     .prologue
-    .line 130
     sget-object v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->$VALUES:[Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     invoke-virtual {v0}, [Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->clone()Ljava/lang/Object;

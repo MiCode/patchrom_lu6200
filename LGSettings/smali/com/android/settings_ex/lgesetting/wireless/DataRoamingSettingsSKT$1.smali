@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 103
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$1;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "which"
 
     .prologue
-    .line 105
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$1;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;
 
     const/4 v1, 0x1
@@ -51,7 +49,6 @@
     #setter for: Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsSelected:Z
     invoke-static {v0, v1}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->access$002(Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;Z)Z
 
-    .line 106
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$1;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;
 
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$1;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;

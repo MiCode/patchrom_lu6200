@@ -48,16 +48,12 @@
     .parameter "items"
 
     .prologue
-    .line 67
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
-    .line 68
     iput-object p1, p0, Lcom/android/settings_ex/RingtoneEntryAdapter;->context:Landroid/content/Context;
 
-    .line 69
     iput-object p3, p0, Lcom/android/settings_ex/RingtoneEntryAdapter;->items:Ljava/util/ArrayList;
 
-    .line 70
     const-string v0, "layout_inflater"
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -99,11 +95,9 @@
 
     check-cast v0, Lcom/android/settings_ex/RingtoneItem;
 
-    .line 80
     .local v0, i:Lcom/android/settings_ex/RingtoneItem;
     if-eqz v0, :cond_0
 
-    .line 81
     invoke-interface {v0}, Lcom/android/settings_ex/RingtoneItem;->isSection()Z
 
     move-result v5
@@ -112,10 +106,8 @@
 
     move-object v2, v0
 
-    .line 82
     check-cast v2, Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneSectionItem;
 
-    .line 83
     .local v2, si:Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneSectionItem;
     iget-object v5, p0, Lcom/android/settings_ex/RingtoneEntryAdapter;->vi:Landroid/view/LayoutInflater;
 
@@ -153,7 +145,6 @@
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 101
     .end local v0           #i:Lcom/android/settings_ex/RingtoneItem;
     .end local v1           #sectionView:Landroid/widget/TextView;
     .end local v2           #si:Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneSectionItem;
@@ -161,7 +152,6 @@
     :goto_0
     return-object v4
 
-    .line 92
     .restart local v0       #i:Lcom/android/settings_ex/RingtoneItem;
     :cond_1
     check-cast v0, Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneEntryItem;
@@ -169,7 +159,6 @@
     .end local v0           #i:Lcom/android/settings_ex/RingtoneItem;
     iput-object v0, p0, Lcom/android/settings_ex/RingtoneEntryAdapter;->ei:Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneEntryItem;
 
-    .line 93
     iget-object v5, p0, Lcom/android/settings_ex/RingtoneEntryAdapter;->vi:Landroid/view/LayoutInflater;
 
     const v6, 0x7f04008e
@@ -187,11 +176,9 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    .line 96
     .local v3, title:Landroid/widget/TextView;
     if-eqz v3, :cond_0
 
-    .line 97
     iget-object v5, p0, Lcom/android/settings_ex/RingtoneEntryAdapter;->ei:Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneEntryItem;
 
     iget-object v5, v5, Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneEntryItem;->title:Ljava/lang/String;

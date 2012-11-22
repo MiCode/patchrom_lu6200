@@ -13,20 +13,16 @@
     .parameter "_context"
 
     .prologue
-    .line 69
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 72
     iput-object p1, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
-    .line 73
     invoke-direct {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBQuietTimeState()I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/QuietTimeInfo;->setDBQuietTimeState(I)V
 
-    .line 74
     return-void
 .end method
 
@@ -214,18 +210,15 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 544
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getToggleDayToArray()[I
 
     move-result-object v1
 
-    .line 546
     .local v1, checkDay:[I
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
 
-    .line 547
     .local v0, calendar:Ljava/util/Calendar;
     const/4 v4, 0x7
 
@@ -320,22 +313,18 @@
 
     if-ne v1, v0, :cond_1
 
-    .line 627
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->isSilentState()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 628
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->silentModeOn()V
 
-    .line 632
     :cond_0
     :goto_0
     return-void
 
-    .line 630
     :cond_1
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->silentModeOff()V
 
@@ -404,7 +393,6 @@
     .locals 2
 
     .prologue
-    .line 575
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     const-string v1, "audio"
@@ -479,7 +467,6 @@
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/QuietTimeInfo;->setDBAfterAudioMode(I)V
 
-    .line 219
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getSoundProfile()I
 
     move-result v1
@@ -523,7 +510,6 @@
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/QuietTimeInfo;->setDBBeforeAudioMode(I)V
 
-    .line 211
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getSoundProfile()I
 
     move-result v1
@@ -535,7 +521,6 @@
     .locals 3
 
     .prologue
-    .line 192
     iget-object v1, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -640,7 +625,6 @@
 
     invoke-virtual {p0, v1, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBStartTime(J)V
 
-    .line 188
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/QuietTimeInfo;->getDummyTime(Z)J
 
     move-result-wide v1
@@ -742,21 +726,17 @@
 
     move-result v1
 
-    .line 254
     :goto_0
     return v1
 
-    .line 252
     :catch_0
     move-exception v0
 
-    .line 253
     .local v0, e:Lcom/lge/provider/SettingsEx$SettingNotFoundException;
     const/4 v1, 0x1
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/QuietTimeInfo;->setDBFirstStartFlag(I)V
 
-    .line 254
     const/4 v1, 0x0
 
     goto :goto_0
@@ -897,7 +877,6 @@
 
     invoke-virtual {p0, v1, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBStartTime(J)V
 
-    .line 148
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/QuietTimeInfo;->getDummyTime(Z)J
 
     move-result-wide v1
@@ -1122,7 +1101,6 @@
     .locals 1
 
     .prologue
-    .line 579
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getAudioManager()Landroid/media/AudioManager;
 
     move-result-object v0
@@ -1139,7 +1117,6 @@
     .parameter "time"
 
     .prologue
-    .line 317
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/text/format/DateFormat;->getTimeFormat(Landroid/content/Context;)Ljava/text/DateFormat;
@@ -1174,7 +1151,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 568
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBDays()Ljava/lang/String;
 
     move-result-object v2
@@ -1217,7 +1193,6 @@
     .locals 2
 
     .prologue
-    .line 496
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBDays()Ljava/lang/String;
 
     move-result-object v0
@@ -1235,26 +1210,21 @@
     .locals 10
 
     .prologue
-    .line 513
     const/4 v6, 0x0
 
-    .line 514
     .local v6, timedelay:Z
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getCurrentTimeMillis()J
 
     move-result-wide v0
 
-    .line 518
     .local v0, current:J
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBEndTime()J
 
     move-result-wide v2
 
-    .line 519
     .local v2, end:J
     sub-long v4, v0, v2
 
-    .line 520
     .local v4, result:J
     const-string v7, "QuietTimeInfo"
 
@@ -1303,26 +1273,21 @@
     .locals 10
 
     .prologue
-    .line 528
     const/4 v6, 0x1
 
-    .line 529
     .local v6, timedelay:Z
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getCurrentTimeMillis()J
 
     move-result-wide v0
 
-    .line 533
     .local v0, current:J
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBStartTime()J
 
     move-result-wide v4
 
-    .line 534
     .local v4, start:J
     sub-long v2, v0, v4
 
-    .line 535
     .local v2, result:J
     const-string v7, "QuietTimeInfo"
 
@@ -1367,7 +1332,6 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 80
     invoke-direct {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBQuietTimeState()I
 
     move-result v1
@@ -1493,7 +1457,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 646
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBStartTime()J
 
     move-result-wide v0
@@ -1538,7 +1501,6 @@
     .locals 8
 
     .prologue
-    .line 500
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getCurrentTimeMillis()J
 
     move-result-wide v2
@@ -1676,7 +1638,6 @@
     .locals 1
 
     .prologue
-    .line 491
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->isSilentTime()Z
 
     move-result v0
@@ -1704,29 +1665,23 @@
     .locals 11
 
     .prologue
-    .line 458
     const/4 v4, 0x0
 
-    .line 459
     .local v4, isSetTime:Z
     const-wide/16 v5, 0x0
 
-    .line 460
     .local v5, start:J
     const-wide/16 v2, 0x0
 
-    .line 462
     .local v2, end:J
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBStartTime()J
 
     move-result-wide v5
 
-    .line 463
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBEndTime()J
 
     move-result-wide v2
 
-    .line 464
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getCurrentTimeMillis()J
 
     move-result-wide v7
@@ -1900,7 +1855,6 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 77
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBVibrateMode()I
 
     move-result v1
@@ -2446,7 +2400,6 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 662
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBStartTime()J
 
     move-result-wide v3
@@ -2459,7 +2412,6 @@
 
     if-gtz v3, :cond_2
 
-    .line 663
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBStartTime()J
 
     move-result-wide v3
@@ -2488,26 +2440,22 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 665
     const-string v3, "QuietTimeInfo"
 
     const-string v4, "restorationAudio"
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 666
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBBeforeAudioMode()I
 
     move-result v3
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/QuietTimeInfo;->setSoundProfile(I)V
 
-    .line 678
     :cond_1
     :goto_0
     return-void
 
-    .line 671
     :cond_2
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBStartTime()J
 
@@ -2537,14 +2485,12 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 673
     const-string v3, "QuietTimeInfo"
 
     const-string v4, "restorationAudio"
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 674
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBBeforeAudioMode()I
 
     move-result v3
@@ -2559,7 +2505,6 @@
     .parameter "afterAudioMode"
 
     .prologue
-    .line 115
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2579,7 +2524,6 @@
     .parameter "beforeAudioMode"
 
     .prologue
-    .line 112
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2599,7 +2543,6 @@
     .parameter "days"
 
     .prologue
-    .line 106
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2619,7 +2562,6 @@
     .parameter "duringQuietTime"
 
     .prologue
-    .line 109
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2639,7 +2581,6 @@
     .parameter "endTime"
 
     .prologue
-    .line 97
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2659,7 +2600,6 @@
     .parameter "hour"
 
     .prologue
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2679,7 +2619,6 @@
     .parameter "minute"
 
     .prologue
-    .line 103
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2699,7 +2638,6 @@
     .parameter "flag"
 
     .prologue
-    .line 127
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2719,7 +2657,6 @@
     .parameter "count"
 
     .prologue
-    .line 121
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2739,7 +2676,6 @@
     .parameter "state"
 
     .prologue
-    .line 85
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2759,7 +2695,6 @@
     .parameter "time"
 
     .prologue
-    .line 130
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2779,7 +2714,6 @@
     .parameter "startTime"
 
     .prologue
-    .line 88
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2799,7 +2733,6 @@
     .parameter "hour"
 
     .prologue
-    .line 91
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2819,7 +2752,6 @@
     .parameter "minute"
 
     .prologue
-    .line 94
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2839,7 +2771,6 @@
     .parameter "isVibrateMode"
 
     .prologue
-    .line 118
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeInfo;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2870,14 +2801,12 @@
     .parameter "ringerMode"
 
     .prologue
-    .line 583
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getAudioManager()Landroid/media/AudioManager;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Landroid/media/AudioManager;->setRingerMode(I)V
 
-    .line 584
     return-void
 .end method
 
@@ -2886,45 +2815,37 @@
     .parameter "start_end"
 
     .prologue
-    .line 371
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
 
-    .line 372
     .local v0, c:Ljava/util/Calendar;
     new-instance v1, Ljava/util/Date;
 
     invoke-direct {v1}, Ljava/util/Date;-><init>()V
 
-    .line 373
     .local v1, date:Ljava/util/Date;
     if-nez p1, :cond_0
 
-    .line 374
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBStartTimeHour()I
 
     move-result v2
 
     invoke-virtual {v1, v2}, Ljava/util/Date;->setHours(I)V
 
-    .line 375
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBStartTimeMinute()I
 
     move-result v2
 
     invoke-virtual {v1, v2}, Ljava/util/Date;->setMinutes(I)V
 
-    .line 376
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Ljava/util/Date;->setSeconds(I)V
 
-    .line 384
     :goto_0
     invoke-virtual {v0, v1}, Ljava/util/Calendar;->setTime(Ljava/util/Date;)V
 
-    .line 388
     const/16 v2, 0xb
 
     invoke-virtual {v1}, Ljava/util/Date;->getHours()I
@@ -2951,28 +2872,23 @@
 
     invoke-virtual {v0, v2, v3}, Ljava/util/Calendar;->set(II)V
 
-    .line 391
     const/4 v2, 0x6
 
     const/4 v3, 0x1
 
     invoke-virtual {v0, v2, v3}, Ljava/util/Calendar;->add(II)V
 
-    .line 393
     if-nez p1, :cond_1
 
-    .line 394
     invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
 
     move-result-wide v2
 
     invoke-virtual {p0, v2, v3}, Lcom/android/settings_ex/QuietTimeInfo;->setDBStartTime(J)V
 
-    .line 398
     :goto_1
     return-void
 
-    .line 379
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBEndTimeHour()I
 
@@ -2980,21 +2896,18 @@
 
     invoke-virtual {v1, v2}, Ljava/util/Date;->setHours(I)V
 
-    .line 380
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBEndTimeMinute()I
 
     move-result v2
 
     invoke-virtual {v1, v2}, Ljava/util/Date;->setMinutes(I)V
 
-    .line 381
     const/16 v2, 0x3b
 
     invoke-virtual {v1, v2}, Ljava/util/Date;->setSeconds(I)V
 
     goto :goto_0
 
-    .line 396
     :cond_1
     invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
 
@@ -3122,14 +3035,12 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 612
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBDuringQuietTime()I
 
     move-result v2
 
     if-ne v2, v0, :cond_2
 
-    .line 614
     .local v0, isDuring:Z
     :goto_0
     if-nez v0, :cond_0
@@ -3158,17 +3069,14 @@
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setSoundProfile(I)V
 
-    .line 616
     invoke-direct {p0}, Lcom/android/settings_ex/QuietTimeInfo;->vibrateOn()V
 
-    .line 617
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBBeforeAudioMode()I
 
     move-result v2
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBAfterAudioMode(I)V
 
-    .line 618
     const-string v2, "QuietTimeInfo"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -3195,11 +3103,9 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 621
     :cond_1
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/QuietTimeInfo;->setDBDuringQuietTime(I)V
 
-    .line 622
     const-string v1, "QuietTimeInfo"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3421,17 +3327,14 @@
 
     if-nez v1, :cond_0
 
-    .line 596
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeInfo;->getSoundProfile()I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/QuietTimeInfo;->setDBBeforeAudioMode(I)V
 
-    .line 597
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setDBDuringQuietTime(I)V
 
-    .line 598
     const-string v1, "QuietTimeInfo"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3458,17 +3361,13 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 601
     :cond_0
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/QuietTimeInfo;->setSoundProfile(I)V
 
-    .line 602
     invoke-direct {p0}, Lcom/android/settings_ex/QuietTimeInfo;->vibrateOn()V
 
-    .line 603
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/QuietTimeInfo;->setDBAfterAudioMode(I)V
 
-    .line 604
     const-string v1, "QuietTimeInfo"
 
     new-instance v2, Ljava/lang/StringBuilder;

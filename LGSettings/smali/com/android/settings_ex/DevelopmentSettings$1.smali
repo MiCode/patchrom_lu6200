@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 592
     iput-object p1, p0, Lcom/android/settings_ex/DevelopmentSettings$1;->this$0:Lcom/android/settings_ex/DevelopmentSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -68,20 +67,17 @@
 
     if-eqz v2, :cond_4
 
-    .line 598
     iget-object v2, p0, Lcom/android/settings_ex/DevelopmentSettings$1;->this$0:Lcom/android/settings_ex/DevelopmentSettings;
 
     #setter for: Lcom/android/settings_ex/DevelopmentSettings;->usbConnected:Z
     invoke-static {v2, v3}, Lcom/android/settings_ex/DevelopmentSettings;->access$002(Lcom/android/settings_ex/DevelopmentSettings;Z)Z
 
-    .line 599
     iget-object v2, p0, Lcom/android/settings_ex/DevelopmentSettings$1;->this$0:Lcom/android/settings_ex/DevelopmentSettings;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    .line 600
     .local v1, mContext:Landroid/content/Context;
     iget-object v2, p0, Lcom/android/settings_ex/DevelopmentSettings$1;->this$0:Lcom/android/settings_ex/DevelopmentSettings;
 
@@ -92,7 +88,6 @@
 
     if-nez v2, :cond_0
 
-    .line 601
     iget-object v3, p0, Lcom/android/settings_ex/DevelopmentSettings$1;->this$0:Lcom/android/settings_ex/DevelopmentSettings;
 
     const-string v2, "usb"
@@ -120,7 +115,6 @@
 
     if-eqz v2, :cond_3
 
-    .line 604
     iget-object v2, p0, Lcom/android/settings_ex/DevelopmentSettings$1;->this$0:Lcom/android/settings_ex/DevelopmentSettings;
 
     #getter for: Lcom/android/settings_ex/DevelopmentSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
@@ -159,7 +153,6 @@
 
     if-nez v2, :cond_1
 
-    .line 607
     iget-object v2, p0, Lcom/android/settings_ex/DevelopmentSettings$1;->this$0:Lcom/android/settings_ex/DevelopmentSettings;
 
     #getter for: Lcom/android/settings_ex/DevelopmentSettings;->mEnableAdb:Landroid/preference/CheckBoxPreference;
@@ -186,7 +179,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 622
     invoke-static {}, Lcom/android/settings_ex/MDMSettingsAdapter;->getInstance()Lcom/android/settings_ex/MDMSettingsAdapter;
 
     move-result-object v2
@@ -248,7 +240,6 @@
     #setter for: Lcom/android/settings_ex/DevelopmentSettings;->usbConnected:Z
     invoke-static {v2, v4}, Lcom/android/settings_ex/DevelopmentSettings;->access$002(Lcom/android/settings_ex/DevelopmentSettings;Z)Z
 
-    .line 617
     iget-object v2, p0, Lcom/android/settings_ex/DevelopmentSettings$1;->this$0:Lcom/android/settings_ex/DevelopmentSettings;
 
     #getter for: Lcom/android/settings_ex/DevelopmentSettings;->mEnableAdb:Landroid/preference/CheckBoxPreference;

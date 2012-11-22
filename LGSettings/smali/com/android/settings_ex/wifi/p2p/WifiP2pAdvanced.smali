@@ -27,20 +27,16 @@
     .locals 1
 
     .prologue
-    .line 32
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
-    .line 47
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pIpAddress:Landroid/preference/Preference;
 
-    .line 53
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->ArrayOutofBound:I
 
-    .line 54
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->ArraySetDefault:I
@@ -53,7 +49,6 @@
     .parameter "x0"
 
     .prologue
-    .line 32
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->wifip2pIpAddressPref:Landroid/preference/Preference;
 
     return-object v0
@@ -70,15 +65,12 @@
 
     const/4 v7, 0x0
 
-    .line 61
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 62
     const v3, 0x7f060052
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->addPreferencesFromResource(I)V
 
-    .line 64
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -98,7 +90,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pTimeoutPreference:Landroid/preference/ListPreference;
 
-    .line 70
     iget-object v3, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pTimeoutPreference:Landroid/preference/ListPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->getContentResolver()Landroid/content/ContentResolver;
@@ -119,7 +110,6 @@
 
     invoke-virtual {v3, v4}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 74
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -144,20 +134,16 @@
 
     move-result v1
 
-    .line 80
     .local v1, index:I
     iget v3, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->ArrayOutofBound:I
 
     if-ne v1, v3, :cond_0
 
-    .line 81
     iget v1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->ArraySetDefault:I
 
-    .line 84
     :cond_0
     if-ne v1, v8, :cond_2
 
-    .line 85
     iget-object v3, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pTimeoutPreference:Landroid/preference/ListPreference;
 
     const v4, 0x7f080ba0
@@ -168,13 +154,11 @@
 
     invoke-virtual {v3, v4}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 91
     :goto_0
     iget-object v3, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pTimeoutPreference:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 94
     const-string v3, "wifip2p"
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -194,12 +178,10 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->wifip2pIpAddressPref:Landroid/preference/Preference;
 
-    .line 97
     iget-object v3, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-eqz v3, :cond_1
 
-    .line 98
     iget-object v3, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->getActivity()Landroid/app/Activity;
@@ -327,7 +309,6 @@
 
     invoke-static {v6, v8, v5}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 118
     iget-object v6, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     iget-object v8, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
@@ -340,7 +321,6 @@
 
     invoke-virtual {v6, v8, v9, v10}, Landroid/net/wifi/p2p/WifiP2pManager;->sendCustomStringCommand(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Ljava/lang/String;Landroid/net/wifi/p2p/WifiP2pManager$StringResponseListener;)V
 
-    .line 126
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
@@ -362,11 +342,9 @@
 
     move-result v2
 
-    .line 130
     .local v2, index:I
     if-ne v2, v11, :cond_1
 
-    .line 131
     iget-object v6, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pTimeoutPreference:Landroid/preference/ListPreference;
 
     const v8, 0x7f080ba0
@@ -464,10 +442,8 @@
     .locals 4
 
     .prologue
-    .line 148
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
-    .line 149
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-eqz v0, :cond_0
@@ -476,7 +452,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 150
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pAdvanced;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;

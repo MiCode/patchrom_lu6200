@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 58
     iput-object p1, p0, Lcom/android/settings_ex/VibrateTypeListPreference$3;->this$0:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,20 +42,17 @@
     .parameter "which"
 
     .prologue
-    .line 62
     const-string v0, "VibrateTypeListPreference"
 
     const-string v1, "PositiveButton OnClickListener"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 63
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypeListPreference$3;->this$0:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->onDialogClosed(Z)V
 
-    .line 64
     return-void
 .end method

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 162
     iput-object p1, p0, Lcom/android/settings_ex/OwnerInfoSettings$2;->this$0:Lcom/android/settings_ex/OwnerInfoSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "arg0"
 
     .prologue
-    .line 178
     iget-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings$2;->this$0:Lcom/android/settings_ex/OwnerInfoSettings;
 
     #getter for: Lcom/android/settings_ex/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
@@ -58,19 +56,16 @@
 
     move-result-object v1
 
-    .line 179
     .local v1, ownerText:Ljava/lang/String;
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 180
     .local v0, length:I
     const/16 v2, 0x64
 
     if-ne v0, v2, :cond_0
 
-    .line 181
     iget-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings$2;->this$0:Lcom/android/settings_ex/OwnerInfoSettings;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/OwnerInfoSettings;->getActivity()Landroid/app/Activity;

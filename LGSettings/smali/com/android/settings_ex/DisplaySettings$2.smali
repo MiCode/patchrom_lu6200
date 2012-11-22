@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 144
     iput-object p1, p0, Lcom/android/settings_ex/DisplaySettings$2;->this$0:Lcom/android/settings_ex/DisplaySettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1280
     iput-object p1, p0, Lcom/android/settings_ex/TetherSettings$7;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "id"
 
     .prologue
-    .line 1282
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings$7;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     const/4 v1, 0x1
@@ -51,7 +49,6 @@
     #setter for: Lcom/android/settings_ex/TetherSettings;->mCheckTethering:Z
     invoke-static {v0, v1}, Lcom/android/settings_ex/TetherSettings;->access$1502(Lcom/android/settings_ex/TetherSettings;Z)Z
 
-    .line 1283
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings$7;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings$7;->this$0:Lcom/android/settings_ex/TetherSettings;

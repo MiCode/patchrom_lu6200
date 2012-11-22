@@ -75,22 +75,18 @@
     .parameter "content"
 
     .prologue
-    .line 838
     iput-object p1, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 839
     new-instance v2, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v2, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v2, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mDialog:Ljava/lang/ref/WeakReference;
 
-    .line 841
     if-eqz p3, :cond_0
 
-    .line 843
     const v2, 0x7f0b00ac
 
     invoke-virtual {p3, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -117,14 +113,12 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mEditText:Ljava/lang/ref/WeakReference;
 
-    .line 846
     new-instance v2, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v2, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v2, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mTextView:Ljava/lang/ref/WeakReference;
 
-    .line 847
     new-instance v2, Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -148,26 +142,22 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 874
     iget-object v6, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mDialog:Ljava/lang/ref/WeakReference;
 
     if-nez v6, :cond_1
 
     move-object v0, v7
 
-    .line 876
     .local v0, dialog:Landroid/app/AlertDialog;
     :goto_0
     if-eqz v0, :cond_0
 
-    .line 877
     iget-object v6, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mEditText:Ljava/lang/ref/WeakReference;
 
     if-nez v6, :cond_2
 
     move-object v1, v7
 
-    .line 878
     .local v1, editText:Landroid/widget/EditText;
     :goto_1
     iget-object v6, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mTextView:Ljava/lang/ref/WeakReference;
@@ -197,13 +187,11 @@
 
     sput-object v6, Lcom/android/settings_ex/UserDictionarySettings;->sSymbolString:Ljava/lang/String;
 
-    .line 896
     #calls: Lcom/android/settings_ex/UserDictionarySettings;->isAcceptableWord(Ljava/lang/String;Landroid/widget/TextView;)Z
     invoke-static {v5, v4}, Lcom/android/settings_ex/UserDictionarySettings;->access$600(Ljava/lang/String;Landroid/widget/TextView;)Z
 
     move-result v3
 
-    .line 897
     .local v3, positiveButtonEnable:Z
     const/4 v6, -0x1
 
@@ -213,13 +201,11 @@
 
     invoke-virtual {v6, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 898
     iget-object v6, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     #setter for: Lcom/android/settings_ex/UserDictionarySettings;->mCurrentWord:Ljava/lang/String;
     invoke-static {v6, v5}, Lcom/android/settings_ex/UserDictionarySettings;->access$702(Lcom/android/settings_ex/UserDictionarySettings;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 900
     .end local v1           #editText:Landroid/widget/EditText;
     .end local v3           #positiveButtonEnable:Z
     .end local v4           #textView:Landroid/widget/TextView;
@@ -307,10 +293,8 @@
     .parameter "s"
 
     .prologue
-    .line 859
     invoke-direct {p0}, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->updateButtonState()V
 
-    .line 860
     return-void
 .end method
 
@@ -330,7 +314,6 @@
     .locals 1
 
     .prologue
-    .line 933
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mDialog:Ljava/lang/ref/WeakReference;
 
     if-nez v0, :cond_0
@@ -360,14 +343,12 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 905
     iget-object v3, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mDialog:Ljava/lang/ref/WeakReference;
 
     if-nez v3, :cond_1
 
     move-object v0, v4
 
-    .line 906
     .local v0, dialog:Landroid/app/AlertDialog;
     :goto_0
     iget-object v3, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mEditText:Ljava/lang/ref/WeakReference;
@@ -420,12 +401,10 @@
 
     goto :goto_1
 
-    .line 911
     .restart local v1       #editText:Landroid/widget/EditText;
     :pswitch_0
     if-eqz v1, :cond_3
 
-    .line 913
     iget-object v3, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/UserDictionarySettings;->getActivity()Landroid/app/Activity;
@@ -450,7 +429,6 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    .line 917
     iget-object v3, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -481,7 +459,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 923
     iget-object v3, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     #getter for: Lcom/android/settings_ex/UserDictionarySettings;->dig_status:I
@@ -493,7 +470,6 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 924
     iget-object v3, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/UserDictionarySettings;->getActivity()Landroid/app/Activity;
@@ -519,12 +495,10 @@
     .parameter "dialog"
 
     .prologue
-    .line 865
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mDialog:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
 
-    .line 866
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->mDialog:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -533,10 +507,8 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 867
     invoke-direct {p0}, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;->updateButtonState()V
 
-    .line 871
     :cond_0
     return-void
 .end method

@@ -36,7 +36,6 @@
     .locals 1
 
     .prologue
-    .line 455
     new-instance v0, Lcom/android/settings_ex/RingerVolumePreference$SavedState$1;
 
     invoke-direct {v0}, Lcom/android/settings_ex/RingerVolumePreference$SavedState$1;-><init>()V
@@ -51,10 +50,8 @@
     .parameter "source"
 
     .prologue
-    .line 423
     invoke-direct {p0, p1}, Landroid/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 424
     invoke-static {}, Lcom/android/settings_ex/RingerVolumePreference;->access$200()[I
 
     move-result-object v1
@@ -78,7 +75,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 426
     iget-object v1, p0, Lcom/android/settings_ex/RingerVolumePreference$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     new-instance v2, Landroid/preference/VolumePreference$VolumeStore;
@@ -87,7 +83,6 @@
 
     aput-object v2, v1, v0
 
-    .line 427
     iget-object v1, p0, Lcom/android/settings_ex/RingerVolumePreference$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     aget-object v1, v1, v0
@@ -98,7 +93,6 @@
 
     iput v2, v1, Landroid/preference/VolumePreference$VolumeStore;->volume:I
 
-    .line 428
     iget-object v1, p0, Lcom/android/settings_ex/RingerVolumePreference$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     aget-object v1, v1, v0
@@ -138,7 +132,6 @@
     .parameter "count"
 
     .prologue
-    .line 442
     iget-object v1, p0, Lcom/android/settings_ex/RingerVolumePreference$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     if-eqz v1, :cond_0
@@ -149,20 +142,17 @@
 
     if-eq v1, p1, :cond_1
 
-    .line 443
     :cond_0
     new-array v1, p1, [Landroid/preference/VolumePreference$VolumeStore;
 
     iput-object v1, p0, Lcom/android/settings_ex/RingerVolumePreference$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
-    .line 444
     const/4 v0, 0x0
 
     .local v0, i:I
     :goto_0
     if-ge v0, p1, :cond_1
 
-    .line 445
     iget-object v1, p0, Lcom/android/settings_ex/RingerVolumePreference$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     new-instance v2, Landroid/preference/VolumePreference$VolumeStore;
@@ -206,7 +196,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 436
     iget-object v1, p0, Lcom/android/settings_ex/RingerVolumePreference$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     aget-object v1, v1, v0
@@ -215,7 +204,6 @@
 
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 437
     iget-object v1, p0, Lcom/android/settings_ex/RingerVolumePreference$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     aget-object v1, v1, v0

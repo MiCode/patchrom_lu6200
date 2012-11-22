@@ -30,12 +30,10 @@
     .parameter
 
     .prologue
-    .line 279
     iput-object p1, p0, Lcom/android/settings_ex/CredentialStorage$ConfigureKeyGuardDialog;->this$0:Lcom/android/settings_ex/CredentialStorage;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 280
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, p1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -91,7 +89,6 @@
     .parameter "x1"
 
     .prologue
-    .line 274
     invoke-direct {p0, p1}, Lcom/android/settings_ex/CredentialStorage$ConfigureKeyGuardDialog;-><init>(Lcom/android/settings_ex/CredentialStorage;)V
 
     return-void
@@ -130,24 +127,20 @@
     .parameter "dialog"
 
     .prologue
-    .line 296
     iget-boolean v1, p0, Lcom/android/settings_ex/CredentialStorage$ConfigureKeyGuardDialog;->mConfigureConfirmed:Z
 
     if-eqz v1, :cond_0
 
-    .line 297
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/android/settings_ex/CredentialStorage$ConfigureKeyGuardDialog;->mConfigureConfirmed:Z
 
-    .line 298
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.app.action.SET_NEW_PASSWORD"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 299
     .local v0, intent:Landroid/content/Intent;
     const-string v1, "minimum_quality"
 
@@ -155,17 +148,14 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 301
     iget-object v1, p0, Lcom/android/settings_ex/CredentialStorage$ConfigureKeyGuardDialog;->this$0:Lcom/android/settings_ex/CredentialStorage;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/CredentialStorage;->startActivity(Landroid/content/Intent;)V
 
-    .line 305
     .end local v0           #intent:Landroid/content/Intent;
     :goto_0
     return-void
 
-    .line 304
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/CredentialStorage$ConfigureKeyGuardDialog;->this$0:Lcom/android/settings_ex/CredentialStorage;
 

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 245
     iput-object p1, p0, Lcom/android/settings_ex/MasterClearConfirm$MasterCDMAFactoryResetReceiver;->this$0:Lcom/android/settings_ex/MasterClearConfirm;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -38,7 +37,6 @@
     .parameter "x1"
 
     .prologue
-    .line 245
     invoke-direct {p0, p1}, Lcom/android/settings_ex/MasterClearConfirm$MasterCDMAFactoryResetReceiver;-><init>(Lcom/android/settings_ex/MasterClearConfirm;)V
 
     return-void
@@ -67,13 +65,11 @@
 
     if-eqz v1, :cond_0
 
-    .line 250
     iget-object v1, p0, Lcom/android/settings_ex/MasterClearConfirm$MasterCDMAFactoryResetReceiver;->this$0:Lcom/android/settings_ex/MasterClearConfirm;
 
     #calls: Lcom/android/settings_ex/MasterClearConfirm;->MasterCDMAFactoryResetCompleted(Landroid/content/Intent;)V
     invoke-static {v1, p2}, Lcom/android/settings_ex/MasterClearConfirm;->access$300(Lcom/android/settings_ex/MasterClearConfirm;Landroid/content/Intent;)V
 
-    .line 252
     :cond_0
     return-void
 .end method

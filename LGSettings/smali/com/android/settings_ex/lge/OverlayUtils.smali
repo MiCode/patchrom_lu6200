@@ -85,7 +85,6 @@
 
     const/4 v2, 0x0
 
-    .line 40
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getCountry()Ljava/lang/String;
 
     move-result-object v0
@@ -98,19 +97,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 41
     invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getDefaultPhone()Lcom/android/internal/telephony/Phone;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/settings_ex/lge/OverlayUtils;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    .line 42
     sget-object v0, Lcom/android/settings_ex/lge/OverlayUtils;->mPhone:Lcom/android/internal/telephony/Phone;
 
     if-eqz v0, :cond_1
 
-    .line 43
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
     const-string v1, "i_skt"
@@ -131,18 +127,15 @@
 
     if-eqz v0, :cond_2
 
-    .line 44
     :cond_0
     sget-object v0, Lcom/android/settings_ex/lge/OverlayUtils;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0, v3, v2, v4}, Lcom/android/internal/telephony/Phone;->setModemIntegerItem(IILandroid/os/Message;)V
 
-    .line 50
     :cond_1
     :goto_0
     return-void
 
-    .line 45
     :cond_2
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 

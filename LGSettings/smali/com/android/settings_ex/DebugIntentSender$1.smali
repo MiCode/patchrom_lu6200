@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 40
     iput-object p1, p0, Lcom/android/settings_ex/DebugIntentSender$1;->this$0:Lcom/android/settings_ex/DebugIntentSender;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 42
     iget-object v5, p0, Lcom/android/settings_ex/DebugIntentSender$1;->this$0:Lcom/android/settings_ex/DebugIntentSender;
 
     #getter for: Lcom/android/settings_ex/DebugIntentSender;->mSendBroadcastButton:Landroid/widget/Button;
@@ -143,25 +141,21 @@
 
     if-nez v5, :cond_1
 
-    .line 51
     invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 53
     :cond_1
     const-string v5, "account"
 
     invoke-virtual {v1, v5, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 54
     const-string v5, "resource"
 
     invoke-virtual {v1, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 55
     iget-object v5, p0, Lcom/android/settings_ex/DebugIntentSender$1;->this$0:Lcom/android/settings_ex/DebugIntentSender;
 
     #getter for: Lcom/android/settings_ex/DebugIntentSender;->mSendBroadcastButton:Landroid/widget/Button;
@@ -171,12 +165,10 @@
 
     if-ne p1, v5, :cond_3
 
-    .line 56
     iget-object v5, p0, Lcom/android/settings_ex/DebugIntentSender$1;->this$0:Lcom/android/settings_ex/DebugIntentSender;
 
     invoke-virtual {v5, v1}, Lcom/android/settings_ex/DebugIntentSender;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 61
     :goto_0
     iget-object v5, p0, Lcom/android/settings_ex/DebugIntentSender$1;->this$0:Lcom/android/settings_ex/DebugIntentSender;
 
@@ -184,12 +176,10 @@
 
     invoke-virtual {v5, v6}, Lcom/android/settings_ex/DebugIntentSender;->setResult(I)V
 
-    .line 62
     iget-object v5, p0, Lcom/android/settings_ex/DebugIntentSender$1;->this$0:Lcom/android/settings_ex/DebugIntentSender;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/DebugIntentSender;->finish()V
 
-    .line 64
     .end local v0           #account:Ljava/lang/String;
     .end local v1           #intent:Landroid/content/Intent;
     .end local v2           #intentAction:Ljava/lang/String;

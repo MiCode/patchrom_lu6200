@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 404
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter$1;->this$0:Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -55,7 +54,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 409
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter$1;->this$0:Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;
 
     const-string v2, "wifi_p2p_state"

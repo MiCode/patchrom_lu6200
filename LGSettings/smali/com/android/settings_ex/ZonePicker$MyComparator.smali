@@ -37,13 +37,10 @@
     .parameter "sortingKey"
 
     .prologue
-    .line 326
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 327
     iput-object p1, p0, Lcom/android/settings_ex/ZonePicker$MyComparator;->mSortingKey:Ljava/lang/String;
 
-    .line 328
     return-void
 .end method
 
@@ -627,7 +624,6 @@
 
     move-result-object v8
 
-    .line 431
     .local v8, tokens:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings_ex/HanziToPinyin$Token;>;"
     if-eqz v8, :cond_5
 
@@ -662,7 +658,6 @@
 
     check-cast v7, Lcom/android/settings_ex/HanziToPinyin$Token;
 
-    .line 434
     .local v7, token:Lcom/android/settings_ex/HanziToPinyin$Token;
     const/4 v10, 0x2
 
@@ -670,14 +665,12 @@
 
     if-ne v10, v11, :cond_b
 
-    .line 435
     iget-object v10, v7, Lcom/android/settings_ex/HanziToPinyin$Token;->target:Ljava/lang/String;
 
     invoke-virtual {v5, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_6
 
-    .line 439
     :cond_b
     iget-object v10, v7, Lcom/android/settings_ex/HanziToPinyin$Token;->source:Ljava/lang/String;
 
@@ -685,7 +678,6 @@
 
     goto :goto_6
 
-    .line 442
     .end local v7           #token:Lcom/android/settings_ex/HanziToPinyin$Token;
     :cond_c
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -746,7 +738,6 @@
     .parameter "map2"
 
     .prologue
-    .line 339
     iget-object v2, p0, Lcom/android/settings_ex/ZonePicker$MyComparator;->mSortingKey:Ljava/lang/String;
 
     const-string v3, "name"
@@ -757,7 +748,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 341
     iget-object v2, p0, Lcom/android/settings_ex/ZonePicker$MyComparator;->mSortingKey:Ljava/lang/String;
 
     invoke-virtual {p1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -797,7 +787,6 @@
 
     if-nez v2, :cond_2
 
-    .line 358
     invoke-direct {p0, v1}, Lcom/android/settings_ex/ZonePicker$MyComparator;->isComparable(Ljava/lang/Object;)Z
 
     move-result v2

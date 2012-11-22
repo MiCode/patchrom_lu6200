@@ -25,7 +25,6 @@
     .parameter "x0"
 
     .prologue
-    .line 125
     iput-object p1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$2;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -42,7 +41,6 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 128
     iget-object v1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$2;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     #getter for: Lcom/android/settings_ex/AirplaneModeEnabler;->mContext:Landroid/content/Context;
@@ -65,23 +63,19 @@
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 132
     iget-object v1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$2;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     iget-boolean v1, v1, Lcom/android/settings_ex/AirplaneModeEnabler;->fromSettings:Z
 
     if-nez v1, :cond_0
 
-    .line 133
     iget-object v1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$2;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     #calls: Lcom/android/settings_ex/AirplaneModeEnabler;->onAirplaneModeChanged()V
     invoke-static {v1}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$400(Lcom/android/settings_ex/AirplaneModeEnabler;)V
 
-    .line 134
     invoke-static {v2}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$302(Z)Z
 
-    .line 139
     :goto_0
     const-string v1, "onAirplaneModeChanged - ContentObserver"
 

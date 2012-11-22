@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 112
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings$1;->this$0:Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V

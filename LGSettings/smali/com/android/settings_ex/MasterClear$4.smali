@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 370
     iput-object p1, p0, Lcom/android/settings_ex/MasterClear$4;->this$0:Lcom/android/settings_ex/MasterClear;
 
     invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
@@ -84,12 +83,10 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 376
     iget-object v0, p0, Lcom/android/settings_ex/MasterClear$4;->this$0:Lcom/android/settings_ex/MasterClear;
 
     #calls: Lcom/android/settings_ex/MasterClear;->updateSDCardView()V
     invoke-static {v0}, Lcom/android/settings_ex/MasterClear;->access$300(Lcom/android/settings_ex/MasterClear;)V
 
-    .line 377
     return-void
 .end method

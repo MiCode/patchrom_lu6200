@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 217
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$AdapterStateChangedHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 217
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$AdapterStateChangedHandler;-><init>(Lcom/android/settings_ex/bluetooth/BluetoothEventManager;)V
 
     return-void
@@ -116,7 +114,6 @@
 
     invoke-virtual {v3, v2}, Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;->setBluetoothStateInt(I)V
 
-    .line 229
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$AdapterStateChangedHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->mCallbacks:Ljava/util/Collection;
@@ -153,13 +150,11 @@
 
     check-cast v0, Lcom/android/settings_ex/bluetooth/BluetoothCallback;
 
-    .line 231
     .local v0, callback:Lcom/android/settings_ex/bluetooth/BluetoothCallback;
     invoke-interface {v0, v2}, Lcom/android/settings_ex/bluetooth/BluetoothCallback;->onBluetoothStateChanged(I)V
 
     goto :goto_1
 
-    .line 233
     .end local v0           #callback:Lcom/android/settings_ex/bluetooth/BluetoothCallback;
     .end local v1           #i$:Ljava/util/Iterator;
     :catchall_0

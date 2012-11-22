@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 81
     iput-object p1, p0, Lcom/android/settings_ex/data/DataEnableDialog$1;->this$0:Lcom/android/settings_ex/data/DataEnableDialog;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,13 +42,11 @@
     .parameter "which"
 
     .prologue
-    .line 84
     iget-object v0, p0, Lcom/android/settings_ex/data/DataEnableDialog$1;->this$0:Lcom/android/settings_ex/data/DataEnableDialog;
 
     #setter for: Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
     invoke-static {v0, p2}, Lcom/android/settings_ex/data/DataEnableDialog;->access$002(Lcom/android/settings_ex/data/DataEnableDialog;I)I
 
-    .line 85
     iget-object v0, p0, Lcom/android/settings_ex/data/DataEnableDialog$1;->this$0:Lcom/android/settings_ex/data/DataEnableDialog;
 
     #getter for: Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
@@ -59,7 +56,6 @@
 
     if-nez v0, :cond_0
 
-    .line 87
     iget-object v0, p0, Lcom/android/settings_ex/data/DataEnableDialog$1;->this$0:Lcom/android/settings_ex/data/DataEnableDialog;
 
     #getter for: Lcom/android/settings_ex/data/DataEnableDialog;->tViewDescriptionTitle:Landroid/widget/TextView;
@@ -71,7 +67,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 88
     iget-object v0, p0, Lcom/android/settings_ex/data/DataEnableDialog$1;->this$0:Lcom/android/settings_ex/data/DataEnableDialog;
 
     #getter for: Lcom/android/settings_ex/data/DataEnableDialog;->tViewDescription:Landroid/widget/TextView;
@@ -100,7 +95,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 91
     iget-object v0, p0, Lcom/android/settings_ex/data/DataEnableDialog$1;->this$0:Lcom/android/settings_ex/data/DataEnableDialog;
 
     #getter for: Lcom/android/settings_ex/data/DataEnableDialog;->tViewDescription:Landroid/widget/TextView;

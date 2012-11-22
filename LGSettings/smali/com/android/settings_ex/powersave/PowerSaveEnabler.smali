@@ -22,19 +22,14 @@
     .parameter "fragment"
 
     .prologue
-    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mContext:Landroid/content/Context;
 
-    .line 22
     iput-object p2, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mSwitch:Landroid/widget/Switch;
 
-    .line 23
     iput-object p3, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mFragment:Landroid/app/Fragment;
 
-    .line 30
     return-void
 .end method
 
@@ -56,19 +51,15 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 84
     if-eqz p1, :cond_0
 
-    .line 85
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 90
     :goto_0
     return-void
 
-    .line 88
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mContext:Landroid/content/Context;
 
@@ -87,17 +78,14 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 65
     if-eqz p2, :cond_2
 
     const/4 v2, 0x1
 
-    .line 66
     .local v2, value:I
     :goto_0
     invoke-virtual {p0, p2}, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->setSwitchChecked(Z)V
 
-    .line 68
     iget-object v4, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -110,11 +98,9 @@
 
     move-result v1
 
-    .line 69
     .local v1, preState:I
     if-eq v1, v2, :cond_0
 
-    .line 70
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -125,10 +111,8 @@
 
     invoke-static {v3, v4, v2}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 71
     invoke-direct {p0, p2}, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->doPowerSaveService(Z)V
 
-    .line 74
     :cond_0
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mFragment:Landroid/app/Fragment;
 
@@ -136,16 +120,13 @@
 
     if-eqz v3, :cond_1
 
-    .line 75
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mFragment:Landroid/app/Fragment;
 
     check-cast v0, Lcom/android/settings_ex/powersave/PowerSaveSettings;
 
-    .line 76
     .local v0, fragment:Lcom/android/settings_ex/powersave/PowerSaveSettings;
     invoke-virtual {v0, p2}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->onSwitchCheckedChanged(Z)V
 
-    .line 79
     .end local v0           #fragment:Lcom/android/settings_ex/powersave/PowerSaveSettings;
     :cond_1
     return-void
@@ -163,14 +144,12 @@
     .locals 2
 
     .prologue
-    .line 60
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mSwitch:Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 61
     return-void
 .end method
 
@@ -180,12 +159,10 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 52
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v1, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 53
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -202,14 +179,12 @@
 
     const/4 v0, 0x1
 
-    .line 55
     .local v0, isEnabled:Z
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v1, v0}, Landroid/widget/Switch;->setChecked(Z)V
 
-    .line 56
     return-void
 .end method
 
@@ -220,16 +195,13 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 33
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mSwitch:Landroid/widget/Switch;
 
     if-ne v1, p1, :cond_0
 
-    .line 42
     :goto_0
     return-void
 
-    .line 34
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -237,15 +209,12 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 35
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mSwitch:Landroid/widget/Switch;
 
-    .line 36
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v1, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 38
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -277,7 +246,6 @@
     .parameter "checked"
 
     .prologue
-    .line 45
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0}, Landroid/widget/Switch;->isChecked()Z
@@ -286,12 +254,10 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 46
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, p1}, Landroid/widget/Switch;->setChecked(Z)V
 
-    .line 48
     :cond_0
     return-void
 .end method

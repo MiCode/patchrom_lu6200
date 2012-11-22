@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 78
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$1;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "animation"
 
     .prologue
-    .line 81
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$1;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity;
 
     #getter for: Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
@@ -69,7 +67,6 @@
 
     check-cast v1, Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;
 
-    .line 86
     .local v1, module:Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;
     :try_start_0
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$1;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity;

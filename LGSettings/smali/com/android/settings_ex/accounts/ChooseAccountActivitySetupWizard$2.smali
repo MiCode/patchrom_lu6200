@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 100
     iput-object p1, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard$2;->this$0:Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -57,11 +56,9 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->setResult(ILandroid/content/Intent;)V
 
-    .line 104
     iget-object v1, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard$2;->this$0:Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->finish()V
 
-    .line 105
     return-void
 .end method

@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 137
     iput-object p1, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$2;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     iput-object p2, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$2;->val$rb:Landroid/widget/RadioButton;
@@ -49,14 +48,12 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 140
     const-string v2, "TtsEnginePreference"
 
     const-string v3, "textLayout.onClick()"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 141
     iget-object v2, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$2;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     iget-object v3, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$2;->val$rb:Landroid/widget/RadioButton;
@@ -107,7 +104,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 144
     iget-object v1, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$2;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     const/4 v2, 0x1

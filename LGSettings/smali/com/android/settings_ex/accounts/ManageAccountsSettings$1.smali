@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 195
     iput-object p1, p0, Lcom/android/settings_ex/accounts/ManageAccountsSettings$1;->this$0:Lcom/android/settings_ex/accounts/ManageAccountsSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,20 +42,16 @@
     .parameter "isChecked"
 
     .prologue
-    .line 198
     invoke-static {p2}, Landroid/content/ContentResolver;->setMasterSyncAutomatically(Z)V
 
-    .line 199
     iget-object v0, p0, Lcom/android/settings_ex/accounts/ManageAccountsSettings$1;->this$0:Lcom/android/settings_ex/accounts/ManageAccountsSettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/accounts/ManageAccountsSettings;->onSyncStateUpdated()V
 
-    .line 200
     iget-object v0, p0, Lcom/android/settings_ex/accounts/ManageAccountsSettings$1;->this$0:Lcom/android/settings_ex/accounts/ManageAccountsSettings;
 
     #calls: Lcom/android/settings_ex/accounts/ManageAccountsSettings;->removeEmptyCategories()V
     invoke-static {v0}, Lcom/android/settings_ex/accounts/ManageAccountsSettings;->access$000(Lcom/android/settings_ex/accounts/ManageAccountsSettings;)V
 
-    .line 201
     return-void
 .end method

@@ -34,24 +34,20 @@
 
     if-lez v0, :cond_0
 
-    .line 37
     const-string v0, "PowerSaveServiceManager"
 
     const-string v1, "doPowerSaveService, Start the Power save service"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 39
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/android/settings_ex/powersave/PowerSaveService;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 40
     invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 42
     :cond_0
     return-void
 .end method
@@ -98,21 +94,17 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 48
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_0
 
-    .line 50
     new-instance v0, Lcom/android/settings_ex/powersave/PowerSave;
 
     invoke-direct {v0, p1}, Lcom/android/settings_ex/powersave/PowerSave;-><init>(Landroid/content/Context;)V
 
-    .line 51
     .local v0, powerSave:Lcom/android/settings_ex/powersave/PowerSave;
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSave;->doRestore()V
 
-    .line 53
     .end local v0           #powerSave:Lcom/android/settings_ex/powersave/PowerSave;
     :cond_0
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -148,24 +140,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 20
     const-string v0, "PowerSaveServiceManager"
 
     const-string v1, "onReceive android.intent.action.BOOT_COMPLETED"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 23
     invoke-direct {p0, p1}, Lcom/android/settings_ex/powersave/PowerSaveServiceManager;->initPowerSaveStarted(Landroid/content/Context;)V
 
-    .line 26
     invoke-direct {p0, p1}, Lcom/android/settings_ex/powersave/PowerSaveServiceManager;->doPowerSaveService(Landroid/content/Context;)V
 
-    .line 31
     :goto_0
     return-void
 
-    .line 29
     :cond_0
     const-string v0, "PowerSaveServiceManager"
 

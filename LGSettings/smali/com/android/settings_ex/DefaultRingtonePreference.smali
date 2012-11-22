@@ -42,7 +42,6 @@
     .locals 2
 
     .prologue
-    .line 53
     invoke-virtual {p0}, Lcom/android/settings_ex/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -63,7 +62,6 @@
     .parameter "ringtoneUri"
 
     .prologue
-    .line 48
     invoke-virtual {p0}, Lcom/android/settings_ex/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0

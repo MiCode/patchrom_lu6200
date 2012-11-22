@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 75
     iput-object p1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$1;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -55,14 +54,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 80
     invoke-static {}, Lcom/android/settings_ex/Utils;->hasFeatureNfcP2P()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 81
     iget-object v1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$1;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$1;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;

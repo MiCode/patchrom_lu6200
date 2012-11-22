@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 94
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +46,6 @@
 
     const/4 v4, 0x0
 
-    .line 97
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;
 
     const/4 v2, 0x2
@@ -55,12 +53,10 @@
     #calls: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;->SetUserResponse(I)V
     invoke-static {v1, v2}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;->access$000(Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;I)V
 
-    .line 99
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;
 
     iput-boolean v5, v1, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;->is_selected:Z
 
-    .line 102
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;->getApplicationContext()Landroid/content/Context;
@@ -91,16 +87,13 @@
 
     move-result-object v0
 
-    .line 106
     .local v0, toast:Landroid/widget/Toast;
     const/16 v1, 0x50
 
     invoke-virtual {v0, v1, v4, v4}, Landroid/widget/Toast;->setGravity(III)V
 
-    .line 107
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 109
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingNotifyPopupLGT;->roamingdialog:Landroid/app/AlertDialog;

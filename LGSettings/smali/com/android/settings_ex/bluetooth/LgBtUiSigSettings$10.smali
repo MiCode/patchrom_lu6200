@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 245
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings$10;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "preference"
 
     .prologue
-    .line 248
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings$10;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;
 
     const-string v2, "[BTUI] [SAP] disconnect (Graceful)"
@@ -50,20 +48,17 @@
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;->BtUiLog(Ljava/lang/String;)V
     invoke-static {v1, v2}, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;->access$000(Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;Ljava/lang/String;)V
 
-    .line 249
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.lge.bluetooth.sap.disconnect"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 251
     .local v0, intent:Landroid/content/Intent;
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings$10;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 252
     const/4 v1, 0x1
 
     return v1

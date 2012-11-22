@@ -40,48 +40,39 @@
     .parameter "attrs"
 
     .prologue
-    .line 86
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 65
     new-instance v1, Landroid/content/res/Configuration;
 
     invoke-direct {v1}, Landroid/content/res/Configuration;-><init>()V
 
     iput-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCurConfig:Landroid/content/res/Configuration;
 
-    .line 81
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
     iput-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->progressHandler:Landroid/os/Handler;
 
-    .line 89
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getUseCappFonts()Z
 
     move-result v0
 
-    .line 90
     .local v0, bSupportChangeFont:Z
     if-nez v0, :cond_0
 
-    .line 91
     const-string v1, "FontSettingsPreference"
 
     const-string v2, "Warning : not support changing fonts"
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 116
     :goto_0
     return-void
 
-    .line 95
     :cond_0
     iput-object p1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mContext:Landroid/content/Context;
 
-    .line 98
     iget-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mContext:Landroid/content/Context;
 
     const-string v2, "activity"
@@ -94,23 +85,19 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mActivityManager:Landroid/app/ActivityManager;
 
-    .line 101
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->setFontTypeSelectSummary()V
 
-    .line 105
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->updateDownloadFontApps()I
 
     move-result v1
 
     packed-switch v1, :pswitch_data_0
 
-    .line 115
     :goto_1
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->updateFontTypeSelectMenuList()V
 
     goto :goto_0
 
-    .line 108
     :pswitch_0
     const-string v1, "FontSettingsPreference"
 
@@ -118,12 +105,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 109
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->updateDownloadFontApps()I
 
     goto :goto_1
 
-    .line 105
     :pswitch_data_0
     .packed-switch 0x69
         :pswitch_0
@@ -134,12 +119,10 @@
     .locals 5
 
     .prologue
-    .line 161
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->countNewDownloadFontApps()I
 
     move-result v0
 
-    .line 163
     .local v0, count:I
     const/4 v1, 0x0
 
@@ -147,23 +130,19 @@
     :goto_0
     if-ge v1, v0, :cond_2
 
-    .line 165
     invoke-static {v1}, Lcom/android/settings_ex/FontTypeFace;->getNewDownloadFontAppName(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 167
     .local v2, name:Ljava/lang/String;
     if-nez v2, :cond_1
 
-    .line 163
     :cond_0
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 170
     :cond_1
     invoke-direct {p0, v2}, Lcom/android/settings_ex/FontSettingsPreference;->unzipFontApp(Ljava/lang/String;)Z
 
@@ -173,7 +152,6 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 172
     invoke-static {v1}, Lcom/android/settings_ex/FontTypeFace;->certifyNewDownloadFontApp(I)I
 
     move-result v3
@@ -182,17 +160,14 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 173
     invoke-static {v1}, Lcom/android/settings_ex/FontTypeFace;->updateNewDownloadFontApp(I)I
 
     goto :goto_1
 
-    .line 177
     .end local v2           #name:Ljava/lang/String;
     :cond_2
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->saveNewDownloadFontApps()V
 
-    .line 178
     return-void
 .end method
 
@@ -246,18 +221,15 @@
 
     if-eqz v4, :cond_0
 
-    .line 227
     iget-object v4, p0, Lcom/android/settings_ex/FontSettingsPreference;->mActivityManager:Landroid/app/ActivityManager;
 
     invoke-virtual {v4, v1}, Landroid/app/ActivityManager;->killBackgroundProcesses(Ljava/lang/String;)V
 
-    .line 223
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 233
     .end local v1           #processName:Ljava/lang/String;
     :cond_1
     return-void
@@ -268,33 +240,25 @@
     .parameter "mode"
 
     .prologue
-    .line 310
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->sendIntentPreFontChange()V
 
-    .line 312
     const/16 v0, 0x3e9
 
     if-ne p1, v0, :cond_0
 
-    .line 313
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/FontSettingsPreference;->saveFontTypeSelectData(Z)V
 
-    .line 317
     :goto_0
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->saveFontTypeSelectConfiguration()V
 
-    .line 319
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->restartAllPackages()V
 
-    .line 320
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->sendIntentFontChange()V
 
-    .line 348
     return-void
 
-    .line 315
     :cond_0
     const/4 v0, 0x0
 
@@ -350,28 +314,23 @@
     .parameter "resetDefaultFontIndex"
 
     .prologue
-    .line 239
     const/4 v0, 0x1
 
     if-ne p1, v0, :cond_0
 
-    .line 241
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getSystemDefaultFamilyIndex()I
 
     move-result v0
 
     iput v0, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCurrentDefaultFontIndex:I
 
-    .line 242
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->saveNewDownloadFontApps()V
 
-    .line 245
     :cond_0
     iget v0, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCurrentDefaultFontIndex:I
 
     invoke-static {v0}, Lcom/android/settings_ex/FontTypeFace;->selectDefaultFont(I)V
 
-    .line 246
     return-void
 .end method
 
@@ -379,33 +338,28 @@
     .locals 3
 
     .prologue
-    .line 288
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "android.intent.action.6A73.ACTION_FONT_CHANGE_FINISHED"
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 289
     .local v1, intentOld:Landroid/content/Intent;
     iget-object v2, p0, Lcom/android/settings_ex/FontSettingsPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 292
     new-instance v0, Landroid/content/Intent;
 
     const-string v2, "jungle.intent.action.FONTDIALOG_FINISH"
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 293
     .local v0, intentGB:Landroid/content/Intent;
     iget-object v2, p0, Lcom/android/settings_ex/FontSettingsPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 295
     return-void
 .end method
 
@@ -413,20 +367,17 @@
     .locals 2
 
     .prologue
-    .line 302
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "font.intent.action.ACTION_FONT_CHANGE_READY"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 303
     .local v0, intentOld:Landroid/content/Intent;
     iget-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 304
     return-void
 .end method
 
@@ -513,19 +464,16 @@
 
     iput v2, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCurrentDefaultFontIndex:I
 
-    .line 408
     iget v2, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCurrentDefaultFontIndex:I
 
     iput v2, p0, Lcom/android/settings_ex/FontSettingsPreference;->mSelectDefaultFontIndex:I
 
-    .line 412
     iget v2, p0, Lcom/android/settings_ex/FontSettingsPreference;->mEmbeddedFontCount:I
 
     iget v3, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCurrentDefaultFontIndex:I
 
     if-gt v2, v3, :cond_0
 
-    .line 413
     iget-object v2, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCertifiedFontFaceNameLists:[Ljava/lang/String;
 
     iget v3, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCurrentDefaultFontIndex:I
@@ -536,25 +484,20 @@
 
     aget-object v1, v2, v3
 
-    .line 417
     .local v1, summary:Ljava/lang/String;
     :goto_1
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/FontSettingsPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 418
     iget v2, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCurrentDefaultFontIndex:I
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/FontSettingsPreference;->setValueIndex(I)V
 
-    .line 419
     return-void
 
-    .line 402
     .end local v1           #summary:Ljava/lang/String;
     :catch_0
     move-exception v0
 
-    .line 404
     .local v0, e:Landroid/os/RemoteException;
     const-string v2, "FontSettingsPreference"
 
@@ -581,28 +524,23 @@
     .locals 8
 
     .prologue
-    .line 122
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getDefaultFontCount()I
 
     move-result v2
 
-    .line 123
     .local v2, defaultFontCount:I
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->countCertifiedDownloadFontApps()I
 
     move-result v0
 
-    .line 124
     .local v0, certifiedFontAppCount:I
     sub-int v4, v2, v0
 
-    .line 125
     .local v4, sysEmbeddedFontCount:I
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getCurrentDefaultFontIndex()I
 
     move-result v1
 
-    .line 126
     .local v1, currentDefaultFontIndex:I
     iget-object v6, p0, Lcom/android/settings_ex/FontSettingsPreference;->mContext:Landroid/content/Context;
 
@@ -616,26 +554,21 @@
 
     move-result-object v5
 
-    .line 129
     .local v5, sysEmbeddedFontFaceNameList:[Ljava/lang/String;
     if-gt v4, v1, :cond_0
 
-    .line 130
     sub-int v6, v1, v4
 
     invoke-static {v6}, Lcom/android/settings_ex/FontTypeFace;->getCertifiedDownloadFontAppFontname(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 134
     .local v3, summary:Ljava/lang/String;
     :goto_0
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/FontSettingsPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 135
     return-void
 
-    .line 132
     .end local v3           #summary:Ljava/lang/String;
     :cond_0
     aget-object v3, v5, v1
@@ -649,38 +582,30 @@
     .parameter "fontAppName"
 
     .prologue
-    .line 425
     if-nez p1, :cond_1
 
-    .line 426
     const/16 v25, 0x0
 
-    .line 520
     :cond_0
     :goto_0
     return v25
 
-    .line 428
     :cond_1
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getNewDownloadFontAppsSrcPath()Ljava/lang/String;
 
     move-result-object v24
 
-    .line 429
     .local v24, srcPath:Ljava/lang/String;
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getNewDownloadFontAppsDstPath()Ljava/lang/String;
 
     move-result-object v14
 
-    .line 430
     .local v14, dstPath:Ljava/lang/String;
     const/16 v19, 0x0
 
-    .line 431
     .local v19, findFile:I
     const/4 v3, 0x0
 
-    .line 435
     .local v3, apkFile:Ljava/util/zip/ZipFile;
     :try_start_0
     new-instance v23, Ljava/io/File;
@@ -1298,27 +1223,22 @@
     .locals 2
 
     .prologue
-    .line 140
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->searchNewDownloadFontApps()I
 
     move-result v0
 
-    .line 142
     .local v0, state:I
     sparse-switch v0, :sswitch_data_0
 
-    .line 153
     :goto_0
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->updateDownloadFontAppsList()V
 
-    .line 154
     const/16 v0, 0x68
 
     .end local v0           #state:I
     :goto_1
     return v0
 
-    .line 145
     .restart local v0       #state:I
     :sswitch_0
     const/16 v1, 0x3e9
@@ -1327,13 +1247,11 @@
 
     goto :goto_1
 
-    .line 149
     :sswitch_1
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->findNewDownloadFontApps()V
 
     goto :goto_0
 
-    .line 142
     nop
 
     :sswitch_data_0
@@ -1347,21 +1265,18 @@
     .locals 3
 
     .prologue
-    .line 183
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->countCertifiedDownloadFontApps()I
 
     move-result v1
 
     iput v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCertifiedFontAppCount:I
 
-    .line 184
     iget v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCertifiedFontAppCount:I
 
     new-array v1, v1, [Ljava/lang/String;
 
     iput-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCertifiedFontFaceNameLists:[Ljava/lang/String;
 
-    .line 186
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -1370,7 +1285,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 187
     iget-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCertifiedFontFaceNameLists:[Ljava/lang/String;
 
     invoke-static {v0}, Lcom/android/settings_ex/FontTypeFace;->getCertifiedDownloadFontAppFontname(I)Ljava/lang/String;
@@ -1393,14 +1307,12 @@
     .locals 5
 
     .prologue
-    .line 370
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getDefaultFontCount()I
 
     move-result v1
 
     iput v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontCount:I
 
-    .line 371
     iget v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontCount:I
 
     iget v2, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCertifiedFontAppCount:I
@@ -1409,7 +1321,6 @@
 
     iput v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mEmbeddedFontCount:I
 
-    .line 372
     iget-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1424,28 +1335,24 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontFaceNameLists:[Ljava/lang/String;
 
-    .line 373
     iget v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontCount:I
 
     new-array v1, v1, [Ljava/lang/String;
 
     iput-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontFaceLists:[Ljava/lang/String;
 
-    .line 374
     iget v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontCount:I
 
     new-array v1, v1, [Ljava/lang/CharSequence;
 
     iput-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontMenuItems:[Ljava/lang/CharSequence;
 
-    .line 375
     iget v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontCount:I
 
     new-array v1, v1, [Ljava/lang/CharSequence;
 
     iput-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontMenuItemValues:[Ljava/lang/CharSequence;
 
-    .line 377
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -1454,7 +1361,6 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 379
     iget-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontFaceLists:[Ljava/lang/String;
 
     invoke-static {v0}, Lcom/android/settings_ex/FontTypeFace;->getDefaultFontFaceName(I)Ljava/lang/String;
@@ -1463,12 +1369,10 @@
 
     aput-object v2, v1, v0
 
-    .line 381
     iget v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mEmbeddedFontCount:I
 
     if-gt v1, v0, :cond_0
 
-    .line 382
     iget-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontMenuItems:[Ljava/lang/CharSequence;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1592,21 +1496,17 @@
 
     goto :goto_1
 
-    .line 389
     :cond_1
     iget-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontMenuItems:[Ljava/lang/CharSequence;
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/FontSettingsPreference;->setEntries([Ljava/lang/CharSequence;)V
 
-    .line 390
     iget-object v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mDefaultFontMenuItemValues:[Ljava/lang/CharSequence;
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/FontSettingsPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
-    .line 392
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsPreference;->setFontTypeSelect()V
 
-    .line 393
     return-void
 .end method
 
@@ -1628,30 +1528,25 @@
 
     iput v0, p0, Lcom/android/settings_ex/FontSettingsPreference;->mSelectDefaultFontIndex:I
 
-    .line 356
     iget v0, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCurrentDefaultFontIndex:I
 
     iget v1, p0, Lcom/android/settings_ex/FontSettingsPreference;->mSelectDefaultFontIndex:I
 
     if-eq v0, v1, :cond_0
 
-    .line 358
     iget v0, p0, Lcom/android/settings_ex/FontSettingsPreference;->mSelectDefaultFontIndex:I
 
     iput v0, p0, Lcom/android/settings_ex/FontSettingsPreference;->mCurrentDefaultFontIndex:I
 
-    .line 359
     const/16 v0, 0x3e8
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/FontSettingsPreference;->restartProgress(I)V
 
-    .line 364
     :goto_0
     const/4 v0, 0x1
 
     return v0
 
-    .line 362
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/FontSettingsPreference;->mContext:Landroid/content/Context;
 

@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 519
     iput-object p1, p0, Lcom/android/settings_ex/UserDictionarySettings$7;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/UserDictionarySettings$7;->val$word:Ljava/lang/String;
@@ -50,7 +49,6 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 521
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$7;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/UserDictionarySettings;->getActivity()Landroid/app/Activity;
@@ -75,7 +73,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 526
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$7;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/UserDictionarySettings;->getActivity()Landroid/app/Activity;
@@ -90,12 +87,10 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 527
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$7;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     #setter for: Lcom/android/settings_ex/UserDictionarySettings;->dig_status:I
     invoke-static {v0, v5}, Lcom/android/settings_ex/UserDictionarySettings;->access$202(Lcom/android/settings_ex/UserDictionarySettings;I)I
 
-    .line 529
     return-void
 .end method

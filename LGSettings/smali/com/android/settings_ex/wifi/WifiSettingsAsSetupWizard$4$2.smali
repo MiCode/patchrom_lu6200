@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 201
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4$2;->this$1:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "whichButton"
 
     .prologue
-    .line 203
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4$2;->this$1:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4;
 
     iget-object v0, v0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;
@@ -61,7 +59,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
-    .line 204
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4$2;->this$1:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4;
 
     iget-object v0, v0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;

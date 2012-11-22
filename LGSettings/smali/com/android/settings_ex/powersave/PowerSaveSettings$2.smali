@@ -25,7 +25,6 @@
     .parameter "x0"
 
     .prologue
-    .line 123
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings$2;->this$0:Lcom/android/settings_ex/powersave/PowerSaveSettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -66,7 +65,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 128
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings$2;->this$0:Lcom/android/settings_ex/powersave/PowerSaveSettings;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveSettings;->mContext:Landroid/content/Context;
@@ -90,17 +88,14 @@
 
     const/4 v0, 0x1
 
-    .line 129
     .local v0, isChecked:Z
     :goto_0
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings$2;->this$0:Lcom/android/settings_ex/powersave/PowerSaveSettings;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->setItemMenuEnabled(Z)V
 
-    .line 130
     return-void
 
-    .line 128
     .end local v0           #isChecked:Z
     :cond_0
     const/4 v0, 0x0

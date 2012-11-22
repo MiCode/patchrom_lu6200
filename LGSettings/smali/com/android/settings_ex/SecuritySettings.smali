@@ -23,10 +23,8 @@
     .locals 1
 
     .prologue
-    .line 55
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
-    .line 99
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/SecuritySettings;->mIccLockPreferences:Landroid/preference/PreferenceScreen;
@@ -44,30 +42,24 @@
 
     const/4 v9, 0x0
 
-    .line 108
     invoke-virtual {p0}, Lcom/android/settings_ex/SecuritySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
-    .line 109
     .local v4, root:Landroid/preference/PreferenceScreen;
     if-eqz v4, :cond_0
 
-    .line 110
     invoke-virtual {v4}, Landroid/preference/PreferenceScreen;->removeAll()V
 
-    .line 112
     :cond_0
     const v7, 0x7f060030
 
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/SecuritySettings;->addPreferencesFromResource(I)V
 
-    .line 113
     invoke-virtual {p0}, Lcom/android/settings_ex/SecuritySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
-    .line 118
     const-string v7, "device_policy"
 
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/SecuritySettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -76,13 +68,11 @@
 
     check-cast v1, Landroid/app/admin/DevicePolicyManager;
 
-    .line 120
     .local v1, dpm:Landroid/app/admin/DevicePolicyManager;
     new-instance v5, Lcom/android/settings_ex/SDEncryption;
 
     invoke-direct {v5}, Lcom/android/settings_ex/SDEncryption;-><init>()V
 
-    .line 121
     .local v5, sdencryption:Lcom/android/settings_ex/SDEncryption;
     invoke-virtual {v1}, Landroid/app/admin/DevicePolicyManager;->getStorageEncryptionStatus()I
 
@@ -100,7 +90,6 @@
 
     if-eqz v7, :cond_2
 
-    .line 173
     invoke-virtual {p0}, Lcom/android/settings_ex/SecuritySettings;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v7
@@ -115,51 +104,43 @@
 
     iput-object v7, p0, Lcom/android/settings_ex/SecuritySettings;->mIccLockPreferences:Landroid/preference/PreferenceScreen;
 
-    .line 175
     iget-object v7, p0, Lcom/android/settings_ex/SecuritySettings;->mIccLockPreferences:Landroid/preference/PreferenceScreen;
 
     const v10, 0x7f0802f2
 
     invoke-virtual {v7, v10}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
-    .line 176
     new-instance v3, Landroid/content/Intent;
 
     invoke-direct {v3}, Landroid/content/Intent;-><init>()V
 
-    .line 177
     .local v3, intent:Landroid/content/Intent;
     const-string v7, "android.intent.action.MAIN"
 
     invoke-virtual {v3, v7}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 178
     const-string v7, "com.android.phone"
 
     const-string v10, "com.android.phone.SelSubSecuritySettings"
 
     invoke-virtual {v3, v7, v10}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 179
     const-string v7, "PACKAGE"
 
     const-string v10, "com.android.phone"
 
     invoke-virtual {v3, v7, v10}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 180
     const-string v7, "TARGET_CLASS"
 
     const-string v10, "com.android.phone.IccLockSettings"
 
     invoke-virtual {v3, v7, v10}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 181
     iget-object v7, p0, Lcom/android/settings_ex/SecuritySettings;->mIccLockPreferences:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v7, v3}, Landroid/preference/PreferenceScreen;->setIntent(Landroid/content/Intent;)V
 
-    .line 182
     new-instance v2, Landroid/preference/PreferenceCategory;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/SecuritySettings;->getActivity()Landroid/app/Activity;
@@ -168,21 +149,17 @@
 
     invoke-direct {v2, v7}, Landroid/preference/PreferenceCategory;-><init>(Landroid/content/Context;)V
 
-    .line 183
     .local v2, iccLockCat:Landroid/preference/PreferenceCategory;
     const v7, 0x7f0802f3
 
     invoke-virtual {v2, v7}, Landroid/preference/PreferenceCategory;->setTitle(I)V
 
-    .line 184
     invoke-virtual {v4, v2}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
-    .line 185
     iget-object v7, p0, Lcom/android/settings_ex/SecuritySettings;->mIccLockPreferences:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v2, v7}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
-    .line 193
     .end local v2           #iccLockCat:Landroid/preference/PreferenceCategory;
     .end local v3           #intent:Landroid/content/Intent;
     :cond_2
@@ -190,14 +167,12 @@
 
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/SecuritySettings;->addPreferencesFromResource(I)V
 
-    .line 194
     invoke-static {}, Lcom/android/settings_ex/Utils;->isMultiSimEnabled()Z
 
     move-result v7
 
     if-nez v7, :cond_e
 
-    .line 199
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
     move-result-object v7
@@ -405,7 +380,6 @@
 
     iput-object v7, p0, Lcom/android/settings_ex/SecuritySettings;->mToggleAppInstallation:Landroid/preference/CheckBoxPreference;
 
-    .line 235
     iget-object v7, p0, Lcom/android/settings_ex/SecuritySettings;->mToggleAppInstallation:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0}, Lcom/android/settings_ex/SecuritySettings;->isNonMarketAppsAllowed()Z
@@ -423,7 +397,6 @@
 
     if-eqz v7, :cond_9
 
-    .line 238
     invoke-static {}, Lcom/android/settings_ex/MDMSettingsAdapter;->getInstance()Lcom/android/settings_ex/MDMSettingsAdapter;
 
     move-result-object v7
@@ -532,21 +505,18 @@
 
     if-nez v7, :cond_1
 
-    .line 129
     invoke-virtual {v5}, Lcom/android/settings_ex/SDEncryption;->getSDEncryptedSupport()Z
 
     move-result v7
 
     if-eqz v7, :cond_b
 
-    .line 130
     invoke-virtual {v5}, Lcom/android/settings_ex/SDEncryption;->getSDcardEncryptedMenuId()I
 
     move-result v7
 
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/SecuritySettings;->addPreferencesFromResource(I)V
 
-    .line 131
     const-string v7, "sd_card_encryption"
 
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/SecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -564,19 +534,16 @@
     :goto_2
     invoke-virtual {v10, v7}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 133
     sget-boolean v7, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v7, :cond_1
 
-    .line 134
     invoke-virtual {p0}, Lcom/android/settings_ex/SecuritySettings;->checkMDMEAS()Z
 
     move-result v7
 
     if-eqz v7, :cond_1
 
-    .line 135
     invoke-static {}, Lcom/android/settings_ex/MDMSettingsAdapter;->getInstance()Lcom/android/settings_ex/MDMSettingsAdapter;
 
     move-result-object v7
@@ -701,21 +668,18 @@
 
     if-nez v7, :cond_1
 
-    .line 151
     invoke-virtual {v5}, Lcom/android/settings_ex/SDEncryption;->getSDEncryptedSupport()Z
 
     move-result v7
 
     if-eqz v7, :cond_d
 
-    .line 152
     invoke-virtual {v5}, Lcom/android/settings_ex/SDEncryption;->getSDcardUnencryptedMenuId()I
 
     move-result v7
 
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/SecuritySettings;->addPreferencesFromResource(I)V
 
-    .line 153
     const-string v7, "sd_card_encryption"
 
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/SecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -733,19 +697,16 @@
     :goto_3
     invoke-virtual {v10, v7}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 155
     sget-boolean v7, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v7, :cond_1
 
-    .line 156
     invoke-virtual {p0}, Lcom/android/settings_ex/SecuritySettings;->checkMDMEAS()Z
 
     move-result v7
 
     if-eqz v7, :cond_1
 
-    .line 157
     invoke-static {}, Lcom/android/settings_ex/MDMSettingsAdapter;->getInstance()Lcom/android/settings_ex/MDMSettingsAdapter;
 
     move-result-object v7
@@ -811,7 +772,6 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 244
     invoke-virtual {p0}, Lcom/android/settings_ex/SecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -835,7 +795,6 @@
     .parameter "enabled"
 
     .prologue
-    .line 250
     invoke-virtual {p0}, Lcom/android/settings_ex/SecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -1005,13 +964,10 @@
     .parameter "data"
 
     .prologue
-    .line 338
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 339
     invoke-direct {p0}, Lcom/android/settings_ex/SecuritySettings;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
 
-    .line 340
     return-void
 .end method
 
@@ -1023,7 +979,6 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 266
     iget-object v0, p0, Lcom/android/settings_ex/SecuritySettings;->mWarnInstallApps:Landroid/content/DialogInterface;
 
     if-ne p1, v0, :cond_0
@@ -1032,15 +987,12 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 267
     invoke-direct {p0, v1}, Lcom/android/settings_ex/SecuritySettings;->setNonMarketAppsAllowed(Z)V
 
-    .line 268
     iget-object v0, p0, Lcom/android/settings_ex/SecuritySettings;->mToggleAppInstallation:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 270
     :cond_0
     return-void
 .end method
@@ -1050,10 +1002,8 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 103
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 105
     return-void
 .end method
 
@@ -1061,20 +1011,16 @@
     .locals 1
 
     .prologue
-    .line 274
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onDestroy()V
 
-    .line 275
     iget-object v0, p0, Lcom/android/settings_ex/SecuritySettings;->mWarnInstallApps:Landroid/content/DialogInterface;
 
     if-eqz v0, :cond_0
 
-    .line 276
     iget-object v0, p0, Lcom/android/settings_ex/SecuritySettings;->mWarnInstallApps:Landroid/content/DialogInterface;
 
     invoke-interface {v0}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 278
     :cond_0
     return-void
 .end method
@@ -1089,12 +1035,10 @@
 
     const/4 v0, 0x0
 
-    .line 315
     iget-object v2, p0, Lcom/android/settings_ex/SecuritySettings;->mShowPassword:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_1
 
-    .line 316
     invoke-virtual {p0}, Lcom/android/settings_ex/SecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1114,17 +1058,14 @@
     :cond_0
     invoke-static {v2, v3, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 330
     :goto_0
     return v1
 
-    .line 318
     :cond_1
     iget-object v2, p0, Lcom/android/settings_ex/SecuritySettings;->mToggleAppInstallation:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_3
 
-    .line 319
     iget-object v2, p0, Lcom/android/settings_ex/SecuritySettings;->mToggleAppInstallation:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -1133,23 +1074,19 @@
 
     if-eqz v2, :cond_2
 
-    .line 320
     iget-object v2, p0, Lcom/android/settings_ex/SecuritySettings;->mToggleAppInstallation:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 321
     invoke-direct {p0}, Lcom/android/settings_ex/SecuritySettings;->warnAppInstallation()V
 
     goto :goto_0
 
-    .line 323
     :cond_2
     invoke-direct {p0, v0}, Lcom/android/settings_ex/SecuritySettings;->setNonMarketAppsAllowed(Z)V
 
     goto :goto_0
 
-    .line 327
     :cond_3
     invoke-super {p0, p1, p2}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
@@ -1166,13 +1103,10 @@
 
     const/4 v2, 0x1
 
-    .line 298
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
-    .line 302
     invoke-direct {p0}, Lcom/android/settings_ex/SecuritySettings;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
 
-    .line 305
     iget-object v4, p0, Lcom/android/settings_ex/SecuritySettings;->mShowPassword:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/SecuritySettings;->getContentResolver()Landroid/content/ContentResolver;

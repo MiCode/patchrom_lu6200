@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1178
     iput-object p1, p0, Lcom/android/settings_ex/DataUsageSummary$6;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,18 +41,15 @@
     .parameter "v"
 
     .prologue
-    .line 1181
     invoke-static {}, Lcom/android/settings_ex/Utils;->isMonkeyRunning()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 1193
     :goto_0
     return-void
 
-    .line 1185
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$6;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
@@ -70,26 +66,22 @@
 
     const/4 v0, 0x1
 
-    .line 1186
     .local v0, disableAtLimit:Z
     :goto_1
     if-eqz v0, :cond_2
 
-    .line 1189
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$6;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-static {v1}, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;->show(Lcom/android/settings_ex/DataUsageSummary;)V
 
     goto :goto_0
 
-    .line 1185
     .end local v0           #disableAtLimit:Z
     :cond_1
     const/4 v0, 0x0
 
     goto :goto_1
 
-    .line 1191
     .restart local v0       #disableAtLimit:Z
     :cond_2
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$6;->this$0:Lcom/android/settings_ex/DataUsageSummary;

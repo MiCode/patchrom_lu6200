@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 404
     iput-object p1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$6;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

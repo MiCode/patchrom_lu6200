@@ -33,7 +33,6 @@
     .parameter
 
     .prologue
-    .line 355
     iput-object p1, p0, Lcom/android/settings_ex/UserDictionarySettings$2;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/UserDictionarySettings$2;->val$editText:Landroid/widget/EditText;
@@ -53,7 +52,6 @@
     .parameter "which"
 
     .prologue
-    .line 357
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$2;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/UserDictionarySettings$2;->val$editText:Landroid/widget/EditText;
@@ -69,7 +67,6 @@
     #calls: Lcom/android/settings_ex/UserDictionarySettings;->onAddOrEditFinished(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/UserDictionarySettings;->access$100(Lcom/android/settings_ex/UserDictionarySettings;Ljava/lang/String;)V
 
-    .line 358
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$2;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     #getter for: Lcom/android/settings_ex/UserDictionarySettings;->mAutoReturn:Z

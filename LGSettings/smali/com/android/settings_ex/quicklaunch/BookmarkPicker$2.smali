@@ -33,7 +33,6 @@
     .parameter
 
     .prologue
-    .line 176
     iput-object p1, p0, Lcom/android/settings_ex/quicklaunch/BookmarkPicker$2;->this$0:Lcom/android/settings_ex/quicklaunch/BookmarkPicker;
 
     iput-object p2, p0, Lcom/android/settings_ex/quicklaunch/BookmarkPicker$2;->val$newAdapterList:Ljava/util/ArrayList;
@@ -51,7 +50,6 @@
     .locals 3
 
     .prologue
-    .line 182
     iget-object v0, p0, Lcom/android/settings_ex/quicklaunch/BookmarkPicker$2;->this$0:Lcom/android/settings_ex/quicklaunch/BookmarkPicker;
 
     iget-object v1, p0, Lcom/android/settings_ex/quicklaunch/BookmarkPicker$2;->this$0:Lcom/android/settings_ex/quicklaunch/BookmarkPicker;
@@ -66,7 +64,6 @@
     #setter for: Lcom/android/settings_ex/quicklaunch/BookmarkPicker;->mMyAdapter:Landroid/widget/SimpleAdapter;
     invoke-static {v0, v1}, Lcom/android/settings_ex/quicklaunch/BookmarkPicker;->access$302(Lcom/android/settings_ex/quicklaunch/BookmarkPicker;Landroid/widget/SimpleAdapter;)Landroid/widget/SimpleAdapter;
 
-    .line 183
     iget-object v0, p0, Lcom/android/settings_ex/quicklaunch/BookmarkPicker$2;->this$0:Lcom/android/settings_ex/quicklaunch/BookmarkPicker;
 
     iget-object v1, p0, Lcom/android/settings_ex/quicklaunch/BookmarkPicker$2;->val$newResolveList:Ljava/util/ArrayList;
@@ -74,7 +71,6 @@
     #setter for: Lcom/android/settings_ex/quicklaunch/BookmarkPicker;->mResolveList:Ljava/util/List;
     invoke-static {v0, v1}, Lcom/android/settings_ex/quicklaunch/BookmarkPicker;->access$502(Lcom/android/settings_ex/quicklaunch/BookmarkPicker;Ljava/util/List;)Ljava/util/List;
 
-    .line 184
     iget-object v0, p0, Lcom/android/settings_ex/quicklaunch/BookmarkPicker$2;->this$0:Lcom/android/settings_ex/quicklaunch/BookmarkPicker;
 
     iget-object v1, p0, Lcom/android/settings_ex/quicklaunch/BookmarkPicker$2;->this$0:Lcom/android/settings_ex/quicklaunch/BookmarkPicker;

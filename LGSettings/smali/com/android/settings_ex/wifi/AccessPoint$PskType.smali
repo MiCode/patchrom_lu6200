@@ -48,7 +48,6 @@
 
     const/4 v2, 0x0
 
-    .line 55
     new-instance v0, Lcom/android/settings_ex/wifi/AccessPoint$PskType;
 
     const-string v1, "UNKNOWN"
@@ -57,7 +56,6 @@
 
     sput-object v0, Lcom/android/settings_ex/wifi/AccessPoint$PskType;->UNKNOWN:Lcom/android/settings_ex/wifi/AccessPoint$PskType;
 
-    .line 56
     new-instance v0, Lcom/android/settings_ex/wifi/AccessPoint$PskType;
 
     const-string v1, "WPA"
@@ -66,7 +64,6 @@
 
     sput-object v0, Lcom/android/settings_ex/wifi/AccessPoint$PskType;->WPA:Lcom/android/settings_ex/wifi/AccessPoint$PskType;
 
-    .line 57
     new-instance v0, Lcom/android/settings_ex/wifi/AccessPoint$PskType;
 
     const-string v1, "WPA2"
@@ -75,7 +72,6 @@
 
     sput-object v0, Lcom/android/settings_ex/wifi/AccessPoint$PskType;->WPA2:Lcom/android/settings_ex/wifi/AccessPoint$PskType;
 
-    .line 58
     new-instance v0, Lcom/android/settings_ex/wifi/AccessPoint$PskType;
 
     const-string v1, "WPA_WPA2"
@@ -132,7 +128,6 @@
     .parameter
 
     .prologue
-    .line 54
     const-class v0, Lcom/android/settings_ex/wifi/AccessPoint$PskType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -148,7 +143,6 @@
     .locals 1
 
     .prologue
-    .line 54
     sget-object v0, Lcom/android/settings_ex/wifi/AccessPoint$PskType;->$VALUES:[Lcom/android/settings_ex/wifi/AccessPoint$PskType;
 
     invoke-virtual {v0}, [Lcom/android/settings_ex/wifi/AccessPoint$PskType;->clone()Ljava/lang/Object;

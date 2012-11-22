@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1667
     iput-object p1, p0, Lcom/android/settings_ex/RingtonePicker$8;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -56,12 +55,10 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 1673
     .local v0, intent:Landroid/content/Intent;
     iget-object v1, p0, Lcom/android/settings_ex/RingtonePicker$8;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/RingtonePicker;->startActivity(Landroid/content/Intent;)V
 
-    .line 1676
     return-void
 .end method

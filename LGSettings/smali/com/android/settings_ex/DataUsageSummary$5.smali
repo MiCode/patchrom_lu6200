@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1151
     iput-object p1, p0, Lcom/android/settings_ex/DataUsageSummary$5;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +44,6 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 1154
     iget-object v2, p0, Lcom/android/settings_ex/DataUsageSummary$5;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #getter for: Lcom/android/settings_ex/DataUsageSummary;->mBinding:Z
@@ -98,12 +96,10 @@
 
     if-ne v4, v2, :cond_2
 
-    .line 1161
     iget-object v2, p0, Lcom/android/settings_ex/DataUsageSummary$5;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-static {v2}, Lcom/android/settings_ex/DataUsageSummary$ConfirmDataDisableFragment;->show(Lcom/android/settings_ex/DataUsageSummary;)V
 
-    .line 1174
     :cond_1
     :goto_1
     iget-object v2, p0, Lcom/android/settings_ex/DataUsageSummary$5;->this$0:Lcom/android/settings_ex/DataUsageSummary;
@@ -124,13 +120,11 @@
 
     goto :goto_1
 
-    .line 1169
     :cond_3
     iget-object v2, p0, Lcom/android/settings_ex/DataUsageSummary$5;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-static {v2}, Lcom/android/settings_ex/DataUsageSummary$ConfirmDataDisableFragment;->show(Lcom/android/settings_ex/DataUsageSummary;)V
 
-    .line 1170
     #calls: Lcom/android/settings_ex/DataUsageSummary;->setConfirmDialogShowed(Z)V
     invoke-static {v4}, Lcom/android/settings_ex/DataUsageSummary;->access$1300(Z)V
 

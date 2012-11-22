@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 403
     iput-object p1, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -52,12 +51,10 @@
 
     const/4 v4, 0x0
 
-    .line 406
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     iget-object v3, v5, Lcom/android/settings_ex/RingtonePicker;->position_uri:Landroid/net/Uri;
 
-    .line 410
     .local v3, uri:Landroid/net/Uri;
     sget-boolean v5, Lcom/lge/lgdrm/Drm;->LGDRM:Z
 
@@ -72,7 +69,6 @@
 
     if-nez v5, :cond_0
 
-    .line 412
     iget-object v4, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
@@ -87,22 +83,18 @@
 
     invoke-virtual {v4}, Landroid/widget/Toast;->show()V
 
-    .line 416
     iget-object v4, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v4, v10}, Lcom/android/settings_ex/RingtonePicker;->setResult(I)V
 
-    .line 515
     :goto_0
     return-void
 
-    .line 419
     :cond_0
     new-instance v2, Landroid/content/Intent;
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    .line 421
     .local v2, resultIntent:Landroid/content/Intent;
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
@@ -120,7 +112,6 @@
 
     if-ne v5, v6, :cond_5
 
-    .line 424
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     #getter for: Lcom/android/settings_ex/RingtonePicker;->mUriForDefaultItem:Landroid/net/Uri;
@@ -146,7 +137,6 @@
 
     if-eqz v5, :cond_2
 
-    .line 460
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     iget v5, v5, Lcom/android/settings_ex/RingtonePicker;->internal_ringtone_position:I
@@ -159,14 +149,12 @@
 
     if-ne v5, v9, :cond_7
 
-    .line 461
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/RingtonePicker;->getDefaultPhoneRingtone()Landroid/net/Uri;
 
     move-result-object v3
 
-    .line 469
     :cond_2
     :goto_2
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
@@ -175,7 +163,6 @@
 
     if-ne v5, v8, :cond_8
 
-    .line 470
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
@@ -220,18 +207,15 @@
 
     if-ne v5, v6, :cond_6
 
-    .line 427
     const/4 v3, 0x0
 
     goto :goto_1
 
-    .line 429
     :cond_6
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     iget-object v3, v5, Lcom/android/settings_ex/RingtonePicker;->position_uri:Landroid/net/Uri;
 
-    .line 432
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v3}, Landroid/net/Uri;->toString()Ljava/lang/String;
@@ -270,7 +254,6 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 436
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     #calls: Lcom/android/settings_ex/RingtonePicker;->checkDRM(Ljava/lang/String;)I
@@ -278,17 +261,14 @@
 
     move-result v0
 
-    .line 438
     .local v0, nStatus:I
     if-ne v0, v8, :cond_1
 
-    .line 439
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     #setter for: Lcom/android/settings_ex/RingtonePicker;->mDrmRingtone:Z
     invoke-static {v5, v10}, Lcom/android/settings_ex/RingtonePicker;->access$202(Lcom/android/settings_ex/RingtonePicker;Z)Z
 
-    .line 440
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     iget-object v6, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
@@ -303,7 +283,6 @@
 
     invoke-virtual {v5}, Landroid/widget/Toast;->show()V
 
-    .line 445
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     #getter for: Lcom/android/settings_ex/RingtonePicker;->mUriForDefaultItem:Landroid/net/Uri;
@@ -336,7 +315,6 @@
 
     if-ne v5, v6, :cond_a
 
-    .line 477
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
@@ -366,7 +344,6 @@
 
     if-ne v5, v6, :cond_c
 
-    .line 484
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
@@ -396,7 +373,6 @@
 
     if-ne v5, v6, :cond_e
 
-    .line 491
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
@@ -426,7 +402,6 @@
 
     if-ne v5, v6, :cond_10
 
-    .line 498
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
@@ -456,7 +431,6 @@
 
     if-ne v5, v6, :cond_4
 
-    .line 505
     iget-object v5, p0, Lcom/android/settings_ex/RingtonePicker$3;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;

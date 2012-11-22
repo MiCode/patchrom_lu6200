@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 980
     iput-object p1, p0, Lcom/android/settings_ex/TetherSettings$5;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

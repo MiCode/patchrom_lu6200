@@ -30,14 +30,12 @@
     .parameter
 
     .prologue
-    .line 939
     iput-object p1, p0, Lcom/android/settings_ex/UserDictionarySettings$8;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     iput-object p3, p0, Lcom/android/settings_ex/UserDictionarySettings$8;->val$editText:Landroid/widget/EditText;
 
     invoke-direct {p0, p2}, Landroid/text/InputFilter$LengthFilter;-><init>(I)V
 
-    .line 940
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$8;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/UserDictionarySettings;->getActivity()Landroid/app/Activity;
@@ -80,36 +78,29 @@
 
     rsub-int/lit8 v0, v1, 0x32
 
-    .line 946
     .local v0, keep:I
     if-gtz v0, :cond_0
 
-    .line 947
     iget-object v1, p0, Lcom/android/settings_ex/UserDictionarySettings$8;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v2, p0, Lcom/android/settings_ex/UserDictionarySettings$8;->val$editText:Landroid/widget/EditText;
 
     invoke-virtual {v1, v2}, Landroid/view/inputmethod/InputMethodManager;->restartInput(Landroid/view/View;)V
 
-    .line 948
     const-string v1, ""
 
-    .line 953
     :goto_0
     return-object v1
 
-    .line 949
     :cond_0
     sub-int v1, p3, p2
 
     if-lt v0, v1, :cond_1
 
-    .line 950
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 952
     :cond_1
     iget-object v1, p0, Lcom/android/settings_ex/UserDictionarySettings$8;->mImm:Landroid/view/inputmethod/InputMethodManager;
 

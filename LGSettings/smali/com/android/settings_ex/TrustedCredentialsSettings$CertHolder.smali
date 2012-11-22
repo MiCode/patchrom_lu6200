@@ -57,32 +57,24 @@
     .parameter "x509Cert"
 
     .prologue
-    .line 305
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 306
     iput-object p1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mStore:Lorg/apache/harmony/xnet/provider/jsse/TrustedCertificateStore;
 
-    .line 307
     iput-object p2, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mAdapter:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
-    .line 308
     iput-object p3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mTab:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
-    .line 309
     iput-object p4, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mAlias:Ljava/lang/String;
 
-    .line 310
     iput-object p5, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mX509Cert:Ljava/security/cert/X509Certificate;
 
-    .line 312
     new-instance v3, Landroid/net/http/SslCertificate;
 
     invoke-direct {v3, p5}, Landroid/net/http/SslCertificate;-><init>(Ljava/security/cert/X509Certificate;)V
 
     iput-object v3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSslCert:Landroid/net/http/SslCertificate;
 
-    .line 314
     iget-object v3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSslCert:Landroid/net/http/SslCertificate;
 
     invoke-virtual {v3}, Landroid/net/http/SslCertificate;->getIssuedTo()Landroid/net/http/SslCertificate$DName;
@@ -125,20 +117,16 @@
 
     if-nez v3, :cond_1
 
-    .line 321
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 322
     iput-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSubjectPrimary:Ljava/lang/String;
 
-    .line 323
     iput-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSubjectSecondary:Ljava/lang/String;
 
-    .line 337
     :goto_0
     iget-object v3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mTab:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
@@ -153,19 +141,15 @@
 
     iput-boolean v3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mDeleted:Z
 
-    .line 338
     return-void
 
-    .line 325
     :cond_0
     iput-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSubjectPrimary:Ljava/lang/String;
 
-    .line 326
     iput-object v2, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSubjectSecondary:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 329
     :cond_1
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
@@ -173,17 +157,14 @@
 
     if-nez v3, :cond_2
 
-    .line 330
     iput-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSubjectPrimary:Ljava/lang/String;
 
-    .line 331
     const-string v3, ""
 
     iput-object v3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSubjectSecondary:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 333
     :cond_2
     iget-object v3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSslCert:Landroid/net/http/SslCertificate;
 
@@ -215,7 +196,6 @@
     .parameter "x5"
 
     .prologue
-    .line 289
     invoke-direct/range {p0 .. p5}, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;-><init>(Lorg/apache/harmony/xnet/provider/jsse/TrustedCertificateStore;Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;)V
 
     return-void
@@ -226,7 +206,6 @@
     .parameter "x0"
 
     .prologue
-    .line 289
     iget-boolean v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mDeleted:Z
 
     return v0
@@ -238,7 +217,6 @@
     .parameter "x1"
 
     .prologue
-    .line 289
     iput-boolean p1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mDeleted:Z
 
     return p1
@@ -249,7 +227,6 @@
     .parameter "x0"
 
     .prologue
-    .line 289
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mTab:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     return-object v0
@@ -260,7 +237,6 @@
     .parameter "x0"
 
     .prologue
-    .line 289
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSubjectPrimary:Ljava/lang/String;
 
     return-object v0
@@ -271,7 +247,6 @@
     .parameter "x0"
 
     .prologue
-    .line 289
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSubjectSecondary:Ljava/lang/String;
 
     return-object v0
@@ -282,7 +257,6 @@
     .parameter "x0"
 
     .prologue
-    .line 289
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mAdapter:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
     return-object v0
@@ -293,7 +267,6 @@
     .parameter "x0"
 
     .prologue
-    .line 289
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSslCert:Landroid/net/http/SslCertificate;
 
     return-object v0
@@ -304,7 +277,6 @@
     .parameter "x0"
 
     .prologue
-    .line 289
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mX509Cert:Ljava/security/cert/X509Certificate;
 
     return-object v0
@@ -315,7 +287,6 @@
     .parameter "x0"
 
     .prologue
-    .line 289
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mAlias:Ljava/lang/String;
 
     return-object v0
@@ -328,7 +299,6 @@
     .parameter "o"
 
     .prologue
-    .line 340
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSubjectPrimary:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSubjectPrimary:Ljava/lang/String;
@@ -364,7 +334,6 @@
     .parameter "x0"
 
     .prologue
-    .line 289
     check-cast p1, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;
 
     .end local p1
@@ -380,25 +349,20 @@
     .parameter "o"
 
     .prologue
-    .line 347
     instance-of v1, p1, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;
 
     if-nez v1, :cond_0
 
-    .line 348
     const/4 v1, 0x0
 
-    .line 351
     :goto_0
     return v1
 
     :cond_0
     move-object v0, p1
 
-    .line 350
     check-cast v0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;
 
-    .line 351
     .local v0, other:Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mAlias:Ljava/lang/String;
 
@@ -415,7 +379,6 @@
     .locals 1
 
     .prologue
-    .line 354
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mAlias:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I

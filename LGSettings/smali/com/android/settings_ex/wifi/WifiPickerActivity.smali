@@ -108,7 +108,6 @@
     .prologue
     const/16 v8, 0x8
 
-    .line 45
     iget-object v5, p0, Lcom/android/settings_ex/wifi/WifiPickerActivity;->targetProduct:Ljava/lang/String;
 
     const-string v6, "p2"
@@ -119,24 +118,20 @@
 
     if-eqz v5, :cond_0
 
-    .line 47
     const v5, 0x20a01c2
 
     invoke-virtual {p0, v5}, Lcom/android/settings_ex/wifi/WifiPickerActivity;->setTheme(I)V
 
-    .line 49
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/WifiPickerActivity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
-    .line 50
     .local v0, actionBar:Landroid/app/ActionBar;
     const/4 v5, 0x0
 
     invoke-virtual {v0, v5}, Landroid/app/ActionBar;->setDisplayShowHomeEnabled(Z)V
 
-    .line 51
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/WifiPickerActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
@@ -176,7 +171,6 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 54
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/WifiPickerActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v5
@@ -208,12 +202,10 @@
 
     if-eqz v5, :cond_3
 
-    .line 59
     const v5, 0x7f080929
 
     invoke-virtual {p0, v5}, Lcom/android/settings_ex/wifi/WifiPickerActivity;->setTitle(I)V
 
-    .line 65
     :goto_1
     const-string v5, "WifiPickerActivity"
 
@@ -327,29 +319,24 @@
 
     invoke-virtual {v0, p0, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 100
     const-string v2, ":android:show_fragment"
 
     invoke-virtual {v0, v2, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 101
     const-string v2, ":android:show_fragment_args"
 
     invoke-virtual {v0, v2, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 102
     const-string v2, ":android:no_headers"
 
     const/4 v3, 0x1
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 104
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/WifiPickerActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 105
     .local v1, orgIntent:Landroid/content/Intent;
     const-string v2, "extra_prefs_show_button_bar"
 
@@ -414,18 +401,14 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 118
     :cond_2
     if-nez p3, :cond_3
 
-    .line 119
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/wifi/WifiPickerActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 123
     :goto_0
     return-void
 
-    .line 121
     :cond_3
     invoke-virtual {p3, v0, p4}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
 

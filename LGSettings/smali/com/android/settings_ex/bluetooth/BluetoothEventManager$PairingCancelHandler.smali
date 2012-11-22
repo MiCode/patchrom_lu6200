@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 495
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$PairingCancelHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 495
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$PairingCancelHandler;-><init>(Lcom/android/settings_ex/bluetooth/BluetoothEventManager;)V
 
     return-void
@@ -87,11 +85,9 @@
 
     move-result-object v0
 
-    .line 504
     .local v0, cachedDevice:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
     if-nez v0, :cond_1
 
-    .line 505
     const-string v2, "BluetoothEventManager"
 
     const-string v3, "Can\'t get cachedDevice: exiting"

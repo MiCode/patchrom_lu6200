@@ -36,14 +36,12 @@
     .locals 1
 
     .prologue
-    .line 581
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
 
     sput-object v0, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->sSpanSize:Ljava/lang/Object;
 
-    .line 582
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
@@ -193,7 +191,6 @@
 
     invoke-virtual {v0, v12, v13, v6}, Landroid/text/SpannableStringBuilder;->replace(IILjava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 615
     sget-object v12, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->sSpanUnit:Ljava/lang/Object;
 
     const-string v13, "^2"
@@ -345,14 +342,12 @@
     .parameter "point"
 
     .prologue
-    .line 575
     iget v4, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->mSize:F
 
     div-float v4, p1, v4
 
     float-to-double v2, v4
 
-    .line 576
     .local v2, normalized:D
     const-wide v4, 0x3ff4f6ac3b8f3c62L
 
@@ -391,14 +386,12 @@
     .locals 13
 
     .prologue
-    .line 623
     iget-wide v9, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->mMax:J
 
     iget-wide v11, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->mMin:J
 
     sub-long v1, v9, v11
 
-    .line 625
     .local v1, range:J
     const-wide v9, 0x180000000L
 
@@ -406,25 +399,20 @@
 
     if-gez v9, :cond_0
 
-    .line 626
     const-wide/32 v4, 0x10000000
 
-    .line 633
     .local v4, tickJump:J
     :goto_0
     div-long v9, v1, v4
 
     long-to-int v3, v9
 
-    .line 634
     .local v3, tickCount:I
     new-array v6, v3, [F
 
-    .line 635
     .local v6, tickPoints:[F
     iget-wide v7, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->mMin:J
 
-    .line 636
     .local v7, value:J
     const/4 v0, 0x0
 
@@ -434,22 +422,18 @@
 
     if-ge v0, v9, :cond_2
 
-    .line 637
     invoke-virtual {p0, v7, v8}, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->convertToPoint(J)F
 
     move-result v9
 
     aput v9, v6, v0
 
-    .line 638
     add-long/2addr v7, v4
 
-    .line 636
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 627
     .end local v0           #i:I
     .end local v3           #tickCount:I
     .end local v4           #tickJump:J
@@ -537,7 +521,6 @@
     .parameter "max"
 
     .prologue
-    .line 545
     iget-wide v0, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->mMin:J
 
     cmp-long v0, v0, p1
@@ -550,17 +533,13 @@
 
     if-eqz v0, :cond_1
 
-    .line 546
     :cond_0
     iput-wide p1, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->mMin:J
 
-    .line 547
     iput-wide p3, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->mMax:J
 
-    .line 548
     const/4 v0, 0x1
 
-    .line 550
     :goto_0
     return v0
 
@@ -575,20 +554,16 @@
     .parameter "size"
 
     .prologue
-    .line 556
     iget v0, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->mSize:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 557
     iput p1, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->mSize:F
 
-    .line 558
     const/4 v0, 0x1
 
-    .line 560
     :goto_0
     return v0
 
@@ -603,12 +578,10 @@
     .parameter "value"
 
     .prologue
-    .line 646
     invoke-virtual {p0, p1, p2}, Lcom/android/settings_ex/widget/ChartDataUsageView$DataAxis;->convertToPoint(J)F
 
     move-result v0
 
-    .line 647
     .local v0, point:F
     float-to-double v1, v0
 

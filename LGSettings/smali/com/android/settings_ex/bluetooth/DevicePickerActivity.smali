@@ -21,14 +21,11 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 32
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 33
     const v0, 0x7f040011
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/DevicePickerActivity;->setContentView(I)V
 
-    .line 34
     return-void
 .end method

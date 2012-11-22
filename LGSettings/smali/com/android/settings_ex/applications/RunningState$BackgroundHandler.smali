@@ -25,13 +25,10 @@
     .parameter "looper"
 
     .prologue
-    .line 143
     iput-object p1, p0, Lcom/android/settings_ex/applications/RunningState$BackgroundHandler;->this$0:Lcom/android/settings_ex/applications/RunningState;
 
-    .line 144
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 145
     return-void
 .end method
 
@@ -99,7 +96,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 159
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningState$BackgroundHandler;->this$0:Lcom/android/settings_ex/applications/RunningState;
 
     iget-object v1, v1, Lcom/android/settings_ex/applications/RunningState;->mHandler:Landroid/os/Handler;
@@ -134,35 +130,29 @@
     :goto_1
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 161
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningState$BackgroundHandler;->this$0:Lcom/android/settings_ex/applications/RunningState;
 
     iget-object v1, v1, Lcom/android/settings_ex/applications/RunningState;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 162
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/applications/RunningState$BackgroundHandler;->removeMessages(I)V
 
-    .line 163
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/applications/RunningState$BackgroundHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object p1
 
-    .line 164
     const-wide/16 v1, 0x7d0
 
     invoke-virtual {p0, p1, v1, v2}, Lcom/android/settings_ex/applications/RunningState$BackgroundHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     goto :goto_0
 
-    .line 160
     :cond_1
     const/4 v1, 0x0
 
     goto :goto_1
 
-    .line 149
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

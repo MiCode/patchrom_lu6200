@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 836
     iput-object p1, p0, Lcom/android/settings_ex/applications/InstalledAppDetails$MyAlertDialogFragment$6;->this$0:Lcom/android/settings_ex/applications/InstalledAppDetails$MyAlertDialogFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "which"
 
     .prologue
-    .line 839
     new-instance v1, Lcom/android/settings_ex/applications/InstalledAppDetails$DisableChanger;
 
     iget-object v0, p0, Lcom/android/settings_ex/applications/InstalledAppDetails$MyAlertDialogFragment$6;->this$0:Lcom/android/settings_ex/applications/InstalledAppDetails$MyAlertDialogFragment;

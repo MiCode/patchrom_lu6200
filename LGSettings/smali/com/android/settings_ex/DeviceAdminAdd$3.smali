@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 181
     iput-object p1, p0, Lcom/android/settings_ex/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,14 +43,12 @@
     .prologue
     const/4 v4, -0x1
 
-    .line 183
     iget-object v1, p0, Lcom/android/settings_ex/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     iget-boolean v1, v1, Lcom/android/settings_ex/DeviceAdminAdd;->mAdding:Z
 
     if-eqz v1, :cond_1
 
-    .line 185
     :try_start_0
     iget-object v1, p0, Lcom/android/settings_ex/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
@@ -71,7 +68,6 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/app/admin/DevicePolicyManager;->setActiveAdmin(Landroid/content/ComponentName;Z)V
 
-    .line 186
     iget-object v1, p0, Lcom/android/settings_ex/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     const/4 v2, -0x1
@@ -80,22 +76,18 @@
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 196
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/android/settings_ex/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/DeviceAdminAdd;->finish()V
 
-    .line 228
     :goto_1
     return-void
 
-    .line 187
     :catch_0
     move-exception v0
 
-    .line 190
     .local v0, e:Ljava/lang/RuntimeException;
     const-string v1, "DeviceAdminAdd"
 
@@ -127,7 +119,6 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 192
     iget-object v1, p0, Lcom/android/settings_ex/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     iget-object v1, v1, Lcom/android/settings_ex/DeviceAdminAdd;->mDPM:Landroid/app/admin/DevicePolicyManager;
@@ -146,14 +137,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 193
     iget-object v1, p0, Lcom/android/settings_ex/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     invoke-virtual {v1, v4}, Lcom/android/settings_ex/DeviceAdminAdd;->setResult(I)V
 
     goto :goto_0
 
-    .line 201
     .end local v0           #e:Ljava/lang/RuntimeException;
     :cond_1
     :try_start_1

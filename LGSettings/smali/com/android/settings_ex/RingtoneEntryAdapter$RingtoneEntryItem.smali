@@ -30,16 +30,12 @@
     .parameter "uri"
 
     .prologue
-    .line 54
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 55
     iput-object p1, p0, Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneEntryItem;->title:Ljava/lang/String;
 
-    .line 56
     iput-object p2, p0, Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneEntryItem;->uri:Ljava/lang/String;
 
-    .line 57
     return-void
 .end method
 

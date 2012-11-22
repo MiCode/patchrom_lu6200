@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 79
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -74,31 +73,25 @@
 
     move-result v1
 
-    .line 87
     .local v1, usbConfigured:Z
     if-eqz v2, :cond_1
 
-    .line 88
     if-eqz v1, :cond_0
 
-    .line 89
     const-string v3, "UsbSettingsPopup"
 
     const-string v4, "[AUTORUN] ===== USB Connection ====="
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 90
     sput-boolean v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbConnected:Z
 
-    .line 116
     .end local v1           #usbConfigured:Z
     .end local v2           #usbConnected:Z
     :cond_0
     :goto_0
     return-void
 
-    .line 93
     .restart local v1       #usbConfigured:Z
     .restart local v2       #usbConnected:Z
     :cond_1
@@ -108,10 +101,8 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 94
     sput-boolean v5, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbConnected:Z
 
-    .line 96
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
@@ -128,7 +119,6 @@
 
     invoke-virtual {v3, v4, v6}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 98
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mConnectivityManager:Landroid/net/ConnectivityManager;
@@ -138,17 +128,14 @@
 
     invoke-virtual {v3, v5}, Landroid/net/ConnectivityManager;->setUsbTethering(Z)I
 
-    .line 99
     invoke-static {p1, v5}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->setTetherStatus(Landroid/content/Context;Z)V
 
-    .line 100
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->finish()V
 
     goto :goto_0
 
-    .line 102
     .end local v1           #usbConfigured:Z
     .end local v2           #usbConnected:Z
     :cond_2
@@ -160,12 +147,10 @@
 
     if-eqz v3, :cond_4
 
-    .line 103
     sget-boolean v3, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
     if-eqz v3, :cond_3
 
-    .line 104
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
 
     const-string v4, ""
@@ -175,13 +160,11 @@
 
     goto :goto_0
 
-    .line 106
     :cond_3
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
     goto :goto_0
 
-    .line 109
     :cond_4
     const-string v3, "android.intent.action.autorun_change_mode"
 
@@ -191,21 +174,17 @@
 
     if-eqz v3, :cond_0
 
-    .line 110
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
-    .line 111
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
 
     #calls: Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->cancelProgressPopup()V
     invoke-static {v3}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->access$400(Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;)V
 
-    .line 113
     sget-boolean v3, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
     if-nez v3, :cond_0
 
-    .line 114
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
 
     const-string v4, ""

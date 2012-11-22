@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 118
     iput-object p1, p0, Lcom/android/settings_ex/TimedSilentSettings$1;->this$0:Lcom/android/settings_ex/TimedSilentSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,18 +42,15 @@
     .parameter "isChecked"
 
     .prologue
-    .line 121
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings$1;->this$0:Lcom/android/settings_ex/TimedSilentSettings;
 
     #calls: Lcom/android/settings_ex/TimedSilentSettings;->OnSilentGroupClick()V
     invoke-static {v0}, Lcom/android/settings_ex/TimedSilentSettings;->access$000(Lcom/android/settings_ex/TimedSilentSettings;)V
 
-    .line 122
     iget-object v0, p0, Lcom/android/settings_ex/TimedSilentSettings$1;->this$0:Lcom/android/settings_ex/TimedSilentSettings;
 
     #calls: Lcom/android/settings_ex/TimedSilentSettings;->setlayoutVisible(Z)V
     invoke-static {v0, p2}, Lcom/android/settings_ex/TimedSilentSettings;->access$100(Lcom/android/settings_ex/TimedSilentSettings;Z)V
 
-    .line 123
     return-void
 .end method

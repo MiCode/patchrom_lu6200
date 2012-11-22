@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 125
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +44,6 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 127
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;
 
     const/4 v2, 0x2
@@ -53,12 +51,10 @@
     #calls: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;->SetUserResponse(I)V
     invoke-static {v1, v2}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;->access$000(Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;I)V
 
-    .line 128
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;
 
     iput-boolean v3, v1, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;->is_selected:Z
 
-    .line 131
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;->mConnMgr:Landroid/net/ConnectivityManager;
@@ -119,7 +115,6 @@
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 147
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupLGT;->paydialog:Landroid/app/AlertDialog;

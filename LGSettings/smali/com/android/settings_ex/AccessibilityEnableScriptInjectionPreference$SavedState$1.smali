@@ -45,7 +45,6 @@
     .parameter "in"
 
     .prologue
-    .line 196
     new-instance v0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;
 
     invoke-direct {v0, p1}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;-><init>(Landroid/os/Parcel;)V
@@ -58,7 +57,6 @@
     .parameter "x0"
 
     .prologue
-    .line 194
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;
 
     move-result-object v0
@@ -71,7 +69,6 @@
     .parameter "size"
 
     .prologue
-    .line 200
     new-array v0, p1, [Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;
 
     return-object v0
@@ -82,7 +79,6 @@
     .parameter "x0"
 
     .prologue
-    .line 194
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState$1;->newArray(I)[Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;
 
     move-result-object v0

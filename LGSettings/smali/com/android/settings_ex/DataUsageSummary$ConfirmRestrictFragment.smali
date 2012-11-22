@@ -30,30 +30,25 @@
     .parameter "parent"
 
     .prologue
-    .line 2211
     invoke-virtual {p0}, Lcom/android/settings_ex/DataUsageSummary;->isAdded()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 2216
     :goto_0
     return-void
 
-    .line 2213
     :cond_0
     new-instance v0, Lcom/android/settings_ex/DataUsageSummary$ConfirmRestrictFragment;
 
     invoke-direct {v0}, Lcom/android/settings_ex/DataUsageSummary$ConfirmRestrictFragment;-><init>()V
 
-    .line 2214
     .local v0, dialog:Lcom/android/settings_ex/DataUsageSummary$ConfirmRestrictFragment;
     const/4 v1, 0x0
 
     invoke-virtual {v0, p0, v1}, Lcom/android/settings_ex/DataUsageSummary$ConfirmRestrictFragment;->setTargetFragment(Landroid/app/Fragment;I)V
 
-    .line 2215
     invoke-virtual {p0}, Lcom/android/settings_ex/DataUsageSummary;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
@@ -72,24 +67,20 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 2220
     invoke-virtual {p0}, Lcom/android/settings_ex/DataUsageSummary$ConfirmRestrictFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    .line 2222
     .local v1, context:Landroid/content/Context;
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 2223
     .local v0, builder:Landroid/app/AlertDialog$Builder;
     const v2, 0x7f08066b
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 2224
     const v2, 0x7f08066c
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/DataUsageSummary$ConfirmRestrictFragment;->getString(I)Ljava/lang/String;

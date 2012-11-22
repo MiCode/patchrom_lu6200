@@ -26,37 +26,30 @@
     .locals 1
 
     .prologue
-    .line 57
     const-string v0, "MDMSettingsAdapter"
 
     sput-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
-    .line 59
     const-string v0, "LGMDMGPSUIAdpater"
 
     sput-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->LGMDM_ADAPTER_GPS:Ljava/lang/String;
 
-    .line 60
     const-string v0, "LGMDMWifiUIAdapter"
 
     sput-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->LGMDM_ADAPTER_WIFI:Ljava/lang/String;
 
-    .line 61
     const-string v0, "LGMDMEmailUIAdapter"
 
     sput-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->LGMDM_ADAPTER_EMAIL:Ljava/lang/String;
 
-    .line 62
     const-string v0, "LGMDMUsbUIAdapter"
 
     sput-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->LGMDM_ADAPTER_USB:Ljava/lang/String;
 
-    .line 63
     const-string v0, "LGMDMBluetoothAdapter"
 
     sput-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->LGMDM_ADAPTER_BLUETOOTH:Ljava/lang/String;
 
-    .line 64
     const-string v0, "LGMDMTethringAdapter"
 
     sput-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->LGMDM_ADAPTER_TETHERING:Ljava/lang/String;
@@ -79,19 +72,16 @@
     .locals 1
 
     .prologue
-    .line 70
     sget-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->mInstance:Lcom/android/settings_ex/MDMSettingsAdapter;
 
     if-nez v0, :cond_0
 
-    .line 71
     new-instance v0, Lcom/android/settings_ex/MDMSettingsAdapter;
 
     invoke-direct {v0}, Lcom/android/settings_ex/MDMSettingsAdapter;-><init>()V
 
     sput-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->mInstance:Lcom/android/settings_ex/MDMSettingsAdapter;
 
-    .line 73
     :cond_0
     sget-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->mInstance:Lcom/android/settings_ex/MDMSettingsAdapter;
 
@@ -145,7 +135,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 409
     sget-object v4, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -213,7 +202,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 412
     sget-object v3, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -252,7 +240,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 414
     sget-object v3, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -318,7 +305,6 @@
     .locals 2
 
     .prologue
-    .line 764
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
 
     move-result-object v0
@@ -331,14 +317,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 765
     const-string v0, "/sys/class/android_usb/android0/f_cdrom_storage/lun/cdrom_usbmode"
 
     const-string v1, "4"
 
     invoke-static {v0, v1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->writeToFile(Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 768
     :cond_0
     return-void
 .end method
@@ -455,7 +439,6 @@
 
     invoke-static {v3, v4}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 388
     sget-object v3, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -478,7 +461,6 @@
 
     invoke-static {v3, v4}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 389
     sget-object v3, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -567,7 +549,6 @@
 
     const/4 v0, 0x0
 
-    .line 80
     sget-object v2, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -590,7 +571,6 @@
 
     invoke-static {v2, v3}, Lcom/lge/mdm/controller/MDMLog;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 82
     sget-object v2, Lcom/android/settings_ex/MDMSettingsAdapter;->LGMDM_ADAPTER_GPS:Ljava/lang/String;
 
     invoke-virtual {p2, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -720,7 +700,6 @@
 
     if-nez v2, :cond_0
 
-    .line 105
     sget-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v2, "checkDisabled() : Disallow USB"
@@ -1243,7 +1222,6 @@
 
     invoke-static {v4, v5}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 355
     sget-object v4, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -1266,7 +1244,6 @@
 
     invoke-static {v4, v5}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 356
     sget-object v4, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -1289,35 +1266,29 @@
 
     invoke-static {v4, v5}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 358
     if-eqz v1, :cond_3
 
     if-eqz v2, :cond_3
 
     if-eqz v0, :cond_3
 
-    .line 359
     invoke-direct {p0}, Lcom/android/settings_ex/MDMSettingsAdapter;->isUsbConnected()Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 360
     invoke-virtual {p3, v8}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 375
     :cond_0
     :goto_0
     const v4, 0x7f0804cf
 
     invoke-virtual {p3, v4}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 381
     :goto_1
     return-void
 
-    .line 362
     :cond_1
     const-string v4, "VZW"
 
@@ -1477,17 +1448,14 @@
 
     if-eqz v4, :cond_1
 
-    .line 467
     sget-object v4, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v5, "MDM: allowed package can\'t remove "
 
     invoke-static {v4, v5}, Lcom/lge/mdm/controller/MDMLog;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 468
     const/4 v4, 0x1
 
-    .line 470
     :goto_1
     return v4
 
@@ -1640,10 +1608,8 @@
 
     if-eqz v2, :cond_1
 
-    .line 340
     invoke-virtual {p2, v0}, Landroid/widget/Switch;->setEnabled(Z)V
 
-    .line 341
     sget-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v2, "[LGMDM] master auto synce is false"
@@ -1653,14 +1619,11 @@
     :goto_1
     move v0, v1
 
-    .line 347
     goto :goto_0
 
-    .line 343
     :cond_1
     invoke-virtual {p2, v1}, Landroid/widget/Switch;->setEnabled(Z)V
 
-    .line 344
     sget-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v2, "[LGMDM] master auto synce is true"
@@ -1755,24 +1718,20 @@
 
     const/4 v2, 0x0
 
-    .line 223
     sget-object v3, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v4, "setEraseSdMenu"
 
     invoke-static {v3, v4}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 224
     if-eqz p2, :cond_0
 
     if-nez p3, :cond_1
 
-    .line 239
     :cond_0
     :goto_0
     return v2
 
-    .line 227
     :cond_1
     invoke-static {}, Lcom/lge/mdm/LGMDMManager;->getInstance()Lcom/lge/mdm/LGMDMManager;
 
@@ -1852,7 +1811,6 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 204
     sget-object v1, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1916,27 +1874,22 @@
 
     if-nez v1, :cond_2
 
-    .line 211
     sget-object v1, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v2, "[LGMDM] Allow mode"
 
     invoke-static {v1, v2}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 213
     invoke-virtual {p4, v0}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 214
     const v0, 0x7f08035d
 
     invoke-virtual {p4, v0}, Landroid/preference/Preference;->setTitle(I)V
 
-    .line 215
     const v0, 0x7f08096d
 
     invoke-virtual {p4, v0}, Landroid/preference/Preference;->setSummary(I)V
 
-    .line 219
     :cond_2
     const/4 v0, 0x1
 
@@ -2170,7 +2123,6 @@
 
     const/4 v1, 0x1
 
-    .line 117
     sget-object v3, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -2237,22 +2189,18 @@
 
     if-eqz v3, :cond_4
 
-    .line 124
     sget-object v2, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v3, "[LGMDM] Allow mode"
 
     invoke-static {v2, v3}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 126
     invoke-virtual {p4, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 127
     const v2, 0x7f0803d5
 
     invoke-virtual {p4, v2}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 128
     const-string v2, "SKT"
 
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
@@ -2383,24 +2331,20 @@
 
     if-eqz v3, :cond_7
 
-    .line 144
     sget-object v2, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v3, "[LGMDM] Allow mode"
 
     invoke-static {v2, v3}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 146
     invoke-virtual {p4, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 147
     const v2, 0x7f0806c6
 
     invoke-virtual {p4, v2}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
     goto/16 :goto_0
 
-    .line 149
     :cond_7
     sget-object v3, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
@@ -2439,22 +2383,18 @@
 
     if-eqz v3, :cond_c
 
-    .line 156
     sget-object v2, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v3, "[LGMDM] Allow mode"
 
     invoke-static {v2, v3}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 158
     invoke-virtual {p4, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 159
     const v2, 0x7f0803d2
 
     invoke-virtual {p4, v2}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 160
     const-string v2, "SKT"
 
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
@@ -2625,7 +2565,6 @@
 
     if-nez v2, :cond_1
 
-    .line 197
     sget-object v2, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v3, "setLocationEnableMenu : unknown menu"
@@ -2655,28 +2594,23 @@
 
     if-nez v0, :cond_0
 
-    .line 772
     const v0, 0x20b004e
 
     invoke-virtual {p3, v0}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 
-    .line 773
     const/4 v0, 0x0
 
     invoke-virtual {p3, v0}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
-    .line 774
     sget-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v1, "LGMDM DevicePolicyManager Locked Mobile Network"
 
     invoke-static {v0, v1}, Lcom/lge/mdm/controller/MDMLog;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 783
     :goto_0
     return-void
 
-    .line 776
     :cond_0
     const-string v0, "SKT"
 
@@ -2735,28 +2669,22 @@
 
     const/4 v7, 0x0
 
-    .line 717
     const/4 v0, 0x0
 
-    .line 719
     .local v0, changed:Z
     if-nez p2, :cond_0
 
-    .line 720
     sget-object v5, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v6, "setSettingsMenu: listAdapter = null "
 
     invoke-static {v5, v6}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 721
     const/4 v5, 0x0
 
-    .line 760
     :goto_0
     return v5
 
-    .line 724
     :cond_0
     const/4 v2, 0x0
 
@@ -2836,49 +2764,40 @@
 
     invoke-static {v5, v6}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 733
     invoke-virtual {p1, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
     iput-object v5, v1, Landroid/preference/PreferenceActivity$Header;->summary:Ljava/lang/CharSequence;
 
-    .line 734
     const/4 v0, 0x1
 
-    .line 724
     :cond_3
     :goto_2
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 737
     :cond_4
     if-eqz v4, :cond_3
 
-    .line 738
     sget-object v5, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v6, "MDM wifi change summary to null"
 
     invoke-static {v5, v6}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 739
     iput-object v7, v1, Landroid/preference/PreferenceActivity$Header;->summary:Ljava/lang/CharSequence;
 
-    .line 740
     const/4 v0, 0x1
 
     goto :goto_2
 
-    .line 743
     :cond_5
     const v5, 0x7f0b025b
 
     if-ne v3, v5, :cond_3
 
-    .line 744
     invoke-static {}, Lcom/android/settings_ex/MDMSettingsAdapter;->getInstance()Lcom/android/settings_ex/MDMSettingsAdapter;
 
     move-result-object v5
@@ -2914,38 +2833,31 @@
 
     invoke-static {v5, v6}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 747
     invoke-virtual {p1, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
     iput-object v5, v1, Landroid/preference/PreferenceActivity$Header;->summary:Ljava/lang/CharSequence;
 
-    .line 748
     const/4 v0, 0x1
 
     goto :goto_2
 
-    .line 751
     :cond_7
     if-eqz v4, :cond_3
 
-    .line 752
     sget-object v5, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v6, "MDM bt change summary to null"
 
     invoke-static {v5, v6}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 753
     iput-object v7, v1, Landroid/preference/PreferenceActivity$Header;->summary:Ljava/lang/CharSequence;
 
-    .line 754
     const/4 v0, 0x1
 
     goto :goto_2
 
-    .line 759
     .end local v1           #header:Landroid/preference/PreferenceActivity$Header;
     .end local v3           #id:I
     .end local v4           #summary:Ljava/lang/String;
@@ -3034,29 +2946,22 @@
 
     if-nez v0, :cond_0
 
-    .line 426
     sget-object v0, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v1, "LGMDM does not allow unknown source installtion menu"
 
     invoke-static {v0, v1}, Lcom/lge/mdm/controller/MDMLog;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 427
     invoke-virtual {p3, v2}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 428
     invoke-virtual {p3, v2}, Landroid/preference/CheckBoxPreference;->setSummaryOff(I)V
 
-    .line 429
     invoke-virtual {p3, v2}, Landroid/preference/CheckBoxPreference;->setSummaryOn(I)V
 
-    .line 430
     invoke-virtual {p3, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 431
     invoke-virtual {p3, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 433
     :cond_0
     return-void
 .end method
@@ -3085,161 +2990,132 @@
 
     if-nez v6, :cond_8
 
-    .line 545
     if-eqz p3, :cond_1
 
-    .line 546
     const/4 v6, 0x1
 
     invoke-virtual {p3, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 547
     invoke-direct {p0}, Lcom/android/settings_ex/MDMSettingsAdapter;->setUsbSettingsControlChargeOnly()V
 
-    .line 553
     :goto_0
     if-eqz p4, :cond_2
 
-    .line 554
     const/4 v6, 0x0
 
     invoke-virtual {p4, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 555
     const v6, 0x7f080976
 
     invoke-virtual {p4, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(I)V
 
-    .line 556
     const/4 v6, 0x0
 
     invoke-virtual {p4, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 562
     :goto_1
     if-eqz p5, :cond_3
 
-    .line 563
     const/4 v6, 0x0
 
     invoke-virtual {p5, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 564
     const v6, 0x7f080979
 
     invoke-virtual {p5, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(I)V
 
-    .line 565
     const/4 v6, 0x0
 
     invoke-virtual {p5, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 571
     :goto_2
     if-eqz p6, :cond_4
 
-    .line 572
     const/4 v6, 0x0
 
     move-object/from16 v0, p6
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 573
     const v6, 0x7f080977
 
     move-object/from16 v0, p6
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(I)V
 
-    .line 574
     const/4 v6, 0x0
 
     move-object/from16 v0, p6
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 580
     :goto_3
     if-eqz p7, :cond_5
 
-    .line 581
     const/4 v6, 0x0
 
     move-object/from16 v0, p7
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 582
     const v6, 0x7f08096a
 
     move-object/from16 v0, p7
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(I)V
 
-    .line 583
     const/4 v6, 0x0
 
     move-object/from16 v0, p7
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 589
     :goto_4
     if-eqz p8, :cond_6
 
-    .line 590
     const/4 v6, 0x0
 
     move-object/from16 v0, p8
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 591
     const v6, 0x7f080978
 
     move-object/from16 v0, p8
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(I)V
 
-    .line 592
     const/4 v6, 0x0
 
     move-object/from16 v0, p8
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 598
     :goto_5
     if-eqz p9, :cond_7
 
-    .line 599
     const/4 v6, 0x0
 
     move-object/from16 v0, p9
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 600
     const v6, 0x7f08096a
 
     move-object/from16 v0, p9
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(I)V
 
-    .line 601
     const/4 v6, 0x0
 
     move-object/from16 v0, p9
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 711
     :cond_0
     :goto_6
     return-void
 
-    .line 549
     :cond_1
     sget-object v6, Lcom/android/settings_ex/MDMSettingsAdapter;->TAG:Ljava/lang/String;
 
@@ -3442,61 +3318,49 @@
 
     if-nez v6, :cond_c
 
-    .line 620
     if-eqz p7, :cond_b
 
-    .line 621
     invoke-virtual/range {p7 .. p7}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isChecked()Z
 
     move-result v6
 
     if-eqz v6, :cond_b
 
-    .line 622
     const/4 v6, 0x1
 
     invoke-virtual {p3, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 623
     invoke-direct {p0}, Lcom/android/settings_ex/MDMSettingsAdapter;->setUsbSettingsControlChargeOnly()V
 
-    .line 625
     :cond_b
     if-eqz p9, :cond_c
 
-    .line 626
     invoke-virtual/range {p9 .. p9}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isChecked()Z
 
     move-result v6
 
     if-eqz v6, :cond_c
 
-    .line 627
     const/4 v6, 0x1
 
     invoke-virtual {p3, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 628
     invoke-direct {p0}, Lcom/android/settings_ex/MDMSettingsAdapter;->setUsbSettingsControlChargeOnly()V
 
-    .line 637
     :cond_c
     :goto_7
     if-eqz p4, :cond_14
 
-    .line 638
     invoke-virtual {p4}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isEnabled()Z
 
     move-result v6
 
     if-nez v6, :cond_d
 
-    .line 639
     const/4 v6, 0x1
 
     invoke-virtual {p4, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 640
     :cond_d
     invoke-virtual {p2, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3504,23 +3368,19 @@
 
     invoke-virtual {p4, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 646
     :goto_8
     if-eqz p5, :cond_15
 
-    .line 647
     invoke-virtual {p5}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isEnabled()Z
 
     move-result v6
 
     if-nez v6, :cond_e
 
-    .line 648
     const/4 v6, 0x1
 
     invoke-virtual {p5, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 649
     :cond_e
     invoke-virtual {p2, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3528,25 +3388,21 @@
 
     invoke-virtual {p5, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 655
     :goto_9
     if-eqz p6, :cond_16
 
-    .line 656
     invoke-virtual/range {p6 .. p6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isEnabled()Z
 
     move-result v6
 
     if-nez v6, :cond_f
 
-    .line 657
     const/4 v6, 0x1
 
     move-object/from16 v0, p6
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 658
     :cond_f
     invoke-virtual {p2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3571,21 +3427,18 @@
 
     if-eqz v6, :cond_17
 
-    .line 666
     invoke-virtual/range {p7 .. p7}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isEnabled()Z
 
     move-result v6
 
     if-nez v6, :cond_10
 
-    .line 667
     const/4 v6, 0x1
 
     move-object/from16 v0, p7
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 668
     :cond_10
     invoke-virtual {p2, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3595,26 +3448,22 @@
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 681
     :cond_11
     :goto_b
     if-eqz p8, :cond_1a
 
-    .line 682
     invoke-virtual/range {p8 .. p8}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isEnabled()Z
 
     move-result v6
 
     if-nez v6, :cond_12
 
-    .line 683
     const/4 v6, 0x1
 
     move-object/from16 v0, p8
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 684
     :cond_12
     invoke-virtual {p2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3639,21 +3488,18 @@
 
     if-eqz v6, :cond_1b
 
-    .line 692
     invoke-virtual/range {p9 .. p9}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isEnabled()Z
 
     move-result v6
 
     if-nez v6, :cond_0
 
-    .line 694
     const/4 v6, 0x1
 
     move-object/from16 v0, p9
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 695
     const/4 v6, 0x0
 
     move-object/from16 v0, p9
@@ -3710,21 +3556,18 @@
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(I)V
 
-    .line 671
     invoke-virtual/range {p7 .. p7}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isChecked()Z
 
     move-result v6
 
     if-eqz v6, :cond_18
 
-    .line 672
     const/4 v6, 0x0
 
     move-object/from16 v0, p7
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 673
     :cond_18
     invoke-virtual/range {p7 .. p7}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isEnabled()Z
 
@@ -3769,21 +3612,18 @@
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setSummary(I)V
 
-    .line 702
     invoke-virtual/range {p9 .. p9}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isChecked()Z
 
     move-result v6
 
     if-eqz v6, :cond_1c
 
-    .line 703
     const/4 v6, 0x0
 
     move-object/from16 v0, p9
 
     invoke-virtual {v0, v6}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setChecked(Z)V
 
-    .line 704
     :cond_1c
     invoke-virtual/range {p9 .. p9}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isEnabled()Z
 

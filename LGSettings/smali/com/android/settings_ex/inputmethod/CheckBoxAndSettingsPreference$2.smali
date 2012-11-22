@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 62
     iput-object p1, p0, Lcom/android/settings_ex/inputmethod/CheckBoxAndSettingsPreference$2;->this$0:Lcom/android/settings_ex/inputmethod/CheckBoxAndSettingsPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,11 +41,9 @@
     .parameter "arg0"
 
     .prologue
-    .line 65
     iget-object v0, p0, Lcom/android/settings_ex/inputmethod/CheckBoxAndSettingsPreference$2;->this$0:Lcom/android/settings_ex/inputmethod/CheckBoxAndSettingsPreference;
 
     invoke-virtual {v0, p1}, Lcom/android/settings_ex/inputmethod/CheckBoxAndSettingsPreference;->onSettingsButtonClicked(Landroid/view/View;)V
 
-    .line 66
     return-void
 .end method

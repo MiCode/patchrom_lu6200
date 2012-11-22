@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 180
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$5;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,19 +43,16 @@
     .parameter "keyEvent"
 
     .prologue
-    .line 183
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 184
     invoke-static {p2}, Lcom/android/settings_ex/lgesetting/wireless/DefineBlockKey;->onKey(I)Z
 
     move-result v0
 
-    .line 185
     :goto_0
     return v0
 

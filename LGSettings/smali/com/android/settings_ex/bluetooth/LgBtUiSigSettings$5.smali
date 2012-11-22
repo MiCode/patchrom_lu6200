@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 161
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings$5;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -63,18 +62,15 @@
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 167
     .local v0, intent:Landroid/content/Intent;
     const-string v2, "roam_level"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 168
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings$5;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;
 
     invoke-virtual {v2, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 170
     const/4 v2, 0x1
 
     return v2

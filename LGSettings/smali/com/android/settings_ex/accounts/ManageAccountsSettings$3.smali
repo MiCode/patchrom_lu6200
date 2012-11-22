@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 269
     iput-object p1, p0, Lcom/android/settings_ex/accounts/ManageAccountsSettings$3;->this$0:Lcom/android/settings_ex/accounts/ManageAccountsSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -56,12 +55,10 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 275
     .local v0, intent:Landroid/content/Intent;
     iget-object v1, p0, Lcom/android/settings_ex/accounts/ManageAccountsSettings$3;->this$0:Lcom/android/settings_ex/accounts/ManageAccountsSettings;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/accounts/ManageAccountsSettings;->startActivity(Landroid/content/Intent;)V
 
-    .line 277
     return-void
 .end method

@@ -35,7 +35,6 @@
     .parameter "x1"
 
     .prologue
-    .line 793
     invoke-super {p0, p1, p2}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->onClick(Landroid/content/DialogInterface;I)V
 
     return-void
@@ -46,7 +45,6 @@
     .parameter "x0"
 
     .prologue
-    .line 793
     invoke-super {p0, p1}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     return-void
@@ -57,7 +55,6 @@
     .parameter "x0"
 
     .prologue
-    .line 793
     invoke-super {p0, p1}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
@@ -71,7 +68,6 @@
     .parameter "x1"
 
     .prologue
-    .line 793
     invoke-super {p0, p1, p2}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
@@ -81,7 +77,6 @@
     .locals 0
 
     .prologue
-    .line 793
     invoke-super {p0}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->onDestroyView()V
 
     return-void
@@ -97,7 +92,6 @@
 
     const/4 v5, 0x0
 
-    .line 796
     invoke-virtual {p0}, Lcom/android/settings_ex/AccessibilitySettings$ToggleTouchExplorationFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
@@ -111,10 +105,8 @@
     :goto_0
     invoke-static {v6, v7, v3}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 798
     if-eqz p2, :cond_0
 
-    .line 799
     invoke-virtual {p0}, Lcom/android/settings_ex/AccessibilitySettings$ToggleTouchExplorationFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -195,7 +187,6 @@
     .parameter "x1"
 
     .prologue
-    .line 793
     invoke-super {p0, p1, p2}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     return-void

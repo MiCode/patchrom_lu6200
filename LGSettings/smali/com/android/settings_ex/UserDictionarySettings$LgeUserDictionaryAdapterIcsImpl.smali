@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 998
     iput-object p1, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 998
     invoke-direct {p0, p1}, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;-><init>(Lcom/android/settings_ex/UserDictionarySettings;)V
 
     return-void
@@ -54,10 +52,8 @@
     .parameter "bundle"
 
     .prologue
-    .line 1027
     if-eqz p1, :cond_0
 
-    .line 1028
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     const-string v1, "CONFI_ORIENTATION"
@@ -69,7 +65,6 @@
     #setter for: Lcom/android/settings_ex/UserDictionarySettings;->mOrientationConfig:I
     invoke-static {v0, v1}, Lcom/android/settings_ex/UserDictionarySettings;->access$902(Lcom/android/settings_ex/UserDictionarySettings;I)I
 
-    .line 1030
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     const-string v1, "CURRENT_WORD"
@@ -176,19 +171,15 @@
 
     invoke-direct {v4, v5, p2, p3}, Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;-><init>(Lcom/android/settings_ex/UserDictionarySettings;Landroid/app/AlertDialog;Landroid/view/View;)V
 
-    .line 1059
     .local v4, listener:Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;
     iget-object v5, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     iput-object v4, v5, Lcom/android/settings_ex/UserDictionarySettings;->mListener:Lcom/android/settings_ex/UserDictionarySettings$AddToDictionaryEventListener;
 
-    .line 1060
     invoke-virtual {v1, v4}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 1062
     invoke-virtual {p2, v4}, Landroid/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
-    .line 1063
     const/4 v5, -0x1
 
     const v6, 0x104000a
@@ -210,12 +201,10 @@
 
     invoke-virtual {p2, v5, v6, v4}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    .line 1067
     iget-object v5, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-virtual {v5, v1}, Lcom/android/settings_ex/UserDictionarySettings;->setInputFilter(Landroid/widget/EditText;)V
 
-    .line 1070
     invoke-virtual {p2}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v5
@@ -224,20 +213,17 @@
 
     invoke-virtual {v5, v6}, Landroid/view/Window;->setSoftInputMode(I)V
 
-    .line 1074
     iget-object v5, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    .line 1075
     .local v3, immActivity:Landroid/app/Activity;
     if-eqz v3, :cond_0
 
     if-eqz v1, :cond_0
 
-    .line 1076
     const-string v5, "input_method"
 
     invoke-virtual {v3, v5}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -273,7 +259,6 @@
     .locals 2
 
     .prologue
-    .line 1108
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     iget-object v0, v0, Lcom/android/settings_ex/UserDictionarySettings;->mAlert:Landroid/app/AlertDialog;
@@ -290,21 +275,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 1109
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     iget-object v0, v0, Lcom/android/settings_ex/UserDictionarySettings;->mAlert:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 1110
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     const/4 v1, 0x0
 
     iput-object v1, v0, Lcom/android/settings_ex/UserDictionarySettings;->mAlert:Landroid/app/AlertDialog;
 
-    .line 1114
     :cond_0
     return-void
 .end method
@@ -321,7 +303,6 @@
     .locals 2
 
     .prologue
-    .line 1039
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/UserDictionarySettings$LgeUserDictionaryAdapterIcsImpl;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
@@ -415,12 +396,10 @@
     .locals 1
 
     .prologue
-    .line 1102
     const/4 v0, 0x0
 
     sput-object v0, Lcom/android/settings_ex/UserDictionarySettings;->sSymbolString:Ljava/lang/String;
 
-    .line 1103
     return-void
 .end method
 

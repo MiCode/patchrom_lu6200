@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 211
     iput-object p1, p0, Lcom/android/settings_ex/CryptKeeper$1;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V

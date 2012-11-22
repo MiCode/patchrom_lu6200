@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 255
     iput-object p1, p0, Lcom/android/settings_ex/GestureHelp$2;->this$0:Lcom/android/settings_ex/GestureHelp;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 258
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp$2;->this$0:Lcom/android/settings_ex/GestureHelp;
 
     #getter for: Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
@@ -78,18 +76,15 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 261
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp$2;->this$0:Lcom/android/settings_ex/GestureHelp;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/GestureHelp;->finish()V
 
-    .line 263
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp$2;->this$0:Lcom/android/settings_ex/GestureHelp;
 
     #calls: Lcom/android/settings_ex/GestureHelp;->next()V
     invoke-static {v2}, Lcom/android/settings_ex/GestureHelp;->access$300(Lcom/android/settings_ex/GestureHelp;)V
 
-    .line 264
     return-void
 .end method

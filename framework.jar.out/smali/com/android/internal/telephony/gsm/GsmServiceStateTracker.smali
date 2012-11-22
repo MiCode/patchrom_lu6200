@@ -6534,14 +6534,12 @@
     :cond_1
     move v1, v9
 
-    .line 3185
     goto :goto_0
 
     .restart local v1       #equalsOnsl:Z
     :cond_2
     move v2, v9
 
-    .line 3186
     goto :goto_1
 
     .restart local v0       #equalsMcc:Z
@@ -6551,10 +6549,8 @@
     :cond_3
     move v8, v9
 
-    .line 3198
     goto :goto_3
 
-    .line 3195
     :catch_0
     move-exception v10
 
@@ -6576,18 +6572,16 @@
 
     const/16 v7, 0x3eb
 
-    .line 2964
     new-instance v1, Lcom/android/internal/telephony/RestrictedState;
 
     invoke-direct {v1}, Lcom/android/internal/telephony/RestrictedState;-><init>()V
 
-    .line 2966
     .local v1, newRs:Lcom/android/internal/telephony/RestrictedState;
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v6, "onRestrictedStateChanged: E rs "
+    const-string v6, "onRestrictedStateChanged: E rs "
 
     invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -6605,12 +6599,10 @@
 
     invoke-virtual {p0, v3}, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->log(Ljava/lang/String;)V
 
-    .line 2968
     iget-object v3, p1, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     if-nez v3, :cond_6
 
-    .line 2969
     iget-object v3, p1, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
     check-cast v3, [I
@@ -6619,11 +6611,9 @@
 
     check-cast v0, [I
 
-    .line 2970
     .local v0, ints:[I
     aget v2, v0, v4
 
-    .line 2972
     .local v2, state:I
     and-int/lit8 v3, v2, 0x1
 
@@ -6639,7 +6629,6 @@
     :goto_0
     invoke-virtual {v1, v3}, Lcom/android/internal/telephony/RestrictedState;->setCsEmergencyRestricted(Z)V
 
-    .line 2976
     iget-object v3, p0, Lcom/android/internal/telephony/ServiceStateTracker;->mUiccApplcation:Lcom/android/internal/telephony/UiccCardApplication;
 
     if-eqz v3, :cond_2
@@ -6654,7 +6643,6 @@
 
     if-ne v3, v6, :cond_2
 
-    .line 2977
     and-int/lit8 v3, v2, 0x2
 
     if-nez v3, :cond_1
@@ -6669,11 +6657,11 @@
     :goto_1
     invoke-virtual {v1, v3}, Lcom/android/internal/telephony/RestrictedState;->setCsNormalRestricted(Z)V
 
-    .line 2980
     and-int/lit8 v3, v2, 0x10
 
     if-eqz v3, :cond_9
 
+    .line 3198
     :goto_2
     invoke-virtual {v1, v5}, Lcom/android/internal/telephony/RestrictedState;->setPsRestricted(Z)V
 
@@ -8831,27 +8819,24 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/telephony/gsm/GSMPhone;->setSystemProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2768
     invoke-static/range {v22 .. v22}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v29
 
     if-eqz v29, :cond_27
 
-    .line 2769
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->phone:Lcom/android/internal/telephony/gsm/GSMPhone;
 
     move-object/from16 v29, v0
 
-    const-string/jumbo v30, "gsm.operator.iso-country"
+    const-string v30, "gsm.operator.iso-country"
 
     const-string v31, ""
 
     invoke-virtual/range {v29 .. v31}, Lcom/android/internal/telephony/gsm/GSMPhone;->setSystemProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2770
     const/16 v29, 0x0
 
     move/from16 v0, v29

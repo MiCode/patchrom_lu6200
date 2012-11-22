@@ -16,13 +16,10 @@
     .parameter "maxBytes"
 
     .prologue
-    .line 43
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 44
     iput p1, p0, Lcom/android/settings_ex/bluetooth/Utf8ByteLengthFilter;->mMaxBytes:I
 
-    .line 45
     return-void
 .end method
 
@@ -148,46 +145,37 @@
 
     goto :goto_3
 
-    .line 64
     .end local v0           #c:C
     :cond_7
     iget v6, p0, Lcom/android/settings_ex/bluetooth/Utf8ByteLengthFilter;->mMaxBytes:I
 
     sub-int v4, v6, v1
 
-    .line 65
     .local v4, keepBytes:I
     if-gtz v4, :cond_8
 
-    .line 66
     const-string v6, ""
 
-    .line 81
     :goto_4
     return-object v6
 
-    .line 67
     :cond_8
     if-lt v4, v5, :cond_9
 
-    .line 68
     const/4 v6, 0x0
 
     goto :goto_4
 
-    .line 71
     :cond_9
     move v3, p2
 
     :goto_5
     if-ge v3, p3, :cond_d
 
-    .line 72
     invoke-interface {p1, v3}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v0
 
-    .line 73
     .restart local v0       #c:C
     const/16 v6, 0x80
 

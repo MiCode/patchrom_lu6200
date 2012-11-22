@@ -51,17 +51,14 @@
     .locals 2
 
     .prologue
-    .line 80
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
-    .line 133
     new-instance v0, Landroid/content/res/Configuration;
 
     invoke-direct {v0}, Landroid/content/res/Configuration;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/DisplaySettings;->mCurConfig:Landroid/content/res/Configuration;
 
-    .line 137
     new-instance v0, Lcom/android/settings_ex/DisplaySettings$1;
 
     new-instance v1, Landroid/os/Handler;
@@ -72,14 +69,12 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/DisplaySettings;->mAccelerometerRotationObserver:Landroid/database/ContentObserver;
 
-    .line 144
     new-instance v0, Lcom/android/settings_ex/DisplaySettings$2;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/DisplaySettings$2;-><init>(Lcom/android/settings_ex/DisplaySettings;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/DisplaySettings;->mHandler:Landroid/os/Handler;
 
-    .line 726
     return-void
 .end method
 
@@ -88,7 +83,6 @@
     .parameter "x0"
 
     .prologue
-    .line 80
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings;->updateAccelerometerRotationCheckbox()V
 
     return-void
@@ -99,7 +93,6 @@
     .parameter "x0"
 
     .prologue
-    .line 80
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings;->callDisplayFont()V
 
     return-void
@@ -111,7 +104,6 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 344
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
@@ -134,11 +126,9 @@
 
     move-result v1
 
-    .line 346
     .local v1, strCustomImageVal:I
     if-nez v0, :cond_1
 
-    .line 348
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -149,26 +139,22 @@
 
     move-result-object v2
 
-    .line 349
     .local v2, summaries:[Ljava/lang/CharSequence;
     array-length v3, v2
 
     if-le v3, v1, :cond_0
 
-    .line 350
     iget-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mPouchSettings:Landroid/preference/PreferenceScreen;
 
     aget-object v4, v2, v1
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 355
     .end local v2           #summaries:[Ljava/lang/CharSequence;
     :cond_0
     :goto_0
     return-void
 
-    .line 354
     :cond_1
     iget-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mPouchSettings:Landroid/preference/PreferenceScreen;
 
@@ -193,66 +179,54 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 783
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 784
     const/high16 v2, 0x1880
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 785
     const-string v2, "KEY_CALL_FROM"
 
     const/4 v3, 0x1
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 786
     const-string v2, "KEY_FONTDATA_TYPE"
 
     const/4 v3, 0x2
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 787
     const-string v2, "KEY_UI_TYPE"
 
     const/4 v3, 0x1
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 788
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 789
     const-string v0, "android.intent.action.MAIN"
 
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 790
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/DisplaySettings;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 795
     :goto_0
     return-void
 
-    .line 791
     :catch_0
     move-exception v0
 
-    .line 792
     const-string v0, "DisplaySettings"
 
     const-string v1, "onPreferenceTreeClick() : activity not found"
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 793
     const-string v0, "DisplaySettings"
 
     const-string v1, "onPreferenceTreeClick() : com.jungle.app.fonts.Fonts"
@@ -266,14 +240,12 @@
     .locals 13
 
     .prologue
-    .line 672
     new-instance v4, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;
 
     const/4 v11, 0x0
 
     invoke-direct {v4, v11}, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;-><init>(Lcom/android/settings_ex/DisplaySettings$1;)V
 
-    .line 673
     .local v4, localeConfiguration:Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;
     iget-object v11, p0, Lcom/android/settings_ex/DisplaySettings;->mFontTypePref:Landroid/preference/ListPreference;
 
@@ -283,7 +255,6 @@
 
     invoke-static {v11, v4}, Lcom/android/settings_ex/DisplaySettings;->readConfiguration(Landroid/content/Context;Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;)V
 
-    .line 675
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v11
@@ -292,11 +263,9 @@
 
     move-result-object v0
 
-    .line 677
     .local v0, configuration:Landroid/content/res/Configuration;
     iget-object v8, v4, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->locale:Ljava/lang/String;
 
-    .line 678
     .local v8, previousLocale:Ljava/lang/String;
     iget-object v11, v0, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
@@ -304,11 +273,9 @@
 
     move-result-object v2
 
-    .line 680
     .local v2, locale:Ljava/lang/String;
     iget-object v7, v4, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->familyName:Ljava/lang/String;
 
-    .line 681
     .local v7, previousFamilyName:Ljava/lang/String;
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -320,23 +287,18 @@
 
     move-result-object v1
 
-    .line 684
     .local v1, familyName:Ljava/lang/String;
     iget v9, v4, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->mcc:I
 
-    .line 685
     .local v9, previousMcc:I
     iget v5, v0, Landroid/content/res/Configuration;->mcc:I
 
-    .line 687
     .local v5, mcc:I
     iget v10, v4, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->mnc:I
 
-    .line 688
     .local v10, previousMnc:I
     iget v6, v0, Landroid/content/res/Configuration;->mnc:I
 
-    .line 690
     .local v6, mnc:I
     invoke-virtual {v2, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -355,31 +317,24 @@
     :cond_0
     const/4 v3, 0x1
 
-    .line 693
     .local v3, localeChanged:Z
     :goto_0
     if-eqz v3, :cond_1
 
-    .line 694
     iput-object v2, v4, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->locale:Ljava/lang/String;
 
-    .line 695
     iput-object v1, v4, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->familyName:Ljava/lang/String;
 
-    .line 696
     invoke-direct {p0, v1}, Lcom/android/settings_ex/DisplaySettings;->getCurrentLabel(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
     iput-object v11, v4, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->familyLabel:Ljava/lang/String;
 
-    .line 697
     iput v5, v4, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->mcc:I
 
-    .line 698
     iput v6, v4, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->mnc:I
 
-    .line 700
     iget-object v11, p0, Lcom/android/settings_ex/DisplaySettings;->mFontTypePref:Landroid/preference/ListPreference;
 
     invoke-virtual {v11}, Landroid/preference/ListPreference;->getContext()Landroid/content/Context;
@@ -518,12 +473,10 @@
     .locals 2
 
     .prologue
-    .line 856
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getUseCappFonts()Z
 
     move-result v1
 
-    .line 858
     const-string v0, "font_type_select"
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -532,24 +485,20 @@
 
     check-cast v0, Lcom/android/settings_ex/FontSettingsPreference;
 
-    .line 860
     if-nez v1, :cond_0
 
-    .line 861
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 862
     const-string v0, "DisplaySettings"
 
     const-string v1, "warning : changing font not supported"
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 865
     :cond_0
     return-void
 .end method
@@ -558,7 +507,6 @@
     .locals 5
 
     .prologue
-    .line 274
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -589,7 +537,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mFontTypePref:Landroid/preference/ListPreference;
 
-    .line 287
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -621,24 +568,19 @@
 
     aput-object v4, v0, v3
 
-    .line 291
     .local v0, blank:[Ljava/lang/CharSequence;
     iget-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mFontTypePref:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
-    .line 292
     iget-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mFontTypePref:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
-    .line 293
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings;->setDisplayFontEnable()V
 
-    .line 294
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings;->checkForLocaleChange()V
 
-    .line 299
     .end local v0           #blank:[Ljava/lang/CharSequence;
     :goto_0
     const-string v3, "autofit_screen"
@@ -649,7 +591,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mAutoFitScreen:Landroid/preference/Preference;
 
-    .line 300
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -670,12 +611,10 @@
 
     if-nez v3, :cond_0
 
-    .line 302
     iget-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mAutoFitScreen:Landroid/preference/Preference;
 
     invoke-virtual {v1, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 305
     :cond_0
     const-string v3, "accelerometer_calibration"
 
@@ -685,7 +624,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mAccelerometerCalibration:Landroid/preference/Preference;
 
-    .line 306
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
 
     move-result-object v3
@@ -698,12 +636,10 @@
 
     if-nez v3, :cond_1
 
-    .line 307
     iget-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mAccelerometerCalibration:Landroid/preference/Preference;
 
     invoke-virtual {v1, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 309
     :cond_1
     const-string v3, "pouch_settings"
 
@@ -736,11 +672,9 @@
 
     if-eqz v3, :cond_7
 
-    .line 311
     :cond_2
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings;->addPouchSummury()V
 
-    .line 317
     :goto_1
     const-string v3, "frontkey_led_timeout"
 
@@ -761,12 +695,10 @@
 
     if-eqz v3, :cond_3
 
-    .line 319
     iget-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mFrontKeyLight:Landroid/preference/Preference;
 
     invoke-virtual {v1, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 322
     :cond_3
     const-string v3, "notification_flash"
 
@@ -801,7 +733,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mSencroCategory:Landroid/preference/PreferenceCategory;
 
-    .line 334
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings;->isSurportedCalibaration()Z
 
     move-result v3
@@ -874,7 +805,6 @@
     .parameter "screenTimeoutPreference"
 
     .prologue
-    .line 391
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v12
@@ -1124,12 +1054,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 706
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 707
     .local v0, cr:Landroid/content/ContentResolver;
     const-string v1, "content://com.jungle.app.fonts.provider/fonts/current/label"
 
@@ -1238,14 +1166,12 @@
     .parameter "value"
 
     .prologue
-    .line 811
     iget-object v2, p0, Lcom/android/settings_ex/DisplaySettings;->mScreenTimeoutPreference:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/DoubleTitleListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    .line 812
     .local v1, values:[Ljava/lang/CharSequence;
     const/4 v0, 0x0
 
@@ -1531,14 +1457,12 @@
 
     iput-object v1, p1, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->locale:Ljava/lang/String;
 
-    .line 739
     invoke-virtual {v0}, Ljava/io/DataInputStream;->readInt()I
 
     move-result v1
 
     iput v1, p1, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->mcc:I
 
-    .line 740
     invoke-virtual {v0}, Ljava/io/DataInputStream;->readInt()I
 
     move-result v1
@@ -1749,14 +1673,12 @@
 
     invoke-static {v6, v7, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 668
     .end local v4           #e:Ljava/lang/Exception;
     :cond_1
     iget-object v6, p0, Lcom/android/settings_ex/DisplaySettings;->mFontTypePref:Landroid/preference/ListPreference;
 
     invoke-virtual {v6, v2}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
-    .line 669
     return-void
 .end method
 
@@ -1766,7 +1688,6 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 553
     iget-object v1, p0, Lcom/android/settings_ex/DisplaySettings;->mAccelerometer:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -1794,15 +1715,12 @@
     .locals 1
 
     .prologue
-    .line 546
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings;->updateAccelerometerRotationCheckbox()V
 
-    .line 547
     iget-object v0, p0, Lcom/android/settings_ex/DisplaySettings;->mFontSizePref:Landroid/preference/ListPreference;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/DisplaySettings;->readFontSizePreference(Landroid/preference/ListPreference;)V
 
-    .line 550
     return-void
 .end method
 
@@ -1811,10 +1729,8 @@
     .parameter "currentTimeout"
 
     .prologue
-    .line 358
     iget-object v3, p0, Lcom/android/settings_ex/DisplaySettings;->mScreenTimeoutPreference:Lcom/android/settings_ex/DoubleTitleListPreference;
 
-    .line 360
     .local v3, preference:Landroid/preference/ListPreference;
     const-wide/16 v8, 0x0
 
@@ -1970,54 +1886,44 @@
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 760
     :try_start_1
     iget-object v1, p1, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->locale:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/io/DataOutputStream;->writeUTF(Ljava/lang/String;)V
 
-    .line 761
     iget v1, p1, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->mcc:I
 
     invoke-virtual {v0, v1}, Ljava/io/DataOutputStream;->writeInt(I)V
 
-    .line 762
     iget v1, p1, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->mnc:I
 
     invoke-virtual {v0, v1}, Ljava/io/DataOutputStream;->writeInt(I)V
 
-    .line 763
     invoke-virtual {v0}, Ljava/io/DataOutputStream;->flush()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
     .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_7
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_6
 
-    .line 770
     if-eqz v0, :cond_0
 
-    .line 772
     :try_start_2
     invoke-virtual {v0}, Ljava/io/DataOutputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_4
 
-    .line 778
     :cond_0
     :goto_0
     return-void
 
-    .line 764
     :catch_0
     move-exception v0
 
     move-object v0, v1
 
-    .line 770
     :goto_1
     if-eqz v0, :cond_0
 
-    .line 772
     :try_start_3
     invoke-virtual {v0}, Ljava/io/DataOutputStream;->close()V
     :try_end_3
@@ -2128,7 +2034,6 @@
     .parameter "val"
 
     .prologue
-    .line 436
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
@@ -2213,15 +2118,12 @@
     .parameter "newConfig"
 
     .prologue
-    .line 496
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 497
     iget-object v0, p0, Lcom/android/settings_ex/DisplaySettings;->mCurConfig:Landroid/content/res/Configuration;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Configuration;->updateFrom(Landroid/content/res/Configuration;)I
 
-    .line 498
     return-void
 .end method
 
@@ -2236,10 +2138,8 @@
 
     const/4 v9, 0x1
 
-    .line 199
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 201
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
@@ -2248,13 +2148,11 @@
 
     move-result-object v6
 
-    .line 203
     .local v6, resolver:Landroid/content/ContentResolver;
     const v8, 0x7f060018
 
     invoke-virtual {p0, v8}, Lcom/android/settings_ex/DisplaySettings;->addPreferencesFromResource(I)V
 
-    .line 205
     const-string v8, "brightness"
 
     invoke-virtual {p0, v8}, Lcom/android/settings_ex/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -2276,12 +2174,10 @@
 
     iput-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mAccelerometer:Landroid/preference/CheckBoxPreference;
 
-    .line 207
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mAccelerometer:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v8, v10}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
-    .line 209
     const-string v8, "screen_timeout"
 
     invoke-virtual {p0, v8}, Lcom/android/settings_ex/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -2292,7 +2188,6 @@
 
     iput-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mScreenTimeoutPreference:Lcom/android/settings_ex/DoubleTitleListPreference;
 
-    .line 210
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mScreenTimeoutPreference:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     const v11, 0x7f08073c
@@ -2303,7 +2198,6 @@
 
     invoke-virtual {v8, v11}, Lcom/android/settings_ex/DoubleTitleListPreference;->setMainTitle(Ljava/lang/String;)V
 
-    .line 211
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mScreenTimeoutPreference:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     const v11, 0x7f08077d
@@ -2333,17 +2227,14 @@
 
     invoke-virtual {v8, v11}, Lcom/android/settings_ex/DoubleTitleListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 216
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mScreenTimeoutPreference:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     invoke-virtual {v8, p0}, Lcom/android/settings_ex/DoubleTitleListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 217
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mScreenTimeoutPreference:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     invoke-direct {p0, v8}, Lcom/android/settings_ex/DisplaySettings;->disableUnusableTimeouts(Landroid/preference/ListPreference;)V
 
-    .line 219
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v8
@@ -2354,10 +2245,8 @@
 
     if-nez v8, :cond_0
 
-    .line 221
     const-wide/16 v0, 0x7530
 
-    .line 222
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v8
@@ -2368,7 +2257,6 @@
 
     invoke-static {v8, v11, v12}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 223
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mScreenTimeoutPreference:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
@@ -2377,11 +2265,9 @@
 
     invoke-virtual {v8, v11}, Lcom/android/settings_ex/DoubleTitleListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 228
     :cond_0
     invoke-direct {p0, v0, v1}, Lcom/android/settings_ex/DisplaySettings;->updateTimeoutPreferenceDescription(J)V
 
-    .line 230
     const-string v8, "font_size"
 
     invoke-virtual {p0, v8}, Lcom/android/settings_ex/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -2392,12 +2278,10 @@
 
     iput-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mFontSizePref:Landroid/preference/ListPreference;
 
-    .line 231
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mFontSizePref:Landroid/preference/ListPreference;
 
     invoke-virtual {v8, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 235
     sget-object v8, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
     const-string v11, "m4"
@@ -2450,38 +2334,31 @@
 
     move-result-object v3
 
-    .line 241
     .local v3, list_entryValues:[Ljava/lang/CharSequence;
     aget-object v8, v2, v9
 
     aput-object v8, v4, v10
 
-    .line 242
     aget-object v8, v3, v9
 
     aput-object v8, v5, v10
 
-    .line 243
     aget-object v8, v2, v13
 
     aput-object v8, v4, v9
 
-    .line 244
     aget-object v8, v3, v13
 
     aput-object v8, v5, v9
 
-    .line 246
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mFontSizePref:Landroid/preference/ListPreference;
 
     invoke-virtual {v8, v4}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
-    .line 247
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mFontSizePref:Landroid/preference/ListPreference;
 
     invoke-virtual {v8, v5}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
-    .line 249
     .end local v2           #list_entries:[Ljava/lang/CharSequence;
     .end local v3           #list_entryValues:[Ljava/lang/CharSequence;
     .end local v4           #new_list_entries:[Ljava/lang/CharSequence;
@@ -2500,7 +2377,6 @@
 
     iput-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mNotificationPulse:Landroid/preference/CheckBoxPreference;
 
-    .line 253
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mNotificationPulse:Landroid/preference/CheckBoxPreference;
 
     if-eqz v8, :cond_4
@@ -2517,7 +2393,6 @@
 
     if-nez v8, :cond_4
 
-    .line 256
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v8
@@ -2526,22 +2401,18 @@
 
     invoke-virtual {v8, v9}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 270
     :cond_3
     :goto_0
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings;->createAddedMenu()V
 
-    .line 271
     return-void
 
-    .line 259
     :cond_4
     :try_start_0
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mNotificationPulse:Landroid/preference/CheckBoxPreference;
 
     if-eqz v8, :cond_3
 
-    .line 261
     iget-object v11, p0, Lcom/android/settings_ex/DisplaySettings;->mNotificationPulse:Landroid/preference/CheckBoxPreference;
 
     const-string v8, "notification_light_pulse"
@@ -2557,7 +2428,6 @@
     :goto_1
     invoke-virtual {v11, v8}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 263
     iget-object v8, p0, Lcom/android/settings_ex/DisplaySettings;->mNotificationPulse:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v8, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
@@ -2592,10 +2462,8 @@
     .locals 2
 
     .prologue
-    .line 501
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onPause()V
 
-    .line 507
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -2649,14 +2517,12 @@
 
     invoke-static {v3, v4, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 623
     int-to-long v3, v2
 
     invoke-direct {p0, v3, v4}, Lcom/android/settings_ex/DisplaySettings;->updateTimeoutPreferenceDescription(J)V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 628
     .end local v2           #value:I
     :cond_0
     :goto_0
@@ -2668,21 +2534,17 @@
 
     if-eqz v3, :cond_1
 
-    .line 629
     invoke-virtual {p0, p2}, Lcom/android/settings_ex/DisplaySettings;->writeFontSizePreference(Ljava/lang/Object;)V
 
-    .line 649
     :cond_1
     const/4 v3, 0x1
 
     return v3
 
-    .line 624
     .restart local v2       #value:I
     :catch_0
     move-exception v0
 
-    .line 625
     .local v0, e:Ljava/lang/NumberFormatException;
     const-string v3, "DisplaySettings"
 
@@ -2705,12 +2567,10 @@
 
     const/4 v5, 0x0
 
-    .line 577
     iget-object v7, p0, Lcom/android/settings_ex/DisplaySettings;->mAccelerometer:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v7, :cond_3
 
-    .line 579
     :try_start_0
     const-string v5, "window"
 
@@ -2722,11 +2582,9 @@
 
     move-result-object v4
 
-    .line 581
     .local v4, wm:Landroid/view/IWindowManager;
     if-eqz v4, :cond_0
 
-    .line 582
     iget-object v5, p0, Lcom/android/settings_ex/DisplaySettings;->mAccelerometer:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v5}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -2796,21 +2654,18 @@
 
     goto :goto_1
 
-    .line 594
     .end local v1           #exc:Landroid/os/RemoteException;
     :cond_3
     iget-object v7, p0, Lcom/android/settings_ex/DisplaySettings;->mNotificationPulse:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v7, :cond_5
 
-    .line 595
     iget-object v7, p0, Lcom/android/settings_ex/DisplaySettings;->mNotificationPulse:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v7}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v3
 
-    .line 596
     .local v3, value:Z
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2827,19 +2682,16 @@
 
     goto :goto_2
 
-    .line 599
     .end local v3           #value:Z
     :cond_5
     iget-object v5, p0, Lcom/android/settings_ex/DisplaySettings;->mFontTypePref:Landroid/preference/ListPreference;
 
     if-ne p2, v5, :cond_6
 
-    .line 600
     iget-object v5, p0, Lcom/android/settings_ex/DisplaySettings;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v5, v8}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 601
     iget-object v5, p0, Lcom/android/settings_ex/DisplaySettings;->mHandler:Landroid/os/Handler;
 
     iget-object v6, p0, Lcom/android/settings_ex/DisplaySettings;->mHandler:Landroid/os/Handler;
@@ -2852,13 +2704,11 @@
 
     goto :goto_1
 
-    .line 602
     :cond_6
     iget-object v5, p0, Lcom/android/settings_ex/DisplaySettings;->mAutoFitScreen:Landroid/preference/Preference;
 
     if-ne p2, v5, :cond_1
 
-    .line 604
     :try_start_2
     new-instance v2, Landroid/content/Intent;
 
@@ -2874,19 +2724,16 @@
 
     invoke-virtual {v2, v5, v6}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 607
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/DisplaySettings;->startActivity(Landroid/content/Intent;)V
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_1
 
     goto :goto_1
 
-    .line 608
     .end local v2           #intent:Landroid/content/Intent;
     :catch_1
     move-exception v0
 
-    .line 609
     .local v0, e:Landroid/content/ActivityNotFoundException;
     const-string v5, "DisplaySettings"
 
@@ -2908,16 +2755,12 @@
     .locals 4
 
     .prologue
-    .line 480
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
-    .line 487
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings;->addPouchSummury()V
 
-    .line 488
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings;->updateState()V
 
-    .line 489
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -2942,20 +2785,16 @@
     .locals 1
 
     .prologue
-    .line 512
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onStop()V
 
-    .line 514
     iget-object v0, p0, Lcom/android/settings_ex/DisplaySettings;->mBrightnessPreference:Lcom/android/settings_ex/BrightnessPreference;
 
     if-eqz v0, :cond_0
 
-    .line 515
     iget-object v0, p0, Lcom/android/settings_ex/DisplaySettings;->mBrightnessPreference:Lcom/android/settings_ex/BrightnessPreference;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/BrightnessPreference;->stopDialog()V
 
-    .line 516
     :cond_0
     return-void
 .end method
@@ -3013,27 +2852,22 @@
 
     if-eqz v4, :cond_3
 
-    .line 461
     :cond_0
     if-nez v2, :cond_2
 
-    .line 462
     const/4 v2, 0x1
 
-    .line 466
     :cond_1
     :goto_1
     add-int/lit8 v4, v2, -0x1
 
     invoke-virtual {p1, v4}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
-    .line 472
     :goto_2
     invoke-virtual {p0}, Lcom/android/settings_ex/DisplaySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    .line 473
     .local v3, res:Landroid/content/res/Resources;
     const v4, 0x7f09009b
 
@@ -3161,14 +2995,12 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 564
     iget-object v2, p0, Lcom/android/settings_ex/DisplaySettings;->mCurConfig:Landroid/content/res/Configuration;
 
     iget v3, v0, Landroid/content/res/Configuration;->orientation:I
 
     iput v3, v2, Landroid/content/res/Configuration;->orientation:I
 
-    .line 568
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/DisplaySettings;->mCurConfig:Landroid/content/res/Configuration;
 

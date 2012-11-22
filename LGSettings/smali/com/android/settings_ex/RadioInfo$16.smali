@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 950
     iput-object p1, p0, Lcom/android/settings_ex/RadioInfo$16;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -79,7 +78,6 @@
 
     invoke-static {v3, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 955
     iget-object v1, p0, Lcom/android/settings_ex/RadioInfo$16;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #calls: Lcom/android/settings_ex/RadioInfo;->isLteRamDumpEnabled()Z
@@ -101,16 +99,13 @@
     :goto_2
     invoke-static {v2, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 957
     iget-object v1, p0, Lcom/android/settings_ex/RadioInfo$16;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #calls: Lcom/android/settings_ex/RadioInfo;->updateLteRamDumpState()V
     invoke-static {v1}, Lcom/android/settings_ex/RadioInfo;->access$3600(Lcom/android/settings_ex/RadioInfo;)V
 
-    .line 958
     return-void
 
-    .line 953
     .end local v0           #newValue:Z
     :cond_0
     const-string v1, "off"

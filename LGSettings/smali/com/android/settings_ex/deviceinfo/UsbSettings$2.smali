@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 1146
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -447,7 +446,6 @@
 
     invoke-virtual {v9, v0, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 1379
     new-instance v18, Lcom/android/settings_ex/deviceinfo/UsbSettings$2$11;
 
     move-object/from16 v0, v18
@@ -794,24 +792,20 @@
 
     invoke-virtual {v5, v0}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 1428
     const v18, 0x1010355
 
     move/from16 v0, v18
 
     invoke-virtual {v5, v0}, Landroid/app/AlertDialog$Builder;->setIconAttribute(I)Landroid/app/AlertDialog$Builder;
 
-    .line 1429
     const v18, 0x7f080282
 
     move/from16 v0, v18
 
     invoke-virtual {v5, v0}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 1430
     invoke-virtual {v5, v4}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    .line 1431
     new-instance v18, Lcom/android/settings_ex/deviceinfo/UsbSettings$2$12;
 
     move-object/from16 v0, v18

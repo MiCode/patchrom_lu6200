@@ -31,32 +31,26 @@
     .parameter "comp"
 
     .prologue
-    .line 495
     new-instance v1, Lcom/android/settings_ex/applications/RunningServiceDetails$MyAlertDialogFragment;
 
     invoke-direct {v1}, Lcom/android/settings_ex/applications/RunningServiceDetails$MyAlertDialogFragment;-><init>()V
 
-    .line 496
     .local v1, frag:Lcom/android/settings_ex/applications/RunningServiceDetails$MyAlertDialogFragment;
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 497
     .local v0, args:Landroid/os/Bundle;
     const-string v2, "id"
 
     invoke-virtual {v0, v2, p0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 498
     const-string v2, "comp"
 
     invoke-virtual {v0, v2, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 499
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/applications/RunningServiceDetails$MyAlertDialogFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 500
     return-object v1
 .end method
 
@@ -66,7 +60,6 @@
     .locals 1
 
     .prologue
-    .line 504
     invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningServiceDetails$MyAlertDialogFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
@@ -83,7 +76,6 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 509
     invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningServiceDetails$MyAlertDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v3

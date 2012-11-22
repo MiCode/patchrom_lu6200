@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 111
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "dialog"
 
     .prologue
-    .line 113
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsBootable:Z
@@ -61,7 +59,6 @@
 
     if-nez v0, :cond_0
 
-    .line 114
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;
 
     const/4 v1, 0x0
@@ -69,12 +66,10 @@
     #calls: Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->setDataRoamingEnabled(Z)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->access$200(Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;Z)V
 
-    .line 115
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->finish()V
 
-    .line 116
     return-void
 .end method

@@ -25,7 +25,6 @@
     .parameter "x0"
 
     .prologue
-    .line 843
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment$1;->this$0:Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;
 
     invoke-direct {p0, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
@@ -38,7 +37,6 @@
     .parameter "view"
 
     .prologue
-    .line 856
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment$1;->this$0:Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->getActivity()Landroid/app/Activity;
@@ -110,9 +108,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 849
     invoke-direct {p0, v0}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment$1;->sendAccessibilityEvent(Landroid/view/View;)V
 
-    .line 850
     return-void
 .end method

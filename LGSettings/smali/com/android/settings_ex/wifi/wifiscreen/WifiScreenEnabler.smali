@@ -17,17 +17,14 @@
     .parameter "switch_"
 
     .prologue
-    .line 40
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 34
     new-instance v0, Lcom/android/settings_ex/wifi/wifiscreen/WifiScreenEnabler$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/wifi/wifiscreen/WifiScreenEnabler$1;-><init>(Lcom/android/settings_ex/wifi/wifiscreen/WifiScreenEnabler;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/wifiscreen/WifiScreenEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 41
     return-void
 .end method
 

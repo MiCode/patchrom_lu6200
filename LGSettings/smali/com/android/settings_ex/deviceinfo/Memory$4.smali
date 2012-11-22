@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 326
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/Memory$4;->this$0:Lcom/android/settings_ex/deviceinfo/Memory;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +42,10 @@
     .parameter "which"
 
     .prologue
-    .line 328
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/Memory$4;->this$0:Lcom/android/settings_ex/deviceinfo/Memory;
 
     #calls: Lcom/android/settings_ex/deviceinfo/Memory;->doUnmount()V
     invoke-static {v0}, Lcom/android/settings_ex/deviceinfo/Memory;->access$200(Lcom/android/settings_ex/deviceinfo/Memory;)V
 
-    .line 329
     return-void
 .end method

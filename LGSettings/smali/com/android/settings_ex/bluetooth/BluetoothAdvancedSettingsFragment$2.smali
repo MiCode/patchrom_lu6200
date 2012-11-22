@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 178
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +40,10 @@
     .locals 1
 
     .prologue
-    .line 180
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;
 
     #calls: Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->initPreference()V
     invoke-static {v0}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->access$100(Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;)V
 
-    .line 182
     return-void
 .end method

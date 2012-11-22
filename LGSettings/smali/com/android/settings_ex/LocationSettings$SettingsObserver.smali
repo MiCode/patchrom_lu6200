@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 96
     iput-object p1, p0, Lcom/android/settings_ex/LocationSettings$SettingsObserver;->this$0:Lcom/android/settings_ex/LocationSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 96
     invoke-direct {p0, p1}, Lcom/android/settings_ex/LocationSettings$SettingsObserver;-><init>(Lcom/android/settings_ex/LocationSettings;)V
 
     return-void
@@ -55,12 +53,10 @@
     .parameter "arg"
 
     .prologue
-    .line 98
     iget-object v0, p0, Lcom/android/settings_ex/LocationSettings$SettingsObserver;->this$0:Lcom/android/settings_ex/LocationSettings;
 
     #calls: Lcom/android/settings_ex/LocationSettings;->updateLocationToggles()V
     invoke-static {v0}, Lcom/android/settings_ex/LocationSettings;->access$000(Lcom/android/settings_ex/LocationSettings;)V
 
-    .line 99
     return-void
 .end method

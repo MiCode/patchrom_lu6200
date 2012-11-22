@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 82
     iput-object p1, p0, Lcom/android/settings_ex/BandMode$1;->this$0:Lcom/android/settings_ex/BandMode;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +44,6 @@
     .parameter "id"
 
     .prologue
-    .line 86
     iget-object v1, p0, Lcom/android/settings_ex/BandMode$1;->this$0:Lcom/android/settings_ex/BandMode;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/BandMode;->getWindow()Landroid/view/Window;
@@ -58,7 +56,6 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/view/Window;->setFeatureInt(II)V
 
-    .line 90
     iget-object v2, p0, Lcom/android/settings_ex/BandMode$1;->this$0:Lcom/android/settings_ex/BandMode;
 
     invoke-virtual {p1}, Landroid/widget/AdapterView;->getAdapter()Landroid/widget/Adapter;
@@ -74,7 +71,6 @@
     #setter for: Lcom/android/settings_ex/BandMode;->mTargetBand:Lcom/android/settings_ex/BandMode$BandListItem;
     invoke-static {v2, v1}, Lcom/android/settings_ex/BandMode;->access$002(Lcom/android/settings_ex/BandMode;Lcom/android/settings_ex/BandMode$BandListItem;)Lcom/android/settings_ex/BandMode$BandListItem;
 
-    .line 94
     iget-object v1, p0, Lcom/android/settings_ex/BandMode$1;->this$0:Lcom/android/settings_ex/BandMode;
 
     #getter for: Lcom/android/settings_ex/BandMode;->mHandler:Landroid/os/Handler;

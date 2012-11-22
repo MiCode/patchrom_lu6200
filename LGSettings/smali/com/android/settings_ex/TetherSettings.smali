@@ -102,10 +102,8 @@
 
     const/4 v2, 0x0
 
-    .line 100
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
-    .line 144
     new-array v0, v3, [Ljava/lang/String;
 
     const-string v1, ""
@@ -123,25 +121,20 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothRegexs:[Ljava/lang/String;
 
-    .line 164
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
-    .line 183
     iput-boolean v2, p0, Lcom/android/settings_ex/TetherSettings;->mCheckTethering:Z
 
-    .line 190
     iput-boolean v2, p0, Lcom/android/settings_ex/TetherSettings;->mInit:Z
 
-    .line 383
     new-instance v0, Lcom/android/settings_ex/TetherSettings$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/TetherSettings$1;-><init>(Lcom/android/settings_ex/TetherSettings;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mProfileServiceListener:Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
-    .line 1181
     new-instance v0, Lcom/android/settings_ex/TetherSettings$6;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/TetherSettings$6;-><init>(Lcom/android/settings_ex/TetherSettings;)V
@@ -156,7 +149,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
 
     return-object v0
@@ -168,7 +160,6 @@
     .parameter "x1"
 
     .prologue
-    .line 100
     iput-object p1, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
 
     return-object p1
@@ -179,7 +170,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     return-object v0
@@ -190,7 +180,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDialog:Landroid/app/AlertDialog$Builder;
 
     return-object v0
@@ -201,7 +190,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mPassword:Landroid/widget/EditText;
 
     return-object v0
@@ -212,7 +200,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
     return-object v0
@@ -224,7 +211,6 @@
     .parameter "x1"
 
     .prologue
-    .line 100
     iput-object p1, p0, Lcom/android/settings_ex/TetherSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
     return-object p1
@@ -235,7 +221,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     return-object v0
@@ -247,7 +232,6 @@
     .parameter "x1"
 
     .prologue
-    .line 100
     iput-boolean p1, p0, Lcom/android/settings_ex/TetherSettings;->mInit:Z
 
     return p1
@@ -259,7 +243,6 @@
     .parameter "x1"
 
     .prologue
-    .line 100
     iput-boolean p1, p0, Lcom/android/settings_ex/TetherSettings;->mCheckTethering:Z
 
     return p1
@@ -270,7 +253,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mPreferenceTmp:Landroid/preference/Preference;
 
     return-object v0
@@ -281,7 +263,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mObjectTmp:Ljava/lang/Object;
 
     return-object v0
@@ -292,7 +273,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     invoke-direct {p0}, Lcom/android/settings_ex/TetherSettings;->updateState()V
 
     return-void
@@ -306,7 +286,6 @@
     .parameter "x3"
 
     .prologue
-    .line 100
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings_ex/TetherSettings;->updateState([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     return-void
@@ -318,7 +297,6 @@
     .parameter "x1"
 
     .prologue
-    .line 100
     iput-boolean p1, p0, Lcom/android/settings_ex/TetherSettings;->mMassStorageActive:Z
 
     return p1
@@ -330,7 +308,6 @@
     .parameter "x1"
 
     .prologue
-    .line 100
     iput-boolean p1, p0, Lcom/android/settings_ex/TetherSettings;->mUsbConnected:Z
 
     return p1
@@ -341,7 +318,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-boolean v0, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothEnableForTether:Z
 
     return v0
@@ -353,7 +329,6 @@
     .parameter "x1"
 
     .prologue
-    .line 100
     iput-boolean p1, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothEnableForTether:Z
 
     return p1
@@ -364,7 +339,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-boolean v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiHotspotStatus:Z
 
     return v0
@@ -375,7 +349,6 @@
     .parameter "x0"
 
     .prologue
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     return-object v0
@@ -488,12 +461,10 @@
 
     const/4 v8, 0x0
 
-    .line 359
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    .line 360
     .local v0, activity:Landroid/app/Activity;
     const-string v3, "wifi"
 
@@ -505,7 +476,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    .line 361
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v3}, Landroid/net/wifi/WifiManager;->getWifiApConfiguration()Landroid/net/wifi/WifiConfiguration;
@@ -514,7 +484,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
-    .line 363
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -540,7 +509,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 366
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -563,19 +531,16 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mCreateNetwork:Landroid/preference/Preference;
 
-    .line 370
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
     if-nez v3, :cond_2
 
-    .line 371
     const v3, 0x10403f6
 
     invoke-virtual {v0, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 373
     .local v2, s:Ljava/lang/String;
     iget-object v6, p0, Lcom/android/settings_ex/TetherSettings;->mCreateNetwork:Landroid/preference/Preference;
 
@@ -697,29 +662,24 @@
 
     check-cast v1, Landroid/net/ConnectivityManager;
 
-    .line 670
     .local v1, cm:Landroid/net/ConnectivityManager;
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getTetherableIfaces()[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 671
     .local v0, available:[Ljava/lang/String;
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getTetheredIfaces()[Ljava/lang/String;
 
     move-result-object v3
 
-    .line 672
     .local v3, tethered:[Ljava/lang/String;
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getTetheringErroredIfaces()[Ljava/lang/String;
 
     move-result-object v2
 
-    .line 673
     .local v2, errored:[Ljava/lang/String;
     invoke-direct {p0, v0, v3, v2}, Lcom/android/settings_ex/TetherSettings;->updateState([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
-    .line 674
     return-void
 .end method
 
@@ -730,10 +690,8 @@
     .parameter "errored"
 
     .prologue
-    .line 678
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings_ex/TetherSettings;->updateUsbState([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
-    .line 680
     return-void
 .end method
 
@@ -753,7 +711,6 @@
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 687
     iget-boolean v1, p0, Lcom/android/settings_ex/TetherSettings;->mUsbConnected:Z
 
     if-eqz v1, :cond_1
@@ -780,7 +737,6 @@
 
     aget-object v7, p1, v4
 
-    .line 690
     iget-object v8, p0, Lcom/android/settings_ex/TetherSettings;->mUsbRegexs:[Ljava/lang/String;
 
     array-length v9, v8
@@ -849,7 +805,6 @@
 
     aget-object v7, p2, v3
 
-    .line 700
     iget-object v8, p0, Lcom/android/settings_ex/TetherSettings;->mUsbRegexs:[Ljava/lang/String;
 
     array-length v9, v8
@@ -906,7 +861,6 @@
 
     aget-object v7, p3, v3
 
-    .line 706
     iget-object v8, p0, Lcom/android/settings_ex/TetherSettings;->mUsbRegexs:[Ljava/lang/String;
 
     array-length v9, v8
@@ -983,29 +937,24 @@
 
     if-nez v0, :cond_a
 
-    .line 741
     :goto_7
     return-void
 
-    .line 716
     :cond_a
     if-eqz v4, :cond_b
 
-    .line 717
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0803c2
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 718
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 719
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x1
@@ -1014,21 +963,17 @@
 
     goto :goto_7
 
-    .line 720
     :cond_b
     if-eqz v1, :cond_d
 
-    .line 721
     if-nez v5, :cond_c
 
-    .line 722
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0803c1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 726
     :goto_8
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
@@ -1036,7 +981,6 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 727
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
@@ -1055,25 +999,21 @@
 
     goto :goto_8
 
-    .line 728
     :cond_d
     if-eqz v2, :cond_e
 
-    .line 729
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0803c5
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 730
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 731
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
@@ -1082,27 +1022,23 @@
 
     goto :goto_7
 
-    .line 732
     :cond_e
     iget-boolean v0, p0, Lcom/android/settings_ex/TetherSettings;->mMassStorageActive:Z
 
     if-eqz v0, :cond_f
 
-    .line 733
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0803c3
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 734
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 735
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
@@ -1119,14 +1055,12 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 738
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 739
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
@@ -1142,7 +1076,6 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 1150
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->length()I
@@ -1153,7 +1086,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 1151
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDlog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog;->getButton(I)Landroid/widget/Button;
@@ -1195,12 +1127,10 @@
 
     const/4 v2, 0x0
 
-    .line 1241
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v3
 
-    .line 1243
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -1366,7 +1296,6 @@
 
     move-result-object v3
 
-    .line 1268
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -1390,7 +1319,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TetherSettings;->alertDialogView:Landroid/view/View;
 
-    .line 1270
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->alertDialogView:Landroid/view/View;
 
     const v4, 0x7f0b019b
@@ -1403,7 +1331,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAttentionView:Landroid/webkit/WebView;
 
-    .line 1271
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAttentionView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
@@ -1412,7 +1339,6 @@
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setBuiltInZoomControls(Z)V
 
-    .line 1272
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAttentionView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
@@ -1421,12 +1347,10 @@
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setSupportZoom(Z)V
 
-    .line 1273
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAttentionView:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v3}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
-    .line 1275
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
@@ -1435,25 +1359,20 @@
 
     invoke-direct {v0, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 1276
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 1277
     const v1, 0x1010355
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setIconAttribute(I)Landroid/app/AlertDialog$Builder;
 
-    .line 1278
     const v1, 0x7f080282
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 1279
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings;->alertDialogView:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    .line 1280
     const v1, 0x7f080283
 
     new-instance v3, Lcom/android/settings_ex/TetherSettings$7;
@@ -1560,10 +1479,8 @@
     .parameter "s"
 
     .prologue
-    .line 1159
     invoke-direct {p0}, Lcom/android/settings_ex/TetherSettings;->validate()V
 
-    .line 1160
     return-void
 .end method
 
@@ -1586,25 +1503,20 @@
     .parameter "intent"
 
     .prologue
-    .line 1030
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 1031
     if-nez p1, :cond_0
 
-    .line 1032
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_0
 
-    .line 1033
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/wifi/WifiApEnabler;->setSoftapEnabled(Z)V
 
-    .line 1036
     :cond_0
     return-void
 .end method
@@ -1619,12 +1531,10 @@
 
     const/4 v5, 0x0
 
-    .line 1126
     const/4 v1, -0x1
 
     if-ne p2, v1, :cond_0
 
-    .line 1127
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings;->mDialog:Lcom/android/settings_ex/wifi/WifiApDialog;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/wifi/WifiApDialog;->getConfig()Landroid/net/wifi/WifiConfiguration;
@@ -1633,7 +1543,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/TetherSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
-    .line 1128
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
     if-eqz v1, :cond_0
@@ -1646,7 +1555,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 1134
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getWifiApState()I
@@ -1657,21 +1565,18 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 1135
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2, v5}, Landroid/net/wifi/WifiManager;->setWifiApEnabled(Landroid/net/wifi/WifiConfiguration;Z)Z
 
-    .line 1136
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     iget-object v2, p0, Lcom/android/settings_ex/TetherSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
     invoke-virtual {v1, v2, v6}, Landroid/net/wifi/WifiManager;->setWifiApEnabled(Landroid/net/wifi/WifiConfiguration;Z)Z
 
-    .line 1140
     :goto_0
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -1756,7 +1661,6 @@
     .parameter "view"
 
     .prologue
-    .line 1173
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings;->mPassword:Landroid/widget/EditText;
 
     check-cast p1, Landroid/widget/CheckBox;
@@ -1775,7 +1679,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/EditText;->setInputType(I)V
 
-    .line 1178
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mPassword:Landroid/widget/EditText;
 
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings;->mPassword:Landroid/widget/EditText;
@@ -1801,10 +1704,8 @@
     .parameter "config"
 
     .prologue
-    .line 1299
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 1300
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mDialog:Lcom/android/settings_ex/wifi/WifiApDialog;
 
     if-eqz v0, :cond_0
@@ -1817,12 +1718,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 1301
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mDialog:Lcom/android/settings_ex/wifi/WifiApDialog;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/wifi/WifiApDialog;->notifyConfigurationChanged()V
 
-    .line 1302
     :cond_0
     return-void
 .end method
@@ -1832,32 +1731,26 @@
     .parameter "icicle"
 
     .prologue
-    .line 197
     invoke-super/range {p0 .. p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 198
     const v14, 0x7f060043
 
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v14}, Lcom/android/settings_ex/TetherSettings;->addPreferencesFromResource(I)V
 
-    .line 200
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    .line 201
     .local v1, activity:Landroid/app/Activity;
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v2
 
-    .line 202
     .local v2, adapter:Landroid/bluetooth/BluetoothAdapter;
     if-eqz v2, :cond_0
 
-    .line 203
     invoke-virtual {v1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v14
@@ -1941,14 +1834,12 @@
 
     if-eqz v14, :cond_2
 
-    .line 217
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/settings_ex/TetherSettings;->mEnableUnicode:Landroid/preference/CheckBoxPreference;
 
     if-eqz v14, :cond_1
 
-    .line 218
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/android/settings_ex/TetherSettings;->mEnableUnicode:Landroid/preference/CheckBoxPreference;
@@ -1996,7 +1887,6 @@
 
     if-eqz v14, :cond_3
 
-    .line 223
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/TetherSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v14
@@ -2047,7 +1937,6 @@
 
     invoke-virtual {v14, v15}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 236
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/TetherSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v14
@@ -2072,7 +1961,6 @@
 
     if-eqz v14, :cond_4
 
-    .line 240
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/TetherSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v14
@@ -2285,11 +2173,9 @@
 
     invoke-virtual {v14, v15}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 313
     :cond_7
     if-eqz v13, :cond_11
 
-    .line 314
     new-instance v14, Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     move-object/from16 v0, p0
@@ -2302,10 +2188,8 @@
 
     iput-object v14, v0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
-    .line 315
     invoke-direct/range {p0 .. p0}, Lcom/android/settings_ex/TetherSettings;->initWifiTethering()V
 
-    .line 321
     :goto_3
     const-string v14, "SPRINT"
 
@@ -2331,7 +2215,6 @@
 
     if-nez v14, :cond_12
 
-    .line 322
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/TetherSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v14
@@ -2416,7 +2299,6 @@
 
     iput-object v14, v0, Lcom/android/settings_ex/TetherSettings;->mView:Landroid/webkit/WebView;
 
-    .line 348
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v14
@@ -2439,22 +2321,18 @@
 
     move-result v7
 
-    .line 351
     .local v7, flag:Z
     if-eqz v7, :cond_14
 
-    .line 352
     const/4 v14, 0x1
 
     move-object/from16 v0, p0
 
     iput-boolean v14, v0, Lcom/android/settings_ex/TetherSettings;->mInit:Z
 
-    .line 356
     :goto_5
     return-void
 
-    .line 218
     .end local v3           #bluetoothAvailable:Z
     .end local v4           #cm:Landroid/net/ConnectivityManager;
     .end local v7           #flag:Z
@@ -2702,7 +2580,6 @@
 
     invoke-virtual {v14, v15}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 318
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/TetherSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v14
@@ -3593,12 +3470,10 @@
 
     if-ne v0, v13, :cond_14
 
-    .line 468
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    .line 469
     .local v1, activity:Landroid/app/Activity;
     new-instance v13, Lcom/android/settings_ex/wifi/WifiApDialog;
 
@@ -3614,14 +3489,12 @@
 
     iput-object v13, v0, Lcom/android/settings_ex/TetherSettings;->mDialog:Lcom/android/settings_ex/wifi/WifiApDialog;
 
-    .line 470
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/settings_ex/TetherSettings;->mDialog:Lcom/android/settings_ex/wifi/WifiApDialog;
 
     goto/16 :goto_4
 
-    .line 471
     .end local v1           #activity:Landroid/app/Activity;
     :cond_14
     const/4 v13, 0x3
@@ -3695,21 +3568,18 @@
 
     iput-object v13, v0, Lcom/android/settings_ex/TetherSettings;->mTetherAlertDialog:Landroid/app/Dialog;
 
-    .line 495
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/settings_ex/TetherSettings;->mTetherAlertDialog:Landroid/app/Dialog;
 
     goto/16 :goto_4
 
-    .line 498
     .end local v3           #cm:Landroid/net/ConnectivityManager;
     :cond_15
     const/4 v13, 0x0
 
     goto/16 :goto_4
 
-    .line 412
     .restart local v2       #am:Landroid/content/res/AssetManager;
     .restart local v6       #is:Ljava/io/InputStream;
     .restart local v8       #locale:Ljava/util/Locale;
@@ -3742,18 +3612,14 @@
 
     const/4 v2, 0x0
 
-    .line 795
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 798
     iput-object p1, p0, Lcom/android/settings_ex/TetherSettings;->mPreferenceTmp:Landroid/preference/Preference;
 
-    .line 799
     iput-object p2, p0, Lcom/android/settings_ex/TetherSettings;->mObjectTmp:Ljava/lang/Object;
 
-    .line 803
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getWifiApConfiguration()Landroid/net/wifi/WifiConfiguration;
@@ -3784,12 +3650,10 @@
     :goto_1
     invoke-static {v4, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 807
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
     if-nez v0, :cond_3
 
-    .line 1026
     :cond_0
     :goto_2
     return v2
@@ -3842,7 +3706,6 @@
 
     invoke-static {v3, v4, v0}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 820
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -3866,7 +3729,6 @@
 
     if-eqz v3, :cond_1b
 
-    .line 824
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -3902,16 +3764,13 @@
 
     if-eqz v4, :cond_7
 
-    .line 833
     if-ne v0, v8, :cond_4
 
     move v0, v1
 
-    .line 837
     :cond_4
     if-nez v0, :cond_5
 
-    .line 838
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->hotSpotTimeoutPreference:Landroid/preference/ListPreference;
 
     const v2, 0x7f080b92
@@ -4110,17 +3969,14 @@
 
     if-eqz v3, :cond_0
 
-    .line 871
     check-cast p2, Ljava/lang/Boolean;
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v3
 
-    .line 875
     iput-boolean v3, p0, Lcom/android/settings_ex/TetherSettings;->mWifiHotspotStatus:Z
 
-    .line 879
     const-string v4, "service.btui.ampstate"
 
     const-string v5, "0"
@@ -4137,14 +3993,12 @@
 
     if-eqz v4, :cond_a
 
-    .line 880
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.bluetooth.intent.action.WIFI_BT_HS_COEX"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 881
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -4186,31 +4040,26 @@
 
     if-nez v4, :cond_d
 
-    .line 890
     if-eqz v3, :cond_c
 
-    .line 892
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    .line 893
     if-eqz v0, :cond_b
 
     instance-of v3, v0, Landroid/view/ViewGroup;
 
     if-eqz v3, :cond_b
 
-    .line 894
     check-cast v0, Landroid/view/ViewGroup;
 
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mView:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 897
     :cond_b
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -4254,7 +4103,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAttentionDialog:Landroid/app/AlertDialog$Builder;
 
-    .line 908
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAttentionDialog:Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
@@ -4263,14 +4111,12 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAttentionDlog:Landroid/app/AlertDialog;
 
-    .line 909
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAttentionDlog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     goto/16 :goto_2
 
-    .line 912
     :cond_c
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
@@ -4292,23 +4138,19 @@
 
     if-eqz v4, :cond_11
 
-    .line 920
     if-eqz v3, :cond_e
 
     iget-boolean v0, p0, Lcom/android/settings_ex/TetherSettings;->mCheckTethering:Z
 
     if-nez v0, :cond_e
 
-    .line 921
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->CreateWarningDialogForDCM()Z
 
     goto/16 :goto_2
 
-    .line 925
     :cond_e
     if-eqz v3, :cond_10
 
-    .line 927
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -4317,23 +4159,19 @@
 
     move-result-object v0
 
-    .line 930
     array-length v3, v0
 
     if-eq v3, v7, :cond_f
 
-    .line 931
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/wifi/WifiApEnabler;->setSoftapEnabled(Z)V
 
-    .line 937
     :goto_8
     iput-boolean v2, p0, Lcom/android/settings_ex/TetherSettings;->mCheckTethering:Z
 
     goto/16 :goto_2
 
-    .line 933
     :cond_f
     new-instance v3, Landroid/content/Intent;
 
@@ -4341,30 +4179,25 @@
 
     invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 934
     aget-object v4, v0, v2
 
     aget-object v0, v0, v1
 
     invoke-virtual {v3, v4, v0}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 935
     invoke-virtual {p0, v3, v2}, Lcom/android/settings_ex/TetherSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_8
 
-    .line 939
     :cond_10
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/wifi/WifiApEnabler;->setSoftapEnabled(Z)V
 
-    .line 940
     iput-boolean v2, p0, Lcom/android/settings_ex/TetherSettings;->mCheckTethering:Z
 
     goto/16 :goto_2
 
-    .line 946
     :cond_11
     const-string v4, "KR"
 
@@ -4403,7 +4236,6 @@
 
     if-eqz v0, :cond_17
 
-    .line 949
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -4438,26 +4270,22 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDialog:Landroid/app/AlertDialog$Builder;
 
-    .line 955
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDialog:Landroid/app/AlertDialog$Builder;
 
     const v3, 0x7f08027f
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 956
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDialog:Landroid/app/AlertDialog$Builder;
 
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mAlertView:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    .line 957
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDialog:Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setInverseBackgroundForced(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 959
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDialog:Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
@@ -4474,7 +4302,6 @@
 
     invoke-virtual {v0, v1, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 960
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDialog:Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
@@ -4491,7 +4318,6 @@
 
     invoke-virtual {v0, v1, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 962
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAlertView:Landroid/view/View;
 
     const v1, 0x7f0b022c
@@ -4515,7 +4341,6 @@
 
     if-eqz v1, :cond_16
 
-    .line 967
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -4564,12 +4389,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mPassword:Landroid/widget/EditText;
 
-    .line 979
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v0, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 980
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
@@ -4582,7 +4405,6 @@
 
     invoke-virtual {v0, v1, v3, v4}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 991
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAlertView:Landroid/view/View;
 
     const v1, 0x7f0b01f9
@@ -4595,7 +4417,6 @@
 
     invoke-virtual {v0, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 993
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDialog:Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
@@ -4604,12 +4425,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDlog:Landroid/app/AlertDialog;
 
-    .line 994
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDlog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
-    .line 996
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->wifiPwDlog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
@@ -4620,7 +4439,6 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
 
-    .line 998
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mAlertView:Landroid/view/View;
 
     const v1, 0x7f0b022b
@@ -4631,19 +4449,15 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 999
     if-eqz v0, :cond_15
 
-    .line 1000
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1002
     :cond_15
     invoke-direct {p0}, Lcom/android/settings_ex/TetherSettings;->validate()V
 
     goto/16 :goto_2
 
-    .line 974
     :cond_16
     const-string v1, "ro.build.target_operator"
 
@@ -4659,7 +4473,6 @@
 
     if-eqz v1, :cond_14
 
-    .line 975
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -4678,11 +4491,9 @@
 
     goto :goto_9
 
-    .line 1009
     :cond_17
     if-eqz v3, :cond_19
 
-    .line 1011
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -4691,19 +4502,16 @@
 
     move-result-object v0
 
-    .line 1014
     array-length v3, v0
 
     if-eq v3, v7, :cond_18
 
-    .line 1015
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/wifi/WifiApEnabler;->setSoftapEnabled(Z)V
 
     goto/16 :goto_2
 
-    .line 1017
     :cond_18
     new-instance v3, Landroid/content/Intent;
 
@@ -4711,19 +4519,16 @@
 
     invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1018
     aget-object v4, v0, v2
 
     aget-object v0, v0, v1
 
     invoke-virtual {v3, v4, v0}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1019
     invoke-virtual {p0, v3, v2}, Lcom/android/settings_ex/TetherSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto/16 :goto_2
 
-    .line 1022
     :cond_19
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
@@ -4763,19 +4568,16 @@
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 1043
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v3, :cond_5
 
-    .line 1044
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v3
 
-    .line 1047
     sget-boolean v4, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v4, :cond_1
@@ -4806,23 +4608,19 @@
 
     if-nez v4, :cond_1
 
-    .line 1111
     :cond_0
     :goto_0
     return v1
 
-    .line 1052
     :cond_1
     if-eqz v3, :cond_2
 
-    .line 1053
     const/4 v0, 0x3
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/TetherSettings;->showDialog(I)V
 
     goto :goto_0
 
-    .line 1056
     :cond_2
     invoke-virtual {v0, v3}, Landroid/net/ConnectivityManager;->setUsbTethering(Z)I
 
@@ -4830,12 +4628,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 1057
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 1058
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
     const v2, 0x7f0803c5
@@ -4861,20 +4657,17 @@
 
     goto :goto_0
 
-    .line 1063
     :cond_5
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v3, :cond_a
 
-    .line 1064
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v3
 
-    .line 1066
     sget-boolean v4, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v4, :cond_6
@@ -4923,33 +4716,27 @@
 
     if-ne v3, v4, :cond_7
 
-    .line 1075
     iput-boolean v1, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothEnableForTether:Z
 
-    .line 1076
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->enable()Z
 
-    .line 1077
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0800d1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 1078
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_1
 
-    .line 1080
     :cond_7
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
 
     invoke-virtual {v0, v1}, Landroid/bluetooth/BluetoothPan;->setBluetoothTethering(Z)V
 
-    .line 1081
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0803c7
@@ -4958,20 +4745,17 @@
 
     goto :goto_1
 
-    .line 1086
     :cond_8
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getTetheredIfaces()[Ljava/lang/String;
 
     move-result-object v3
 
-    .line 1087
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothRegexs:[Ljava/lang/String;
 
     invoke-static {v3, v4}, Lcom/android/settings_ex/TetherSettings;->findIface([Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 1088
     if-eqz v3, :cond_e
 
     invoke-virtual {v0, v3}, Landroid/net/ConnectivityManager;->untether(Ljava/lang/String;)I
@@ -4982,16 +4766,13 @@
 
     move v0, v1
 
-    .line 1093
     :goto_2
     iget-object v1, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
 
     invoke-virtual {v1, v2}, Landroid/bluetooth/BluetoothPan;->setBluetoothTethering(Z)V
 
-    .line 1094
     if-eqz v0, :cond_9
 
-    .line 1095
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0803cb
@@ -5010,37 +4791,31 @@
 
     goto/16 :goto_1
 
-    .line 1100
     :cond_a
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mTetherHelp:Landroid/preference/PreferenceScreen;
 
     if-ne p2, v0, :cond_b
 
-    .line 1101
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/TetherSettings;->showDialog(I)V
 
     goto/16 :goto_0
 
-    .line 1103
     :cond_b
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mCreateNetwork:Landroid/preference/Preference;
 
     if-ne p2, v0, :cond_c
 
-    .line 1104
     const/4 v0, 0x2
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/TetherSettings;->showDialog(I)V
 
     goto/16 :goto_1
 
-    .line 1107
     :cond_c
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mEnableUnicode:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_4
 
-    .line 1108
     const-string v1, "persist.sys.hotssid.ksc5601"
 
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mEnableUnicode:Landroid/preference/CheckBoxPreference;
@@ -5077,10 +4852,8 @@
 
     const/4 v8, 0x1
 
-    .line 602
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
-    .line 608
     :try_start_0
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings;->hotSpotTimeoutPreference:Landroid/preference/ListPreference;
 
@@ -5102,7 +4875,6 @@
 
     invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 612
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
@@ -5127,7 +4899,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 616
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
@@ -5138,21 +4909,18 @@
 
     move-result-object v1
 
-    .line 617
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings;->hotSpotTimeoutPreference:Landroid/preference/ListPreference;
 
     const v5, 0x7f09009f
 
     invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setEntries(I)V
 
-    .line 618
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings;->hotSpotTimeoutPreference:Landroid/preference/ListPreference;
 
     const v5, 0x7f0900a0
 
     invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setEntryValues(I)V
 
-    .line 621
     :cond_0
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings;->hotSpotTimeoutPreference:Landroid/preference/ListPreference;
 
@@ -5180,17 +4948,13 @@
 
     if-eqz v4, :cond_4
 
-    .line 626
     if-ne v2, v9, :cond_1
 
-    .line 627
     const/4 v2, 0x1
 
-    .line 630
     :cond_1
     if-nez v2, :cond_2
 
-    .line 631
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings;->hotSpotTimeoutPreference:Landroid/preference/ListPreference;
 
     const v5, 0x7f080b92
@@ -5402,15 +5166,12 @@
     .locals 5
 
     .prologue
-    .line 554
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onStart()V
 
-    .line 556
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    .line 558
     .local v0, activity:Landroid/app/Activity;
     const-string v3, "shared"
 
@@ -5424,7 +5185,6 @@
 
     iput-boolean v3, p0, Lcom/android/settings_ex/TetherSettings;->mMassStorageActive:Z
 
-    .line 559
     new-instance v3, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;
 
     const/4 v4, 0x0
@@ -5448,96 +5208,79 @@
 
     move-result-object v2
 
-    .line 563
     .local v2, intent:Landroid/content/Intent;
     new-instance v1, Landroid/content/IntentFilter;
 
     .end local v1           #filter:Landroid/content/IntentFilter;
     invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 564
     .restart local v1       #filter:Landroid/content/IntentFilter;
     const-string v3, "android.hardware.usb.action.USB_STATE"
 
     invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 565
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mTetherChangeReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v3, v1}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 567
     new-instance v1, Landroid/content/IntentFilter;
 
     .end local v1           #filter:Landroid/content/IntentFilter;
     invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 568
     .restart local v1       #filter:Landroid/content/IntentFilter;
     const-string v3, "android.intent.action.MEDIA_SHARED"
 
     invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 569
     const-string v3, "android.intent.action.MEDIA_UNSHARED"
 
     invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 570
     const-string v3, "file"
 
     invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
-    .line 571
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mTetherChangeReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v3, v1}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 573
     new-instance v1, Landroid/content/IntentFilter;
 
     .end local v1           #filter:Landroid/content/IntentFilter;
     invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 574
     .restart local v1       #filter:Landroid/content/IntentFilter;
     const-string v3, "android.bluetooth.adapter.action.STATE_CHANGED"
 
     invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 575
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mTetherChangeReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v3, v1}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 577
     if-eqz v2, :cond_0
 
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mTetherChangeReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v3, v0, v2}, Landroid/content/BroadcastReceiver;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
 
-    .line 578
     :cond_0
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     if-eqz v3, :cond_1
 
-    .line 579
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mEnableWifiAp:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 580
     iget-object v3, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/wifi/WifiApEnabler;->resume()V
 
-    .line 583
     :cond_1
     invoke-direct {p0}, Lcom/android/settings_ex/TetherSettings;->updateState()V
 
-    .line 584
     return-void
 .end method
 
@@ -5547,10 +5290,8 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 588
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onStop()V
 
-    .line 589
     invoke-virtual {p0}, Lcom/android/settings_ex/TetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -5559,25 +5300,20 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 590
     iput-object v2, p0, Lcom/android/settings_ex/TetherSettings;->mTetherChangeReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 591
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     if-eqz v0, :cond_0
 
-    .line 592
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mEnableWifiAp:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 593
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings;->mWifiApEnabler:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/wifi/WifiApEnabler;->pause()V
 
-    .line 595
     :cond_0
     return-void
 .end method

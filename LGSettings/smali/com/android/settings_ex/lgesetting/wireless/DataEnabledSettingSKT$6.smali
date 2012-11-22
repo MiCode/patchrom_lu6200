@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 132
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$6;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 135
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$6;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;->mAskAtBootChecked:Landroid/widget/CheckedTextView;
@@ -52,7 +50,6 @@
 
     invoke-virtual {v0}, Landroid/widget/CheckedTextView;->toggle()V
 
-    .line 136
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$6;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;->mAskAtBootChecked:Landroid/widget/CheckedTextView;

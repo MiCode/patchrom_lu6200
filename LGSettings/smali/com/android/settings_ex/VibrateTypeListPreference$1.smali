@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 39
     iput-object p1, p0, Lcom/android/settings_ex/VibrateTypeListPreference$1;->this$0:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -66,10 +65,8 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 45
     invoke-static {p2}, Lcom/android/settings_ex/VibrateTypeListPreference;->access$002(I)I
 
-    .line 46
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypeListPreference$1;->this$0:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-static {}, Lcom/android/settings_ex/VibrateTypeListPreference;->access$000()I

@@ -8,7 +8,6 @@
     .locals 0
 
     .prologue
-    .line 35
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
     return-void
@@ -140,22 +139,18 @@
     .parameter "userDictGroup"
 
     .prologue
-    .line 71
     invoke-virtual {p0}, Lcom/android/settings_ex/inputmethod/UserDictionaryList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    .line 72
     .local v0, activity:Landroid/app/Activity;
     invoke-virtual {p1}, Landroid/preference/PreferenceGroup;->removeAll()V
 
-    .line 75
     :try_start_0
     invoke-static {v0}, Lcom/android/settings_ex/inputmethod/UserDictionaryList;->getUserDictionaryLocalesList(Landroid/app/Activity;)Ljava/util/Set;
 
     move-result-object v3
 
-    .line 77
     .local v3, localeList:Ljava/util/Set;,"Ljava/util/Set<Ljava/lang/String;>;"
     invoke-interface {v3}, Ljava/util/Set;->isEmpty()Z
 
@@ -322,10 +317,8 @@
     .parameter "icicle"
 
     .prologue
-    .line 42
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 43
     invoke-virtual {p0}, Lcom/android/settings_ex/inputmethod/UserDictionaryList;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v0
@@ -348,16 +341,13 @@
     .locals 1
 
     .prologue
-    .line 113
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
-    .line 114
     invoke-virtual {p0}, Lcom/android/settings_ex/inputmethod/UserDictionaryList;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/inputmethod/UserDictionaryList;->createUserDictSettings(Landroid/preference/PreferenceGroup;)V
 
-    .line 115
     return-void
 .end method

@@ -38,17 +38,14 @@
     .parameter "accessPoint"
 
     .prologue
-    .line 166
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
     if-eqz v0, :cond_0
 
-    .line 167
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, p1}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
-    .line 168
     :cond_0
     return-void
 .end method
@@ -58,23 +55,19 @@
     .parameter "msgId"
 
     .prologue
-    .line 154
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mEmptyView:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
-    .line 155
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mEmptyView:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 158
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     if-eqz v0, :cond_1
 
-    .line 159
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/wifi/WifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
@@ -147,19 +140,16 @@
     .parameter "i"
 
     .prologue
-    .line 179
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
     if-eqz v0, :cond_0
 
-    .line 180
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, p1}, Landroid/preference/PreferenceCategory;->getPreference(I)Landroid/preference/Preference;
 
     move-result-object v0
 
-    .line 181
     :goto_0
     return-object v0
 
@@ -181,19 +171,16 @@
     .locals 1
 
     .prologue
-    .line 172
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
     if-eqz v0, :cond_0
 
-    .line 173
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
     move-result v0
 
-    .line 174
     :goto_0
     return v0
 
@@ -213,22 +200,18 @@
 
     const/4 v8, 0x0
 
-    .line 59
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
-    .line 60
     iget-object v6, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     if-eqz v6, :cond_2
 
-    .line 61
     iget-object v6, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     const v9, 0x7f060057
 
     invoke-virtual {v6, v9}, Lcom/android/settings_ex/wifi/WifiSettings;->addPreferencesFromResource(I)V
 
-    .line 63
     iget-object v6, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     const-string v9, "wifi_access_point"
@@ -241,7 +224,6 @@
 
     iput-object v6, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
-    .line 66
     iget-object v6, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     const-string v9, "wifi_notify_networks"
@@ -254,12 +236,10 @@
 
     iput-object v6, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mNotifyOpenNetworks:Landroid/preference/CheckBoxPreference;
 
-    .line 67
     iget-object v6, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mNotifyOpenNetworks:Landroid/preference/CheckBoxPreference;
 
     if-eqz v6, :cond_0
 
-    .line 68
     iget-object v9, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mNotifyOpenNetworks:Landroid/preference/CheckBoxPreference;
 
     iget-object v6, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
@@ -299,7 +279,6 @@
 
     iput-object v6, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mEmptyView:Landroid/widget/TextView;
 
-    .line 72
     iget-object v6, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     invoke-virtual {v6}, Lcom/android/settings_ex/wifi/WifiSettings;->getListView()Landroid/widget/ListView;
@@ -474,25 +453,21 @@
     .parameter "preference"
 
     .prologue
-    .line 192
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     if-nez v1, :cond_1
 
-    .line 201
     .end local p1
     :cond_0
     :goto_0
     return-void
 
-    .line 195
     .restart local p1
     :cond_1
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 196
     .local v0, key:Ljava/lang/String;
     const-string v1, "wifi_notify_networks"
 
@@ -502,7 +477,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 197
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/wifi/WifiSettings;->getContentResolverFromWifiSettings()Landroid/content/ContentResolver;
@@ -537,17 +511,14 @@
     .locals 1
 
     .prologue
-    .line 186
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
     if-eqz v0, :cond_0
 
-    .line 187
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->removeAll()V
 
-    .line 188
     :cond_0
     return-void
 .end method
@@ -561,7 +532,6 @@
 
     const/4 v1, 0x0
 
-    .line 205
     iget-object v2, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mScanView:Landroid/view/View;
 
     if-eqz v2, :cond_0
@@ -570,35 +540,28 @@
 
     if-eqz v2, :cond_0
 
-    .line 206
     iget-object v2, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mScanView:Landroid/view/View;
 
     invoke-virtual {v2, p1}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 207
     iget-object v2, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAddNetworkView:Landroid/view/View;
 
     invoke-virtual {v2, p1}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 210
     iget-object v2, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mNotifyOpenNetworks:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, p1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 211
     if-nez p1, :cond_1
 
-    .line 212
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mNotifyOpenNetworks:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 217
     :cond_0
     :goto_0
     return-void
 
-    .line 214
     :cond_1
     iget-object v2, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mNotifyOpenNetworks:Landroid/preference/CheckBoxPreference;
 
@@ -632,21 +595,18 @@
     .parameter "start"
 
     .prologue
-    .line 221
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
     instance-of v0, v0, Lcom/android/settings_ex/wifi/WifiProgressCategory;
 
     if-eqz v0, :cond_0
 
-    .line 222
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsActivity;->mAccessPointCategory:Landroid/preference/PreferenceCategory;
 
     check-cast v0, Lcom/android/settings_ex/wifi/WifiProgressCategory;
 
     invoke-virtual {v0, p1}, Lcom/android/settings_ex/wifi/WifiProgressCategory;->setProgress(Z)V
 
-    .line 224
     :cond_0
     return-void
 .end method

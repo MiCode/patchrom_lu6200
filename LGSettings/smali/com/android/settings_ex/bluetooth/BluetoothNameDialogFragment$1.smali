@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 79
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -55,17 +54,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 84
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;->updateDeviceName()V
 
-    .line 90
     :cond_0
     :goto_0
     return-void
 
-    .line 85
     :cond_1
     const-string v1, "android.bluetooth.adapter.action.STATE_CHANGED"
 
@@ -87,7 +83,6 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 88
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;->updateDeviceName()V

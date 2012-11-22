@@ -40,7 +40,6 @@
     .parameter "x0"
 
     .prologue
-    .line 639
     invoke-direct {p0}, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;-><init>()V
 
     return-void

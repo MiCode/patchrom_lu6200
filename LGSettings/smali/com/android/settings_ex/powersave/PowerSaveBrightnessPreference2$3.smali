@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 83
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$3;->this$0:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,13 +42,11 @@
     .parameter "which"
 
     .prologue
-    .line 86
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$3;->this$0:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, p1, v1}, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->onClick(Landroid/content/DialogInterface;I)V
 
-    .line 87
     return-void
 .end method

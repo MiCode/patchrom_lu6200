@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 38
     iput-object p1, p0, Lcom/android/settings_ex/SetFullBackupPassword$1;->this$0:Lcom/android/settings_ex/SetFullBackupPassword;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,14 +43,12 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 41
     iget-object v3, p0, Lcom/android/settings_ex/SetFullBackupPassword$1;->this$0:Lcom/android/settings_ex/SetFullBackupPassword;
 
     iget-object v3, v3, Lcom/android/settings_ex/SetFullBackupPassword;->mSet:Landroid/widget/Button;
 
     if-ne p1, v3, :cond_2
 
-    .line 42
     iget-object v3, p0, Lcom/android/settings_ex/SetFullBackupPassword$1;->this$0:Lcom/android/settings_ex/SetFullBackupPassword;
 
     iget-object v3, v3, Lcom/android/settings_ex/SetFullBackupPassword;->mCurrentPw:Landroid/widget/TextView;
@@ -100,14 +97,12 @@
 
     if-nez v3, :cond_0
 
-    .line 48
     const-string v3, "SetFullBackupPassword"
 
     const-string v4, "password mismatch"
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 50
     iget-object v3, p0, Lcom/android/settings_ex/SetFullBackupPassword$1;->this$0:Lcom/android/settings_ex/SetFullBackupPassword;
 
     const v4, 0x7f0807e2
@@ -139,14 +134,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 58
     const-string v3, "SetFullBackupPassword"
 
     const-string v4, "password set successfully"
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 59
     iget-object v3, p0, Lcom/android/settings_ex/SetFullBackupPassword$1;->this$0:Lcom/android/settings_ex/SetFullBackupPassword;
 
     const v4, 0x7f0807e3
@@ -157,14 +150,12 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    .line 60
     iget-object v3, p0, Lcom/android/settings_ex/SetFullBackupPassword$1;->this$0:Lcom/android/settings_ex/SetFullBackupPassword;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/SetFullBackupPassword;->finish()V
 
     goto :goto_0
 
-    .line 63
     :cond_1
     const-string v3, "SetFullBackupPassword"
 
@@ -172,7 +163,6 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 64
     iget-object v3, p0, Lcom/android/settings_ex/SetFullBackupPassword$1;->this$0:Lcom/android/settings_ex/SetFullBackupPassword;
 
     const v4, 0x7f0807e4
@@ -196,14 +186,12 @@
 
     if-ne p1, v3, :cond_3
 
-    .line 68
     iget-object v3, p0, Lcom/android/settings_ex/SetFullBackupPassword$1;->this$0:Lcom/android/settings_ex/SetFullBackupPassword;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/SetFullBackupPassword;->finish()V
 
     goto :goto_0
 
-    .line 70
     :cond_3
     const-string v3, "SetFullBackupPassword"
 

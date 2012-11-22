@@ -111,12 +111,10 @@
 
     check-cast v0, Lcom/android/settings_ex/fuelgauge/BatteryHistoryChart;
 
-    .line 55
     .local v0, chart:Lcom/android/settings_ex/fuelgauge/BatteryHistoryChart;
     iget-object v2, p0, Lcom/android/settings_ex/fuelgauge/BatteryHistoryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/fuelgauge/BatteryHistoryChart;->setStats(Landroid/os/BatteryStats;)V
 
-    .line 56
     return-object v1
 .end method

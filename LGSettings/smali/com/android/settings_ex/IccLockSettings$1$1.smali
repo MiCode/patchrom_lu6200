@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 203
     iput-object p1, p0, Lcom/android/settings_ex/IccLockSettings$1$1;->this$1:Lcom/android/settings_ex/IccLockSettings$1;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 2
 
     .prologue
-    .line 205
     invoke-static {}, Lcom/android/settings_ex/IccLockSettings;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -50,7 +48,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 206
     iget-object v0, p0, Lcom/android/settings_ex/IccLockSettings$1$1;->this$1:Lcom/android/settings_ex/IccLockSettings$1;
 
     iget-object v0, v0, Lcom/android/settings_ex/IccLockSettings$1;->this$0:Lcom/android/settings_ex/IccLockSettings;
@@ -58,7 +55,6 @@
     #calls: Lcom/android/settings_ex/IccLockSettings;->onUpdatePreferencesState()V
     invoke-static {v0}, Lcom/android/settings_ex/IccLockSettings;->access$300(Lcom/android/settings_ex/IccLockSettings;)V
 
-    .line 207
     invoke-static {}, Lcom/android/settings_ex/IccLockSettings;->access$000()Ljava/lang/String;
 
     move-result-object v0

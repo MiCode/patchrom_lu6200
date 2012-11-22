@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 570
     iput-object p1, p0, Lcom/android/settings_ex/ApnEditor$1;->this$0:Lcom/android/settings_ex/ApnEditor;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

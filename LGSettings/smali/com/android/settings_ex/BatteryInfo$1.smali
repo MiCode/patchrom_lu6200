@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 51
     iput-object p1, p0, Lcom/android/settings_ex/BatteryInfo$1;->this$0:Lcom/android/settings_ex/BatteryInfo;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,23 +38,19 @@
     .parameter "msg"
 
     .prologue
-    .line 54
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 61
     :goto_0
     return-void
 
-    .line 56
     :pswitch_0
     iget-object v0, p0, Lcom/android/settings_ex/BatteryInfo$1;->this$0:Lcom/android/settings_ex/BatteryInfo;
 
     #calls: Lcom/android/settings_ex/BatteryInfo;->updateBatteryStats()V
     invoke-static {v0}, Lcom/android/settings_ex/BatteryInfo;->access$000(Lcom/android/settings_ex/BatteryInfo;)V
 
-    .line 57
     const/4 v0, 0x1
 
     const-wide/16 v1, 0x3e8

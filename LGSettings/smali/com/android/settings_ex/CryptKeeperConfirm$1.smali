@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 43
     iput-object p1, p0, Lcom/android/settings_ex/CryptKeeperConfirm$1;->this$0:Lcom/android/settings_ex/CryptKeeperConfirm;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V

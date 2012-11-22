@@ -14,18 +14,14 @@
     .parameter "stats"
 
     .prologue
-    .line 39
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    .line 40
     const v0, 0x7f040066
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryPreference;->setLayoutResource(I)V
 
-    .line 41
     iput-object p2, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryPreference;->mStats:Landroid/os/BatteryStats;
 
-    .line 42
     return-void
 .end method
 
@@ -48,12 +44,10 @@
 
     check-cast v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;
 
-    .line 54
     .local v0, chart:Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryPreference;->mStats:Landroid/os/BatteryStats;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->setStats(Landroid/os/BatteryStats;)V
 
-    .line 55
     return-void
 .end method

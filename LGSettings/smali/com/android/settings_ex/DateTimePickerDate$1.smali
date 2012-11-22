@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 60
     iput-object p1, p0, Lcom/android/settings_ex/DateTimePickerDate$1;->this$0:Lcom/android/settings_ex/DateTimePickerDate;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -94,16 +93,13 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 77
     iget-object v1, p0, Lcom/android/settings_ex/DateTimePickerDate$1;->this$0:Lcom/android/settings_ex/DateTimePickerDate;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/DateTimePickerDate;->startActivity(Landroid/content/Intent;)V
 
-    .line 79
     iget-object v0, p0, Lcom/android/settings_ex/DateTimePickerDate$1;->this$0:Lcom/android/settings_ex/DateTimePickerDate;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/DateTimePickerDate;->finish()V
 
-    .line 81
     return-void
 .end method

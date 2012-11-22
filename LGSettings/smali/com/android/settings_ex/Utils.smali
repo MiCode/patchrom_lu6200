@@ -32,14 +32,12 @@
     .locals 1
 
     .prologue
-    .line 680
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     sput-object v0, Lcom/android/settings_ex/Utils;->hidden:Ljava/util/HashSet;
 
-    .line 690
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
@@ -628,7 +626,6 @@
     .end annotation
 
     .prologue
-    .line 692
     sget-object v5, Lcom/android/settings_ex/Utils;->disable_blocked:Ljava/util/HashSet;
 
     invoke-virtual {v5}, Ljava/util/HashSet;->size()I
@@ -664,18 +661,15 @@
 
     aget-object v4, v0, v2
 
-    .line 695
     .local v4, package_name:Ljava/lang/String;
     sget-object v5, Lcom/android/settings_ex/Utils;->disable_blocked:Ljava/util/HashSet;
 
     invoke-virtual {v5, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 694
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 697
     .end local v0           #arr$:[Ljava/lang/String;
     .end local v1           #hidden_apps:[Ljava/lang/String;
     .end local v2           #i$:I
@@ -703,7 +697,6 @@
     .end annotation
 
     .prologue
-    .line 682
     sget-object v5, Lcom/android/settings_ex/Utils;->hidden:Ljava/util/HashSet;
 
     invoke-virtual {v5}, Ljava/util/HashSet;->size()I
@@ -739,18 +732,15 @@
 
     aget-object v4, v0, v2
 
-    .line 685
     .local v4, package_name:Ljava/lang/String;
     sget-object v5, Lcom/android/settings_ex/Utils;->hidden:Ljava/util/HashSet;
 
     invoke-virtual {v5, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 684
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 687
     .end local v0           #arr$:[Ljava/lang/String;
     .end local v1           #hidden_apps:[Ljava/lang/String;
     .end local v2           #i$:I
@@ -1966,19 +1956,16 @@
 
     move-result-object v8
 
-    .line 269
     .local v8, res:Landroid/content/res/Resources;
     iget-object v12, v9, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
     iget-object v6, v12, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
-    .line 271
     .local v6, metaData:Landroid/os/Bundle;
     if-eqz v8, :cond_0
 
     if-eqz v6, :cond_0
 
-    .line 272
     const-string v12, "com.android.settings_ex.icon"
 
     invoke-virtual {v6, v12}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -1989,7 +1976,6 @@
 
     move-result-object v2
 
-    .line 273
     const-string v12, "com.android.settings_ex.title"
 
     invoke-virtual {v6, v12}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -2000,7 +1986,6 @@
 
     move-result-object v11
 
-    .line 274
     const-string v12, "com.android.settings_ex.summary"
 
     invoke-virtual {v6, v12}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I

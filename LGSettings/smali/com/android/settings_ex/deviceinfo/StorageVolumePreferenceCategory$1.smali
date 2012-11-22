@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 154
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory$1;->this$0:Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V

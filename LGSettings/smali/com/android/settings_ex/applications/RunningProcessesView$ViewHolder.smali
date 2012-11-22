@@ -34,13 +34,10 @@
     .parameter "v"
 
     .prologue
-    .line 166
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 167
     iput-object p1, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->rootView:Landroid/view/View;
 
-    .line 168
     const v0, 0x7f0b0039
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -111,12 +108,10 @@
     .parameter "builder"
 
     .prologue
-    .line 178
     iget-object v8, p1, Lcom/android/settings_ex/applications/RunningState;->mLock:Ljava/lang/Object;
 
     monitor-enter v8
 
-    .line 179
     :try_start_0
     iget-object v7, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->rootView:Landroid/view/View;
 
@@ -183,34 +178,27 @@
 
     invoke-virtual {v7, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 188
     new-instance v1, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;
 
     invoke-direct {v1}, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;-><init>()V
 
-    .line 189
     .local v1, ai:Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;
     iget-object v7, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->rootView:Landroid/view/View;
 
     iput-object v7, v1, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mRootView:Landroid/view/View;
 
-    .line 190
     iput-object p2, v1, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mItem:Lcom/android/settings_ex/applications/RunningState$BaseItem;
 
-    .line 191
     iput-object p0, v1, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mHolder:Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;
 
-    .line 192
     iget-wide v9, p2, Lcom/android/settings_ex/applications/RunningState$BaseItem;->mActiveSince:J
 
     iput-wide v9, v1, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mFirstRunTime:J
 
-    .line 193
     iget-boolean v7, p2, Lcom/android/settings_ex/applications/RunningState$BaseItem;->mBackground:Z
 
     if-eqz v7, :cond_2
 
-    .line 194
     iget-object v7, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->description:Landroid/widget/TextView;
 
     iget-object v9, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->rootView:Landroid/view/View;
@@ -227,18 +215,15 @@
 
     invoke-virtual {v7, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 198
     :goto_0
     const/4 v7, 0x0
 
     iput-object v7, p2, Lcom/android/settings_ex/applications/RunningState$BaseItem;->mCurSizeStr:Ljava/lang/String;
 
-    .line 199
     iget-object v7, p2, Lcom/android/settings_ex/applications/RunningState$BaseItem;->mPackageInfo:Landroid/content/pm/PackageItemInfo;
 
     if-eqz v7, :cond_1
 
-    .line 200
     const-string v7, "com.nttdocomo.android.socialphonebook"
 
     iget-object v9, p2, Lcom/android/settings_ex/applications/RunningState$BaseItem;->mPackageInfo:Landroid/content/pm/PackageItemInfo;
@@ -300,13 +285,11 @@
 
     invoke-direct {v2, v6, v7}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    .line 209
     .local v2, bd:Landroid/graphics/drawable/BitmapDrawable;
     iget-object v7, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->icon:Landroid/widget/ImageView;
 
     invoke-virtual {v7, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 216
     .end local v2           #bd:Landroid/graphics/drawable/BitmapDrawable;
     .end local v3           #dr:Landroid/graphics/drawable/BitmapDrawable;
     .end local v6           #res:Landroid/content/res/Resources;
@@ -318,7 +301,6 @@
 
     invoke-virtual {v7, v9}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 217
     iget-object v7, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->rootView:Landroid/view/View;
 
     invoke-virtual {v7}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -342,7 +324,6 @@
 
     goto :goto_0
 
-    .line 219
     .end local v1           #ai:Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;
     .end local v5           #pm:Landroid/content/pm/PackageManager;
     :catchall_0
@@ -354,7 +335,6 @@
 
     throw v7
 
-    .line 212
     .restart local v1       #ai:Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;
     .restart local v5       #pm:Landroid/content/pm/PackageManager;
     :cond_3

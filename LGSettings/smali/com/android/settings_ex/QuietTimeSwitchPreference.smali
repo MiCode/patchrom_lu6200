@@ -29,51 +29,41 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 46
     invoke-direct {p0, p1, p2}, Landroid/preference/SwitchPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 17
     new-instance v0, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;
 
     invoke-direct {v0, p0, v1}, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;-><init>(Lcom/android/settings_ex/QuietTimeSwitchPreference;Lcom/android/settings_ex/QuietTimeSwitchPreference$1;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->mListener:Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;
 
-    .line 18
     iput-object v1, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->activity:Landroid/app/Activity;
 
-    .line 19
     iput-object v1, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
-    .line 47
     const v0, 0x7f040082
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/QuietTimeSwitchPreference;->setWidgetLayoutResource(I)V
 
-    .line 49
     new-instance v0, Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-direct {v0, p1}, Lcom/android/settings_ex/QuietTimeInfo;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
-    .line 50
     check-cast p1, Landroid/app/Activity;
 
     .end local p1
     iput-object p1, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->activity:Landroid/app/Activity;
 
-    .line 51
     const-string v0, ""
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/QuietTimeSwitchPreference;->setSwitchTextOff(Ljava/lang/CharSequence;)V
 
-    .line 52
     const-string v0, ""
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/QuietTimeSwitchPreference;->setSwitchTextOn(Ljava/lang/CharSequence;)V
 
-    .line 54
     return-void
 .end method
 
@@ -82,7 +72,6 @@
     .parameter "x0"
 
     .prologue
-    .line 13
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     return-object v0
@@ -95,7 +84,6 @@
     .prologue
     const v4, 0x7f0808ba
 
-    .line 102
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->activity:Landroid/app/Activity;
 
     const v1, 0x7f0808dc
@@ -303,7 +291,6 @@
 
     if-eqz v5, :cond_1
 
-    .line 123
     iget-object v5, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->activity:Landroid/app/Activity;
 
     const v6, 0x7f0808db
@@ -329,7 +316,6 @@
 
     if-eqz v5, :cond_2
 
-    .line 125
     iget-object v5, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->activity:Landroid/app/Activity;
 
     const v6, 0x7f0808d7
@@ -350,7 +336,6 @@
 
     if-eqz v5, :cond_3
 
-    .line 127
     iget-object v5, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->activity:Landroid/app/Activity;
 
     const v6, 0x7f0808d6
@@ -371,7 +356,6 @@
 
     if-eqz v5, :cond_4
 
-    .line 129
     iget-object v5, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->activity:Landroid/app/Activity;
 
     const v6, 0x7f0808da
@@ -392,7 +376,6 @@
 
     if-eqz v5, :cond_5
 
-    .line 131
     iget-object v5, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->activity:Landroid/app/Activity;
 
     const v6, 0x7f0808d9
@@ -413,7 +396,6 @@
 
     if-eqz v5, :cond_6
 
-    .line 133
     iget-object v5, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->activity:Landroid/app/Activity;
 
     const v6, 0x7f0808d8
@@ -434,7 +416,6 @@
 
     if-eqz v5, :cond_7
 
-    .line 135
     iget-object v5, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->activity:Landroid/app/Activity;
 
     const v6, 0x7f0808dc
@@ -745,14 +726,12 @@
     .locals 1
 
     .prologue
-    .line 118
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeSwitchPreference;->getSummaryString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/QuietTimeSwitchPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 119
     return-void
 .end method
 
@@ -835,7 +814,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 68
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/QuietTimeInfo;->getDBDays()Ljava/lang/String;
@@ -900,28 +878,23 @@
 
     invoke-interface {v2, v3}, Landroid/widget/Checkable;->setChecked(Z)V
 
-    .line 83
     instance-of v2, v0, Landroid/widget/Switch;
 
     if-eqz v2, :cond_0
 
     move-object v1, v0
 
-    .line 84
     check-cast v1, Landroid/widget/Switch;
 
-    .line 85
     .local v1, switchView:Landroid/widget/Switch;
     iget-object v2, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->mListener:Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;
 
     invoke-virtual {v1, v2}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 88
     .end local v1           #switchView:Landroid/widget/Switch;
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings_ex/QuietTimeSwitchPreference;->SetQuietTimeSummary()V
 
-    .line 89
     return-void
 .end method
 
@@ -937,7 +910,6 @@
     .locals 1
 
     .prologue
-    .line 61
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/QuietTimeInfo;->isQuietTimeState()Z

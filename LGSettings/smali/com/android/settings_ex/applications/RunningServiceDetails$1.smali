@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 419
     iput-object p1, p0, Lcom/android/settings_ex/applications/RunningServiceDetails$1;->this$0:Lcom/android/settings_ex/applications/RunningServiceDetails;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,21 +40,17 @@
     .locals 2
 
     .prologue
-    .line 422
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningServiceDetails$1;->this$0:Lcom/android/settings_ex/applications/RunningServiceDetails;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    .line 423
     .local v0, a:Landroid/app/Activity;
     if-eqz v0, :cond_0
 
-    .line 424
     invoke-virtual {v0}, Landroid/app/Activity;->onBackPressed()V
 
-    .line 426
     :cond_0
     return-void
 .end method

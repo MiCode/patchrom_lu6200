@@ -30,23 +30,18 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 48
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
-    .line 68
     iput-boolean v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->isDutEntered:Z
 
-    .line 69
     iput-boolean v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->isWaitBtOff:Z
 
-    .line 75
     new-instance v0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$1;-><init>(Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 93
     new-instance v0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$2;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$2;-><init>(Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;)V
@@ -75,7 +70,6 @@
     .parameter "x0"
 
     .prologue
-    .line 48
     iget-boolean v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->isWaitBtOff:Z
 
     return v0
@@ -87,7 +81,6 @@
     .parameter "x1"
 
     .prologue
-    .line 48
     iput-boolean p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->isWaitBtOff:Z
 
     return p1
@@ -98,7 +91,6 @@
     .parameter "x0"
 
     .prologue
-    .line 48
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->closePleaseWaitDialog()V
 
     return-void
@@ -109,7 +101,6 @@
     .parameter "x0"
 
     .prologue
-    .line 48
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->onEnterDUTMode()V
 
     return-void
@@ -120,7 +111,6 @@
     .parameter "x0"
 
     .prologue
-    .line 48
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mHandler:Landroid/os/Handler;
 
     return-object v0
@@ -131,7 +121,6 @@
     .parameter "x0"
 
     .prologue
-    .line 48
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     return-object v0
@@ -143,7 +132,6 @@
     .parameter "x1"
 
     .prologue
-    .line 48
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->onPleaseWaitDialog(Ljava/lang/String;)V
 
     return-void
@@ -154,7 +142,6 @@
     .parameter "x0"
 
     .prologue
-    .line 48
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->onExitDUTMode()V
 
     return-void
@@ -165,7 +152,6 @@
     .parameter "x0"
 
     .prologue
-    .line 48
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mWaitDialog:Landroid/app/ProgressDialog;
 
     return-object v0
@@ -177,7 +163,6 @@
     .parameter "x1"
 
     .prologue
-    .line 48
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mWaitDialog:Landroid/app/ProgressDialog;
 
     return-object p1
@@ -188,7 +173,6 @@
     .parameter "x0"
 
     .prologue
-    .line 48
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mDutDialog:Landroid/app/AlertDialog;
 
     return-object v0
@@ -200,7 +184,6 @@
     .parameter "x1"
 
     .prologue
-    .line 48
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mDutDialog:Landroid/app/AlertDialog;
 
     return-object p1
@@ -210,14 +193,12 @@
     .locals 1
 
     .prologue
-    .line 327
     new-instance v0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$8;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$8;-><init>(Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;)V
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 335
     return-void
 .end method
 
@@ -225,14 +206,12 @@
     .locals 1
 
     .prologue
-    .line 264
     new-instance v0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$5;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$5;-><init>(Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;)V
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 272
     return-void
 .end method
 
@@ -319,21 +298,16 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 296
     iput-boolean v4, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->isDutEntered:Z
 
-    .line 297
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     invoke-virtual {v2}, Landroid/bluetooth/BluetoothAdapter;->enterBluetoothDUTMode()I
 
-    .line 298
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->BtUiSetScreenTimeout(Z)V
 
-    .line 299
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->closePleaseWaitDialog()V
 
-    .line 301
     const-string v2, "persist.service.btui.ble"
 
     const-string v3, "0"
@@ -377,13 +351,10 @@
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->BtUiDisplayToast(Ljava/lang/String;)V
 
-    .line 305
     invoke-direct {p0, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->updateStateMessage(Z)V
 
-    .line 308
     return-void
 
-    .line 302
     .end local v1           #msg:Ljava/lang/String;
     :cond_0
     const-string v1, "DUT mode"
@@ -397,18 +368,14 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 312
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     invoke-virtual {v2}, Landroid/bluetooth/BluetoothAdapter;->exitBluetoothDUTMode()I
 
-    .line 313
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->BtUiSetScreenTimeout(Z)V
 
-    .line 314
     iput-boolean v4, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->isDutEntered:Z
 
-    .line 316
     const-string v2, "persist.service.btui.ble"
 
     const-string v3, "0"
@@ -452,13 +419,10 @@
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->BtUiDisplayToast(Ljava/lang/String;)V
 
-    .line 320
     invoke-direct {p0, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->updateStateMessage(Z)V
 
-    .line 323
     return-void
 
-    .line 317
     .end local v1           #msg:Ljava/lang/String;
     :cond_0
     const-string v1, "DUT mode"
@@ -471,20 +435,16 @@
     .parameter "msg"
 
     .prologue
-    .line 250
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mWaitDialog:Landroid/app/ProgressDialog;
 
     if-eqz v1, :cond_0
 
-    .line 261
     :goto_0
     return-void
 
-    .line 251
     :cond_0
     move-object v0, p1
 
-    .line 252
     .local v0, progressMsg:Ljava/lang/String;
     new-instance v1, Landroid/app/ProgressDialog;
 
@@ -492,7 +452,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mWaitDialog:Landroid/app/ProgressDialog;
 
-    .line 253
     new-instance v1, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$4;
 
     invoke-direct {v1, p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$4;-><init>(Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;Ljava/lang/String;)V
@@ -632,14 +591,12 @@
     .parameter "message"
 
     .prologue
-    .line 359
     new-instance v0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$9;
 
     invoke-direct {v0, p0, p1}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$9;-><init>(Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;Ljava/lang/String;)V
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 364
     return-void
 .end method
 
@@ -708,7 +665,6 @@
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->BtUiLog(Ljava/lang/String;)V
 
-    .line 343
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -721,34 +677,28 @@
     :try_end_0
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 354
     :cond_0
     :goto_0
     return-void
 
-    .line 344
     :catch_0
     move-exception v0
 
-    .line 345
     .local v0, snfe:Landroid/provider/Settings$SettingNotFoundException;
     const-string v1, "[BTUI] BtUiSetScreenTimeout : fail to get current SCREEN TIMEOUT VALUE!!"
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->BtUiLog(Ljava/lang/String;)V
 
-    .line 346
     iput v4, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mBackupScreen:I
 
     goto :goto_0
 
-    .line 349
     .end local v0           #snfe:Landroid/provider/Settings$SettingNotFoundException;
     :cond_1
     iget v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mBackupScreen:I
 
     if-eq v1, v4, :cond_0
 
-    .line 350
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -777,7 +727,6 @@
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->BtUiLog(Ljava/lang/String;)V
 
-    .line 351
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -845,78 +794,65 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 110
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 112
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
-    .line 115
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->initContentView()Landroid/view/View;
 
     move-result-object v2
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->setContentView(Landroid/view/View;)V
 
-    .line 117
     const v2, 0x7f06000b
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->addPreferencesFromResource(I)V
 
-    .line 119
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    .line 120
     .local v0, prefScreen:Landroid/preference/PreferenceScreen;
     const v2, 0x7f080c32
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
-    .line 125
     new-instance v2, Landroid/preference/Preference;
 
     invoke-direct {v2, p0}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     iput-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mPrefDut:Landroid/preference/Preference;
 
-    .line 126
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mPrefDut:Landroid/preference/Preference;
 
     const-string v3, "DUT Mode"
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 127
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mPrefDut:Landroid/preference/Preference;
 
     const-string v3, "Tap to toggle DUT mode"
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 128
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mPrefDut:Landroid/preference/Preference;
 
     const-string v3, "dut_mode"
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    .line 129
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mPrefDut:Landroid/preference/Preference;
 
     invoke-virtual {v2, v1}, Landroid/preference/Preference;->setOrder(I)V
 
-    .line 130
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mPrefDut:Landroid/preference/Preference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
-    .line 133
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     invoke-virtual {v2}, Landroid/bluetooth/BluetoothAdapter;->isDUTMode()I
@@ -942,15 +878,12 @@
     .locals 1
 
     .prologue
-    .line 186
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
-    .line 187
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 188
     return-void
 .end method
 
@@ -975,7 +908,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 210
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     invoke-virtual {v1}, Landroid/bluetooth/BluetoothAdapter;->isEnabled()Z
@@ -984,30 +916,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 211
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     invoke-virtual {v1}, Landroid/bluetooth/BluetoothAdapter;->disable()Z
 
-    .line 212
     iput-boolean v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->isWaitBtOff:Z
 
-    .line 213
     const-string v1, "Please wait.\nTurning Bluetooth Off."
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->onPleaseWaitDialog(Ljava/lang/String;)V
 
-    .line 223
     :goto_0
     return v0
 
-    .line 217
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->createDutDialog()V
 
     goto :goto_0
 
-    .line 223
     :cond_1
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceActivity;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
@@ -1020,26 +946,21 @@
     .locals 2
 
     .prologue
-    .line 177
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    .line 179
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 180
     .local v0, intentFilter:Landroid/content/IntentFilter;
     const-string v1, "android.bluetooth.adapter.action.STATE_CHANGED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 181
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v1, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 182
     return-void
 .end method
 
@@ -1058,21 +979,16 @@
     .locals 1
 
     .prologue
-    .line 197
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onUserLeaveHint()V
 
-    .line 198
     iget-boolean v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->isDutEntered:Z
 
     if-eqz v0, :cond_0
 
-    .line 199
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->onExitDUTMode()V
 
-    .line 200
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->closeDUTModeDialog()V
 
-    .line 202
     :cond_0
     return-void
 .end method

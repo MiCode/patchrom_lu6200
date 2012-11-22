@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 201
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,10 +42,8 @@
     .parameter "isChecked"
 
     .prologue
-    .line 203
     if-eqz p2, :cond_0
 
-    .line 204
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;
 
     const/4 v1, 0x1

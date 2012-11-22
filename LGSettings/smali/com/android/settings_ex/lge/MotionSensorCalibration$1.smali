@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 75
     iput-object p1, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$1;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -48,12 +47,10 @@
 
     const/4 v1, 0x0
 
-    .line 78
     const/4 v2, 0x4
 
     if-ne p2, v2, :cond_0
 
-    .line 79
     iget-object v2, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$1;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     #getter for: Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
@@ -63,7 +60,6 @@
 
     invoke-virtual {v2}, Landroid/app/ProgressDialog;->cancel()V
 
-    .line 80
     iget-object v2, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$1;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -73,10 +69,8 @@
     #setter for: Lcom/android/settings_ex/lge/MotionSensorCalibration;->mTesting:Ljava/lang/Boolean;
     invoke-static {v2, v3}, Lcom/android/settings_ex/lge/MotionSensorCalibration;->access$102(Lcom/android/settings_ex/lge/MotionSensorCalibration;Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
-    .line 81
     sput-boolean v0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mStart:Z
 
-    .line 82
     iget-object v2, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$1;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     const v3, 0x7f080778
@@ -87,12 +81,10 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    .line 84
     iget-object v1, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$1;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/lge/MotionSensorCalibration;->finish()V
 
-    .line 87
     :goto_0
     return v0
 

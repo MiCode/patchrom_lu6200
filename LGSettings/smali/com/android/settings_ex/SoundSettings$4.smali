@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 644
     iput-object p1, p0, Lcom/android/settings_ex/SoundSettings$4;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 646
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$4;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     #getter for: Lcom/android/settings_ex/SoundSettings;->mSoundEffects:Landroid/preference/CheckBoxPreference;
@@ -57,17 +55,14 @@
 
     if-ne v1, v0, :cond_0
 
-    .line 647
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$4;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     #calls: Lcom/android/settings_ex/SoundSettings;->UpdateSoundEffect(Z)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/SoundSettings;->access$900(Lcom/android/settings_ex/SoundSettings;Z)V
 
-    .line 652
     :goto_0
     return-void
 
-    .line 650
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$4;->this$0:Lcom/android/settings_ex/SoundSettings;
 

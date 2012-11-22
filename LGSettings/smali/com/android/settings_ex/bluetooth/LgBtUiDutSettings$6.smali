@@ -28,12 +28,10 @@
     .parameter "which"
 
     .prologue
-    .line 280
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$6;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->onExitDUTMode()V
     invoke-static {v0}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->access$600(Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;)V
 
-    .line 281
     return-void
 .end method

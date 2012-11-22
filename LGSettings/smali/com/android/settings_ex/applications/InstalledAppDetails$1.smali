@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 169
     iput-object p1, p0, Lcom/android/settings_ex/applications/InstalledAppDetails$1;->this$0:Lcom/android/settings_ex/applications/InstalledAppDetails;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,7 +38,6 @@
     .parameter "msg"
 
     .prologue
-    .line 172
     iget-object v0, p0, Lcom/android/settings_ex/applications/InstalledAppDetails$1;->this$0:Lcom/android/settings_ex/applications/InstalledAppDetails;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/applications/InstalledAppDetails;->getView()Landroid/view/View;

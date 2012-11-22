@@ -65,21 +65,17 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 74
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 75
     const v1, 0x7f0808fd
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/ConfirmLockPassword;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    .line 76
     .local v0, msg:Ljava/lang/CharSequence;
     invoke-virtual {p0, v0, v0}, Lcom/android/settings_ex/ConfirmLockPassword;->showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
-    .line 77
     return-void
 .end method
 
@@ -91,10 +87,8 @@
     .prologue
     const/4 v3, 0x4
 
-    .line 83
     if-ne p1, v3, :cond_0
 
-    .line 84
     invoke-virtual {p0}, Lcom/android/settings_ex/ConfirmLockPassword;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0

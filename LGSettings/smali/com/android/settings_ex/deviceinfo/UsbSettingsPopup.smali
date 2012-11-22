@@ -32,23 +32,18 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 61
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 73
     iput-boolean v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDirectAutorun:Z
 
-    .line 74
     iput-boolean v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mAutorunEnable:Z
 
-    .line 79
     new-instance v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$1;-><init>(Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mStateReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 205
     new-instance v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;-><init>(Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;)V
@@ -63,7 +58,6 @@
     .parameter "x0"
 
     .prologue
-    .line 61
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
     return-object v0
@@ -75,7 +69,6 @@
     .parameter "x1"
 
     .prologue
-    .line 61
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
     return-object p1
@@ -86,7 +79,6 @@
     .parameter "x0"
 
     .prologue
-    .line 61
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     return-object v0
@@ -97,7 +89,6 @@
     .parameter "x0"
 
     .prologue
-    .line 61
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mProgress:Landroid/app/ProgressDialog;
 
     return-object v0
@@ -108,7 +99,6 @@
     .parameter "x0"
 
     .prologue
-    .line 61
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
     return-object v0
@@ -120,7 +110,6 @@
     .parameter "x1"
 
     .prologue
-    .line 61
     invoke-direct {p0, p1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->autorunUpdateState(Ljava/lang/String;)V
 
     return-void
@@ -131,7 +120,6 @@
     .parameter "x0"
 
     .prologue
-    .line 61
     invoke-direct {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->cancelProgressPopup()V
 
     return-void
@@ -143,7 +131,6 @@
     .parameter "x1"
 
     .prologue
-    .line 61
     invoke-direct {p0, p1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->autorunChangeMode(Ljava/lang/String;)V
 
     return-void
@@ -155,7 +142,6 @@
     .parameter "x1"
 
     .prologue
-    .line 61
     invoke-direct {p0, p1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->changeAutorunMode(Ljava/lang/String;)Z
 
     move-result v0
@@ -168,7 +154,6 @@
     .parameter "x0"
 
     .prologue
-    .line 61
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     return-object v0
@@ -180,7 +165,6 @@
     .parameter "x1"
 
     .prologue
-    .line 61
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     return-object p1
@@ -192,7 +176,6 @@
     .parameter "x1"
 
     .prologue
-    .line 61
     invoke-direct {p0, p1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->connectUsbTether(Z)V
 
     return-void
@@ -203,7 +186,6 @@
     .parameter "x0"
 
     .prologue
-    .line 61
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -236,51 +218,41 @@
 
     if-eqz v1, :cond_0
 
-    .line 544
     sput-boolean v3, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 545
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     iget-object v2, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 546
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     iput-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
-    .line 548
     invoke-direct {p0, v3}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->connectUsbTether(Z)V
 
-    .line 560
     :goto_1
     sget-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDoNotFinish:Z
 
     if-eqz v1, :cond_1
 
-    .line 561
     const-string v1, "UsbSettingsPopup"
 
     const-string v2, "[AUTORUN] autorunChangeMode() : Do not finish"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 562
     const/4 v1, 0x0
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDoNotFinish:Z
 
-    .line 567
     :goto_2
     return-void
 
-    .line 539
     :catch_0
     move-exception v0
 
-    .line 540
     .local v0, e:Ljava/lang/InterruptedException;
     const-string v1, "UsbSettingsPopup"
 
@@ -290,26 +262,22 @@
 
     goto :goto_0
 
-    .line 550
     .end local v0           #e:Ljava/lang/InterruptedException;
     :cond_0
     sput-boolean v3, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 551
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     iget-object v2, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 552
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     iput-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
     goto :goto_1
 
-    .line 564
     :cond_1
     const-string v1, "UsbSettingsPopup"
 
@@ -317,7 +285,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 565
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->finish()V
 
     goto :goto_2
@@ -330,13 +297,10 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 498
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
-    .line 499
     invoke-direct {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->cancelProgressPopup()V
 
-    .line 501
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     const-string v1, "ecm"
@@ -347,91 +311,74 @@
 
     if-eqz v0, :cond_1
 
-    .line 502
     sget-boolean v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mX3Bug:Z
 
     if-eqz v0, :cond_0
 
-    .line 503
     invoke-direct {p0, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->connectUsbTether(Z)V
 
-    .line 505
     sput-boolean v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 506
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 507
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
-    .line 526
     :goto_0
     sget-boolean v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDoNotFinish:Z
 
     if-eqz v0, :cond_2
 
-    .line 527
     const-string v0, "UsbSettingsPopup"
 
     const-string v1, "[AUTORUN] autorunUpdateState() : Do not finish"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 528
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDoNotFinish:Z
 
-    .line 533
     :goto_1
     return-void
 
-    .line 509
     :cond_0
     sput-boolean v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 510
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 511
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
-    .line 513
     invoke-direct {p0, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->connectUsbTether(Z)V
 
     goto :goto_0
 
-    .line 516
     :cond_1
     sput-boolean v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 517
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 518
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 530
     :cond_2
     const-string v0, "UsbSettingsPopup"
 
@@ -439,7 +386,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 531
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->finish()V
 
     goto :goto_1
@@ -484,12 +430,10 @@
 
     move-result-object v0
 
-    .line 202
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 203
     return-void
 .end method
 
@@ -497,17 +441,14 @@
     .locals 1
 
     .prologue
-    .line 438
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mProgress:Landroid/app/ProgressDialog;
 
     if-eqz v0, :cond_0
 
-    .line 439
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mProgress:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->cancel()V
 
-    .line 440
     :cond_0
     return-void
 .end method
@@ -645,26 +586,22 @@
 
     if-eqz v4, :cond_0
 
-    .line 593
     iget-object v4, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     const-string v5, "cdrom_storage"
 
     invoke-virtual {v4, v5, v2}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 594
     iget-object v2, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->startAutorunTimer(Landroid/content/Context;)V
 
-    .line 595
     const/4 v2, 0x3
 
     invoke-direct {p0, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->callPopup(I)V
 
     move v2, v3
 
-    .line 596
     goto :goto_0
 .end method
 
@@ -687,19 +624,16 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 445
     const-string v1, "com.android.settings_ex"
 
     const-string v2, "com.android.settings_ex.EntitlementDialogActivity"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 446
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 447
     return-void
 .end method
 
@@ -712,20 +646,16 @@
 
     const/4 v1, 0x0
 
-    .line 604
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
     if-nez v0, :cond_0
 
-    .line 621
     :goto_0
     return-void
 
-    .line 606
     :cond_0
     if-ne p1, v2, :cond_2
 
-    .line 607
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v0, v2}, Landroid/net/ConnectivityManager;->setUsbTethering(Z)I
@@ -734,17 +664,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 608
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->setTetherStatus(Landroid/content/Context;Z)V
 
-    .line 611
     const/4 v0, 0x2
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->callPopup(I)V
 
-    .line 612
     const-string v0, "UsbSettingsPopup"
 
     const-string v1, "[AUTORUN] ============ Tethering ERROR !! ============"
@@ -753,13 +680,11 @@
 
     goto :goto_0
 
-    .line 614
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->setTetherStatus(Landroid/content/Context;Z)V
 
-    .line 615
     const-string v0, "UsbSettingsPopup"
 
     const-string v1, "[AUTORUN] ============ Tethering OK !!\t=============="
@@ -768,13 +693,11 @@
 
     goto :goto_0
 
-    .line 618
     :cond_2
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v0, v1}, Landroid/net/ConnectivityManager;->setUsbTethering(Z)I
 
-    .line 619
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->setTetherStatus(Landroid/content/Context;Z)V
@@ -801,12 +724,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 626
     const/4 v1, 0x1
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 627
     return-void
 .end method
 
@@ -849,19 +770,15 @@
 
     if-eqz v0, :cond_0
 
-    .line 454
     invoke-direct {p0, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->callPopup(I)V
 
-    .line 495
     :cond_0
     :goto_0
     return-void
 
-    .line 457
     :cond_1
     if-nez p2, :cond_0
 
-    .line 458
     const-string v0, "Tether_Type"
 
     invoke-virtual {p3, v0}, Landroid/content/Intent;->getExtra(Ljava/lang/String;)Ljava/lang/Object;
@@ -876,49 +793,39 @@
 
     if-eqz v0, :cond_0
 
-    .line 459
     const-string v0, "charge_only"
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
-    .line 461
     sput-boolean v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 462
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 463
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
-    .line 465
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v0, v3}, Landroid/net/ConnectivityManager;->setUsbTethering(Z)I
 
-    .line 466
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v3}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->setTetherStatus(Landroid/content/Context;Z)V
 
-    .line 467
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->finish()V
 
     goto :goto_0
 
-    .line 471
     :cond_2
     if-ne p1, v2, :cond_0
 
-    .line 472
     if-ne p2, v0, :cond_3
 
-    .line 473
     const-string v0, "5"
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->changeAutorunMode(Ljava/lang/String;)Z
@@ -927,64 +834,51 @@
 
     if-nez v0, :cond_0
 
-    .line 474
     sput-boolean v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 475
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 476
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
-    .line 478
     invoke-direct {p0, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->connectUsbTether(Z)V
 
-    .line 479
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->finish()V
 
     goto :goto_0
 
-    .line 482
     :cond_3
     if-nez p2, :cond_0
 
-    .line 483
     const-string v0, "charge_only"
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
-    .line 485
     sput-boolean v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 486
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 487
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
-    .line 489
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v0, v3}, Landroid/net/ConnectivityManager;->setUsbTethering(Z)I
 
-    .line 490
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v3}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->setTetherStatus(Landroid/content/Context;Z)V
 
-    .line 491
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->finish()V
 
     goto :goto_0
@@ -999,13 +893,10 @@
 
     const/4 v1, 0x1
 
-    .line 121
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 123
     iput-object p0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mContext:Landroid/content/Context;
 
-    .line 124
     const-string v0, "connectivity"
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -1027,7 +918,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
-    .line 127
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     invoke-virtual {v0}, Landroid/hardware/usb/UsbManager;->getDefaultFunction()Ljava/lang/String;
@@ -1036,12 +926,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
-    .line 128
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mCurrentFunction:Ljava/lang/String;
 
-    .line 130
     new-instance v0, Landroid/app/ProgressDialog;
 
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mContext:Landroid/content/Context;
@@ -1101,11 +989,9 @@
 
     if-eqz v0, :cond_2
 
-    .line 135
     :cond_0
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
-    .line 139
     :goto_0
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1124,7 +1010,6 @@
     :goto_1
     iput-boolean v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mAutorunEnable:Z
 
-    .line 142
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
 
     const-string v2, "ecm"
@@ -1135,7 +1020,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 143
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getCountry()Ljava/lang/String;
 
     move-result-object v0
@@ -1160,17 +1044,14 @@
 
     if-eqz v0, :cond_4
 
-    .line 144
     const/4 v0, 0x5
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->callPopup(I)V
 
-    .line 157
     :cond_1
     :goto_2
     return-void
 
-    .line 137
     :cond_2
     sput-boolean v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
@@ -1220,12 +1101,10 @@
 
     if-lez v0, :cond_5
 
-    .line 148
     invoke-direct {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->checkEntitlement()V
 
     goto :goto_2
 
-    .line 150
     :cond_5
     const-string v0, "ro.build.target_operator"
 
@@ -1241,12 +1120,10 @@
 
     if-eqz v0, :cond_6
 
-    .line 151
     invoke-direct {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->startUsbTetherIntroPopup()V
 
     goto :goto_2
 
-    .line 154
     :cond_6
     invoke-direct {p0, v1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->callPopup(I)V
 
@@ -1279,11 +1156,9 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 191
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->finish()V
 
-    .line 194
     :cond_1
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
@@ -1296,15 +1171,12 @@
     .locals 1
 
     .prologue
-    .line 174
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 175
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mStateReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 176
     return-void
 .end method
 
@@ -1312,46 +1184,37 @@
     .locals 2
 
     .prologue
-    .line 161
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 162
     const/4 v1, 0x1
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbSettingsRun:Z
 
-    .line 164
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 165
     .local v0, filter:Landroid/content/IntentFilter;
     const-string v1, "android.hardware.usb.action.USB_STATE"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 166
     const-string v1, "android.intent.action.autorun_timeout"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 167
     const-string v1, "android.intent.action.autorun_ack"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 168
     const-string v1, "android.intent.action.autorun_change_mode"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 169
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mStateReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v1, v0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 170
     return-void
 .end method
 
@@ -1359,14 +1222,11 @@
     .locals 1
 
     .prologue
-    .line 180
     invoke-super {p0}, Landroid/app/Activity;->onStop()V
 
-    .line 181
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbSettingsRun:Z
 
-    .line 182
     return-void
 .end method

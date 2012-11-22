@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 62
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog$1;->this$0:Lcom/android/settings_ex/wifi/WifiOpenAPDialog;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,19 +42,16 @@
     .parameter "whichButton"
 
     .prologue
-    .line 65
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_0
 
-    .line 66
     const-string v0, "WifiOpenAPDialog"
 
     const-string v1, "Yes Button"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 68
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog$1;->this$0:Lcom/android/settings_ex/wifi/WifiOpenAPDialog;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mAccessPoint:Lcom/android/settings_ex/wifi/AccessPoint;
@@ -65,7 +61,6 @@
 
     invoke-virtual {v0}, Lcom/android/settings_ex/wifi/AccessPoint;->generateOpenNetworkConfig()V
 
-    .line 69
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog$1;->this$0:Lcom/android/settings_ex/wifi/WifiOpenAPDialog;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mWifiManager:Landroid/net/wifi/WifiManager;

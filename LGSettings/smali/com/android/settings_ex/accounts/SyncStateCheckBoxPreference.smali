@@ -27,35 +27,26 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 52
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 31
     iput-boolean v1, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mIsActive:Z
 
-    .line 32
     iput-boolean v1, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mIsPending:Z
 
-    .line 33
     iput-boolean v1, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mFailed:Z
 
-    .line 42
     iput-boolean v1, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mOneTimeSyncMode:Z
 
-    .line 53
     iput-object p2, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mAccount:Landroid/accounts/Account;
 
-    .line 54
     iput-object p3, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mAuthority:Ljava/lang/String;
 
-    .line 55
     const v0, 0x7f040083
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->setWidgetLayoutResource(I)V
 
-    .line 56
     return-void
 .end method
 
@@ -69,33 +60,24 @@
 
     const/4 v0, 0x0
 
-    .line 45
     invoke-direct {p0, p1, p2}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 31
     iput-boolean v0, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mIsActive:Z
 
-    .line 32
     iput-boolean v0, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mIsPending:Z
 
-    .line 33
     iput-boolean v0, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mFailed:Z
 
-    .line 42
     iput-boolean v0, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mOneTimeSyncMode:Z
 
-    .line 46
     const v0, 0x7f040083
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->setWidgetLayoutResource(I)V
 
-    .line 47
     iput-object v1, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mAccount:Landroid/accounts/Account;
 
-    .line 48
     iput-object v1, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mAuthority:Ljava/lang/String;
 
-    .line 49
     return-void
 .end method
 
@@ -105,7 +87,6 @@
     .locals 1
 
     .prologue
-    .line 144
     iget-object v0, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mAccount:Landroid/accounts/Account;
 
     return-object v0
@@ -115,7 +96,6 @@
     .locals 1
 
     .prologue
-    .line 148
     iget-object v0, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mAuthority:Ljava/lang/String;
 
     return-object v0
@@ -125,7 +105,6 @@
     .locals 1
 
     .prologue
-    .line 131
     iget-boolean v0, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mOneTimeSyncMode:Z
 
     return v0
@@ -154,7 +133,6 @@
 
     check-cast v4, Lcom/android/settings_ex/widget/AnimatedImageView;
 
-    .line 63
     .local v4, syncActiveView:Lcom/android/settings_ex/widget/AnimatedImageView;
     const v6, 0x7f0b0143
 
@@ -185,12 +163,10 @@
     :goto_1
     invoke-virtual {v4, v6}, Lcom/android/settings_ex/widget/AnimatedImageView;->setVisibility(I)V
 
-    .line 67
     iget-boolean v6, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mIsActive:Z
 
     invoke-virtual {v4, v6}, Lcom/android/settings_ex/widget/AnimatedImageView;->setAnimating(Z)V
 
-    .line 69
     iget-boolean v6, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mFailed:Z
 
     if-eqz v6, :cond_3
@@ -209,23 +185,19 @@
     :goto_3
     invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 72
     const v6, 0x1020001
 
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 73
     .local v1, checkBox:Landroid/view/View;
     iget-boolean v6, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mOneTimeSyncMode:Z
 
     if-eqz v6, :cond_6
 
-    .line 74
     invoke-virtual {v1, v8}, Landroid/view/View;->setVisibility(I)V
 
-    .line 81
     const v6, 0x1020010
 
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -248,7 +220,6 @@
 
     if-eqz v6, :cond_5
 
-    .line 83
     invoke-virtual {p0}, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->getContext()Landroid/content/Context;
 
     move-result-object v6
@@ -341,15 +312,12 @@
     .locals 1
 
     .prologue
-    .line 138
     iget-boolean v0, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mOneTimeSyncMode:Z
 
     if-nez v0, :cond_0
 
-    .line 139
     invoke-super {p0}, Landroid/preference/CheckBoxPreference;->onClick()V
 
-    .line 141
     :cond_0
     return-void
 .end method
@@ -359,13 +327,10 @@
     .parameter "isActive"
 
     .prologue
-    .line 97
     iput-boolean p1, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mIsActive:Z
 
-    .line 98
     invoke-virtual {p0}, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->notifyChanged()V
 
-    .line 99
     return-void
 .end method
 
@@ -374,13 +339,10 @@
     .parameter "failed"
 
     .prologue
-    .line 115
     iput-boolean p1, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mFailed:Z
 
-    .line 116
     invoke-virtual {p0}, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->notifyChanged()V
 
-    .line 117
     return-void
 .end method
 
@@ -389,13 +351,10 @@
     .parameter "oneTimeSyncMode"
 
     .prologue
-    .line 123
     iput-boolean p1, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mOneTimeSyncMode:Z
 
-    .line 124
     invoke-virtual {p0}, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->notifyChanged()V
 
-    .line 125
     return-void
 .end method
 
@@ -404,12 +363,9 @@
     .parameter "isPending"
 
     .prologue
-    .line 106
     iput-boolean p1, p0, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->mIsPending:Z
 
-    .line 107
     invoke-virtual {p0}, Lcom/android/settings_ex/accounts/SyncStateCheckBoxPreference;->notifyChanged()V
 
-    .line 108
     return-void
 .end method

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 501
     iput-object p1, p0, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -38,7 +37,6 @@
     .parameter "x1"
 
     .prologue
-    .line 501
     invoke-direct {p0, p1}, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;-><init>(Lcom/android/settings_ex/TetherSettings;)V
 
     return-void
@@ -102,7 +100,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 515
     iget-object v7, p0, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
@@ -162,13 +159,11 @@
 
     if-eqz v4, :cond_2
 
-    .line 521
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     #setter for: Lcom/android/settings_ex/TetherSettings;->mMassStorageActive:Z
     invoke-static {v4, v7}, Lcom/android/settings_ex/TetherSettings;->access$402(Lcom/android/settings_ex/TetherSettings;Z)Z
 
-    .line 522
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     #calls: Lcom/android/settings_ex/TetherSettings;->updateState()V
@@ -186,13 +181,11 @@
 
     if-eqz v4, :cond_3
 
-    .line 524
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     #setter for: Lcom/android/settings_ex/TetherSettings;->mMassStorageActive:Z
     invoke-static {v4, v6}, Lcom/android/settings_ex/TetherSettings;->access$402(Lcom/android/settings_ex/TetherSettings;Z)Z
 
-    .line 525
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     #calls: Lcom/android/settings_ex/TetherSettings;->updateState()V
@@ -210,7 +203,6 @@
 
     if-eqz v4, :cond_4
 
-    .line 527
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     const-string v5, "connected"
@@ -222,7 +214,6 @@
     #setter for: Lcom/android/settings_ex/TetherSettings;->mUsbConnected:Z
     invoke-static {v4, v5}, Lcom/android/settings_ex/TetherSettings;->access$502(Lcom/android/settings_ex/TetherSettings;Z)Z
 
-    .line 528
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     #calls: Lcom/android/settings_ex/TetherSettings;->updateState()V
@@ -240,7 +231,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 530
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     #getter for: Lcom/android/settings_ex/TetherSettings;->mBluetoothEnableForTether:Z
@@ -282,7 +272,6 @@
 
     invoke-virtual {v4, v7}, Landroid/bluetooth/BluetoothPan;->setBluetoothTethering(Z)V
 
-    .line 535
     iget-object v4, p0, Lcom/android/settings_ex/TetherSettings$TetherChangeReceiver;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     #setter for: Lcom/android/settings_ex/TetherSettings;->mBluetoothEnableForTether:Z

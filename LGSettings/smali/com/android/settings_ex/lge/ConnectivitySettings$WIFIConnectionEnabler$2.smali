@@ -33,7 +33,6 @@
     .parameter
 
     .prologue
-    .line 531
     iput-object p1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$2;->this$1:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     iput-object p2, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$2;->val$preference:Landroid/preference/Preference;
@@ -54,14 +53,12 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 535
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$2;->val$preference:Landroid/preference/Preference;
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 536
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$2;->this$1:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     iget v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$2;->val$nSoftwareType:I

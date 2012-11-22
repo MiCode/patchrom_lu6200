@@ -39,29 +39,22 @@
 
     const/4 v0, 0x0
 
-    .line 32
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 39
     iput-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mTimeoutIntent:Landroid/app/PendingIntent;
 
-    .line 57
     iput-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->is_toggled:Z
 
-    .line 58
     iput-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->is_clicked:Z
 
-    .line 62
     iput-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mStatusBar:Landroid/app/StatusBarManager;
 
-    .line 64
     new-instance v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$1;-><init>(Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 83
     new-instance v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$2;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$2;-><init>(Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;)V
@@ -103,13 +96,10 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 205
     if-nez p1, :cond_1
 
-    .line 206
     iput-boolean v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->is_clicked:Z
 
-    .line 207
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -122,7 +112,6 @@
 
     invoke-static {v0, v1, v3}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 208
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -135,7 +124,6 @@
 
     invoke-static {v0, v1, p1}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 209
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -148,21 +136,17 @@
 
     invoke-static {v0, v1, v4}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 230
     :cond_0
     :goto_0
     return-void
 
-    .line 211
     :cond_1
     const/4 v0, 0x2
 
     if-ne p1, v0, :cond_2
 
-    .line 212
     iput-boolean v4, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->is_clicked:Z
 
-    .line 214
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -175,7 +159,6 @@
 
     invoke-static {v0, v1, v3}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 215
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -188,7 +171,6 @@
 
     invoke-static {v0, v1, p1}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 216
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -218,20 +200,16 @@
 
     goto :goto_0
 
-    .line 222
     :catch_0
     move-exception v0
 
     goto :goto_0
 
-    .line 224
     :cond_2
     if-ne p1, v4, :cond_0
 
-    .line 225
     iput-boolean v4, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->is_clicked:Z
 
-    .line 227
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -244,7 +222,6 @@
 
     invoke-static {v0, v1, v3}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 228
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -266,7 +243,6 @@
     .parameter "x1"
 
     .prologue
-    .line 32
     invoke-direct {p0, p1}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->SetUserResponse(I)V
 
     return-void
@@ -277,7 +253,6 @@
     .parameter "x0"
 
     .prologue
-    .line 32
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mConnMgr:Landroid/net/ConnectivityManager;
 
     return-object v0
@@ -288,7 +263,6 @@
     .parameter "x0"
 
     .prologue
-    .line 32
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
     return-object v0
@@ -299,7 +273,6 @@
     .parameter "x0"
 
     .prologue
-    .line 32
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mTimeoutIntent:Landroid/app/PendingIntent;
 
     return-object v0
@@ -359,10 +332,8 @@
 
     const/4 v9, 0x0
 
-    .line 98
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 102
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getIntent()Landroid/content/Intent;
 
     move-result-object v3
@@ -381,25 +352,21 @@
 
     iput v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->isRoaming:I
 
-    .line 104
     const-string v3, "LGE_DATA_PAYPOPUP"
 
     const-string v4, "onCreate() "
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 107
     new-instance v1, Landroid/content/IntentFilter;
 
     invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 108
     .local v1, filter:Landroid/content/IntentFilter;
     const-string v3, "com.lge.settings.wireless.PAYPOPUPWAITINGALARM"
 
     invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 109
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
@@ -419,10 +386,8 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mConnMgr:Landroid/net/ConnectivityManager;
 
-    .line 121
     invoke-virtual {p0, v6}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->requestWindowFeature(I)Z
 
-    .line 127
     const-string v3, "statusbar"
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -464,19 +429,16 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paypopup:Landroid/app/AlertDialog$Builder;
 
-    .line 162
     iget v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->isRoaming:I
 
     if-ne v3, v6, :cond_0
 
-    .line 163
     iget-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paypopup:Landroid/app/AlertDialog$Builder;
 
     const v4, 0x7f08087d
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    .line 171
     :goto_0
     iget-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paypopup:Landroid/app/AlertDialog$Builder;
 
@@ -486,7 +448,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
-    .line 174
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getWindow()Landroid/view/Window;
 
     move-result-object v3
@@ -495,13 +456,11 @@
 
     move-result-object v0
 
-    .line 175
     .local v0, attrs:Landroid/view/WindowManager$LayoutParams;
     const/16 v3, 0x100
 
     iput v3, v0, Landroid/view/WindowManager$LayoutParams;->extend:I
 
-    .line 176
     iget-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v3}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
@@ -510,14 +469,12 @@
 
     invoke-virtual {v3, v0}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
 
-    .line 178
     iget-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
     iget-object v4, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->AlwaysReqWhenPS:Landroid/content/DialogInterface$OnDismissListener;
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 180
     iget-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
     new-instance v4, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$5;
@@ -526,22 +483,18 @@
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
-    .line 188
     iget-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v3, v9}, Landroid/app/AlertDialog;->setCancelable(Z)V
 
-    .line 189
     iget-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v3, v9}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 190
     iget-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v3}, Landroid/app/AlertDialog;->show()V
 
-    .line 193
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
@@ -575,7 +528,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mTimeoutIntent:Landroid/app/PendingIntent;
 
-    .line 196
     iget-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->am:Landroid/app/AlarmManager;
 
     const/4 v4, 0x2
@@ -592,20 +544,16 @@
 
     invoke-virtual {v3, v4, v5, v6, v7}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
-    .line 198
     invoke-direct {p0, v9}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->SetUserResponse(I)V
 
-    .line 200
     const-string v3, "LGE_DATA_PAYPOPUP"
 
     const-string v4, "Ask for answer for pay popup "
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 201
     return-void
 
-    .line 165
     .end local v0           #attrs:Landroid/view/WindowManager$LayoutParams;
     .end local v2           #intent:Landroid/content/Intent;
     :cond_0
@@ -625,7 +573,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 166
     iget-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paypopup:Landroid/app/AlertDialog$Builder;
 
     const v4, 0x7f080895
@@ -672,18 +619,15 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 254
     invoke-direct {p0, p2, p3}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->shouldConsumeKey(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 265
     :goto_0
     return v0
 
-    .line 257
     :cond_0
     const/4 v1, 0x4
 
@@ -693,10 +637,8 @@
 
     if-nez v1, :cond_1
 
-    .line 258
     iput-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->is_toggled:Z
 
-    .line 259
     const-string v1, "LGE_DATA_PAYPOPUP"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -731,17 +673,14 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 260
     const/4 v1, 0x2
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->SetUserResponse(I)V
 
-    .line 262
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mConnMgr:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v1, v0}, Landroid/net/ConnectivityManager;->setMobileDataEnabled(Z)V
 
-    .line 265
     :cond_1
     const/4 v0, 0x0
 
@@ -756,24 +695,20 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 240
     invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->shouldConsumeKey(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 250
     :goto_0
     return v0
 
-    .line 243
     :cond_0
     const/4 v1, 0x4
 
     if-ne p1, v1, :cond_1
 
-    .line 244
     const-string v1, "LGE_DATA_PAYPOPUP"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -796,17 +731,14 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 245
     const/4 v1, 0x2
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->SetUserResponse(I)V
 
-    .line 247
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mConnMgr:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v1, v0}, Landroid/net/ConnectivityManager;->setMobileDataEnabled(Z)V
 
-    .line 250
     :cond_1
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
@@ -819,30 +751,25 @@
     .locals 2
 
     .prologue
-    .line 308
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mStatusBar:Landroid/app/StatusBarManager;
 
     if-eqz v0, :cond_0
 
-    .line 309
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mStatusBar:Landroid/app/StatusBarManager;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
-    .line 311
     :cond_0
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 312
     const-string v0, "LGE_DATA_PAYPOPUP"
 
     const-string v1, "********      onPause "
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 313
     return-void
 .end method
 
@@ -882,35 +809,29 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 289
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    .line 290
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 291
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
-    .line 294
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mStatusBar:Landroid/app/StatusBarManager;
 
     if-eqz v0, :cond_1
 
-    .line 295
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mStatusBar:Landroid/app/StatusBarManager;
 
     const/high16 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
-    .line 297
     :cond_1
     const-string v0, "LGE_DATA_PAYPOPUP"
 

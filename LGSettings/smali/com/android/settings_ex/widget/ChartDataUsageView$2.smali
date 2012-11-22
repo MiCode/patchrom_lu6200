@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 303
     iput-object p1, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$2;->this$0:Lcom/android/settings_ex/widget/ChartDataUsageView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,13 +42,11 @@
     .parameter "sweepDone"
 
     .prologue
-    .line 306
     iget-object v0, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$2;->this$0:Lcom/android/settings_ex/widget/ChartDataUsageView;
 
     #calls: Lcom/android/settings_ex/widget/ChartDataUsageView;->updatePrimaryRange()V
     invoke-static {v0}, Lcom/android/settings_ex/widget/ChartDataUsageView;->access$300(Lcom/android/settings_ex/widget/ChartDataUsageView;)V
 
-    .line 309
     if-eqz p2, :cond_0
 
     iget-object v0, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$2;->this$0:Lcom/android/settings_ex/widget/ChartDataUsageView;
@@ -61,7 +58,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 310
     iget-object v0, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$2;->this$0:Lcom/android/settings_ex/widget/ChartDataUsageView;
 
     #getter for: Lcom/android/settings_ex/widget/ChartDataUsageView;->mListener:Lcom/android/settings_ex/widget/ChartDataUsageView$DataUsageChartListener;

@@ -33,7 +33,6 @@
     .parameter
 
     .prologue
-    .line 383
     iput-object p1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$3;->this$0:Lcom/android/settings_ex/TrustedCredentialsSettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$3;->val$certHolder:Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;

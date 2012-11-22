@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 45
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothEnabler$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEnabler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -49,12 +48,10 @@
 
     move-result v0
 
-    .line 49
     .local v0, state:I
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothEnabler$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEnabler;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/bluetooth/BluetoothEnabler;->handleStateChanged(I)V
 
-    .line 50
     return-void
 .end method

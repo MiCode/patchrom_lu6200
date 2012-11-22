@@ -45,24 +45,20 @@
 
     const/4 v2, 0x0
 
-    .line 39
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 57
     invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getDefaultPhone()Lcom/android/internal/telephony/Phone;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    .line 58
     new-instance v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT$MyHandler;
 
     invoke-direct {v0, p0, v3}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT$MyHandler;-><init>(Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT$1;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mHandler:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT$MyHandler;
 
-    .line 65
     const-string v0, "net.is_3g"
 
     const-string v1, "false"
@@ -79,23 +75,18 @@
 
     iput-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->is_3G_Model:Z
 
-    .line 67
     iput-boolean v2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->is_toggled:Z
 
-    .line 68
     iput-boolean v2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->is_selected:Z
 
-    .line 71
     iput-object v3, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mStatusBar:Landroid/app/StatusBarManager;
 
-    .line 74
     new-instance v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT$1;-><init>(Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->AlwaysReqWhenPS:Landroid/content/DialogInterface$OnDismissListener;
 
-    .line 346
     return-void
 .end method
 
@@ -133,10 +124,8 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 233
     if-nez p1, :cond_1
 
-    .line 234
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -149,7 +138,6 @@
 
     invoke-static {v0, v1, p1}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 235
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -162,25 +150,21 @@
 
     invoke-static {v0, v1, v3}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 237
     const-string v0, "LGE_DATA_ROAMINGPOPUP_LGT"
 
     const-string v1, "DATA_ROAMING is not set yet, waiting user response !"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 274
     :cond_0
     :goto_0
     return-void
 
-    .line 239
     :cond_1
     const/4 v0, 0x2
 
     if-ne p1, v0, :cond_2
 
-    .line 240
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -193,7 +177,6 @@
 
     invoke-static {v0, v1, p1}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 241
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -206,7 +189,6 @@
 
     invoke-static {v0, v1, v4}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 242
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -219,19 +201,16 @@
 
     invoke-static {v0, v1, v3}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 244
     const-string v0, "LGE_DATA_ROAMINGPOPUP_LGT"
 
     const-string v1, "DATA_ROAMING is set as 1 !"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 247
     iget-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->is_3G_Model:Z
 
     if-ne v0, v3, :cond_0
 
-    .line 250
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mPhone:Lcom/android/internal/telephony/Phone;
 
     const-string v1, "@roaming.lgtel.co.kr"
@@ -246,11 +225,9 @@
 
     goto :goto_0
 
-    .line 257
     :cond_2
     if-ne p1, v3, :cond_0
 
-    .line 258
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -263,7 +240,6 @@
 
     invoke-static {v0, v1, v4}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 259
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -276,7 +252,6 @@
 
     invoke-static {v0, v1, p1}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 260
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -289,12 +264,10 @@
 
     invoke-static {v0, v1, v4}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 263
     iget-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->is_3G_Model:Z
 
     if-ne v0, v3, :cond_3
 
-    .line 266
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mPhone:Lcom/android/internal/telephony/Phone;
 
     const-string v1, "@lgt.co.kr"
@@ -324,7 +297,6 @@
     .parameter "x1"
 
     .prologue
-    .line 39
     invoke-direct {p0, p1}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->SetUserResponse(I)V
 
     return-void
@@ -335,7 +307,6 @@
     .parameter "x0"
 
     .prologue
-    .line 39
     invoke-direct {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->isDataRoamingAllowed()Z
 
     move-result v0
@@ -348,7 +319,6 @@
     .parameter "x0"
 
     .prologue
-    .line 39
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mPhone:Lcom/android/internal/telephony/Phone;
 
     return-object v0
@@ -359,7 +329,6 @@
     .parameter "x0"
 
     .prologue
-    .line 39
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingdialog:Landroid/app/AlertDialog;
 
     return-object v0
@@ -468,10 +437,8 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mConnMgr:Landroid/net/ConnectivityManager;
 
-    .line 107
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->requestWindowFeature(I)Z
 
-    .line 110
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -525,14 +492,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 183
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingpopup:Landroid/app/AlertDialog$Builder;
 
     const v2, 0x7f08088b
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    .line 191
     :goto_0
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingpopup:Landroid/app/AlertDialog$Builder;
 
@@ -542,7 +507,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingdialog:Landroid/app/AlertDialog;
 
-    .line 194
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->getWindow()Landroid/view/Window;
 
     move-result-object v1
@@ -551,13 +515,11 @@
 
     move-result-object v0
 
-    .line 195
     .local v0, attrs:Landroid/view/WindowManager$LayoutParams;
     const/16 v1, 0x100
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->extend:I
 
-    .line 196
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingdialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
@@ -577,14 +539,12 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mStatusBar:Landroid/app/StatusBarManager;
 
-    .line 210
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingdialog:Landroid/app/AlertDialog;
 
     iget-object v2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->AlwaysReqWhenPS:Landroid/content/DialogInterface$OnDismissListener;
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 212
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingdialog:Landroid/app/AlertDialog;
 
     new-instance v2, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT$4;
@@ -593,30 +553,24 @@
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
-    .line 220
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingdialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog;->setCancelable(Z)V
 
-    .line 221
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingdialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 223
     invoke-direct {p0, v4}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->SetUserResponse(I)V
 
-    .line 225
     const-string v1, "LGE_DATA_ROAMINGPOPUP_LGT"
 
     const-string v2, "Ask for answer for roaming popup "
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 226
     return-void
 
-    .line 186
     .end local v0           #attrs:Landroid/view/WindowManager$LayoutParams;
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingpopup:Landroid/app/AlertDialog$Builder;
@@ -646,17 +600,14 @@
     .parameter "aKeyEvent"
 
     .prologue
-    .line 292
     invoke-direct {p0, p2, p3}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->shouldConsumeKey(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 293
     const/4 v0, 0x1
 
-    .line 295
     :goto_0
     return v0
 
@@ -672,17 +623,14 @@
     .parameter "aKeyEvent"
 
     .prologue
-    .line 284
     invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->shouldConsumeKey(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 285
     const/4 v0, 0x1
 
-    .line 288
     :goto_0
     return v0
 
@@ -698,29 +646,24 @@
     .locals 2
 
     .prologue
-    .line 336
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 338
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mStatusBar:Landroid/app/StatusBarManager;
 
     if-eqz v0, :cond_0
 
-    .line 339
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mStatusBar:Landroid/app/StatusBarManager;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
-    .line 340
     const-string v0, "LGE_DATA_ROAMINGPOPUP_LGT"
 
     const-string v1, "StatusBarManager.DISABLE_NONE"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 343
     :cond_0
     return-void
 .end method
@@ -729,51 +672,42 @@
     .locals 2
 
     .prologue
-    .line 314
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 316
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingdialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    .line 317
     const-string v0, "LGE_DATA_ROAMINGPOPUP_LGT"
 
     const-string v1, "onResume"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 318
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingdialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 319
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->roamingdialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
-    .line 321
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mStatusBar:Landroid/app/StatusBarManager;
 
     if-eqz v0, :cond_0
 
-    .line 322
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeRoamingQueryPopupLGT;->mStatusBar:Landroid/app/StatusBarManager;
 
     const/high16 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
-    .line 323
     const-string v0, "LGE_DATA_ROAMINGPOPUP_LGT"
 
     const-string v1, "StatusBarManager.DISABLE_EXPAND"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 327
     :cond_0
     return-void
 .end method

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 44
     iput-object p1, p0, Lcom/android/settings_ex/lge/RadioButtonPreference$1;->this$0:Lcom/android/settings_ex/lge/RadioButtonPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "arg0"
 
     .prologue
-    .line 47
     iget-object v1, p0, Lcom/android/settings_ex/lge/RadioButtonPreference$1;->this$0:Lcom/android/settings_ex/lge/RadioButtonPreference;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/lge/RadioButtonPreference;->isChecked()Z

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 200
     iput-object p1, p0, Lcom/android/settings_ex/applications/InstalledAppDetails$ClearCacheObserver;->this$0:Lcom/android/settings_ex/applications/InstalledAppDetails;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageDataObserver$Stub;-><init>()V
@@ -40,7 +39,6 @@
     .parameter "succeeded"
 
     .prologue
-    .line 202
     iget-object v1, p0, Lcom/android/settings_ex/applications/InstalledAppDetails$ClearCacheObserver;->this$0:Lcom/android/settings_ex/applications/InstalledAppDetails;
 
     #getter for: Lcom/android/settings_ex/applications/InstalledAppDetails;->mHandler:Landroid/os/Handler;
@@ -63,7 +61,6 @@
     :goto_0
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 204
     iget-object v1, p0, Lcom/android/settings_ex/applications/InstalledAppDetails$ClearCacheObserver;->this$0:Lcom/android/settings_ex/applications/InstalledAppDetails;
 
     #getter for: Lcom/android/settings_ex/applications/InstalledAppDetails;->mHandler:Landroid/os/Handler;

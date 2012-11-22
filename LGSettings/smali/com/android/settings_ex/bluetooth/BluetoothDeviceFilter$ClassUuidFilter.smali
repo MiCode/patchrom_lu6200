@@ -33,7 +33,6 @@
     .parameter "x0"
 
     .prologue
-    .line 112
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;-><init>()V
 
     return-void

@@ -28,18 +28,14 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 477
     iput-object p1, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;
 
-    .line 478
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 479
     invoke-virtual {p3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 480
     .local v0, cr:Landroid/content/ContentResolver;
     const-string v1, "default_input_method"
 
@@ -69,12 +65,10 @@
     .parameter "selfChange"
 
     .prologue
-    .line 487
     iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;
 
     #calls: Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;->updateCurrentImeName()V
     invoke-static {v0}, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;->access$000(Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;)V
 
-    .line 488
     return-void
 .end method

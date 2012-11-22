@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 145
     iput-object p1, p0, Lcom/android/settings_ex/vpn2/VpnDialog$1;->this$0:Lcom/android/settings_ex/vpn2/VpnDialog;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

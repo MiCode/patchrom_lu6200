@@ -52,7 +52,6 @@
 
     const/4 v4, 0x0
 
-    .line 124
     new-instance v0, Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;
 
     const-string v1, "Introduction"
@@ -65,7 +64,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;->Introduction:Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;
 
-    .line 127
     new-instance v0, Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;
 
     const-string v1, "NeedToConfirm"
@@ -76,7 +74,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;->NeedToConfirm:Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;
 
-    .line 130
     new-instance v0, Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;
 
     const-string v1, "ConfirmWrong"
@@ -122,16 +119,12 @@
     .end annotation
 
     .prologue
-    .line 136
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 137
     iput p3, p0, Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;->numericHint:I
 
-    .line 138
     iput p4, p0, Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;->buttonText:I
 
-    .line 139
     return-void
 .end method
 
@@ -140,7 +133,6 @@
     .parameter
 
     .prologue
-    .line 122
     const-class v0, Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -156,7 +148,6 @@
     .locals 1
 
     .prologue
-    .line 122
     sget-object v0, Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;->$VALUES:[Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;
 
     invoke-virtual {v0}, [Lcom/android/settings_ex/ChooseBackupPinX3$ChooseBackupPinX3Fragment$Stage;->clone()Ljava/lang/Object;

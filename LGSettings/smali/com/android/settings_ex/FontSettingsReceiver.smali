@@ -35,17 +35,14 @@
     .locals 1
 
     .prologue
-    .line 105
     iget v0, p0, Lcom/android/settings_ex/FontSettingsReceiver;->mSelectDefaultFontIndex:I
 
     iput v0, p0, Lcom/android/settings_ex/FontSettingsReceiver;->mCurrentDefaultFontIndex:I
 
-    .line 106
     const/16 v0, 0x3e8
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/FontSettingsReceiver;->restartProgress(I)V
 
-    .line 107
     return-void
 .end method
 
@@ -99,7 +96,6 @@
     .locals 2
 
     .prologue
-    .line 99
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->updateDownloadFontApps()I
 
     move-result v0
@@ -108,10 +104,8 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 100
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->updateDownloadFontApps()I
 
-    .line 101
     :cond_0
     return-void
 .end method
@@ -120,12 +114,10 @@
     .locals 5
 
     .prologue
-    .line 177
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->countNewDownloadFontApps()I
 
     move-result v0
 
-    .line 179
     .local v0, count:I
     const/4 v1, 0x0
 
@@ -133,23 +125,19 @@
     :goto_0
     if-ge v1, v0, :cond_2
 
-    .line 180
     invoke-static {v1}, Lcom/android/settings_ex/FontTypeFace;->getNewDownloadFontAppName(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 182
     .local v2, name:Ljava/lang/String;
     if-nez v2, :cond_1
 
-    .line 179
     :cond_0
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 185
     :cond_1
     invoke-direct {p0, v2}, Lcom/android/settings_ex/FontSettingsReceiver;->unzipFontApp(Ljava/lang/String;)Z
 
@@ -159,7 +147,6 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 186
     invoke-static {v1}, Lcom/android/settings_ex/FontTypeFace;->certifyNewDownloadFontApp(I)I
 
     move-result v3
@@ -168,17 +155,14 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 187
     invoke-static {v1}, Lcom/android/settings_ex/FontTypeFace;->updateNewDownloadFontApp(I)I
 
     goto :goto_1
 
-    .line 190
     .end local v2           #name:Ljava/lang/String;
     :cond_2
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->saveNewDownloadFontApps()V
 
-    .line 191
     return-void
 .end method
 
@@ -186,7 +170,6 @@
     .locals 2
 
     .prologue
-    .line 93
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->updateDownloadFontApps()I
 
     move-result v0
@@ -195,10 +178,8 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 94
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->updateDownloadFontApps()I
 
-    .line 95
     :cond_0
     return-void
 .end method
@@ -208,30 +189,23 @@
     .parameter "mode"
 
     .prologue
-    .line 203
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->sendIntentPreFontChange()V
 
-    .line 205
     const/16 v0, 0x3e9
 
     if-ne p1, v0, :cond_0
 
-    .line 206
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/FontSettingsReceiver;->saveFontTypeSelectData(Z)V
 
-    .line 210
     :goto_0
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->saveFontTypeSelectConfiguration()V
 
-    .line 211
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->sendIntentFontChange()V
 
-    .line 212
     return-void
 
-    .line 208
     :cond_0
     const/4 v0, 0x0
 
@@ -287,28 +261,23 @@
     .parameter "resetDefaultFontIndex"
 
     .prologue
-    .line 133
     const/4 v0, 0x1
 
     if-ne p1, v0, :cond_0
 
-    .line 134
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getSystemDefaultFamilyIndex()I
 
     move-result v0
 
     iput v0, p0, Lcom/android/settings_ex/FontSettingsReceiver;->mCurrentDefaultFontIndex:I
 
-    .line 135
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->saveNewDownloadFontApps()V
 
-    .line 138
     :cond_0
     iget v0, p0, Lcom/android/settings_ex/FontSettingsReceiver;->mCurrentDefaultFontIndex:I
 
     invoke-static {v0}, Lcom/android/settings_ex/FontTypeFace;->selectDefaultFont(I)V
 
-    .line 139
     return-void
 .end method
 
@@ -316,33 +285,28 @@
     .locals 3
 
     .prologue
-    .line 220
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "android.intent.action.6A73.ACTION_FONT_CHANGE_FINISHED"
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 221
     .local v1, intentOld:Landroid/content/Intent;
     iget-object v2, p0, Lcom/android/settings_ex/FontSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 224
     new-instance v0, Landroid/content/Intent;
 
     const-string v2, "jungle.intent.action.FONTDIALOG_FINISH"
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 225
     .local v0, intentGB:Landroid/content/Intent;
     iget-object v2, p0, Lcom/android/settings_ex/FontSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 226
     return-void
 .end method
 
@@ -350,20 +314,17 @@
     .locals 2
 
     .prologue
-    .line 196
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "font.intent.action.ACTION_FONT_CHANGE_READY"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 197
     .local v0, intentOld:Landroid/content/Intent;
     iget-object v1, p0, Lcom/android/settings_ex/FontSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 198
     return-void
 .end method
 
@@ -427,38 +388,30 @@
     .parameter "fontAppName"
 
     .prologue
-    .line 231
     if-nez p1, :cond_1
 
-    .line 232
     const/16 v25, 0x0
 
-    .line 325
     :cond_0
     :goto_0
     return v25
 
-    .line 234
     :cond_1
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getNewDownloadFontAppsSrcPath()Ljava/lang/String;
 
     move-result-object v24
 
-    .line 235
     .local v24, srcPath:Ljava/lang/String;
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->getNewDownloadFontAppsDstPath()Ljava/lang/String;
 
     move-result-object v14
 
-    .line 236
     .local v14, dstPath:Ljava/lang/String;
     const/16 v19, 0x0
 
-    .line 237
     .local v19, findFile:I
     const/4 v3, 0x0
 
-    .line 241
     .local v3, apkFile:Ljava/util/zip/ZipFile;
     :try_start_0
     new-instance v23, Ljava/io/File;
@@ -1076,16 +1029,13 @@
     .locals 2
 
     .prologue
-    .line 158
     invoke-static {}, Lcom/android/settings_ex/FontTypeFace;->searchNewDownloadFontApps()I
 
     move-result v0
 
-    .line 160
     .local v0, state:I
     sparse-switch v0, :sswitch_data_0
 
-    .line 171
     :goto_0
     const/16 v0, 0x68
 
@@ -1102,13 +1052,11 @@
 
     goto :goto_1
 
-    .line 167
     :sswitch_1
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->findNewDownloadFontApps()V
 
     goto :goto_0
 
-    .line 160
     :sswitch_data_0
     .sparse-switch
         0x65 -> :sswitch_1
@@ -1124,10 +1072,8 @@
     .parameter "intent"
 
     .prologue
-    .line 74
     iput-object p1, p0, Lcom/android/settings_ex/FontSettingsReceiver;->mContext:Landroid/content/Context;
 
-    .line 75
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
@@ -1140,15 +1086,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 76
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->installDownloadFontApp()V
 
-    .line 89
     :cond_0
     :goto_0
     return-void
 
-    .line 78
     :cond_1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -1162,12 +1105,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 79
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->deleteDownloadFontApp()V
 
     goto :goto_0
 
-    .line 81
     :cond_2
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -1192,12 +1133,10 @@
 
     iput v0, p0, Lcom/android/settings_ex/FontSettingsReceiver;->mSelectDefaultFontIndex:I
 
-    .line 84
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->changingFontType()V
 
     goto :goto_0
 
-    .line 86
     :cond_3
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -1211,7 +1150,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 87
     invoke-direct {p0}, Lcom/android/settings_ex/FontSettingsReceiver;->configurationReady()V
 
     goto :goto_0

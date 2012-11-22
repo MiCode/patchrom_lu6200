@@ -43,7 +43,6 @@
     .parameter
 
     .prologue
-    .line 77
     iput-object p1, p0, Lcom/android/settings_ex/applications/RunningServiceDetails$ActiveDetail;->this$0:Lcom/android/settings_ex/applications/RunningServiceDetails;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -868,14 +867,11 @@
     .parameter "confirmed"
 
     .prologue
-    .line 88
     iget-object v0, p0, Lcom/android/settings_ex/applications/RunningServiceDetails$ActiveDetail;->mServiceItem:Lcom/android/settings_ex/applications/RunningState$ServiceItem;
 
-    .line 89
     .local v0, si:Lcom/android/settings_ex/applications/RunningState$ServiceItem;
     if-nez p1, :cond_0
 
-    .line 90
     iget-object v1, v0, Lcom/android/settings_ex/applications/RunningState$ServiceItem;->mServiceInfo:Landroid/content/pm/ServiceInfo;
 
     iget-object v1, v1, Landroid/content/pm/ServiceInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
@@ -886,7 +882,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 91
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningServiceDetails$ActiveDetail;->this$0:Lcom/android/settings_ex/applications/RunningServiceDetails;
 
     iget-object v2, v0, Lcom/android/settings_ex/applications/RunningState$ServiceItem;->mRunningService:Landroid/app/ActivityManager$RunningServiceInfo;
@@ -922,7 +917,6 @@
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->stopService(Landroid/content/Intent;)Z
 
-    .line 98
     iget-object v1, v0, Lcom/android/settings_ex/applications/RunningState$ServiceItem;->mServiceInfo:Landroid/content/pm/ServiceInfo;
 
     iget-object v1, v1, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
@@ -935,14 +929,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 99
     const-string v1, "RunningServicesDetails"
 
     const-string v2, "stop SystemUI Music controller"
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 100
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningServiceDetails$ActiveDetail;->this$0:Lcom/android/settings_ex/applications/RunningServiceDetails;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
@@ -965,14 +957,12 @@
 
     if-nez v1, :cond_2
 
-    .line 106
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningServiceDetails$ActiveDetail;->this$0:Lcom/android/settings_ex/applications/RunningServiceDetails;
 
     iget-object v1, v1, Lcom/android/settings_ex/applications/RunningServiceDetails;->mState:Lcom/android/settings_ex/applications/RunningState;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/applications/RunningState;->updateNow()V
 
-    .line 107
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningServiceDetails$ActiveDetail;->this$0:Lcom/android/settings_ex/applications/RunningServiceDetails;
 
     #calls: Lcom/android/settings_ex/applications/RunningServiceDetails;->finish()V
@@ -1002,14 +992,12 @@
 
     if-gt v1, v2, :cond_3
 
-    .line 111
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningServiceDetails$ActiveDetail;->this$0:Lcom/android/settings_ex/applications/RunningServiceDetails;
 
     iget-object v1, v1, Lcom/android/settings_ex/applications/RunningServiceDetails;->mState:Lcom/android/settings_ex/applications/RunningState;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/applications/RunningState;->updateNow()V
 
-    .line 112
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningServiceDetails$ActiveDetail;->this$0:Lcom/android/settings_ex/applications/RunningServiceDetails;
 
     #calls: Lcom/android/settings_ex/applications/RunningServiceDetails;->finish()V

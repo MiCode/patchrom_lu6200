@@ -115,14 +115,12 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 60
     new-instance v1, Landroid/content/Intent;
 
     const-class v0, Lcom/android/settings_ex/RcseNotiView;
 
     invoke-direct {v1, p0, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 61
     const-string v2, "url"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -159,10 +157,8 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 62
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/RcseNotiList;->startActivity(Landroid/content/Intent;)V
 
-    .line 63
     return-void
 .end method
 
@@ -170,15 +166,12 @@
     .locals 1
 
     .prologue
-    .line 51
     invoke-super {p0}, Landroid/app/ListActivity;->onPause()V
 
-    .line 52
     sget-object v0, Lcom/android/settings_ex/RcseNotiList;->data:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 53
     return-void
 .end method
 
@@ -188,13 +181,10 @@
     .prologue
     const/4 v6, 0x2
 
-    .line 37
     invoke-super {p0}, Landroid/app/ListActivity;->onResume()V
 
-    .line 38
     invoke-virtual {p0}, Lcom/android/settings_ex/RcseNotiList;->readNoticeDB()V
 
-    .line 39
     new-instance v0, Landroid/widget/SimpleAdapter;
 
     sget-object v2, Lcom/android/settings_ex/RcseNotiList;->data:Ljava/util/ArrayList;
@@ -223,14 +213,11 @@
 
     invoke-direct/range {v0 .. v5}, Landroid/widget/SimpleAdapter;-><init>(Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V
 
-    .line 44
     .local v0, adapter:Landroid/widget/SimpleAdapter;
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/RcseNotiList;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 46
     return-void
 
-    .line 39
     nop
 
     :array_0
@@ -255,14 +242,12 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/RcseNotiList;->mNoticeDBUri:Landroid/net/Uri;
 
-    .line 69
     invoke-virtual {p0}, Lcom/android/settings_ex/RcseNotiList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/settings_ex/RcseNotiList;->mContentResolver:Landroid/content/ContentResolver;
 
-    .line 71
     iget-object v0, p0, Lcom/android/settings_ex/RcseNotiList;->mContentResolver:Landroid/content/ContentResolver;
 
     iget-object v1, p0, Lcom/android/settings_ex/RcseNotiList;->mNoticeDBUri:Landroid/net/Uri;
@@ -424,12 +409,10 @@
 
     invoke-virtual {v9, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 98
     sget-object v0, Lcom/android/settings_ex/RcseNotiList;->data:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 105
     .end local v7           #listDate:[Ljava/lang/String;
     .end local v9           #row:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     :cond_2
@@ -550,7 +533,6 @@
 
     invoke-virtual {v9, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 114
     sget-object v0, Lcom/android/settings_ex/RcseNotiList;->data:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z

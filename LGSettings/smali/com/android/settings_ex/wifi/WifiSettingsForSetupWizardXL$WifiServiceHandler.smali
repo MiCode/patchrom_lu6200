@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 242
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiSettingsForSetupWizardXL$WifiServiceHandler;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsForSetupWizardXL;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -38,7 +37,6 @@
     .parameter "x1"
 
     .prologue
-    .line 242
     invoke-direct {p0, p1}, Lcom/android/settings_ex/wifi/WifiSettingsForSetupWizardXL$WifiServiceHandler;-><init>(Lcom/android/settings_ex/wifi/WifiSettingsForSetupWizardXL;)V
 
     return-void

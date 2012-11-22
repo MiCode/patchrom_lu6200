@@ -59,50 +59,36 @@
 
     const/4 v0, 0x0
 
-    .line 44
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 48
     iput v2, p0, Lcom/android/settings_ex/GestureTilt;->start:F
 
-    .line 49
     iput v2, p0, Lcom/android/settings_ex/GestureTilt;->end:F
 
-    .line 50
     iput v1, p0, Lcom/android/settings_ex/GestureTilt;->value:I
 
-    .line 51
     iput v3, p0, Lcom/android/settings_ex/GestureTilt;->count:I
 
-    .line 52
     iput v3, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
-    .line 53
     iput v1, p0, Lcom/android/settings_ex/GestureTilt;->page:I
 
-    .line 54
     iput-object v0, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
-    .line 55
     iput-boolean v1, p0, Lcom/android/settings_ex/GestureTilt;->move:Z
 
-    .line 59
     iput-object v0, p0, Lcom/android/settings_ex/GestureTilt;->navigation0:Landroid/widget/ImageView;
 
-    .line 60
     iput-object v0, p0, Lcom/android/settings_ex/GestureTilt;->navigation1:Landroid/widget/ImageView;
 
-    .line 61
     iput-object v0, p0, Lcom/android/settings_ex/GestureTilt;->navigation2:Landroid/widget/ImageView;
 
-    .line 65
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mHandler:Landroid/os/Handler;
 
-    .line 66
     new-instance v0, Lcom/android/settings_ex/GestureTilt$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/GestureTilt$1;-><init>(Lcom/android/settings_ex/GestureTilt;)V
@@ -117,7 +103,6 @@
     .parameter "x0"
 
     .prologue
-    .line 44
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     return-object v0
@@ -128,7 +113,6 @@
     .parameter "x0"
 
     .prologue
-    .line 44
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->myVib:Landroid/os/Vibrator;
 
     return-object v0
@@ -140,7 +124,6 @@
     .parameter "x1"
 
     .prologue
-    .line 44
     iput-boolean p1, p0, Lcom/android/settings_ex/GestureTilt;->move:Z
 
     return p1
@@ -151,7 +134,6 @@
     .parameter "x0"
 
     .prologue
-    .line 44
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mTextView:Landroid/widget/TextView;
 
     return-object v0
@@ -172,10 +154,8 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
-    .line 140
     invoke-direct {p0}, Lcom/android/settings_ex/GestureTilt;->setDefaultSettings()V
 
-    .line 142
     return-void
 .end method
 
@@ -189,14 +169,12 @@
 
     const/16 v4, 0xa
 
-    .line 154
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v2}, Landroid/widget/ViewFlipper;->getDisplayedChild()I
 
     move-result v1
 
-    .line 155
     .local v1, childId:I
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -204,23 +182,19 @@
 
     move-result v0
 
-    .line 157
     .local v0, childCount:I
     const/4 v2, 0x3
 
     if-eq v1, v2, :cond_0
 
-    .line 158
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/GestureTilt;->stopAnimation(Landroid/graphics/drawable/AnimationDrawable;)V
 
-    .line 161
     iget v2, p0, Lcom/android/settings_ex/GestureTilt;->value:I
 
     packed-switch v2, :pswitch_data_0
 
-    .line 188
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     invoke-static {p0, v3}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
@@ -229,7 +203,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 189
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     invoke-static {p0, v5}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
@@ -238,10 +211,8 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 190
     iput v4, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
-    .line 197
     :goto_0
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -249,12 +220,10 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setDisplayedChild(I)V
 
-    .line 198
     add-int/lit8 v2, v1, 0x1
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/GestureTilt;->setAnimationView(I)V
 
-    .line 199
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->mHandler:Landroid/os/Handler;
 
     iget-object v3, p0, Lcom/android/settings_ex/GestureTilt;->mRunnable:Ljava/lang/Runnable;
@@ -279,7 +248,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 164
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f050009
@@ -290,14 +258,12 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 165
     const/16 v2, 0xe
 
     iput v2, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     goto :goto_0
 
-    .line 168
     :pswitch_1
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -309,7 +275,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 169
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f050007
@@ -320,14 +285,12 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 170
     const/16 v2, 0xc
 
     iput v2, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     goto :goto_0
 
-    .line 173
     :pswitch_2
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -337,7 +300,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 174
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     invoke-static {p0, v5}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
@@ -346,12 +308,10 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 175
     iput v4, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     goto :goto_0
 
-    .line 178
     :pswitch_3
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -363,7 +323,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 179
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f050008
@@ -374,14 +333,12 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 180
     const/16 v2, 0x8
 
     iput v2, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     goto/16 :goto_0
 
-    .line 183
     :pswitch_4
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -393,7 +350,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 184
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f050006
@@ -404,14 +360,12 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 185
     const/4 v2, 0x6
 
     iput v2, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     goto/16 :goto_0
 
-    .line 161
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -432,14 +386,12 @@
 
     const/16 v4, 0xa
 
-    .line 205
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v2}, Landroid/widget/ViewFlipper;->getDisplayedChild()I
 
     move-result v1
 
-    .line 206
     .local v1, childId:I
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -447,21 +399,17 @@
 
     move-result v0
 
-    .line 208
     .local v0, childCount:I
     if-eqz v1, :cond_0
 
-    .line 209
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/GestureTilt;->stopAnimation(Landroid/graphics/drawable/AnimationDrawable;)V
 
-    .line 212
     iget v2, p0, Lcom/android/settings_ex/GestureTilt;->value:I
 
     packed-switch v2, :pswitch_data_0
 
-    .line 239
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     invoke-static {p0, v3}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
@@ -470,7 +418,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 240
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     invoke-static {p0, v5}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
@@ -479,10 +426,8 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 241
     iput v4, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
-    .line 250
     :goto_0
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -490,12 +435,10 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setDisplayedChild(I)V
 
-    .line 251
     add-int/lit8 v2, v1, -0x1
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/GestureTilt;->setAnimationView(I)V
 
-    .line 252
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->mHandler:Landroid/os/Handler;
 
     iget-object v3, p0, Lcom/android/settings_ex/GestureTilt;->mRunnable:Ljava/lang/Runnable;
@@ -520,7 +463,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 215
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f050013
@@ -531,14 +473,12 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 216
     const/16 v2, 0xe
 
     iput v2, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     goto :goto_0
 
-    .line 219
     :pswitch_1
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -550,7 +490,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 220
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f050011
@@ -561,14 +500,12 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 221
     const/16 v2, 0xc
 
     iput v2, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     goto :goto_0
 
-    .line 224
     :pswitch_2
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -578,7 +515,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 225
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     invoke-static {p0, v5}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
@@ -587,12 +523,10 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 226
     iput v4, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     goto :goto_0
 
-    .line 229
     :pswitch_3
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -604,7 +538,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 230
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f050012
@@ -615,14 +548,12 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 231
     const/16 v2, 0x8
 
     iput v2, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     goto/16 :goto_0
 
-    .line 234
     :pswitch_4
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
@@ -634,7 +565,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 235
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f050010
@@ -645,14 +575,12 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 236
     const/4 v2, 0x6
 
     iput v2, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     goto/16 :goto_0
 
-    .line 212
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -669,7 +597,6 @@
     .parameter "drawable"
 
     .prologue
-    .line 273
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/GestureTilt;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -678,12 +605,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mImageView:Landroid/view/View;
 
-    .line 274
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mImageView:Landroid/view/View;
 
     invoke-virtual {v0, p2}, Landroid/view/View;->setBackgroundResource(I)V
 
-    .line 275
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mImageView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
@@ -702,18 +627,14 @@
     .locals 2
 
     .prologue
-    .line 144
     const v1, 0x7f0b00b3
 
-    .line 145
     .local v1, id:I
     const v0, 0x7f02007e
 
-    .line 149
     .local v0, drawable:I
     invoke-direct {p0, v1, v0}, Lcom/android/settings_ex/GestureTilt;->setAnimationView(II)V
 
-    .line 150
     return-void
 .end method
 
@@ -734,20 +655,16 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 75
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 76
     const v0, 0x7f040053
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/GestureTilt;->setContentView(I)V
 
-    .line 77
     const v0, 0x7f080722
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/GestureTilt;->setTitle(I)V
 
-    .line 78
     const v0, 0x7f0b00bb
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/GestureTilt;->findViewById(I)Landroid/view/View;
@@ -780,7 +697,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureTilt;->navigation2:Landroid/widget/ImageView;
 
-    .line 81
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureTilt;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -828,14 +744,12 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureTilt;->icon:Landroid/widget/ImageView;
 
-    .line 86
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->icon:Landroid/widget/ImageView;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setHapticFeedbackEnabled(Z)V
 
-    .line 87
     const-string v0, "vibrator"
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/GestureTilt;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -846,10 +760,8 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureTilt;->myVib:Landroid/os/Vibrator;
 
-    .line 88
     invoke-direct {p0}, Lcom/android/settings_ex/GestureTilt;->initView()V
 
-    .line 89
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->icon:Landroid/widget/ImageView;
 
     new-instance v1, Lcom/android/settings_ex/GestureTilt$2;
@@ -866,15 +778,12 @@
     .locals 3
 
     .prologue
-    .line 128
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 129
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/GestureTilt;->move:Z
 
-    .line 130
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mTextView:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureTilt;->getResources()Landroid/content/res/Resources;
@@ -889,17 +798,14 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 131
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mSm:Landroid/hardware/SensorManager;
 
     invoke-virtual {v0, p0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
-    .line 132
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/GestureTilt;->stopAnimation(Landroid/graphics/drawable/AnimationDrawable;)V
 
-    .line 133
     return-void
 .end method
 
@@ -907,10 +813,8 @@
     .locals 4
 
     .prologue
-    .line 121
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 122
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mHandler:Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureTilt;->mRunnable:Ljava/lang/Runnable;
@@ -919,7 +823,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 123
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt;->mSm:Landroid/hardware/SensorManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureTilt;->mSm:Landroid/hardware/SensorManager;
@@ -989,18 +892,15 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 324
     iget v1, p0, Lcom/android/settings_ex/GestureTilt;->count:I
 
     iget v2, p0, Lcom/android/settings_ex/GestureTilt;->divide:I
 
     if-ge v1, v2, :cond_0
 
-    .line 359
     :goto_0
     return-void
 
-    .line 326
     :cond_0
     iget-object v1, p1, Landroid/hardware/SensorEvent;->values:[F
 
@@ -1008,39 +908,32 @@
 
     float-to-int v0, v1
 
-    .line 328
     iget-boolean v1, p0, Lcom/android/settings_ex/GestureTilt;->move:Z
 
     if-eqz v1, :cond_1
 
-    .line 329
     if-ge v0, v6, :cond_2
 
     iget v1, p0, Lcom/android/settings_ex/GestureTilt;->page:I
 
     if-nez v1, :cond_2
 
-    .line 330
     invoke-direct {p0}, Lcom/android/settings_ex/GestureTilt;->next()V
 
-    .line 331
     iput v4, p0, Lcom/android/settings_ex/GestureTilt;->page:I
 
-    .line 333
     const-string v1, "JJJJJ"
 
     const-string v2, "next"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 356
     :cond_1
     :goto_1
     iput v7, p0, Lcom/android/settings_ex/GestureTilt;->count:I
 
     goto :goto_0
 
-    .line 335
     :cond_2
     if-ge v0, v6, :cond_3
 
@@ -1048,13 +941,10 @@
 
     if-ne v1, v4, :cond_3
 
-    .line 336
     invoke-direct {p0}, Lcom/android/settings_ex/GestureTilt;->next()V
 
-    .line 337
     iput v5, p0, Lcom/android/settings_ex/GestureTilt;->page:I
 
-    .line 339
     const-string v1, "JJJJJ"
 
     const-string v2, "next"
@@ -1071,13 +961,10 @@
 
     if-ne v1, v5, :cond_4
 
-    .line 343
     invoke-direct {p0}, Lcom/android/settings_ex/GestureTilt;->previous()V
 
-    .line 344
     iput v4, p0, Lcom/android/settings_ex/GestureTilt;->page:I
 
-    .line 346
     const-string v1, "JJJJJ"
 
     const-string v2, "previous"
@@ -1094,13 +981,10 @@
 
     if-ne v1, v4, :cond_1
 
-    .line 350
     invoke-direct {p0}, Lcom/android/settings_ex/GestureTilt;->previous()V
 
-    .line 351
     iput v7, p0, Lcom/android/settings_ex/GestureTilt;->page:I
 
-    .line 353
     const-string v1, "JJJJJ"
 
     const-string v2, "previous"
@@ -1119,124 +1003,100 @@
 
     const v3, 0x7f020073
 
-    .line 281
     packed-switch p1, :pswitch_data_0
 
-    .line 304
     const v1, 0x7f0b00b3
 
-    .line 305
     .local v1, id:I
     const v0, 0x7f02007e
 
-    .line 306
     .local v0, drawable:I
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation0:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 307
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation1:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 308
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation2:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 310
     :goto_0
     invoke-direct {p0, v1, v0}, Lcom/android/settings_ex/GestureTilt;->setAnimationView(II)V
 
-    .line 311
     return-void
 
-    .line 283
     .end local v0           #drawable:I
     .end local v1           #id:I
     :pswitch_0
     const v1, 0x7f0b00b3
 
-    .line 284
     .restart local v1       #id:I
     const v0, 0x7f02007e
 
-    .line 285
     .restart local v0       #drawable:I
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation0:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 286
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation1:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 287
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation2:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_0
 
-    .line 290
     .end local v0           #drawable:I
     .end local v1           #id:I
     :pswitch_1
     const v1, 0x7f0b00c4
 
-    .line 291
     .restart local v1       #id:I
     const v0, 0x7f02007c
 
-    .line 292
     .restart local v0       #drawable:I
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation0:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 293
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation1:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 294
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation2:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_0
 
-    .line 297
     .end local v0           #drawable:I
     .end local v1           #id:I
     :pswitch_2
     const v1, 0x7f0b00c5
 
-    .line 298
     .restart local v1       #id:I
     const v0, 0x7f02007d
 
-    .line 299
     .restart local v0       #drawable:I
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation0:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 300
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation1:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 301
     iget-object v2, p0, Lcom/android/settings_ex/GestureTilt;->navigation2:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_0
 
-    .line 281
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

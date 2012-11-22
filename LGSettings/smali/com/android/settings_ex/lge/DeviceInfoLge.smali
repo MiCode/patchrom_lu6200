@@ -12,7 +12,6 @@
     .locals 0
 
     .prologue
-    .line 25
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
     return-void
@@ -118,16 +117,13 @@
 
     move-result v1
 
-    .line 48
     .local v1, activePhoneType:I
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 50
     const v3, 0x7f060012
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/lge/DeviceInfoLge;->addPreferencesFromResource(I)V
 
-    .line 52
     const-string v3, "phoneidentity"
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/lge/DeviceInfoLge;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -136,7 +132,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/lge/DeviceInfoLge;->mAboutPhonePreference:Landroid/preference/Preference;
 
-    .line 61
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/DeviceInfoLge;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
@@ -147,12 +142,10 @@
 
     invoke-direct {p0, v3, v4, v5}, Lcom/android/settings_ex/lge/DeviceInfoLge;->removePreferenceIfPropertyMissing(Landroid/preference/PreferenceGroup;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 64
     const/4 v3, 0x2
 
     if-eq v3, v1, :cond_0
 
-    .line 65
     iget-object v3, p0, Lcom/android/settings_ex/lge/DeviceInfoLge;->mAboutPhonePreference:Landroid/preference/Preference;
 
     const v4, 0x7f08030b
@@ -163,13 +156,11 @@
 
     invoke-virtual {v3, v4}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 75
     :goto_0
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/DeviceInfoLge;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    .line 77
     .local v0, act:Landroid/app/Activity;
     const-string v3, "container"
 
@@ -179,46 +170,37 @@
 
     check-cast v2, Landroid/preference/PreferenceGroup;
 
-    .line 78
     .local v2, parentPreference:Landroid/preference/PreferenceGroup;
     const-string v3, "terms"
 
     invoke-static {v0, v2, v3, v6}, Lcom/android/settings_ex/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
-    .line 80
     const-string v3, "license"
 
     invoke-static {v0, v2, v3, v6}, Lcom/android/settings_ex/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
-    .line 82
     const-string v3, "copyright"
 
     invoke-static {v0, v2, v3, v6}, Lcom/android/settings_ex/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
-    .line 84
     const-string v3, "team"
 
     invoke-static {v0, v2, v3, v6}, Lcom/android/settings_ex/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
-    .line 88
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/DeviceInfoLge;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
-    .line 89
     const-string v3, "system_update_settings"
 
     invoke-static {v0, v2, v3, v6}, Lcom/android/settings_ex/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
-    .line 92
     const-string v3, "contributors"
 
     invoke-static {v0, v2, v3, v6}, Lcom/android/settings_ex/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
-    .line 94
     return-void
 
-    .line 68
     .end local v0           #act:Landroid/app/Activity;
     .end local v2           #parentPreference:Landroid/preference/PreferenceGroup;
     :cond_0

@@ -108,7 +108,6 @@
     .parameter "x0"
 
     .prologue
-    .line 48
     iget-object v0, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mServiceList:Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;
 
     return-object v0
@@ -162,19 +161,16 @@
     .parameter "extra"
 
     .prologue
-    .line 248
     const-string v6, "DiscoverServicesActivity"
 
     const-string v7, "processDiscoverEvent"
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 250
     iget-object v6, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mServiceList:Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;
 
     invoke-virtual {v6}, Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;->removeAll()V
 
-    .line 251
     const-string v6, "android.bluetooth.device.extra.DEVICE"
 
     invoke-virtual {p1, v6}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
@@ -438,17 +434,14 @@
 
     invoke-virtual {v0, v4}, Landroid/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    .line 309
     iget v4, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mRecNum:I
 
     invoke-static {p1, v0, p2, v4}, Lcom/broadcom/bt/app/settings/BluetoothDid;->getDidRecord(Landroid/content/Context;Landroid/preference/Preference;Landroid/os/Bundle;I)V
 
-    .line 310
     iget-object v4, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mDidList:Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;
 
     invoke-virtual {v4, v0}, Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;->addPreference(Landroid/preference/Preference;)Z
 
-    .line 312
     iget v4, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mRecNum:I
 
     add-int/lit8 v4, v4, 0x1
@@ -473,42 +466,35 @@
     .locals 3
 
     .prologue
-    .line 236
     const-string v1, "DiscoverServicesActivity"
 
     const-string v2, "discoverServices"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 237
     iget-object v1, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mDidList:Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;->setProgress(Z)V
 
-    .line 238
     iget-object v1, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mServiceList:Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;->setProgress(Z)V
 
-    .line 241
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v0
 
-    .line 242
     .local v0, adapter:Landroid/bluetooth/BluetoothAdapter;
     if-eqz v0, :cond_0
 
-    .line 243
     iget-object v1, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mDeviceAddress:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/bluetooth/BluetoothAdapter;->getRemoteServices(Ljava/lang/String;)Z
 
-    .line 245
     :cond_0
     return-void
 .end method
@@ -517,40 +503,33 @@
     .locals 3
 
     .prologue
-    .line 270
     iget-object v1, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mDidList:Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;
 
     const v2, 0x7f080a84
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;->setTitle(I)V
 
-    .line 271
     iget-object v1, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mDidList:Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;->setProgress(Z)V
 
-    .line 272
     iget-object v1, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mDidList:Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/ProgressCategoryServiceDiscovery;->removeAll()V
 
-    .line 274
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v0
 
-    .line 275
     .local v0, adapter:Landroid/bluetooth/BluetoothAdapter;
     if-eqz v0, :cond_0
 
-    .line 276
     iget-object v1, p0, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->mDeviceAddress:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/bluetooth/BluetoothAdapter;->fetchRemoteDiInfo(Ljava/lang/String;)V
 
-    .line 278
     :cond_0
     return-void
 .end method
@@ -560,26 +539,20 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 126
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 129
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
 
     move-result-object v2
 
-    .line 130
     .local v2, localManager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
     if-nez v2, :cond_0
 
-    .line 131
     invoke-virtual {p0}, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->finish()V
 
-    .line 176
     :goto_0
     return-void
 
-    .line 136
     :cond_0
     invoke-virtual {p0}, Lcom/broadcom/bt/app/settings/DiscoverServicesActivity;->getIntent()Landroid/content/Intent;
 

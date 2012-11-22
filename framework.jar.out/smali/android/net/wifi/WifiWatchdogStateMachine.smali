@@ -1442,14 +1442,13 @@
     .locals 3
 
     .prologue
-    .line 392
     const/4 v0, 0x0
 
     return v0
 
     iget-object v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine;->mContentResolver:Landroid/content/ContentResolver;
 
-    const-string/jumbo v1, "wifi_watchdog_on"
+    const-string v1, "wifi_watchdog_on"
 
     const/4 v2, 0x1
 

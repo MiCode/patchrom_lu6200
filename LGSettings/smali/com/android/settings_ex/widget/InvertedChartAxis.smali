@@ -18,13 +18,10 @@
     .parameter "wrapped"
 
     .prologue
-    .line 29
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 30
     iput-object p1, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings_ex/widget/ChartAxis;
 
-    .line 31
     return-void
 .end method
 
@@ -37,7 +34,6 @@
     .parameter "value"
 
     .prologue
-    .line 56
     iget-object v0, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings_ex/widget/ChartAxis;
 
     invoke-interface {v0, p1, p2, p3, p4}, Lcom/android/settings_ex/widget/ChartAxis;->buildLabel(Landroid/content/res/Resources;Landroid/text/SpannableStringBuilder;J)J
@@ -52,7 +48,6 @@
     .parameter "value"
 
     .prologue
-    .line 46
     iget v0, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mSize:F
 
     iget-object v1, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings_ex/widget/ChartAxis;
@@ -71,7 +66,6 @@
     .parameter "point"
 
     .prologue
-    .line 51
     iget-object v0, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings_ex/widget/ChartAxis;
 
     iget v1, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mSize:F
@@ -89,14 +83,12 @@
     .locals 4
 
     .prologue
-    .line 61
     iget-object v2, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings_ex/widget/ChartAxis;
 
     invoke-interface {v2}, Lcom/android/settings_ex/widget/ChartAxis;->getTickPoints()[F
 
     move-result-object v1
 
-    .line 62
     .local v1, points:[F
     const/4 v0, 0x0
 
@@ -106,7 +98,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 63
     iget v2, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mSize:F
 
     aget v3, v1, v0
@@ -131,7 +122,6 @@
     .parameter "max"
 
     .prologue
-    .line 35
     iget-object v0, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings_ex/widget/ChartAxis;
 
     invoke-interface {v0, p1, p2, p3, p4}, Lcom/android/settings_ex/widget/ChartAxis;->setBounds(JJ)Z
@@ -146,10 +136,8 @@
     .parameter "size"
 
     .prologue
-    .line 40
     iput p1, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mSize:F
 
-    .line 41
     iget-object v0, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings_ex/widget/ChartAxis;
 
     invoke-interface {v0, p1}, Lcom/android/settings_ex/widget/ChartAxis;->setSize(F)Z
@@ -164,7 +152,6 @@
     .parameter "value"
 
     .prologue
-    .line 70
     iget-object v0, p0, Lcom/android/settings_ex/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings_ex/widget/ChartAxis;
 
     invoke-interface {v0, p1, p2}, Lcom/android/settings_ex/widget/ChartAxis;->shouldAdjustAxis(J)I

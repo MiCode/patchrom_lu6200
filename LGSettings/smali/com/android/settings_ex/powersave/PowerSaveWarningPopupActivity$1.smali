@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 54
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -271,14 +270,12 @@
     #setter for: Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->noActivation:Z
     invoke-static {v7, v8}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->access$402(Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;Z)Z
 
-    .line 85
     move-object/from16 v0, p0
 
     iget-object v7, v0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;
 
     invoke-virtual {v7}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->finish()V
 
-    .line 97
     .end local v2           #battery:I
     .end local v3           #level:I
     .end local v4           #plugType:I

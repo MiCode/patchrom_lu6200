@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 117
     iput-object p1, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$1;->this$0:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,14 +38,12 @@
     .parameter "msg"
 
     .prologue
-    .line 120
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 121
     iget-object v1, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$1;->this$0:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;

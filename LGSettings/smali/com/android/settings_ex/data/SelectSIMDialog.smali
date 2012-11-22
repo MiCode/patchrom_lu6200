@@ -23,30 +23,24 @@
     .locals 1
 
     .prologue
-    .line 22
     invoke-direct {p0}, Lcom/android/internal/app/AlertActivity;-><init>()V
 
-    .line 23
     const-string v0, "SelectSIMDialog"
 
     iput-object v0, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->TAG:Ljava/lang/String;
 
-    .line 25
     const-string v0, "android.intent.action.SIM_TYPE_CHANGED"
 
     iput-object v0, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->SIM_TYPE_CHANGED:Ljava/lang/String;
 
-    .line 27
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mClickedPos:I
 
-    .line 28
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mCancelable:Z
 
-    .line 87
     new-instance v0, Lcom/android/settings_ex/data/SelectSIMDialog$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/data/SelectSIMDialog$1;-><init>(Lcom/android/settings_ex/data/SelectSIMDialog;)V
@@ -62,7 +56,6 @@
     .parameter "x1"
 
     .prologue
-    .line 22
     iput p1, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mClickedPos:I
 
     return p1
@@ -158,25 +151,21 @@
     .locals 3
 
     .prologue
-    .line 151
     const-string v1, "SelectSIMDialog"
 
     const-string v2, "send intent SIM Type Changed"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 153
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.SIM_TYPE_CHANGED"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 154
     .local v0, intent:Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/data/SelectSIMDialog;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 155
     return-void
 .end method
 
@@ -246,41 +235,34 @@
     .parameter
 
     .prologue
-    .line 159
     const-string v0, "SelectSIMDialog"
 
     const-string v1, "start startDataEnableDialog"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 160
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.DATA_ENABLE_DIALOG"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 161
     const-string v1, "cancelable"
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 162
     const-class v1, Lcom/android/settings_ex/data/DataEnableDialog;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 163
     const/high16 v1, 0x1000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 164
     invoke-virtual {p1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 165
     return-void
 .end method
 
@@ -290,15 +272,12 @@
     .locals 1
 
     .prologue
-    .line 81
     iget-boolean v0, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mCancelable:Z
 
     if-eqz v0, :cond_0
 
-    .line 82
     invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onBackPressed()V
 
-    .line 84
     :cond_0
     return-void
 .end method
@@ -334,32 +313,25 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 97
     iget v0, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mClickedPos:I
 
     invoke-direct {p0, p0, v0}, Lcom/android/settings_ex/data/SelectSIMDialog;->setSIMTypeDB(Landroid/content/Context;I)V
 
-    .line 98
     invoke-direct {p0}, Lcom/android/settings_ex/data/SelectSIMDialog;->sendIntentToSIMTypeChange()V
 
-    .line 99
     const/4 v0, -0x1
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/data/SelectSIMDialog;->setResult(I)V
 
-    .line 102
     iget-boolean v0, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mCancelable:Z
 
     if-nez v0, :cond_0
 
-    .line 103
     invoke-direct {p0, p0}, Lcom/android/settings_ex/data/SelectSIMDialog;->startDataEnableDialog(Landroid/content/Context;)V
 
-    .line 106
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings_ex/data/SelectSIMDialog;->finish()V
 
-    .line 107
     return-void
 .end method
 
@@ -372,10 +344,8 @@
 
     const/4 v6, 0x1
 
-    .line 33
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 36
     invoke-static {p0}, Lcom/android/settings_ex/Utils;->isVodafoneUKSIM(Landroid/content/Context;)Z
 
     move-result v4
@@ -388,15 +358,12 @@
 
     if-nez v4, :cond_1
 
-    .line 37
     invoke-virtual {p0}, Lcom/android/settings_ex/data/SelectSIMDialog;->finish()V
 
-    .line 77
     :cond_0
     :goto_0
     return-void
 
-    .line 42
     :cond_1
     const v4, 0x7f040038
 
@@ -463,10 +430,8 @@
 
     iput v4, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mClickedPos:I
 
-    .line 61
     iget-object v3, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    .line 62
     .local v3, p:Lcom/android/internal/app/AlertController$AlertParams;
     const v4, 0x7f080903
 
@@ -476,26 +441,20 @@
 
     iput-object v4, v3, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    .line 63
     iput-object v2, v3, Lcom/android/internal/app/AlertController$AlertParams;->mItems:[Ljava/lang/CharSequence;
 
-    .line 64
     iget-object v4, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mItemClickListener:Landroid/content/DialogInterface$OnClickListener;
 
     iput-object v4, v3, Lcom/android/internal/app/AlertController$AlertParams;->mOnClickListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 65
     iput-object v0, v3, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    .line 66
     iget v4, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mClickedPos:I
 
     iput v4, v3, Lcom/android/internal/app/AlertController$AlertParams;->mCheckedItem:I
 
-    .line 67
     iput-boolean v6, v3, Lcom/android/internal/app/AlertController$AlertParams;->mIsSingleChoice:Z
 
-    .line 68
     const v4, 0x7f08044e
 
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/data/SelectSIMDialog;->getString(I)Ljava/lang/String;
@@ -504,13 +463,10 @@
 
     iput-object v4, v3, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    .line 69
     iput-object p0, v3, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 71
     invoke-virtual {p0}, Lcom/android/settings_ex/data/SelectSIMDialog;->setupAlert()V
 
-    .line 73
     invoke-virtual {p0}, Lcom/android/settings_ex/data/SelectSIMDialog;->getIntent()Landroid/content/Intent;
 
     move-result-object v4
@@ -523,24 +479,20 @@
 
     iput-boolean v4, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mCancelable:Z
 
-    .line 74
     iget-boolean v4, p0, Lcom/android/settings_ex/data/SelectSIMDialog;->mCancelable:Z
 
     if-nez v4, :cond_0
 
-    .line 75
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/data/SelectSIMDialog;->setFinishOnTouchOutside(Z)V
 
     goto :goto_0
 
-    .line 53
     .end local v3           #p:Lcom/android/internal/app/AlertController$AlertParams;
     :cond_2
     const v4, 0x7f080906
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setText(I)V
 
-    .line 54
     const v4, 0x7f080904
 
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/data/SelectSIMDialog;->getText(I)Ljava/lang/CharSequence;

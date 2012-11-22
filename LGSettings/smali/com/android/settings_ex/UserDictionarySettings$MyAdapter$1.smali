@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 560
     iput-object p1, p0, Lcom/android/settings_ex/UserDictionarySettings$MyAdapter$1;->this$0:Lcom/android/settings_ex/UserDictionarySettings$MyAdapter;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -46,26 +45,22 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 563
     instance-of v1, p1, Landroid/widget/ImageView;
 
     if-eqz v1, :cond_0
 
     if-nez p3, :cond_0
 
-    .line 564
     iget-object v1, p0, Lcom/android/settings_ex/UserDictionarySettings$MyAdapter$1;->this$0:Lcom/android/settings_ex/UserDictionarySettings$MyAdapter;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 565
     invoke-interface {p2, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 569
     :goto_0
     return v0
 

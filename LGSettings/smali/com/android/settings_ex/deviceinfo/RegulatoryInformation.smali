@@ -21,15 +21,12 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 38
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 40
     const v0, 0x7f04004b
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/deviceinfo/RegulatoryInformation;->setContentView(I)V
 
-    .line 41
     return-void
 .end method
 

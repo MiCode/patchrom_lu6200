@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 61
     iput-object p1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler$1;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -55,7 +54,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 67
     iget-object v1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler$1;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler;
 
     const-string v2, "wifi_p2p_state"

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 47
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -80,7 +79,6 @@
 
     move-result v1
 
-    .line 59
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     mul-int/lit8 v0, v0, 0x64
@@ -90,7 +88,6 @@
     #setter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mCurrentBatteryLevel:I
     invoke-static {v2, v0}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$002(Lcom/android/settings_ex/powersave/PowerSaveService;I)I
 
-    .line 60
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->getPowerSaveModeValue(Landroid/content/Context;)I
@@ -98,7 +95,6 @@
 
     move-result v1
 
-    .line 62
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     const-string v2, "plugged"
@@ -189,7 +185,6 @@
 
     invoke-static {v2, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 69
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z
@@ -208,13 +203,11 @@
 
     if-lez v0, :cond_3
 
-    .line 71
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->startNotification(I)V
     invoke-static {v0, v8}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$400(Lcom/android/settings_ex/powersave/PowerSaveService;I)V
 
-    .line 74
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->getPowerSaveStarted()I
@@ -224,7 +217,6 @@
 
     if-ne v0, v5, :cond_0
 
-    .line 75
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
@@ -245,36 +237,30 @@
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSave;->updatePowerControl()V
 
-    .line 82
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #setter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z
     invoke-static {v0, v4}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$302(Lcom/android/settings_ex/powersave/PowerSaveService;Z)Z
 
-    .line 83
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->setActivationState(Z)V
     invoke-static {v0, v4}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$700(Lcom/android/settings_ex/powersave/PowerSaveService;Z)V
 
-    .line 84
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->setPowerSaveStarted(I)V
     invoke-static {v0, v6}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$800(Lcom/android/settings_ex/powersave/PowerSaveService;I)V
 
-    .line 199
     :cond_1
     :goto_1
     return-void
 
-    .line 64
     :cond_2
     const-string v0, "false, "
 
     goto :goto_0
 
-    .line 85
     :cond_3
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
@@ -285,7 +271,6 @@
 
     if-lez v0, :cond_4
 
-    .line 86
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->startNotification(I)V
@@ -304,7 +289,6 @@
 
     if-nez v0, :cond_1
 
-    .line 89
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mCurrentBatteryLevel:I
@@ -314,7 +298,6 @@
 
     if-gt v0, v1, :cond_5
 
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z
@@ -333,22 +316,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 91
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 92
     invoke-virtual {v0, v7}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 93
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/powersave/PowerSaveService;->startActivity(Landroid/content/Intent;)V
 
-    .line 94
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #setter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z
@@ -365,7 +344,6 @@
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->startNotification(I)V
     invoke-static {v0, v2}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$400(Lcom/android/settings_ex/powersave/PowerSaveService;I)V
 
-    .line 98
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z
@@ -384,7 +362,6 @@
 
     if-le v0, v1, :cond_1
 
-    .line 102
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->getPowerSaveStarted()I
@@ -394,7 +371,6 @@
 
     if-ne v0, v5, :cond_6
 
-    .line 103
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
@@ -404,26 +380,22 @@
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSave;->doRestore()V
 
-    .line 107
     :cond_6
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #setter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z
     invoke-static {v0, v4}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$302(Lcom/android/settings_ex/powersave/PowerSaveService;Z)Z
 
-    .line 109
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->setActivationState(Z)V
     invoke-static {v0, v4}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$700(Lcom/android/settings_ex/powersave/PowerSaveService;Z)V
 
-    .line 110
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->setPowerSaveStarted(I)V
     invoke-static {v0, v6}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$800(Lcom/android/settings_ex/powersave/PowerSaveService;I)V
 
-    .line 113
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
@@ -445,14 +417,12 @@
 
     if-eqz v1, :cond_a
 
-    .line 118
     const-string v0, "PowerSaveService"
 
     const-string v1, "PowerSave.ACTION_POWERSAVE_MODE_CHANGED received"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 119
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->getPowerSaveModeValue(Landroid/content/Context;)I
@@ -460,7 +430,6 @@
 
     move-result v0
 
-    .line 121
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mCurrentBatteryLevel:I
@@ -479,7 +448,6 @@
 
     if-nez v1, :cond_1
 
-    .line 122
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mCurrentBatteryLevel:I
@@ -489,7 +457,6 @@
 
     if-gt v1, v0, :cond_8
 
-    .line 123
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z
@@ -508,22 +475,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 124
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 125
     invoke-virtual {v0, v7}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 126
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/powersave/PowerSaveService;->startActivity(Landroid/content/Intent;)V
 
-    .line 128
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #setter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z
@@ -540,7 +503,6 @@
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->startNotification(I)V
     invoke-static {v1, v2}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$400(Lcom/android/settings_ex/powersave/PowerSaveService;I)V
 
-    .line 132
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z
@@ -559,7 +521,6 @@
 
     if-le v1, v0, :cond_1
 
-    .line 136
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->getPowerSaveStarted()I
@@ -569,7 +530,6 @@
 
     if-ne v0, v5, :cond_9
 
-    .line 137
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
@@ -579,26 +539,22 @@
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSave;->doRestore()V
 
-    .line 141
     :cond_9
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #setter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z
     invoke-static {v0, v4}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$302(Lcom/android/settings_ex/powersave/PowerSaveService;Z)Z
 
-    .line 143
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->setActivationState(Z)V
     invoke-static {v0, v4}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$700(Lcom/android/settings_ex/powersave/PowerSaveService;Z)V
 
-    .line 144
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->setPowerSaveStarted(I)V
     invoke-static {v0, v6}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$800(Lcom/android/settings_ex/powersave/PowerSaveService;I)V
 
-    .line 147
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
@@ -620,17 +576,14 @@
 
     if-eqz v1, :cond_d
 
-    .line 153
     const-string v0, "powersave_activation"
 
     invoke-virtual {p2, v0, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v0
 
-    .line 154
     if-ne v0, v5, :cond_b
 
-    .line 155
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
@@ -640,31 +593,26 @@
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSave;->doPowerSave()V
 
-    .line 158
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->endNotification()V
     invoke-static {v0}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$1000(Lcom/android/settings_ex/powersave/PowerSaveService;)V
 
-    .line 159
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->startNotification(I)V
     invoke-static {v0, v5}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$400(Lcom/android/settings_ex/powersave/PowerSaveService;I)V
 
-    .line 160
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->setPowerSaveStarted(I)V
     invoke-static {v0, v5}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$800(Lcom/android/settings_ex/powersave/PowerSaveService;I)V
 
-    .line 162
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->setActivationState(Z)V
     invoke-static {v0, v5}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$700(Lcom/android/settings_ex/powersave/PowerSaveService;Z)V
 
-    .line 165
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
@@ -676,14 +624,12 @@
 
     goto/16 :goto_1
 
-    .line 167
     :cond_b
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->endNotification()V
     invoke-static {v0}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$1000(Lcom/android/settings_ex/powersave/PowerSaveService;)V
 
-    .line 169
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSaveService;->getContentResolver()Landroid/content/ContentResolver;
@@ -698,12 +644,10 @@
 
     move-result v0
 
-    .line 170
     const/16 v1, 0x64
 
     if-ne v0, v1, :cond_c
 
-    .line 171
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSaveService;->getContentResolver()Landroid/content/ContentResolver;
@@ -714,21 +658,18 @@
 
     invoke-static {v0, v1, v4}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 172
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSaveService;->stopSelf()V
 
     goto/16 :goto_1
 
-    .line 174
     :cond_c
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->startNotification(I)V
     invoke-static {v0, v4}, Lcom/android/settings_ex/powersave/PowerSaveService;->access$400(Lcom/android/settings_ex/powersave/PowerSaveService;I)V
 
-    .line 175
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->setPowerSaveStarted(I)V
@@ -746,7 +687,6 @@
 
     if-eqz v1, :cond_e
 
-    .line 181
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->getPowerSaveStarted()I
@@ -780,7 +720,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 184
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->startNotification(I)V
@@ -798,7 +737,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 190
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveService;->checkCondition()Z
@@ -808,22 +746,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 191
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 192
     invoke-virtual {v0, v7}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 193
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/powersave/PowerSaveService;->startActivity(Landroid/content/Intent;)V
 
-    .line 195
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveService$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     #setter for: Lcom/android/settings_ex/powersave/PowerSaveService;->mPowerSaveStarted:Z

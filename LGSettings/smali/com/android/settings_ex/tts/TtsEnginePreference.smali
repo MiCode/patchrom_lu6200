@@ -38,50 +38,40 @@
     .parameter "prefActivity"
 
     .prologue
-    .line 97
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    .line 87
     new-instance v0, Lcom/android/settings_ex/tts/TtsEnginePreference$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/tts/TtsEnginePreference$1;-><init>(Lcom/android/settings_ex/tts/TtsEnginePreference;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mRadioChangeListener:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
-    .line 98
     const v0, 0x7f04007f
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/tts/TtsEnginePreference;->setLayoutResource(I)V
 
-    .line 100
     iput-object p3, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
 
-    .line 101
     iput-object p4, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mPreferenceActivity:Landroid/preference/PreferenceActivity;
 
-    .line 102
     iput-object p2, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mEngineInfo:Landroid/speech/tts/TextToSpeech$EngineInfo;
 
-    .line 103
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mPreventRadioButtonCallbacks:Z
 
-    .line 105
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mEngineInfo:Landroid/speech/tts/TextToSpeech$EngineInfo;
 
     iget-object v0, v0, Landroid/speech/tts/TextToSpeech$EngineInfo;->name:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/tts/TtsEnginePreference;->setKey(Ljava/lang/String;)V
 
-    .line 106
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mEngineInfo:Landroid/speech/tts/TextToSpeech$EngineInfo;
 
     iget-object v0, v0, Landroid/speech/tts/TextToSpeech$EngineInfo;->label:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/tts/TtsEnginePreference;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 107
     return-void
 .end method
 
@@ -92,7 +82,6 @@
     .parameter "x2"
 
     .prologue
-    .line 35
     invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/tts/TtsEnginePreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
 
     return-void
@@ -103,7 +92,6 @@
     .parameter "x0"
 
     .prologue
-    .line 35
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
 
     return-object v0
@@ -115,7 +103,6 @@
     .parameter "x1"
 
     .prologue
-    .line 35
     invoke-direct {p0, p1}, Lcom/android/settings_ex/tts/TtsEnginePreference;->updateSettingsIconViews(Z)V
 
     return-void
@@ -126,7 +113,6 @@
     .parameter "x0"
 
     .prologue
-    .line 35
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mRadioButton:Landroid/widget/RadioButton;
 
     return-object v0
@@ -138,7 +124,6 @@
     .parameter "x1"
 
     .prologue
-    .line 35
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/tts/TtsEnginePreference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v0
@@ -151,7 +136,6 @@
     .parameter "x0"
 
     .prologue
-    .line 35
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mEngineInfo:Landroid/speech/tts/TextToSpeech$EngineInfo;
 
     return-object v0
@@ -162,7 +146,6 @@
     .parameter "x0"
 
     .prologue
-    .line 35
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mVoiceCheckData:Landroid/content/Intent;
 
     return-object v0
@@ -173,7 +156,6 @@
     .parameter "x0"
 
     .prologue
-    .line 35
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mPreferenceActivity:Landroid/preference/PreferenceActivity;
 
     return-object v0
@@ -222,20 +204,16 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 226
     iget-boolean v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mPreventRadioButtonCallbacks:Z
 
     if-eqz v0, :cond_0
 
-    .line 242
     :goto_0
     return-void
 
-    .line 230
     :cond_0
     if-eqz p2, :cond_2
 
-    .line 231
     const-string v0, "TtsEnginePreference"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -264,7 +242,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 232
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
 
     invoke-interface {v0}, Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;->getCurrentChecked()Landroid/widget/Checkable;
@@ -273,7 +250,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 233
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
 
     invoke-interface {v0}, Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;->getCurrentChecked()Landroid/widget/Checkable;
@@ -284,13 +260,11 @@
 
     invoke-interface {v0, v1}, Landroid/widget/Checkable;->setChecked(Z)V
 
-    .line 235
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
 
     invoke-interface {v0, p1}, Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;->setCurrentChecked(Landroid/widget/Checkable;)V
 
-    .line 236
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/tts/TtsEnginePreference;->getKey()Ljava/lang/String;
@@ -299,7 +273,6 @@
 
     invoke-interface {v0, v1}, Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;->setCurrentKey(Ljava/lang/String;)V
 
-    .line 237
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
 
     invoke-interface {v0}, Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;->getCurrentKey()Ljava/lang/String;
@@ -320,42 +293,34 @@
     .parameter "checked"
 
     .prologue
-    .line 204
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSettingsIcon:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
-    .line 205
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSettingsIcon:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 206
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSettingsIcon:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setClickable(Z)V
 
-    .line 207
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSettingsIcon:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setFocusable(Z)V
 
-    .line 209
     if-nez p1, :cond_1
 
-    .line 210
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSettingsIcon:Landroid/view/View;
 
     const v1, 0x3ecccccd
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
 
-    .line 215
     :cond_0
     :goto_0
     return-void
 
-    .line 212
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSettingsIcon:Landroid/view/View;
 
@@ -378,12 +343,10 @@
 
     const/4 v7, 0x0
 
-    .line 111
     iget-object v5, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
 
     if-nez v5, :cond_0
 
-    .line 112
     new-instance v5, Ljava/lang/IllegalStateException;
 
     const-string v6, "Call to getView() before a call tosetSharedState()"
@@ -408,13 +371,11 @@
 
     check-cast v1, Landroid/widget/RadioButton;
 
-    .line 118
     .local v1, rb:Landroid/widget/RadioButton;
     iget-object v5, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mRadioChangeListener:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     invoke-virtual {v1, v5}, Landroid/widget/RadioButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 122
     invoke-virtual {p0}, Lcom/android/settings_ex/tts/TtsEnginePreference;->getKey()Ljava/lang/String;
 
     move-result-object v5
@@ -467,35 +428,27 @@
 
     invoke-static {v5, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 124
     if-eqz v0, :cond_1
 
-    .line 125
     iget-object v5, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
 
     invoke-interface {v5, v1}, Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;->setCurrentChecked(Landroid/widget/Checkable;)V
 
-    .line 128
     :cond_1
     iput-boolean v6, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mPreventRadioButtonCallbacks:Z
 
-    .line 129
     invoke-virtual {v1, v0}, Landroid/widget/RadioButton;->setChecked(Z)V
 
-    .line 130
     iput-boolean v7, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mPreventRadioButtonCallbacks:Z
 
-    .line 132
     iput-object v1, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mRadioButton:Landroid/widget/RadioButton;
 
-    .line 136
     const v5, 0x7f0b013f
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 137
     .local v2, textLayout:Landroid/view/View;
     new-instance v5, Lcom/android/settings_ex/tts/TtsEnginePreference$2;
 
@@ -527,7 +480,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSettingsIcon:Landroid/view/View;
 
-    .line 177
     iget-object v8, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSettingsIcon:Landroid/view/View;
 
     if-eqz v0, :cond_2
@@ -551,7 +503,6 @@
     :goto_1
     invoke-direct {p0, v6}, Lcom/android/settings_ex/tts/TtsEnginePreference;->updateSettingsIconViews(Z)V
 
-    .line 179
     iget-object v5, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mSettingsIcon:Landroid/view/View;
 
     new-instance v6, Lcom/android/settings_ex/tts/TtsEnginePreference$4;
@@ -624,10 +575,8 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 219
     iput-object p1, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mVoiceCheckData:Landroid/content/Intent;
 
-    .line 221
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference;->mRadioButton:Landroid/widget/RadioButton;
 
     invoke-virtual {v0}, Landroid/widget/RadioButton;->isChecked()Z

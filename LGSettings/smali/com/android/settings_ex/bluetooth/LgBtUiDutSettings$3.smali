@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 229
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -68,7 +67,6 @@
 
     if-nez v0, :cond_0
 
-    .line 234
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     const-string v1, "Please wait.\nEntering DUT mode."
@@ -76,7 +74,6 @@
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->onPleaseWaitDialog(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->access$500(Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;Ljava/lang/String;)V
 
-    .line 235
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mHandler:Landroid/os/Handler;
@@ -116,7 +113,6 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 241
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->onExitDUTMode()V

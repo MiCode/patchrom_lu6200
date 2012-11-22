@@ -25,20 +25,16 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 14
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 15
     const v3, 0x7f040089
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/RcseNotiView;->setContentView(I)V
 
-    .line 16
     invoke-virtual {p0}, Lcom/android/settings_ex/RcseNotiView;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 17
     .local v1, intent:Landroid/content/Intent;
     const-string v3, "url"
 
@@ -78,19 +74,15 @@
 
     invoke-virtual {v2, v3}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
-    .line 26
     iget-object v3, p0, Lcom/android/settings_ex/RcseNotiView;->URL:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
-    .line 27
     return-void
 
-    .line 21
     :catch_0
     move-exception v0
 
-    .line 23
     .local v0, e:Ljava/lang/NullPointerException;
     invoke-virtual {v0}, Ljava/lang/NullPointerException;->printStackTrace()V
 

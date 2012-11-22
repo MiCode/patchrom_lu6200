@@ -45,16 +45,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 55
     invoke-direct {p0}, Lcom/android/internal/app/AlertActivity;-><init>()V
 
-    .line 64
     iput-boolean v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mTemporaryKey:Z
 
-    .line 75
     iput-boolean v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mUserConfirmed:Z
 
-    .line 324
     return-void
 .end method
 
@@ -63,7 +59,6 @@
     .parameter "x0"
 
     .prologue
-    .line 55
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->onDecline()V
 
     return-void
@@ -74,7 +69,6 @@
     .parameter "x0"
 
     .prologue
-    .line 55
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->quitActivity()V
 
     return-void
@@ -90,14 +84,12 @@
 
     const v8, 0x7f0b002a
 
-    .line 175
     const-string v5, "BluetoothAuthorizeDialog"
 
     const-string v6, "createView"
 
     invoke-static {v5, v6}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 176
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v5
@@ -140,25 +132,21 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 182
     iget-boolean v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mTemporaryKey:Z
 
     if-eqz v5, :cond_0
 
-    .line 183
     invoke-virtual {v4, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/widget/CheckBox;
 
-    .line 192
     .local v1, checkbox:Landroid/widget/CheckBox;
     const/16 v5, 0x8
 
     invoke-virtual {v1, v5}, Landroid/widget/CheckBox;->setVisibility(I)V
 
-    .line 200
     .end local v1           #checkbox:Landroid/widget/CheckBox;
     :cond_0
     iget-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mService:Ljava/lang/String;
@@ -203,19 +191,15 @@
     .locals 5
 
     .prologue
-    .line 214
     iget-boolean v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mTemporaryKey:Z
 
     if-eqz v2, :cond_0
 
-    .line 215
     const/4 v1, 0x0
 
-    .line 219
     :goto_0
     return v1
 
-    .line 216
     :cond_0
     const v2, 0x7f0b002a
 
@@ -289,21 +273,17 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 226
     iget-boolean v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mUserConfirmed:Z
 
     if-eqz v1, :cond_1
 
-    .line 247
     :cond_0
     :goto_0
     return-void
 
-    .line 229
     :cond_1
     iput-boolean v4, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mUserConfirmed:Z
 
-    .line 232
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mService:Ljava/lang/String;
 
     const-string v2, "service_pbap"
@@ -336,10 +316,8 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 236
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 240
     .end local v0           #intent:Landroid/content/Intent;
     :cond_2
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mDevice:Landroid/bluetooth/BluetoothDevice;
@@ -352,14 +330,12 @@
 
     invoke-virtual {v1, v2, v4, v3}, Landroid/bluetooth/BluetoothDevice;->authorizeService(Ljava/lang/String;ZZ)Z
 
-    .line 243
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->isAutoReply()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 244
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     invoke-virtual {v1, v4}, Landroid/bluetooth/BluetoothDevice;->setTrust(Z)Z
@@ -396,22 +372,18 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 253
     iget-boolean v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mUserConfirmed:Z
 
     if-eqz v1, :cond_0
 
-    .line 276
     :goto_0
     return-void
 
-    .line 256
     :cond_0
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mUserConfirmed:Z
 
-    .line 259
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mService:Ljava/lang/String;
 
     const-string v2, "service_pbap"
@@ -437,10 +409,8 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 262
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 266
     .end local v0           #intent:Landroid/content/Intent;
     :cond_1
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mDevice:Landroid/bluetooth/BluetoothDevice;
@@ -462,10 +432,8 @@
     .locals 0
 
     .prologue
-    .line 321
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->finish()V
 
-    .line 322
     return-void
 .end method
 
@@ -477,33 +445,27 @@
     .parameter "which"
 
     .prologue
-    .line 279
     const-string v0, "BluetoothAuthorizeDialog"
 
     const-string v1, "onClick"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 280
     packed-switch p2, :pswitch_data_0
 
-    .line 301
     :goto_0
     return-void
 
-    .line 288
     :pswitch_0
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->onAuthorize()V
 
     goto :goto_0
 
-    .line 298
     :pswitch_1
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->onDecline()V
 
     goto :goto_0
 
-    .line 280
     nop
 
     :pswitch_data_0
@@ -533,28 +495,23 @@
 
     const/4 v8, 0x0
 
-    .line 79
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 81
     const-string v5, "BluetoothAuthorizeDialog"
 
     const-string v6, "onCreate"
 
     invoke-static {v5, v6}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 83
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
-    .line 84
     .local v2, intent:Landroid/content/Intent;
     invoke-virtual {v2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 85
     .local v0, action:Ljava/lang/String;
     const-string v5, "broadcom.android.bluetooth.intent.action.AUTHORIZE_REQUEST"
 
@@ -587,14 +544,11 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 87
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->finish()V
 
-    .line 172
     :goto_0
     return-void
 
-    .line 91
     :cond_0
     const-string v5, "broadcom.android.bluetooth.intent.DEVICE"
 
@@ -624,7 +578,6 @@
 
     iput-boolean v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mTemporaryKey:Z
 
-    .line 95
     new-instance v5, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog$ListenForPairingCancel;
 
     const/4 v6, 0x0
@@ -633,23 +586,19 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mBrcvr:Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog$ListenForPairingCancel;
 
-    .line 97
     new-instance v1, Landroid/content/IntentFilter;
 
     invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 98
     .local v1, intFltr:Landroid/content/IntentFilter;
     const-string v5, "android.bluetooth.device.action.PAIRING_CANCEL"
 
     invoke-virtual {v1, v5}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 99
     const-string v5, "android.bluetooth.device.action.ACL_DISCONNECTED"
 
     invoke-virtual {v1, v5}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 101
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->getBaseContext()Landroid/content/Context;
 
     move-result-object v5
@@ -658,14 +607,12 @@
 
     invoke-virtual {v5, v6, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 103
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
 
     move-result-object v5
 
     iput-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mLocalManager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
 
-    .line 104
     iget-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mLocalManager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;->getContext()Landroid/content/Context;
@@ -674,7 +621,6 @@
 
     sput-object v5, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mContext:Landroid/content/Context;
 
-    .line 106
     iget-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mLocalManager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;->getBluetoothAdapter()Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;
@@ -683,7 +629,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mLocalAdapter:Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;
 
-    .line 108
     iget-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mLocalManager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
 
     invoke-virtual {v5}, Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;->getCachedDeviceManager()Lcom/android/settings_ex/bluetooth/CachedBluetoothDeviceManager;
@@ -748,7 +693,6 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 119
     iget-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mService:Ljava/lang/String;
 
     const-string v6, "service_pbap"
@@ -759,25 +703,21 @@
 
     if-eqz v5, :cond_1
 
-    .line 120
     const v5, 0x7f080a35
 
     invoke-virtual {p0, v5}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 150
     .local v4, svc:Ljava/lang/String;
     :goto_1
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    .line 151
     .local v3, p:Lcom/android/internal/app/AlertController$AlertParams;
     const v5, 0x1080351
 
     iput v5, v3, Lcom/android/internal/app/AlertController$AlertParams;->mIconId:I
 
-    .line 152
     const v5, 0x7f080a33
 
     const/4 v6, 0x1
@@ -794,7 +734,6 @@
 
     iput-object v5, v3, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    .line 153
     iget-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mName:Ljava/lang/String;
 
     invoke-direct {p0, v5, v4}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->createView(Ljava/lang/String;Ljava/lang/String;)Landroid/view/View;
@@ -824,18 +763,14 @@
 
     iput-object v5, v3, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonText:Ljava/lang/CharSequence;
 
-    .line 158
     iput-object p0, v3, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 160
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->setupAlert()V
 
-    .line 170
     iput-boolean v8, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mUserConfirmed:Z
 
     goto/16 :goto_0
 
-    .line 121
     .end local v3           #p:Lcom/android/internal/app/AlertController$AlertParams;
     .end local v4           #svc:Ljava/lang/String;
     :cond_1
@@ -849,7 +784,6 @@
 
     if-eqz v5, :cond_2
 
-    .line 124
     invoke-virtual {p0, v10}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v4
@@ -870,7 +804,6 @@
 
     if-eqz v5, :cond_3
 
-    .line 127
     invoke-virtual {p0, v10}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v4
@@ -937,7 +870,6 @@
 
     if-eqz v5, :cond_6
 
-    .line 133
     invoke-virtual {p0, v9}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v4
@@ -958,7 +890,6 @@
 
     if-eqz v5, :cond_7
 
-    .line 135
     invoke-virtual {p0, v9}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v4
@@ -979,7 +910,6 @@
 
     if-eqz v5, :cond_8
 
-    .line 137
     invoke-virtual {p0, v9}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v4
@@ -1004,7 +934,6 @@
     .locals 2
 
     .prologue
-    .line 304
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->getBaseContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1013,10 +942,8 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 305
     invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onDestroy()V
 
-    .line 307
     iget-boolean v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->mUserConfirmed:Z
 
     if-nez v0, :cond_0
@@ -1027,10 +954,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 308
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->onDecline()V
 
-    .line 311
     :cond_0
     return-void
 .end method
@@ -1052,13 +977,11 @@
 
     return v0
 
-    .line 361
     :pswitch_0
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->onDecline()V
 
     goto :goto_0
 
-    .line 359
     :pswitch_data_0
     .packed-switch 0x4
         :pswitch_0
@@ -1069,15 +992,11 @@
     .locals 0
 
     .prologue
-    .line 368
     invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onUserLeaveHint()V
 
-    .line 369
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->onDecline()V
 
-    .line 372
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;->quitActivity()V
 
-    .line 374
     return-void
 .end method

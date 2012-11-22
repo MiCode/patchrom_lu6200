@@ -23,7 +23,6 @@
     .locals 3
 
     .prologue
-    .line 87
     invoke-static {}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->values()[Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     move-result-object v0

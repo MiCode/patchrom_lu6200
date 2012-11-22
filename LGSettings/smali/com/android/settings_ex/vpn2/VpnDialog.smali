@@ -64,29 +64,22 @@
     .parameter "isNew"
 
     .prologue
-    .line 71
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
-    .line 43
     invoke-static {}, Landroid/security/KeyStore;->getInstance()Landroid/security/KeyStore;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mKeyStore:Landroid/security/KeyStore;
 
-    .line 72
     iput-object p2, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 73
     iput-object p3, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
 
-    .line 74
     iput-boolean p4, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mEditing:Z
 
-    .line 75
     iput-boolean p5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mNew:Z
 
-    .line 76
     return-void
 .end method
 
@@ -105,12 +98,10 @@
 
     const/4 v2, 0x0
 
-    .line 254
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mMppe:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, v3}, Landroid/widget/CheckBox;->setVisibility(I)V
 
-    .line 255
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -119,7 +110,6 @@
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 256
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -128,7 +118,6 @@
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 257
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     invoke-virtual {v0, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -137,7 +126,6 @@
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 258
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v1, 0x7f0b01da
@@ -243,18 +231,15 @@
 
     const/4 v7, 0x0
 
-    .line 338
     invoke-virtual {p0}, Lcom/android/settings_ex/vpn2/VpnDialog;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    .line 339
     .local v3, context:Landroid/content/Context;
     if-nez p3, :cond_2
 
     const-string v4, ""
 
-    .line 340
     .local v4, first:Ljava/lang/String;
     :goto_0
     iget-object v6, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mKeyStore:Landroid/security/KeyStore;
@@ -376,10 +361,8 @@
 
     const/4 v1, 0x0
 
-    .line 286
     if-nez p1, :cond_2
 
-    .line 287
     iget-object v2, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mUsername:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -762,7 +745,6 @@
     .locals 2
 
     .prologue
-    .line 370
     new-instance v0, Lcom/android/settings_ex/vpn2/VpnProfile;
 
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -771,7 +753,6 @@
 
     invoke-direct {v0, v1}, Lcom/android/settings_ex/vpn2/VpnProfile;-><init>(Ljava/lang/String;)V
 
-    .line 371
     .local v0, profile:Lcom/android/settings_ex/vpn2/VpnProfile;
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mName:Landroid/widget/TextView;
 
@@ -785,7 +766,6 @@
 
     iput-object v1, v0, Lcom/android/settings_ex/vpn2/VpnProfile;->name:Ljava/lang/String;
 
-    .line 372
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mType:Landroid/widget/Spinner;
 
     invoke-virtual {v1}, Landroid/widget/Spinner;->getSelectedItemPosition()I
@@ -794,7 +774,6 @@
 
     iput v1, v0, Lcom/android/settings_ex/vpn2/VpnProfile;->type:I
 
-    .line 373
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mServer:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -811,7 +790,6 @@
 
     iput-object v1, v0, Lcom/android/settings_ex/vpn2/VpnProfile;->server:Ljava/lang/String;
 
-    .line 374
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mUsername:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -824,7 +802,6 @@
 
     iput-object v1, v0, Lcom/android/settings_ex/vpn2/VpnProfile;->username:Ljava/lang/String;
 
-    .line 375
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mPassword:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -837,7 +814,6 @@
 
     iput-object v1, v0, Lcom/android/settings_ex/vpn2/VpnProfile;->password:Ljava/lang/String;
 
-    .line 376
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mSearchDomains:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -854,7 +830,6 @@
 
     iput-object v1, v0, Lcom/android/settings_ex/vpn2/VpnProfile;->searchDomains:Ljava/lang/String;
 
-    .line 377
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mDnsServers:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -871,7 +846,6 @@
 
     iput-object v1, v0, Lcom/android/settings_ex/vpn2/VpnProfile;->dnsServers:Ljava/lang/String;
 
-    .line 378
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mRoutes:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -888,12 +862,10 @@
 
     iput-object v1, v0, Lcom/android/settings_ex/vpn2/VpnProfile;->routes:Ljava/lang/String;
 
-    .line 381
     iget v1, v0, Lcom/android/settings_ex/vpn2/VpnProfile;->type:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 412
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mSaveLogin:Landroid/widget/CheckBox;
@@ -947,7 +919,6 @@
 
     iput-object v1, v0, Lcom/android/settings_ex/vpn2/VpnProfile;->ipsecIdentifier:Ljava/lang/String;
 
-    .line 391
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecSecret:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -986,7 +957,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 399
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecUserCert:Landroid/widget/Spinner;
 
     invoke-virtual {v1}, Landroid/widget/Spinner;->getSelectedItem()Ljava/lang/Object;
@@ -1008,7 +978,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 404
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecCaCert:Landroid/widget/Spinner;
 
     invoke-virtual {v1}, Landroid/widget/Spinner;->getSelectedItem()Ljava/lang/Object;
@@ -1029,7 +998,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 407
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecServerCert:Landroid/widget/Spinner;
 
     invoke-virtual {v1}, Landroid/widget/Spinner;->getSelectedItem()Ljava/lang/Object;
@@ -1058,7 +1026,6 @@
     .locals 1
 
     .prologue
-    .line 365
     iget-boolean v0, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mEditing:Z
 
     return v0
@@ -1069,12 +1036,10 @@
     .parameter "showOptions"
 
     .prologue
-    .line 236
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 237
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v1, 0x7f0b01de
@@ -1104,7 +1069,6 @@
 
     const/4 v7, 0x1
 
-    .line 80
     invoke-virtual {p0}, Lcom/android/settings_ex/vpn2/VpnDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v5
@@ -1117,20 +1081,16 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
-    .line 81
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     invoke-virtual {p0, v5}, Lcom/android/settings_ex/vpn2/VpnDialog;->setView(Landroid/view/View;)V
 
-    .line 82
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/vpn2/VpnDialog;->setInverseBackgroundForced(Z)V
 
-    .line 84
     invoke-virtual {p0}, Lcom/android/settings_ex/vpn2/VpnDialog;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 87
     .local v0, context:Landroid/content/Context;
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
@@ -1144,7 +1104,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mName:Landroid/widget/TextView;
 
-    .line 88
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01d0
@@ -1157,7 +1116,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mType:Landroid/widget/Spinner;
 
-    .line 89
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01d1
@@ -1170,7 +1128,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mServer:Landroid/widget/TextView;
 
-    .line 90
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01e3
@@ -1183,7 +1140,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mUsername:Landroid/widget/TextView;
 
-    .line 91
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01e4
@@ -1196,7 +1152,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mPassword:Landroid/widget/TextView;
 
-    .line 92
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01df
@@ -1209,7 +1164,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mSearchDomains:Landroid/widget/TextView;
 
-    .line 93
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01e0
@@ -1222,7 +1176,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mDnsServers:Landroid/widget/TextView;
 
-    .line 94
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01e1
@@ -1235,7 +1188,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mRoutes:Landroid/widget/TextView;
 
-    .line 95
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01d2
@@ -1248,7 +1200,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mMppe:Landroid/widget/CheckBox;
 
-    .line 96
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01d4
@@ -1261,7 +1212,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mL2tpSecret:Landroid/widget/TextView;
 
-    .line 97
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01d6
@@ -1274,7 +1224,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecIdentifier:Landroid/widget/TextView;
 
-    .line 98
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01d7
@@ -1287,7 +1236,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecSecret:Landroid/widget/TextView;
 
-    .line 99
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01d9
@@ -1300,7 +1248,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecUserCert:Landroid/widget/Spinner;
 
-    .line 100
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01db
@@ -1313,7 +1260,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecCaCert:Landroid/widget/Spinner;
 
-    .line 101
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01dc
@@ -1326,7 +1272,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecServerCert:Landroid/widget/Spinner;
 
-    .line 102
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0b01e5
@@ -1339,7 +1284,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mSaveLogin:Landroid/widget/CheckBox;
 
-    .line 105
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mName:Landroid/widget/TextView;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1348,12 +1292,10 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 106
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mName:Landroid/widget/TextView;
 
     check-cast v1, Landroid/widget/EditText;
 
-    .line 107
     .local v1, et:Landroid/widget/EditText;
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mName:Landroid/widget/TextView;
 
@@ -1371,18 +1313,15 @@
 
     if-eqz v5, :cond_0
 
-    .line 109
     invoke-interface {v3}, Ljava/lang/CharSequence;->length()I
 
     move-result v5
 
     invoke-virtual {v1, v5}, Landroid/widget/EditText;->setSelection(I)V
 
-    .line 111
     :cond_0
     iput-object v1, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mName:Landroid/widget/TextView;
 
-    .line 113
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mType:Landroid/widget/Spinner;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1391,7 +1330,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/Spinner;->setSelection(I)V
 
-    .line 114
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mServer:Landroid/widget/TextView;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1400,7 +1338,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 115
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mUsername:Landroid/widget/TextView;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1409,7 +1346,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 116
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mPassword:Landroid/widget/TextView;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1418,7 +1354,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 117
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mSearchDomains:Landroid/widget/TextView;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1427,7 +1362,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 118
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mDnsServers:Landroid/widget/TextView;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1436,7 +1370,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 119
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mRoutes:Landroid/widget/TextView;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1445,7 +1378,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 120
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mMppe:Landroid/widget/CheckBox;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1454,7 +1386,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 121
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mL2tpSecret:Landroid/widget/TextView;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1463,7 +1394,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 122
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecIdentifier:Landroid/widget/TextView;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1472,7 +1402,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 123
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecSecret:Landroid/widget/TextView;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1481,7 +1410,6 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 124
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecUserCert:Landroid/widget/Spinner;
 
     const-string v8, "USRCERT_"
@@ -1494,7 +1422,6 @@
 
     invoke-direct {p0, v5, v8, v9, v10}, Lcom/android/settings_ex/vpn2/VpnDialog;->loadCertificates(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V
 
-    .line 126
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecCaCert:Landroid/widget/Spinner;
 
     const-string v8, "CACERT_"
@@ -1507,7 +1434,6 @@
 
     invoke-direct {p0, v5, v8, v9, v10}, Lcom/android/settings_ex/vpn2/VpnDialog;->loadCertificates(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V
 
-    .line 128
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecServerCert:Landroid/widget/Spinner;
 
     const-string v8, "USRCERT_"
@@ -1520,7 +1446,6 @@
 
     invoke-direct {p0, v5, v8, v9, v10}, Lcom/android/settings_ex/vpn2/VpnDialog;->loadCertificates(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V
 
-    .line 130
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mSaveLogin:Landroid/widget/CheckBox;
 
     iget-object v8, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
@@ -1529,57 +1454,46 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 133
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mName:Landroid/widget/TextView;
 
     invoke-virtual {v5, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 134
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mType:Landroid/widget/Spinner;
 
     invoke-virtual {v5, p0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    .line 135
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mServer:Landroid/widget/TextView;
 
     invoke-virtual {v5, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 136
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mUsername:Landroid/widget/TextView;
 
     invoke-virtual {v5, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 137
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mPassword:Landroid/widget/TextView;
 
     invoke-virtual {v5, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 138
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mDnsServers:Landroid/widget/TextView;
 
     invoke-virtual {v5, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 139
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mRoutes:Landroid/widget/TextView;
 
     invoke-virtual {v5, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 140
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecSecret:Landroid/widget/TextView;
 
     invoke-virtual {v5, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 141
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mIpsecUserCert:Landroid/widget/Spinner;
 
     invoke-virtual {v5, p0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    .line 144
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mMppe:Landroid/widget/CheckBox;
 
     invoke-virtual {v5, v7}, Landroid/widget/CheckBox;->setSoundEffectsEnabled(Z)V
 
-    .line 145
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mMppe:Landroid/widget/CheckBox;
 
     new-instance v8, Lcom/android/settings_ex/vpn2/VpnDialog$1;
@@ -1588,12 +1502,10 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 153
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mSaveLogin:Landroid/widget/CheckBox;
 
     invoke-virtual {v5, v7}, Landroid/widget/CheckBox;->setSoundEffectsEnabled(Z)V
 
-    .line 154
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mSaveLogin:Landroid/widget/CheckBox;
 
     new-instance v8, Lcom/android/settings_ex/vpn2/VpnDialog$2;
@@ -1602,12 +1514,10 @@
 
     invoke-virtual {v5, v8}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 164
     invoke-direct {p0, v7}, Lcom/android/settings_ex/vpn2/VpnDialog;->validate(Z)Z
 
     move-result v4
 
-    .line 165
     .local v4, valid:Z
     iget-boolean v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mEditing:Z
 
@@ -1621,22 +1531,18 @@
     :goto_0
     iput-boolean v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mEditing:Z
 
-    .line 167
     iget-boolean v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mEditing:Z
 
     if-eqz v5, :cond_5
 
-    .line 169
     iget-boolean v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mNew:Z
 
     if-ne v7, v5, :cond_3
 
-    .line 170
     const v5, 0x7f08068c
 
     invoke-virtual {p0, v5}, Lcom/android/settings_ex/vpn2/VpnDialog;->setTitle(I)V
 
-    .line 177
     :goto_1
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
@@ -1648,14 +1554,12 @@
 
     invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 180
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mProfile:Lcom/android/settings_ex/vpn2/VpnProfile;
 
     iget v5, v5, Lcom/android/settings_ex/vpn2/VpnProfile;->type:I
 
     invoke-direct {p0, v5}, Lcom/android/settings_ex/vpn2/VpnDialog;->changeType(I)V
 
-    .line 183
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v7, 0x7f0b01dd
@@ -1726,10 +1630,8 @@
 
     invoke-virtual {p0, v5, v7, v8}, Lcom/android/settings_ex/vpn2/VpnDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    .line 210
     invoke-super {p0, v12}, Landroid/app/AlertDialog;->onCreate(Landroid/os/Bundle;)V
 
-    .line 213
     invoke-virtual {p0, v11}, Lcom/android/settings_ex/vpn2/VpnDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v5
@@ -1742,7 +1644,6 @@
     :goto_4
     invoke-virtual {v5, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 217
     invoke-virtual {p0}, Lcom/android/settings_ex/vpn2/VpnDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v5
@@ -1769,14 +1670,12 @@
 
     goto :goto_1
 
-    .line 188
     .restart local v2       #showOptions:Landroid/view/View;
     :cond_4
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/vpn2/VpnDialog;->onClick(Landroid/view/View;)V
 
     goto :goto_2
 
-    .line 195
     .end local v2           #showOptions:Landroid/view/View;
     :cond_5
     const v5, 0x7f08068a
@@ -1795,7 +1694,6 @@
 
     invoke-virtual {p0, v5}, Lcom/android/settings_ex/vpn2/VpnDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 198
     iget-object v5, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mView:Landroid/view/View;
 
     const v7, 0x7f0b01e2
@@ -1845,16 +1743,13 @@
     .end annotation
 
     .prologue
-    .line 242
     .local p1, parent:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnDialog;->mType:Landroid/widget/Spinner;
 
     if-ne p1, v0, :cond_0
 
-    .line 243
     invoke-direct {p0, p3}, Lcom/android/settings_ex/vpn2/VpnDialog;->changeType(I)V
 
-    .line 245
     :cond_0
     const/4 v0, -0x1
 

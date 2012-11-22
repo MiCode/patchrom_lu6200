@@ -58,31 +58,26 @@
     .parameter "parent"
 
     .prologue
-    .line 1766
     invoke-virtual {p0}, Lcom/android/settings_ex/DataUsageSummary;->isAdded()Z
 
     move-result v7
 
     if-nez v7, :cond_0
 
-    .line 1798
     :goto_0
     return-void
 
-    .line 1768
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings_ex/DataUsageSummary;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
-    .line 1773
     .local v6, res:Landroid/content/res/Resources;
     #getter for: Lcom/android/settings_ex/DataUsageSummary;->mCurrentTab:Ljava/lang/String;
     invoke-static {p0}, Lcom/android/settings_ex/DataUsageSummary;->access$1100(Lcom/android/settings_ex/DataUsageSummary;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1774
     .local v1, currentTab:Ljava/lang/String;
     const-string v7, "3g"
 
@@ -92,50 +87,41 @@
 
     if-eqz v7, :cond_1
 
-    .line 1775
     const v7, 0x7f080657
 
     invoke-static {v6, v7}, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;->buildDialogMessage(Landroid/content/res/Resources;I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
-    .line 1776
     .local v5, message:Ljava/lang/CharSequence;
     const-wide v3, 0x140000000L
 
-    .line 1790
     .local v3, limitBytes:J
     :goto_1
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 1791
     .local v0, args:Landroid/os/Bundle;
     const-string v7, "message"
 
     invoke-virtual {v0, v7, v5}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
 
-    .line 1792
     const-string v7, "limitBytes"
 
     invoke-virtual {v0, v7, v3, v4}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    .line 1794
     new-instance v2, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;
 
     invoke-direct {v2}, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;-><init>()V
 
-    .line 1795
     .local v2, dialog:Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;
     invoke-virtual {v2, v0}, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 1796
     const/4 v7, 0x0
 
     invoke-virtual {v2, p0, v7}, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;->setTargetFragment(Landroid/app/Fragment;I)V
 
-    .line 1797
     invoke-virtual {p0}, Lcom/android/settings_ex/DataUsageSummary;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v7
@@ -160,21 +146,18 @@
 
     if-eqz v7, :cond_2
 
-    .line 1778
     const v7, 0x7f080656
 
     invoke-static {v6, v7}, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;->buildDialogMessage(Landroid/content/res/Resources;I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
-    .line 1779
     .restart local v5       #message:Ljava/lang/CharSequence;
     const-wide v3, 0x140000000L
 
     .restart local v3       #limitBytes:J
     goto :goto_1
 
-    .line 1780
     .end local v3           #limitBytes:J
     .end local v5           #message:Ljava/lang/CharSequence;
     :cond_2
@@ -186,21 +169,18 @@
 
     if-eqz v7, :cond_3
 
-    .line 1781
     const v7, 0x7f080658
 
     invoke-static {v6, v7}, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;->buildDialogMessage(Landroid/content/res/Resources;I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
-    .line 1782
     .restart local v5       #message:Ljava/lang/CharSequence;
     const-wide v3, 0x140000000L
 
     .restart local v3       #limitBytes:J
     goto :goto_1
 
-    .line 1783
     .end local v3           #limitBytes:J
     .end local v5           #message:Ljava/lang/CharSequence;
     :cond_3
@@ -212,21 +192,18 @@
 
     if-eqz v7, :cond_4
 
-    .line 1784
     const v7, 0x7f080653
 
     invoke-static {v6, v7}, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;->buildDialogMessage(Landroid/content/res/Resources;I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
-    .line 1785
     .restart local v5       #message:Ljava/lang/CharSequence;
     const-wide v3, 0x140000000L
 
     .restart local v3       #limitBytes:J
     goto :goto_1
 
-    .line 1787
     .end local v3           #limitBytes:J
     .end local v5           #message:Ljava/lang/CharSequence;
     :cond_4
@@ -262,12 +239,10 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 1806
     invoke-virtual {p0}, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    .line 1808
     .local v1, context:Landroid/content/Context;
     invoke-virtual {p0}, Lcom/android/settings_ex/DataUsageSummary$ConfirmLimitFragment;->getArguments()Landroid/os/Bundle;
 

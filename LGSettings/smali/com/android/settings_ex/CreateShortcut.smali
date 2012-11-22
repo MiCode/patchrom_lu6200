@@ -29,18 +29,15 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 43
     .local v0, targetIntent:Landroid/content/Intent;
     const-string v1, "com.android.settings_ex.SHORTCUT"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 44
     const/high16 v1, 0x1000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 46
     return-object v0
 .end method
 
@@ -280,7 +277,6 @@
 
     if-eqz v4, :cond_4
 
-    .line 74
     invoke-virtual {p0}, Lcom/android/settings_ex/CreateShortcut;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
@@ -314,30 +310,25 @@
     .parameter "id"
 
     .prologue
-    .line 87
     :try_start_0
     invoke-virtual {p0, p3}, Lcom/android/settings_ex/CreateShortcut;->intentForPosition(I)Landroid/content/Intent;
 
     move-result-object v2
 
-    .line 88
     .local v2, shortcutIntent:Landroid/content/Intent;
     const/high16 v3, 0x20
 
     invoke-virtual {v2, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 89
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 90
     .local v0, intent:Landroid/content/Intent;
     const-string v3, "android.intent.extra.shortcut.INTENT"
 
     invoke-virtual {v0, v3, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 91
     const-string v3, "android.intent.extra.shortcut.NAME"
 
     invoke-virtual {p0, p3}, Lcom/android/settings_ex/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
@@ -417,18 +408,15 @@
 
     if-eqz v3, :cond_1
 
-    .line 103
     invoke-virtual {p0, p3}, Lcom/android/settings_ex/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
 
     move-result-object v3
 
     iget-object v1, v3, Landroid/app/LauncherActivity$ListItem;->label:Ljava/lang/CharSequence;
 
-    .line 104
     .local v1, label:Ljava/lang/CharSequence;
     if-eqz v1, :cond_1
 
-    .line 105
     invoke-virtual {p0}, Lcom/android/settings_ex/CreateShortcut;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -465,16 +453,13 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 117
     .end local v0           #intent:Landroid/content/Intent;
     .end local v2           #shortcutIntent:Landroid/content/Intent;
     :goto_0
     invoke-virtual {p0}, Lcom/android/settings_ex/CreateShortcut;->finish()V
 
-    .line 118
     return-void
 
-    .line 113
     :catch_0
     move-exception v3
 

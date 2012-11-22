@@ -48,10 +48,8 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 65
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
-    .line 103
     const-string v0, "ro.build.product"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
@@ -72,17 +70,14 @@
 
     iput-boolean v0, p0, Lcom/android/settings_ex/WirelessSettings;->bluetoothAvailable:Z
 
-    .line 113
     iput-boolean v2, p0, Lcom/android/settings_ex/WirelessSettings;->csActive:Z
 
-    .line 564
     new-instance v0, Lcom/android/settings_ex/WirelessSettings$2;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/WirelessSettings$2;-><init>(Lcom/android/settings_ex/WirelessSettings;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/WirelessSettings;->mProfileServiceListener:Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
-    .line 574
     new-instance v0, Lcom/android/settings_ex/WirelessSettings$3;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/WirelessSettings$3;-><init>(Lcom/android/settings_ex/WirelessSettings;)V
@@ -97,7 +92,6 @@
     .parameter "x0"
 
     .prologue
-    .line 65
     iget-object v0, p0, Lcom/android/settings_ex/WirelessSettings;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
 
     return-object v0
@@ -109,7 +103,6 @@
     .parameter "x1"
 
     .prologue
-    .line 65
     iput-object p1, p0, Lcom/android/settings_ex/WirelessSettings;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
 
     return-object p1
@@ -120,7 +113,6 @@
     .parameter "x0"
 
     .prologue
-    .line 65
     iget-boolean v0, p0, Lcom/android/settings_ex/WirelessSettings;->bluetoothAvailable:Z
 
     return v0
@@ -134,7 +126,6 @@
     .parameter "x3"
 
     .prologue
-    .line 65
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings_ex/WirelessSettings;->updateBluetoothState([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     return-void
@@ -145,7 +136,6 @@
     .parameter "x0"
 
     .prologue
-    .line 65
     iget-boolean v0, p0, Lcom/android/settings_ex/WirelessSettings;->mBluetoothEnableForTether:Z
 
     return v0
@@ -157,7 +147,6 @@
     .parameter "x1"
 
     .prologue
-    .line 65
     iput-boolean p1, p0, Lcom/android/settings_ex/WirelessSettings;->mBluetoothEnableForTether:Z
 
     return p1
@@ -168,7 +157,6 @@
     .parameter "x0"
 
     .prologue
-    .line 65
     invoke-direct {p0}, Lcom/android/settings_ex/WirelessSettings;->updateState()V
 
     return-void
@@ -275,19 +263,16 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 202
     invoke-static {p0}, Lcom/android/settings_ex/AirplaneModeEnabler;->isAirplaneModeOn(Landroid/content/Context;)Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 208
     :cond_0
     :goto_0
     return v1
 
-    .line 206
     :cond_1
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -747,29 +732,24 @@
 
     check-cast v1, Landroid/net/ConnectivityManager;
 
-    .line 630
     .local v1, cm:Landroid/net/ConnectivityManager;
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getTetherableIfaces()[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 631
     .local v0, available:[Ljava/lang/String;
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getTetheredIfaces()[Ljava/lang/String;
 
     move-result-object v3
 
-    .line 632
     .local v3, tethered:[Ljava/lang/String;
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getTetheringErroredIfaces()[Ljava/lang/String;
 
     move-result-object v2
 
-    .line 633
     .local v2, errored:[Ljava/lang/String;
     invoke-direct {p0, v0, v3, v2}, Lcom/android/settings_ex/WirelessSettings;->updateBluetoothState([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
-    .line 634
     return-void
 .end method
 
@@ -827,10 +807,8 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 213
     invoke-super/range {p0 .. p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 215
     const v22, 0x7f06005b
 
     move-object/from16 v0, p0
@@ -839,22 +817,18 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/WirelessSettings;->addPreferencesFromResource(I)V
 
-    .line 217
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v9
 
-    .line 218
     .local v9, adapter:Landroid/bluetooth/BluetoothAdapter;
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
 
-    .line 220
     .local v8, activity:Landroid/app/Activity;
     if-eqz v9, :cond_0
 
-    .line 221
     invoke-virtual {v8}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v22
@@ -894,7 +868,6 @@
 
     if-eqz v22, :cond_1
 
-    .line 229
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1008,7 +981,6 @@
 
     iput-object v0, v1, Lcom/android/settings_ex/WirelessSettings;->mAirplaneModeEnabler:Lcom/android/settings_ex/AirplaneModeEnabler;
 
-    .line 246
     invoke-static {}, Lcom/android/settings_ex/Utils;->hasFeatureNfcP2P()Z
 
     move-result v22
@@ -1031,7 +1003,6 @@
 
     invoke-virtual {v0, v15}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 248
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1051,14 +1022,12 @@
 
     move-result-object v15
 
-    .line 251
     const-string v22, "toggle_nfc"
 
     move-object/from16 v0, v22
 
     invoke-virtual {v15, v0}, Landroid/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    .line 252
     new-instance v23, Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     move-object/from16 v22, v15
@@ -1261,7 +1230,6 @@
 
     if-nez v22, :cond_12
 
-    .line 289
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1295,7 +1263,6 @@
 
     if-nez v22, :cond_8
 
-    .line 302
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1304,7 +1271,6 @@
 
     invoke-virtual {v0, v15}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 303
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1334,7 +1300,6 @@
 
     if-eqz v22, :cond_9
 
-    .line 309
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1419,7 +1384,6 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 319
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1487,12 +1451,10 @@
 
     const/4 v7, 0x1
 
-    .line 331
     .local v7, SKT_KT:Z
     :goto_3
     if-nez v6, :cond_16
 
-    .line 332
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1524,16 +1486,13 @@
 
     invoke-virtual/range {v22 .. v23}, Landroid/preference/PreferenceScreen;->setDependency(Ljava/lang/String;)V
 
-    .line 353
     :cond_b
     sget-boolean v22, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v22, :cond_c
 
-    .line 354
     if-eqz v21, :cond_c
 
-    .line 355
     invoke-static {}, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->getInstance()Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;
 
     move-result-object v22
@@ -1629,14 +1588,12 @@
 
     iput-object v0, v1, Lcom/android/settings_ex/WirelessSettings;->mBluetoothRegexs:[Ljava/lang/String;
 
-    .line 375
     invoke-virtual {v11}, Landroid/net/ConnectivityManager;->isTetheringSupported()Z
 
     move-result v22
 
     if-nez v22, :cond_1a
 
-    .line 376
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1662,7 +1619,6 @@
 
     if-eqz v22, :cond_1d
 
-    .line 406
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1693,7 +1649,6 @@
 
     if-eqz v22, :cond_e
 
-    .line 414
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1834,7 +1789,6 @@
 
     if-ne v0, v1, :cond_1e
 
-    .line 453
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1847,7 +1801,6 @@
 
     invoke-static/range {v22 .. v22}, Lcom/android/settings_ex/lge/OverlayUtils;->WifiCallPref_Init(Landroid/preference/Preference;)V
 
-    .line 454
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -1892,7 +1845,6 @@
 
     invoke-virtual/range {v22 .. v23}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 256
     new-instance v23, Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     move-object/from16 v22, v15
@@ -1977,7 +1929,6 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 322
     new-instance v22, Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler;
 
     move-object/from16 v0, v22
@@ -2292,7 +2243,6 @@
 
     invoke-virtual/range {v22 .. v23}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 457
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/WirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v22
@@ -2316,53 +2266,43 @@
     .locals 6
 
     .prologue
-    .line 523
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onPause()V
 
-    .line 525
     iget-object v1, p0, Lcom/android/settings_ex/WirelessSettings;->mAirplaneModeEnabler:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/AirplaneModeEnabler;->pause()V
 
-    .line 526
     iget-object v1, p0, Lcom/android/settings_ex/WirelessSettings;->mNfcEnabler:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     if-eqz v1, :cond_0
 
-    .line 527
     iget-object v1, p0, Lcom/android/settings_ex/WirelessSettings;->mNfcEnabler:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/nfc/LGNfcEnabler;->pause()V
 
-    .line 530
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/WirelessSettings;->mWifiP2pEnabler:Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler;
 
     if-eqz v1, :cond_1
 
-    .line 531
     iget-object v1, p0, Lcom/android/settings_ex/WirelessSettings;->mWifiP2pEnabler:Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler;->pause()V
 
-    .line 534
     :cond_1
     invoke-virtual {p0}, Lcom/android/settings_ex/WirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    .line 535
     .local v0, activity:Landroid/app/Activity;
     iget-object v1, p0, Lcom/android/settings_ex/WirelessSettings;->mBTTetheringReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 539
     sget-boolean v1, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v1, :cond_2
 
-    .line 540
     const-string v1, "toggle_wifi_p2p"
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/WirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -2371,7 +2311,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 541
     invoke-static {}, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->getInstance()Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;
 
     move-result-object v2
@@ -2414,10 +2353,8 @@
 
     if-eqz v1, :cond_3
 
-    .line 549
     invoke-static {}, Lcom/android/settings_ex/lge/OverlayUtils;->WifiCallPref_resume()V
 
-    .line 551
     :cond_3
     return-void
 .end method
@@ -2428,7 +2365,6 @@
     .parameter "preference"
 
     .prologue
-    .line 129
     iget-object v7, p0, Lcom/android/settings_ex/WirelessSettings;->mAirplaneModePreference:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v7, :cond_0
@@ -2477,28 +2413,23 @@
 
     if-ne v7, v8, :cond_1
 
-    .line 140
     iget-object v7, p0, Lcom/android/settings_ex/WirelessSettings;->mAirplaneModeEnabler:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     invoke-virtual {v7}, Lcom/android/settings_ex/AirplaneModeEnabler;->updatePreferences()V
 
-    .line 141
     const/4 v7, 0x1
 
     goto :goto_0
 
-    .line 143
     :cond_1
     iget-object v7, p0, Lcom/android/settings_ex/WirelessSettings;->mDataNetworkSetting:Landroid/preference/PreferenceScreen;
 
     if-ne p2, v7, :cond_3
 
-    .line 144
     new-instance v5, Landroid/content/Intent;
 
     invoke-direct {v5}, Landroid/content/Intent;-><init>()V
 
-    .line 145
     .local v5, mIntent:Landroid/content/Intent;
     const-string v7, "com.android.settings_ex"
 
@@ -2506,17 +2437,14 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 146
     const-string v7, "cancelable"
 
     const-string v8, "true"
 
     invoke-virtual {v5, v7, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 147
     invoke-virtual {p0, v5}, Lcom/android/settings_ex/WirelessSettings;->startActivity(Landroid/content/Intent;)V
 
-    .line 198
     .end local v5           #mIntent:Landroid/content/Intent;
     :cond_2
     :goto_1
@@ -2526,13 +2454,11 @@
 
     goto :goto_0
 
-    .line 150
     :cond_3
     iget-object v7, p0, Lcom/android/settings_ex/WirelessSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v7, :cond_9
 
-    .line 151
     const-string v7, "connectivity"
 
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/WirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -2607,22 +2533,18 @@
 
     if-ne v7, v8, :cond_5
 
-    .line 164
     const/4 v7, 0x1
 
     iput-boolean v7, p0, Lcom/android/settings_ex/WirelessSettings;->mBluetoothEnableForTether:Z
 
-    .line 165
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->enable()Z
 
-    .line 166
     iget-object v7, p0, Lcom/android/settings_ex/WirelessSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     const v8, 0x7f0800d1
 
     invoke-virtual {v7, v8}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 167
     iget-object v7, p0, Lcom/android/settings_ex/WirelessSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     const/4 v8, 0x0
@@ -2639,7 +2561,6 @@
 
     invoke-virtual {v7, v8}, Landroid/bluetooth/BluetoothPan;->setBluetoothTethering(Z)V
 
-    .line 170
     iget-object v7, p0, Lcom/android/settings_ex/WirelessSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     const v8, 0x7f0803c7
@@ -2688,10 +2609,8 @@
 
     invoke-virtual {v7, v8}, Landroid/bluetooth/BluetoothPan;->setBluetoothTethering(Z)V
 
-    .line 183
     if-eqz v4, :cond_8
 
-    .line 184
     iget-object v7, p0, Lcom/android/settings_ex/WirelessSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
     const v8, 0x7f0803cb
@@ -2742,7 +2661,6 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 194
     invoke-virtual {p0, v5}, Lcom/android/settings_ex/WirelessSettings;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_1
@@ -2758,44 +2676,36 @@
 
     const/4 v6, 0x1
 
-    .line 464
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
-    .line 467
     invoke-virtual {p0}, Lcom/android/settings_ex/WirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    .line 468
     .local v0, activity:Landroid/app/Activity;
     new-instance v1, Landroid/content/IntentFilter;
 
     invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 469
     .local v1, filter:Landroid/content/IntentFilter;
     const-string v2, "android.bluetooth.adapter.action.STATE_CHANGED"
 
     invoke-virtual {v1, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 470
     const-string v2, "android.net.conn.TETHER_STATE_CHANGED"
 
     invoke-virtual {v1, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 471
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->mBTTetheringReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v2, v1}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 472
     iget-boolean v2, p0, Lcom/android/settings_ex/WirelessSettings;->bluetoothAvailable:Z
 
     if-eqz v2, :cond_0
 
     invoke-direct {p0}, Lcom/android/settings_ex/WirelessSettings;->updateState()V
 
-    .line 474
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->mPhone:Landroid/telephony/TelephonyManager;
 
@@ -2805,37 +2715,30 @@
 
     if-eqz v2, :cond_7
 
-    .line 475
     iput-boolean v6, p0, Lcom/android/settings_ex/WirelessSettings;->csActive:Z
 
-    .line 480
     :goto_0
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->mAirplaneModeEnabler:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/AirplaneModeEnabler;->resume()V
 
-    .line 481
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->mNfcEnabler:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     if-eqz v2, :cond_1
 
-    .line 482
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->mNfcEnabler:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/nfc/LGNfcEnabler;->resume()V
 
-    .line 485
     :cond_1
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->mWifiP2pEnabler:Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler;
 
     if-eqz v2, :cond_2
 
-    .line 486
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->mWifiP2pEnabler:Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/wifi/p2p/WifiP2pEnabler;->resume()V
 
-    .line 488
     :cond_2
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -2856,12 +2759,10 @@
 
     if-eqz v2, :cond_3
 
-    .line 490
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->tm:Landroid/telephony/TelephonyManager;
 
     if-eqz v2, :cond_3
 
-    .line 491
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->tm:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v2}, Landroid/telephony/TelephonyManager;->isNetworkRoaming()Z
@@ -2870,19 +2771,16 @@
 
     if-eqz v2, :cond_8
 
-    .line 492
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->mDataNetworkSetting:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v2, v4}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
-    .line 500
     :cond_3
     :goto_1
     sget-boolean v2, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v2, :cond_4
 
-    .line 501
     const-string v2, "toggle_wifi_p2p"
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/WirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -2891,7 +2789,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 502
     invoke-static {}, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->getInstance()Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;
 
     move-result-object v3
@@ -2916,18 +2813,15 @@
 
     invoke-virtual {v3, v7, v4, v5, v2}, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->setWiFiP2pEnableMenu(Landroid/content/ComponentName;Landroid/content/Context;Ljava/lang/String;Landroid/preference/CheckBoxPreference;)Z
 
-    .line 509
     :cond_4
     sget-boolean v2, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v2, :cond_5
 
-    .line 510
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->mDataNetworkSetting:Landroid/preference/PreferenceScreen;
 
     if-eqz v2, :cond_5
 
-    .line 511
     invoke-static {}, Lcom/android/settings_ex/MDMSettingsAdapter;->getInstance()Lcom/android/settings_ex/MDMSettingsAdapter;
 
     move-result-object v2
@@ -2954,20 +2848,16 @@
 
     if-eqz v2, :cond_6
 
-    .line 517
     invoke-static {}, Lcom/android/settings_ex/lge/OverlayUtils;->WifiCallPref_resume()V
 
-    .line 519
     :cond_6
     return-void
 
-    .line 477
     :cond_7
     iput-boolean v4, p0, Lcom/android/settings_ex/WirelessSettings;->csActive:Z
 
     goto/16 :goto_0
 
-    .line 494
     :cond_8
     iget-object v2, p0, Lcom/android/settings_ex/WirelessSettings;->mDataNetworkSetting:Landroid/preference/PreferenceScreen;
 

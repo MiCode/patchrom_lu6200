@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 89
     iput-object p1, p0, Lcom/android/settings_ex/GestureTilt$2;->this$0:Lcom/android/settings_ex/GestureTilt;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,24 +44,20 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 94
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
-    .line 113
     :goto_0
     return v3
 
-    .line 97
     :pswitch_0
     const-wide/16 v0, 0x1f4
 
     invoke-static {v0, v1}, Landroid/os/SystemClock;->sleep(J)V
 
-    .line 98
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt$2;->this$0:Lcom/android/settings_ex/GestureTilt;
 
     #getter for: Lcom/android/settings_ex/GestureTilt;->myVib:Landroid/os/Vibrator;
@@ -74,13 +69,11 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Vibrator;->vibrate(J)V
 
-    .line 99
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt$2;->this$0:Lcom/android/settings_ex/GestureTilt;
 
     #setter for: Lcom/android/settings_ex/GestureTilt;->move:Z
     invoke-static {v0, v3}, Lcom/android/settings_ex/GestureTilt;->access$202(Lcom/android/settings_ex/GestureTilt;Z)Z
 
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt$2;->this$0:Lcom/android/settings_ex/GestureTilt;
 
     #getter for: Lcom/android/settings_ex/GestureTilt;->mTextView:Landroid/widget/TextView;
@@ -113,7 +106,6 @@
     #setter for: Lcom/android/settings_ex/GestureTilt;->move:Z
     invoke-static {v0, v1}, Lcom/android/settings_ex/GestureTilt;->access$202(Lcom/android/settings_ex/GestureTilt;Z)Z
 
-    .line 107
     iget-object v0, p0, Lcom/android/settings_ex/GestureTilt$2;->this$0:Lcom/android/settings_ex/GestureTilt;
 
     #getter for: Lcom/android/settings_ex/GestureTilt;->mTextView:Landroid/widget/TextView;

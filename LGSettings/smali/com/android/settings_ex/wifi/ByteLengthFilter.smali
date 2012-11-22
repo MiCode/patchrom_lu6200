@@ -48,19 +48,14 @@
     .parameter "encode"
 
     .prologue
-    .line 31
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 32
     iput-object p1, p0, Lcom/android/settings_ex/wifi/ByteLengthFilter;->mContext:Landroid/content/Context;
 
-    .line 33
     iput p2, p0, Lcom/android/settings_ex/wifi/ByteLengthFilter;->mMax:I
 
-    .line 34
     iput-object p3, p0, Lcom/android/settings_ex/wifi/ByteLengthFilter;->mEncode:Ljava/lang/String;
 
-    .line 35
     return-void
 .end method
 
@@ -418,37 +413,30 @@
 
     if-eqz v10, :cond_6
 
-    .line 71
     iget-object v10, p0, Lcom/android/settings_ex/wifi/ByteLengthFilter;->mOnMaxLength:Lcom/android/settings_ex/wifi/ByteLengthFilter$OnMaxLengthListener;
 
     invoke-interface {v10}, Lcom/android/settings_ex/wifi/ByteLengthFilter$OnMaxLengthListener;->onMaxLength()V
 
-    .line 72
     const/4 v10, 0x0
 
     sput-boolean v10, Lcom/android/settings_ex/wifi/ByteLengthFilter;->check:Z
 
-    .line 74
     :cond_6
     const-string v7, ""
 
     goto/16 :goto_0
 
-    .line 85
     :cond_7
     if-eqz v2, :cond_8
 
-    .line 86
     const/4 v10, 0x1
 
     sput-boolean v10, Lcom/android/settings_ex/wifi/ByteLengthFilter;->check:Z
 
-    .line 87
     const/4 v7, 0x0
 
     goto/16 :goto_0
 
-    .line 89
     :cond_8
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -460,48 +448,39 @@
 
     if-gt v10, v4, :cond_9
 
-    .line 90
     const/4 v10, 0x1
 
     sput-boolean v10, Lcom/android/settings_ex/wifi/ByteLengthFilter;->check:Z
 
-    .line 91
     const/4 v7, 0x0
 
     goto/16 :goto_0
 
-    .line 96
     :cond_9
     add-int v3, p2, v4
 
-    .line 97
     .local v3, idx:I
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v8
 
-    .line 99
     .local v8, srcLen:I
     if-le v3, v8, :cond_a
 
-    .line 100
     move v3, v8
 
-    .line 103
     :cond_a
     :goto_1
     move/from16 v0, p2
 
     if-le v3, v0, :cond_c
 
-    .line 104
     move/from16 v0, p2
 
     invoke-interface {p1, v0, v3}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
 
     move-result-object v7
 
-    .line 105
     .local v7, ret:Ljava/lang/CharSequence;
     invoke-virtual {v7}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -513,7 +492,6 @@
 
     if-gt v10, v4, :cond_b
 
-    .line 107
     iget-object v10, p0, Lcom/android/settings_ex/wifi/ByteLengthFilter;->mOnMaxLength:Lcom/android/settings_ex/wifi/ByteLengthFilter$OnMaxLengthListener;
 
     if-eqz v10, :cond_0
@@ -522,32 +500,27 @@
 
     if-eqz v10, :cond_0
 
-    .line 108
     const-string v10, "ByteLengthFilter"
 
     const-string v11, "1.dialog called.."
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 109
     iget-object v10, p0, Lcom/android/settings_ex/wifi/ByteLengthFilter;->mOnMaxLength:Lcom/android/settings_ex/wifi/ByteLengthFilter$OnMaxLengthListener;
 
     invoke-interface {v10}, Lcom/android/settings_ex/wifi/ByteLengthFilter$OnMaxLengthListener;->onMaxLength()V
 
-    .line 110
     const/4 v10, 0x0
 
     sput-boolean v10, Lcom/android/settings_ex/wifi/ByteLengthFilter;->check:Z
 
     goto/16 :goto_0
 
-    .line 103
     :cond_b
     add-int/lit8 v3, v3, -0x1
 
     goto :goto_1
 
-    .line 117
     .end local v7           #ret:Ljava/lang/CharSequence;
     :cond_c
     const-string v7, ""

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 58
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,12 +41,10 @@
     .parameter "arg0"
 
     .prologue
-    .line 61
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->onCheckBoxClicked()V
 
-    .line 62
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     #getter for: Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->mTreeClickListener:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$OnTreeClickListener;

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 999
     iput-object p1, p0, Lcom/android/settings_ex/RadioInfo$20;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 1001
     iget-object v0, p0, Lcom/android/settings_ex/RadioInfo$20;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->updateSmscButton:Landroid/widget/Button;
@@ -54,7 +52,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 1002
     iget-object v0, p0, Lcom/android/settings_ex/RadioInfo$20;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->phone:Lcom/android/internal/telephony/Phone;

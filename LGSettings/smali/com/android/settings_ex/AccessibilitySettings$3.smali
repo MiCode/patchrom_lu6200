@@ -25,7 +25,6 @@
     .parameter "x0"
 
     .prologue
-    .line 467
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilitySettings$3;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     invoke-direct {p0, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V

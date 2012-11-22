@@ -30,23 +30,18 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 28
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 30
     iput-boolean v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsBootable:Z
 
-    .line 31
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mStatusBar:Landroid/app/StatusBarManager;
 
-    .line 94
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsCancelable:Z
 
-    .line 95
     iput-boolean v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsSelected:Z
 
     return-void
@@ -57,7 +52,6 @@
     .parameter "x0"
 
     .prologue
-    .line 28
     iget-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsSelected:Z
 
     return v0
@@ -69,7 +63,6 @@
     .parameter "x1"
 
     .prologue
-    .line 28
     iput-boolean p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsSelected:Z
 
     return p1
@@ -80,7 +73,6 @@
     .parameter "x0"
 
     .prologue
-    .line 28
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mRadioAllowChecked:Landroid/widget/CheckedTextView;
 
     return-object v0
@@ -92,7 +84,6 @@
     .parameter "x1"
 
     .prologue
-    .line 28
     invoke-direct {p0, p1}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->setDataRoamingEnabled(Z)V
 
     return-void
@@ -103,7 +94,6 @@
     .parameter "x0"
 
     .prologue
-    .line 28
     iget-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsBootable:Z
 
     return v0
@@ -114,7 +104,6 @@
     .parameter "x0"
 
     .prologue
-    .line 28
     iget-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsCancelable:Z
 
     return v0
@@ -126,7 +115,6 @@
     .parameter "x1"
 
     .prologue
-    .line 28
     invoke-direct {p0, p1}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->setRadioAllowChecked(Z)V
 
     return-void
@@ -183,7 +171,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialog:Landroid/app/Dialog;
 
-    .line 111
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialog:Landroid/app/Dialog;
 
     new-instance v2, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$2;
@@ -192,7 +179,6 @@
 
     invoke-virtual {v1, v2}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 118
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialog:Landroid/app/Dialog;
 
     new-instance v2, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$3;
@@ -201,26 +187,22 @@
 
     invoke-virtual {v1, v2}, Landroid/app/Dialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
-    .line 126
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialog:Landroid/app/Dialog;
 
     iget-boolean v2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsCancelable:Z
 
     invoke-virtual {v1, v2}, Landroid/app/Dialog;->setCancelable(Z)V
 
-    .line 127
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialog:Landroid/app/Dialog;
 
     iget-boolean v2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsCancelable:Z
 
     invoke-virtual {v1, v2}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 128
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialog:Landroid/app/Dialog;
 
     invoke-virtual {v1}, Landroid/app/Dialog;->show()V
 
-    .line 130
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialog:Landroid/app/Dialog;
 
     const v2, 0x7f0b0252
@@ -233,7 +215,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mRadioBlockChecked:Landroid/widget/CheckedTextView;
 
-    .line 131
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialog:Landroid/app/Dialog;
 
     const v2, 0x7f0b0253
@@ -246,7 +227,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mRadioAllowChecked:Landroid/widget/CheckedTextView;
 
-    .line 132
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialog:Landroid/app/Dialog;
 
     const v2, 0x7f0b0254
@@ -259,7 +239,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialogRoamingInfo:Landroid/widget/TextView;
 
-    .line 134
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mRadioBlockChecked:Landroid/widget/CheckedTextView;
 
     new-instance v2, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$4;
@@ -268,7 +247,6 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckedTextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 140
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mRadioAllowChecked:Landroid/widget/CheckedTextView;
 
     new-instance v2, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT$5;
@@ -304,12 +282,10 @@
     .parameter "allow"
 
     .prologue
-    .line 149
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mRadioAllowChecked:Landroid/widget/CheckedTextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
-    .line 150
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mRadioBlockChecked:Landroid/widget/CheckedTextView;
 
     if-nez p1, :cond_0
@@ -319,13 +295,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
-    .line 151
     invoke-direct {p0, p1}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->setRoamingInfo(Z)V
 
-    .line 152
     return-void
 
-    .line 150
     :cond_0
     const/4 v0, 0x0
 
@@ -337,7 +310,6 @@
     .parameter "allow"
 
     .prologue
-    .line 155
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mDialogRoamingInfo:Landroid/widget/TextView;
 
     if-eqz p1, :cond_0
@@ -376,23 +348,18 @@
 
     const/4 v2, 0x1
 
-    .line 42
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 43
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->requestWindowFeature(I)Z
 
-    .line 45
     iget-boolean v4, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsBootable:Z
 
     if-nez v4, :cond_0
 
-    .line 46
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 48
     .local v1, intent:Landroid/content/Intent;
     const-string v4, "IsCancelable"
 
@@ -402,7 +369,6 @@
 
     iput-boolean v4, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsCancelable:Z
 
-    .line 49
     iget-boolean v4, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsCancelable:Z
 
     if-nez v4, :cond_2
@@ -434,18 +400,14 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mStatusBar:Landroid/app/StatusBarManager;
 
-    .line 55
     invoke-direct {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->createCustomViewDialog()V
 
-    .line 56
     invoke-direct {p0, v3}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->setRadioAllowChecked(Z)V
 
-    .line 58
     iget-boolean v2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsBootable:Z
 
     if-eqz v2, :cond_1
 
-    .line 62
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->getWindow()Landroid/view/Window;
 
     move-result-object v2
@@ -454,20 +416,17 @@
 
     move-result-object v0
 
-    .line 63
     .local v0, attrs:Landroid/view/WindowManager$LayoutParams;
     const/16 v2, 0x100
 
     iput v2, v0, Landroid/view/WindowManager$LayoutParams;->extend:I
 
-    .line 64
     invoke-virtual {p0}, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
     invoke-virtual {v2, v0}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
 
-    .line 66
     .end local v0           #attrs:Landroid/view/WindowManager$LayoutParams;
     :cond_1
     return-void
@@ -484,7 +443,6 @@
     .locals 2
 
     .prologue
-    .line 78
     iget-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsCancelable:Z
 
     if-nez v0, :cond_0
@@ -493,18 +451,15 @@
 
     if-eqz v0, :cond_0
 
-    .line 79
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mStatusBar:Landroid/app/StatusBarManager;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
-    .line 81
     :cond_0
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 82
     return-void
 .end method
 
@@ -512,10 +467,8 @@
     .locals 2
 
     .prologue
-    .line 70
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 72
     iget-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsCancelable:Z
 
     if-nez v0, :cond_0
@@ -524,14 +477,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 73
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mStatusBar:Landroid/app/StatusBarManager;
 
     const/high16 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
-    .line 74
     :cond_0
     return-void
 .end method
@@ -540,16 +491,13 @@
     .locals 1
 
     .prologue
-    .line 36
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsBootable:Z
 
-    .line 37
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataRoamingSettingsSKT;->mIsCancelable:Z
 
-    .line 38
     return-void
 .end method

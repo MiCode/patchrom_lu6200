@@ -23,23 +23,19 @@
     .parameter "key"
 
     .prologue
-    .line 108
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    .line 109
     .local v0, pref:Landroid/preference/Preference;
     if-eqz v0, :cond_0
 
-    .line 110
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 112
     :cond_0
     return-void
 .end method
@@ -53,10 +49,8 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 45
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 47
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -67,16 +61,13 @@
 
     move-result v0
 
-    .line 49
     .local v0, condition:I
     const v1, 0x7f060011
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->addPreferencesFromResource(I)V
 
-    .line 51
     packed-switch v0, :pswitch_data_0
 
-    .line 80
     :goto_0
     const-string v1, "battery_condition_alarm"
 
@@ -88,7 +79,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->mbattery_condition:Landroid/preference/CheckBoxPreference;
 
-    .line 81
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->mbattery_condition:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->getContentResolver()Landroid/content/ContentResolver;
@@ -108,55 +98,46 @@
     :goto_1
     invoke-virtual {v3, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 82
     return-void
 
-    .line 58
     :pswitch_0
     const-string v1, "battery_good"
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->removePreferenceFromScreen(Ljava/lang/String;)V
 
-    .line 59
     const-string v1, "battery_bad"
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 66
     :pswitch_1
     const-string v1, "battery_verygood"
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->removePreferenceFromScreen(Ljava/lang/String;)V
 
-    .line 67
     const-string v1, "battery_bad"
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 74
     :pswitch_2
     const-string v1, "battery_verygood"
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->removePreferenceFromScreen(Ljava/lang/String;)V
 
-    .line 75
     const-string v1, "battery_good"
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 81
     :cond_0
     const/4 v1, 0x0
 
     goto :goto_1
 
-    .line 51
     nop
 
     :pswitch_data_0
@@ -187,12 +168,10 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 86
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->mbattery_condition:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_0
 
-    .line 87
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/BatteryCondition;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2

@@ -242,7 +242,6 @@
 
     iput-object v0, v1, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mWakeLockPaint:Landroid/graphics/Paint;
 
-    .line 125
     new-instance v21, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart$ChartData;
 
     invoke-direct/range {v21 .. v21}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart$ChartData;-><init>()V
@@ -592,17 +591,14 @@
 
     invoke-virtual/range {v21 .. v22}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart$ChartData;->setColors([I)V
 
-    .line 210
     :try_start_0
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getResources()Landroid/content/res/Resources;
 
     move-result-object v12
 
-    .line 211
     .local v12, instance:Landroid/content/res/Resources;
     if-eqz v12, :cond_0
 
-    .line 212
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
@@ -1188,14 +1184,11 @@
 
     invoke-virtual {p6, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 429
     invoke-virtual {p6}, Landroid/graphics/Path;->close()V
 
-    .line 432
     :cond_2
     if-eqz p8, :cond_3
 
-    .line 433
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mChargingPath:Landroid/graphics/Path;
 
     int-to-float v2, p1
@@ -1208,11 +1201,9 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 435
     :cond_3
     if-eqz p9, :cond_4
 
-    .line 436
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mScreenOnPath:Landroid/graphics/Path;
 
     int-to-float v2, p1
@@ -1225,11 +1216,9 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 438
     :cond_4
     if-eqz p10, :cond_5
 
-    .line 439
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mGpsOnPath:Landroid/graphics/Path;
 
     int-to-float v2, p1
@@ -1242,11 +1231,9 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 441
     :cond_5
     if-eqz p11, :cond_6
 
-    .line 442
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mWifiRunningPath:Landroid/graphics/Path;
 
     int-to-float v2, p1
@@ -1259,11 +1246,9 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 444
     :cond_6
     if-eqz p12, :cond_7
 
-    .line 445
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mWakeLockPath:Landroid/graphics/Path;
 
     int-to-float v2, p1
@@ -1276,18 +1261,15 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 447
     :cond_7
     iget-boolean v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mHavePhoneSignal:Z
 
     if-eqz v1, :cond_8
 
-    .line 448
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mPhoneSignalChart:Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart$ChartData;
 
     invoke-virtual {v1, p1}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart$ChartData;->finish(I)V
 
-    .line 450
     :cond_8
     return-void
 .end method
@@ -1297,21 +1279,17 @@
     .parameter "canvas"
 
     .prologue
-    .line 676
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 678
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getWidth()I
 
     move-result v14
 
-    .line 679
     .local v14, width:I
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getHeight()I
 
     move-result v11
 
-    .line 681
     .local v11, height:I
     move-object/from16 v0, p0
 
@@ -1325,14 +1303,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 682
     move-object/from16 v0, p0
 
     iget-boolean v1, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mLargeMode:Z
 
     if-eqz v1, :cond_5
 
-    .line 684
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
@@ -1825,10 +1801,8 @@
     .parameter "heightMeasureSpec"
 
     .prologue
-    .line 410
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
-    .line 411
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
 
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mDurationString:Ljava/lang/String;
@@ -1841,7 +1815,6 @@
 
     iput v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mDurationStringWidth:I
 
-    .line 412
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
 
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTotalDurationString:Ljava/lang/String;
@@ -1854,7 +1827,6 @@
 
     iput v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTotalDurationStringWidth:I
 
-    .line 413
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
 
     invoke-virtual {v0}, Landroid/text/TextPaint;->ascent()F
@@ -1865,7 +1837,6 @@
 
     iput v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextAscent:I
 
-    .line 414
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
 
     invoke-virtual {v0}, Landroid/text/TextPaint;->descent()F
@@ -1926,35 +1897,30 @@
 
     iput v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mThinLineWidth:I
 
-    .line 459
     mul-int/lit8 v2, v26, 0x6
 
     move/from16 v0, p2
 
     if-le v0, v2, :cond_a
 
-    .line 460
     const/4 v2, 0x1
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mLargeMode:Z
 
-    .line 461
     mul-int/lit8 v2, v26, 0xf
 
     move/from16 v0, p2
 
     if-le v0, v2, :cond_9
 
-    .line 463
     div-int/lit8 v2, v26, 0x2
 
     move-object/from16 v0, p0
 
     iput v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mLineWidth:I
 
-    .line 468
     :goto_0
     move-object/from16 v0, p0
 
@@ -2174,21 +2140,18 @@
 
     invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 493
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mLargeMode:Z
 
     if-eqz v2, :cond_e
 
-    .line 494
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mLineWidth:I
 
     add-int v17, v26, v2
 
-    .line 495
     .local v17, barOffset:I
     move-object/from16 v0, p0
 
@@ -2294,14 +2257,12 @@
 
     iput v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mLevelOffset:I
 
-    .line 503
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mHavePhoneSignal:Z
 
     if-eqz v2, :cond_1
 
-    .line 504
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mPhoneSignalChart:Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart$ChartData;
@@ -2319,70 +2280,60 @@
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
-    .line 518
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mBatGoodPath:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
-    .line 519
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mBatWarnPath:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
-    .line 520
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mBatCriticalPath:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
-    .line 521
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mScreenOnPath:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
-    .line 522
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mGpsOnPath:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
-    .line 523
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mWifiRunningPath:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
-    .line 524
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mWakeLockPath:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
-    .line 525
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mChargingPath:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
-    .line 527
     move-object/from16 v0, p0
 
     iget-wide v0, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mHistStart:J
 
     move-wide/from16 v29, v0
 
-    .line 528
     .local v29, timeStart:J
     move-object/from16 v0, p0
 
@@ -2652,19 +2603,15 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 565
     move-object/from16 v15, v23
 
-    .line 570
     :goto_8
     if-nez v8, :cond_12
 
-    .line 571
     move-object/from16 v0, p0
 
     iget-object v8, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mBatLevelPath:Landroid/graphics/Path;
 
-    .line 572
     move/from16 v0, v34
 
     int-to-float v2, v0
@@ -2978,14 +2925,12 @@
 
     iput v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mLineWidth:I
 
-    .line 476
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mLevelTop:I
 
-    .line 477
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mScreenOnPaint:Landroid/graphics/Paint;
@@ -3116,14 +3061,12 @@
 
     iput v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mChargingOffset:I
 
-    .line 510
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mPhoneSignalOffset:I
 
-    .line 511
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mLineWidth:I
@@ -3134,14 +3077,12 @@
 
     iput v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mLevelOffset:I
 
-    .line 512
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mHavePhoneSignal:Z
 
     if-eqz v2, :cond_1
 
-    .line 513
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mPhoneSignalChart:Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart$ChartData;
@@ -3439,10 +3380,8 @@
 
     move/from16 v4, p2
 
-    .line 669
     invoke-virtual/range {v2 .. v15}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->finishPaths(IIIIILandroid/graphics/Path;IZZZZZLandroid/graphics/Path;)V
 
-    .line 672
     return-void
 .end method
 
@@ -3451,10 +3390,8 @@
     .parameter "stats"
 
     .prologue
-    .line 358
     iput-object p1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mStats:Landroid/os/BatteryStats;
 
-    .line 360
     iget-object v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mStats:Landroid/os/BatteryStats;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -3471,11 +3408,9 @@
 
     move-result-wide v7
 
-    .line 362
     .local v7, uSecTime:J
     iput-wide v7, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mStatsPeriod:J
 
-    .line 363
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getContext()Landroid/content/Context;
 
     move-result-object v9
@@ -3514,7 +3449,6 @@
 
     iput-object v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mDurationString:Ljava/lang/String;
 
-    .line 366
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getContext()Landroid/content/Context;
 
     move-result-object v9
@@ -3527,7 +3461,6 @@
 
     iput-object v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mChargingLabel:Ljava/lang/String;
 
-    .line 367
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getContext()Landroid/content/Context;
 
     move-result-object v9
@@ -3540,7 +3473,6 @@
 
     iput-object v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mScreenOnLabel:Ljava/lang/String;
 
-    .line 368
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getContext()Landroid/content/Context;
 
     move-result-object v9
@@ -3553,7 +3485,6 @@
 
     iput-object v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mGpsOnLabel:Ljava/lang/String;
 
-    .line 369
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getContext()Landroid/content/Context;
 
     move-result-object v9
@@ -3566,7 +3497,6 @@
 
     iput-object v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mWifiRunningLabel:Ljava/lang/String;
 
-    .line 370
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getContext()Landroid/content/Context;
 
     move-result-object v9
@@ -3579,7 +3509,6 @@
 
     iput-object v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mWakeLockLabel:Ljava/lang/String;
 
-    .line 371
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getContext()Landroid/content/Context;
 
     move-result-object v9
@@ -3592,36 +3521,28 @@
 
     iput-object v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mPhoneSignalLabel:Ljava/lang/String;
 
-    .line 373
     const/4 v5, 0x0
 
-    .line 374
     .local v5, pos:I
     const/4 v3, 0x0
 
-    .line 375
     .local v3, lastInteresting:I
     const/4 v4, -0x1
 
-    .line 376
     .local v4, lastLevel:B
     const/4 v9, 0x0
 
     iput v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mBatLow:I
 
-    .line 377
     const/16 v9, 0x64
 
     iput v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mBatHigh:I
 
-    .line 378
     const/4 v0, 0x0
 
-    .line 379
     .local v0, aggrStates:I
     const/4 v2, 0x1
 
-    .line 380
     .local v2, first:Z
     invoke-virtual {p1}, Landroid/os/BatteryStats;->startIteratingHistoryLocked()Z
 
@@ -3644,28 +3565,22 @@
 
     if-eqz v9, :cond_4
 
-    .line 383
     add-int/lit8 v5, v5, 0x1
 
-    .line 384
     iget-byte v9, v6, Landroid/os/BatteryStats$HistoryItem;->cmd:B
 
     const/4 v10, 0x1
 
     if-ne v9, v10, :cond_0
 
-    .line 385
     if-eqz v2, :cond_1
 
-    .line 386
     const/4 v2, 0x0
 
-    .line 387
     iget-wide v9, v6, Landroid/os/BatteryStats$HistoryItem;->time:J
 
     iput-wide v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mHistStart:J
 
-    .line 389
     :cond_1
     iget-byte v9, v6, Landroid/os/BatteryStats$HistoryItem;->batteryLevel:B
 
@@ -3675,32 +3590,26 @@
 
     if-ne v5, v9, :cond_3
 
-    .line 390
     :cond_2
     iget-byte v4, v6, Landroid/os/BatteryStats$HistoryItem;->batteryLevel:B
 
-    .line 392
     :cond_3
     move v3, v5
 
-    .line 393
     iget-wide v9, v6, Landroid/os/BatteryStats$HistoryItem;->time:J
 
     iput-wide v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mHistEnd:J
 
-    .line 394
     iget v9, v6, Landroid/os/BatteryStats$HistoryItem;->states:I
 
     or-int/2addr v0, v9
 
     goto :goto_0
 
-    .line 398
     .end local v6           #rec:Landroid/os/BatteryStats$HistoryItem;
     :cond_4
     iput v3, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mNumHist:I
 
-    .line 399
     const/high16 v9, 0x1000
 
     and-int/2addr v9, v0
@@ -3724,7 +3633,6 @@
     :goto_2
     iput-boolean v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mHaveWifi:Z
 
-    .line 401
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->getContext()Landroid/content/Context;
 
     move-result-object v9
@@ -3735,12 +3643,10 @@
 
     if-nez v9, :cond_5
 
-    .line 402
     const/4 v9, 0x1
 
     iput-boolean v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mHavePhoneSignal:Z
 
-    .line 404
     :cond_5
     iget-wide v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mHistEnd:J
 
@@ -3804,38 +3710,31 @@
 
     const/4 v2, 0x0
 
-    .line 337
     if-lez p2, :cond_4
 
-    .line 338
     if-nez p1, :cond_1
 
-    .line 339
     invoke-static {p2}, Landroid/graphics/Typeface;->defaultFromStyle(I)Landroid/graphics/Typeface;
 
     move-result-object p1
 
-    .line 344
     :goto_0
     iget-object v4, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
 
     invoke-virtual {v4, p1}, Landroid/text/TextPaint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    .line 346
     if-eqz p1, :cond_2
 
     invoke-virtual {p1}, Landroid/graphics/Typeface;->getStyle()I
 
     move-result v1
 
-    .line 347
     .local v1, typefaceStyle:I
     :goto_1
     xor-int/lit8 v4, v1, -0x1
 
     and-int v0, p2, v4
 
-    .line 348
     .local v0, need:I
     iget-object v4, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
 
@@ -3848,7 +3747,6 @@
     :cond_0
     invoke-virtual {v4, v2}, Landroid/text/TextPaint;->setFakeBoldText(Z)V
 
-    .line 349
     iget-object v4, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
 
     and-int/lit8 v2, v0, 0x2
@@ -3896,12 +3794,10 @@
 
     invoke-virtual {v4, v2}, Landroid/text/TextPaint;->setFakeBoldText(Z)V
 
-    .line 352
     iget-object v2, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
 
     invoke-virtual {v2, v3}, Landroid/text/TextPaint;->setTextSkewX(F)V
 
-    .line 353
     iget-object v2, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryChart;->mTextPaint:Landroid/text/TextPaint;
 
     invoke-virtual {v2, p1}, Landroid/text/TextPaint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 94
     iput-object p1, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$1;->this$0:Lcom/android/settings_ex/widget/ChartDataUsageView;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,25 +38,21 @@
     .parameter "msg"
 
     .prologue
-    .line 97
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Lcom/android/settings_ex/widget/ChartSweepView;
 
-    .line 98
     .local v0, sweep:Lcom/android/settings_ex/widget/ChartSweepView;
     iget-object v1, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$1;->this$0:Lcom/android/settings_ex/widget/ChartDataUsageView;
 
     #calls: Lcom/android/settings_ex/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/settings_ex/widget/ChartSweepView;)V
     invoke-static {v1, v0}, Lcom/android/settings_ex/widget/ChartDataUsageView;->access$000(Lcom/android/settings_ex/widget/ChartDataUsageView;Lcom/android/settings_ex/widget/ChartSweepView;)V
 
-    .line 99
     iget-object v1, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$1;->this$0:Lcom/android/settings_ex/widget/ChartDataUsageView;
 
     #calls: Lcom/android/settings_ex/widget/ChartDataUsageView;->updateEstimateVisible()V
     invoke-static {v1}, Lcom/android/settings_ex/widget/ChartDataUsageView;->access$100(Lcom/android/settings_ex/widget/ChartDataUsageView;)V
 
-    .line 102
     iget-object v1, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$1;->this$0:Lcom/android/settings_ex/widget/ChartDataUsageView;
 
     const/4 v2, 0x1

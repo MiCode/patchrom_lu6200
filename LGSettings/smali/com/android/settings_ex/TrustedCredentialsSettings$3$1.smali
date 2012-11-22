@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 388
     iput-object p1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$3;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "id"
 
     .prologue
-    .line 390
     new-instance v0, Lcom/android/settings_ex/TrustedCredentialsSettings$AliasOperation;
 
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$3;
@@ -64,16 +62,13 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/TrustedCredentialsSettings$AliasOperation;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 391
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 392
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$3;
 
     iget-object v0, v0, Lcom/android/settings_ex/TrustedCredentialsSettings$3;->val$certDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 393
     return-void
 .end method

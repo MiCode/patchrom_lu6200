@@ -68,11 +68,9 @@
 
     if-eqz v1, :cond_1
 
-    .line 44
     :cond_0
     invoke-static {p1}, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->persistDiscoveringTimestamp(Landroid/content/Context;)V
 
-    .line 46
     :cond_1
     return-void
 .end method

@@ -36,7 +36,6 @@
     .parameter
 
     .prologue
-    .line 397
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/DockService$1;->this$0:Lcom/android/settings_ex/bluetooth/DockService;
 
     iput-object p2, p0, Lcom/android/settings_ex/bluetooth/DockService$1;->val$d:Landroid/bluetooth/BluetoothDevice;
@@ -56,7 +55,6 @@
     .locals 4
 
     .prologue
-    .line 399
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/DockService$1;->this$0:Lcom/android/settings_ex/bluetooth/DockService;
 
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/DockService$1;->val$d:Landroid/bluetooth/BluetoothDevice;

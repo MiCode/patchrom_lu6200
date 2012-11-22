@@ -75,7 +75,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    .line 695
     new-instance v0, Lcom/android/settings_ex/wifi/WifiEnabler;
 
     new-instance v1, Landroid/widget/Switch;
@@ -86,7 +85,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mWifiEnabler:Lcom/android/settings_ex/wifi/WifiEnabler;
 
-    .line 697
     new-instance v0, Lcom/android/settings_ex/wifi/wifiscreen/WifiScreenEnabler;
 
     new-instance v1, Landroid/widget/Switch;
@@ -97,7 +95,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mwifiScreenEnabler:Lcom/android/settings_ex/wifi/wifiscreen/WifiScreenEnabler;
 
-    .line 699
     new-instance v0, Lcom/android/settings_ex/bluetooth/BluetoothEnabler;
 
     new-instance v1, Landroid/widget/Switch;
@@ -108,7 +105,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mBluetoothEnabler:Lcom/android/settings_ex/bluetooth/BluetoothEnabler;
 
-    .line 700
     new-instance v0, Lcom/android/settings_ex/powersave/PowerSaveEnabler;
 
     new-instance v1, Landroid/widget/Switch;
@@ -207,14 +203,12 @@
     .parameter "position"
 
     .prologue
-    .line 665
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/Settings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceActivity$Header;
 
-    .line 666
     .local v0, header:Landroid/preference/PreferenceActivity$Header;
     invoke-static {v0}, Lcom/android/settings_ex/Settings$HeaderAdapter;->getHeaderType(Landroid/preference/PreferenceActivity$Header;)I
 
@@ -230,52 +224,42 @@
     .parameter "parent"
 
     .prologue
-    .line 707
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/Settings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceActivity$Header;
 
-    .line 708
     .local v0, header:Landroid/preference/PreferenceActivity$Header;
     invoke-static {v0}, Lcom/android/settings_ex/Settings$HeaderAdapter;->getHeaderType(Landroid/preference/PreferenceActivity$Header;)I
 
     move-result v1
 
-    .line 709
     .local v1, headerType:I
     const/4 v4, 0x0
 
-    .line 711
     .local v4, view:Landroid/view/View;
     if-nez p2, :cond_3
 
-    .line 712
     new-instance v2, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;
 
     const/4 v5, 0x0
 
     invoke-direct {v2, v5}, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;-><init>(Lcom/android/settings_ex/Settings$1;)V
 
-    .line 713
     .local v2, holder:Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;
     packed-switch v1, :pswitch_data_0
 
-    .line 750
     :goto_0
     invoke-virtual {v4, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 757
     :goto_1
     packed-switch v1, :pswitch_data_1
 
-    .line 817
     :cond_0
     :goto_2
     return-object v4
 
-    .line 715
     :pswitch_0
     new-instance v4, Landroid/widget/TextView;
 
@@ -293,14 +277,12 @@
     .restart local v4       #view:Landroid/view/View;
     move-object v5, v4
 
-    .line 717
     check-cast v5, Landroid/widget/TextView;
 
     iput-object v5, v2, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;->title:Landroid/widget/TextView;
 
     goto :goto_0
 
-    .line 721
     :pswitch_1
     iget-object v5, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -454,7 +436,6 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setHorizontalFadingEdgeEnabled(Z)V
 
-    .line 745
     iget-object v5, v2, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;->title:Landroid/widget/TextView;
 
     sget-object v6, Landroid/text/TextUtils$TruncateAt;->MARQUEE:Landroid/text/TextUtils$TruncateAt;
@@ -463,12 +444,10 @@
 
     goto/16 :goto_0
 
-    .line 752
     .end local v2           #holder:Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;
     :cond_3
     move-object v4, p2
 
-    .line 753
     invoke-virtual {v4}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v2
@@ -498,11 +477,9 @@
 
     goto/16 :goto_2
 
-    .line 764
     :pswitch_4
     if-eqz p2, :cond_4
 
-    .line 765
     iget-object v5, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     const v6, 0x7f040075
@@ -570,14 +547,12 @@
 
     if-nez v5, :cond_7
 
-    .line 777
     iget-object v5, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mWifiEnabler:Lcom/android/settings_ex/wifi/WifiEnabler;
 
     iget-object v6, v2, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;->switch_:Landroid/widget/Switch;
 
     invoke-virtual {v5, v6}, Lcom/android/settings_ex/wifi/WifiEnabler;->setSwitch(Landroid/widget/Switch;)V
 
-    .line 795
     :cond_5
     :goto_3
     :pswitch_5
@@ -587,7 +562,6 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 796
     iget-object v5, v2, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;->title:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/Settings$HeaderAdapter;->getContext()Landroid/content/Context;
@@ -604,7 +578,6 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 797
     invoke-virtual {p0}, Lcom/android/settings_ex/Settings$HeaderAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v5
@@ -625,19 +598,16 @@
 
     if-nez v5, :cond_a
 
-    .line 799
     iget-object v5, v2, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
 
     const/4 v6, 0x0
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 800
     iget-object v5, v2, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
 
     invoke-virtual {v5, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 806
     :goto_4
     iget-wide v5, v0, Landroid/preference/PreferenceActivity$Header;->id:J
 
@@ -711,7 +681,6 @@
 
     if-nez v5, :cond_8
 
-    .line 779
     iget-object v5, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mPowerSaveEnabler:Lcom/android/settings_ex/powersave/PowerSaveEnabler;
 
     iget-object v6, v2, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;->switch_:Landroid/widget/Switch;
@@ -730,7 +699,6 @@
 
     if-nez v5, :cond_9
 
-    .line 782
     iget-object v5, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mwifiScreenEnabler:Lcom/android/settings_ex/wifi/wifiscreen/WifiScreenEnabler;
 
     iget-object v6, v2, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;->switch_:Landroid/widget/Switch;
@@ -749,7 +717,6 @@
 
     if-nez v5, :cond_5
 
-    .line 786
     iget-object v5, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mBluetoothEnabler:Lcom/android/settings_ex/bluetooth/BluetoothEnabler;
 
     iget-object v6, v2, Lcom/android/settings_ex/Settings$HeaderAdapter$HeaderViewHolder;->switch_:Landroid/widget/Switch;
@@ -813,7 +780,6 @@
     .parameter "position"
 
     .prologue
-    .line 676
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/Settings$HeaderAdapter;->getItemViewType(I)I
 
     move-result v0
@@ -835,12 +801,10 @@
     .locals 2
 
     .prologue
-    .line 836
     iget-object v0, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mWifiEnabler:Lcom/android/settings_ex/wifi/WifiEnabler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/wifi/WifiEnabler;->pause()V
 
-    .line 838
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
     const-string v1, "x3"
@@ -851,18 +815,15 @@
 
     if-eqz v0, :cond_0
 
-    .line 843
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mBluetoothEnabler:Lcom/android/settings_ex/bluetooth/BluetoothEnabler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/BluetoothEnabler;->pause()V
 
-    .line 844
     iget-object v0, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mPowerSaveEnabler:Lcom/android/settings_ex/powersave/PowerSaveEnabler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->pause()V
 
-    .line 845
     return-void
 .end method
 
@@ -870,15 +831,12 @@
     .locals 2
 
     .prologue
-    .line 822
     invoke-virtual {p0}, Lcom/android/settings_ex/Settings$HeaderAdapter;->notifyDataSetChanged()V
 
-    .line 824
     iget-object v0, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mWifiEnabler:Lcom/android/settings_ex/wifi/WifiEnabler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/wifi/WifiEnabler;->resume()V
 
-    .line 826
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
     const-string v1, "x3"
@@ -889,17 +847,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 831
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mBluetoothEnabler:Lcom/android/settings_ex/bluetooth/BluetoothEnabler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/BluetoothEnabler;->resume()V
 
-    .line 832
     iget-object v0, p0, Lcom/android/settings_ex/Settings$HeaderAdapter;->mPowerSaveEnabler:Lcom/android/settings_ex/powersave/PowerSaveEnabler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->resume()V
 
-    .line 833
     return-void
 .end method

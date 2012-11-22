@@ -39,12 +39,10 @@
     .parameter
 
     .prologue
-    .line 220
     iput-object p1, p0, Lcom/android/settings_ex/AppWidgetPickActivity$1;->this$0:Lcom/android/settings_ex/AppWidgetPickActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 221
     invoke-static {}, Ljava/text/Collator;->getInstance()Ljava/text/Collator;
 
     move-result-object v0
@@ -62,7 +60,6 @@
     .parameter "rhs"
 
     .prologue
-    .line 223
     iget-object v0, p0, Lcom/android/settings_ex/AppWidgetPickActivity$1;->mCollator:Ljava/text/Collator;
 
     iget-object v1, p1, Lcom/android/settings_ex/ActivityPicker$PickAdapter$Item;->label:Ljava/lang/CharSequence;
@@ -82,7 +79,6 @@
     .parameter "x1"
 
     .prologue
-    .line 220
     check-cast p1, Lcom/android/settings_ex/ActivityPicker$PickAdapter$Item;
 
     .end local p1

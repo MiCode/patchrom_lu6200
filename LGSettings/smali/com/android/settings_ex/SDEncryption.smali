@@ -34,7 +34,6 @@
     .locals 1
 
     .prologue
-    .line 14
     iget-object v0, p0, Lcom/android/settings_ex/SDEncryption;->isEnable:Ljava/lang/Boolean;
 
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z

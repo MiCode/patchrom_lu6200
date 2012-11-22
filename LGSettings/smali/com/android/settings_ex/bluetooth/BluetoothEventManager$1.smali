@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 201
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -97,14 +96,11 @@
 
     check-cast v2, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$Handler;
 
-    .line 211
     .local v2, handler:Lcom/android/settings_ex/bluetooth/BluetoothEventManager$Handler;
     if-eqz v2, :cond_0
 
-    .line 212
     invoke-interface {v2, p1, p2, v1}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$Handler;->onReceive(Landroid/content/Context;Landroid/content/Intent;Landroid/bluetooth/BluetoothDevice;)V
 
-    .line 214
     :cond_0
     return-void
 .end method

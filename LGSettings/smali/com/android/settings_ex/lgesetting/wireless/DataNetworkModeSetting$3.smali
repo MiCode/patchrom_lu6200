@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 312
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$3;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,13 +44,11 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 316
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$3;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;
 
     #setter for: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;->userInput:Z
     invoke-static {v0, v3}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;->access$202(Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;Z)Z
 
-    .line 317
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$3;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;->mModeManager:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;
@@ -87,11 +84,9 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->onDataNetworkModeChange(II)V
 
-    .line 318
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$3;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;
 
     invoke-virtual {v0, v3}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;->dismissDialog(I)V
 
-    .line 320
     return-void
 .end method

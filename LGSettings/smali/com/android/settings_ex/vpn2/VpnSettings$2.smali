@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 579
     iput-object p1, p0, Lcom/android/settings_ex/vpn2/VpnSettings$2;->this$0:Lcom/android/settings_ex/vpn2/VpnSettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/vpn2/VpnSettings$2;->val$preference:Landroid/preference/Preference;
@@ -48,15 +47,12 @@
     .parameter "which"
 
     .prologue
-    .line 581
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 582
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_0
 
-    .line 583
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnSettings$2;->this$0:Lcom/android/settings_ex/vpn2/VpnSettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/vpn2/VpnSettings$2;->this$0:Lcom/android/settings_ex/vpn2/VpnSettings;
@@ -69,7 +65,6 @@
     #calls: Lcom/android/settings_ex/vpn2/VpnSettings;->disconnect(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/vpn2/VpnSettings;->access$100(Lcom/android/settings_ex/vpn2/VpnSettings;Ljava/lang/String;)V
 
-    .line 584
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnSettings$2;->this$0:Lcom/android/settings_ex/vpn2/VpnSettings;
 
     #getter for: Lcom/android/settings_ex/vpn2/VpnSettings;->mPs:Landroid/preference/PreferenceCategory;
@@ -81,7 +76,6 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 585
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnSettings$2;->this$0:Lcom/android/settings_ex/vpn2/VpnSettings;
 
     #getter for: Lcom/android/settings_ex/vpn2/VpnSettings;->mPreferences:Ljava/util/HashMap;
@@ -98,7 +92,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 586
     iget-object v0, p0, Lcom/android/settings_ex/vpn2/VpnSettings$2;->this$0:Lcom/android/settings_ex/vpn2/VpnSettings;
 
     #getter for: Lcom/android/settings_ex/vpn2/VpnSettings;->mKeyStore:Landroid/security/KeyStore;

@@ -30,17 +30,14 @@
     .locals 1
 
     .prologue
-    .line 59
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 78
     new-instance v0, Lcom/android/settings_ex/AccessibilityTutorialActivity$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/AccessibilityTutorialActivity$1;-><init>(Lcom/android/settings_ex/AccessibilityTutorialActivity;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mInAnimationListener:Landroid/view/animation/Animation$AnimationListener;
 
-    .line 707
     return-void
 .end method
 
@@ -49,7 +46,6 @@
     .parameter "x0"
 
     .prologue
-    .line 59
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     return-object v0
@@ -61,7 +57,6 @@
     .parameter "x1"
 
     .prologue
-    .line 59
     invoke-direct {p0, p1}, Lcom/android/settings_ex/AccessibilityTutorialActivity;->activateModule(Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;)V
 
     return-void
@@ -72,7 +67,6 @@
     .parameter "x0"
 
     .prologue
-    .line 59
     invoke-direct {p0}, Lcom/android/settings_ex/AccessibilityTutorialActivity;->interrupt()V
 
     return-void
@@ -83,7 +77,6 @@
     .parameter "x0"
 
     .prologue
-    .line 59
     invoke-direct {p0}, Lcom/android/settings_ex/AccessibilityTutorialActivity;->previous()V
 
     return-void
@@ -94,7 +87,6 @@
     .parameter "x0"
 
     .prologue
-    .line 59
     invoke-direct {p0}, Lcom/android/settings_ex/AccessibilityTutorialActivity;->next()V
 
     return-void
@@ -105,10 +97,8 @@
     .parameter "module"
 
     .prologue
-    .line 163
     invoke-virtual {p1}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;->activate()V
 
-    .line 164
     return-void
 .end method
 
@@ -117,22 +107,18 @@
     .parameter "module"
 
     .prologue
-    .line 167
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mAccessibilityManager:Landroid/view/accessibility/AccessibilityManager;
 
     invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityManager;->interrupt()V
 
-    .line 168
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ViewAnimator;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    .line 169
     invoke-virtual {p1}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;->deactivate()V
 
-    .line 170
     return-void
 .end method
 
@@ -140,12 +126,10 @@
     .locals 1
 
     .prologue
-    .line 173
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mAccessibilityManager:Landroid/view/accessibility/AccessibilityManager;
 
     invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityManager;->interrupt()V
 
-    .line 174
     return-void
 .end method
 
@@ -153,7 +137,6 @@
     .locals 1
 
     .prologue
-    .line 177
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     invoke-virtual {v0}, Landroid/widget/ViewAnimator;->getDisplayedChild()I
@@ -172,7 +155,6 @@
     .locals 1
 
     .prologue
-    .line 181
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     invoke-virtual {v0}, Landroid/widget/ViewAnimator;->getDisplayedChild()I
@@ -203,25 +185,21 @@
 
     if-lt p1, v2, :cond_1
 
-    .line 206
     :cond_0
     :goto_0
     return-void
 
-    .line 189
     :cond_1
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mAccessibilityManager:Landroid/view/accessibility/AccessibilityManager;
 
     invoke-virtual {v2}, Landroid/view/accessibility/AccessibilityManager;->interrupt()V
 
-    .line 191
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     invoke-virtual {v2}, Landroid/widget/ViewAnimator;->getDisplayedChild()I
 
     move-result v0
 
-    .line 192
     .local v0, displayedIndex:I
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
@@ -231,25 +209,21 @@
 
     check-cast v1, Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;
 
-    .line 198
     .local v1, displayedView:Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;
     :try_start_0
     invoke-direct {p0, v1}, Lcom/android/settings_ex/AccessibilityTutorialActivity;->deactivateModule(Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 203
     :goto_1
     invoke-direct {p0, v1}, Lcom/android/settings_ex/AccessibilityTutorialActivity;->deactivateModule(Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;)V
 
-    .line 205
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     invoke-virtual {v2, p1}, Landroid/widget/ViewAnimator;->setDisplayedChild(I)V
 
     goto :goto_0
 
-    .line 199
     :catch_0
     move-exception v2
 
@@ -267,26 +241,21 @@
 
     const/4 v4, 0x0
 
-    .line 105
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 107
     invoke-static {p0, v3}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
     move-result-object v0
 
-    .line 109
     .local v0, inAnimation:Landroid/view/animation/Animation;
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mInAnimationListener:Landroid/view/animation/Animation$AnimationListener;
 
     invoke-virtual {v0, v2}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
-    .line 111
     invoke-static {p0, v3}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
     move-result-object v1
 
-    .line 114
     .local v1, outAnimation:Landroid/view/animation/Animation;
     new-instance v2, Landroid/widget/ViewAnimator;
 
@@ -294,17 +263,14 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
-    .line 115
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     invoke-virtual {v2, v0}, Landroid/widget/ViewAnimator;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 116
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     invoke-virtual {v2, v1}, Landroid/widget/ViewAnimator;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 117
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     new-instance v3, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;
@@ -313,7 +279,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewAnimator;->addView(Landroid/view/View;)V
 
-    .line 118
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     new-instance v3, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule2;
@@ -322,12 +287,10 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewAnimator;->addView(Landroid/view/View;)V
 
-    .line 120
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/AccessibilityTutorialActivity;->setContentView(Landroid/view/View;)V
 
-    .line 122
     const-string v2, "accessibility"
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/AccessibilityTutorialActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -365,20 +328,16 @@
     .locals 3
 
     .prologue
-    .line 147
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 149
     iget-boolean v1, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mDisableOnPause:Z
 
     if-eqz v1, :cond_0
 
-    .line 150
     invoke-virtual {p0}, Lcom/android/settings_ex/AccessibilityTutorialActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 151
     .local v0, cr:Landroid/content/ContentResolver;
     const-string v1, "touch_exploration_enabled"
 
@@ -400,15 +359,12 @@
 
     const/4 v2, 0x0
 
-    .line 133
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 135
     invoke-virtual {p0}, Lcom/android/settings_ex/AccessibilityTutorialActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 137
     .local v0, cr:Landroid/content/ContentResolver;
     const-string v1, "touch_exploration_enabled"
 
@@ -418,19 +374,15 @@
 
     if-nez v1, :cond_0
 
-    .line 138
     const-string v1, "touch_exploration_enabled"
 
     invoke-static {v0, v1, v3}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 139
     iput-boolean v3, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mDisableOnPause:Z
 
-    .line 143
     :goto_0
     return-void
 
-    .line 141
     :cond_0
     iput-boolean v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity;->mDisableOnPause:Z
 

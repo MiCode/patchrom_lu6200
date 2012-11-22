@@ -28,23 +28,18 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 59
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
-    .line 71
     iput-object v0, p0, Lcom/android/settings_ex/MasterClear;->mStorageManager:Landroid/os/storage/StorageManager;
 
-    .line 72
     iput-object v0, p0, Lcom/android/settings_ex/MasterClear;->mSDCardStorageVolume:Landroid/os/storage/StorageVolume;
 
-    .line 132
     new-instance v0, Lcom/android/settings_ex/MasterClear$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/MasterClear$1;-><init>(Lcom/android/settings_ex/MasterClear;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/MasterClear;->mInitiateListener:Landroid/view/View$OnClickListener;
 
-    .line 370
     new-instance v0, Lcom/android/settings_ex/MasterClear$4;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/MasterClear$4;-><init>(Lcom/android/settings_ex/MasterClear;)V
@@ -60,7 +55,6 @@
     .parameter "x1"
 
     .prologue
-    .line 59
     invoke-direct {p0, p1}, Lcom/android/settings_ex/MasterClear;->runKeyguardConfirmation(I)Z
 
     move-result v0
@@ -73,7 +67,6 @@
     .parameter "x0"
 
     .prologue
-    .line 59
     invoke-direct {p0}, Lcom/android/settings_ex/MasterClear;->showFinalConfirmation()V
 
     return-void
@@ -84,7 +77,6 @@
     .parameter "x0"
 
     .prologue
-    .line 59
     iget-object v0, p0, Lcom/android/settings_ex/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
 
     return-object v0
@@ -95,7 +87,6 @@
     .parameter "x0"
 
     .prologue
-    .line 59
     invoke-direct {p0}, Lcom/android/settings_ex/MasterClear;->updateSDCardView()V
 
     return-void
@@ -109,7 +100,6 @@
 
     const/4 v6, 0x0
 
-    .line 154
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     const v7, 0x7f0b00fd
@@ -122,14 +112,12 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/MasterClear;->mInitiateButton:Landroid/widget/Button;
 
-    .line 155
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mInitiateButton:Landroid/widget/Button;
 
     iget-object v7, p0, Lcom/android/settings_ex/MasterClear;->mInitiateListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v5, v7}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 156
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     const v7, 0x7f0b00f9
@@ -140,7 +128,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/MasterClear;->mExternalStorageContainer:Landroid/view/View;
 
-    .line 157
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     const v7, 0x7f0b00fa
@@ -174,13 +161,11 @@
 
     if-eqz v5, :cond_3
 
-    .line 169
     :cond_0
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mExternalStorageContainer:Landroid/view/View;
 
     invoke-virtual {v5, v8}, Landroid/view/View;->setVisibility(I)V
 
-    .line 171
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     const v7, 0x7f0b00f8
@@ -189,11 +174,9 @@
 
     move-result-object v3
 
-    .line 172
     .local v3, externalOption:Landroid/view/View;
     invoke-virtual {v3, v8}, Landroid/view/View;->setVisibility(I)V
 
-    .line 174
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     const v7, 0x7f0b00f5
@@ -202,11 +185,9 @@
 
     move-result-object v2
 
-    .line 175
     .local v2, externalAlsoErased:Landroid/view/View;
     invoke-virtual {v2, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 179
     iget-object v7, p0, Lcom/android/settings_ex/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
 
     if-nez v4, :cond_2
@@ -230,7 +211,6 @@
 
     if-eqz v5, :cond_1
 
-    .line 191
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f0b00fb
@@ -241,13 +221,11 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 192
     .local v0, EraseSDCardText1:Landroid/widget/TextView;
     const v5, 0x7f080950
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setText(I)V
 
-    .line 193
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f0b00fc
@@ -258,22 +236,18 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 194
     .local v1, EraseSDCardText2:Landroid/widget/TextView;
     const v5, 0x7f080951
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(I)V
 
-    .line 197
     .end local v0           #EraseSDCardText1:Landroid/widget/TextView;
     .end local v1           #EraseSDCardText2:Landroid/widget/TextView;
     :cond_1
     invoke-direct {p0}, Lcom/android/settings_ex/MasterClear;->loadAccountList()V
 
-    .line 198
     invoke-direct {p0}, Lcom/android/settings_ex/MasterClear;->updateSDCardView()V
 
-    .line 199
     return-void
 
     .restart local v2       #externalAlsoErased:Landroid/view/View;
@@ -305,12 +279,10 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 352
     iget-object v4, p0, Lcom/android/settings_ex/MasterClear;->mStorageManager:Landroid/os/storage/StorageManager;
 
     if-nez v4, :cond_0
 
-    .line 353
     invoke-virtual {p0}, Lcom/android/settings_ex/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
@@ -325,14 +297,12 @@
 
     iput-object v4, p0, Lcom/android/settings_ex/MasterClear;->mStorageManager:Landroid/os/storage/StorageManager;
 
-    .line 354
     iget-object v4, p0, Lcom/android/settings_ex/MasterClear;->mStorageManager:Landroid/os/storage/StorageManager;
 
     iget-object v6, p0, Lcom/android/settings_ex/MasterClear;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v4, v6}, Landroid/os/storage/StorageManager;->registerListener(Landroid/os/storage/StorageEventListener;)V
 
-    .line 357
     :cond_0
     iget-object v4, p0, Lcom/android/settings_ex/MasterClear;->mStorageManager:Landroid/os/storage/StorageManager;
 
@@ -454,54 +424,44 @@
 
     check-cast v10, Landroid/widget/LinearLayout;
 
-    .line 209
     .local v10, contents:Landroid/widget/LinearLayout;
     invoke-virtual {v10}, Landroid/widget/LinearLayout;->removeAllViews()V
 
-    .line 211
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v11
 
-    .line 213
     .local v11, context:Landroid/content/Context;
     invoke-static {v11}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
     move-result-object v20
 
-    .line 214
     .local v20, mgr:Landroid/accounts/AccountManager;
     invoke-virtual/range {v20 .. v20}, Landroid/accounts/AccountManager;->getAccounts()[Landroid/accounts/Account;
 
     move-result-object v6
 
-    .line 215
     .local v6, accounts:[Landroid/accounts/Account;
     array-length v4, v6
 
-    .line 216
     .local v4, N:I
     if-nez v4, :cond_0
 
-    .line 217
     const/16 v22, 0x8
 
     move/from16 v0, v22
 
     invoke-virtual {v7, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 218
     const/16 v22, 0x8
 
     move/from16 v0, v22
 
     invoke-virtual {v10, v0}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 279
     :goto_0
     return-void
 
-    .line 222
     :cond_0
     const-string v22, "layout_inflater"
 
@@ -826,7 +786,6 @@
     .parameter "request"
 
     .prologue
-    .line 81
     invoke-virtual {p0}, Lcom/android/settings_ex/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -870,7 +829,6 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 106
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getCountry()Ljava/lang/String;
 
     move-result-object v0
@@ -903,14 +861,12 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 108
     const-string v1, "com.android.settings_ex"
 
     const-string v2, "com.android.settings_ex.Settings$MasterClearConfirm"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 109
     iget-object v1, p0, Lcom/android/settings_ex/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
 
     invoke-virtual {v1}, Landroid/widget/CheckBox;->isEnabled()Z
@@ -930,15 +886,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 114
     :goto_0
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/MasterClear;->startActivity(Landroid/content/Intent;)V
 
-    .line 125
     :goto_1
     return-void
 
-    .line 112
     :cond_1
     const-string v1, "erase_sd"
 
@@ -956,7 +909,6 @@
 
     invoke-direct {v1, v0}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    .line 117
     const-class v0, Lcom/android/settings_ex/MasterClearConfirm;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -965,12 +917,10 @@
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setFragment(Ljava/lang/String;)V
 
-    .line 118
     const v0, 0x7f0803af
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setTitle(I)V
 
-    .line 119
     iget-object v0, p0, Lcom/android/settings_ex/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isEnabled()Z
@@ -1025,19 +975,16 @@
     .locals 7
 
     .prologue
-    .line 315
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mSDCardStorageVolume:Landroid/os/storage/StorageVolume;
 
     if-nez v5, :cond_0
 
-    .line 316
     invoke-direct {p0}, Lcom/android/settings_ex/MasterClear;->getStorageVolumeForSD()Landroid/os/storage/StorageVolume;
 
     move-result-object v5
 
     iput-object v5, p0, Lcom/android/settings_ex/MasterClear;->mSDCardStorageVolume:Landroid/os/storage/StorageVolume;
 
-    .line 318
     :cond_0
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mSDCardStorageVolume:Landroid/os/storage/StorageVolume;
 
@@ -1051,14 +998,12 @@
 
     if-eqz v5, :cond_1
 
-    .line 319
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mExternalStorageContainer:Landroid/view/View;
 
     const/4 v6, 0x0
 
     invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 321
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f0b00f8
@@ -1067,13 +1012,11 @@
 
     move-result-object v2
 
-    .line 322
     .local v2, externalOption:Landroid/view/View;
     const/16 v5, 0x8
 
     invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
 
-    .line 324
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mExternalStorageContainer:Landroid/view/View;
 
     new-instance v6, Lcom/android/settings_ex/MasterClear$3;
@@ -1097,7 +1040,6 @@
 
     if-eqz v5, :cond_2
 
-    .line 335
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mStorageManager:Landroid/os/storage/StorageManager;
 
     iget-object v6, p0, Lcom/android/settings_ex/MasterClear;->mSDCardStorageVolume:Landroid/os/storage/StorageVolume;
@@ -1124,21 +1066,17 @@
 
     if-nez v5, :cond_3
 
-    .line 339
     const/4 v3, 0x0
 
-    .line 343
     :goto_0
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mExternalStorageContainer:Landroid/view/View;
 
     invoke-virtual {v5, v3}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 344
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
 
     invoke-virtual {v5, v3}, Landroid/widget/CheckBox;->setEnabled(Z)V
 
-    .line 345
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f0b00fb
@@ -1149,11 +1087,9 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 346
     .local v0, EraseSDCardText1:Landroid/widget/TextView;
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    .line 347
     iget-object v5, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f0b00fc
@@ -1189,30 +1125,24 @@
     .parameter "data"
 
     .prologue
-    .line 90
     invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 92
     const/16 v0, 0x37
 
     if-eq p1, v0, :cond_0
 
-    .line 103
     :goto_0
     return-void
 
-    .line 98
     :cond_0
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_1
 
-    .line 99
     invoke-direct {p0}, Lcom/android/settings_ex/MasterClear;->showFinalConfirmation()V
 
     goto :goto_0
 
-    .line 101
     :cond_1
     invoke-direct {p0}, Lcom/android/settings_ex/MasterClear;->establishInitialState()V
 
@@ -1237,14 +1167,12 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
-    .line 286
     invoke-virtual {p0}, Lcom/android/settings_ex/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 287
     invoke-virtual {p0}, Lcom/android/settings_ex/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -1253,11 +1181,9 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setTitle(I)V
 
-    .line 290
     :cond_0
     invoke-direct {p0}, Lcom/android/settings_ex/MasterClear;->establishInitialState()V
 
-    .line 291
     iget-object v0, p0, Lcom/android/settings_ex/MasterClear;->mContentView:Landroid/view/View;
 
     return-object v0
@@ -1267,7 +1193,6 @@
     .locals 2
 
     .prologue
-    .line 296
     iget-object v0, p0, Lcom/android/settings_ex/MasterClear;->mStorageManager:Landroid/os/storage/StorageManager;
 
     if-eqz v0, :cond_0
@@ -1276,18 +1201,15 @@
 
     if-eqz v0, :cond_0
 
-    .line 297
     iget-object v0, p0, Lcom/android/settings_ex/MasterClear;->mStorageManager:Landroid/os/storage/StorageManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/MasterClear;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v0, v1}, Landroid/os/storage/StorageManager;->unregisterListener(Landroid/os/storage/StorageEventListener;)V
 
-    .line 299
     :cond_0
     invoke-super {p0}, Landroid/app/Fragment;->onDestroy()V
 
-    .line 300
     return-void
 .end method
 
@@ -1295,12 +1217,10 @@
     .locals 4
 
     .prologue
-    .line 306
     sget-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v0, :cond_0
 
-    .line 307
     invoke-static {}, Lcom/android/settings_ex/MDMSettingsAdapter;->getInstance()Lcom/android/settings_ex/MDMSettingsAdapter;
 
     move-result-object v0

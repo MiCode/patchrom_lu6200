@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 83
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -69,7 +68,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 87
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     iget-boolean v0, v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->is_clicked:Z
@@ -78,14 +76,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 88
     const-string v0, "LGE_DATA_PAYPOPUP"
 
     const-string v1, "********    finish()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 89
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     iget-object v0, v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->am:Landroid/app/AlarmManager;
@@ -99,7 +95,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->getApplicationContext()Landroid/content/Context;
@@ -112,19 +107,16 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 91
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     const/4 v1, 0x0
 
     iput-boolean v1, v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->is_clicked:Z
 
-    .line 92
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$2;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->finish()V
 
-    .line 94
     :cond_0
     return-void
 .end method

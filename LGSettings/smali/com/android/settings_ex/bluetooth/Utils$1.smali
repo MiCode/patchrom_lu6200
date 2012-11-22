@@ -36,16 +36,13 @@
     .parameter "which"
 
     .prologue
-    .line 156
     const-string v0, "service.btui.gap.pairByLocal"
 
     const-string v1, "0"
 
     invoke-static {v0, v1}, Lcom/android/settings_ex/bluetooth/Utils;->BtUiPropertySet(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 157
     invoke-interface {p1}, Landroid/content/DialogInterface;->cancel()V
 
-    .line 158
     return-void
 .end method

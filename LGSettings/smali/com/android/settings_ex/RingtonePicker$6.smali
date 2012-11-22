@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 1575
     iput-object p1, p0, Lcom/android/settings_ex/RingtonePicker$6;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -64,14 +63,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1578
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/16 v1, 0xa
 
     if-ne v0, v1, :cond_1
 
-    .line 1579
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker$6;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     #getter for: Lcom/android/settings_ex/RingtonePicker;->ringtone:Landroid/media/Ringtone;
@@ -94,7 +91,6 @@
 
     if-nez v0, :cond_0
 
-    .line 1580
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker$6;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     #getter for: Lcom/android/settings_ex/RingtonePicker;->mAudioManager:Landroid/media/AudioManager;
@@ -124,7 +120,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1582
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker$6;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     #getter for: Lcom/android/settings_ex/RingtonePicker;->ringtone:Landroid/media/Ringtone;
@@ -134,7 +129,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 1583
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker$6;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     #getter for: Lcom/android/settings_ex/RingtonePicker;->ringtone:Landroid/media/Ringtone;

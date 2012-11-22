@@ -166,69 +166,55 @@
 
     if-eqz v1, :cond_2
 
-    .line 89
     const-string v1, "BluetoothAuthorizeRequest"
 
     const-string v3, "[BTUI] ### Trust state of remote device is true"
 
     invoke-static {v1, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 90
     invoke-virtual {v0, v2, v7, v7}, Landroid/bluetooth/BluetoothDevice;->authorizeService(Ljava/lang/String;ZZ)Z
 
     goto :goto_0
 
-    .line 95
     :cond_2
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 96
     const-class v4, Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;
 
     invoke-virtual {v1, p1, v4}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 97
     invoke-virtual {v1, v10}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 99
     invoke-virtual {p1, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 102
     new-instance v4, Landroid/content/Intent;
 
     invoke-direct {v4}, Landroid/content/Intent;-><init>()V
 
-    .line 103
     const-class v1, Lcom/android/settings_ex/bluetooth/BluetoothAuthorizeDialog;
 
     invoke-virtual {v4, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 105
     const-string v1, "broadcom.android.bluetooth.intent.DEVICE"
 
     invoke-virtual {v4, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 106
     const-string v1, "broadcom.android.bluetooth.intent.SERVICE"
 
     invoke-virtual {v4, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 107
     const-string v1, "broadcom.android.bluetooth.intent.TEMPORARY_KEY"
 
     invoke-virtual {v4, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 108
     const-string v1, "broadcom.android.bluetooth.intent.action.AUTHORIZE_REQUEST"
 
     invoke-virtual {v4, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 110
     invoke-virtual {v4, v10}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 116
     const-string v1, "keyguard"
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;

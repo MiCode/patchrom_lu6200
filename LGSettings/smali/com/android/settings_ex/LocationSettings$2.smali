@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 297
     iput-object p1, p0, Lcom/android/settings_ex/LocationSettings$2;->this$0:Lcom/android/settings_ex/LocationSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "which"
 
     .prologue
-    .line 300
     iget-object v0, p0, Lcom/android/settings_ex/LocationSettings$2;->this$0:Lcom/android/settings_ex/LocationSettings;
 
     iget-object v0, v0, Lcom/android/settings_ex/LocationSettings;->mGpsService:Landroid/content/DialogInterface;
@@ -54,7 +52,6 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 301
     iget-object v0, p0, Lcom/android/settings_ex/LocationSettings$2;->this$0:Lcom/android/settings_ex/LocationSettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/LocationSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -67,7 +64,6 @@
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Secure;->setLocationProviderEnabled(Landroid/content/ContentResolver;Ljava/lang/String;Z)V
 
-    .line 303
     iget-object v0, p0, Lcom/android/settings_ex/LocationSettings$2;->this$0:Lcom/android/settings_ex/LocationSettings;
 
     #getter for: Lcom/android/settings_ex/LocationSettings;->mGps:Landroid/preference/CheckBoxPreference;

@@ -41,12 +41,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigInfo;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    .line 48
     const v0, 0x7f0400b9
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/wifi/WifiConfigInfo;->setContentView(I)V
 
-    .line 49
     const v0, 0x7f0b01fa
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/wifi/WifiConfigInfo;->findViewById(I)Landroid/view/View;
@@ -65,27 +63,22 @@
     .locals 4
 
     .prologue
-    .line 54
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 55
     iget-object v3, p0, Lcom/android/settings_ex/wifi/WifiConfigInfo;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v3}, Landroid/net/wifi/WifiManager;->getConfiguredNetworks()Ljava/util/List;
 
     move-result-object v2
 
-    .line 56
     .local v2, wifiConfigs:Ljava/util/List;,"Ljava/util/List<Landroid/net/wifi/WifiConfiguration;>;"
     new-instance v0, Ljava/lang/StringBuffer;
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 59
     .local v0, configList:Ljava/lang/StringBuffer;
     if-eqz v2, :cond_1
 
-    .line 60
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v3
@@ -96,25 +89,21 @@
     :goto_0
     if-ltz v1, :cond_0
 
-    .line 61
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;
 
-    .line 60
     add-int/lit8 v1, v1, -0x1
 
     goto :goto_0
 
-    .line 63
     :cond_0
     iget-object v3, p0, Lcom/android/settings_ex/wifi/WifiConfigInfo;->mConfigList:Landroid/widget/TextView;
 
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 65
     .end local v1           #i:I
     :cond_1
     return-void

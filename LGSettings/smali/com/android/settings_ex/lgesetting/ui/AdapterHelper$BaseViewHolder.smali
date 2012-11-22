@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 12
     .local p0, this:Lcom/android/settings_ex/lgesetting/ui/AdapterHelper$BaseViewHolder;,"Lcom/android/settings_ex/lgesetting/ui/AdapterHelper<TITEM;>.BaseViewHolder;"
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/ui/AdapterHelper$BaseViewHolder;->this$0:Lcom/android/settings_ex/lgesetting/ui/AdapterHelper;
 

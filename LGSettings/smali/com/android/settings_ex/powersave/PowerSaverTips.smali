@@ -21,15 +21,12 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 23
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 25
     const v3, 0x7f060028
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/powersave/PowerSaverTips;->addPreferencesFromResource(I)V
 
-    .line 36
     sget-object v3, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
     const-string v4, "l_dcm"
@@ -49,20 +46,16 @@
 
     check-cast v1, Landroid/preference/PreferenceCategory;
 
-    .line 39
     .local v1, p:Landroid/preference/PreferenceCategory;
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaverTips;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
-    .line 40
     .local v2, ps:Landroid/preference/PreferenceScreen;
     if-eqz v2, :cond_0
 
-    .line 41
     invoke-virtual {v2, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 46
     .end local v1           #p:Landroid/preference/PreferenceCategory;
     .end local v2           #ps:Landroid/preference/PreferenceScreen;
     :cond_0
@@ -93,20 +86,16 @@
 
     check-cast v1, Landroid/preference/PreferenceCategory;
 
-    .line 50
     .restart local v1       #p:Landroid/preference/PreferenceCategory;
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaverTips;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
-    .line 51
     .restart local v2       #ps:Landroid/preference/PreferenceScreen;
     if-eqz v2, :cond_1
 
-    .line 52
     invoke-virtual {v2, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 55
     .end local v1           #p:Landroid/preference/PreferenceCategory;
     .end local v2           #ps:Landroid/preference/PreferenceScreen;
     :cond_1
@@ -125,20 +114,16 @@
 
     check-cast v1, Landroid/preference/PreferenceCategory;
 
-    .line 57
     .restart local v1       #p:Landroid/preference/PreferenceCategory;
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaverTips;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
-    .line 58
     .restart local v2       #ps:Landroid/preference/PreferenceScreen;
     if-eqz v2, :cond_2
 
-    .line 59
     invoke-virtual {v2, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 61
     .end local v1           #p:Landroid/preference/PreferenceCategory;
     .end local v2           #ps:Landroid/preference/PreferenceScreen;
     :cond_2

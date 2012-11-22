@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1463
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2$14;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettings$2;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +44,6 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 1465
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2$14;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettings$2;
 
     iget-object v0, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -55,7 +53,6 @@
     #setter for: Lcom/android/settings_ex/deviceinfo/UsbSettings;->mCurrentFunction:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->access$402(Lcom/android/settings_ex/deviceinfo/UsbSettings;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1466
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2$14;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettings$2;
 
     iget-object v0, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -72,10 +69,8 @@
     #calls: Lcom/android/settings_ex/deviceinfo/UsbSettings;->updateToggles(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->access$1800(Lcom/android/settings_ex/deviceinfo/UsbSettings;Ljava/lang/String;)V
 
-    .line 1468
     sput-boolean v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 1469
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2$14;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettings$2;
 
     iget-object v0, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -96,7 +91,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 1470
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2$14;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettings$2;
 
     iget-object v0, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -113,7 +107,6 @@
     #setter for: Lcom/android/settings_ex/deviceinfo/UsbSettings;->mDefaultFunction:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->access$502(Lcom/android/settings_ex/deviceinfo/UsbSettings;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1472
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2$14;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettings$2;
 
     iget-object v0, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -123,16 +116,13 @@
     #calls: Lcom/android/settings_ex/deviceinfo/UsbSettings;->connectUsbTether(Z)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->access$1200(Lcom/android/settings_ex/deviceinfo/UsbSettings;Z)V
 
-    .line 1474
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 1475
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2$14;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettings$2;
 
     iget-object v0, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->finish()V
 
-    .line 1476
     return-void
 .end method

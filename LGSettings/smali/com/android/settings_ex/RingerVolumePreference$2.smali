@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 252
     iput-object p1, p0, Lcom/android/settings_ex/RingerVolumePreference$2;->this$0:Lcom/android/settings_ex/RingerVolumePreference;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -55,7 +54,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 256
     iget-object v1, p0, Lcom/android/settings_ex/RingerVolumePreference$2;->this$0:Lcom/android/settings_ex/RingerVolumePreference;
 
     #getter for: Lcom/android/settings_ex/RingerVolumePreference;->mHandler:Landroid/os/Handler;

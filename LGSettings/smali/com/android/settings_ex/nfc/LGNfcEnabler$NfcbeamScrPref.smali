@@ -30,15 +30,12 @@
     .parameter "prep"
 
     .prologue
-    .line 296
     iput-object p1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcbeamScrPref;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 297
     iput-object p2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcbeamScrPref;->mAndroidBeam:Landroid/preference/PreferenceScreen;
 
-    .line 298
     #getter for: Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
     invoke-static {p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler;->access$000(Lcom/android/settings_ex/nfc/LGNfcEnabler;)Landroid/nfc/NfcAdapter;
 
@@ -46,14 +43,12 @@
 
     if-nez v0, :cond_0
 
-    .line 299
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcbeamScrPref;->mAndroidBeam:Landroid/preference/PreferenceScreen;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
-    .line 300
     :cond_0
     return-void
 .end method
@@ -68,20 +63,16 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 304
     packed-switch p1, :pswitch_data_0
 
-    .line 324
     :goto_0
     return-void
 
-    .line 306
     :pswitch_0
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcbeamScrPref;->mAndroidBeam:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
-    .line 307
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcbeamScrPref;->mAndroidBeam:Landroid/preference/PreferenceScreen;
 
     const v1, 0x7f0801fa
@@ -98,7 +89,6 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
-    .line 311
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcbeamScrPref;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     #getter for: Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
@@ -112,7 +102,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 312
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcbeamScrPref;->mAndroidBeam:Landroid/preference/PreferenceScreen;
 
     const v1, 0x7f0801f8

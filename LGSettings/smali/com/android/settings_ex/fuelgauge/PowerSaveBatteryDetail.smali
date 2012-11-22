@@ -101,53 +101,44 @@
     .locals 2
 
     .prologue
-    .line 67
     invoke-direct {p0}, Landroid/preference/PreferenceFragment;-><init>()V
 
-    .line 81
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mUsageList:Ljava/util/List;
 
-    .line 82
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mWifiSippers:Ljava/util/List;
 
-    .line 83
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mBluetoothSippers:Ljava/util/List;
 
-    .line 89
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
 
-    .line 94
     const-wide/16 v0, 0x0
 
     iput-wide v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsPeriod:J
 
-    .line 95
     const-wide/high16 v0, 0x3ff0
 
     iput-wide v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mMaxPower:D
 
-    .line 105
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestQueue:Ljava/util/ArrayList;
 
-    .line 852
     new-instance v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail$1;-><init>(Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;)V
@@ -164,7 +155,6 @@
     .prologue
     const-wide v9, 0x408f400000000000L
 
-    .line 752
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     iget v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
@@ -192,14 +182,12 @@
 
     div-double/2addr v0, v9
 
-    .line 755
     iget-object v2, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     invoke-virtual {v2}, Lcom/android/internal/os/BatteryStatsImpl;->getBluetoothPingCount()I
 
     move-result v2
 
-    .line 756
     int-to-double v5, v2
 
     iget-object v2, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mPowerProfile:Lcom/android/internal/os/PowerProfile;
@@ -216,7 +204,6 @@
 
     add-double v6, v0, v5
 
-    .line 758
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -241,14 +228,12 @@
 
     move-result-object v0
 
-    .line 761
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mBluetoothSippers:Ljava/util/List;
 
     const-string v2, "Bluetooth"
 
     invoke-direct {p0, v0, v1, v2}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->aggregateSippers(Lcom/android/settings_ex/fuelgauge/BatterySipper;Ljava/util/List;Ljava/lang/String;)V
 
-    .line 762
     return-void
 .end method
 
@@ -261,7 +246,6 @@
     .parameter "power"
 
     .prologue
-    .line 812
     iget-wide v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mMaxPower:D
 
     cmpl-double v1, p6, v1
@@ -278,7 +262,6 @@
 
     iput-wide v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mTotalPower:D
 
-    .line 814
     new-instance v0, Lcom/android/settings_ex/fuelgauge/BatterySipper;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
@@ -307,19 +290,15 @@
 
     invoke-direct/range {v0 .. v8}, Lcom/android/settings_ex/fuelgauge/BatterySipper;-><init>(Landroid/content/Context;Ljava/util/ArrayList;Landroid/os/Handler;Ljava/lang/String;Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;ILandroid/os/BatteryStats$Uid;[D)V
 
-    .line 816
     .local v0, bs:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     iput-wide p3, v0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->usageTime:J
 
-    .line 817
     iput p5, v0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->iconId:I
 
-    .line 818
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mUsageList:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 819
     return-object v0
 .end method
 
@@ -328,7 +307,6 @@
     .parameter
 
     .prologue
-    .line 744
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     iget v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
@@ -360,7 +338,6 @@
 
     div-double v6, v0, v5
 
-    .line 747
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -388,7 +365,6 @@
     .parameter "uSecNow"
 
     .prologue
-    .line 663
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     iget v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
@@ -559,7 +535,6 @@
 
     add-double/2addr v8, v2
 
-    .line 704
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -580,7 +555,6 @@
 
     move-result-object v11
 
-    .line 707
     .local v11, bs:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     const-wide/16 v2, 0x0
 
@@ -751,7 +725,6 @@
 
     div-double/2addr v8, v2
 
-    .line 687
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -783,7 +756,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 728
     iget-object v2, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     iget v3, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
@@ -794,7 +766,6 @@
 
     div-long v5, v2, v7
 
-    .line 729
     iget-object v2, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     iget v3, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
@@ -805,19 +776,16 @@
 
     div-long/2addr v2, v7
 
-    .line 732
     iget-wide v7, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mAppWifiRunning:J
 
     sub-long v3, v2, v7
 
-    .line 733
     cmp-long v2, v3, v0
 
     if-gez v2, :cond_0
 
     move-wide v3, v0
 
-    .line 734
     :cond_0
     mul-long/2addr v0, v5
 
@@ -851,7 +819,6 @@
 
     div-double v6, v0, v5
 
-    .line 738
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -876,14 +843,12 @@
 
     move-result-object v0
 
-    .line 740
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mWifiSippers:Ljava/util/List;
 
     const-string v2, "WIFI"
 
     invoke-direct {p0, v0, v1, v2}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->aggregateSippers(Lcom/android/settings_ex/fuelgauge/BatterySipper;Ljava/util/List;Ljava/lang/String;)V
 
-    .line 741
     return-void
 .end method
 
@@ -906,7 +871,6 @@
     .end annotation
 
     .prologue
-    .line 714
     .local p2, from:Ljava/util/List;,"Ljava/util/List<Lcom/android/settings_ex/fuelgauge/BatterySipper;>;"
     const/4 v0, 0x0
 
@@ -918,14 +882,12 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 715
     invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/android/settings_ex/fuelgauge/BatterySipper;
 
-    .line 717
     .local v1, wbs:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     iget-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->cpuTime:J
 
@@ -935,7 +897,6 @@
 
     iput-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->cpuTime:J
 
-    .line 718
     iget-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->gpsTime:J
 
     iget-wide v4, v1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->gpsTime:J
@@ -944,7 +905,6 @@
 
     iput-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->gpsTime:J
 
-    .line 719
     iget-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->wifiRunningTime:J
 
     iget-wide v4, v1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->wifiRunningTime:J
@@ -953,7 +913,6 @@
 
     iput-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->wifiRunningTime:J
 
-    .line 720
     iget-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->cpuFgTime:J
 
     iget-wide v4, v1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->cpuFgTime:J
@@ -962,7 +921,6 @@
 
     iput-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->cpuFgTime:J
 
-    .line 721
     iget-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->wakeLockTime:J
 
     iget-wide v4, v1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->wakeLockTime:J
@@ -971,7 +929,6 @@
 
     iput-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->wakeLockTime:J
 
-    .line 722
     iget-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->tcpBytesReceived:J
 
     iget-wide v4, v1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->tcpBytesReceived:J
@@ -980,7 +937,6 @@
 
     iput-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->tcpBytesReceived:J
 
-    .line 723
     iget-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->tcpBytesSent:J
 
     iget-wide v4, v1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->tcpBytesSent:J
@@ -989,12 +945,10 @@
 
     iput-wide v2, p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;->tcpBytesSent:J
 
-    .line 714
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 725
     .end local v1           #wbs:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     :cond_0
     return-void
@@ -1004,8 +958,6 @@
     .locals 14
 
     .prologue
-    .line 765
-    .line 767
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mPowerProfile:Lcom/android/internal/os/PowerProfile;
 
     const-string v1, "wifi.active"
@@ -1018,7 +970,6 @@
 
     div-double v2, v0, v2
 
-    .line 769
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mPowerProfile:Lcom/android/internal/os/PowerProfile;
 
     const-string v1, "radio.active"
@@ -1031,7 +982,6 @@
 
     div-double v4, v0, v4
 
-    .line 771
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     iget v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
@@ -1050,7 +1000,6 @@
 
     add-long/2addr v6, v0
 
-    .line 773
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     iget v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
@@ -1071,7 +1020,6 @@
 
     sub-long v8, v0, v6
 
-    .line 775
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     invoke-virtual {v0}, Lcom/android/internal/os/BatteryStatsImpl;->getRadioDataUptime()J
@@ -1197,7 +1145,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
-    .line 830
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     const/4 v1, 0x0
@@ -1228,7 +1175,6 @@
     .locals 81
 
     .prologue
-    .line 468
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
@@ -1302,18 +1248,15 @@
 
     aput-wide v5, v38, v35
 
-    .line 474
     add-int/lit8 v35, v35, 0x1
 
     goto :goto_0
 
-    .line 477
     :cond_0
     invoke-direct/range {p0 .. p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getAverageDataCost()D
 
     move-result-wide v16
 
-    .line 478
     .local v16, averageCostPerByte:D
     move-object/from16 v0, p0
 
@@ -1333,15 +1276,12 @@
 
     move-result-wide v65
 
-    .line 479
     .local v65, uSecTime:J
     const-wide/16 v14, 0x0
 
-    .line 480
     .local v14, appWakelockTime:J
     const/16 v34, 0x0
 
-    .line 481
     .local v34, osApp:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     move-wide/from16 v0, v65
 
@@ -1349,14 +1289,12 @@
 
     iput-wide v0, v2, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsPeriod:J
 
-    .line 482
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v65
 
     invoke-direct {v0, v1, v2}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->updateStatsPeriod(J)V
 
-    .line 483
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
@@ -2103,43 +2041,35 @@
 
     invoke-direct/range {v4 .. v12}, Lcom/android/settings_ex/fuelgauge/BatterySipper;-><init>(Landroid/content/Context;Ljava/util/ArrayList;Landroid/os/Handler;Ljava/lang/String;Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;ILandroid/os/BatteryStats$Uid;[D)V
 
-    .line 613
     .local v4, app:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     move-wide/from16 v0, v21
 
     iput-wide v0, v4, Lcom/android/settings_ex/fuelgauge/BatterySipper;->cpuTime:J
 
-    .line 614
     move-wide/from16 v0, v26
 
     iput-wide v0, v4, Lcom/android/settings_ex/fuelgauge/BatterySipper;->gpsTime:J
 
-    .line 615
     move-wide/from16 v0, v78
 
     iput-wide v0, v4, Lcom/android/settings_ex/fuelgauge/BatterySipper;->wifiRunningTime:J
 
-    .line 616
     move-wide/from16 v0, v18
 
     iput-wide v0, v4, Lcom/android/settings_ex/fuelgauge/BatterySipper;->cpuFgTime:J
 
-    .line 617
     move-wide/from16 v0, v75
 
     iput-wide v0, v4, Lcom/android/settings_ex/fuelgauge/BatterySipper;->wakeLockTime:J
 
-    .line 618
     move-wide/from16 v0, v57
 
     iput-wide v0, v4, Lcom/android/settings_ex/fuelgauge/BatterySipper;->tcpBytesReceived:J
 
-    .line 619
     move-wide/from16 v0, v59
 
     iput-wide v0, v4, Lcom/android/settings_ex/fuelgauge/BatterySipper;->tcpBytesSent:J
 
-    .line 620
     invoke-virtual {v11}, Landroid/os/BatteryStats$Uid;->getUid()I
 
     move-result v5
@@ -2148,14 +2078,12 @@
 
     if-ne v5, v6, :cond_11
 
-    .line 621
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mWifiSippers:Ljava/util/List;
 
     invoke-interface {v5, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 627
     :goto_9
     invoke-virtual {v11}, Landroid/os/BatteryStats$Uid;->getUid()I
 
@@ -2163,10 +2091,8 @@
 
     if-nez v5, :cond_10
 
-    .line 628
     move-object/from16 v34, v4
 
-    .line 631
     .end local v4           #app:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     :cond_10
     invoke-virtual {v11}, Landroid/os/BatteryStats$Uid;->getUid()I
@@ -2188,13 +2114,11 @@
 
     iput-wide v5, v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mWifiPower:D
 
-    .line 485
     :goto_a
     add-int/lit8 v31, v31, 0x1
 
     goto/16 :goto_1
 
-    .line 622
     .restart local v4       #app:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     :cond_11
     invoke-virtual {v11}, Landroid/os/BatteryStats$Uid;->getUid()I
@@ -2224,7 +2148,6 @@
 
     goto :goto_9
 
-    .line 633
     .end local v4           #app:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     :cond_13
     invoke-virtual {v11}, Landroid/os/BatteryStats$Uid;->getUid()I
@@ -2456,10 +2379,8 @@
     .locals 11
 
     .prologue
-    .line 791
     iget v6, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
 
-    .line 792
     .local v6, which:I
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -2477,27 +2398,20 @@
 
     move-result-wide v2
 
-    .line 794
     .local v2, uSecNow:J
     move-wide v0, v2
 
-    .line 799
     .local v0, timeSinceUnplugged:J
     invoke-direct {p0, v2, v3}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->addPhoneUsage(J)V
 
-    .line 800
     invoke-direct {p0, v2, v3}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->addScreenUsage(J)V
 
-    .line 801
     invoke-direct {p0, v2, v3}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->addWiFiUsage(J)V
 
-    .line 802
     invoke-direct {p0, v2, v3}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->addBluetoothUsage(J)V
 
-    .line 803
     invoke-direct {p0, v2, v3}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->addIdleUsage(J)V
 
-    .line 805
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
@@ -2508,10 +2422,8 @@
 
     if-nez v7, :cond_0
 
-    .line 806
     invoke-direct {p0, v2, v3}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->addRadioUsage(J)V
 
-    .line 808
     :cond_0
     return-void
 .end method
@@ -2526,69 +2438,53 @@
 
     const-wide/16 v9, 0x0
 
-    .line 395
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     if-nez v8, :cond_0
 
-    .line 396
     invoke-direct {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->load()V
 
-    .line 398
     :cond_0
     iput-wide v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mMaxPower:D
 
-    .line 399
     iput-wide v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mTotalPower:D
 
-    .line 400
     iput-wide v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mWifiPower:D
 
-    .line 401
     iput-wide v9, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mBluetoothPower:D
 
-    .line 402
     const-wide/16 v8, 0x0
 
     iput-wide v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mAppWifiRunning:J
 
-    .line 404
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mAppListGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v8}, Landroid/preference/PreferenceGroup;->removeAll()V
 
-    .line 405
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mGraphGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v8}, Landroid/preference/PreferenceGroup;->removeAll()V
 
-    .line 406
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mUsageList:Ljava/util/List;
 
     invoke-interface {v8}, Ljava/util/List;->clear()V
 
-    .line 407
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mWifiSippers:Ljava/util/List;
 
     invoke-interface {v8}, Ljava/util/List;->clear()V
 
-    .line 408
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mBluetoothSippers:Ljava/util/List;
 
     invoke-interface {v8}, Ljava/util/List;->clear()V
 
-    .line 409
     invoke-direct {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->processAppUsage()V
 
-    .line 410
     invoke-direct {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->processMiscUsage()V
 
-    .line 412
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mAppListGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v8, v11}, Landroid/preference/PreferenceGroup;->setOrderingAsAdded(Z)V
 
-    .line 414
     new-instance v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
@@ -2599,26 +2495,21 @@
 
     invoke-direct {v0, v8, v9}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryPreference;-><init>(Landroid/content/Context;Landroid/os/BatteryStats;)V
 
-    .line 415
     .local v0, hist:Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryPreference;
     const/4 v8, -0x1
 
     invoke-virtual {v0, v8}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryPreference;->setOrder(I)V
 
-    .line 416
     invoke-virtual {v0, v11}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryPreference;->setSelectable(Z)V
 
-    .line 418
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mGraphGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v8, v0}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
-    .line 428
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mUsageList:Ljava/util/List;
 
     invoke-static {v8}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
-    .line 429
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mUsageList:Ljava/util/List;
 
     invoke-interface {v8}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -2639,7 +2530,6 @@
 
     check-cast v7, Lcom/android/settings_ex/fuelgauge/BatterySipper;
 
-    .line 430
     .local v7, sipper:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     invoke-virtual {v7}, Lcom/android/settings_ex/fuelgauge/BatterySipper;->getSortValue()D
 
@@ -2651,7 +2541,6 @@
 
     if-ltz v8, :cond_1
 
-    .line 431
     invoke-virtual {v7}, Lcom/android/settings_ex/fuelgauge/BatterySipper;->getSortValue()D
 
     move-result-wide v8
@@ -2670,7 +2559,6 @@
 
     if-ltz v8, :cond_1
 
-    .line 433
     new-instance v6, Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
@@ -2683,7 +2571,6 @@
 
     invoke-direct {v6, v8, v9, v7}, Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;-><init>(Landroid/content/Context;Landroid/graphics/drawable/Drawable;Lcom/android/settings_ex/fuelgauge/BatterySipper;)V
 
-    .line 434
     .local v6, pref:Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;
     invoke-virtual {v7}, Lcom/android/settings_ex/fuelgauge/BatterySipper;->getSortValue()D
 
@@ -2695,21 +2582,17 @@
 
     div-double v2, v8, v10
 
-    .line 435
     .local v2, percentOfMax:D
     iput-wide v4, v7, Lcom/android/settings_ex/fuelgauge/BatterySipper;->percent:D
 
-    .line 436
     const v8, 0x7f080516
 
     invoke-virtual {v6, v8}, Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;->setSummary(I)V
 
-    .line 437
     iget-object v8, v7, Lcom/android/settings_ex/fuelgauge/BatterySipper;->name:Ljava/lang/String;
 
     invoke-virtual {v6, v8}, Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 438
     const v8, 0x7fffffff
 
     invoke-virtual {v7}, Lcom/android/settings_ex/fuelgauge/BatterySipper;->getSortValue()D
@@ -2722,15 +2605,12 @@
 
     invoke-virtual {v6, v8}, Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;->setOrder(I)V
 
-    .line 439
     invoke-virtual {v6, v2, v3, v4, v5}, Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;->setPercent(DD)V
 
-    .line 440
     iget-object v8, v7, Lcom/android/settings_ex/fuelgauge/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
 
     if-eqz v8, :cond_2
 
-    .line 441
     iget-object v8, v7, Lcom/android/settings_ex/fuelgauge/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
 
     invoke-virtual {v8}, Landroid/os/BatteryStats$Uid;->getUid()I
@@ -2743,13 +2623,11 @@
 
     invoke-virtual {v6, v8}, Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;->setKey(Ljava/lang/String;)V
 
-    .line 443
     :cond_2
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mAppListGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v8, v6}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
-    .line 444
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mAppListGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v8}, Landroid/preference/PreferenceGroup;->getPreferenceCount()I
@@ -2780,12 +2658,10 @@
 
     if-nez v8, :cond_5
 
-    .line 449
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestThread:Ljava/lang/Thread;
 
     if-nez v8, :cond_4
 
-    .line 450
     new-instance v8, Ljava/lang/Thread;
 
     const-string v10, "BatteryUsage Icon Loader"
@@ -2794,32 +2670,26 @@
 
     iput-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestThread:Ljava/lang/Thread;
 
-    .line 451
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestThread:Ljava/lang/Thread;
 
     const/4 v10, 0x1
 
     invoke-virtual {v8, v10}, Ljava/lang/Thread;->setPriority(I)V
 
-    .line 452
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestThread:Ljava/lang/Thread;
 
     invoke-virtual {v8}, Ljava/lang/Thread;->start()V
 
-    .line 454
     :cond_4
     iget-object v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestQueue:Ljava/util/ArrayList;
 
     invoke-virtual {v8}, Ljava/lang/Object;->notify()V
 
-    .line 456
     :cond_5
     monitor-exit v9
 
-    .line 457
     return-void
 
-    .line 456
     :catchall_0
     move-exception v8
 
@@ -2835,7 +2705,6 @@
     .parameter "duration"
 
     .prologue
-    .line 460
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -2871,24 +2740,19 @@
     .parameter "icicle"
 
     .prologue
-    .line 160
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 162
     if-eqz p1, :cond_0
 
-    .line 163
     sget-object v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->sStatsXfer:Lcom/android/internal/os/BatteryStatsImpl;
 
     iput-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
-    .line 166
     :cond_0
     const v0, 0x7f060029
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->addPreferencesFromResource(I)V
 
-    .line 167
     const-string v0, "batteryinfo"
 
     invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
@@ -2934,7 +2798,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mPowerProfile:Lcom/android/internal/os/PowerProfile;
 
-    .line 176
     new-instance v0, Lcom/android/settings_ex/powersave/PowerSave;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
@@ -2992,10 +2855,8 @@
     .locals 1
 
     .prologue
-    .line 200
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroy()V
 
-    .line 201
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -3006,12 +2867,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 202
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     sput-object v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->sStatsXfer:Lcom/android/internal/os/BatteryStatsImpl;
 
-    .line 204
     :cond_0
     return-void
 .end method
@@ -3034,45 +2893,37 @@
 
     move v0, v1
 
-    .line 384
     :goto_0
     return v0
 
-    .line 372
     :pswitch_0
     iget v2, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
 
     if-nez v2, :cond_0
 
-    .line 373
     const/4 v1, 0x3
 
     iput v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
 
-    .line 377
     :goto_1
     invoke-direct {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->refreshStats()V
 
     goto :goto_0
 
-    .line 375
     :cond_0
     iput v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
 
     goto :goto_1
 
-    .line 380
     :pswitch_1
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
-    .line 381
     invoke-direct {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->refreshStats()V
 
     goto :goto_0
 
-    .line 370
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -3086,34 +2937,27 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 190
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestQueue:Ljava/util/ArrayList;
 
     monitor-enter v1
 
-    .line 191
     const/4 v0, 0x1
 
     :try_start_0
     iput-boolean v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mAbort:Z
 
-    .line 192
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 193
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 195
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onPause()V
 
-    .line 196
     return-void
 
-    .line 192
     :catchall_0
     move-exception v0
 
@@ -3141,39 +2985,32 @@
 
     const/4 v6, 0x0
 
-    .line 217
     instance-of v0, p2, Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;
 
     if-nez v0, :cond_0
 
-    .line 351
     :goto_0
     return v6
 
     :cond_0
     move-object v0, p2
 
-    .line 220
     check-cast v0, Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;
 
-    .line 221
     invoke-virtual {v0}, Lcom/android/settings_ex/fuelgauge/PowerGaugePreference;->getInfo()Lcom/android/settings_ex/fuelgauge/BatterySipper;
 
     move-result-object v3
 
-    .line 222
     new-instance v2, Landroid/os/Bundle;
 
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
-    .line 223
     const-string v0, "title"
 
     iget-object v1, v3, Lcom/android/settings_ex/fuelgauge/BatterySipper;->name:Ljava/lang/String;
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 224
     const-string v0, "percent"
 
     invoke-virtual {v3}, Lcom/android/settings_ex/fuelgauge/BatterySipper;->getSortValue()D
@@ -3219,40 +3056,34 @@
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 228
     const-string v0, "duration"
 
     iget-wide v4, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsPeriod:J
 
     invoke-virtual {v2, v0, v4, v5}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    .line 229
     const-string v0, "iconPackage"
 
     iget-object v1, v3, Lcom/android/settings_ex/fuelgauge/BatterySipper;->defaultPackageName:Ljava/lang/String;
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 230
     const-string v0, "iconId"
 
     iget v1, v3, Lcom/android/settings_ex/fuelgauge/BatterySipper;->iconId:I
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 231
     const-string v0, "noCoverage"
 
     iget-wide v4, v3, Lcom/android/settings_ex/fuelgauge/BatterySipper;->noCoveragePercent:D
 
     invoke-virtual {v2, v0, v4, v5}, Landroid/os/Bundle;->putDouble(Ljava/lang/String;D)V
 
-    .line 232
     iget-object v0, v3, Lcom/android/settings_ex/fuelgauge/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
 
     if-eqz v0, :cond_1
 
-    .line 233
     const-string v0, "uid"
 
     iget-object v1, v3, Lcom/android/settings_ex/fuelgauge/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
@@ -3271,7 +3102,6 @@
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 239
     sget-object v0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail$2;->$SwitchMap$com$android$settings$fuelgauge$PowerUsageDetail$DrainType:[I
 
     iget-object v1, v3, Lcom/android/settings_ex/fuelgauge/BatterySipper;->drainType:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
@@ -3300,25 +3130,21 @@
 
     aput-wide v3, v0, v6
 
-    .line 345
     :goto_1
     const-string v3, "types"
 
     invoke-virtual {v2, v3, v1}, Landroid/os/Bundle;->putIntArray(Ljava/lang/String;[I)V
 
-    .line 346
     const-string v1, "values"
 
     invoke-virtual {v2, v1, v0}, Landroid/os/Bundle;->putDoubleArray(Ljava/lang/String;[D)V
 
-    .line 347
     invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceActivity;
 
-    .line 348
     const-class v1, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -3333,25 +3159,21 @@
 
     invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
-    .line 351
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v6
 
     goto/16 :goto_0
 
-    .line 242
     :pswitch_0
     iget-object v4, v3, Lcom/android/settings_ex/fuelgauge/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
 
-    .line 243
     const/16 v0, 0x9
 
     new-array v1, v0, [I
 
     fill-array-data v1, :array_0
 
-    .line 254
     const/16 v0, 0x9
 
     new-array v0, v0, [D
@@ -3414,20 +3236,16 @@
 
     aput-wide v7, v0, v3
 
-    .line 266
     new-instance v3, Ljava/io/StringWriter;
 
     invoke-direct {v3}, Ljava/io/StringWriter;-><init>()V
 
-    .line 267
     new-instance v5, Ljava/io/PrintWriter;
 
     invoke-direct {v5, v3}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
-    .line 269
     if-eqz v4, :cond_2
 
-    .line 270
     iget-object v7, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     const-string v8, ""
@@ -3450,20 +3268,16 @@
 
     invoke-virtual {v2, v5, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 275
     new-instance v3, Ljava/io/StringWriter;
 
     invoke-direct {v3}, Ljava/io/StringWriter;-><init>()V
 
-    .line 276
     new-instance v5, Ljava/io/PrintWriter;
 
     invoke-direct {v5, v3}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
-    .line 278
     if-eqz v4, :cond_3
 
-    .line 279
     iget-object v7, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     iget v8, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mStatsType:I
@@ -3668,18 +3482,14 @@
     .locals 1
 
     .prologue
-    .line 181
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onResume()V
 
-    .line 182
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mAbort:Z
 
-    .line 185
     invoke-direct {p0}, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->refreshStats()V
 
-    .line 186
     return-void
 .end method
 
@@ -3687,13 +3497,11 @@
     .locals 4
 
     .prologue
-    .line 839
     :goto_0
     iget-object v2, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestQueue:Ljava/util/ArrayList;
 
     monitor-enter v2
 
-    .line 840
     :try_start_0
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestQueue:Ljava/util/ArrayList;
 
@@ -3707,18 +3515,15 @@
 
     if-eqz v1, :cond_1
 
-    .line 841
     :cond_0
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestThread:Ljava/lang/Thread;
 
-    .line 842
     monitor-exit v2
 
     return-void
 
-    .line 844
     :cond_1
     iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerSaveBatteryDetail;->mRequestQueue:Ljava/util/ArrayList;
 
@@ -3730,18 +3535,15 @@
 
     check-cast v0, Lcom/android/settings_ex/fuelgauge/BatterySipper;
 
-    .line 845
     .local v0, bs:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     monitor-exit v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 846
     invoke-virtual {v0}, Lcom/android/settings_ex/fuelgauge/BatterySipper;->getNameIcon()V
 
     goto :goto_0
 
-    .line 845
     .end local v0           #bs:Lcom/android/settings_ex/fuelgauge/BatterySipper;
     :catchall_0
     move-exception v1

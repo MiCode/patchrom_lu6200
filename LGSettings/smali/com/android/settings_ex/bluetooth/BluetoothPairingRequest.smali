@@ -53,34 +53,28 @@
 
     check-cast v0, Landroid/bluetooth/BluetoothDevice;
 
-    .line 53
     const-string v1, "android.bluetooth.device.extra.PAIRING_VARIANT"
 
     invoke-virtual {p2, v1, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    .line 55
     new-instance v2, Landroid/content/Intent;
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    .line 56
     const-class v3, Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;
 
     invoke-virtual {v2, p1, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 57
     const-string v3, "android.bluetooth.device.extra.DEVICE"
 
     invoke-virtual {v2, v3, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 58
     const-string v3, "android.bluetooth.device.extra.PAIRING_VARIANT"
 
     invoke-virtual {v2, v3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 59
     const/4 v3, 0x2
 
     if-eq v1, v3, :cond_0
@@ -101,41 +95,33 @@
 
     move-result v1
 
-    .line 64
     const-string v3, "android.bluetooth.device.extra.PAIRING_KEY"
 
     invoke-virtual {v2, v3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 66
     :cond_1
     const-string v1, "android.bluetooth.device.action.PAIRING_REQUEST"
 
     invoke-virtual {v2, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 67
     const/high16 v1, 0x1000
 
     invoke-virtual {v2, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 70
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 71
     const-class v3, Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;
 
     invoke-virtual {v1, p1, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 72
     const/high16 v3, 0x1080
 
     invoke-virtual {v1, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 73
     invoke-virtual {p1, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 75
     const-string v1, "keyguard"
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;

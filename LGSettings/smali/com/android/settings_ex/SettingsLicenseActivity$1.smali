@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 157
     iput-object p1, p0, Lcom/android/settings_ex/SettingsLicenseActivity$1;->this$0:Lcom/android/settings_ex/SettingsLicenseActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,10 +38,8 @@
     .parameter "msg"
 
     .prologue
-    .line 161
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 163
     iget-object v1, p0, Lcom/android/settings_ex/SettingsLicenseActivity$1;->this$0:Lcom/android/settings_ex/SettingsLicenseActivity;
 
     #getter for: Lcom/android/settings_ex/SettingsLicenseActivity;->mQuit:Z

@@ -30,23 +30,18 @@
     .parameter "aPref"
 
     .prologue
-    .line 1228
     iput-object p1, p0, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
-    .line 1229
     const/4 v0, 0x0
 
     invoke-direct {p0, p2, v0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;-><init>(Lcom/android/settings_ex/EditPinPreference;Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;)V
 
-    .line 1212
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->mResumed:Z
 
-    .line 1230
     invoke-virtual {p0, p0}, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->setCallback(Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;)V
 
-    .line 1231
     return-void
 .end method
 
@@ -68,7 +63,6 @@
     .locals 1
 
     .prologue
-    .line 1215
     iget-boolean v0, p0, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->mResumed:Z
 
     return v0
@@ -153,7 +147,6 @@
     .parameter "aPref"
 
     .prologue
-    .line 1386
     check-cast p1, Lcom/android/settings_ex/EditPinPreference;
 
     .end local p1
@@ -172,15 +165,12 @@
     .locals 1
 
     .prologue
-    .line 1223
     invoke-super {p0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->onResume()V
 
-    .line 1224
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->mResumed:Z
 
-    .line 1225
     return-void
 .end method
 
@@ -215,132 +205,107 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1314
     :goto_0
     invoke-virtual {p2, v0}, Lcom/android/settings_ex/EditPinPreference;->setText(Ljava/lang/String;)V
 
-    .line 1315
     return-void
 
-    .line 1257
     :pswitch_1
     const v1, 0x7f080034
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1258
     const v1, 0x7f080035
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogMessage(I)V
 
     goto :goto_0
 
-    .line 1262
     :pswitch_2
     const v1, 0x7f080036
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1263
     const v1, 0x7f080037
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogMessage(I)V
 
     goto :goto_0
 
-    .line 1268
     :pswitch_3
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->getOldText()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1269
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1270
     invoke-virtual {p2, v2}, Lcom/android/settings_ex/EditPinPreference;->setDialogMessage(I)V
 
     goto :goto_0
 
-    .line 1275
     :pswitch_4
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->getNewText()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1276
     invoke-virtual {p2, v3}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1277
     invoke-virtual {p2, v4}, Lcom/android/settings_ex/EditPinPreference;->setDialogMessage(I)V
 
     goto :goto_0
 
-    .line 1282
     :pswitch_5
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->getNewText()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1283
     invoke-static {}, Lcom/android/settings_ex/IccLockSettings;->access$600()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 1284
     invoke-virtual {p2, v3}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1285
     invoke-virtual {p2, v4}, Lcom/android/settings_ex/EditPinPreference;->setDialogMessage(I)V
 
     goto :goto_0
 
-    .line 1287
     :cond_0
     const v1, 0x7f080045
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1288
     const v1, 0x7f080046
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogMessage(I)V
 
     goto :goto_0
 
-    .line 1294
     :pswitch_6
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->getReenterText()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1295
     const v1, 0x7f080043
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1296
     const v1, 0x7f080044
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogMessage(I)V
 
     goto :goto_0
 
-    .line 1301
     :pswitch_7
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->resetText()V
 
-    .line 1306
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1307
     invoke-virtual {p2, v2}, Lcom/android/settings_ex/EditPinPreference;->setDialogMessage(I)V
 
     goto :goto_0
 
-    .line 1255
     nop
 
     :pswitch_data_0
@@ -430,7 +395,6 @@
 
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 1369
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$SimPersoDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     #getter for: Lcom/android/settings_ex/IccLockSettings;->mHandler:Landroid/os/Handler;

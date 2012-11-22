@@ -32,7 +32,6 @@
     .parameter "x0"
 
     .prologue
-    .line 156
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothDeviceFilter$PanuFilter;-><init>()V
 
     return-void

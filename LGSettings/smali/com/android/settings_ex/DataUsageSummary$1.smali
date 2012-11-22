@@ -35,7 +35,6 @@
     .parameter
 
     .prologue
-    .line 491
     iput-object p1, p0, Lcom/android/settings_ex/DataUsageSummary$1;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -66,13 +65,11 @@
     .parameter "params"
 
     .prologue
-    .line 496
     const-wide/16 v0, 0x7d0
 
     :try_start_0
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
 
-    .line 497
     iget-object v0, p0, Lcom/android/settings_ex/DataUsageSummary$1;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #getter for: Lcom/android/settings_ex/DataUsageSummary;->mStatsService:Landroid/net/INetworkStatsService;
@@ -123,7 +120,6 @@
     .parameter "result"
 
     .prologue
-    .line 506
     iget-object v0, p0, Lcom/android/settings_ex/DataUsageSummary$1;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/DataUsageSummary;->isAdded()Z
@@ -132,13 +128,11 @@
 
     if-eqz v0, :cond_0
 
-    .line 507
     iget-object v0, p0, Lcom/android/settings_ex/DataUsageSummary$1;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #calls: Lcom/android/settings_ex/DataUsageSummary;->updateBody()V
     invoke-static {v0}, Lcom/android/settings_ex/DataUsageSummary;->access$100(Lcom/android/settings_ex/DataUsageSummary;)V
 
-    .line 509
     :cond_0
     return-void
 .end method

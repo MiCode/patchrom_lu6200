@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 973
     iput-object p1, p0, Lcom/android/settings_ex/RadioInfo$17;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 975
     iget-object v0, p0, Lcom/android/settings_ex/RadioInfo$17;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->phone:Lcom/android/internal/telephony/Phone;
@@ -68,16 +66,13 @@
     :goto_0
     invoke-interface {v1, v0}, Lcom/android/internal/telephony/Phone;->disableDnsCheck(Z)V
 
-    .line 976
     iget-object v0, p0, Lcom/android/settings_ex/RadioInfo$17;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #calls: Lcom/android/settings_ex/RadioInfo;->updateDnsCheckState()V
     invoke-static {v0}, Lcom/android/settings_ex/RadioInfo;->access$3700(Lcom/android/settings_ex/RadioInfo;)V
 
-    .line 977
     return-void
 
-    .line 975
     :cond_0
     const/4 v0, 0x0
 

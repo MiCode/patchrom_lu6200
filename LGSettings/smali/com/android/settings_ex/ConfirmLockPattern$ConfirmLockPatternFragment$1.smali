@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 301
     iput-object p1, p0, Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment$1;->this$0:Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 1
 
     .prologue
-    .line 303
     iget-object v0, p0, Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment$1;->this$0:Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     #getter for: Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;->mLockPatternView:Lcom/android/internal/widget/LockPatternView;

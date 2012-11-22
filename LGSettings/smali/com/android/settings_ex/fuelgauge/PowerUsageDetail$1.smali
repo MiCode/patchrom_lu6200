@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 424
     iput-object p1, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$1;->this$0:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,7 +39,6 @@
     .parameter "intent"
 
     .prologue
-    .line 427
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$1;->this$0:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail;
 
     #getter for: Lcom/android/settings_ex/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 225
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings$9;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "preference"
 
     .prologue
-    .line 228
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings$9;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;
 
     const-string v1, "[BTUI] [HID] Send Set_Report"
@@ -50,14 +48,12 @@
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;->BtUiLog(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;->access$000(Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;Ljava/lang/String;)V
 
-    .line 229
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings$9;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;
 
     const-string v1, "com.lge.bluetooth.hid.setReport"
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/bluetooth/LgBtUiSigSettings;->BtUiSendIntent(Ljava/lang/String;)V
 
-    .line 230
     const/4 v0, 0x1
 
     return v0

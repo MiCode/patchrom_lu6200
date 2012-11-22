@@ -55,7 +55,6 @@
     .locals 2
 
     .prologue
-    .line 19
     const-class v0, Lcom/android/settings_ex/EditPinPreferenceBehavior;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -215,64 +214,50 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 69
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 52
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mCallback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
-    .line 54
     iput v1, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mStage:I
 
-    .line 55
     iput v1, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mReturnStageFromNotify:I
 
-    .line 56
     const-string v0, ""
 
     iput-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mOldText:Ljava/lang/String;
 
-    .line 57
     const-string v0, ""
 
     iput-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mNewText:Ljava/lang/String;
 
-    .line 58
     const-string v0, ""
 
     iput-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mReenterText:Ljava/lang/String;
 
-    .line 67
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mInstanceId:I
 
-    .line 70
     invoke-static {}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->newInstanceId()I
 
     move-result v0
 
     iput v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mInstanceId:I
 
-    .line 71
     iput-object p2, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mCallback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
-    .line 72
     iput-object p1, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
-    .line 73
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/EditPinPreference;->setOnPinEnteredListener(Lcom/android/settings_ex/EditPinPreference$OnPinEnteredListener;)V
 
-    .line 74
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/EditPinPreference;->setOnShowDialog(Lcom/android/settings_ex/EditPinPreference$OnShowDialog;)V
 
-    .line 75
     return-void
 .end method
 
@@ -280,7 +265,6 @@
     .locals 2
 
     .prologue
-    .line 64
     sget v0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->sNewInstanceId:I
 
     add-int/lit8 v1, v0, 0x1
@@ -296,12 +280,10 @@
     .locals 1
 
     .prologue
-    .line 336
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/EditPinPreference;->dismissDialog()V
 
-    .line 337
     return-void
 .end method
 
@@ -309,7 +291,6 @@
     .locals 1
 
     .prologue
-    .line 82
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mCallback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     return-object v0
@@ -319,7 +300,6 @@
     .locals 1
 
     .prologue
-    .line 86
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
     return-object v0
@@ -329,7 +309,6 @@
     .locals 1
 
     .prologue
-    .line 388
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mNewText:Ljava/lang/String;
 
     return-object v0
@@ -339,7 +318,6 @@
     .locals 1
 
     .prologue
-    .line 384
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mOldText:Ljava/lang/String;
 
     return-object v0
@@ -349,7 +327,6 @@
     .locals 1
 
     .prologue
-    .line 392
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mReenterText:Ljava/lang/String;
 
     return-object v0
@@ -359,7 +336,6 @@
     .locals 1
 
     .prologue
-    .line 295
     iget v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mStage:I
 
     return v0
@@ -432,19 +408,16 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
 
-    .line 242
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/EditPinPreference;->setEnabled(Z)V
 
-    .line 243
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/EditPinPreference;->setOnPinEnteredListener(Lcom/android/settings_ex/EditPinPreference$OnPinEnteredListener;)V
 
-    .line 245
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -726,22 +699,17 @@
     .parameter "aDialog"
 
     .prologue
-    .line 315
     iget v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mReturnStageFromNotify:I
 
-    .line 316
     .local v0, step:I
     const/4 v1, 0x0
 
     iput v1, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mReturnStageFromNotify:I
 
-    .line 317
     if-eqz v0, :cond_0
 
-    .line 318
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->showPinDialog(I)V
 
-    .line 320
     :cond_0
     return-void
 .end method
@@ -752,21 +720,17 @@
     .parameter "positiveResult"
 
     .prologue
-    .line 145
     if-nez p2, :cond_0
 
-    .line 146
     const/4 v2, 0x0
 
     iget-object v3, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
     invoke-virtual {p0, v2, v3}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->setDialogValues(ILcom/android/settings_ex/EditPinPreference;)V
 
-    .line 162
     :goto_0
     return-void
 
-    .line 150
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
@@ -782,11 +746,9 @@
 
     move-result v0
 
-    .line 152
     .local v0, result:I
     if-nez v0, :cond_2
 
-    .line 153
     iget v2, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mStage:I
 
     invoke-virtual {p0, v2, v1}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->onReasonablePinEntered(ILjava/lang/String;)I
@@ -795,12 +757,10 @@
 
     iput v2, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mStage:I
 
-    .line 154
     iget v2, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mStage:I
 
     if-nez v2, :cond_1
 
-    .line 155
     iget v2, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mStage:I
 
     iget-object v3, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
@@ -838,76 +798,61 @@
 
     const/4 v5, 0x1
 
-    .line 165
     const/4 v0, 0x0
 
-    .line 166
     .local v0, callback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
     const/4 v1, 0x1
 
-    .line 167
     .local v1, nextStage:I
     packed-switch p1, :pswitch_data_0
 
-    .line 220
     const/16 v3, 0x8
 
     if-gt v3, p1, :cond_a
 
-    .line 221
     iget-object v3, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mCallback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     if-eqz v3, :cond_0
 
-    .line 222
     iget-object v3, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mCallback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     invoke-interface {v3, p1, p2}, Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;->handleUserReasonablePinEntered(ILjava/lang/String;)I
 
     move-result v1
 
-    .line 223
     :cond_0
     if-ne v1, v5, :cond_9
 
     move p1, v2
 
-    .line 230
     .end local p1
     :goto_0
     return p1
 
-    .line 171
     .restart local p1
     :pswitch_0
     invoke-virtual {p0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->getCallback()Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     move-result-object v0
 
-    .line 172
     if-eqz v0, :cond_1
 
-    .line 173
     invoke-interface {v0, p0, p1, p2, v4}, Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;->onValidPinEntered(Lcom/android/settings_ex/EditPinPreferenceBehavior;ILjava/lang/String;Ljava/lang/String;)I
 
     move-result v1
 
-    .line 175
     :cond_1
     if-ne v1, v5, :cond_2
 
     move p1, v2
 
-    .line 176
     goto :goto_0
 
     :cond_2
     move p1, v1
 
-    .line 178
     goto :goto_0
 
-    .line 182
     :pswitch_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -919,12 +864,10 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mOldText:Ljava/lang/String;
 
-    .line 183
     iget-object v2, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mCallback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     if-eqz v2, :cond_3
 
-    .line 184
     iget-object v2, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mCallback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     iget-object v3, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mOldText:Ljava/lang/String;
@@ -984,7 +927,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mReenterText:Ljava/lang/String;
 
-    .line 205
     iget-object v3, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mNewText:Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mReenterText:Ljava/lang/String;
@@ -1004,19 +946,15 @@
 
     move p1, v2
 
-    .line 207
     goto :goto_0
 
-    .line 210
     :cond_6
     invoke-virtual {p0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->getCallback()Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     move-result-object v0
 
-    .line 211
     if-eqz v0, :cond_7
 
-    .line 212
     iget-object v3, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mOldText:Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mNewText:Ljava/lang/String;
@@ -1090,7 +1028,6 @@
     .locals 1
 
     .prologue
-    .line 287
     invoke-virtual {p0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->getStage()I
 
     move-result v0
@@ -1105,10 +1042,8 @@
 
     if-nez v0, :cond_0
 
-    .line 290
     invoke-virtual {p0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->showPinDialog()V
 
-    .line 292
     :cond_0
     return-void
 .end method
@@ -1254,19 +1189,16 @@
     .locals 2
 
     .prologue
-    .line 137
     iget v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mStage:I
 
     if-nez v0, :cond_0
 
-    .line 139
     const/4 v0, 0x4
 
     iget-object v1, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->setDialogValues(ILcom/android/settings_ex/EditPinPreference;)V
 
-    .line 142
     :cond_0
     return-void
 .end method
@@ -1275,22 +1207,18 @@
     .locals 1
 
     .prologue
-    .line 365
     const-string v0, ""
 
     iput-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mOldText:Ljava/lang/String;
 
-    .line 366
     const-string v0, ""
 
     iput-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mNewText:Ljava/lang/String;
 
-    .line 367
     const-string v0, ""
 
     iput-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mReenterText:Ljava/lang/String;
 
-    .line 369
     return-void
 .end method
 
@@ -1299,10 +1227,8 @@
     .parameter "aCallback"
 
     .prologue
-    .line 78
     iput-object p1, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mCallback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
-    .line 79
     return-void
 .end method
 
@@ -1312,13 +1238,10 @@
     .parameter "aEditPinPreference"
 
     .prologue
-    .line 299
     iput p1, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mStage:I
 
-    .line 300
     invoke-virtual {p0, p1, p2}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->onSetDialogValues(ILcom/android/settings_ex/EditPinPreference;)V
 
-    .line 301
     return-void
 .end method
 
@@ -1327,21 +1250,17 @@
     .parameter "aEnabled"
 
     .prologue
-    .line 353
     invoke-virtual {p0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->getEditPinPreference()Lcom/android/settings_ex/EditPinPreference;
 
     move-result-object v0
 
-    .line 354
     .local v0, pref:Lcom/android/settings_ex/EditPinPreference;
     invoke-virtual {v0, p1}, Lcom/android/settings_ex/EditPinPreference;->setVirtualEnabled(Z)V
 
-    .line 356
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/EditPinPreference;->setEnabled(Z)V
 
-    .line 357
     if-eqz p1, :cond_1
 
     const/4 v1, 0x0
@@ -1349,25 +1268,21 @@
     :goto_0
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/EditPinPreference;->setVirtualDisabledOnClickListener(Lcom/android/settings_ex/PreferenceVirtualDisabler$OnPreferenceClickListener;)V
 
-    .line 360
     invoke-virtual {p0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->getCallback()Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 361
     invoke-virtual {p0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->getCallback()Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     move-result-object v1
 
     invoke-interface {v1, p0, p1}, Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;->onSetEnabled(Lcom/android/settings_ex/EditPinPreferenceBehavior;Z)V
 
-    .line 362
     :cond_0
     return-void
 
-    .line 357
     :cond_1
     invoke-virtual {p0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->getCallback()Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
@@ -1381,10 +1296,8 @@
     .parameter "aText"
 
     .prologue
-    .line 372
     iput-object p1, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mOldText:Ljava/lang/String;
 
-    .line 373
     return-void
 .end method
 
@@ -1394,20 +1307,16 @@
     .parameter "aReason"
 
     .prologue
-    .line 306
     iput p1, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mReturnStageFromNotify:I
 
-    .line 307
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mCallback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     if-eqz v0, :cond_0
 
-    .line 308
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mCallback:Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;
 
     invoke-interface {v0, p0, p1, p2}, Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;->onShowNotifyAndReturnStage(Lcom/android/settings_ex/EditPinPreferenceBehavior;II)V
 
-    .line 309
     :cond_0
     return-void
 .end method
@@ -1416,12 +1325,10 @@
     .locals 1
 
     .prologue
-    .line 91
     iget v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mStage:I
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->showPinDialog(I)V
 
-    .line 92
     return-void
 .end method
 
@@ -1430,22 +1337,18 @@
     .parameter "aStage"
 
     .prologue
-    .line 96
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
     invoke-virtual {p0, p1, v0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->setDialogValues(ILcom/android/settings_ex/EditPinPreference;)V
 
-    .line 98
     iget v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mStage:I
 
     if-eqz v0, :cond_0
 
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mEditPinPreference:Lcom/android/settings_ex/EditPinPreference;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/EditPinPreference;->showPinDialog()V
 
-    .line 110
     :cond_0
     return-void
 .end method
@@ -1458,18 +1361,13 @@
     .parameter "aReenterText"
 
     .prologue
-    .line 114
     iput-object p2, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mOldText:Ljava/lang/String;
 
-    .line 115
     iput-object p3, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mNewText:Ljava/lang/String;
 
-    .line 116
     iput-object p4, p0, Lcom/android/settings_ex/EditPinPreferenceBehavior;->mReenterText:Ljava/lang/String;
 
-    .line 117
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->showPinDialog(I)V
 
-    .line 118
     return-void
 .end method

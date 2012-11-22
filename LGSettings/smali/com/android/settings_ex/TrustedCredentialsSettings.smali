@@ -27,17 +27,14 @@
     .locals 1
 
     .prologue
-    .line 54
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
-    .line 144
     new-instance v0, Lorg/apache/harmony/xnet/provider/jsse/TrustedCertificateStore;
 
     invoke-direct {v0}, Lorg/apache/harmony/xnet/provider/jsse/TrustedCertificateStore;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings;->mStore:Lorg/apache/harmony/xnet/provider/jsse/TrustedCertificateStore;
 
-    .line 409
     return-void
 .end method
 
@@ -47,7 +44,6 @@
     .parameter "x1"
 
     .prologue
-    .line 54
     invoke-direct {p0, p1}, Lcom/android/settings_ex/TrustedCredentialsSettings;->showCertDialog(Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;)V
 
     return-void
@@ -58,7 +54,6 @@
     .parameter "x0"
 
     .prologue
-    .line 54
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings;->mTabHost:Landroid/widget/TabHost;
 
     return-object v0
@@ -69,7 +64,6 @@
     .parameter "x0"
 
     .prologue
-    .line 54
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings;->mStore:Lorg/apache/harmony/xnet/provider/jsse/TrustedCertificateStore;
 
     return-object v0
@@ -80,7 +74,6 @@
     .parameter "tab"
 
     .prologue
-    .line 163
     iget-object v3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings;->mTabHost:Landroid/widget/TabHost;
 
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mTag:Ljava/lang/String;
@@ -118,13 +111,11 @@
 
     move-result-object v2
 
-    .line 166
     .local v2, systemSpec:Landroid/widget/TabHost$TabSpec;
     iget-object v3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings;->mTabHost:Landroid/widget/TabHost;
 
     invoke-virtual {v3, v2}, Landroid/widget/TabHost;->addTab(Landroid/widget/TabHost$TabSpec;)V
 
-    .line 182
     iget-object v3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings;->mTabHost:Landroid/widget/TabHost;
 
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mList:I
@@ -146,18 +137,15 @@
 
     invoke-direct {v0, p0, p1, v3}, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;-><init>(Lcom/android/settings_ex/TrustedCredentialsSettings;Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;Lcom/android/settings_ex/TrustedCredentialsSettings$1;)V
 
-    .line 184
     .local v0, adapter:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
     invoke-virtual {v1, v0}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 185
     new-instance v3, Lcom/android/settings_ex/TrustedCredentialsSettings$1;
 
     invoke-direct {v3, p0, v0}, Lcom/android/settings_ex/TrustedCredentialsSettings$1;-><init>(Lcom/android/settings_ex/TrustedCredentialsSettings;Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;)V
 
     invoke-virtual {v1, v3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 190
     return-void
 .end method
 
@@ -166,7 +154,6 @@
     .parameter "certHolder"
 
     .prologue
-    .line 365
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mSslCert:Landroid/net/http/SslCertificate;
     invoke-static {p1}, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->access$2600(Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;)Landroid/net/http/SslCertificate;
 
@@ -245,11 +232,9 @@
 
     check-cast v4, Landroid/widget/Button;
 
-    .line 381
     .local v4, removeButton:Landroid/widget/Button;
     invoke-virtual {v0, v4}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    .line 382
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mTab:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
     invoke-static {p1}, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->access$100(Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;)Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
@@ -262,17 +247,14 @@
 
     invoke-virtual {v4, v6}, Landroid/widget/Button;->setText(I)V
 
-    .line 383
     new-instance v6, Lcom/android/settings_ex/TrustedCredentialsSettings$3;
 
     invoke-direct {v6, p0, p1, v2}, Lcom/android/settings_ex/TrustedCredentialsSettings$3;-><init>(Lcom/android/settings_ex/TrustedCredentialsSettings;Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;Landroid/app/Dialog;)V
 
     invoke-virtual {v4, v6}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 406
     invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
-    .line 407
     return-void
 .end method
 
@@ -285,14 +267,12 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 151
     invoke-virtual {p0}, Lcom/android/settings_ex/TrustedCredentialsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 152
     invoke-virtual {p0}, Lcom/android/settings_ex/TrustedCredentialsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -323,22 +303,18 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings;->mTabHost:Landroid/widget/TabHost;
 
-    .line 155
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings;->mTabHost:Landroid/widget/TabHost;
 
     invoke-virtual {v0}, Landroid/widget/TabHost;->setup()V
 
-    .line 156
     sget-object v0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->SYSTEM:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/TrustedCredentialsSettings;->addTab(Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;)V
 
-    .line 158
     sget-object v0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->USER:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/TrustedCredentialsSettings;->addTab(Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;)V
 
-    .line 159
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings;->mTabHost:Landroid/widget/TabHost;
 
     return-object v0

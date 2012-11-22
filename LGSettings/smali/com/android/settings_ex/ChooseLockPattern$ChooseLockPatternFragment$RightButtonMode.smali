@@ -58,7 +58,6 @@
 
     const/4 v3, 0x1
 
-    .line 248
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
     const-string v1, "Continue"
@@ -69,7 +68,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;->Continue:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
-    .line 249
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
     const-string v1, "ContinueDisabled"
@@ -80,7 +78,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;->ContinueDisabled:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
-    .line 250
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
     const-string v1, "Confirm"
@@ -91,7 +88,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;->Confirm:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
-    .line 251
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
     const-string v1, "ConfirmDisabled"
@@ -102,7 +98,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;->ConfirmDisabled:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
-    .line 252
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
     const-string v1, "Ok"
@@ -156,16 +151,12 @@
     .end annotation
 
     .prologue
-    .line 258
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 259
     iput p3, p0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;->text:I
 
-    .line 260
     iput-boolean p4, p0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;->enabled:Z
 
-    .line 261
     return-void
 .end method
 
@@ -174,7 +165,6 @@
     .parameter
 
     .prologue
-    .line 247
     const-class v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -190,7 +180,6 @@
     .locals 1
 
     .prologue
-    .line 247
     sget-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;->$VALUES:[Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
     invoke-virtual {v0}, [Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;->clone()Ljava/lang/Object;

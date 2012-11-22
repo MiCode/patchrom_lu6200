@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 77
     iput-object p1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$1;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -43,29 +42,24 @@
 
     const/4 v5, 0x1
 
-    .line 80
     iget v2, p1, Landroid/os/Message;->what:I
 
     packed-switch v2, :pswitch_data_0
 
-    .line 121
     :cond_0
     :goto_0
     return-void
 
-    .line 82
     :pswitch_0
     new-instance v1, Ljava/util/Timer;
 
     invoke-direct {v1}, Ljava/util/Timer;-><init>()V
 
-    .line 83
     .local v1, timer:Ljava/util/Timer;
     new-instance v0, Lcom/android/settings_ex/AirplaneModeEnabler$1$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/AirplaneModeEnabler$1$1;-><init>(Lcom/android/settings_ex/AirplaneModeEnabler$1;)V
 
-    .line 89
     .local v0, task:Ljava/util/TimerTask;
     const-wide/16 v2, 0xbb8
 
@@ -127,14 +121,12 @@
 
     iput-object v3, v2, Lcom/android/settings_ex/AirplaneModeEnabler;->serviceState:Landroid/telephony/ServiceState;
 
-    .line 100
     invoke-static {}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$200()Z
 
     move-result v2
 
     if-ne v2, v5, :cond_3
 
-    .line 101
     iget-object v2, p0, Lcom/android/settings_ex/AirplaneModeEnabler$1;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     iget-object v2, v2, Lcom/android/settings_ex/AirplaneModeEnabler;->serviceState:Landroid/telephony/ServiceState;
@@ -174,18 +166,15 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 106
     iget-object v2, p0, Lcom/android/settings_ex/AirplaneModeEnabler$1;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     #calls: Lcom/android/settings_ex/AirplaneModeEnabler;->onAirplaneModeChanged()V
     invoke-static {v2}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$400(Lcom/android/settings_ex/AirplaneModeEnabler;)V
 
-    .line 107
     invoke-static {v6}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$302(Z)Z
 
     goto :goto_0
 
-    .line 109
     :cond_3
     invoke-static {}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$200()Z
 
@@ -220,7 +209,6 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 111
     iget-object v2, p0, Lcom/android/settings_ex/AirplaneModeEnabler$1;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     iget-object v2, v2, Lcom/android/settings_ex/AirplaneModeEnabler;->serviceState:Landroid/telephony/ServiceState;
@@ -261,18 +249,15 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 115
     iget-object v2, p0, Lcom/android/settings_ex/AirplaneModeEnabler$1;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     #calls: Lcom/android/settings_ex/AirplaneModeEnabler;->onAirplaneModeChanged()V
     invoke-static {v2}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$400(Lcom/android/settings_ex/AirplaneModeEnabler;)V
 
-    .line 116
     invoke-static {v6}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$302(Z)Z
 
     goto/16 :goto_0
 
-    .line 80
     :pswitch_data_0
     .packed-switch 0x3
         :pswitch_0

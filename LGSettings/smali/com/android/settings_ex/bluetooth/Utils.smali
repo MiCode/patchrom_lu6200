@@ -24,7 +24,6 @@
     .locals 1
 
     .prologue
-    .line 214
     new-instance v0, Lcom/android/settings_ex/bluetooth/Utils$3;
 
     invoke-direct {v0}, Lcom/android/settings_ex/bluetooth/Utils$3;-><init>()V
@@ -113,7 +112,6 @@
     .parameter "x0"
 
     .prologue
-    .line 40
     sput-boolean p0, Lcom/android/settings_ex/bluetooth/Utils;->mDelayedDialog:Z
 
     return p0
@@ -123,7 +121,6 @@
     .locals 1
 
     .prologue
-    .line 40
     sget-object v0, Lcom/android/settings_ex/bluetooth/Utils;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -133,7 +130,6 @@
     .locals 1
 
     .prologue
-    .line 40
     sget-object v0, Lcom/android/settings_ex/bluetooth/Utils;->mName:Ljava/lang/String;
 
     return-object v0
@@ -143,7 +139,6 @@
     .locals 1
 
     .prologue
-    .line 40
     sget v0, Lcom/android/settings_ex/bluetooth/Utils;->mMessageResId:I
 
     return v0
@@ -153,7 +148,6 @@
     .locals 1
 
     .prologue
-    .line 40
     sget-object v0, Lcom/android/settings_ex/bluetooth/Utils;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     return-object v0
@@ -163,7 +157,6 @@
     .locals 1
 
     .prologue
-    .line 40
     sget-object v0, Lcom/android/settings_ex/bluetooth/Utils;->mHandler:Landroid/os/Handler;
 
     return-object v0
@@ -173,17 +166,14 @@
     .locals 1
 
     .prologue
-    .line 230
     sget-object v0, Lcom/android/settings_ex/bluetooth/Utils;->mAlertDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    .line 231
     sget-object v0, Lcom/android/settings_ex/bluetooth/Utils;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 232
     :cond_0
     return-void
 .end method
@@ -326,31 +316,24 @@
 
     const v7, 0x7f080afe
 
-    .line 112
     sput-object p0, Lcom/android/settings_ex/bluetooth/Utils;->mContext:Landroid/content/Context;
 
-    .line 113
     sput-object p1, Lcom/android/settings_ex/bluetooth/Utils;->mName:Ljava/lang/String;
 
-    .line 114
     sput p2, Lcom/android/settings_ex/bluetooth/Utils;->mMessageResId:I
 
-    .line 115
     sput-object p3, Lcom/android/settings_ex/bluetooth/Utils;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
-    .line 116
     sget-boolean v4, Lcom/android/settings_ex/bluetooth/Utils;->mDelayedDialog:Z
 
     if-nez v4, :cond_0
 
-    .line 117
     sget-object v4, Lcom/android/settings_ex/bluetooth/Utils;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v4, v6}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v3
 
-    .line 118
     .local v3, msg:Landroid/os/Message;
     sget-object v4, Lcom/android/settings_ex/bluetooth/Utils;->mHandler:Landroid/os/Handler;
 
@@ -358,16 +341,13 @@
 
     invoke-virtual {v4, v3, v5, v6}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 178
     .end local v3           #msg:Landroid/os/Message;
     :goto_0
     return-void
 
-    .line 121
     :cond_0
     sput-boolean v5, Lcom/android/settings_ex/bluetooth/Utils;->mDelayedDialog:Z
 
-    .line 124
     new-array v4, v6, [Ljava/lang/Object;
 
     aput-object p1, v4, v5
@@ -376,13 +356,11 @@
 
     move-result-object v2
 
-    .line 125
     .local v2, message:Ljava/lang/String;
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
 
     move-result-object v1
 
-    .line 126
     .local v1, manager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
     const-string v4, "Utils"
 
@@ -438,17 +416,14 @@
 
     if-eqz v4, :cond_4
 
-    .line 132
     if-eqz p3, :cond_3
 
-    .line 134
     const-string v4, "Utils"
 
     const-string v5, "[BTUI] mForegroundActivity, device is not null"
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 135
     invoke-virtual {v1}, Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;->getCachedDeviceManager()Lcom/android/settings_ex/bluetooth/CachedBluetoothDeviceManager;
 
     move-result-object v4
@@ -457,7 +432,6 @@
 
     move-result-object v0
 
-    .line 136
     .local v0, cachedDevice:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
     const-string v4, "service.btui.gap.pairByLocal"
 
@@ -539,14 +513,12 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 163
     const-string v4, "service.btui.gap.pairByLocal"
 
     const-string v5, "0"
 
     invoke-static {v4, v5}, Lcom/android/settings_ex/bluetooth/Utils;->BtUiPropertySet(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 164
     invoke-virtual {v1}, Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;->getForegroundActivity()Landroid/content/Context;
 
     move-result-object v4
@@ -555,7 +527,6 @@
 
     goto/16 :goto_0
 
-    .line 169
     .end local v0           #cachedDevice:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
     :cond_3
     const-string v4, "Utils"
@@ -564,12 +535,10 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 170
     invoke-static {p0, v7, v2}, Lcom/android/settings_ex/bluetooth/Utils;->showErrorForBondFail(Landroid/content/Context;ILjava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 173
     :cond_4
     const-string v4, "Utils"
 
@@ -577,15 +546,12 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 174
     invoke-virtual {p0, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 175
     invoke-static {p0, v7, v2}, Lcom/android/settings_ex/bluetooth/Utils;->showErrorForBondFail(Landroid/content/Context;ILjava/lang/String;)V
 
-    .line 176
     const-string v4, "service.btui.gap.pairByLocal"
 
     const-string v5, "0"

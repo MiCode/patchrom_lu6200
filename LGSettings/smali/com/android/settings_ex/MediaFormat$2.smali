@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 110
     iput-object p1, p0, Lcom/android/settings_ex/MediaFormat$2;->this$0:Lcom/android/settings_ex/MediaFormat;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 112
     iget-object v0, p0, Lcom/android/settings_ex/MediaFormat$2;->this$0:Lcom/android/settings_ex/MediaFormat;
 
     const/16 v1, 0x37
@@ -54,13 +52,11 @@
 
     if-nez v0, :cond_0
 
-    .line 113
     iget-object v0, p0, Lcom/android/settings_ex/MediaFormat$2;->this$0:Lcom/android/settings_ex/MediaFormat;
 
     #calls: Lcom/android/settings_ex/MediaFormat;->establishFinalConfirmationState()V
     invoke-static {v0}, Lcom/android/settings_ex/MediaFormat;->access$100(Lcom/android/settings_ex/MediaFormat;)V
 
-    .line 115
     :cond_0
     return-void
 .end method

@@ -59,39 +59,32 @@
 
     if-eqz v0, :cond_0
 
-    .line 55
     const-string v0, "BluetoothRequestService"
 
     const-string v1, "OPP access request handled by OPP application"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 69
     :goto_0
     return-void
 
-    .line 59
     :cond_0
     const-class v0, Lcom/android/settings_ex/bluetooth/BluetoothRequestServiceDialog;
 
     invoke-virtual {p2, p1, v0}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 60
     const-string v0, "broadcom.android.bluetooth.intent.action.BT_SERVICE_ACCESS"
 
     invoke-virtual {p2, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 61
     const/high16 v0, 0x1000
 
     invoke-virtual {p2, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 68
     invoke-virtual {p1, p2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 63
     :cond_1
     const-string v1, "BluetoothRequestService"
 

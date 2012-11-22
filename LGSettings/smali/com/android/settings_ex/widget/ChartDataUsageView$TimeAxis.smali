@@ -81,7 +81,6 @@
     .parameter "value"
 
     .prologue
-    .line 500
     iget v0, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mSize:F
 
     iget-wide v1, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mMin:J
@@ -110,7 +109,6 @@
     .parameter "point"
 
     .prologue
-    .line 505
     iget-wide v0, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
     long-to-float v0, v0
@@ -142,7 +140,6 @@
     .prologue
     const-wide/32 v7, 0x240c8400
 
-    .line 518
     iget-wide v3, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mMax:J
 
     iget-wide v5, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mMin:J
@@ -165,7 +162,6 @@
     :goto_0
     if-ge v0, v1, :cond_0
 
-    .line 521
     iget-wide v3, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mMax:J
 
     add-int/lit8 v5, v0, 0x1
@@ -244,7 +240,6 @@
     .parameter "max"
 
     .prologue
-    .line 479
     iget-wide v0, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
     cmp-long v0, v0, p1
@@ -257,17 +252,13 @@
 
     if-eqz v0, :cond_1
 
-    .line 480
     :cond_0
     iput-wide p1, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
-    .line 481
     iput-wide p3, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mMax:J
 
-    .line 482
     const/4 v0, 0x1
 
-    .line 484
     :goto_0
     return v0
 
@@ -282,20 +273,16 @@
     .parameter "size"
 
     .prologue
-    .line 490
     iget v0, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mSize:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 491
     iput p1, p0, Lcom/android/settings_ex/widget/ChartDataUsageView$TimeAxis;->mSize:F
 
-    .line 492
     const/4 v0, 0x1
 
-    .line 494
     :goto_0
     return v0
 

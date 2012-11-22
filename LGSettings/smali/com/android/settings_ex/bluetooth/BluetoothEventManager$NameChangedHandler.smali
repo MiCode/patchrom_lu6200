@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 318
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$NameChangedHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 318
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$NameChangedHandler;-><init>(Lcom/android/settings_ex/bluetooth/BluetoothEventManager;)V
 
     return-void

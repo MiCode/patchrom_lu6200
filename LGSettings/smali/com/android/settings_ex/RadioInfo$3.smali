@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 731
     iput-object p1, p0, Lcom/android/settings_ex/RadioInfo$3;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 2
 
     .prologue
-    .line 733
     iget-object v0, p0, Lcom/android/settings_ex/RadioInfo$3;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->mPingIpAddr:Landroid/widget/TextView;
@@ -58,7 +56,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 734
     iget-object v0, p0, Lcom/android/settings_ex/RadioInfo$3;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->mPingHostname:Landroid/widget/TextView;
@@ -75,7 +72,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 735
     iget-object v0, p0, Lcom/android/settings_ex/RadioInfo$3;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->mHttpClientTest:Landroid/widget/TextView;

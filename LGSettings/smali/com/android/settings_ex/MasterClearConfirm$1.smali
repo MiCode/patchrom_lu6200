@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 74
     iput-object p1, p0, Lcom/android/settings_ex/MasterClearConfirm$1;->this$0:Lcom/android/settings_ex/MasterClearConfirm;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,18 +41,15 @@
     .parameter "v"
 
     .prologue
-    .line 77
     invoke-static {}, Lcom/android/settings_ex/Utils;->isMonkeyRunning()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 126
     :goto_0
     return-void
 
-    .line 81
     :cond_0
     new-instance v1, Landroid/app/AlertDialog$Builder;
 

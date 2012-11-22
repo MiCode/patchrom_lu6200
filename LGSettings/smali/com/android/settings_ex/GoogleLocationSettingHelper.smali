@@ -241,18 +241,15 @@
     .parameter "use"
 
     .prologue
-    .line 119
     invoke-static {}, Lcom/android/settings_ex/GoogleLocationSettingHelper;->getSetUseLocationIntent()Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 120
     .local v1, i:Landroid/content/Intent;
     const/high16 v2, 0x1000
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 121
     const-string v3, "disable"
 
     if-nez p1, :cond_0

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 196
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -159,10 +158,8 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 219
     if-eqz v15, :cond_7
 
-    .line 220
     sget-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
     if-nez v1, :cond_0
@@ -241,17 +238,14 @@
 
     if-nez v1, :cond_0
 
-    .line 228
     const/4 v1, 0x1
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbConnected:Z
 
-    .line 229
     const/4 v1, 0x1
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDoNotFinish:Z
 
-    .line 230
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -275,12 +269,10 @@
     #setter for: Lcom/android/settings_ex/deviceinfo/UsbSettings;->mCurrentFunction:Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->access$402(Lcom/android/settings_ex/deviceinfo/UsbSettings;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 232
     const/4 v1, 0x1
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 233
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -320,23 +312,19 @@
     #setter for: Lcom/android/settings_ex/deviceinfo/UsbSettings;->mDefaultFunction:Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->access$502(Lcom/android/settings_ex/deviceinfo/UsbSettings;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 237
     :cond_0
     if-eqz v14, :cond_1
 
-    .line 238
     const-string v1, "UsbSettings"
 
     const-string v2, "[AUTORUN] ===== USB Connection ====="
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 239
     const/4 v1, 0x1
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbConnected:Z
 
-    .line 241
     sget-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
     if-nez v1, :cond_5
@@ -388,7 +376,6 @@
 
     if-nez v1, :cond_5
 
-    .line 247
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getCountry()Ljava/lang/String;
 
     move-result-object v1
@@ -588,12 +575,10 @@
 
     if-nez v1, :cond_1
 
-    .line 268
     const/4 v1, 0x1
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDoNotFinish:Z
 
-    .line 269
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -627,12 +612,10 @@
     #setter for: Lcom/android/settings_ex/deviceinfo/UsbSettings;->mCurrentFunction:Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->access$402(Lcom/android/settings_ex/deviceinfo/UsbSettings;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 272
     const/4 v1, 0x1
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 273
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -736,14 +719,12 @@
 
     if-nez v1, :cond_1
 
-    .line 282
     const/4 v1, 0x0
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDirectAutorun:Z
 
     goto/16 :goto_0
 
-    .line 300
     :cond_7
     const-string v1, "UsbSettings"
 
@@ -751,26 +732,21 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 302
     const/4 v1, 0x0
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbConnected:Z
 
-    .line 303
     sget-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mX3Bug:Z
 
     if-nez v1, :cond_8
 
-    .line 304
     const/4 v1, 0x0
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 313
     :cond_8
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
-    .line 314
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -778,7 +754,6 @@
     #calls: Lcom/android/settings_ex/deviceinfo/UsbSettings;->cancelProgressPopup()V
     invoke-static {v1}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->access$1000(Lcom/android/settings_ex/deviceinfo/UsbSettings;)V
 
-    .line 316
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
 
     move-result-object v1
@@ -890,19 +865,16 @@
 
     if-eqz v1, :cond_1
 
-    .line 329
     sget-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDirectAutorun:Z
 
     if-eqz v1, :cond_d
 
-    .line 330
     const/4 v1, 0x0
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDirectAutorun:Z
 
     goto/16 :goto_0
 
-    .line 324
     :cond_c
     move-object/from16 v0, p0
 
@@ -959,10 +931,8 @@
 
     if-eqz v1, :cond_11
 
-    .line 341
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
-    .line 342
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -988,12 +958,10 @@
 
     if-eqz v1, :cond_10
 
-    .line 350
     sget-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mX3Bug:Z
 
     if-eqz v1, :cond_f
 
-    .line 351
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -1003,12 +971,10 @@
     #calls: Lcom/android/settings_ex/deviceinfo/UsbSettings;->connectUsbTether(Z)V
     invoke-static {v1, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->access$1200(Lcom/android/settings_ex/deviceinfo/UsbSettings;Z)V
 
-    .line 353
     const/4 v1, 0x1
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 354
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -1058,13 +1024,11 @@
 
     goto/16 :goto_0
 
-    .line 357
     :cond_f
     const/4 v1, 0x1
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 358
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -1116,13 +1080,11 @@
 
     goto :goto_2
 
-    .line 364
     :cond_10
     const/4 v1, 0x1
 
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 365
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -1174,12 +1136,10 @@
 
     if-eqz v1, :cond_13
 
-    .line 370
     sget-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
     if-eqz v1, :cond_12
 
-    .line 371
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -1191,11 +1151,9 @@
 
     goto/16 :goto_0
 
-    .line 373
     :cond_12
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
-    .line 374
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -1215,10 +1173,8 @@
 
     if-eqz v1, :cond_14
 
-    .line 377
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
-    .line 378
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -1226,12 +1182,10 @@
     #calls: Lcom/android/settings_ex/deviceinfo/UsbSettings;->cancelProgressPopup()V
     invoke-static {v1}, Lcom/android/settings_ex/deviceinfo/UsbSettings;->access$1000(Lcom/android/settings_ex/deviceinfo/UsbSettings;)V
 
-    .line 380
     sget-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
     if-nez v1, :cond_1
 
-    .line 381
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/settings_ex/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettings;
@@ -1302,13 +1256,11 @@
     :goto_3
     invoke-virtual {v2, v1}, Lcom/android/settings_ex/lge/RadioButtonPreference;->setEnabled(Z)V
 
-    .line 389
     :cond_15
     sget-boolean v1, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v1, :cond_1
 
-    .line 390
     invoke-static {}, Lcom/android/settings_ex/MDMSettingsAdapter;->getInstance()Lcom/android/settings_ex/MDMSettingsAdapter;
 
     move-result-object v1
@@ -1366,13 +1318,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 394
     invoke-static/range {p1 .. p1}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->checkStorageVolume(Landroid/content/Context;)V
 
-    .line 395
     const-string v13, ""
 
-    .line 396
     .local v13, mode:Ljava/lang/String;
     const-string v1, "extra_usb_default_mode"
 

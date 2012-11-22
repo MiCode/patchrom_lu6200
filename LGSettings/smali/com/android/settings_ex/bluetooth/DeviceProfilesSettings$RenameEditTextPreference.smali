@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 128
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;->this$0:Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 128
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;-><init>(Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings;)V
 
     return-void
@@ -54,7 +52,6 @@
     .parameter "s"
 
     .prologue
-    .line 130
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;->this$0:Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings;->mDeviceNamePref:Landroid/preference/EditTextPreference;

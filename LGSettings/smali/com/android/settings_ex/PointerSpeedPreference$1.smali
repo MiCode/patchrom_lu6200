@@ -25,7 +25,6 @@
     .parameter "x0"
 
     .prologue
-    .line 48
     iput-object p1, p0, Lcom/android/settings_ex/PointerSpeedPreference$1;->this$0:Lcom/android/settings_ex/PointerSpeedPreference;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,12 +39,10 @@
     .parameter "selfChange"
 
     .prologue
-    .line 51
     iget-object v0, p0, Lcom/android/settings_ex/PointerSpeedPreference$1;->this$0:Lcom/android/settings_ex/PointerSpeedPreference;
 
     #calls: Lcom/android/settings_ex/PointerSpeedPreference;->onSpeedChanged()V
     invoke-static {v0}, Lcom/android/settings_ex/PointerSpeedPreference;->access$000(Lcom/android/settings_ex/PointerSpeedPreference;)V
 
-    .line 52
     return-void
 .end method

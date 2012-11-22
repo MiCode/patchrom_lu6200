@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 574
     iput-object p1, p0, Lcom/android/settings_ex/WirelessSettings$3;->this$0:Lcom/android/settings_ex/WirelessSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -88,7 +87,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 588
     iget-object v4, p0, Lcom/android/settings_ex/WirelessSettings$3;->this$0:Lcom/android/settings_ex/WirelessSettings;
 
     #getter for: Lcom/android/settings_ex/WirelessSettings;->bluetoothAvailable:Z
@@ -98,7 +96,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 589
     iget-object v7, p0, Lcom/android/settings_ex/WirelessSettings$3;->this$0:Lcom/android/settings_ex/WirelessSettings;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
@@ -158,7 +155,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 595
     iget-object v4, p0, Lcom/android/settings_ex/WirelessSettings$3;->this$0:Lcom/android/settings_ex/WirelessSettings;
 
     #getter for: Lcom/android/settings_ex/WirelessSettings;->mBluetoothEnableForTether:Z
@@ -211,7 +207,6 @@
 
     invoke-virtual {v4, v5}, Landroid/bluetooth/BluetoothPan;->setBluetoothTethering(Z)V
 
-    .line 600
     iget-object v4, p0, Lcom/android/settings_ex/WirelessSettings$3;->this$0:Lcom/android/settings_ex/WirelessSettings;
 
     #setter for: Lcom/android/settings_ex/WirelessSettings;->mBluetoothEnableForTether:Z

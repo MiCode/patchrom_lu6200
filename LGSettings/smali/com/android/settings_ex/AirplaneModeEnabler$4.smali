@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 209
     iput-object p1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$4;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
@@ -40,21 +39,17 @@
     .parameter "incomingNumber"
 
     .prologue
-    .line 212
     if-eqz p1, :cond_0
 
-    .line 213
     iget-object v0, p0, Lcom/android/settings_ex/AirplaneModeEnabler$4;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Lcom/android/settings_ex/AirplaneModeEnabler;->csActive:Z
 
-    .line 217
     :goto_0
     return-void
 
-    .line 215
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/AirplaneModeEnabler$4;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 

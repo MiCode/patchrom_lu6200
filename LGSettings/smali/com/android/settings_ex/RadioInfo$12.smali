@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 870
     iput-object p1, p0, Lcom/android/settings_ex/RadioInfo$12;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +43,6 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 872
     iget-object v2, p0, Lcom/android/settings_ex/RadioInfo$12;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     const-string v3, "connectivity"

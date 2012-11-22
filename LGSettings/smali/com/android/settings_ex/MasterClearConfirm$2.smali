@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 296
     iput-object p1, p0, Lcom/android/settings_ex/MasterClearConfirm$2;->this$0:Lcom/android/settings_ex/MasterClearConfirm;
 
     invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "newState"
 
     .prologue
-    .line 299
     iget-object v0, p0, Lcom/android/settings_ex/MasterClearConfirm$2;->this$0:Lcom/android/settings_ex/MasterClearConfirm;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/MasterClearConfirm;->getActivity()Landroid/app/Activity;

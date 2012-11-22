@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 69
     iput-object p1, p0, Lcom/android/settings_ex/ApplicationSettings$1;->this$0:Lcom/android/settings_ex/ApplicationSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,18 +42,15 @@
     .parameter "newValue"
 
     .prologue
-    .line 71
     move-object v0, p2
 
     check-cast v0, Ljava/lang/String;
 
-    .line 72
     .local v0, value:Ljava/lang/String;
     iget-object v1, p0, Lcom/android/settings_ex/ApplicationSettings$1;->this$0:Lcom/android/settings_ex/ApplicationSettings;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/ApplicationSettings;->handleUpdateAppInstallLocation(Ljava/lang/String;)V
 
-    .line 73
     const/4 v1, 0x0
 
     return v1

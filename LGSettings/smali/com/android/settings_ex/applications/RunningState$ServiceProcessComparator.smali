@@ -50,19 +50,16 @@
 
     const/4 v0, -0x1
 
-    .line 527
     iget-boolean v2, p1, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mIsStarted:Z
 
     iget-boolean v3, p2, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mIsStarted:Z
 
     if-eq v2, v3, :cond_2
 
-    .line 529
     iget-boolean v2, p1, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mIsStarted:Z
 
     if-eqz v2, :cond_1
 
-    .line 540
     :cond_0
     :goto_0
     return v0
@@ -81,7 +78,6 @@
 
     if-eq v2, v3, :cond_4
 
-    .line 533
     iget-boolean v2, p1, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mIsSystem:Z
 
     if-eqz v2, :cond_3
@@ -106,7 +102,6 @@
 
     if-eqz v2, :cond_5
 
-    .line 538
     iget-wide v2, p1, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mActiveSince:J
 
     iget-wide v4, p2, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mActiveSince:J
@@ -132,7 +127,6 @@
     .parameter "x1"
 
     .prologue
-    .line 525
     check-cast p1, Lcom/android/settings_ex/applications/RunningState$ProcessItem;
 
     .end local p1

@@ -26,12 +26,10 @@
     .parameter
 
     .prologue
-    .line 154
     iput-object p1, p0, Lcom/android/settings_ex/IccLockSettings$1;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     invoke-direct {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;-><init>()V
 
-    .line 155
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/IccLockSettings$1;->mIsProgressShowing:Z
@@ -52,7 +50,6 @@
 
     const/16 v3, 0x9
 
-    .line 158
     invoke-static {}, Lcom/android/settings_ex/IccLockSettings;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -91,7 +88,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 166
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$1;->getSimState()I
 
     move-result v1
@@ -141,22 +137,18 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 187
     iget-boolean v1, p0, Lcom/android/settings_ex/IccLockSettings$1;->mIsProgressShowing:Z
 
     if-nez v1, :cond_0
 
-    .line 188
     iput-boolean v5, p0, Lcom/android/settings_ex/IccLockSettings$1;->mIsProgressShowing:Z
 
-    .line 189
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$1;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     invoke-virtual {v1, v3}, Lcom/android/settings_ex/IccLockSettings;->showDialog(I)V
 
     goto :goto_0
 
-    .line 194
     :sswitch_3
     invoke-static {}, Lcom/android/settings_ex/IccLockSettings;->access$000()Ljava/lang/String;
 
@@ -166,26 +158,21 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 195
     iget-boolean v1, p0, Lcom/android/settings_ex/IccLockSettings$1;->mIsProgressShowing:Z
 
     if-eqz v1, :cond_1
 
-    .line 196
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$1;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     invoke-virtual {v1, v3}, Lcom/android/settings_ex/IccLockSettings;->dismissDialog(I)V
 
-    .line 197
     iput-boolean v4, p0, Lcom/android/settings_ex/IccLockSettings$1;->mIsProgressShowing:Z
 
-    .line 199
     :cond_1
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$1;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     invoke-virtual {v1, v5}, Lcom/android/settings_ex/IccLockSettings;->updatePreferencesState(Z)V
 
-    .line 201
     invoke-static {}, Lcom/android/settings_ex/IccLockSettings;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -222,27 +209,22 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 219
     iget-boolean v1, p0, Lcom/android/settings_ex/IccLockSettings$1;->mIsProgressShowing:Z
 
     if-eqz v1, :cond_2
 
-    .line 220
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$1;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     invoke-virtual {v1, v3}, Lcom/android/settings_ex/IccLockSettings;->dismissDialog(I)V
 
-    .line 221
     iput-boolean v4, p0, Lcom/android/settings_ex/IccLockSettings$1;->mIsProgressShowing:Z
 
-    .line 223
     :cond_2
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$1;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     #calls: Lcom/android/settings_ex/IccLockSettings;->doBlockAccessMenu()V
     invoke-static {v1}, Lcom/android/settings_ex/IccLockSettings;->access$100(Lcom/android/settings_ex/IccLockSettings;)V
 
-    .line 225
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$1;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     const/16 v2, 0x12

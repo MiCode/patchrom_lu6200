@@ -37,7 +37,6 @@
     .parameter
 
     .prologue
-    .line 103
     iput-object p1, p0, Lcom/android/settings_ex/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings_ex/accounts/AccountSyncSettings$1;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -86,15 +85,12 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 108
     const/4 v0, 0x0
 
-    .line 117
     :cond_0
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 118
     iget-object v1, p0, Lcom/android/settings_ex/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings_ex/accounts/AccountSyncSettings$1;
 
     iget-object v1, v1, Lcom/android/settings_ex/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings_ex/accounts/AccountSyncSettings;

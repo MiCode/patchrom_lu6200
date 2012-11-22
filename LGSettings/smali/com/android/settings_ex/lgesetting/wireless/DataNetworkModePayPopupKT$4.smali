@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 132
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$4;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "arg1"
 
     .prologue
-    .line 135
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$4;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     iget-object v0, v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->am:Landroid/app/AlarmManager;
@@ -57,7 +55,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
-    .line 136
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$4;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     const/4 v1, 0x2
@@ -65,7 +62,6 @@
     #calls: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->SetUserResponse(I)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->access$000(Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;I)V
 
-    .line 138
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$4;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->mConnMgr:Landroid/net/ConnectivityManager;
@@ -77,7 +73,6 @@
 
     invoke-virtual {v0, v1}, Landroid/net/ConnectivityManager;->setMobileDataEnabled(Z)V
 
-    .line 141
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT$4;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModePayPopupKT;->paydialog:Landroid/app/AlertDialog;

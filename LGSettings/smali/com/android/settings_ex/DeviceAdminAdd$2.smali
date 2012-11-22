@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 175
     iput-object p1, p0, Lcom/android/settings_ex/DeviceAdminAdd$2;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,11 +41,9 @@
     .parameter "v"
 
     .prologue
-    .line 177
     iget-object v0, p0, Lcom/android/settings_ex/DeviceAdminAdd$2;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/DeviceAdminAdd;->finish()V
 
-    .line 178
     return-void
 .end method

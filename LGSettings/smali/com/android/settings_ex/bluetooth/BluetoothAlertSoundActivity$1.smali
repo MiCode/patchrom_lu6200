@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 180
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 2
 
     .prologue
-    .line 182
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;->mPlayer:Landroid/media/MediaPlayer;
@@ -51,7 +49,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 183
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;->mPlayer:Landroid/media/MediaPlayer;
@@ -61,7 +58,6 @@
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->stop()V
 
-    .line 184
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;->mPlayer:Landroid/media/MediaPlayer;
@@ -71,7 +67,6 @@
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->release()V
 
-    .line 185
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;
 
     const/4 v1, 0x0
@@ -87,11 +82,9 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 188
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/BluetoothAlertSoundActivity;->finish()V
 
-    .line 189
     return-void
 .end method

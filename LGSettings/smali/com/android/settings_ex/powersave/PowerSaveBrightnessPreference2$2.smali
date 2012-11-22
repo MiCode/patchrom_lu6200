@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 78
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$2;->this$0:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

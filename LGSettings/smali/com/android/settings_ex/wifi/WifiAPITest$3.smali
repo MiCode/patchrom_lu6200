@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 130
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiAPITest$3;->this$0:Lcom/android/settings_ex/wifi/WifiAPITest;
 
     iput-object p2, p0, Lcom/android/settings_ex/wifi/WifiAPITest$3;->val$input:Landroid/widget/EditText;
@@ -48,14 +47,12 @@
     .parameter "whichButton"
 
     .prologue
-    .line 132
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiAPITest$3;->val$input:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
-    .line 133
     .local v0, value:Landroid/text/Editable;
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiAPITest$3;->this$0:Lcom/android/settings_ex/wifi/WifiAPITest;
 
@@ -70,7 +67,6 @@
     #setter for: Lcom/android/settings_ex/wifi/WifiAPITest;->netid:I
     invoke-static {v1, v2}, Lcom/android/settings_ex/wifi/WifiAPITest;->access$002(Lcom/android/settings_ex/wifi/WifiAPITest;I)I
 
-    .line 134
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiAPITest$3;->this$0:Lcom/android/settings_ex/wifi/WifiAPITest;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiAPITest;->mWifiManager:Landroid/net/wifi/WifiManager;

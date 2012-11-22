@@ -35,7 +35,6 @@
     .parameter "x0"
 
     .prologue
-    .line 34
     iget-object v0, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
     return-object v0
@@ -47,7 +46,6 @@
     .parameter "x1"
 
     .prologue
-    .line 34
     iput-object p1, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
     return-object p1
@@ -59,14 +57,12 @@
     .locals 1
 
     .prologue
-    .line 231
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/Activity;->onBackPressed()V
 
-    .line 232
     return-void
 .end method
 
@@ -74,14 +70,12 @@
     .locals 1
 
     .prologue
-    .line 50
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/Activity;->onBackPressed()V
 
-    .line 51
     return-void
 .end method
 
@@ -89,7 +83,6 @@
     .locals 1
 
     .prologue
-    .line 59
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -105,7 +98,6 @@
     .locals 1
 
     .prologue
-    .line 227
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -123,7 +115,6 @@
     .locals 1
 
     .prologue
-    .line 73
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -140,7 +131,6 @@
     .parameter "name"
 
     .prologue
-    .line 66
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -156,7 +146,6 @@
     .locals 1
 
     .prologue
-    .line 223
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -197,33 +186,27 @@
     .locals 1
 
     .prologue
-    .line 78
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->isRemoving()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 79
     iget-object v0, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
     if-eqz v0, :cond_0
 
-    .line 80
     iget-object v0, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;->dismiss()V
 
-    .line 81
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    .line 84
     :cond_0
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDetach()V
 
-    .line 85
     return-void
 .end method
 
@@ -232,7 +215,6 @@
     .parameter "dialogId"
 
     .prologue
-    .line 105
     iget-object v0, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
     if-eqz v0, :cond_0
@@ -245,18 +227,15 @@
 
     if-ne v0, p1, :cond_0
 
-    .line 106
     iget-object v0, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;->dismiss()V
 
-    .line 108
     :cond_0
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    .line 109
     return-void
 .end method
 
@@ -265,19 +244,16 @@
     .parameter "dialogId"
 
     .prologue
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
     if-eqz v0, :cond_0
 
-    .line 91
     const-string v0, "SettingsPreferenceFragment"
 
     const-string v1, "Old dialog fragment not null!"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 93
     :cond_0
     new-instance v0, Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
@@ -285,7 +261,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    .line 94
     iget-object v0, p0, Lcom/android/settings_ex/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
@@ -314,7 +289,6 @@
     .parameter "extras"
 
     .prologue
-    .line 236
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -323,14 +297,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 237
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceActivity;
 
-    .line 238
     .local v0, preferenceActivity:Landroid/preference/PreferenceActivity;
     const v3, 0x7f080173
 

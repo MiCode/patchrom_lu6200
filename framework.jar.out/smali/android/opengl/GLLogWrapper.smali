@@ -476,7 +476,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "glError: "
+    const-string/jumbo v3, "glError: "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -7851,7 +7851,7 @@
 
     .prologue
     .line 1580
-    const-string v0, "glFinish"
+    const-string/jumbo v0, "glFinish"
 
     invoke-direct {p0, v0}, Landroid/opengl/GLLogWrapper;->begin(Ljava/lang/String;)V
 
@@ -7875,7 +7875,7 @@
 
     .prologue
     .line 1588
-    const-string v0, "glFlush"
+    const-string/jumbo v0, "glFlush"
 
     invoke-direct {p0, v0}, Landroid/opengl/GLLogWrapper;->begin(Ljava/lang/String;)V
 
@@ -7901,7 +7901,7 @@
 
     .prologue
     .line 1596
-    const-string v0, "glFogf"
+    const-string/jumbo v0, "glFogf"
 
     invoke-direct {p0, v0}, Landroid/opengl/GLLogWrapper;->begin(Ljava/lang/String;)V
 
@@ -7937,7 +7937,7 @@
 
     .prologue
     .line 1617
-    const-string v0, "glFogfv"
+    const-string/jumbo v0, "glFogfv"
 
     invoke-direct {p0, v0}, Landroid/opengl/GLLogWrapper;->begin(Ljava/lang/String;)V
 
@@ -7982,7 +7982,7 @@
 
     .prologue
     .line 1606
-    const-string v0, "glFogfv"
+    const-string/jumbo v0, "glFogfv"
 
     invoke-direct {p0, v0}, Landroid/opengl/GLLogWrapper;->begin(Ljava/lang/String;)V
 
@@ -8031,7 +8031,7 @@
 
     .prologue
     .line 1627
-    const-string v0, "glFogx"
+    const-string/jumbo v0, "glFogx"
 
     invoke-direct {p0, v0}, Landroid/opengl/GLLogWrapper;->begin(Ljava/lang/String;)V
 

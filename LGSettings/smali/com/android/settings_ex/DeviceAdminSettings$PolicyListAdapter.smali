@@ -26,12 +26,10 @@
     .parameter
 
     .prologue
-    .line 150
     iput-object p1, p0, Lcom/android/settings_ex/DeviceAdminSettings$PolicyListAdapter;->this$0:Lcom/android/settings_ex/DeviceAdminSettings;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
-    .line 151
     invoke-virtual {p1}, Lcom/android/settings_ex/DeviceAdminSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -68,14 +66,12 @@
     .parameter "position"
 
     .prologue
-    .line 208
     iget-object v0, p0, Lcom/android/settings_ex/DeviceAdminSettings$PolicyListAdapter;->this$0:Lcom/android/settings_ex/DeviceAdminSettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/DeviceAdminSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
 
-    .line 209
     .local v8, activity:Landroid/app/Activity;
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -83,7 +79,6 @@
 
     check-cast v9, Lcom/android/settings_ex/DeviceAdminSettings$ViewHolder;
 
-    .line 210
     .local v9, vh:Lcom/android/settings_ex/DeviceAdminSettings$ViewHolder;
     iget-object v0, p0, Lcom/android/settings_ex/DeviceAdminSettings$PolicyListAdapter;->this$0:Lcom/android/settings_ex/DeviceAdminSettings;
 
@@ -109,7 +104,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 212
     iget-object v0, v9, Lcom/android/settings_ex/DeviceAdminSettings$ViewHolder;->name:Landroid/widget/TextView;
 
     invoke-virtual {v8}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -122,7 +116,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 213
     iget-object v0, v9, Lcom/android/settings_ex/DeviceAdminSettings$ViewHolder;->checkbox:Landroid/widget/CheckBox;
 
     iget-object v1, p0, Lcom/android/settings_ex/DeviceAdminSettings$PolicyListAdapter;->this$0:Lcom/android/settings_ex/DeviceAdminSettings;
@@ -177,7 +170,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 220
     invoke-static {}, Lcom/android/settings_ex/MDMSettingsAdapter;->getInstance()Lcom/android/settings_ex/MDMSettingsAdapter;
 
     move-result-object v0
@@ -215,7 +207,6 @@
     .locals 1
 
     .prologue
-    .line 160
     iget-object v0, p0, Lcom/android/settings_ex/DeviceAdminSettings$PolicyListAdapter;->this$0:Lcom/android/settings_ex/DeviceAdminSettings;
 
     iget-object v0, v0, Lcom/android/settings_ex/DeviceAdminSettings;->mAvailableAdmins:Ljava/util/ArrayList;
@@ -232,7 +223,6 @@
     .parameter "position"
 
     .prologue
-    .line 164
     iget-object v0, p0, Lcom/android/settings_ex/DeviceAdminSettings$PolicyListAdapter;->this$0:Lcom/android/settings_ex/DeviceAdminSettings;
 
     iget-object v0, v0, Lcom/android/settings_ex/DeviceAdminSettings;->mAvailableAdmins:Ljava/util/ArrayList;
@@ -262,23 +252,18 @@
     .parameter "parent"
 
     .prologue
-    .line 187
     if-nez p2, :cond_0
 
-    .line 188
     invoke-virtual {p0, p3}, Lcom/android/settings_ex/DeviceAdminSettings$PolicyListAdapter;->newView(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    .line 192
     .local v0, v:Landroid/view/View;
     :goto_0
     invoke-virtual {p0, v0, p1}, Lcom/android/settings_ex/DeviceAdminSettings$PolicyListAdapter;->bindView(Landroid/view/View;I)V
 
-    .line 193
     return-object v0
 
-    .line 190
     .end local v0           #v:Landroid/view/View;
     :cond_0
     move-object v0, p2
@@ -349,7 +334,6 @@
     .parameter "parent"
 
     .prologue
-    .line 197
     iget-object v2, p0, Lcom/android/settings_ex/DeviceAdminSettings$PolicyListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     const v3, 0x7f040046
@@ -360,13 +344,11 @@
 
     move-result-object v1
 
-    .line 198
     .local v1, v:Landroid/view/View;
     new-instance v0, Lcom/android/settings_ex/DeviceAdminSettings$ViewHolder;
 
     invoke-direct {v0}, Lcom/android/settings_ex/DeviceAdminSettings$ViewHolder;-><init>()V
 
-    .line 199
     .local v0, h:Lcom/android/settings_ex/DeviceAdminSettings$ViewHolder;
     const v2, 0x7f0b0039
 

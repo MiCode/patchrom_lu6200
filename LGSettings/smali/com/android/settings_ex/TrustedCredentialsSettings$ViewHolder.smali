@@ -38,7 +38,6 @@
     .parameter "x0"
 
     .prologue
-    .line 358
     invoke-direct {p0}, Lcom/android/settings_ex/TrustedCredentialsSettings$ViewHolder;-><init>()V
 
     return-void
@@ -49,7 +48,6 @@
     .parameter "x0"
 
     .prologue
-    .line 358
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$ViewHolder;->mSubjectPrimaryView:Landroid/widget/TextView;
 
     return-object v0
@@ -61,7 +59,6 @@
     .parameter "x1"
 
     .prologue
-    .line 358
     iput-object p1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$ViewHolder;->mSubjectPrimaryView:Landroid/widget/TextView;
 
     return-object p1
@@ -72,7 +69,6 @@
     .parameter "x0"
 
     .prologue
-    .line 358
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$ViewHolder;->mSubjectSecondaryView:Landroid/widget/TextView;
 
     return-object v0
@@ -84,7 +80,6 @@
     .parameter "x1"
 
     .prologue
-    .line 358
     iput-object p1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$ViewHolder;->mSubjectSecondaryView:Landroid/widget/TextView;
 
     return-object p1
@@ -95,7 +90,6 @@
     .parameter "x0"
 
     .prologue
-    .line 358
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$ViewHolder;->mCheckBox:Landroid/widget/CheckBox;
 
     return-object v0
@@ -107,7 +101,6 @@
     .parameter "x1"
 
     .prologue
-    .line 358
     iput-object p1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$ViewHolder;->mCheckBox:Landroid/widget/CheckBox;
 
     return-object p1

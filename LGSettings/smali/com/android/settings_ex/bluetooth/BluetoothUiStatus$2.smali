@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 71
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -62,7 +61,6 @@
     #setter for: Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->oPhoneState:I
     invoke-static {v1, v2}, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->access$002(Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;I)I
 
-    .line 77
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;
 
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;
@@ -132,7 +130,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 81
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mManager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
@@ -148,13 +145,11 @@
 
     move-result v0
 
-    .line 83
     .local v0, scanMode:I
     const/16 v1, 0x17
 
     if-ne v0, v1, :cond_0
 
-    .line 84
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mManager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;

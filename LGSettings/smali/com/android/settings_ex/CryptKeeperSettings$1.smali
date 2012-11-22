@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 69
     iput-object p1, p0, Lcom/android/settings_ex/CryptKeeperSettings$1;->this$0:Lcom/android/settings_ex/CryptKeeperSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -123,7 +122,6 @@
     :goto_2
     invoke-virtual {v9, v7}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 86
     iget-object v7, p0, Lcom/android/settings_ex/CryptKeeperSettings$1;->this$0:Lcom/android/settings_ex/CryptKeeperSettings;
 
     #getter for: Lcom/android/settings_ex/CryptKeeperSettings;->mPowerWarning:Landroid/view/View;
@@ -138,7 +136,6 @@
     :goto_3
     invoke-virtual {v9, v7}, Landroid/view/View;->setVisibility(I)V
 
-    .line 87
     iget-object v7, p0, Lcom/android/settings_ex/CryptKeeperSettings$1;->this$0:Lcom/android/settings_ex/CryptKeeperSettings;
 
     #getter for: Lcom/android/settings_ex/CryptKeeperSettings;->mBatteryWarning:Landroid/view/View;

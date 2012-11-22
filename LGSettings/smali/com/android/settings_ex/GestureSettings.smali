@@ -119,28 +119,20 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 46
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
-    .line 75
     iput-boolean v0, p0, Lcom/android/settings_ex/GestureSettings;->isLGE_VIDEO_PLYAER:Z
 
-    .line 76
     iput-boolean v0, p0, Lcom/android/settings_ex/GestureSettings;->hasTAB_SENSOR:Z
 
-    .line 77
     iput-boolean v0, p0, Lcom/android/settings_ex/GestureSettings;->hasFacing_SENSOR:Z
 
-    .line 78
     iput-boolean v0, p0, Lcom/android/settings_ex/GestureSettings;->hasOrient_SENSOR:Z
 
-    .line 79
     iput-boolean v0, p0, Lcom/android/settings_ex/GestureSettings;->testing:Z
 
-    .line 80
     iput v0, p0, Lcom/android/settings_ex/GestureSettings;->test_value:I
 
-    .line 81
     iput-boolean v0, p0, Lcom/android/settings_ex/GestureSettings;->test_use_default:Z
 
     return-void
@@ -151,7 +143,6 @@
     .parameter "x0"
 
     .prologue
-    .line 46
     iget-object v0, p0, Lcom/android/settings_ex/GestureSettings;->mCheckBox:Landroid/widget/CheckBox;
 
     return-object v0
@@ -162,7 +153,6 @@
     .parameter "x0"
 
     .prologue
-    .line 46
     iget-object v0, p0, Lcom/android/settings_ex/GestureSettings;->mSeekBar:Landroid/widget/SeekBar;
 
     return-object v0
@@ -174,7 +164,6 @@
     .parameter "x1"
 
     .prologue
-    .line 46
     iput-boolean p1, p0, Lcom/android/settings_ex/GestureSettings;->testing:Z
 
     return p1
@@ -185,7 +174,6 @@
     .parameter "x0"
 
     .prologue
-    .line 46
     iget v0, p0, Lcom/android/settings_ex/GestureSettings;->test_value:I
 
     return v0
@@ -197,7 +185,6 @@
     .parameter "x1"
 
     .prologue
-    .line 46
     iput p1, p0, Lcom/android/settings_ex/GestureSettings;->test_value:I
 
     return p1
@@ -209,7 +196,6 @@
     .parameter "x1"
 
     .prologue
-    .line 46
     iput-boolean p1, p0, Lcom/android/settings_ex/GestureSettings;->test_use_default:Z
 
     return p1
@@ -227,12 +213,10 @@
 
     const/4 v3, 0x0
 
-    .line 192
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 193
     .local v0, resolver:Landroid/content/ContentResolver;
     sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -244,23 +228,19 @@
 
     if-eqz v1, :cond_0
 
-    .line 194
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryBrowsePreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 195
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v1, v1, v5
 
     invoke-static {v0, v1, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 223
     :goto_0
     return-void
 
-    .line 196
     :cond_0
     const-string v1, "VZW"
 
@@ -295,13 +275,11 @@
 
     if-eqz v1, :cond_2
 
-    .line 198
     :cond_1
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryPanningPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 199
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v1, v1, v4
@@ -310,37 +288,31 @@
 
     goto :goto_0
 
-    .line 201
     :cond_2
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryPanningPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 202
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v1, v1, v4
 
     invoke-static {v0, v1, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 203
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryBrowsePreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 204
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v1, v1, v5
 
     invoke-static {v0, v1, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 205
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mIMEPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 206
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v1, v1, v6
@@ -361,12 +333,10 @@
 
     if-eqz v1, :cond_4
 
-    .line 210
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryPanningPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 211
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v1, v1, v4
@@ -375,37 +345,31 @@
 
     goto :goto_0
 
-    .line 213
     :cond_4
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryPanningPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 214
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v1, v1, v4
 
     invoke-static {v0, v1, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 215
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryBrowsePreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 216
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v1, v1, v5
 
     invoke-static {v0, v1, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 217
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mIMEPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 218
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v1, v1, v6
@@ -419,12 +383,10 @@
     .locals 3
 
     .prologue
-    .line 154
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 157
     .local v0, resolver:Landroid/content/ContentResolver;
     const-string v1, "DCM"
 
@@ -438,12 +400,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 158
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mVideoPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 159
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     const/4 v2, 0x3
@@ -467,12 +427,10 @@
 
     const/4 v6, 0x0
 
-    .line 226
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    .line 228
     .local v1, resolver:Landroid/content/ContentResolver;
     const-string v4, "sensor"
 
@@ -517,17 +475,14 @@
 
     if-ne v4, v5, :cond_1
 
-    .line 236
     iput-boolean v7, p0, Lcom/android/settings_ex/GestureSettings;->hasTAB_SENSOR:Z
 
-    .line 232
     :cond_0
     :goto_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 237
     :cond_1
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -543,12 +498,10 @@
 
     if-ne v4, v5, :cond_2
 
-    .line 238
     iput-boolean v7, p0, Lcom/android/settings_ex/GestureSettings;->hasFacing_SENSOR:Z
 
     goto :goto_1
 
-    .line 239
     :cond_2
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -564,80 +517,65 @@
 
     if-ne v4, v5, :cond_0
 
-    .line 240
     iput-boolean v7, p0, Lcom/android/settings_ex/GestureSettings;->hasOrient_SENSOR:Z
 
     goto :goto_1
 
-    .line 246
     :cond_3
     iget-boolean v4, p0, Lcom/android/settings_ex/GestureSettings;->hasOrient_SENSOR:Z
 
     if-eqz v4, :cond_4
 
-    .line 247
     iput-boolean v6, p0, Lcom/android/settings_ex/GestureSettings;->hasOrient_SENSOR:Z
 
-    .line 253
     :goto_2
     iget-boolean v4, p0, Lcom/android/settings_ex/GestureSettings;->hasTAB_SENSOR:Z
 
     if-eqz v4, :cond_5
 
-    .line 254
     iput-boolean v6, p0, Lcom/android/settings_ex/GestureSettings;->hasTAB_SENSOR:Z
 
-    .line 260
     :goto_3
     iget-boolean v4, p0, Lcom/android/settings_ex/GestureSettings;->hasFacing_SENSOR:Z
 
     if-eqz v4, :cond_6
 
-    .line 261
     iput-boolean v6, p0, Lcom/android/settings_ex/GestureSettings;->hasFacing_SENSOR:Z
 
-    .line 267
     :goto_4
     return-void
 
-    .line 249
     :cond_4
     iget-object v4, p0, Lcom/android/settings_ex/GestureSettings;->mHomePreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v4}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 250
     iget-object v4, p0, Lcom/android/settings_ex/GestureSettings;->mTiltPreferences:Landroid/preference/Preference;
 
     invoke-direct {p0, v4}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
     goto :goto_2
 
-    .line 256
     :cond_5
     iget-object v4, p0, Lcom/android/settings_ex/GestureSettings;->mIMEPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v4}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 257
     iget-object v4, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryBrowsePreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v4}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
     goto :goto_3
 
-    .line 263
     :cond_6
     iget-object v4, p0, Lcom/android/settings_ex/GestureSettings;->mCallPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v4}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 264
     iget-object v4, p0, Lcom/android/settings_ex/GestureSettings;->mAlarmPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v4}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
 
-    .line 265
     iget-object v4, p0, Lcom/android/settings_ex/GestureSettings;->mVideoPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, v4}, Lcom/android/settings_ex/GestureSettings;->removePreference(Landroid/preference/Preference;)V
@@ -653,12 +591,10 @@
 
     const/4 v3, 0x0
 
-    .line 111
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 113
     .local v0, resolver:Landroid/content/ContentResolver;
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
@@ -670,17 +606,14 @@
 
     if-ne v1, v4, :cond_0
 
-    .line 114
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mHomePreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 115
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mTiltPreferences:Landroid/preference/Preference;
 
     invoke-virtual {v1, v4}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 121
     :goto_0
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
@@ -692,12 +625,10 @@
 
     if-ne v1, v4, :cond_1
 
-    .line 122
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mCallPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 126
     :goto_1
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
@@ -711,12 +642,10 @@
 
     if-ne v1, v4, :cond_2
 
-    .line 127
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mAlarmPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 131
     :goto_2
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
@@ -730,12 +659,10 @@
 
     if-ne v1, v4, :cond_3
 
-    .line 132
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mVideoPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 136
     :goto_3
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
@@ -749,12 +676,10 @@
 
     if-ne v1, v4, :cond_4
 
-    .line 137
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryPanningPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 141
     :goto_4
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
@@ -768,12 +693,10 @@
 
     if-ne v1, v4, :cond_5
 
-    .line 142
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryBrowsePreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 146
     :goto_5
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
@@ -787,29 +710,24 @@
 
     if-ne v1, v4, :cond_6
 
-    .line 147
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mIMEPreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 151
     :goto_6
     return-void
 
-    .line 117
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mHomePreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 118
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mTiltPreferences:Landroid/preference/Preference;
 
     invoke-virtual {v1, v3}, Landroid/preference/Preference;->setEnabled(Z)V
 
     goto :goto_0
 
-    .line 124
     :cond_1
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mCallPreferences:Landroid/preference/CheckBoxPreference;
 
@@ -863,19 +781,16 @@
     .parameter "preference"
 
     .prologue
-    .line 105
     iget-object v0, p0, Lcom/android/settings_ex/GestureSettings;->parent:Landroid/preference/PreferenceScreen;
 
     if-eqz v0, :cond_0
 
     if-eqz p1, :cond_0
 
-    .line 106
     iget-object v0, p0, Lcom/android/settings_ex/GestureSettings;->parent:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, p1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 108
     :cond_0
     return-void
 .end method
@@ -892,18 +807,15 @@
 
     const/4 v2, 0x0
 
-    .line 396
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 397
     .local v0, resolver:Landroid/content/ContentResolver;
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mCheckBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->playSoundEffect(I)V
 
-    .line 398
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mCheckBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v1}, Landroid/widget/CheckBox;->isChecked()Z
@@ -912,27 +824,22 @@
 
     if-eqz v1, :cond_0
 
-    .line 399
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v1, v3}, Landroid/widget/SeekBar;->setVisibility(I)V
 
-    .line 400
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mLinearLayout:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 407
     :goto_0
     return-void
 
-    .line 404
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v1, v2}, Landroid/widget/SeekBar;->setVisibility(I)V
 
-    .line 405
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mLinearLayout:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
@@ -945,10 +852,8 @@
     .parameter "newConfig"
 
     .prologue
-    .line 319
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 320
     return-void
 .end method
 
@@ -957,15 +862,12 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 84
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 86
     const v0, 0x7f06001b
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/GestureSettings;->addPreferencesFromResource(I)V
 
-    .line 88
     const-string v0, "gesture_settings"
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/GestureSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -1071,19 +973,14 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureSettings;->mHelpPreferences:Landroid/preference/Preference;
 
-    .line 99
     invoke-direct {p0}, Lcom/android/settings_ex/GestureSettings;->init_UI()V
 
-    .line 100
     invoke-direct {p0}, Lcom/android/settings_ex/GestureSettings;->checkOperator()V
 
-    .line 101
     invoke-direct {p0}, Lcom/android/settings_ex/GestureSettings;->checkSensor()V
 
-    .line 102
     invoke-direct {p0}, Lcom/android/settings_ex/GestureSettings;->checkModel()V
 
-    .line 103
     return-void
 .end method
 
@@ -1109,18 +1006,15 @@
 
     const/4 v3, 0x0
 
-    .line 281
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 283
     .local v0, resolver:Landroid/content/ContentResolver;
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mHomePreferences:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_3
 
-    .line 284
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v4, v1, v3
@@ -1138,7 +1032,6 @@
     :goto_0
     invoke-static {v0, v4, v1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 285
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mHomePreferences:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -1147,12 +1040,10 @@
 
     if-eqz v1, :cond_2
 
-    .line 286
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mTiltPreferences:Landroid/preference/Preference;
 
     invoke-virtual {v1, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 313
     :cond_0
     :goto_1
     invoke-super {p0, p1, p2}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
@@ -1175,13 +1066,11 @@
 
     goto :goto_1
 
-    .line 289
     :cond_3
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mCallPreferences:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_5
 
-    .line 290
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     aget-object v1, v1, v2
@@ -1204,13 +1093,11 @@
 
     goto :goto_2
 
-    .line 292
     :cond_5
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mAlarmPreferences:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_7
 
-    .line 293
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     const/4 v4, 0x2
@@ -1235,13 +1122,11 @@
 
     goto :goto_3
 
-    .line 295
     :cond_7
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mVideoPreferences:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_9
 
-    .line 296
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     const/4 v4, 0x3
@@ -1266,13 +1151,11 @@
 
     goto :goto_4
 
-    .line 298
     :cond_9
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryPanningPreferences:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_b
 
-    .line 299
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     const/4 v4, 0x4
@@ -1297,13 +1180,11 @@
 
     goto :goto_5
 
-    .line 301
     :cond_b
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mGalleryBrowsePreferences:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_d
 
-    .line 302
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     const/4 v4, 0x5
@@ -1328,13 +1209,11 @@
 
     goto :goto_6
 
-    .line 304
     :cond_d
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mIMEPreferences:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_f
 
-    .line 305
     sget-object v1, Lcom/android/settings_ex/GestureSettings;->DB_TABLE_GESTURESETTING:[Ljava/lang/String;
 
     const/4 v4, 0x6
@@ -1359,13 +1238,11 @@
 
     goto :goto_7
 
-    .line 307
     :cond_f
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings;->mTiltPreferences:Landroid/preference/Preference;
 
     if-ne p2, v1, :cond_0
 
-    .line 308
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureSettings;->openCustomDialog()V
 
     goto/16 :goto_1
@@ -1386,23 +1263,18 @@
     .locals 1
 
     .prologue
-    .line 271
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
-    .line 272
     iget-boolean v0, p0, Lcom/android/settings_ex/GestureSettings;->testing:Z
 
     if-eqz v0, :cond_0
 
-    .line 273
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureSettings;->openCustomDialog()V
 
-    .line 274
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/GestureSettings;->testing:Z
 
-    .line 277
     :cond_0
     return-void
 .end method
@@ -1435,12 +1307,10 @@
 
     const/4 v5, 0x1
 
-    .line 327
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
-    .line 328
     .local v2, resolver:Landroid/content/ContentResolver;
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1450,13 +1320,11 @@
 
     invoke-direct {v0, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 329
     .local v0, customDialog:Landroid/app/AlertDialog$Builder;
     const v3, 0x7f0806ed
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 330
     invoke-virtual {p0}, Lcom/android/settings_ex/GestureSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -1481,7 +1349,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mview:Landroid/view/View;
 
-    .line 332
     iget-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mview:Landroid/view/View;
 
     const v4, 0x7f0b0117
@@ -1494,7 +1361,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mLinearLayout:Landroid/widget/LinearLayout;
 
-    .line 333
     iget-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mview:Landroid/view/View;
 
     const v4, 0x7f0b0115
@@ -1507,12 +1373,10 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mCheckBox:Landroid/widget/CheckBox;
 
-    .line 334
     iget-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mCheckBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v3, p0}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 335
     iget-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mview:Landroid/view/View;
 
     const v4, 0x7f0b0116
@@ -1525,36 +1389,30 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mSeekBar:Landroid/widget/SeekBar;
 
-    .line 336
     iget-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mSeekBar:Landroid/widget/SeekBar;
 
     const/4 v4, 0x4
 
     invoke-virtual {v3, v4}, Landroid/widget/SeekBar;->setMax(I)V
 
-    .line 337
     iget-boolean v3, p0, Lcom/android/settings_ex/GestureSettings;->testing:Z
 
     if-eqz v3, :cond_0
 
-    .line 339
     iget-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mCheckBox:Landroid/widget/CheckBox;
 
     iget-boolean v4, p0, Lcom/android/settings_ex/GestureSettings;->test_use_default:Z
 
     invoke-virtual {v3, v4}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 340
     iget-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mSeekBar:Landroid/widget/SeekBar;
 
     iget v4, p0, Lcom/android/settings_ex/GestureSettings;->test_value:I
 
     invoke-virtual {v3, v4}, Landroid/widget/SeekBar;->setProgress(I)V
 
-    .line 341
     iput v6, p0, Lcom/android/settings_ex/GestureSettings;->test_value:I
 
-    .line 354
     :goto_0
     const v3, 0x7f080304
 
@@ -1582,17 +1440,14 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 390
     iget-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mview:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    .line 391
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     return-void
 
-    .line 344
     :cond_0
     const-string v3, "gesture_tilt_default_use"
 
@@ -1602,17 +1457,14 @@
 
     if-ne v3, v5, :cond_1
 
-    .line 345
     iget-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mCheckBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v3, v5}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 346
     const-string v3, "gesture_tilt_value"
 
     invoke-static {v2, v3, v7}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 350
     :goto_1
     iget-object v3, p0, Lcom/android/settings_ex/GestureSettings;->mSeekBar:Landroid/widget/SeekBar;
 

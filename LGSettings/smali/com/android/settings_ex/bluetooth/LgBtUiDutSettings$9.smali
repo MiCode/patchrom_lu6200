@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 359
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$9;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$9;->val$message:Ljava/lang/String;
@@ -46,7 +45,6 @@
     .locals 3
 
     .prologue
-    .line 361
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$9;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$9;->val$message:Ljava/lang/String;

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 2572
     iput-object p1, p0, Lcom/android/settings_ex/DataUsageSummary$14;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -68,7 +67,6 @@
 
     if-eqz v4, :cond_3
 
-    .line 2579
     iget-object v4, p0, Lcom/android/settings_ex/DataUsageSummary$14;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-virtual {v4}, Lcom/android/settings_ex/DataUsageSummary;->getActivity()Landroid/app/Activity;
@@ -100,24 +98,20 @@
 
     invoke-virtual {v4, v2}, Landroid/net/ConnectivityManager;->setMobileDataEnabled(Z)V
 
-    .line 2586
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v4
 
     invoke-static {v4}, Lcom/android/settings_ex/DataUsageSummary;->access$4202(Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
-    .line 2587
     iget-object v4, p0, Lcom/android/settings_ex/DataUsageSummary$14;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #calls: Lcom/android/settings_ex/DataUsageSummary;->updatePolicy(Z)V
     invoke-static {v4, v6}, Lcom/android/settings_ex/DataUsageSummary;->access$1400(Lcom/android/settings_ex/DataUsageSummary;Z)V
 
-    .line 2589
     #calls: Lcom/android/settings_ex/DataUsageSummary;->setConfirmDialogShowed(Z)V
     invoke-static {v6}, Lcom/android/settings_ex/DataUsageSummary;->access$1300(Z)V
 
-    .line 2605
     .end local v1           #cm:Landroid/net/ConnectivityManager;
     .end local v2           #enabled:Z
     :cond_2
@@ -163,19 +157,16 @@
 
     invoke-static {v4}, Lcom/android/settings_ex/DataUsageSummary;->access$4202(Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
-    .line 2610
     iget-object v4, p0, Lcom/android/settings_ex/DataUsageSummary$14;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #calls: Lcom/android/settings_ex/DataUsageSummary;->updatePolicy(Z)V
     invoke-static {v4, v6}, Lcom/android/settings_ex/DataUsageSummary;->access$1400(Lcom/android/settings_ex/DataUsageSummary;Z)V
 
-    .line 2612
     #calls: Lcom/android/settings_ex/DataUsageSummary;->setConfirmDialogShowed(Z)V
     invoke-static {v6}, Lcom/android/settings_ex/DataUsageSummary;->access$1300(Z)V
 
     goto :goto_0
 
-    .line 2592
     .end local v2           #enabled:Z
     :cond_3
     const-string v4, "android.skt.intent.action.USER_BACKG_SETTING"
@@ -249,10 +240,8 @@
 
     invoke-static {v4, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2599
     if-eq v3, v2, :cond_2
 
-    .line 2600
     iget-object v4, p0, Lcom/android/settings_ex/DataUsageSummary$14;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #calls: Lcom/android/settings_ex/DataUsageSummary;->setRestrictBackground(Z)V

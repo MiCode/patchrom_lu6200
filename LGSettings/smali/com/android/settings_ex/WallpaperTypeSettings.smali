@@ -8,7 +8,6 @@
     .locals 0
 
     .prologue
-    .line 30
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
     return-void
@@ -18,20 +17,17 @@
     .locals 12
 
     .prologue
-    .line 44
     new-instance v2, Landroid/content/Intent;
 
     const-string v9, "android.intent.action.SET_WALLPAPER"
 
     invoke-direct {v2, v9}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 45
     .local v2, intent:Landroid/content/Intent;
     invoke-virtual {p0}, Lcom/android/settings_ex/WallpaperTypeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v5
 
-    .line 46
     .local v5, pm:Landroid/content/pm/PackageManager;
     const/high16 v9, 0x1
 
@@ -39,19 +35,16 @@
 
     move-result-object v8
 
-    .line 49
     .local v8, rList:Ljava/util/List;,"Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
     invoke-virtual {p0}, Lcom/android/settings_ex/WallpaperTypeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
-    .line 50
     .local v4, parent:Landroid/preference/PreferenceScreen;
     const/4 v9, 0x0
 
     invoke-virtual {v4, v9}, Landroid/preference/PreferenceScreen;->setOrderingAsAdded(Z)V
 
-    .line 52
     invoke-interface {v8}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -143,25 +136,20 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 33
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 35
     const v0, 0x7f06004b
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/WallpaperTypeSettings;->addPreferencesFromResource(I)V
 
-    .line 36
     invoke-direct {p0}, Lcom/android/settings_ex/WallpaperTypeSettings;->populateWallpaperTypes()V
 
-    .line 38
     invoke-virtual {p0}, Lcom/android/settings_ex/WallpaperTypeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 39
     invoke-virtual {p0}, Lcom/android/settings_ex/WallpaperTypeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0

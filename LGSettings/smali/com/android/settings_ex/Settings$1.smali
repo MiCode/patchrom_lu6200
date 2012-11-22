@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 177
     iput-object p1, p0, Lcom/android/settings_ex/Settings$1;->this$0:Lcom/android/settings_ex/Settings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 179
     iget-object v0, p0, Lcom/android/settings_ex/Settings$1;->this$0:Lcom/android/settings_ex/Settings;
 
     iget-object v1, p0, Lcom/android/settings_ex/Settings$1;->this$0:Lcom/android/settings_ex/Settings;

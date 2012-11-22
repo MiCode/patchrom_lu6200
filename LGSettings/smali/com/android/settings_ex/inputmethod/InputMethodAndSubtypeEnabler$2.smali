@@ -33,7 +33,6 @@
     .parameter
 
     .prologue
-    .line 161
     iput-object p1, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndSubtypeEnabler$2;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodAndSubtypeEnabler;
 
     iput-object p2, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndSubtypeEnabler$2;->val$chkPref:Landroid/preference/CheckBoxPreference;
@@ -55,12 +54,10 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 164
     iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndSubtypeEnabler$2;->val$chkPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 165
     iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndSubtypeEnabler$2;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodAndSubtypeEnabler;
 
     iget-object v1, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndSubtypeEnabler$2;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodAndSubtypeEnabler;

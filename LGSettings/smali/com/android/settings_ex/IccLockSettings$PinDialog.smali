@@ -30,23 +30,18 @@
     .parameter "aPref"
 
     .prologue
-    .line 1044
     iput-object p1, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
-    .line 1045
     const/4 v0, 0x0
 
     invoke-direct {p0, p2, v0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;-><init>(Lcom/android/settings_ex/EditPinPreference;Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;)V
 
-    .line 1029
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->mResumed:Z
 
-    .line 1046
     invoke-virtual {p0, p0}, Lcom/android/settings_ex/IccLockSettings$PinDialog;->setCallback(Lcom/android/settings_ex/EditPinPreferenceBehavior$Callback;)V
 
-    .line 1047
     return-void
 .end method
 
@@ -68,7 +63,6 @@
     .locals 1
 
     .prologue
-    .line 1032
     iget-boolean v0, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->mResumed:Z
 
     return v0
@@ -113,7 +107,6 @@
     .parameter "aPref"
 
     .prologue
-    .line 1192
     check-cast p1, Lcom/android/settings_ex/EditPinPreference;
 
     .end local p1
@@ -136,14 +129,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1194
     iget-object v0, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/IccLockSettings;->showDialog(I)V
 
-    .line 1197
     :cond_0
     return-void
 .end method
@@ -152,15 +143,12 @@
     .locals 1
 
     .prologue
-    .line 1040
     invoke-super {p0}, Lcom/android/settings_ex/EditPinPreferenceBehavior;->onResume()V
 
-    .line 1041
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->mResumed:Z
 
-    .line 1042
     return-void
 .end method
 
@@ -195,17 +183,14 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1125
     :goto_0
     return-void
 
-    .line 1063
     :pswitch_1
     const v1, 0x7f080013
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1064
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     const v2, 0x7f080014
@@ -217,19 +202,16 @@
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
 
-    .line 1124
     :goto_1
     invoke-virtual {p2, v0}, Lcom/android/settings_ex/EditPinPreference;->setText(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 1070
     :pswitch_2
     const v1, 0x7f080015
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1071
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     const v2, 0x7f080016
@@ -243,16 +225,13 @@
 
     goto :goto_1
 
-    .line 1076
     :pswitch_3
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$PinDialog;->getOldText()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1077
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1078
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     #calls: Lcom/android/settings_ex/IccLockSettings;->getResString(I)Ljava/lang/String;
@@ -264,16 +243,13 @@
 
     goto :goto_1
 
-    .line 1083
     :pswitch_4
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$PinDialog;->getNewText()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1084
     invoke-virtual {p2, v3}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1085
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/IccLockSettings;->getResources()Landroid/content/res/Resources;
@@ -288,18 +264,15 @@
 
     goto :goto_1
 
-    .line 1090
     :pswitch_5
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$PinDialog;->getReenterText()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1091
     const v1, 0x7f080029
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1092
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/IccLockSettings;->getResources()Landroid/content/res/Resources;
@@ -316,23 +289,19 @@
 
     goto :goto_1
 
-    .line 1097
     :pswitch_6
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$PinDialog;->getNewText()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1098
     invoke-static {}, Lcom/android/settings_ex/IccLockSettings;->access$600()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 1099
     invoke-virtual {p2, v3}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1100
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/IccLockSettings;->getResources()Landroid/content/res/Resources;
@@ -347,13 +316,11 @@
 
     goto :goto_1
 
-    .line 1102
     :cond_0
     const v1, 0x7f08002b
 
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1103
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/IccLockSettings;->getResources()Landroid/content/res/Resources;
@@ -370,14 +337,11 @@
 
     goto/16 :goto_1
 
-    .line 1109
     :pswitch_7
     invoke-virtual {p0}, Lcom/android/settings_ex/IccLockSettings$PinDialog;->resetText()V
 
-    .line 1115
     invoke-virtual {p2, v1}, Lcom/android/settings_ex/EditPinPreference;->setDialogTitle(I)V
 
-    .line 1116
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     #calls: Lcom/android/settings_ex/IccLockSettings;->getResString(I)Ljava/lang/String;
@@ -480,7 +444,6 @@
 
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 1176
     iget-object v1, p0, Lcom/android/settings_ex/IccLockSettings$PinDialog;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     #getter for: Lcom/android/settings_ex/IccLockSettings;->mHandler:Landroid/os/Handler;

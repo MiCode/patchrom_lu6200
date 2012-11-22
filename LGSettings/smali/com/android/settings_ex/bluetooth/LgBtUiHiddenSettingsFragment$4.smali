@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 507
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +43,6 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 509
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     check-cast p1, Lcom/broadcom/bt/service/test/BluetoothTestMode;
@@ -53,7 +51,6 @@
     #setter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mBluetoothTestMode:Lcom/broadcom/bt/service/test/BluetoothTestMode;
     invoke-static {v1, p1}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$1202(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Lcom/broadcom/bt/service/test/BluetoothTestMode;)Lcom/broadcom/bt/service/test/BluetoothTestMode;
 
-    .line 510
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mBluetoothTestMode:Lcom/broadcom/bt/service/test/BluetoothTestMode;
@@ -63,7 +60,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 512
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mBluetoothTestMode:Lcom/broadcom/bt/service/test/BluetoothTestMode;
@@ -91,7 +87,6 @@
 
     aput-byte v2, v0, v1
 
-    .line 515
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mBluetoothTestMode:Lcom/broadcom/bt/service/test/BluetoothTestMode;

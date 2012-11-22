@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 31
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$ImageButtonListener;->this$0:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 31
     invoke-direct {p0, p1}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$ImageButtonListener;-><init>(Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;)V
 
     return-void
@@ -54,7 +52,6 @@
     .parameter "v"
 
     .prologue
-    .line 34
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$ImageButtonListener;->this$0:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     const/4 v1, 0x0

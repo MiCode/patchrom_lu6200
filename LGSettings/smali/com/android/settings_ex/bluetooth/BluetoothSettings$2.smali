@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 176
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,7 +35,6 @@
     .locals 2
 
     .prologue
-    .line 188
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     iget-object v0, v0, Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment;->mLocalAdapter:Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;
@@ -59,7 +57,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 191
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     iget-object v0, v0, Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment;->mLocalAdapter:Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;
@@ -76,7 +73,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 192
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     iget-object v0, v0, Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment;->mLocalAdapter:Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;
@@ -129,10 +125,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 181
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothSettings$2;->updateDeviceName()V
 
-    .line 183
     :cond_0
     return-void
 .end method

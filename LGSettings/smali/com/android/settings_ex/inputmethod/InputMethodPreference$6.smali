@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 241
     iput-object p1, p0, Lcom/android/settings_ex/inputmethod/InputMethodPreference$6;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodPreference;
 
     iput-object p2, p0, Lcom/android/settings_ex/inputmethod/InputMethodPreference$6;->val$chkPref:Landroid/preference/CheckBoxPreference;
@@ -48,13 +47,11 @@
     .parameter "which"
 
     .prologue
-    .line 244
     iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodPreference$6;->val$chkPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 245
     return-void
 .end method

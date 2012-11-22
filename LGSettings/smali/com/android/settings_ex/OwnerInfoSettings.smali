@@ -27,10 +27,8 @@
     .locals 1
 
     .prologue
-    .line 41
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
-    .line 162
     new-instance v0, Lcom/android/settings_ex/OwnerInfoSettings$2;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/OwnerInfoSettings$2;-><init>(Lcom/android/settings_ex/OwnerInfoSettings;)V
@@ -45,7 +43,6 @@
     .parameter "x0"
 
     .prologue
-    .line 41
     iget-object v0, p0, Lcom/android/settings_ex/OwnerInfoSettings;->scroll:Landroid/widget/ScrollView;
 
     return-object v0
@@ -56,7 +53,6 @@
     .parameter "x0"
 
     .prologue
-    .line 41
     iget-object v0, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     return-object v0
@@ -67,7 +63,6 @@
     .parameter "view"
 
     .prologue
-    .line 74
     invoke-virtual {p0}, Lcom/android/settings_ex/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -98,7 +93,6 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings;->scroll:Landroid/widget/ScrollView;
 
-    .line 82
     iget-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mView:Landroid/view/View;
 
     const v3, 0x7f0b0104
@@ -122,12 +116,10 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mCancelButton:Landroid/widget/Button;
 
-    .line 86
     iget-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mCancelButton:Landroid/widget/Button;
 
     invoke-virtual {v2, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 87
     const v2, 0x7f0b0105
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -138,20 +130,16 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mSaveButton:Landroid/widget/Button;
 
-    .line 88
     iget-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mSaveButton:Landroid/widget/Button;
 
     invoke-virtual {v2, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 90
     if-eqz v0, :cond_0
 
-    .line 91
     iget-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 112
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
@@ -159,7 +147,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 114
     iget-object v2, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     new-instance v3, Lcom/android/settings_ex/OwnerInfoSettings$1;
@@ -181,7 +168,6 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 144
     invoke-virtual {p0}, Lcom/android/settings_ex/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -204,22 +190,18 @@
 
     invoke-virtual {v0, v1, v3}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    .line 147
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v1
 
     sparse-switch v1, :sswitch_data_0
 
-    .line 159
     :goto_0
     return-void
 
-    .line 149
     :sswitch_0
     invoke-virtual {p0}, Lcom/android/settings_ex/OwnerInfoSettings;->saveToDb()V
 
-    .line 150
     invoke-virtual {p0}, Lcom/android/settings_ex/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -232,7 +214,6 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    .line 151
     invoke-virtual {p0}, Lcom/android/settings_ex/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -241,13 +222,11 @@
 
     goto :goto_0
 
-    .line 155
     :sswitch_1
     const/4 v1, 0x1
 
     iput v1, p0, Lcom/android/settings_ex/OwnerInfoSettings;->dbValue:I
 
-    .line 156
     invoke-virtual {p0}, Lcom/android/settings_ex/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -271,14 +250,12 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 60
     invoke-virtual {p0}, Lcom/android/settings_ex/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 61
     const-string v0, "SKT"
 
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
@@ -291,7 +268,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 62
     invoke-virtual {p0}, Lcom/android/settings_ex/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -321,17 +297,14 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mView:Landroid/view/View;
 
-    .line 69
     iget-object v0, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mView:Landroid/view/View;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/OwnerInfoSettings;->initView(Landroid/view/View;)V
 
-    .line 70
     iget-object v0, p0, Lcom/android/settings_ex/OwnerInfoSettings;->mView:Landroid/view/View;
 
     return-object v0
 
-    .line 64
     :cond_1
     invoke-virtual {p0}, Lcom/android/settings_ex/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
@@ -367,7 +340,6 @@
     .locals 3
 
     .prologue
-    .line 136
     invoke-virtual {p0}, Lcom/android/settings_ex/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2

@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 133
     iput-object p1, p0, Lcom/android/settings_ex/inputmethod/SpellCheckersSettings$2;->this$0:Lcom/android/settings_ex/inputmethod/SpellCheckersSettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/inputmethod/SpellCheckersSettings$2;->val$scp:Lcom/android/settings_ex/inputmethod/SingleSpellCheckerPreference;
@@ -48,7 +47,6 @@
     .parameter "which"
 
     .prologue
-    .line 136
     iget-object v0, p0, Lcom/android/settings_ex/inputmethod/SpellCheckersSettings$2;->this$0:Lcom/android/settings_ex/inputmethod/SpellCheckersSettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/inputmethod/SpellCheckersSettings$2;->val$scp:Lcom/android/settings_ex/inputmethod/SingleSpellCheckerPreference;

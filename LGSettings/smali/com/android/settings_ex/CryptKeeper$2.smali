@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 397
     iput-object p1, p0, Lcom/android/settings_ex/CryptKeeper$2;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 400
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeper$2;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     new-instance v1, Landroid/content/Intent;

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 87
     iput-object p1, p0, Lcom/android/settings_ex/data/SelectSIMDialog$1;->this$0:Lcom/android/settings_ex/data/SelectSIMDialog;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +42,10 @@
     .parameter "which"
 
     .prologue
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/data/SelectSIMDialog$1;->this$0:Lcom/android/settings_ex/data/SelectSIMDialog;
 
     #setter for: Lcom/android/settings_ex/data/SelectSIMDialog;->mClickedPos:I
     invoke-static {v0, p2}, Lcom/android/settings_ex/data/SelectSIMDialog;->access$002(Lcom/android/settings_ex/data/SelectSIMDialog;I)I
 
-    .line 91
     return-void
 .end method

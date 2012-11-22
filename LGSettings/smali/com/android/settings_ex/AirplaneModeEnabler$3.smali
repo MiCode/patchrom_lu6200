@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 145
     iput-object p1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$3;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -102,28 +101,23 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 152
     iget-object v1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$3;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     #setter for: Lcom/android/settings_ex/AirplaneModeEnabler;->mIsStateChanging:Z
     invoke-static {v1, v4}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$002(Lcom/android/settings_ex/AirplaneModeEnabler;Z)Z
 
-    .line 153
     iget-object v1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$3;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     #calls: Lcom/android/settings_ex/AirplaneModeEnabler;->onAirplaneModeChanged()V
     invoke-static {v1}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$400(Lcom/android/settings_ex/AirplaneModeEnabler;)V
 
-    .line 154
     invoke-static {v4}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$302(Z)Z
 
-    .line 191
     .end local v0           #state:I
     :cond_1
     :goto_0
     return-void
 
-    .line 181
     .restart local v0       #state:I
     :cond_2
     const/16 v1, 0xb
@@ -143,7 +137,6 @@
     #setter for: Lcom/android/settings_ex/AirplaneModeEnabler;->mIsStateChanging:Z
     invoke-static {v1, v2}, Lcom/android/settings_ex/AirplaneModeEnabler;->access$002(Lcom/android/settings_ex/AirplaneModeEnabler;Z)Z
 
-    .line 184
     iget-object v1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$3;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     #getter for: Lcom/android/settings_ex/AirplaneModeEnabler;->mCheckBoxPref:Landroid/preference/CheckBoxPreference;
@@ -153,14 +146,12 @@
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 186
     iget-object v1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$3;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     iget-object v1, v1, Lcom/android/settings_ex/AirplaneModeEnabler;->wdPref:Landroid/preference/PreferenceScreen;
 
     if-eqz v1, :cond_1
 
-    .line 187
     iget-object v1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$3;->this$0:Lcom/android/settings_ex/AirplaneModeEnabler;
 
     iget-object v1, v1, Lcom/android/settings_ex/AirplaneModeEnabler;->wdPref:Landroid/preference/PreferenceScreen;

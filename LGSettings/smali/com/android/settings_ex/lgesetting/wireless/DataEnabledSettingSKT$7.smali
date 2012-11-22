@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 157
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$7;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     iput-boolean p2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$7;->val$enabled:Z
@@ -48,7 +47,6 @@
     .parameter "which"
 
     .prologue
-    .line 159
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$7;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;->mRadioEnabledChecked:Landroid/widget/CheckedTextView;
@@ -60,7 +58,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
-    .line 160
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$7;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;->mRadioDisabledChecked:Landroid/widget/CheckedTextView;

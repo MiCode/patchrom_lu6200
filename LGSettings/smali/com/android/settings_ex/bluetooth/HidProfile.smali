@@ -28,10 +28,8 @@
     .parameter "adapter"
 
     .prologue
-    .line 56
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 57
     new-instance v0, Lcom/android/settings_ex/bluetooth/HidProfile$InputDeviceServiceListener;
 
     const/4 v1, 0x0
@@ -52,7 +50,6 @@
     .parameter "x1"
 
     .prologue
-    .line 32
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
 
     return-object p1
@@ -64,7 +61,6 @@
     .parameter "x1"
 
     .prologue
-    .line 32
     iput-boolean p1, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mProfileReady:Z
 
     return p1
@@ -182,7 +178,6 @@
     .parameter "device"
 
     .prologue
-    .line 70
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
 
     invoke-virtual {v0, p1}, Landroid/bluetooth/BluetoothInputDevice;->connect(Landroid/bluetooth/BluetoothDevice;)Z
@@ -197,7 +192,6 @@
     .parameter "device"
 
     .prologue
-    .line 74
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
 
     invoke-virtual {v0, p1}, Landroid/bluetooth/BluetoothInputDevice;->disconnect(Landroid/bluetooth/BluetoothDevice;)Z
@@ -214,14 +208,12 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 78
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
 
     invoke-virtual {v1}, Landroid/bluetooth/BluetoothInputDevice;->getConnectedDevices()Ljava/util/List;
 
     move-result-object v0
 
-    .line 80
     .local v0, deviceList:Ljava/util/List;,"Ljava/util/List<Landroid/bluetooth/BluetoothDevice;>;"
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -338,7 +330,6 @@
     .parameter "device"
 
     .prologue
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
 
     invoke-virtual {v0, p1}, Landroid/bluetooth/BluetoothInputDevice;->getPriority(Landroid/bluetooth/BluetoothDevice;)I
@@ -353,18 +344,15 @@
     .parameter "device"
 
     .prologue
-    .line 121
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
 
     invoke-virtual {v1, p1}, Landroid/bluetooth/BluetoothInputDevice;->getConnectionState(Landroid/bluetooth/BluetoothDevice;)I
 
     move-result v0
 
-    .line 122
     .local v0, state:I
     packed-switch v0, :pswitch_data_0
 
-    .line 130
     :pswitch_0
     invoke-static {v0}, Lcom/android/settings_ex/bluetooth/Utils;->getConnectionStateSummary(I)I
 
@@ -419,7 +407,6 @@
     .parameter "device"
 
     .prologue
-    .line 86
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
 
     invoke-virtual {v0, p1}, Landroid/bluetooth/BluetoothInputDevice;->getPriority(Landroid/bluetooth/BluetoothDevice;)I
@@ -443,7 +430,6 @@
     .locals 1
 
     .prologue
-    .line 104
     iget-boolean v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mProfileReady:Z
 
     return v0
@@ -457,10 +443,8 @@
     .prologue
     const/16 v1, 0x64
 
-    .line 94
     if-eqz p2, :cond_1
 
-    .line 95
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
 
     invoke-virtual {v0, p1}, Landroid/bluetooth/BluetoothInputDevice;->getPriority(Landroid/bluetooth/BluetoothDevice;)I
@@ -469,17 +453,14 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 96
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
 
     invoke-virtual {v0, p1, v1}, Landroid/bluetooth/BluetoothInputDevice;->setPriority(Landroid/bluetooth/BluetoothDevice;I)Z
 
-    .line 101
     :cond_0
     :goto_0
     return-void
 
-    .line 99
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
 

@@ -21,15 +21,12 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 39
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 41
     const v0, 0x7f060010
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/deviceinfo/Battery;->addPreferencesFromResource(I)V
 
-    .line 42
     return-void
 .end method
 

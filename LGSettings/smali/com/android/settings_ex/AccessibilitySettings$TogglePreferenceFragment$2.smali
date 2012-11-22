@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 952
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment$2;->this$0:Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -47,10 +46,8 @@
 
     const/4 v0, 0x1
 
-    .line 955
     if-eqz p2, :cond_1
 
-    .line 956
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment$2;->this$0:Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;
 
     #getter for: Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->mEnableWarningMessage:Ljava/lang/CharSequence;
@@ -64,10 +61,8 @@
 
     if-nez v2, :cond_0
 
-    .line 957
     invoke-virtual {p1, v1}, Lcom/android/settings_ex/AccessibilitySettings$ToggleSwitch;->setCheckedInternal(Z)V
 
-    .line 958
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment$2;->this$0:Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->getArguments()Landroid/os/Bundle;
@@ -78,16 +73,13 @@
 
     invoke-virtual {v2, v3, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 959
     iget-object v1, p0, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment$2;->this$0:Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->showDialog(I)V
 
-    .line 972
     :goto_0
     return v0
 
-    .line 962
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment$2;->this$0:Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;
 
@@ -121,10 +113,8 @@
 
     if-nez v2, :cond_2
 
-    .line 965
     invoke-virtual {p1, v0}, Lcom/android/settings_ex/AccessibilitySettings$ToggleSwitch;->setCheckedInternal(Z)V
 
-    .line 966
     iget-object v1, p0, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment$2;->this$0:Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;->getArguments()Landroid/os/Bundle;
@@ -135,7 +125,6 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 967
     iget-object v1, p0, Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment$2;->this$0:Lcom/android/settings_ex/AccessibilitySettings$TogglePreferenceFragment;
 
     const/4 v2, 0x2

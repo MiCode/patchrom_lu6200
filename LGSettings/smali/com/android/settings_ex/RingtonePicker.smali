@@ -297,27 +297,22 @@
 
     const/4 v1, -0x1
 
-    .line 90
     invoke-direct {p0}, Landroid/app/ListActivity;-><init>()V
 
-    .line 112
     new-instance v0, Landroid/os/Build;
 
     invoke-direct {v0}, Landroid/os/Build;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mBuild:Landroid/os/Build;
 
-    .line 114
     const-string v0, "l_dcm"
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDevice:Ljava/lang/String;
 
-    .line 115
     const-string v0, "DCM"
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOperator:Ljava/lang/String;
 
-    .line 116
     const-string v0, "ro.build.target_operator"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
@@ -326,93 +321,72 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->strTargetOperator:Ljava/lang/String;
 
-    .line 121
     iput v2, p0, Lcom/android/settings_ex/RingtonePicker;->RIGHTS_VALID:I
 
-    .line 122
     iput v3, p0, Lcom/android/settings_ex/RingtonePicker;->RIGHTS_INVALID:I
 
-    .line 123
     const/4 v0, 0x2
 
     iput v0, p0, Lcom/android/settings_ex/RingtonePicker;->RIGHTS_EXPIRED:I
 
-    .line 124
     const/4 v0, 0x3
 
     iput v0, p0, Lcom/android/settings_ex/RingtonePicker;->RIGHTS_NOT_ACQUIRED:I
 
-    .line 130
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mFilterColumns:Ljava/util/List;
 
-    .line 171
     const/16 v0, 0x14
 
     iput v0, p0, Lcom/android/settings_ex/RingtonePicker;->LAUNCHED_REQUEST_CODE:I
 
-    .line 175
     iput-object v4, p0, Lcom/android/settings_ex/RingtonePicker;->mSampleRingtoneUri:Landroid/net/Uri;
 
-    .line 207
     iput-boolean v2, p0, Lcom/android/settings_ex/RingtonePicker;->mSelected:Z
 
-    .line 208
     iput-boolean v3, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmRingtone:Z
 
-    .line 209
     iput-boolean v2, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmJob:Z
 
-    .line 210
     new-instance v0, Lcom/android/settings_ex/RingtonePicker$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/RingtonePicker$1;-><init>(Lcom/android/settings_ex/RingtonePicker;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmTask:Ljava/lang/Runnable;
 
-    .line 231
     iput v1, p0, Lcom/android/settings_ex/RingtonePicker;->mClickedPos:I
 
-    .line 234
     iput v1, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtonePos:I
 
-    .line 237
     iput v1, p0, Lcom/android/settings_ex/RingtonePicker;->mSilentPos:I
 
-    .line 243
     iput v1, p0, Lcom/android/settings_ex/RingtonePicker;->mSampleRingtonePos:I
 
-    .line 247
     iput v1, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
-    .line 273
     iput-object v4, p0, Lcom/android/settings_ex/RingtonePicker;->mStorageManager:Landroid/os/storage/StorageManager;
 
-    .line 1551
     new-instance v0, Lcom/android/settings_ex/RingtonePicker$4;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/RingtonePicker$4;-><init>(Lcom/android/settings_ex/RingtonePicker;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mMediaCompletionListener:Landroid/media/MediaPlayer$OnCompletionListener;
 
-    .line 1558
     new-instance v0, Lcom/android/settings_ex/RingtonePicker$5;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/RingtonePicker$5;-><init>(Lcom/android/settings_ex/RingtonePicker;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mAudioFocusListener:Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
-    .line 1575
     new-instance v0, Lcom/android/settings_ex/RingtonePicker$6;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/RingtonePicker$6;-><init>(Lcom/android/settings_ex/RingtonePicker;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mediahandler:Landroid/os/Handler;
 
-    .line 1880
     new-instance v0, Lcom/android/settings_ex/RingtonePicker$9;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/RingtonePicker$9;-><init>(Lcom/android/settings_ex/RingtonePicker;)V
@@ -627,23 +601,19 @@
 
     if-eqz v4, :cond_5
 
-    .line 586
     invoke-direct {p0, v3}, Lcom/android/settings_ex/RingtonePicker;->getFilepathFromSettingUri(Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 587
     .local v1, fileuri:Ljava/lang/String;
     invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v3
 
-    .line 588
     invoke-virtual {v3}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 590
     if-eqz v2, :cond_3
 
     const-string v4, "file"
@@ -674,14 +644,12 @@
 
     if-eqz v4, :cond_1
 
-    .line 593
     invoke-direct {p0, v3}, Lcom/android/settings_ex/RingtonePicker;->getFilepathFromContentUri(Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 596
     .end local v1           #fileuri:Ljava/lang/String;
     :cond_5
     invoke-direct {p0, v3}, Lcom/android/settings_ex/RingtonePicker;->getFilepathFromContentUri(Landroid/net/Uri;)Ljava/lang/String;
@@ -696,7 +664,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     invoke-direct {p0}, Lcom/android/settings_ex/RingtonePicker;->stopAnyPlayingRingtone()V
 
     return-void
@@ -707,7 +674,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mediahandler:Landroid/os/Handler;
 
     return-object v0
@@ -719,7 +685,6 @@
     .parameter "x1"
 
     .prologue
-    .line 90
     iput-boolean p1, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmJob:Z
 
     return p1
@@ -730,7 +695,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->ringtone:Landroid/media/Ringtone;
 
     return-object v0
@@ -741,7 +705,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mAudioFocusListener:Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
     return-object v0
@@ -752,7 +715,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mAudioManager:Landroid/media/AudioManager;
 
     return-object v0
@@ -763,7 +725,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     iget-boolean v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmRingtone:Z
 
     return v0
@@ -775,7 +736,6 @@
     .parameter "x1"
 
     .prologue
-    .line 90
     iput-boolean p1, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmRingtone:Z
 
     return p1
@@ -786,7 +746,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->mClickedPos:I
 
     return v0
@@ -797,7 +756,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtonePos:I
 
     return v0
@@ -808,7 +766,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mUriForDefaultItem:Landroid/net/Uri;
 
     return-object v0
@@ -819,7 +776,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->mSilentPos:I
 
     return v0
@@ -831,7 +787,6 @@
     .parameter "x1"
 
     .prologue
-    .line 90
     invoke-direct {p0, p1}, Lcom/android/settings_ex/RingtonePicker;->GetFilePath(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -845,7 +800,6 @@
     .parameter "x1"
 
     .prologue
-    .line 90
     invoke-direct {p0, p1}, Lcom/android/settings_ex/RingtonePicker;->checkDRM(Ljava/lang/String;)I
 
     move-result v0
@@ -858,7 +812,6 @@
     .parameter "x0"
 
     .prologue
-    .line 90
     invoke-direct {p0}, Lcom/android/settings_ex/RingtonePicker;->getURI()Landroid/net/Uri;
 
     move-result-object v0
@@ -870,12 +823,10 @@
     .locals 3
 
     .prologue
-    .line 1649
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    .line 1653
     :try_start_0
     const-string v1, "com.lge.music"
 
@@ -1277,27 +1228,22 @@
     .locals 2
 
     .prologue
-    .line 1017
     const/4 v0, 0x3
 
-    .line 1018
     .local v0, mStreamType:I
     iget-object v1, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
     if-eqz v1, :cond_0
 
-    .line 1019
     iget-object v1, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
     invoke-virtual {v1}, Landroid/media/RingtoneManager;->inferStreamType()I
 
     move-result v0
 
-    .line 1020
     :cond_0
     packed-switch v0, :pswitch_data_0
 
-    .line 1032
     :pswitch_0
     const-string v1, "ro.config.ringtone"
 
@@ -1383,21 +1329,17 @@
 
     const/4 v11, 0x0
 
-    .line 637
     const/4 v9, 0x0
 
-    .line 638
     .local v9, filepath:Ljava/lang/String;
     const/4 v6, 0x0
 
-    .line 641
     .local v6, c:Landroid/database/Cursor;
     :try_start_0
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 642
     .local v0, resolver:Landroid/content/ContentResolver;
     const/4 v1, 0x1
 
@@ -1582,21 +1524,17 @@
 
     const/4 v11, 0x0
 
-    .line 605
     const/4 v9, 0x0
 
-    .line 606
     .local v9, filepath:Ljava/lang/String;
     const/4 v6, 0x0
 
-    .line 609
     .local v6, c:Landroid/database/Cursor;
     :try_start_0
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 610
     .local v0, resolver:Landroid/content/ContentResolver;
     const/4 v1, 0x1
 
@@ -2009,7 +1947,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1387
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
@@ -2070,16 +2007,13 @@
 
     if-eqz v1, :cond_0
 
-    .line 1146
     invoke-static {p0}, Lcom/android/settings_ex/RingtonePicker;->getUriFromCursor(Landroid/database/Cursor;)Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 1148
     :cond_0
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
 
-    .line 1152
     .end local v0           #uri:Landroid/net/Uri;
     :goto_0
     return-object v0
@@ -2145,14 +2079,12 @@
 
     move-result-object v9
 
-    .line 900
     .local v9, drmCursor:Landroid/database/Cursor;
     :goto_0
     invoke-direct/range {p0 .. p0}, Lcom/android/settings_ex/RingtonePicker;->getMediaRingtones()Landroid/database/Cursor;
 
     move-result-object v13
 
-    .line 902
     .local v13, mediaCursor:Landroid/database/Cursor;
     new-instance v2, Lcom/android/internal/database/SortCursor;
 
@@ -2248,14 +2180,12 @@
 
     if-lez v2, :cond_5
 
-    .line 922
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/RingtonePicker;->mExternalCursor:Landroid/database/Cursor;
 
     invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
 
-    .line 923
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/RingtonePicker;->items:Ljava/util/ArrayList;
@@ -2355,19 +2285,16 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 932
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/RingtonePicker;->mExternalCursor:Landroid/database/Cursor;
 
     invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
 
-    .line 928
     add-int/lit8 v10, v10, 0x1
 
     goto :goto_2
 
-    .line 899
     .end local v9           #drmCursor:Landroid/database/Cursor;
     .end local v10           #i:I
     .end local v12           #lg_ring_category:Ljava/lang/String;
@@ -2444,14 +2371,12 @@
 
     iput v2, v0, Lcom/android/settings_ex/RingtonePicker;->mStaticItemCount:I
 
-    .line 944
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/RingtonePicker;->mHasDefaultItem:Z
 
     if-eqz v2, :cond_6
 
-    .line 945
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/RingtonePicker;->items:Ljava/util/ArrayList;
@@ -2509,14 +2434,12 @@
 
     iput v2, v0, Lcom/android/settings_ex/RingtonePicker;->mSilentPos:I
 
-    .line 956
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/RingtonePicker;->mExistingUri:Landroid/net/Uri;
 
     if-nez v2, :cond_7
 
-    .line 957
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/android/settings_ex/RingtonePicker;->mSilentPos:I
@@ -2568,17 +2491,14 @@
 
     if-ne v2, v3, :cond_a
 
-    .line 975
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/RingtonePicker;->mInternalCursor:Landroid/database/Cursor;
 
     if-eqz v2, :cond_a
 
-    .line 976
     const/16 v17, -0x1
 
-    .line 977
     .local v17, nIdexDefaultRingtone:I
     move-object/from16 v0, p0
 
@@ -2608,12 +2528,10 @@
 
     invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 982
     invoke-direct/range {p0 .. p0}, Lcom/android/settings_ex/RingtonePicker;->getDefaultPath()Ljava/lang/String;
 
     move-result-object v8
 
-    .line 983
     .local v8, defaultPath:Ljava/lang/String;
     const-string v2, "RingtonePicker"
 
@@ -2704,14 +2622,12 @@
 
     if-eqz v2, :cond_b
 
-    .line 989
     move-object/from16 v0, p0
 
     invoke-direct {v0, v11}, Lcom/android/settings_ex/RingtonePicker;->getListPosition(I)I
 
     move-result v17
 
-    .line 994
     .end local v18           #pathName:Ljava/lang/String;
     :cond_9
     move/from16 v0, v17
@@ -2733,14 +2649,12 @@
 
     if-eqz v2, :cond_c
 
-    .line 1002
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/RingtonePicker;->mInternalCursor:Landroid/database/Cursor;
 
     invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
 
-    .line 1003
     const/4 v10, 0x0
 
     .restart local v10       #i:I
@@ -2818,19 +2732,16 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1007
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/settings_ex/RingtonePicker;->mInternalCursor:Landroid/database/Cursor;
 
     invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
 
-    .line 1003
     add-int/lit8 v10, v10, 0x1
 
     goto :goto_4
 
-    .line 992
     .end local v10           #i:I
     .restart local v8       #defaultPath:Ljava/lang/String;
     .restart local v11       #index:I
@@ -2865,7 +2776,6 @@
     .locals 3
 
     .prologue
-    .line 1092
     new-instance v0, Lcom/android/settings_ex/RingtoneEntryAdapter;
 
     const v1, 0x109000f
@@ -2874,35 +2784,29 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/android/settings_ex/RingtoneEntryAdapter;-><init>(Landroid/content/Context;ILjava/util/ArrayList;)V
 
-    .line 1095
     .local v0, adapter:Lcom/android/settings_ex/RingtoneEntryAdapter;
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/RingtonePicker;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 1097
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
-    .line 1098
     iget-object v1, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setItemsCanFocus(Z)V
 
-    .line 1099
     iget-object v1, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setChoiceMode(I)V
 
-    .line 1100
     invoke-direct {p0}, Lcom/android/settings_ex/RingtonePicker;->onPrepareUI()V
 
-    .line 1102
     return-void
 .end method
 
@@ -2914,22 +2818,18 @@
 
     const/4 v3, 0x1
 
-    .line 1168
     invoke-direct {p0}, Lcom/android/settings_ex/RingtonePicker;->getURI()Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 1170
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getDefaultPhoneRingtone()Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 1175
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mInternalCursor:Landroid/database/Cursor;
 
     if-eqz v2, :cond_0
 
-    .line 1176
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mInternalCursor:Landroid/database/Cursor;
 
     invoke-direct {p0, v0, v2}, Lcom/android/settings_ex/RingtonePicker;->getRingtonePosition(Landroid/net/Uri;Landroid/database/Cursor;)I
@@ -2938,13 +2838,11 @@
 
     iput v2, p0, Lcom/android/settings_ex/RingtonePicker;->internal_ringtone_position:I
 
-    .line 1179
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mExternalCursor:Landroid/database/Cursor;
 
     if-eqz v2, :cond_1
 
-    .line 1180
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mExternalCursor:Landroid/database/Cursor;
 
     invoke-direct {p0, v0, v2}, Lcom/android/settings_ex/RingtonePicker;->getRingtonePosition(Landroid/net/Uri;Landroid/database/Cursor;)I
@@ -2953,13 +2851,11 @@
 
     iput v0, p0, Lcom/android/settings_ex/RingtonePicker;->external_ringtone_position:I
 
-    .line 1185
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mInternalCursor:Landroid/database/Cursor;
 
     if-eqz v0, :cond_2
 
-    .line 1186
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mInternalCursor:Landroid/database/Cursor;
 
     invoke-direct {p0, v1, v0}, Lcom/android/settings_ex/RingtonePicker;->getRingtonePosition(Landroid/net/Uri;Landroid/database/Cursor;)I
@@ -3007,17 +2903,14 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1197
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->external_ringtone_position:I
 
     if-ne v0, v4, :cond_6
 
-    .line 1201
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->internal_ringtone_position:I
 
     if-ne v0, v4, :cond_5
 
-    .line 1202
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->default_ringtone_position:I
@@ -3034,7 +2927,6 @@
 
     invoke-virtual {v0, v1, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
-    .line 1204
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->default_ringtone_position:I
@@ -3051,33 +2943,27 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setSelection(I)V
 
-    .line 1238
     :goto_0
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mExternalCursor:Landroid/database/Cursor;
 
     if-eqz v0, :cond_3
 
-    .line 1239
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mExternalCursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 1241
     :cond_3
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mInternalCursor:Landroid/database/Cursor;
 
     if-eqz v0, :cond_4
 
-    .line 1242
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mInternalCursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 1246
     :cond_4
     return-void
 
-    .line 1207
     :cond_5
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
@@ -3095,7 +2981,6 @@
 
     invoke-virtual {v0, v1, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
-    .line 1209
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->internal_ringtone_position:I
@@ -3124,7 +3009,6 @@
 
     invoke-virtual {v0, v1, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
-    .line 1217
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->external_ringtone_position:I
@@ -3135,13 +3019,11 @@
 
     goto :goto_0
 
-    .line 1224
     :cond_7
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->internal_ringtone_position:I
 
     if-ne v0, v4, :cond_8
 
-    .line 1225
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->default_ringtone_position:I
@@ -3150,7 +3032,6 @@
 
     invoke-virtual {v0, v1, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
-    .line 1226
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->default_ringtone_position:I
@@ -3171,7 +3052,6 @@
 
     invoke-virtual {v0, v1, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
-    .line 1229
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->listView:Landroid/widget/ListView;
 
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->internal_ringtone_position:I
@@ -3189,22 +3069,18 @@
     .parameter "delayMs"
 
     .prologue
-    .line 1431
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, p0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 1432
     iput-object p1, p0, Lcom/android/settings_ex/RingtonePicker;->mSampleRingtoneUri:Landroid/net/Uri;
 
-    .line 1433
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mHandler:Landroid/os/Handler;
 
     int-to-long v1, p2
 
     invoke-virtual {v0, p0, v1, v2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1434
     return-void
 .end method
 
@@ -3343,13 +3219,10 @@
     .parameter
 
     .prologue
-    .line 1860
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mFilterColumns:Ljava/util/List;
 
-    .line 1861
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 1863
     const-string v1, "RingtonePicker"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3441,7 +3314,6 @@
     .locals 1
 
     .prologue
-    .line 1593
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtone:Landroid/media/Ringtone;
 
     if-eqz v0, :cond_0
@@ -3454,23 +3326,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 1594
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtone:Landroid/media/Ringtone;
 
     invoke-virtual {v0}, Landroid/media/Ringtone;->stop()V
 
-    .line 1597
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
     if-eqz v0, :cond_1
 
-    .line 1598
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
     invoke-virtual {v0}, Landroid/media/RingtoneManager;->stopPreviousRingtone()V
 
-    .line 1600
     :cond_1
     return-void
 .end method
@@ -3483,10 +3351,8 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 1107
     const-string v0, ""
 
-    .line 1112
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     const/4 v2, 0x1
@@ -3575,22 +3441,17 @@
 
     move-result-object v0
 
-    .line 1134
     invoke-static {v0}, Lcom/android/settings_ex/RingtonePicker;->getValidRingtoneUriFromCursorAndClose(Landroid/database/Cursor;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 1136
     if-eqz v0, :cond_2
 
-    .line 1137
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 1138
     :cond_2
     return-object v1
 
-    .line 1116
     :cond_3
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
@@ -3631,16 +3492,13 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 767
     const/4 v0, 0x0
 
-    .line 768
     .local v0, db_Uri:Ljava/lang/String;
     iget v5, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-ne v5, v4, :cond_1
 
-    .line 769
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
@@ -3688,22 +3546,18 @@
 
     move-result-object v3
 
-    .line 807
     .local v3, path:Ljava/lang/String;
     if-eqz v3, :cond_6
 
-    .line 808
     invoke-static {v3}, Lcom/lge/lgdrm/DrmManager;->isDRM(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 809
     .local v1, isDrm:I
     invoke-direct {p0, v3}, Lcom/android/settings_ex/RingtonePicker;->CheckDrmExpired(Ljava/lang/String;)I
 
     move-result v2
 
-    .line 810
     .local v2, isDrmExpired:I
     const-string v5, "RingtonePicker"
 
@@ -3764,7 +3618,6 @@
 
     if-ne v5, v6, :cond_2
 
-    .line 775
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
@@ -3785,7 +3638,6 @@
 
     if-ne v5, v6, :cond_3
 
-    .line 781
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
@@ -3806,7 +3658,6 @@
 
     if-ne v5, v6, :cond_4
 
-    .line 787
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
@@ -3827,7 +3678,6 @@
 
     if-ne v5, v6, :cond_5
 
-    .line 793
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
@@ -3848,7 +3698,6 @@
 
     if-ne v5, v6, :cond_0
 
-    .line 799
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
@@ -3892,35 +3741,29 @@
 
     const/4 v4, 0x0
 
-    .line 1694
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->LAUNCHED_REQUEST_CODE:I
 
     if-ne p1, v0, :cond_19
 
-    .line 1695
     const/4 v0, -0x1
 
     if-eq p2, v0, :cond_5
 
-    .line 1696
     const-string v0, "RingtonePicker"
 
     const-string v1, "resultCode != RESULT_OK"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1798
     :goto_0
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-ne v0, v7, :cond_0
 
-    .line 1799
     iget-boolean v0, p0, Lcom/android/settings_ex/RingtonePicker;->isDualSim:Z
 
     if-ne v7, v0, :cond_17
 
-    .line 1800
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
@@ -3929,19 +3772,16 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 
-    .line 1806
     :cond_0
     :goto_1
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-ne v0, v8, :cond_1
 
-    .line 1808
     iget-boolean v0, p0, Lcom/android/settings_ex/RingtonePicker;->isDualSim:Z
 
     if-ne v7, v0, :cond_18
 
-    .line 1809
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
@@ -3950,14 +3790,12 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 
-    .line 1815
     :cond_1
     :goto_2
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-ne v0, v9, :cond_2
 
-    .line 1816
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
@@ -3966,13 +3804,11 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 
-    .line 1818
     :cond_2
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-ne v0, v10, :cond_3
 
-    .line 1819
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
@@ -3989,7 +3825,6 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 1822
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
@@ -4058,12 +3893,10 @@
 
     move-result v0
 
-    .line 1704
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    .line 1709
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-eq v2, v7, :cond_6
@@ -4161,12 +3994,10 @@
 
     move-result-object v0
 
-    .line 1745
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-ne v1, v7, :cond_d
 
-    .line 1746
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -4182,21 +4013,17 @@
     :cond_8
     invoke-static {v1, v2, v4}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 1787
     :cond_9
     :goto_5
     if-eqz v0, :cond_a
 
-    .line 1788
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 1791
     :cond_a
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->finish()V
 
     goto/16 :goto_0
 
-    .line 1721
     :cond_b
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
@@ -4240,19 +4067,16 @@
 
     goto :goto_4
 
-    .line 1727
     :catch_0
     move-exception v0
 
     goto/16 :goto_3
 
-    .line 1752
     :cond_d
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-ne v1, v8, :cond_f
 
-    .line 1753
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -4278,7 +4102,6 @@
 
     if-ne v1, v2, :cond_11
 
-    .line 1760
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -4296,13 +4119,11 @@
 
     goto :goto_5
 
-    .line 1766
     :cond_11
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-ne v1, v9, :cond_13
 
-    .line 1767
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -4320,13 +4141,11 @@
 
     goto :goto_5
 
-    .line 1773
     :cond_13
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-ne v1, v10, :cond_15
 
-    .line 1774
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -4352,7 +4171,6 @@
 
     if-ne v1, v2, :cond_9
 
-    .line 1781
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -4416,22 +4234,18 @@
 
     const/4 v4, 0x1
 
-    .line 281
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 283
     new-instance v2, Landroid/os/Handler;
 
     invoke-direct {v2}, Landroid/os/Handler;-><init>()V
 
     iput-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mHandler:Landroid/os/Handler;
 
-    .line 286
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 290
     .local v1, intent:Landroid/content/Intent;
     const-string v2, "audio"
 
@@ -4443,12 +4257,10 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mAudioManager:Landroid/media/AudioManager;
 
-    .line 295
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mStorageManager:Landroid/os/storage/StorageManager;
 
     if-nez v2, :cond_0
 
-    .line 296
     const-string v2, "storage"
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/RingtonePicker;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -4459,14 +4271,12 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mStorageManager:Landroid/os/storage/StorageManager;
 
-    .line 297
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mStorageManager:Landroid/os/storage/StorageManager;
 
     iget-object v3, p0, Lcom/android/settings_ex/RingtonePicker;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v2, v3}, Landroid/os/storage/StorageManager;->registerListener(Landroid/os/storage/StorageEventListener;)V
 
-    .line 308
     :cond_0
     const-string v2, "android.intent.extra.ringtone.INCLUDE_DRM"
 
@@ -4474,11 +4284,9 @@
 
     move-result v0
 
-    .line 310
     .local v0, includeDrm:Z
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/RingtonePicker;->setIncludeDrm(Z)V
 
-    .line 313
     const-string v2, "android.intent.extra.ringtone.SHOW_DEFAULT"
 
     invoke-virtual {v1, v2, v4}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
@@ -4498,17 +4306,14 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mUriForDefaultItem:Landroid/net/Uri;
 
-    .line 317
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mUriForDefaultItem:Landroid/net/Uri;
 
     if-nez v2, :cond_1
 
-    .line 318
     sget-object v2, Landroid/provider/Settings$System;->DEFAULT_RINGTONE_URI:Landroid/net/Uri;
 
     iput-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mUriForDefaultItem:Landroid/net/Uri;
 
-    .line 322
     :cond_1
     const-string v2, "android.intent.extra.ringtone.SHOW_SILENT"
 
@@ -4518,14 +4323,12 @@
 
     iput-boolean v2, p0, Lcom/android/settings_ex/RingtonePicker;->mHasSilentItem:Z
 
-    .line 327
     new-instance v2, Landroid/media/RingtoneManager;
 
     invoke-direct {v2, p0}, Landroid/media/RingtoneManager;-><init>(Landroid/app/Activity;)V
 
     iput-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
-    .line 331
     const-string v2, "android.intent.extra.ringtone.TYPE"
 
     invoke-virtual {v1, v2, v5}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
@@ -4534,29 +4337,24 @@
 
     iput v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
-    .line 332
     invoke-static {}, Lcom/android/settings_ex/Utils;->isMultiSimEnabled()Z
 
     move-result v2
 
     iput-boolean v2, p0, Lcom/android/settings_ex/RingtonePicker;->isDualSim:Z
 
-    .line 334
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-ne v2, v4, :cond_2
 
-    .line 335
     iget-boolean v2, p0, Lcom/android/settings_ex/RingtonePicker;->isDualSim:Z
 
     if-ne v4, v2, :cond_9
 
-    .line 336
     const v2, 0x7f0802c6
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/RingtonePicker;->setTitle(I)V
 
-    .line 342
     :cond_2
     :goto_0
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
@@ -4565,17 +4363,14 @@
 
     if-ne v2, v3, :cond_3
 
-    .line 344
     iget-boolean v2, p0, Lcom/android/settings_ex/RingtonePicker;->isDualSim:Z
 
     if-ne v4, v2, :cond_a
 
-    .line 345
     const v2, 0x7f0802c8
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/RingtonePicker;->setTitle(I)V
 
-    .line 351
     :cond_3
     :goto_1
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
@@ -4584,12 +4379,10 @@
 
     if-ne v2, v3, :cond_4
 
-    .line 352
     const v2, 0x7f0802c7
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/RingtonePicker;->setTitle(I)V
 
-    .line 354
     :cond_4
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
@@ -4597,12 +4390,10 @@
 
     if-ne v2, v3, :cond_5
 
-    .line 355
     const v2, 0x7f0802c9
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/RingtonePicker;->setTitle(I)V
 
-    .line 358
     :cond_5
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
@@ -4610,30 +4401,25 @@
 
     if-ne v2, v3, :cond_6
 
-    .line 359
     const v2, 0x7f080995
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/RingtonePicker;->setTitle(I)V
 
-    .line 363
     :cond_6
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     if-eq v2, v5, :cond_7
 
-    .line 365
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
     iget v3, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     invoke-virtual {v2, v3}, Landroid/media/RingtoneManager;->setType(I)V
 
-    .line 366
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
     invoke-direct {p0, v2}, Lcom/android/settings_ex/RingtonePicker;->setFilterColumnsList(I)V
 
-    .line 378
     :cond_7
     const-string v2, "android.intent.extra.ringtone.EXISTING_URI"
 
@@ -4670,12 +4456,10 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 383
     const v2, 0x7f06002f
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/RingtonePicker;->setContentView(I)V
 
-    .line 385
     const v2, 0x7f0b0045
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/RingtonePicker;->findViewById(I)Landroid/view/View;
@@ -4697,7 +4481,6 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
-    .line 389
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mOperator:Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/settings_ex/RingtonePicker;->strTargetOperator:Ljava/lang/String;
@@ -4708,14 +4491,12 @@
 
     if-eqz v2, :cond_8
 
-    .line 391
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 395
     :cond_8
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mCancelButton:Landroid/widget/Button;
 
@@ -4725,7 +4506,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 403
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     new-instance v3, Lcom/android/settings_ex/RingtonePicker$3;
@@ -4734,7 +4514,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 520
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
     invoke-virtual {v2}, Landroid/media/RingtoneManager;->inferStreamType()I
@@ -4768,7 +4547,6 @@
     .parameter
 
     .prologue
-    .line 1610
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getMenuInflater()Landroid/view/MenuInflater;
 
     move-result-object v0
@@ -4789,10 +4567,8 @@
     .locals 2
 
     .prologue
-    .line 867
     invoke-super {p0}, Landroid/app/ListActivity;->onDestroy()V
 
-    .line 869
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mStorageManager:Landroid/os/storage/StorageManager;
 
     if-eqz v0, :cond_0
@@ -4801,14 +4577,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 870
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mStorageManager:Landroid/os/storage/StorageManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/RingtonePicker;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v0, v1}, Landroid/os/storage/StorageManager;->unregisterListener(Landroid/os/storage/StorageEventListener;)V
 
-    .line 873
     :cond_0
     return-void
 .end method
@@ -4867,20 +4641,16 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1264
     iput p3, p0, Lcom/android/settings_ex/RingtonePicker;->mClickedPos:I
 
-    .line 1266
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/RingtonePicker;->mSelected:Z
 
-    .line 1267
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmRingtone:Z
 
-    .line 1271
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->items:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -4889,7 +4659,6 @@
 
     check-cast v0, Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneEntryItem;
 
-    .line 1273
     iget-object v0, v0, Lcom/android/settings_ex/RingtoneEntryAdapter$RingtoneEntryItem;->uri:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -4923,7 +4692,6 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1278
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOperator:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->strTargetOperator:Ljava/lang/String;
@@ -4934,7 +4702,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 1281
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->position_uri:Landroid/net/Uri;
 
     invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
@@ -4945,24 +4712,20 @@
 
     move-result-object v2
 
-    .line 1283
     const-string v0, "RingtonePicker"
 
     const-string v3, "~~~31> creating DrmManagerClient. "
 
     invoke-static {v0, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1284
     new-instance v3, Landroid/drm/DrmManagerClient;
 
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mContext:Landroid/content/Context;
 
     invoke-direct {v3, v0}, Landroid/drm/DrmManagerClient;-><init>(Landroid/content/Context;)V
 
-    .line 1285
     if-nez v3, :cond_0
 
-    .line 1286
     const-string v0, "RingtonePicker"
 
     const-string v4, "~~~31> mDrmStore is null"
@@ -5064,14 +4827,12 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1352
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setClickable(Z)V
 
-    .line 1353
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     const/4 v1, 0x0
@@ -5105,16 +4866,13 @@
 
     goto :goto_0
 
-    .line 1375
     :catch_1
     move-exception v0
 
-    .line 1376
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->finish()V
 
     goto :goto_1
 
-    .line 1309
     :pswitch_0
     :try_start_5
     const-string v0, "RingtonePicker"
@@ -5154,14 +4912,12 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1316
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setClickable(Z)V
 
-    .line 1317
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     const/4 v1, 0x0
@@ -5214,14 +4970,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1321
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setClickable(Z)V
 
-    .line 1322
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     const/4 v1, 0x1
@@ -5239,69 +4993,58 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1325
     new-instance v0, Landroid/media/MediaPlayer;
 
     invoke-direct {v0}, Landroid/media/MediaPlayer;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mAudio:Landroid/media/MediaPlayer;
 
-    .line 1326
     const-string v0, "RingtonePicker"
 
     const-string v1, "~~~31> int mStreamType = AudioManager.STREAM_MUSIC "
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1327
     const/4 v0, 0x3
 
-    .line 1328
     const-string v1, "RingtonePicker"
 
     const-string v2, "~~~31> mAudio.setDataSource(this, position_uri) "
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1329
     iget-object v1, p0, Lcom/android/settings_ex/RingtonePicker;->mAudio:Landroid/media/MediaPlayer;
 
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->position_uri:Landroid/net/Uri;
 
     invoke-virtual {v1, p0, v2}, Landroid/media/MediaPlayer;->setDataSource(Landroid/content/Context;Landroid/net/Uri;)V
 
-    .line 1330
     const-string v1, "RingtonePicker"
 
     const-string v2, "~~~31> mAudio.setAudioStreamType(mStreamType) "
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1331
     iget-object v1, p0, Lcom/android/settings_ex/RingtonePicker;->mAudio:Landroid/media/MediaPlayer;
 
     invoke-virtual {v1, v0}, Landroid/media/MediaPlayer;->setAudioStreamType(I)V
 
-    .line 1332
     const-string v0, "RingtonePicker"
 
     const-string v1, "~~~31> mAudio.prepare() "
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1333
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mAudio:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->prepare()V
 
-    .line 1334
     const-string v0, "RingtonePicker"
 
     const-string v1, "~~~31> finished try catch"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1335
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->position_uri:Landroid/net/Uri;
 
     const/16 v1, 0x12c
@@ -5340,14 +5083,12 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1340
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setClickable(Z)V
 
-    .line 1341
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     const/4 v1, 0x0
@@ -5368,14 +5109,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setClickable(Z)V
 
-    .line 1361
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mOKButton:Landroid/widget/Button;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 1362
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->position_uri:Landroid/net/Uri;
 
     const/16 v1, 0x12c
@@ -5439,36 +5178,30 @@
 
     if-eqz v0, :cond_0
 
-    .line 1630
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 1631
     const-string v1, "com.lge.music"
 
     const-string v2, "com.lge.music.MusicPicker"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1632
     const-string v1, "android.intent.action.GET_CONTENT"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1633
     const-string v1, "com.lge.lgdrm.extra.ACTION"
 
     const/4 v2, 0x2
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1635
     iget v1, p0, Lcom/android/settings_ex/RingtonePicker;->LAUNCHED_REQUEST_CODE:I
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings_ex/RingtonePicker;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 1643
     :goto_1
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
@@ -5476,13 +5209,11 @@
 
     goto :goto_0
 
-    .line 1639
     :cond_0
     invoke-direct {p0}, Lcom/android/settings_ex/RingtonePicker;->confirmDialog()V
 
     goto :goto_1
 
-    .line 1619
     :pswitch_data_0
     .packed-switch 0x7f0b02a8
         :pswitch_0
@@ -5493,13 +5224,10 @@
     .locals 2
 
     .prologue
-    .line 694
     invoke-super {p0}, Landroid/app/ListActivity;->onPause()V
 
-    .line 695
     invoke-direct {p0}, Lcom/android/settings_ex/RingtonePicker;->stopAnyPlayingRingtone()V
 
-    .line 696
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mExternalCursor:Landroid/database/Cursor;
 
     if-nez v0, :cond_0
@@ -5512,44 +5240,37 @@
 
     if-eqz v0, :cond_1
 
-    .line 698
     :cond_0
     const/4 v0, 0x0
 
     :try_start_0
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mExternalCursor:Landroid/database/Cursor;
 
-    .line 699
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mInternalCursor:Landroid/database/Cursor;
 
-    .line 700
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->items:Ljava/util/ArrayList;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 706
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mAudioManager:Landroid/media/AudioManager;
 
     if-eqz v0, :cond_2
 
-    .line 707
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mAudioManager:Landroid/media/AudioManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/RingtonePicker;->mAudioFocusListener:Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->abandonAudioFocus(Landroid/media/AudioManager$OnAudioFocusChangeListener;)I
 
-    .line 710
     :cond_2
     return-void
 
-    .line 701
     :catch_0
     move-exception v0
 
@@ -5560,16 +5281,12 @@
     .locals 0
 
     .prologue
-    .line 685
     invoke-super {p0}, Landroid/app/ListActivity;->onResume()V
 
-    .line 687
     invoke-direct {p0}, Lcom/android/settings_ex/RingtonePicker;->initRingtoneList()V
 
-    .line 688
     invoke-direct {p0}, Lcom/android/settings_ex/RingtonePicker;->initRingtoneUI()V
 
-    .line 689
     return-void
 .end method
 
@@ -5591,32 +5308,26 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 714
     invoke-super {p0}, Landroid/app/ListActivity;->onStop()V
 
-    .line 715
     invoke-direct {p0}, Lcom/android/settings_ex/RingtonePicker;->stopAnyPlayingRingtone()V
 
-    .line 717
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->isExpiredDrm()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 718
     const-string v2, "RingtonePicker"
 
     const-string v3, "!!!!!it is expired uri change to default!!!!"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 719
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getDefaultPhoneRingtone()Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 720
     .local v0, uri:Landroid/net/Uri;
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->types:I
 
@@ -5624,7 +5335,6 @@
 
     if-ne v2, v3, :cond_2
 
-    .line 721
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -5655,7 +5365,6 @@
 
     if-ne v2, v3, :cond_4
 
-    .line 728
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -5681,7 +5390,6 @@
 
     if-ne v2, v3, :cond_6
 
-    .line 735
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -5707,7 +5415,6 @@
 
     if-ne v2, v3, :cond_8
 
-    .line 742
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -5733,7 +5440,6 @@
 
     if-ne v2, v3, :cond_a
 
-    .line 749
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -5759,7 +5465,6 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 756
     invoke-virtual {p0}, Lcom/android/settings_ex/RingtonePicker;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -5788,41 +5493,33 @@
 
     const/4 v5, 0x0
 
-    .line 1439
     iget v0, p0, Lcom/android/settings_ex/RingtonePicker;->mSampleRingtonePos:I
 
     iget v2, p0, Lcom/android/settings_ex/RingtonePicker;->mSilentPos:I
 
     if-ne v0, v2, :cond_1
 
-    .line 1443
     invoke-direct {p0}, Lcom/android/settings_ex/RingtonePicker;->stopAnyPlayingRingtone()V
 
-    .line 1448
     iput-boolean v5, p0, Lcom/android/settings_ex/RingtonePicker;->mSelected:Z
 
-    .line 1547
     :cond_0
     :goto_0
     return-void
 
-    .line 1454
     :cond_1
     iget-boolean v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmJob:Z
 
     if-eqz v0, :cond_2
 
-    .line 1455
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mHandler:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmTask:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 1456
     iput-boolean v5, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmJob:Z
 
-    .line 1464
     :cond_2
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtone:Landroid/media/Ringtone;
 
@@ -5836,17 +5533,14 @@
 
     if-eqz v0, :cond_3
 
-    .line 1465
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtone:Landroid/media/Ringtone;
 
     invoke-virtual {v0}, Landroid/media/Ringtone;->stop()V
 
-    .line 1466
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtone:Landroid/media/Ringtone;
 
-    .line 1469
     :cond_3
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
@@ -5858,12 +5552,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtone:Landroid/media/Ringtone;
 
-    .line 1471
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtone:Landroid/media/Ringtone;
 
     if-eqz v0, :cond_4
 
-    .line 1473
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtone:Landroid/media/Ringtone;
 
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
@@ -5874,23 +5566,19 @@
 
     invoke-virtual {v0, v2}, Landroid/media/Ringtone;->setStreamType(I)V
 
-    .line 1476
     :cond_4
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mDefaultRingtone:Landroid/media/Ringtone;
 
     iput-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->ringtone:Landroid/media/Ringtone;
 
-    .line 1478
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->ringtone:Landroid/media/Ringtone;
 
     if-eqz v0, :cond_8
 
-    .line 1481
     sget-boolean v0, Lcom/lge/lgdrm/Drm;->LGDRM:Z
 
     if-eqz v0, :cond_7
 
-    .line 1482
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->ringtone:Landroid/media/Ringtone;
 
     invoke-virtual {v0, v6}, Landroid/media/Ringtone;->getProperty(I)I
@@ -5899,15 +5587,12 @@
 
     if-nez v0, :cond_6
 
-    .line 1483
     iget-boolean v0, p0, Lcom/android/settings_ex/RingtonePicker;->mSelected:Z
 
     if-eqz v0, :cond_5
 
-    .line 1485
     iput-boolean v5, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmRingtone:Z
 
-    .line 1487
     const v0, 0x7f0809f0
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/RingtonePicker;->getString(I)Ljava/lang/String;
@@ -5920,13 +5605,11 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1492
     :cond_5
     iput-boolean v5, p0, Lcom/android/settings_ex/RingtonePicker;->mSelected:Z
 
     goto :goto_0
 
-    .line 1496
     :cond_6
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mSampleRingtoneUri:Landroid/net/Uri;
 
@@ -5958,7 +5641,6 @@
 
     if-eq v0, v2, :cond_7
 
-    .line 1508
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->ringtone:Landroid/media/Ringtone;
 
     invoke-virtual {v0, v1}, Landroid/media/Ringtone;->getProperty(I)I
@@ -5967,10 +5649,8 @@
 
     if-ne v0, v6, :cond_7
 
-    .line 1510
     iput-boolean v6, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmJob:Z
 
-    .line 1511
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mHandler:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mDrmTask:Ljava/lang/Runnable;
@@ -5989,19 +5669,16 @@
 
     if-ne v0, v6, :cond_9
 
-    .line 1526
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
     if-eqz v0, :cond_a
 
-    .line 1527
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mRingtoneManager:Landroid/media/RingtoneManager;
 
     invoke-virtual {v0}, Landroid/media/RingtoneManager;->inferStreamType()I
 
     move-result v0
 
-    .line 1528
     :goto_1
     iget-object v2, p0, Lcom/android/settings_ex/RingtonePicker;->mAudioManager:Landroid/media/AudioManager;
 
@@ -6009,14 +5686,12 @@
 
     invoke-virtual {v2, v3, v0, v1}, Landroid/media/AudioManager;->requestAudioFocus(Landroid/media/AudioManager$OnAudioFocusChangeListener;II)I
 
-    .line 1529
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->ringtone:Landroid/media/Ringtone;
 
     iget-object v1, p0, Lcom/android/settings_ex/RingtonePicker;->mMediaCompletionListener:Landroid/media/MediaPlayer$OnCompletionListener;
 
     invoke-virtual {v0, v1}, Landroid/media/Ringtone;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
 
-    .line 1530
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker;->mediahandler:Landroid/os/Handler;
 
     const/16 v1, 0xb
@@ -6025,23 +5700,19 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1541
     :cond_8
     :goto_2
     sget-boolean v0, Lcom/lge/lgdrm/Drm;->LGDRM:Z
 
     if-eqz v0, :cond_0
 
-    .line 1542
     iput-boolean v5, p0, Lcom/android/settings_ex/RingtonePicker;->mSelected:Z
 
     goto/16 :goto_0
 
-    .line 1502
     :catch_0
     move-exception v0
 
-    .line 1503
     const-string v0, "RingtonePicker"
 
     const-string v1, "ringtone path is null."
@@ -6069,9 +5740,7 @@
     .parameter "includeDrm"
 
     .prologue
-    .line 151
     iput-boolean p1, p0, Lcom/android/settings_ex/RingtonePicker;->mIncludeDrm:Z
 
-    .line 152
     return-void
 .end method

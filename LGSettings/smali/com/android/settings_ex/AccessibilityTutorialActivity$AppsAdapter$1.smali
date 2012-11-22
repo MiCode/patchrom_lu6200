@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 224
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter$1;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "event"
 
     .prologue
-    .line 227
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter$1;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;
 
     #getter for: Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;->mHoverListener:Landroid/view/View$OnHoverListener;
@@ -53,7 +51,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 228
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter$1;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;
 
     #getter for: Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;->mHoverListener:Landroid/view/View$OnHoverListener;

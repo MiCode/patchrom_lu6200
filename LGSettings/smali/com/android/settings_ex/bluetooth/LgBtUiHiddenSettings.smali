@@ -42,10 +42,8 @@
     .locals 1
 
     .prologue
-    .line 41
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
-    .line 72
     new-instance v0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$1;-><init>(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;)V
@@ -84,20 +82,16 @@
 
     const/4 v6, 0x0
 
-    .line 83
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 85
     const v5, 0x7f06000b
 
     invoke-virtual {p0, v5}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->addPreferencesFromResource(I)V
 
-    .line 87
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
-    .line 89
     .local v4, prefScreen:Landroid/preference/PreferenceScreen;
     sget-object v5, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->BTUI_HIDDEN_MENU:[Z
 
@@ -230,15 +224,12 @@
     .locals 1
 
     .prologue
-    .line 165
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onDestroy()V
 
-    .line 166
     const-string v0, "[BTUI] onDestroy()... "
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->BtUiLog(Ljava/lang/String;)V
 
-    .line 168
     return-void
 .end method
 
@@ -246,15 +237,12 @@
     .locals 1
 
     .prologue
-    .line 151
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
-    .line 152
     const-string v0, "[BTUI] onPause()... "
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->BtUiLog(Ljava/lang/String;)V
 
-    .line 153
     return-void
 .end method
 
@@ -570,31 +558,25 @@
     .locals 2
 
     .prologue
-    .line 141
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    .line 142
     const-string v1, "[BTUI] onResume()... "
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->BtUiLog(Ljava/lang/String;)V
 
-    .line 144
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 145
     .local v0, intentFilter:Landroid/content/IntentFilter;
     const-string v1, "android.bluetooth.adapter.action.STATE_CHANGED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 146
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v1, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 147
     return-void
 .end method
 
@@ -602,19 +584,15 @@
     .locals 1
 
     .prologue
-    .line 157
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onStop()V
 
-    .line 158
     const-string v0, "[BTUI] onStop()... "
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->BtUiLog(Ljava/lang/String;)V
 
-    .line 160
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 161
     return-void
 .end method

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 50
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/A2dpProfile;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 50
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/A2dpProfile$A2dpServiceListener;-><init>(Lcom/android/settings_ex/bluetooth/A2dpProfile;)V
 
     return-void
@@ -55,7 +53,6 @@
     .parameter "proxy"
 
     .prologue
-    .line 54
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/A2dpProfile;
 
     check-cast p2, Landroid/bluetooth/BluetoothA2dp;
@@ -73,7 +70,6 @@
     .parameter "profile"
 
     .prologue
-    .line 58
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/A2dpProfile;
 
     const/4 v1, 0x0

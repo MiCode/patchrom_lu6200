@@ -58,7 +58,6 @@
     .locals 8
 
     .prologue
-    .line 272
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     const-string v1, "Introduction"
@@ -79,7 +78,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->Introduction:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    .line 276
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     const-string v1, "HelpScreen"
@@ -100,7 +98,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->HelpScreen:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    .line 279
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     const-string v1, "ChoiceTooShort"
@@ -121,7 +118,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->ChoiceTooShort:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    .line 283
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     const-string v1, "FirstChoiceValid"
@@ -142,7 +138,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->FirstChoiceValid:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    .line 286
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     const-string v1, "NeedToConfirm"
@@ -163,7 +158,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->NeedToConfirm:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    .line 290
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     const-string v1, "ConfirmWrong"
@@ -184,7 +178,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->ConfirmWrong:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    .line 294
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     const-string v1, "ChoiceConfirmed"
@@ -276,25 +269,18 @@
     .end annotation
 
     .prologue
-    .line 309
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 310
     iput p3, p0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->headerMessage:I
 
-    .line 311
     iput-object p4, p0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->leftMode:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
-    .line 312
     iput-object p5, p0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->rightMode:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
 
-    .line 313
     iput p6, p0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->footerMessage:I
 
-    .line 314
     iput-boolean p7, p0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->patternEnabled:Z
 
-    .line 315
     return-void
 .end method
 
@@ -303,7 +289,6 @@
     .parameter
 
     .prologue
-    .line 270
     const-class v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -319,7 +304,6 @@
     .locals 1
 
     .prologue
-    .line 270
     sget-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->$VALUES:[Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     invoke-virtual {v0}, [Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$Stage;->clone()Ljava/lang/Object;

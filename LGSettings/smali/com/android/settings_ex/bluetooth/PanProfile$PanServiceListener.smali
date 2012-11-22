@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 47
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/PanProfile$PanServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/PanProfile;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 47
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/PanProfile$PanServiceListener;-><init>(Lcom/android/settings_ex/bluetooth/PanProfile;)V
 
     return-void
@@ -55,7 +53,6 @@
     .parameter "proxy"
 
     .prologue
-    .line 51
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/PanProfile$PanServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/PanProfile;
 
     check-cast p2, Landroid/bluetooth/BluetoothPan;
@@ -73,7 +70,6 @@
     .parameter "profile"
 
     .prologue
-    .line 55
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/PanProfile$PanServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/PanProfile;
 
     const/4 v1, 0x0

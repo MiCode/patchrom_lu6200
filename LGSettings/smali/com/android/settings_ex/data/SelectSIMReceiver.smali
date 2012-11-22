@@ -80,41 +80,34 @@
     .parameter
 
     .prologue
-    .line 142
     const-string v0, "SelectSIMReceiver"
 
     const-string v1, "start startDataEnableDialog"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 143
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.DATA_ENABLE_DIALOG"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 144
     const-string v1, "cancelable"
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 145
     const-class v1, Lcom/android/settings_ex/data/DataEnableDialog;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 146
     const/high16 v1, 0x1000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 147
     invoke-virtual {p1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 148
     return-void
 .end method
 
@@ -123,41 +116,34 @@
     .parameter
 
     .prologue
-    .line 132
     const-string v0, "SelectSIMReceiver"
 
     const-string v1, "start setup sim type popup"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 133
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.SELECT_SIM_TYPE"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 134
     const-string v1, "cancelable"
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 135
     const-class v1, Lcom/android/settings_ex/data/SelectSIMDialog;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 136
     const/high16 v1, 0x1000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 137
     invoke-virtual {p1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 138
     return-void
 .end method
 
@@ -204,7 +190,6 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 36
     invoke-static {p1}, Lcom/android/settings_ex/Utils;->isVodafoneUKSIM(Landroid/content/Context;)Z
 
     move-result v4
@@ -306,18 +291,15 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 60
     if-eq v1, v8, :cond_2
 
     if-ne v1, v9, :cond_0
 
-    .line 65
     :cond_2
     invoke-direct {p0, p1}, Lcom/android/settings_ex/data/SelectSIMReceiver;->startDataEnableDialog(Landroid/content/Context;)V
 
     goto :goto_0
 
-    .line 55
     .end local v1           #enabledState:I
     :cond_3
     const/4 v1, 0x2
@@ -336,14 +318,12 @@
 
     if-eqz v4, :cond_7
 
-    .line 91
     invoke-direct {p0, p1}, Lcom/android/settings_ex/data/SelectSIMReceiver;->isSetupWizardAvailable(Landroid/content/Context;)Z
 
     move-result v4
 
     if-eqz v4, :cond_6
 
-    .line 92
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v4
@@ -385,18 +365,15 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 101
     if-eq v1, v8, :cond_5
 
     if-ne v1, v9, :cond_0
 
-    .line 107
     :cond_5
     invoke-direct {p0, p1}, Lcom/android/settings_ex/data/SelectSIMReceiver;->startSelectSIMDialog(Landroid/content/Context;)V
 
     goto :goto_0
 
-    .line 96
     .end local v1           #enabledState:I
     :cond_6
     const/4 v1, 0x2
@@ -482,12 +459,10 @@
 
     if-nez v4, :cond_0
 
-    .line 122
     invoke-direct {p0, p1}, Lcom/android/settings_ex/data/SelectSIMReceiver;->startDataEnableDialog(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
-    .line 125
     :cond_9
     invoke-direct {p0, p1}, Lcom/android/settings_ex/data/SelectSIMReceiver;->startSelectSIMDialog(Landroid/content/Context;)V
 

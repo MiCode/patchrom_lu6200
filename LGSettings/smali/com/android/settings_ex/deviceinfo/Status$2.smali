@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 244
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/Status$2;->this$0:Lcom/android/settings_ex/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
@@ -39,18 +38,15 @@
     .parameter "state"
 
     .prologue
-    .line 247
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/Status$2;->this$0:Lcom/android/settings_ex/deviceinfo/Status;
 
     #calls: Lcom/android/settings_ex/deviceinfo/Status;->updateDataState()V
     invoke-static {v0}, Lcom/android/settings_ex/deviceinfo/Status;->access$400(Lcom/android/settings_ex/deviceinfo/Status;)V
 
-    .line 248
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/Status$2;->this$0:Lcom/android/settings_ex/deviceinfo/Status;
 
     #calls: Lcom/android/settings_ex/deviceinfo/Status;->updateNetworkType()V
     invoke-static {v0}, Lcom/android/settings_ex/deviceinfo/Status;->access$500(Lcom/android/settings_ex/deviceinfo/Status;)V
 
-    .line 249
     return-void
 .end method

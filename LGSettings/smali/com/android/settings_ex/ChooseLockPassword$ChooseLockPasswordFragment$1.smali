@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 205
     iput-object p1, p0, Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment$1;->this$0:Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,14 +38,12 @@
     .parameter "msg"
 
     .prologue
-    .line 208
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 209
     iget-object v1, p0, Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment$1;->this$0:Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;

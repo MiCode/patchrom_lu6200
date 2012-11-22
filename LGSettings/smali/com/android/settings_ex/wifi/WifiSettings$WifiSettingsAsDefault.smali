@@ -31,13 +31,10 @@
     .parameter "isInXlSetupWizard"
 
     .prologue
-    .line 179
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 180
     iput-boolean p1, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mInXlSetupWizard:Z
 
-    .line 181
     return-void
 .end method
 
@@ -48,7 +45,6 @@
     .parameter "accessPoint"
 
     .prologue
-    .line 216
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     if-eqz v0, :cond_0
@@ -71,7 +67,6 @@
     .parameter "msgId"
 
     .prologue
-    .line 210
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mEmptyView:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
@@ -110,12 +105,10 @@
 
     const/4 v2, 0x0
 
-    .line 194
     iget-boolean v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mInXlSetupWizard:Z
 
     if-nez v0, :cond_0
 
-    .line 195
     const v0, 0x7f080220
 
     invoke-interface {p1, v2, v3, v2, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
@@ -164,7 +157,6 @@
     .parameter "i"
 
     .prologue
-    .line 228
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     if-eqz v0, :cond_0
@@ -201,12 +193,10 @@
     .locals 1
 
     .prologue
-    .line 221
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     if-eqz v0, :cond_0
 
-    .line 222
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/wifi/WifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
@@ -233,15 +223,12 @@
     .parameter "actionBarSwitch"
 
     .prologue
-    .line 185
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
-    .line 186
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     if-eqz v0, :cond_0
 
-    .line 187
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/wifi/WifiSettings;->getView()Landroid/view/View;
@@ -258,7 +245,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mEmptyView:Landroid/widget/TextView;
 
-    .line 188
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/wifi/WifiSettings;->getListView()Landroid/widget/ListView;
@@ -287,7 +273,6 @@
     .locals 1
 
     .prologue
-    .line 234
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiSettingsAsDefault;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
 
     if-eqz v0, :cond_0

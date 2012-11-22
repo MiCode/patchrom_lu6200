@@ -24,13 +24,10 @@
     .parameter "attrs"
 
     .prologue
-    .line 45
     invoke-direct {p0, p1, p2}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 46
     invoke-direct {p0}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->updateSummary()V
 
-    .line 47
     return-void
 .end method
 
@@ -39,7 +36,6 @@
     .parameter "view"
 
     .prologue
-    .line 72
     invoke-virtual {p0}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -60,34 +56,27 @@
 
     if-eqz v2, :cond_0
 
-    .line 74
     invoke-static {}, Landroid/view/accessibility/AccessibilityEvent;->obtain()Landroid/view/accessibility/AccessibilityEvent;
 
     move-result-object v1
 
-    .line 75
     .local v1, event:Landroid/view/accessibility/AccessibilityEvent;
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Landroid/view/accessibility/AccessibilityEvent;->setEventType(I)V
 
-    .line 76
     invoke-virtual {p1, v1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
-    .line 77
     invoke-virtual {p1, v1}, Landroid/view/View;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
 
-    .line 78
     invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityManager;->sendAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
-    .line 80
     .end local v1           #event:Landroid/view/accessibility/AccessibilityEvent;
     :cond_0
     const/4 v2, 0x0
 
     iput-boolean v2, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->mSendClickAccessibilityEvent:Z
 
-    .line 81
     return-void
 .end method
 
@@ -96,7 +85,6 @@
     .parameter "enabled"
 
     .prologue
-    .line 170
     invoke-virtual {p0}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -128,7 +116,6 @@
     .locals 2
 
     .prologue
-    .line 164
     iget-boolean v0, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->mInjectionAllowed:Z
 
     if-eqz v0, :cond_0
@@ -170,7 +157,6 @@
     .locals 1
 
     .prologue
-    .line 58
     iget-boolean v0, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->mInjectionAllowed:Z
 
     return v0
@@ -181,21 +167,17 @@
     .parameter "view"
 
     .prologue
-    .line 63
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onBindView(Landroid/view/View;)V
 
-    .line 64
     const v1, 0x1020010
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 65
     .local v0, summaryView:Landroid/view/View;
     invoke-direct {p0, v0}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->sendAccessibilityEvent(Landroid/view/View;)V
 
-    .line 66
     return-void
 .end method
 
@@ -205,14 +187,12 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 85
     invoke-virtual {p0}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->isInjectionAllowed()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 87
     const-string v0, "ro.build.target_country"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
@@ -227,33 +207,26 @@
 
     if-eqz v0, :cond_0
 
-    .line 88
     invoke-super {p0}, Landroid/preference/DialogPreference;->onClick()V
 
-    .line 95
     :goto_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->mSendClickAccessibilityEvent:Z
 
-    .line 100
     :goto_1
     return-void
 
-    .line 90
     :cond_0
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->setInjectionAllowed(Z)V
 
-    .line 92
     invoke-direct {p0, v2}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->setSystemSetting(Z)V
 
     goto :goto_0
 
-    .line 97
     :cond_1
     invoke-super {p0}, Landroid/preference/DialogPreference;->onClick()V
 
-    .line 98
     iput-boolean v2, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->mSendClickAccessibilityEvent:Z
 
     goto :goto_1
@@ -269,30 +242,23 @@
 
     const/4 v1, 0x0
 
-    .line 118
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_0
 
-    .line 119
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->setInjectionAllowed(Z)V
 
-    .line 121
     invoke-direct {p0, v2}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->setSystemSetting(Z)V
 
-    .line 123
     :cond_0
     const/4 v0, -0x2
 
     if-ne p2, v0, :cond_1
 
-    .line 124
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->setInjectionAllowed(Z)V
 
-    .line 126
     invoke-direct {p0, v1}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->setSystemSetting(Z)V
 
-    .line 129
     :cond_1
     return-void
 .end method
@@ -337,26 +303,21 @@
 
     if-nez v0, :cond_1
 
-    .line 155
     :cond_0
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
-    .line 161
     :goto_0
     return-void
 
-    .line 158
     :cond_1
     check-cast p1, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;
 
-    .line 159
     invoke-virtual {p1}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/preference/DialogPreference;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
-    .line 160
     #getter for: Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
     invoke-static {p1}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;->access$000(Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;)Z
 
@@ -384,19 +345,16 @@
 
     if-eqz v2, :cond_0
 
-    .line 149
     .end local v1           #superState:Landroid/os/Parcelable;
     :goto_0
     return-object v1
 
-    .line 147
     .restart local v1       #superState:Landroid/os/Parcelable;
     :cond_0
     new-instance v0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;
 
     invoke-direct {v0, v1}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;-><init>(Landroid/os/Parcelable;)V
 
-    .line 148
     .local v0, myState:Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;
     iget-boolean v2, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->mInjectionAllowed:Z
 
@@ -449,21 +407,16 @@
     .parameter "injectionAllowed"
 
     .prologue
-    .line 50
     iget-boolean v0, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->mInjectionAllowed:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 51
     iput-boolean p1, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->mInjectionAllowed:Z
 
-    .line 52
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->persistBoolean(Z)Z
 
-    .line 53
     invoke-direct {p0}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference;->updateSummary()V
 
-    .line 55
     :cond_0
     return-void
 .end method

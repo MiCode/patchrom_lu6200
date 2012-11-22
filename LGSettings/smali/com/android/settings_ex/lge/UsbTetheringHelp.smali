@@ -21,15 +21,12 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 16
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 18
     const v3, 0x7f0400b1
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/lge/UsbTetheringHelp;->setContentView(I)V
 
-    .line 20
     const v3, 0x7f0b01cc
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/lge/UsbTetheringHelp;->findViewById(I)Landroid/view/View;

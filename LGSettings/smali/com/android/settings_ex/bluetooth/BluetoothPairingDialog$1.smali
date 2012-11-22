@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 82
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -76,25 +75,21 @@
 
     if-ne v1, v3, :cond_1
 
-    .line 92
     :cond_0
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;
 
     #setter for: Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;->mUserConfirmed:Z
     invoke-static {v3, v5}, Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;->access$002(Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;Z)Z
 
-    .line 94
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;->dismiss()V
 
-    .line 105
     .end local v1           #bondState:I
     :cond_1
     :goto_0
     return-void
 
-    .line 96
     :cond_2
     const-string v3, "android.bluetooth.device.action.PAIRING_CANCEL"
 
@@ -113,14 +108,12 @@
 
     check-cast v2, Landroid/bluetooth/BluetoothDevice;
 
-    .line 99
     .local v2, device:Landroid/bluetooth/BluetoothDevice;
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;
 
     #setter for: Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;->mUserConfirmed:Z
     invoke-static {v3, v5}, Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;->access$002(Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;Z)Z
 
-    .line 101
     if-eqz v2, :cond_3
 
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothPairingDialog;

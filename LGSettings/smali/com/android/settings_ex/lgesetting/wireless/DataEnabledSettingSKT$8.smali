@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 153
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$8;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

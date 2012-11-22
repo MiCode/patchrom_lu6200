@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 554
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BtUiEventHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 554
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BtUiEventHandler;-><init>(Lcom/android/settings_ex/bluetooth/BluetoothEventManager;)V
 
     return-void
@@ -149,7 +147,6 @@
 
     if-eqz v6, :cond_2
 
-    .line 581
     iget-object v6, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BtUiEventHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     const v7, 0x7f080af0
@@ -181,18 +178,15 @@
 
     if-eqz v6, :cond_0
 
-    .line 583
     const-string v6, "FILE_NAME"
 
     invoke-virtual {p2, v6}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 584
     .local v2, fileName:Ljava/lang/String;
     if-eqz v2, :cond_0
 
-    .line 586
     iget-object v6, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BtUiEventHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     const v7, 0x7f080af4
@@ -223,18 +217,15 @@
 
     if-eqz v6, :cond_4
 
-    .line 592
     const-string v6, "toast_msg"
 
     invoke-virtual {p2, v6}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 593
     .local v3, message:Ljava/lang/String;
     if-eqz v3, :cond_0
 
-    .line 594
     iget-object v6, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BtUiEventHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     #calls: Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->BtUiToast(Ljava/lang/String;)V
@@ -270,10 +261,8 @@
 
     if-eqz v6, :cond_5
 
-    .line 603
     if-ne v5, v11, :cond_0
 
-    .line 604
     iget-object v6, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BtUiEventHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     const v7, 0x7f080c31
@@ -295,10 +284,8 @@
 
     if-eqz v6, :cond_0
 
-    .line 611
     if-ne v5, v11, :cond_6
 
-    .line 612
     iget-object v6, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BtUiEventHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     const-string v7, "PBAP Connected"
@@ -308,11 +295,9 @@
 
     goto/16 :goto_0
 
-    .line 613
     :cond_6
     if-nez v5, :cond_0
 
-    .line 614
     iget-object v6, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BtUiEventHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     const-string v7, "PBAP Disconnected"
@@ -333,12 +318,10 @@
 
     if-eqz v6, :cond_8
 
-    .line 621
     sput-boolean v10, Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->isRecordStarted:Z
 
     goto/16 :goto_0
 
-    .line 623
     :cond_8
     const-string v6, "voice_video_record_finish"
 
@@ -348,7 +331,6 @@
 
     if-eqz v6, :cond_0
 
-    .line 624
     sput-boolean v9, Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->isRecordStarted:Z
 
     goto/16 :goto_0

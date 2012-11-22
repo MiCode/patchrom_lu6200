@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 157
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -60,7 +59,6 @@
 
     if-nez v1, :cond_0
 
-    .line 163
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -86,13 +84,11 @@
 
     move-result-object v0
 
-    .line 167
     .local v0, message:Landroid/os/Message;
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 168
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothSettings;->mHandler:Landroid/os/Handler;

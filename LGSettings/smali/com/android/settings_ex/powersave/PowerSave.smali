@@ -21,18 +21,14 @@
     .parameter "c"
 
     .prologue
-    .line 102
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 88
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/powersave/PowerSave;->mPowerSavePref:Landroid/content/SharedPreferences;
 
-    .line 103
     sput-object p1, Lcom/android/settings_ex/powersave/PowerSave;->mContext:Landroid/content/Context;
 
-    .line 104
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -41,7 +37,6 @@
 
     sput-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
-    .line 106
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContext:Landroid/content/Context;
 
     const-string v1, "pref_power_save"
@@ -58,7 +53,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/powersave/PowerSave;->mPowerSavePref:Landroid/content/SharedPreferences;
 
-    .line 108
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -107,7 +101,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->applyPowerSaveWifi()V
 
     return-void
@@ -118,7 +111,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->applyPowerSaveSync()V
 
     return-void
@@ -129,7 +121,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->doScreenTimeout()V
 
     return-void
@@ -140,7 +131,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->doFrontLed()V
 
     return-void
@@ -151,7 +141,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->doCpu()V
 
     return-void
@@ -162,7 +151,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->applyPowerSaveBrightness()V
 
     return-void
@@ -173,7 +161,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->applyPowerSaveTouch()V
 
     return-void
@@ -184,7 +171,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->applyPowerSaveCpu()V
 
     return-void
@@ -195,7 +181,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->applyPowerSaveScreenTimeout()V
 
     return-void
@@ -206,7 +191,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->applyPowerSaveFrontLed()V
 
     return-void
@@ -217,7 +201,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->doSync()V
 
     return-void
@@ -228,7 +211,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->doBrightness()V
 
     return-void
@@ -239,7 +221,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->doTouch()V
 
     return-void
@@ -251,7 +232,6 @@
     .prologue
     const/16 v7, 0xff
 
-    .line 307
     sget-object v4, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v5, "power_save_brightness_adjust"
@@ -281,19 +261,16 @@
 
     move-result v1
 
-    .line 315
     .local v1, brightnessPercent:I
     invoke-static {v1}, Lcom/android/settings_ex/powersave/PowerSave;->getValue(I)I
 
     move-result v0
 
-    .line 318
     .local v0, brightness:I
     invoke-static {}, Lcom/android/settings_ex/powersave/PowerSave;->getCurrentBrightness()I
 
     move-result v2
 
-    .line 320
     .local v2, currentBrightness:I
     const-string v4, "PowerSave"
 
@@ -327,21 +304,18 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 323
     sget v4, Lcom/android/settings_ex/powersave/PowerSave;->MINIMUM_BACKLIGHT:I
 
     add-int/2addr v4, v0
 
     if-le v2, v4, :cond_0
 
-    .line 324
     sget v4, Lcom/android/settings_ex/powersave/PowerSave;->MINIMUM_BACKLIGHT:I
 
     add-int/2addr v4, v0
 
     invoke-static {v4}, Lcom/android/settings_ex/powersave/PowerSave;->setBrightness(I)V
 
-    .line 326
     sget-object v4, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v5, "screen_brightness"
@@ -409,7 +383,6 @@
     .locals 3
 
     .prologue
-    .line 233
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "power_save_bt"
@@ -422,14 +395,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 235
     const-string v0, "power_save_bt"
 
     const/4 v1, 0x1
 
     invoke-direct {p0, v0, v1}, Lcom/android/settings_ex/powersave/PowerSave;->sendToOthers(Ljava/lang/String;Z)V
 
-    .line 256
     :cond_0
     return-void
 .end method
@@ -440,7 +411,6 @@
     .prologue
     const/4 v4, 0x2
 
-    .line 293
     invoke-static {}, Lcom/android/settings_ex/lge/OverlayUtils;->isX3Model()Z
 
     move-result v1
@@ -496,22 +466,18 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 299
     if-le v0, v4, :cond_2
 
-    .line 300
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContext:Landroid/content/Context;
 
     invoke-static {v1, v4}, Lcom/android/settings_ex/lge/OverlayUtils;->setCPUMode(Landroid/content/Context;I)V
 
-    .line 301
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "power_save_cpu_restore"
 
     invoke-static {v1, v2, v0}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 303
     :cond_2
     const-string v1, "PowerSave"
 
@@ -550,7 +516,6 @@
     .prologue
     const/16 v5, 0x5dc
 
-    .line 534
     sget-object v2, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v3, "power_save_front_led_adjust"
@@ -588,18 +553,15 @@
 
     move-result v1
 
-    .line 543
     .local v1, value:I
     if-le v0, v1, :cond_0
 
-    .line 544
     sget-object v2, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v3, "frontkey_led_timeout"
 
     invoke-static {v2, v3, v1}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 548
     sget-object v2, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v3, "power_save_front_led_restore"
@@ -615,7 +577,6 @@
     .prologue
     const/16 v5, 0x3a98
 
-    .line 510
     sget-object v2, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v3, "power_save_screen_timeout_adjust"
@@ -689,19 +650,16 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 522
     if-le v0, v1, :cond_0
 
     if-lt v1, v5, :cond_0
 
-    .line 523
     sget-object v2, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v3, "screen_off_timeout"
 
     invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 527
     sget-object v2, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v3, "power_save_screen_timeout_restore"
@@ -717,7 +675,6 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 215
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "power_save_sync"
@@ -728,17 +685,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 222
     invoke-static {}, Landroid/content/ContentResolver;->getMasterSyncAutomatically()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 223
     invoke-static {v2}, Landroid/content/ContentResolver;->setMasterSyncAutomatically(Z)V
 
-    .line 226
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "power_save_sync_restore"
@@ -760,7 +714,6 @@
 
     const/4 v2, 0x0
 
-    .line 493
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "power_save_touch"
@@ -788,14 +741,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 499
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "haptic_feedback_enabled"
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 502
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "power_save_touch_restore"
@@ -809,7 +760,6 @@
     .locals 3
 
     .prologue
-    .line 179
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "power_save_wifi"
@@ -822,14 +772,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 182
     const-string v0, "power_save_wifi"
 
     const/4 v1, 0x1
 
     invoke-direct {p0, v0, v1}, Lcom/android/settings_ex/powersave/PowerSave;->sendToOthers(Ljava/lang/String;Z)V
 
-    .line 193
     :cond_0
     return-void
 .end method
@@ -840,7 +788,6 @@
     .prologue
     const/4 v4, -0x1
 
-    .line 956
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "power_save_brightness_restore"
@@ -873,31 +820,26 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 961
     if-le v0, v4, :cond_0
 
     sget v1, Lcom/android/settings_ex/powersave/PowerSave;->MINIMUM_BACKLIGHT:I
 
     if-lt v0, v1, :cond_0
 
-    .line 962
     invoke-static {v0}, Lcom/android/settings_ex/powersave/PowerSave;->setBrightness(I)V
 
-    .line 963
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "screen_brightness"
 
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 966
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "power_save_brightness_restore"
 
     invoke-static {v1, v2, v4}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 969
     :cond_0
     return-void
 .end method
@@ -908,7 +850,6 @@
     .prologue
     const/4 v4, -0x1
 
-    .line 947
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "power_save_cpu_restore"
@@ -941,22 +882,18 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 949
     if-ltz v0, :cond_0
 
-    .line 950
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContext:Landroid/content/Context;
 
     invoke-static {v1, v0}, Lcom/android/settings_ex/lge/OverlayUtils;->setCPUMode(Landroid/content/Context;I)V
 
-    .line 951
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "power_save_cpu_restore"
 
     invoke-static {v1, v2, v4}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 953
     :cond_0
     return-void
 .end method
@@ -967,7 +904,6 @@
     .prologue
     const/4 v4, -0x1
 
-    .line 998
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "power_save_front_led_restore"
@@ -1000,24 +936,20 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1003
     if-le v0, v4, :cond_0
 
-    .line 1004
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "frontkey_led_timeout"
 
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1007
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "power_save_front_led_restore"
 
     invoke-static {v1, v2, v4}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1010
     :cond_0
     return-void
 .end method
@@ -1028,7 +960,6 @@
     .prologue
     const/4 v4, -0x1
 
-    .line 983
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "power_save_screen_timeout_restore"
@@ -1061,26 +992,22 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 989
     const/16 v1, 0x3a98
 
     if-lt v0, v1, :cond_0
 
-    .line 990
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "screen_off_timeout"
 
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 993
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "power_save_screen_timeout_restore"
 
     invoke-static {v1, v2, v4}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 996
     :cond_0
     return-void
 .end method
@@ -1091,7 +1018,6 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 845
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "power_save_sync_restore"
@@ -1135,7 +1061,6 @@
 
     const/4 v2, 0x1
 
-    .line 971
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "power_save_touch_restore"
@@ -1146,7 +1071,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 973
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "haptic_feedback_enabled"
@@ -1157,14 +1081,12 @@
 
     if-eq v0, v2, :cond_0
 
-    .line 975
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "haptic_feedback_enabled"
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 978
     :cond_0
     sget-object v0, Lcom/android/settings_ex/powersave/PowerSave;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -1430,7 +1352,6 @@
     .parameter "percent"
 
     .prologue
-    .line 588
     sget v2, Lcom/android/settings_ex/powersave/PowerSave;->MINIMUM_BACKLIGHT:I
 
     rsub-int v2, v2, 0xff
@@ -1500,14 +1421,12 @@
 
     invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 824
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.android.settings_ex.powersave.POWERSAVE_ACTIVATION_TO_OTHERS"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 825
     .local v0, intent:Landroid/content/Intent;
     const-string v2, "powersave_activation"
 
@@ -1518,31 +1437,25 @@
     :goto_1
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 826
     if-eqz p1, :cond_0
 
-    .line 827
     const-string v1, "powersave_name"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 828
     :cond_0
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 829
     return-void
 
-    .line 823
     .end local v0           #intent:Landroid/content/Intent;
     :cond_1
     const-string v1, "restore"
 
     goto :goto_0
 
-    .line 825
     .restart local v0       #intent:Landroid/content/Intent;
     :cond_2
     const/4 v1, 0x0
@@ -1557,12 +1470,10 @@
     .prologue
     const/4 v6, 0x1
 
-    .line 556
     invoke-static {}, Lcom/android/settings_ex/powersave/PowerSave;->getBrightnessMode()I
 
     move-result v0
 
-    .line 557
     .local v0, automatic_mode:I
     sget-object v3, Lcom/android/settings_ex/powersave/PowerSave;->mContext:Landroid/content/Context;
 
@@ -1655,24 +1566,20 @@
     .locals 2
 
     .prologue
-    .line 116
     const-string v0, "PowerSave"
 
     const-string v1, "Start doPowerSave()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 118
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSave;->applyPowerSaveBt()V
 
-    .line 120
     new-instance v0, Lcom/android/settings_ex/powersave/PowerSave$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/powersave/PowerSave$1;-><init>(Lcom/android/settings_ex/powersave/PowerSave;)V
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSave$1;->start()V
 
-    .line 141
     return-void
 .end method
 
@@ -1680,21 +1587,18 @@
     .locals 2
 
     .prologue
-    .line 794
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
     invoke-direct {p0, v0, v1}, Lcom/android/settings_ex/powersave/PowerSave;->sendToOthers(Ljava/lang/String;Z)V
 
-    .line 798
     new-instance v0, Lcom/android/settings_ex/powersave/PowerSave$2;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/powersave/PowerSave$2;-><init>(Lcom/android/settings_ex/powersave/PowerSave;)V
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSave$2;->start()V
 
-    .line 820
     return-void
 .end method
 
@@ -2233,7 +2137,6 @@
 
     move-result-object v1
 
-    .line 636
     const-string v6, "com.android.settings_ex.powersave.PowerSaveService"
 
     invoke-virtual {v1, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2264,20 +2167,17 @@
     .locals 2
 
     .prologue
-    .line 651
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.android.settings_ex.powersave.action.ACTIVATED"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 652
     .local v0, i:Landroid/content/Intent;
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 653
     return-void
 .end method
 
@@ -2285,19 +2185,16 @@
     .locals 2
 
     .prologue
-    .line 647
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.android.settings_ex.powersave.action.STATE_CHANGED"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 648
     .local v0, i:Landroid/content/Intent;
     sget-object v1, Lcom/android/settings_ex/powersave/PowerSave;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 649
     return-void
 .end method

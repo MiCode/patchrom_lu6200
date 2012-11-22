@@ -58,7 +58,6 @@
 
     const/4 v3, 0x0
 
-    .line 224
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
     const-string v1, "Cancel"
@@ -69,7 +68,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;->Cancel:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
-    .line 225
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
     const-string v1, "CancelDisabled"
@@ -80,7 +78,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;->CancelDisabled:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
-    .line 226
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
     const-string v1, "Retry"
@@ -91,7 +88,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;->Retry:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
-    .line 227
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
     const-string v1, "RetryDisabled"
@@ -102,7 +98,6 @@
 
     sput-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;->RetryDisabled:Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
-    .line 228
     new-instance v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
     const-string v1, "Gone"
@@ -156,16 +151,12 @@
     .end annotation
 
     .prologue
-    .line 235
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 236
     iput p3, p0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;->text:I
 
-    .line 237
     iput-boolean p4, p0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;->enabled:Z
 
-    .line 238
     return-void
 .end method
 
@@ -174,7 +165,6 @@
     .parameter
 
     .prologue
-    .line 223
     const-class v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -190,7 +180,6 @@
     .locals 1
 
     .prologue
-    .line 223
     sget-object v0, Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;->$VALUES:[Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
     invoke-virtual {v0}, [Lcom/android/settings_ex/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;->clone()Ljava/lang/Object;

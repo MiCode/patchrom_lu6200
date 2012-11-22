@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 44
     iput-object p1, p0, Lcom/android/settings_ex/DockSettings$1;->this$0:Lcom/android/settings_ex/DockSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -53,13 +52,11 @@
 
     if-eqz v0, :cond_0
 
-    .line 48
     iget-object v0, p0, Lcom/android/settings_ex/DockSettings$1;->this$0:Lcom/android/settings_ex/DockSettings;
 
     #calls: Lcom/android/settings_ex/DockSettings;->handleDockChange(Landroid/content/Intent;)V
     invoke-static {v0, p2}, Lcom/android/settings_ex/DockSettings;->access$000(Lcom/android/settings_ex/DockSettings;Landroid/content/Intent;)V
 
-    .line 50
     :cond_0
     return-void
 .end method

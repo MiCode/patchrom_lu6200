@@ -15,10 +15,8 @@
     .locals 1
 
     .prologue
-    .line 49
     invoke-direct {p0}, Landroid/app/DialogFragment;-><init>()V
 
-    .line 50
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothVisibilityTimeoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -45,15 +43,12 @@
     .parameter "which"
 
     .prologue
-    .line 65
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothVisibilityTimeoutFragment;->mDiscoverableEnabler:Lcom/android/settings_ex/bluetooth/BluetoothDiscoverableEnabler;
 
     invoke-virtual {v0, p2}, Lcom/android/settings_ex/bluetooth/BluetoothDiscoverableEnabler;->setDiscoverableTimeout(I)V
 
-    .line 66
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothVisibilityTimeoutFragment;->dismiss()V
 
-    .line 67
     return-void
 .end method
 

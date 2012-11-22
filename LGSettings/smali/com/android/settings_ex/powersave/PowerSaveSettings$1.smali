@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 94
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -74,13 +73,11 @@
 
     move-result v6
 
-    .line 104
     .local v6, scale:I
     invoke-static {p2}, Lcom/android/settings_ex/Utils;->getBatteryPercentage(Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 105
     .local v1, batteryLevel:Ljava/lang/String;
     iget-object v8, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveSettings;
 

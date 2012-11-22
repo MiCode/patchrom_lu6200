@@ -80,31 +80,24 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 63
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
-    .line 105
     iput-boolean v0, p0, Lcom/android/settings_ex/ApnSettings;->mDomesticApn:Z
 
-    .line 106
     iput-boolean v0, p0, Lcom/android/settings_ex/ApnSettings;->mRoamingApn:Z
 
-    .line 109
     iput v0, p0, Lcom/android/settings_ex/ApnSettings;->mTetheredSate:I
 
-    .line 114
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/ApnSettings;->csActive:Z
 
-    .line 116
     new-instance v0, Lcom/android/settings_ex/ApnSettings$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/ApnSettings$1;-><init>(Lcom/android/settings_ex/ApnSettings;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/ApnSettings;->mMobileStateReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 637
     return-void
 .end method
 
@@ -113,7 +106,6 @@
     .parameter "x0"
 
     .prologue
-    .line 63
     invoke-static {p0}, Lcom/android/settings_ex/ApnSettings;->getMobileDataState(Landroid/content/Intent;)Lcom/android/internal/telephony/Phone$DataState;
 
     move-result-object v0
@@ -125,7 +117,6 @@
     .locals 1
 
     .prologue
-    .line 63
     sget-boolean v0, Lcom/android/settings_ex/ApnSettings;->mRestoreDefaultApnMode:Z
 
     return v0
@@ -136,7 +127,6 @@
     .parameter "x0"
 
     .prologue
-    .line 63
     sput-boolean p0, Lcom/android/settings_ex/ApnSettings;->mRestoreDefaultApnMode:Z
 
     return p0
@@ -147,7 +137,6 @@
     .parameter "x0"
 
     .prologue
-    .line 63
     invoke-direct {p0}, Lcom/android/settings_ex/ApnSettings;->fillList()V
 
     return-void
@@ -159,7 +148,6 @@
     .parameter "x1"
 
     .prologue
-    .line 63
     iput p1, p0, Lcom/android/settings_ex/ApnSettings;->mTetheredSate:I
 
     return p1
@@ -169,7 +157,6 @@
     .locals 1
 
     .prologue
-    .line 63
     sget-object v0, Lcom/android/settings_ex/ApnSettings;->DEFAULTAPN_URI:Landroid/net/Uri;
 
     return-object v0
@@ -429,14 +416,12 @@
 
     if-nez v2, :cond_8
 
-    .line 278
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-object v2, v0, Lcom/android/settings_ex/ApnSettings;->mSelectedKey:Ljava/lang/String;
 
-    .line 283
     :goto_1
     invoke-direct/range {p0 .. p0}, Lcom/android/settings_ex/ApnSettings;->getSelectedApnKey()Ljava/lang/String;
 
@@ -446,28 +431,23 @@
 
     iput-object v2, v0, Lcom/android/settings_ex/ApnSettings;->mSelectedKey:Ljava/lang/String;
 
-    .line 284
     const/4 v2, 0x1
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mDomesticApn:Z
 
-    .line 285
     const/4 v2, 0x1
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mRoamingApn:Z
 
-    .line 287
     if-eqz v11, :cond_5
 
-    .line 289
     :try_start_0
     invoke-interface {v11}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 290
     :goto_2
     invoke-interface {v11}, Landroid/database/Cursor;->isAfterLast()Z
 
@@ -524,13 +504,11 @@
 
     invoke-direct {v0, v1}, Lcom/android/settings_ex/ApnPreference;-><init>(Landroid/content/Context;)V
 
-    .line 302
     .local v20, pref:Lcom/android/settings_ex/ApnPreference;
     move-object/from16 v0, v20
 
     invoke-virtual {v0, v15}, Lcom/android/settings_ex/ApnPreference;->setKey(Ljava/lang/String;)V
 
-    .line 303
     const-string v2, "VZW"
 
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
@@ -543,22 +521,18 @@
 
     if-eqz v2, :cond_d
 
-    .line 304
     move-object/from16 v0, v20
 
     invoke-virtual {v0, v8}, Lcom/android/settings_ex/ApnPreference;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 306
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/android/settings_ex/ApnSettings;->mTetheredSate:I
 
     if-nez v2, :cond_1
 
-    .line 307
     invoke-virtual/range {v20 .. v20}, Lcom/android/settings_ex/ApnPreference;->setUnChecked()V
 
-    .line 309
     :cond_1
     const-string v2, "VZWADMIN"
 
@@ -568,14 +542,12 @@
 
     if-eqz v2, :cond_9
 
-    .line 310
     const-string v2, "ADMINISTRATIVE PDN APN"
 
     move-object/from16 v0, v20
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/ApnPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 324
     :goto_3
     const/4 v2, 0x0
 
@@ -583,14 +555,12 @@
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/ApnPreference;->setPersistent(Z)V
 
-    .line 325
     move-object/from16 v0, v20
 
     move-object/from16 v1, p0
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/ApnPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 329
     if-eqz v26, :cond_2
 
     const-string v2, ""
@@ -1103,20 +1073,17 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/ApnPreference;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 322
     move-object/from16 v0, v20
 
     invoke-virtual {v0, v8}, Lcom/android/settings_ex/ApnPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_3
 
-    .line 329
     :cond_e
     const/16 v23, 0x0
 
     goto/16 :goto_4
 
-    .line 341
     .restart local v23       #selectable:Z
     :cond_f
     const-string v2, "vzwapp,mms"
@@ -1226,24 +1193,20 @@
 
     if-eqz v2, :cond_17
 
-    .line 354
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mDomesticApn:Z
 
     if-eqz v2, :cond_11
 
-    .line 355
     const/16 v16, 0x1
 
-    .line 356
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mDomesticApn:Z
 
-    .line 428
     :cond_11
     :goto_8
     const-string v2, "LGU"
@@ -1258,14 +1221,12 @@
 
     if-nez v2, :cond_12
 
-    .line 429
     move-object/from16 v0, v20
 
     move/from16 v1, v16
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/ApnPreference;->setLockable(Z)V
 
-    .line 431
     :cond_12
     move-object/from16 v0, p0
 
@@ -1273,10 +1234,8 @@
 
     if-nez v2, :cond_13
 
-    .line 432
     invoke-virtual/range {v20 .. v20}, Lcom/android/settings_ex/ApnPreference;->setUnChecked()V
 
-    .line 435
     :cond_13
     const-string v2, "ApnSettings"
 
@@ -1358,10 +1317,8 @@
 
     if-eqz v2, :cond_14
 
-    .line 438
     invoke-virtual/range {v20 .. v20}, Lcom/android/settings_ex/ApnPreference;->setChecked()V
 
-    .line 441
     :cond_14
     move-object/from16 v0, p0
 
@@ -1404,17 +1361,14 @@
 
     if-eqz v2, :cond_18
 
-    .line 359
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mDomesticApn:Z
 
     if-eqz v2, :cond_11
 
-    .line 360
     const/16 v16, 0x1
 
-    .line 361
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
@@ -1435,17 +1389,14 @@
 
     if-eqz v2, :cond_11
 
-    .line 364
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mDomesticApn:Z
 
     if-eqz v2, :cond_11
 
-    .line 365
     const/16 v16, 0x1
 
-    .line 366
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
@@ -1564,24 +1515,20 @@
 
     if-eqz v2, :cond_1c
 
-    .line 381
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mDomesticApn:Z
 
     if-eqz v2, :cond_11
 
-    .line 382
     const/16 v16, 0x1
 
-    .line 383
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mDomesticApn:Z
 
-    .line 385
     move-object/from16 v0, v20
 
     move/from16 v1, v16
@@ -1600,27 +1547,22 @@
 
     if-eqz v2, :cond_11
 
-    .line 388
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mRoamingApn:Z
 
     if-eqz v2, :cond_1d
 
-    .line 389
     const/16 v16, 0x1
 
-    .line 390
     const/16 v23, 0x0
 
-    .line 392
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mRoamingApn:Z
 
-    .line 399
     :goto_9
     move-object/from16 v0, v20
 
@@ -1656,24 +1598,20 @@
 
     if-eqz v2, :cond_1f
 
-    .line 404
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mDomesticApn:Z
 
     if-eqz v2, :cond_11
 
-    .line 405
     const/16 v16, 0x1
 
-    .line 406
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mDomesticApn:Z
 
-    .line 408
     move-object/from16 v0, v20
 
     move/from16 v1, v16
@@ -1692,27 +1630,22 @@
 
     if-eqz v2, :cond_11
 
-    .line 411
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mRoamingApn:Z
 
     if-eqz v2, :cond_20
 
-    .line 412
     const/16 v16, 0x1
 
-    .line 413
     const/16 v23, 0x0
 
-    .line 415
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/settings_ex/ApnSettings;->mRoamingApn:Z
 
-    .line 422
     :goto_a
     move-object/from16 v0, v20
 
@@ -1990,20 +1923,16 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 595
     const/16 v1, 0x3e9
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/ApnSettings;->showDialog(I)V
 
-    .line 596
     sput-boolean v4, Lcom/android/settings_ex/ApnSettings;->mRestoreDefaultApnMode:Z
 
-    .line 598
     iget-object v1, p0, Lcom/android/settings_ex/ApnSettings;->mRestoreApnUiHandler:Lcom/android/settings_ex/ApnSettings$RestoreApnUiHandler;
 
     if-nez v1, :cond_0
 
-    .line 599
     new-instance v1, Lcom/android/settings_ex/ApnSettings$RestoreApnUiHandler;
 
     const/4 v2, 0x0
@@ -2012,31 +1941,26 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/ApnSettings;->mRestoreApnUiHandler:Lcom/android/settings_ex/ApnSettings$RestoreApnUiHandler;
 
-    .line 602
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/ApnSettings;->mRestoreApnProcessHandler:Lcom/android/settings_ex/ApnSettings$RestoreApnProcessHandler;
 
     if-nez v1, :cond_1
 
-    .line 603
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "Restore default APN Handler: Process Thread"
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    .line 605
     .local v0, restoreDefaultApnThread:Landroid/os/HandlerThread;
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 607
     invoke-virtual {v0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 608
     new-instance v1, Lcom/android/settings_ex/ApnSettings$RestoreApnProcessHandler;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -2049,14 +1973,12 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/ApnSettings;->mRestoreApnProcessHandler:Lcom/android/settings_ex/ApnSettings$RestoreApnProcessHandler;
 
-    .line 613
     .end local v0           #restoreDefaultApnThread:Landroid/os/HandlerThread;
     :cond_1
     iget-object v1, p0, Lcom/android/settings_ex/ApnSettings;->mRestoreApnProcessHandler:Lcom/android/settings_ex/ApnSettings$RestoreApnProcessHandler;
 
     invoke-virtual {v1, v4}, Lcom/android/settings_ex/ApnSettings$RestoreApnProcessHandler;->sendEmptyMessage(I)Z
 
-    .line 615
     return v4
 .end method
 
@@ -2190,21 +2112,17 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 561
     iput-object p1, p0, Lcom/android/settings_ex/ApnSettings;->mSelectedKey:Ljava/lang/String;
 
-    .line 562
     invoke-virtual {p0}, Lcom/android/settings_ex/ApnSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 564
     .local v0, resolver:Landroid/content/ContentResolver;
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    .line 565
     .local v1, values:Landroid/content/ContentValues;
     const-string v2, "apn_id"
 
@@ -2212,12 +2130,10 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 566
     sget-object v2, Lcom/android/settings_ex/ApnSettings;->PREFERAPN_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v2, v1, v4, v4}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 567
     return-void
 .end method
 
@@ -2228,15 +2144,12 @@
     .parameter "icicle"
 
     .prologue
-    .line 166
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 168
     const v0, 0x7f060004
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/ApnSettings;->addPreferencesFromResource(I)V
 
-    .line 169
     invoke-virtual {p0}, Lcom/android/settings_ex/ApnSettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
@@ -2254,21 +2167,18 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/ApnSettings;->mMobileStateFilter:Landroid/content/IntentFilter;
 
-    .line 173
     iget-object v0, p0, Lcom/android/settings_ex/ApnSettings;->mMobileStateFilter:Landroid/content/IntentFilter;
 
     const-string v1, "android.net.conn.TETHER_STATE_CHANGED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 176
     new-instance v0, Lcom/android/settings_ex/ApnSettings$2;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/ApnSettings$2;-><init>(Lcom/android/settings_ex/ApnSettings;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/ApnSettings;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
-    .line 194
     const-string v0, "phone"
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/ApnSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -2279,7 +2189,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/ApnSettings;->mPhone:Landroid/telephony/TelephonyManager;
 
-    .line 195
     iget-object v0, p0, Lcom/android/settings_ex/ApnSettings;->mPhone:Landroid/telephony/TelephonyManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/ApnSettings;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
@@ -2344,19 +2253,16 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 514
     iget v1, p0, Lcom/android/settings_ex/ApnSettings;->mTetheredSate:I
 
     if-ne v1, v0, :cond_0
 
-    .line 516
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v1
 
     packed-switch v1, :pswitch_data_0
 
-    .line 528
     :cond_0
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
@@ -2365,19 +2271,16 @@
     :goto_0
     return v0
 
-    .line 518
     :pswitch_0
     invoke-direct {p0}, Lcom/android/settings_ex/ApnSettings;->addNewApn()V
 
     goto :goto_0
 
-    .line 522
     :pswitch_1
     invoke-direct {p0}, Lcom/android/settings_ex/ApnSettings;->restoreDefaultApn()Z
 
     goto :goto_0
 
-    .line 516
     nop
 
     :pswitch_data_0
@@ -2391,15 +2294,12 @@
     .locals 1
 
     .prologue
-    .line 223
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
-    .line 225
     iget-object v0, p0, Lcom/android/settings_ex/ApnSettings;->mMobileStateReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/ApnSettings;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 226
     return-void
 .end method
 
@@ -2456,18 +2356,15 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 553
     instance-of v0, p2, Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 554
     check-cast p2, Ljava/lang/String;
 
     .end local p2
     invoke-direct {p0, p2}, Lcom/android/settings_ex/ApnSettings;->setSelectedApnKey(Ljava/lang/String;)V
 
-    .line 557
     :cond_0
     const/4 v0, 0x1
 
@@ -2513,7 +2410,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 541
     check-cast p2, Lcom/android/settings_ex/ApnPreference;
 
     .end local p2
@@ -2559,12 +2455,10 @@
     .parameter "dialog"
 
     .prologue
-    .line 671
     const/16 v0, 0x3e9
 
     if-ne p1, v0, :cond_0
 
-    .line 672
     invoke-virtual {p0}, Lcom/android/settings_ex/ApnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
@@ -2587,18 +2481,14 @@
 
     const/4 v3, 0x0
 
-    .line 494
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
-    .line 496
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
-    .line 497
     iget v0, p0, Lcom/android/settings_ex/ApnSettings;->mTetheredSate:I
 
     if-ne v0, v4, :cond_0
 
-    .line 499
     invoke-virtual {p0}, Lcom/android/settings_ex/ApnSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -2647,17 +2537,14 @@
     .locals 2
 
     .prologue
-    .line 203
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    .line 205
     iget-object v0, p0, Lcom/android/settings_ex/ApnSettings;->mMobileStateReceiver:Landroid/content/BroadcastReceiver;
 
     iget-object v1, p0, Lcom/android/settings_ex/ApnSettings;->mMobileStateFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings_ex/ApnSettings;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 207
     const-string v0, "DCM"
 
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
@@ -2678,25 +2565,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 209
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/ApnSettings;->csActive:Z
 
-    .line 214
     :goto_0
     sget-boolean v0, Lcom/android/settings_ex/ApnSettings;->mRestoreDefaultApnMode:Z
 
     if-nez v0, :cond_1
 
-    .line 215
     invoke-direct {p0}, Lcom/android/settings_ex/ApnSettings;->fillList()V
 
-    .line 219
     :goto_1
     return-void
 
-    .line 211
     :cond_0
     const/4 v0, 0x0
 

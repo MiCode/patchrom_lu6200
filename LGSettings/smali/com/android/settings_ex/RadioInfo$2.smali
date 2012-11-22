@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 175
     iput-object p1, p0, Lcom/android/settings_ex/RadioInfo$2;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -69,14 +68,12 @@
 
     goto :goto_0
 
-    .line 188
     :sswitch_2
     iget-object v2, p0, Lcom/android/settings_ex/RadioInfo$2;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #calls: Lcom/android/settings_ex/RadioInfo;->updateServiceState()V
     invoke-static {v2}, Lcom/android/settings_ex/RadioInfo;->access$1200(Lcom/android/settings_ex/RadioInfo;)V
 
-    .line 189
     iget-object v2, p0, Lcom/android/settings_ex/RadioInfo$2;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #calls: Lcom/android/settings_ex/RadioInfo;->updatePowerState()V
@@ -107,13 +104,11 @@
 
     aget v1, v2, v3
 
-    .line 197
     .local v1, type:I
     const/16 v2, 0x9
 
     if-ge v1, v2, :cond_0
 
-    .line 199
     iget-object v2, p0, Lcom/android/settings_ex/RadioInfo$2;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->preferredNetworkType:Landroid/widget/Spinner;
@@ -141,20 +136,17 @@
 
     goto :goto_0
 
-    .line 207
     .end local v0           #ar:Landroid/os/AsyncResult;
     :sswitch_4
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Landroid/os/AsyncResult;
 
-    .line 208
     .restart local v0       #ar:Landroid/os/AsyncResult;
     iget-object v2, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     if-eqz v2, :cond_0
 
-    .line 209
     iget-object v2, p0, Lcom/android/settings_ex/RadioInfo$2;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->phone:Lcom/android/internal/telephony/Phone;
@@ -172,20 +164,17 @@
 
     goto :goto_0
 
-    .line 214
     .end local v0           #ar:Landroid/os/AsyncResult;
     :sswitch_5
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Landroid/os/AsyncResult;
 
-    .line 215
     .restart local v0       #ar:Landroid/os/AsyncResult;
     iget-object v2, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     if-nez v2, :cond_2
 
-    .line 216
     iget-object v3, p0, Lcom/android/settings_ex/RadioInfo$2;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     iget-object v2, v0, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
@@ -212,20 +201,17 @@
 
     goto :goto_0
 
-    .line 222
     .end local v0           #ar:Landroid/os/AsyncResult;
     :sswitch_6
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Landroid/os/AsyncResult;
 
-    .line 223
     .restart local v0       #ar:Landroid/os/AsyncResult;
     iget-object v2, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     if-eqz v2, :cond_3
 
-    .line 224
     iget-object v2, p0, Lcom/android/settings_ex/RadioInfo$2;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->smsc:Landroid/widget/EditText;
@@ -268,18 +254,15 @@
 
     invoke-virtual {v2, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 231
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Landroid/os/AsyncResult;
 
-    .line 232
     .restart local v0       #ar:Landroid/os/AsyncResult;
     iget-object v2, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     if-eqz v2, :cond_0
 
-    .line 233
     iget-object v2, p0, Lcom/android/settings_ex/RadioInfo$2;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->smsc:Landroid/widget/EditText;

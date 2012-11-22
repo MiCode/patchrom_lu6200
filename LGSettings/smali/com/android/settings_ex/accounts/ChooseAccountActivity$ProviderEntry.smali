@@ -40,16 +40,12 @@
     .parameter "accountType"
 
     .prologue
-    .line 71
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 72
     iput-object p1, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
-    .line 73
     iput-object p2, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivity$ProviderEntry;->type:Ljava/lang/String;
 
-    .line 74
     return-void
 .end method
 
@@ -58,7 +54,6 @@
     .parameter "x0"
 
     .prologue
-    .line 68
     iget-object v0, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivity$ProviderEntry;->type:Ljava/lang/String;
 
     return-object v0
@@ -69,7 +64,6 @@
     .parameter "x0"
 
     .prologue
-    .line 68
     iget-object v0, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
     return-object v0
@@ -82,30 +76,24 @@
     .parameter "another"
 
     .prologue
-    .line 77
     iget-object v0, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_0
 
-    .line 78
     const/4 v0, -0x1
 
-    .line 83
     :goto_0
     return v0
 
-    .line 80
     :cond_0
     iget-object v0, p1, Lcom/android/settings_ex/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_1
 
-    .line 81
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 83
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
@@ -123,7 +111,6 @@
     .parameter "x0"
 
     .prologue
-    .line 68
     check-cast p1, Lcom/android/settings_ex/accounts/ChooseAccountActivity$ProviderEntry;
 
     .end local p1

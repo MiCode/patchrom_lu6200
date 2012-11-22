@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 297
     iput-object p1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$3;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,59 +41,49 @@
     .parameter "group"
 
     .prologue
-    .line 299
     const-string v0, "WifiP2pSettings"
 
     const-string v1, "[madoga] onGroupInfoAvailable ----------"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 301
     if-nez p1, :cond_0
 
-    .line 302
     const-string v0, "WifiP2pSettings"
 
     const-string v1, "[madoga] group is null"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 303
     const-string v0, ""
 
     invoke-static {v0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$402(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 329
     :goto_0
     return-void
 
-    .line 306
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$3;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     #setter for: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->mGroup:Landroid/net/wifi/p2p/WifiP2pGroup;
     invoke-static {v0, p1}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$902(Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;Landroid/net/wifi/p2p/WifiP2pGroup;)Landroid/net/wifi/p2p/WifiP2pGroup;
 
-    .line 307
     invoke-virtual {p1}, Landroid/net/wifi/p2p/WifiP2pGroup;->isGroupOwner()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 308
     const-string v0, "WifiP2pSettings"
 
     const-string v1, "[madoga] isGroup : true"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 309
     const/4 v0, 0x1
 
     invoke-static {v0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$1002(Z)Z
 
-    .line 310
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$3;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     #getter for: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->mGroup:Landroid/net/wifi/p2p/WifiP2pGroup;
@@ -108,7 +97,6 @@
 
     invoke-static {v0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$402(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 311
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$3;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$3;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
@@ -169,14 +157,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 320
     :goto_1
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$3;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     #calls: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->updateDevicePref()V
     invoke-static {v0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$700(Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;)V
 
-    .line 323
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$3;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     invoke-static {}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->getWifiP2pStatus()Ljava/lang/Boolean;
@@ -190,7 +176,6 @@
     #calls: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->updateMenuGroupOwner(Z)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$1200(Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;Z)V
 
-    .line 327
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$3;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     #getter for: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->mPassword:Landroid/preference/Preference;
@@ -214,17 +199,14 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 315
     const/4 v0, 0x0
 
     invoke-static {v0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$1002(Z)Z
 
-    .line 316
     const-string v0, ""
 
     invoke-static {v0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$402(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 317
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$3;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     const-string v1, ""

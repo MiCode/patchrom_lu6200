@@ -36,7 +36,6 @@
     .locals 1
 
     .prologue
-    .line 273
     new-instance v0, Lcom/android/settings_ex/VibrateVolumePreference$SavedState$1;
 
     invoke-direct {v0}, Lcom/android/settings_ex/VibrateVolumePreference$SavedState$1;-><init>()V
@@ -51,17 +50,14 @@
     .parameter "source"
 
     .prologue
-    .line 253
     invoke-direct {p0, p1}, Landroid/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 250
     new-instance v0, Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;
 
     invoke-direct {v0}, Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;->mVolumeStore:Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;
 
-    .line 254
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;->mVolumeStore:Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -70,7 +66,6 @@
 
     iput v1, v0, Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;->volume:I
 
-    .line 255
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;->mVolumeStore:Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -88,17 +83,14 @@
     .parameter "superState"
 
     .prologue
-    .line 270
     invoke-direct {p0, p1}, Landroid/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
-    .line 250
     new-instance v0, Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;
 
     invoke-direct {v0}, Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;->mVolumeStore:Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;
 
-    .line 271
     return-void
 .end method
 
@@ -108,7 +100,6 @@
     .locals 1
 
     .prologue
-    .line 266
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;->mVolumeStore:Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;
 
     return-object v0
@@ -120,23 +111,19 @@
     .parameter "flags"
 
     .prologue
-    .line 260
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 261
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;->mVolumeStore:Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;
 
     iget v0, v0, Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;->volume:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 262
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;->mVolumeStore:Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;
 
     iget v0, v0, Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;->originalVolume:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 263
     return-void
 .end method

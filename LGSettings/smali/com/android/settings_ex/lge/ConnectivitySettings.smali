@@ -78,27 +78,20 @@
 
     const/4 v7, 0x0
 
-    .line 93
     sput-boolean v9, Lcom/android/settings_ex/lge/ConnectivitySettings;->sSupportPCSuite:Z
 
-    .line 94
     sput-boolean v8, Lcom/android/settings_ex/lge/ConnectivitySettings;->sSupportOSP3:Z
 
-    .line 129
     sput-object v7, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPAsInterfaceMethod:Ljava/lang/reflect/Method;
 
-    .line 130
     sput-object v7, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPIsConnectedMethod:Ljava/lang/reflect/Method;
 
-    .line 131
     sput-object v7, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPgetTransportMethod:Ljava/lang/reflect/Method;
 
-    .line 134
     sget-boolean v7, Lcom/lge/config/ConfigBuildFlags;->CAPP_OSP:Z
 
     if-eqz v7, :cond_3
 
-    .line 136
     :try_start_0
     const-string v7, "com.lge.osp.IOSPService"
 
@@ -178,14 +171,12 @@
 
     sput-object v7, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPAsInterfaceMethod:Ljava/lang/reflect/Method;
 
-    .line 154
     .end local v1           #binderClass:Ljava/lang/Class;
     :cond_1
     sget-object v7, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPIsConnectedMethod:Ljava/lang/reflect/Method;
 
     if-nez v7, :cond_2
 
-    .line 155
     const-string v8, "isConnected"
 
     const/4 v7, 0x0
@@ -198,13 +189,11 @@
 
     sput-object v7, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPIsConnectedMethod:Ljava/lang/reflect/Method;
 
-    .line 159
     :cond_2
     sget-object v7, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPgetTransportMethod:Ljava/lang/reflect/Method;
 
     if-nez v7, :cond_3
 
-    .line 160
     const-string v8, "getTransport"
 
     const/4 v7, 0x0
@@ -259,22 +248,18 @@
     .locals 1
 
     .prologue
-    .line 68
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
-    .line 128
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mIOSPService:Ljava/lang/Object;
 
-    .line 170
     new-instance v0, Lcom/android/settings_ex/lge/ConnectivitySettings$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/lge/ConnectivitySettings$1;-><init>(Lcom/android/settings_ex/lge/ConnectivitySettings;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mStateReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 438
     return-void
 .end method
 
@@ -284,7 +269,6 @@
     .parameter "x1"
 
     .prologue
-    .line 68
     iput-boolean p1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbConnection:Z
 
     return p1
@@ -295,7 +279,6 @@
     .parameter "x0"
 
     .prologue
-    .line 68
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     return-object v0
@@ -305,7 +288,6 @@
     .locals 1
 
     .prologue
-    .line 68
     sget-object v0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPIsConnectedMethod:Ljava/lang/reflect/Method;
 
     return-object v0
@@ -316,7 +298,6 @@
     .parameter "x0"
 
     .prologue
-    .line 68
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -328,7 +309,6 @@
     .locals 1
 
     .prologue
-    .line 68
     sget-object v0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPAsInterfaceMethod:Ljava/lang/reflect/Method;
 
     return-object v0
@@ -340,7 +320,6 @@
     .parameter "x1"
 
     .prologue
-    .line 68
     invoke-direct {p0, p1}, Lcom/android/settings_ex/lge/ConnectivitySettings;->updateToggles(Ljava/lang/String;)V
 
     return-void
@@ -351,7 +330,6 @@
     .parameter "x0"
 
     .prologue
-    .line 68
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
 
     return-object v0
@@ -362,7 +340,6 @@
     .parameter "x0"
 
     .prologue
-    .line 68
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
 
     return-object v0
@@ -372,7 +349,6 @@
     .locals 1
 
     .prologue
-    .line 68
     sget-boolean v0, Lcom/android/settings_ex/lge/ConnectivitySettings;->sSupportOSP3:Z
 
     return v0
@@ -383,7 +359,6 @@
     .parameter "x0"
 
     .prologue
-    .line 68
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -396,7 +371,6 @@
     .parameter "x0"
 
     .prologue
-    .line 68
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mIOSPService:Ljava/lang/Object;
 
     return-object v0
@@ -408,7 +382,6 @@
     .parameter "x1"
 
     .prologue
-    .line 68
     iput-object p1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mIOSPService:Ljava/lang/Object;
 
     return-object p1
@@ -418,7 +391,6 @@
     .locals 1
 
     .prologue
-    .line 68
     sget-object v0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPgetTransportMethod:Ljava/lang/reflect/Method;
 
     return-object v0
@@ -454,7 +426,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mCarHome:Landroid/preference/CheckBoxPreference;
 
-    .line 687
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mCarHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -485,7 +456,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mDeskHome:Landroid/preference/CheckBoxPreference;
 
-    .line 690
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mDeskHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -516,7 +486,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mMediaHome:Landroid/preference/CheckBoxPreference;
 
-    .line 693
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mMediaHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -547,7 +516,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPouchMode:Landroid/preference/CheckBoxPreference;
 
-    .line 696
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPouchMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -589,42 +557,35 @@
 
     if-eqz v0, :cond_4
 
-    .line 700
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mAutoLaunch:Landroid/preference/PreferenceCategory;
 
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mDeskHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 725
     :goto_4
     return-void
 
     :cond_0
     move v0, v2
 
-    .line 687
     goto :goto_0
 
     :cond_1
     move v0, v2
 
-    .line 690
     goto :goto_1
 
     :cond_2
     move v0, v2
 
-    .line 693
     goto :goto_2
 
     :cond_3
     move v1, v2
 
-    .line 696
     goto :goto_3
 
-    .line 702
     :cond_4
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -636,14 +597,12 @@
 
     if-eqz v0, :cond_5
 
-    .line 703
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mAutoLaunch:Landroid/preference/PreferenceCategory;
 
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mDeskHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 704
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mAutoLaunch:Landroid/preference/PreferenceCategory;
 
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mMediaHome:Landroid/preference/CheckBoxPreference;
@@ -664,28 +623,24 @@
 
     if-eqz v0, :cond_6
 
-    .line 707
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mAutoLaunch:Landroid/preference/PreferenceCategory;
 
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mCarHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 708
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mAutoLaunch:Landroid/preference/PreferenceCategory;
 
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mDeskHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 709
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mAutoLaunch:Landroid/preference/PreferenceCategory;
 
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPouchMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 710
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mAutoLaunch:Landroid/preference/PreferenceCategory;
 
     const-string v1, "pouch_notification"
@@ -710,21 +665,18 @@
 
     if-eqz v0, :cond_7
 
-    .line 713
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mAutoLaunch:Landroid/preference/PreferenceCategory;
 
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mMediaHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 714
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mAutoLaunch:Landroid/preference/PreferenceCategory;
 
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPouchMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 715
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mAutoLaunch:Landroid/preference/PreferenceCategory;
 
     const-string v1, "pouch_notification"
@@ -788,16 +740,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 339
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbConnectionType:Landroid/preference/Preference;
 
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setSummary(I)V
 
-    .line 377
     :goto_0
     return-void
 
-    .line 340
     :cond_0
     const-string v0, "mtp_only"
 
@@ -807,14 +756,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 341
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbConnectionType:Landroid/preference/Preference;
 
     invoke-virtual {v0, v3}, Landroid/preference/Preference;->setSummary(I)V
 
     goto :goto_0
 
-    .line 342
     :cond_1
     const-string v0, "ecm"
 
@@ -824,7 +771,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 343
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
 
     move-result-object v0
@@ -837,7 +783,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 344
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbConnectionType:Landroid/preference/Preference;
 
     const v1, 0x7f0807af
@@ -866,7 +811,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 348
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
 
     move-result-object v0
@@ -879,7 +823,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 349
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbConnectionType:Landroid/preference/Preference;
 
     const v1, 0x7f0807b0
@@ -914,7 +857,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 352
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbConnectionType:Landroid/preference/Preference;
 
     const v1, 0x7f080372
@@ -994,7 +936,6 @@
 
     if-eqz v0, :cond_a
 
-    .line 366
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbConnectionType:Landroid/preference/Preference;
 
     const v1, 0x7f08036e
@@ -1053,10 +994,8 @@
     .parameter "newConfig"
 
     .prologue
-    .line 280
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 281
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     invoke-virtual {v0}, Landroid/hardware/usb/UsbManager;->getDefaultFunction()Ljava/lang/String;
@@ -1078,15 +1017,12 @@
 
     const/4 v5, 0x0
 
-    .line 195
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 197
     const v3, 0x7f06000d
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/lge/ConnectivitySettings;->addPreferencesFromResource(I)V
 
-    .line 199
     const-string v3, "usb"
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -1128,7 +1064,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbAlwaysAsk:Landroid/preference/CheckBoxPreference;
 
-    .line 204
     iget-object v6, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbAlwaysAsk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -1208,7 +1143,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
 
-    .line 215
     new-instance v3, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getActivity()Landroid/app/Activity;
@@ -1219,7 +1153,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionEnabler:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
-    .line 216
     new-instance v3, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getActivity()Landroid/app/Activity;
@@ -1239,7 +1172,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGSoftwareHelp:Landroid/preference/Preference;
 
-    .line 218
     iget-object v6, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -1259,7 +1191,6 @@
     :goto_1
     invoke-virtual {v6, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 221
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -1277,12 +1208,10 @@
     :goto_2
     invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 225
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
-    .line 228
     .local v2, pm:Landroid/content/pm/PackageManager;
     :try_start_0
     const-string v3, "com.lge.osp"
@@ -1301,14 +1230,12 @@
 
     if-lt v3, v4, :cond_0
 
-    .line 231
     const/4 v3, 0x1
 
     sput-boolean v3, Lcom/android/settings_ex/lge/ConnectivitySettings;->sSupportOSP3:Z
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 237
     .end local v1           #pkgInfo:Landroid/content/pm/PackageInfo;
     :cond_0
     :goto_3
@@ -1329,34 +1256,29 @@
     :try_end_1
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 245
     .end local v1           #pkgInfo:Landroid/content/pm/PackageInfo;
     :goto_4
     sget-boolean v3, Lcom/android/settings_ex/lge/ConnectivitySettings;->sSupportPCSuite:Z
 
     if-nez v3, :cond_1
 
-    .line 246
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGCategory:Landroid/preference/PreferenceCategory;
 
     iget-object v4, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 250
     :cond_1
     sget-boolean v3, Lcom/android/settings_ex/lge/ConnectivitySettings;->sSupportOSP3:Z
 
     if-eqz v3, :cond_7
 
-    .line 251
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGCategory:Landroid/preference/PreferenceCategory;
 
     iget-object v4, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPSettings:Landroid/preference/Preference;
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 267
     :cond_2
     :goto_5
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGCategory:Landroid/preference/PreferenceCategory;
@@ -1365,7 +1287,6 @@
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 270
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGCategory:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v3}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
@@ -1374,7 +1295,6 @@
 
     if-gtz v3, :cond_3
 
-    .line 271
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
@@ -1383,38 +1303,31 @@
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 274
     :cond_3
     invoke-direct {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->initAutoLaunch()V
 
-    .line 276
     return-void
 
     .end local v2           #pm:Landroid/content/pm/PackageManager;
     :cond_4
     move v3, v5
 
-    .line 204
     goto/16 :goto_0
 
     :cond_5
     move v3, v5
 
-    .line 218
     goto :goto_1
 
     :cond_6
     move v4, v5
 
-    .line 221
     goto :goto_2
 
-    .line 240
     .restart local v2       #pm:Landroid/content/pm/PackageManager;
     :catch_0
     move-exception v0
 
-    .line 241
     .local v0, e:Landroid/content/pm/PackageManager$NameNotFoundException;
     const-string v3, "ConnectivitySettings"
 
@@ -1422,12 +1335,10 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 242
     sput-boolean v5, Lcom/android/settings_ex/lge/ConnectivitySettings;->sSupportPCSuite:Z
 
     goto :goto_4
 
-    .line 254
     .end local v0           #e:Landroid/content/pm/PackageManager$NameNotFoundException;
     :cond_7
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGCategory:Landroid/preference/PreferenceCategory;
@@ -1436,35 +1347,30 @@
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 255
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGCategory:Landroid/preference/PreferenceCategory;
 
     iget-object v4, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGSoftwareHelp:Landroid/preference/Preference;
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 256
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGCategory:Landroid/preference/PreferenceCategory;
 
     iget-object v4, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGCategorySummary:Landroid/preference/Preference;
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 257
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
 
     const v4, 0x7f0807aa
 
     invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setTitle(I)V
 
-    .line 258
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
 
     const v4, 0x7f0807ab
 
     invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 260
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -1485,7 +1391,6 @@
 
     if-nez v3, :cond_2
 
-    .line 262
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mLGCategory:Landroid/preference/PreferenceCategory;
 
     iget-object v4, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPSettings:Landroid/preference/Preference;
@@ -1505,10 +1410,8 @@
     .locals 0
 
     .prologue
-    .line 321
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onDestroy()V
 
-    .line 322
     return-void
 .end method
 
@@ -1516,31 +1419,25 @@
     .locals 2
 
     .prologue
-    .line 307
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onPause()V
 
-    .line 309
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionEnabler:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     if-eqz v0, :cond_0
 
-    .line 310
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionEnabler:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->pause()V
 
-    .line 312
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPWIFIConnectionEnabler:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     if-eqz v0, :cond_1
 
-    .line 313
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPWIFIConnectionEnabler:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->pause()V
 
-    .line 316
     :cond_1
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getActivity()Landroid/app/Activity;
 
@@ -1564,12 +1461,10 @@
 
     const/4 v2, 0x0
 
-    .line 382
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbConnectionType:Landroid/preference/Preference;
 
     if-ne p2, v0, :cond_3
 
-    .line 386
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
 
     move-result-object v0
@@ -1602,7 +1497,6 @@
 
     if-nez v0, :cond_0
 
-    .line 389
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -1617,7 +1511,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
-    .line 390
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     const-string v3, "dtf"
@@ -1673,22 +1566,18 @@
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
-    .line 434
     :goto_0
     return v2
 
-    .line 402
     :cond_0
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 403
     const-string v3, "extra_usb_launcher"
 
     invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 404
     iget-object v2, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     invoke-virtual {v2}, Landroid/hardware/usb/UsbManager;->getDefaultFunction()Ljava/lang/String;
@@ -1733,20 +1622,17 @@
 
     goto :goto_0
 
-    .line 408
     :cond_3
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbAlwaysAsk:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_5
 
-    .line 409
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbAlwaysAsk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    .line 410
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
@@ -1767,20 +1653,17 @@
 
     goto :goto_2
 
-    .line 413
     :cond_5
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mCarHome:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_7
 
-    .line 414
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mCarHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    .line 415
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
@@ -1799,20 +1682,17 @@
 
     goto :goto_3
 
-    .line 418
     :cond_7
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mDeskHome:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_9
 
-    .line 419
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mDeskHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    .line 420
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
@@ -1831,20 +1711,17 @@
 
     goto :goto_4
 
-    .line 423
     :cond_9
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mMediaHome:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_b
 
-    .line 424
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mMediaHome:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    .line 425
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
@@ -1863,20 +1740,17 @@
 
     goto :goto_5
 
-    .line 428
     :cond_b
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPouchMode:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_2
 
-    .line 429
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPouchMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    .line 430
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
@@ -1900,43 +1774,35 @@
     .locals 3
 
     .prologue
-    .line 286
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
-    .line 288
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionEnabler:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     if-eqz v1, :cond_0
 
-    .line 289
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionEnabler:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->resume()V
 
-    .line 292
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPWIFIConnectionEnabler:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     if-eqz v1, :cond_1
 
-    .line 293
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPWIFIConnectionEnabler:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->resume()V
 
-    .line 297
     :cond_1
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 298
     .local v0, intentFilter:Landroid/content/IntentFilter;
     const-string v1, "android.hardware.usb.action.USB_STATE"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 299
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -1945,10 +1811,8 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 301
     invoke-direct {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings;->updateState()V
 
-    .line 302
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     invoke-virtual {v1}, Landroid/hardware/usb/UsbManager;->getDefaultFunction()Ljava/lang/String;

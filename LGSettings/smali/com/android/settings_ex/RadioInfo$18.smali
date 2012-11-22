@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 980
     iput-object p1, p0, Lcom/android/settings_ex/RadioInfo$18;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,14 +41,12 @@
     .parameter "v"
 
     .prologue
-    .line 982
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "com.android.settings_ex.OEM_RADIO_INFO"
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 984
     .local v1, intent:Landroid/content/Intent;
     :try_start_0
     iget-object v2, p0, Lcom/android/settings_ex/RadioInfo$18;->this$0:Lcom/android/settings_ex/RadioInfo;

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 114
     iput-object p1, p0, Lcom/android/settings_ex/OwnerInfoSettings$1;->this$0:Lcom/android/settings_ex/OwnerInfoSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +46,6 @@
 
     const/4 v1, 0x0
 
-    .line 118
     iget-object v0, p0, Lcom/android/settings_ex/OwnerInfoSettings$1;->this$0:Lcom/android/settings_ex/OwnerInfoSettings;
 
     #getter for: Lcom/android/settings_ex/OwnerInfoSettings;->scroll:Landroid/widget/ScrollView;
@@ -57,14 +55,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 119
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
     if-ne v0, v2, :cond_1
 
-    .line 120
     iget-object v0, p0, Lcom/android/settings_ex/OwnerInfoSettings$1;->this$0:Lcom/android/settings_ex/OwnerInfoSettings;
 
     #getter for: Lcom/android/settings_ex/OwnerInfoSettings;->scroll:Landroid/widget/ScrollView;

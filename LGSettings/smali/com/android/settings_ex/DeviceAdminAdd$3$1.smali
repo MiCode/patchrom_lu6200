@@ -25,7 +25,6 @@
     .parameter "x0"
 
     .prologue
-    .line 205
     iput-object p1, p0, Lcom/android/settings_ex/DeviceAdminAdd$3$1;->this$1:Lcom/android/settings_ex/DeviceAdminAdd$3;
 
     invoke-direct {p0, p2}, Landroid/os/RemoteCallback;-><init>(Landroid/os/Handler;)V
@@ -84,38 +83,32 @@
 
     invoke-virtual {v2, v3}, Landroid/app/admin/DevicePolicyManager;->removeActiveAdmin(Landroid/content/ComponentName;)V
 
-    .line 218
     iget-object v2, p0, Lcom/android/settings_ex/DeviceAdminAdd$3$1;->this$1:Lcom/android/settings_ex/DeviceAdminAdd$3;
 
     iget-object v2, v2, Lcom/android/settings_ex/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/DeviceAdminAdd;->finish()V
 
-    .line 225
     :goto_2
     return-void
 
-    .line 208
     .end local v1           #msg:Ljava/lang/CharSequence;
     :cond_0
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 220
     .restart local v1       #msg:Ljava/lang/CharSequence;
     :cond_1
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 221
     .local v0, args:Landroid/os/Bundle;
     const-string v2, "android.app.extra.DISABLE_WARNING"
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
 
-    .line 223
     iget-object v2, p0, Lcom/android/settings_ex/DeviceAdminAdd$3$1;->this$1:Lcom/android/settings_ex/DeviceAdminAdd$3;
 
     iget-object v2, v2, Lcom/android/settings_ex/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;

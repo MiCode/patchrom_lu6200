@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 84
     iput-object p1, p0, Lcom/android/settings_ex/DateTimePickerDate$2;->this$0:Lcom/android/settings_ex/DateTimePickerDate;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,11 +41,9 @@
     .parameter "dialog"
 
     .prologue
-    .line 86
     iget-object v0, p0, Lcom/android/settings_ex/DateTimePickerDate$2;->this$0:Lcom/android/settings_ex/DateTimePickerDate;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/DateTimePickerDate;->finish()V
 
-    .line 87
     return-void
 .end method

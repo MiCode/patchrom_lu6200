@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 117
     iput-object p1, p0, Lcom/android/settings_ex/tts/TextToSpeechSettings$1;->this$0:Lcom/android/settings_ex/tts/TextToSpeechSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,11 +41,9 @@
     .parameter "status"
 
     .prologue
-    .line 120
     iget-object v0, p0, Lcom/android/settings_ex/tts/TextToSpeechSettings$1;->this$0:Lcom/android/settings_ex/tts/TextToSpeechSettings;
 
     invoke-virtual {v0, p1}, Lcom/android/settings_ex/tts/TextToSpeechSettings;->onInitEngine(I)V
 
-    .line 121
     return-void
 .end method

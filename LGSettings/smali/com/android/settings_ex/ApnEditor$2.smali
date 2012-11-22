@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1054
     iput-object p1, p0, Lcom/android/settings_ex/ApnEditor$2;->this$0:Lcom/android/settings_ex/ApnEditor;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "whichButton"
 
     .prologue
-    .line 1057
     invoke-static {}, Lcom/android/settings_ex/ApnEditor;->access$000()Ljava/lang/String;
 
     move-result-object v0

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 189
     iput-object p1, p0, Lcom/android/settings_ex/RcseSettings$2;->this$0:Lcom/android/settings_ex/RcseSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "which"
 
     .prologue
-    .line 192
     iget-object v0, p0, Lcom/android/settings_ex/RcseSettings$2;->this$0:Lcom/android/settings_ex/RcseSettings;
 
     #getter for: Lcom/android/settings_ex/RcseSettings;->mCheckBoxService:Landroid/preference/CheckBoxPreference;

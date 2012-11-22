@@ -41,7 +41,6 @@
     .parameter
 
     .prologue
-    .line 236
     iput-object p1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -55,7 +54,6 @@
     .parameter "x1"
 
     .prologue
-    .line 236
     invoke-direct {p0, p1}, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;-><init>(Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;)V
 
     return-void
@@ -95,10 +93,8 @@
     .end annotation
 
     .prologue
-    .line 248
     const/4 v8, 0x0
 
-    .line 250
     .local v8, certHolders:Ljava/util/List;,"Ljava/util/List<Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;>;"
     :try_start_0
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
@@ -140,7 +136,6 @@
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 254
     .end local v8           #certHolders:Ljava/util/List;,"Ljava/util/List<Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;>;"
     .local v9, certHolders:Ljava/util/List;,"Ljava/util/List<Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;>;"
     :try_start_1
@@ -254,7 +249,6 @@
     :goto_1
     return-object v8
 
-    .line 263
     .end local v8           #certHolders:Ljava/util/List;,"Ljava/util/List<Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;>;"
     .restart local v7       #aliases:Ljava/util/Set;,"Ljava/util/Set<Ljava/lang/String;>;"
     .restart local v9       #certHolders:Ljava/util/List;,"Ljava/util/List<Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;>;"
@@ -268,12 +262,10 @@
 
     move-object v8, v9
 
-    .line 265
     .end local v9           #certHolders:Ljava/util/List;,"Ljava/util/List<Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;>;"
     .restart local v8       #certHolders:Ljava/util/List;,"Ljava/util/List<Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;>;"
     goto :goto_1
 
-    .line 264
     .end local v7           #aliases:Ljava/util/Set;,"Ljava/util/Set<Ljava/lang/String;>;"
     .end local v10           #i$:Ljava/util/Iterator;
     .end local v11           #max:I
@@ -315,7 +307,6 @@
     .local p1, certHolders:Ljava/util/List;,"Ljava/util/List<Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;>;"
     const/4 v3, 0x0
 
-    .line 278
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
@@ -325,7 +316,6 @@
 
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
-    .line 279
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
@@ -335,12 +325,10 @@
 
     invoke-interface {v1, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 280
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;->notifyDataSetChanged()V
 
-    .line 281
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
     iget-object v1, v1, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;->this$0:Lcom/android/settings_ex/TrustedCredentialsSettings;
@@ -362,17 +350,14 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    .line 283
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->mList:Landroid/view/View;
 
     invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 284
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v1, v3}, Landroid/widget/ProgressBar;->setProgress(I)V
 
-    .line 285
     return-void
 .end method
 
@@ -380,7 +365,6 @@
     .locals 3
 
     .prologue
-    .line 240
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
     iget-object v1, v1, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;->this$0:Lcom/android/settings_ex/TrustedCredentialsSettings;
@@ -416,7 +400,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->mProgressBar:Landroid/widget/ProgressBar;
 
-    .line 242
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->this$1:Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter;->mTab:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
@@ -435,21 +418,18 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->mList:Landroid/view/View;
 
-    .line 243
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->mProgressBar:Landroid/widget/ProgressBar;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    .line 244
     iget-object v1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->mList:Landroid/view/View;
 
     const/16 v2, 0x8
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 245
     return-void
 .end method
 
@@ -487,18 +467,15 @@
 
     if-eq v0, v2, :cond_0
 
-    .line 273
     iget-object v2, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v2, v0}, Landroid/widget/ProgressBar;->setMax(I)V
 
-    .line 275
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v2, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
-    .line 276
     return-void
 .end method
 

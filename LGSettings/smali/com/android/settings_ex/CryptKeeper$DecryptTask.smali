@@ -35,7 +35,6 @@
     .parameter
 
     .prologue
-    .line 135
     iput-object p1, p0, Lcom/android/settings_ex/CryptKeeper$DecryptTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -49,7 +48,6 @@
     .parameter "x1"
 
     .prologue
-    .line 135
     invoke-direct {p0, p1}, Lcom/android/settings_ex/CryptKeeper$DecryptTask;-><init>(Lcom/android/settings_ex/CryptKeeper;)V
 
     return-void
@@ -62,7 +60,6 @@
     .parameter "params"
 
     .prologue
-    .line 138
     iget-object v2, p0, Lcom/android/settings_ex/CryptKeeper$DecryptTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     #calls: Lcom/android/settings_ex/CryptKeeper;->getMountService()Landroid/os/storage/IMountService;
@@ -168,21 +165,17 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 155
     iget-object v1, p0, Lcom/android/settings_ex/CryptKeeper$DecryptTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/CryptKeeper;->finish()V
 
-    .line 156
     iget-object v1, p0, Lcom/android/settings_ex/CryptKeeper$DecryptTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/CryptKeeper;->startActivity(Landroid/content/Intent;)V
 
-    .line 171
     :goto_0
     return-void
 
-    .line 157
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -190,7 +183,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 159
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeper$DecryptTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     new-instance v1, Landroid/content/Intent;
@@ -213,13 +205,11 @@
 
     if-nez v0, :cond_2
 
-    .line 161
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeper$DecryptTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     #setter for: Lcom/android/settings_ex/CryptKeeper;->mCooldown:I
     invoke-static {v0, v1}, Lcom/android/settings_ex/CryptKeeper;->access$102(Lcom/android/settings_ex/CryptKeeper;I)I
 
-    .line 162
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeper$DecryptTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     #calls: Lcom/android/settings_ex/CryptKeeper;->cooldown()V
@@ -239,17 +229,14 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 165
     const v1, 0x7f080623
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 166
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 169
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeper$DecryptTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     #getter for: Lcom/android/settings_ex/CryptKeeper;->mPasswordEntry:Landroid/widget/EditText;

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 210
     iput-object p1, p0, Lcom/android/settings_ex/RingtonePicker$1;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,13 +40,11 @@
     .locals 2
 
     .prologue
-    .line 212
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker$1;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     #calls: Lcom/android/settings_ex/RingtonePicker;->stopAnyPlayingRingtone()V
     invoke-static {v0}, Lcom/android/settings_ex/RingtonePicker;->access$000(Lcom/android/settings_ex/RingtonePicker;)V
 
-    .line 213
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker$1;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     const/4 v1, 0x0

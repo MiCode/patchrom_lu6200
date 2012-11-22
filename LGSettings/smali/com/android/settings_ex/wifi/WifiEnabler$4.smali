@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 268
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiEnabler$4;->this$0:Lcom/android/settings_ex/wifi/WifiEnabler;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V

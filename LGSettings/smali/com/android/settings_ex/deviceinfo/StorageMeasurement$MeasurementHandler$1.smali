@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 233
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$1;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,19 +42,16 @@
     .parameter "service"
 
     .prologue
-    .line 235
     invoke-static {p2}, Lcom/android/internal/app/IMediaContainerService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/app/IMediaContainerService;
 
     move-result-object v0
 
-    .line 237
     .local v0, imcs:Lcom/android/internal/app/IMediaContainerService;
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$1;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     #setter for: Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->mDefaultContainer:Lcom/android/internal/app/IMediaContainerService;
     invoke-static {v1, v0}, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->access$002(Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;Lcom/android/internal/app/IMediaContainerService;)Lcom/android/internal/app/IMediaContainerService;
 
-    .line 238
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$1;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     const/4 v2, 0x1
@@ -63,7 +59,6 @@
     #setter for: Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->mBound:Z
     invoke-static {v1, v2}, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->access$102(Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;Z)Z
 
-    .line 239
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$1;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     iget-object v2, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$1;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
@@ -85,7 +80,6 @@
     .parameter "name"
 
     .prologue
-    .line 243
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$1;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     const/4 v1, 0x0
@@ -93,13 +87,11 @@
     #setter for: Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->mBound:Z
     invoke-static {v0, v1}, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->access$102(Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;Z)Z
 
-    .line 244
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$1;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->removeMessages(I)V
 
-    .line 245
     return-void
 .end method

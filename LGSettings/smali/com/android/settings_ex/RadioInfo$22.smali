@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1014
     iput-object p1, p0, Lcom/android/settings_ex/RadioInfo$22;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +44,6 @@
     .parameter "id"
 
     .prologue
-    .line 1016
     iget-object v1, p0, Lcom/android/settings_ex/RadioInfo$22;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->mHandler:Landroid/os/Handler;
@@ -67,7 +65,6 @@
 
     if-gt p3, v1, :cond_0
 
-    .line 1018
     iget-object v1, p0, Lcom/android/settings_ex/RadioInfo$22;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #getter for: Lcom/android/settings_ex/RadioInfo;->phone:Lcom/android/internal/telephony/Phone;

@@ -29,22 +29,18 @@
     .parameter "accessPoint"
 
     .prologue
-    .line 56
     const v0, 0x7f0a0057
 
     invoke-direct {p0, p1, v0}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
 
-    .line 58
     iput-object p2, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mAccessPoint:Lcom/android/settings_ex/wifi/AccessPoint;
 
-    .line 59
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mAccessPoint:Lcom/android/settings_ex/wifi/AccessPoint;
 
     iget-object v0, v0, Lcom/android/settings_ex/wifi/AccessPoint;->ssid:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mSsid:Ljava/lang/String;
 
-    .line 60
     const-string v0, "wifi"
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -55,14 +51,12 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    .line 62
     new-instance v0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/wifi/WifiOpenAPDialog$1;-><init>(Lcom/android/settings_ex/wifi/WifiOpenAPDialog;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 76
     return-void
 .end method
 
@@ -71,7 +65,6 @@
     .parameter "x0"
 
     .prologue
-    .line 39
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mAccessPoint:Lcom/android/settings_ex/wifi/AccessPoint;
 
     return-object v0
@@ -82,7 +75,6 @@
     .parameter "x0"
 
     .prologue
-    .line 39
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     return-object v0
@@ -104,7 +96,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 109
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -147,7 +138,6 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 80
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v1
@@ -162,31 +152,25 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mView:Landroid/view/View;
 
-    .line 81
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mView:Landroid/view/View;
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->setView(Landroid/view/View;)V
 
-    .line 82
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->setInverseBackgroundForced(Z)V
 
-    .line 84
     invoke-virtual {p0}, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 88
     .local v0, context:Landroid/content/Context;
     const v1, 0x1010355
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->setIconAttribute(I)V
 
-    .line 89
     const v1, 0x7f0807db
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->setTitle(I)V
 
-    .line 92
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mView:Landroid/view/View;
 
     const v2, 0x7f0b0226
@@ -199,7 +183,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mOpenAPWarning:Landroid/widget/TextView;
 
-    .line 93
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mOpenAPWarning:Landroid/widget/TextView;
 
     const v2, 0x7f080bbb
@@ -222,7 +205,6 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 96
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mView:Landroid/view/View;
 
     const v2, 0x7f0b0227
@@ -235,12 +217,10 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mDoNotShow:Landroid/widget/CheckBox;
 
-    .line 97
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiOpenAPDialog;->mDoNotShow:Landroid/widget/CheckBox;
 
     invoke-virtual {v1, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 100
     const/4 v1, -0x1
 
     const v2, 0x7f080054

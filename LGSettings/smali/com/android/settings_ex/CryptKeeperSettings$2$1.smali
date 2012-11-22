@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 119
     iput-object p1, p0, Lcom/android/settings_ex/CryptKeeperSettings$2$1;->this$1:Lcom/android/settings_ex/CryptKeeperSettings$2;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,10 +42,8 @@
     .parameter "which"
 
     .prologue
-    .line 122
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 123
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeperSettings$2$1;->this$1:Lcom/android/settings_ex/CryptKeeperSettings$2;
 
     iget-object v0, v0, Lcom/android/settings_ex/CryptKeeperSettings$2;->this$0:Lcom/android/settings_ex/CryptKeeperSettings;

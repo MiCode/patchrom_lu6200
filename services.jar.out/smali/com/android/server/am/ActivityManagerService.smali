@@ -1234,159 +1234,120 @@
 
     iput-object v2, p0, Lcom/android/server/am/ActivityManagerService;->mStringBuilder:Ljava/lang/StringBuilder;
 
-    .line 684
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mStartRunning:Z
 
-    .line 688
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mProcessesReady:Z
 
-    .line 689
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mSystemReady:Z
 
-    .line 690
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mBooting:Z
 
-    .line 691
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mWaitingUpdate:Z
 
-    .line 692
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mDidUpdate:Z
 
-    .line 693
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mOnBattery:Z
 
-    .line 694
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mLaunchWarningShown:Z
 
-    .line 728
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mSleeping:Z
 
-    .line 733
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mShuttingDown:Z
 
-    .line 741
     iput v6, p0, Lcom/android/server/am/ActivityManagerService;->mCurTask:I
 
-    .line 746
     iput v5, p0, Lcom/android/server/am/ActivityManagerService;->mAdjSeq:I
 
-    .line 751
     iput v5, p0, Lcom/android/server/am/ActivityManagerService;->mLruSeq:I
 
-    .line 757
     iput v5, p0, Lcom/android/server/am/ActivityManagerService;->mNumServiceProcs:I
 
-    .line 758
     iput v5, p0, Lcom/android/server/am/ActivityManagerService;->mNewNumServiceProcs:I
 
-    .line 764
     const/16 v2, 0x14
 
     new-array v2, v2, [I
 
     iput-object v2, p0, Lcom/android/server/am/ActivityManagerService;->mProcDeaths:[I
 
-    .line 772
     iput-object v4, p0, Lcom/android/server/am/ActivityManagerService;->mDebugApp:Ljava/lang/String;
 
-    .line 773
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mWaitForDebugger:Z
 
-    .line 774
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mDebugTransient:Z
 
-    .line 775
     iput-object v4, p0, Lcom/android/server/am/ActivityManagerService;->mOrigDebugApp:Ljava/lang/String;
 
-    .line 776
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mOrigWaitForDebugger:Z
 
-    .line 777
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mAlwaysFinishActivities:Z
 
-    .line 778
     iput-object v4, p0, Lcom/android/server/am/ActivityManagerService;->mController:Landroid/app/IActivityController;
 
-    .line 779
     iput-object v4, p0, Lcom/android/server/am/ActivityManagerService;->mProfileApp:Ljava/lang/String;
 
-    .line 780
     iput-object v4, p0, Lcom/android/server/am/ActivityManagerService;->mProfileProc:Lcom/android/server/am/ProcessRecord;
 
-    .line 783
     iput v5, p0, Lcom/android/server/am/ActivityManagerService;->mProfileType:I
 
-    .line 784
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mAutoStopProfiler:Z
 
-    .line 786
     new-instance v2, Landroid/os/RemoteCallbackList;
 
     invoke-direct {v2}, Landroid/os/RemoteCallbackList;-><init>()V
 
     iput-object v2, p0, Lcom/android/server/am/ActivityManagerService;->mWatchers:Landroid/os/RemoteCallbackList;
 
-    .line 789
     new-instance v2, Landroid/os/RemoteCallbackList;
 
     invoke-direct {v2}, Landroid/os/RemoteCallbackList;-><init>()V
 
     iput-object v2, p0, Lcom/android/server/am/ActivityManagerService;->mProcessObservers:Landroid/os/RemoteCallbackList;
 
-    .line 801
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v2, p0, Lcom/android/server/am/ActivityManagerService;->mRequestPssList:Ljava/util/ArrayList;
 
-    .line 814
     new-instance v2, Lcom/android/internal/os/ProcessStats;
 
     invoke-direct {v2, v5}, Lcom/android/internal/os/ProcessStats;-><init>(Z)V
 
     iput-object v2, p0, Lcom/android/server/am/ActivityManagerService;->mProcessStats:Lcom/android/internal/os/ProcessStats;
 
-    .line 816
     new-instance v2, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {v2, v7, v8}, Ljava/util/concurrent/atomic/AtomicLong;-><init>(J)V
 
     iput-object v2, p0, Lcom/android/server/am/ActivityManagerService;->mLastCpuTime:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 817
     new-instance v2, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v2, v6}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
     iput-object v2, p0, Lcom/android/server/am/ActivityManagerService;->mProcessStatsMutexFree:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 819
     iput-wide v7, p0, Lcom/android/server/am/ActivityManagerService;->mLastWriteTime:J
 
-    .line 824
     iput-boolean v5, p0, Lcom/android/server/am/ActivityManagerService;->mBooted:Z
 
     const/16 v2, 0xf
 
     iput v2, p0, Lcom/android/server/am/ActivityManagerService;->mProcessLimit:I
 
-    .line 827
     const/4 v2, -0x1
 
     iput v2, p0, Lcom/android/server/am/ActivityManagerService;->mProcessLimitOverride:I
 
-    .line 890
     iput-wide v7, p0, Lcom/android/server/am/ActivityManagerService;->mLastMemUsageReportTime:J
 
-    .line 892
     new-instance v2, Lcom/android/server/am/ActivityManagerService$2;
 
     invoke-direct {v2, p0}, Lcom/android/server/am/ActivityManagerService$2;-><init>(Lcom/android/server/am/ActivityManagerService;)V
 
     iput-object v2, p0, Lcom/android/server/am/ActivityManagerService;->mHandler:Landroid/os/Handler;
 
-    .line 1553
     const-string v2, "ActivityManager"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -31672,40 +31633,32 @@
 
     if-eqz v5, :cond_3
 
-    .line 2511
     :cond_2
     iget-object v5, p0, Lcom/android/server/am/ActivityManagerService;->mRecentTasks:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 2512
     add-int/lit8 v3, v3, -0x1
 
-    .line 2513
     add-int/lit8 v0, v0, -0x1
 
-    .line 2514
     iget-object v5, p1, Lcom/android/server/am/TaskRecord;->intent:Landroid/content/Intent;
 
     if-nez v5, :cond_3
 
-    .line 2517
     move-object p1, v4
 
-    .line 2507
     :cond_3
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
-    .line 2521
     .end local v4           #tr:Lcom/android/server/am/TaskRecord;
     :cond_4
     const/16 v5, 0x14
 
     if-lt v0, v5, :cond_8
 
-    .line 2524
     iget-object v5, p0, Lcom/android/server/am/ActivityManagerService;->mRecentTasks:Ljava/util/ArrayList;
 
     add-int/lit8 v6, v0, -0x1
@@ -72636,7 +72589,6 @@
 
     if-gt v10, v13, :cond_10
 
-    .line 14823
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/server/am/ActivityManagerService;->mLruProcesses:Ljava/util/ArrayList;

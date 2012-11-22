@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 182
     iput-object p1, p0, Lcom/android/settings_ex/SettingsLicenseActivity$2;->this$0:Lcom/android/settings_ex/SettingsLicenseActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "dlgi"
 
     .prologue
-    .line 185
     iget-object v0, p0, Lcom/android/settings_ex/SettingsLicenseActivity$2;->this$0:Lcom/android/settings_ex/SettingsLicenseActivity;
 
     const/4 v1, 0x1
@@ -50,12 +48,10 @@
     #setter for: Lcom/android/settings_ex/SettingsLicenseActivity;->mQuit:Z
     invoke-static {v0, v1}, Lcom/android/settings_ex/SettingsLicenseActivity;->access$002(Lcom/android/settings_ex/SettingsLicenseActivity;Z)Z
 
-    .line 186
     iget-object v0, p0, Lcom/android/settings_ex/SettingsLicenseActivity$2;->this$0:Lcom/android/settings_ex/SettingsLicenseActivity;
 
     #calls: Lcom/android/settings_ex/SettingsLicenseActivity;->cancelLoadData()V
     invoke-static {v0}, Lcom/android/settings_ex/SettingsLicenseActivity;->access$300(Lcom/android/settings_ex/SettingsLicenseActivity;)V
 
-    .line 187
     return-void
 .end method

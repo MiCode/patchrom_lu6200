@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 253
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$4;->val$progressMsg:Ljava/lang/String;
@@ -46,7 +45,6 @@
     .locals 2
 
     .prologue
-    .line 255
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mWaitDialog:Landroid/app/ProgressDialog;
@@ -58,7 +56,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 256
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mWaitDialog:Landroid/app/ProgressDialog;
@@ -70,7 +67,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
-    .line 257
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mWaitDialog:Landroid/app/ProgressDialog;
@@ -82,7 +78,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    .line 258
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mWaitDialog:Landroid/app/ProgressDialog;

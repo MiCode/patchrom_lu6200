@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 208
     iput-object p1, p0, Lcom/android/settings_ex/applications/InstalledAppDetails$PackageMoveObserver;->this$0:Lcom/android/settings_ex/applications/InstalledAppDetails;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageMoveObserver$Stub;-><init>()V
@@ -45,7 +44,6 @@
     .end annotation
 
     .prologue
-    .line 210
     iget-object v1, p0, Lcom/android/settings_ex/applications/InstalledAppDetails$PackageMoveObserver;->this$0:Lcom/android/settings_ex/applications/InstalledAppDetails;
 
     #getter for: Lcom/android/settings_ex/applications/InstalledAppDetails;->mHandler:Landroid/os/Handler;
@@ -59,11 +57,9 @@
 
     move-result-object v0
 
-    .line 211
     .local v0, msg:Landroid/os/Message;
     iput p2, v0, Landroid/os/Message;->arg1:I
 
-    .line 212
     iget-object v1, p0, Lcom/android/settings_ex/applications/InstalledAppDetails$PackageMoveObserver;->this$0:Lcom/android/settings_ex/applications/InstalledAppDetails;
 
     #getter for: Lcom/android/settings_ex/applications/InstalledAppDetails;->mHandler:Landroid/os/Handler;

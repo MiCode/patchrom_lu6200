@@ -29,15 +29,12 @@
 
     const/4 v2, 0x0
 
-    .line 28
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 30
     const v0, 0x7f060007
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/deviceinfo/AutorunSwitch;->addPreferencesFromResource(I)V
 
-    .line 32
     const-string v0, "autorun_enable"
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/deviceinfo/AutorunSwitch;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -48,12 +45,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/deviceinfo/AutorunSwitch;->mAutorunEnable:Landroid/preference/CheckBoxPreference;
 
-    .line 33
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/AutorunSwitch;->mAutorunEnable:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
-    .line 35
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/AutorunSwitch;->mAutorunEnable:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/AutorunSwitch;->getContentResolver()Landroid/content/ContentResolver;
@@ -91,19 +86,16 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 42
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/AutorunSwitch;->mAutorunEnable:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_1
 
-    .line 43
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/AutorunSwitch;->mAutorunEnable:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    .line 44
     .local v0, value:Z
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/AutorunSwitch;->getContentResolver()Landroid/content/ContentResolver;
 

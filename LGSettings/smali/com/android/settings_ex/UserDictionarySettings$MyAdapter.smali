@@ -37,30 +37,24 @@
     .parameter "settings"
 
     .prologue
-    .line 575
     invoke-direct/range {p0 .. p5}, Landroid/widget/SimpleCursorAdapter;-><init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[I)V
 
-    .line 560
     new-instance v2, Lcom/android/settings_ex/UserDictionarySettings$MyAdapter$1;
 
     invoke-direct {v2, p0}, Lcom/android/settings_ex/UserDictionarySettings$MyAdapter$1;-><init>(Lcom/android/settings_ex/UserDictionarySettings$MyAdapter;)V
 
     iput-object v2, p0, Lcom/android/settings_ex/UserDictionarySettings$MyAdapter;->mViewBinder:Landroid/widget/SimpleCursorAdapter$ViewBinder;
 
-    .line 577
     iput-object p6, p0, Lcom/android/settings_ex/UserDictionarySettings$MyAdapter;->mSettings:Lcom/android/settings_ex/UserDictionarySettings;
 
-    .line 578
     if-eqz p3, :cond_0
 
-    .line 579
     const v2, 0x1040432
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 581
     .local v0, alphabet:Ljava/lang/String;
     const-string v2, "word"
 
@@ -95,7 +89,6 @@
     .parameter "section"
 
     .prologue
-    .line 588
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
     if-nez v0, :cond_0
@@ -120,7 +113,6 @@
     .parameter "position"
 
     .prologue
-    .line 592
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
     if-nez v0, :cond_0
@@ -144,7 +136,6 @@
     .locals 1
 
     .prologue
-    .line 596
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
     if-nez v0, :cond_0
@@ -178,7 +169,6 @@
 
     invoke-static {v0}, Lcom/android/settings_ex/UserDictionarySettings;->access$302(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 602
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$MyAdapter;->mSettings:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-static {}, Lcom/android/settings_ex/UserDictionarySettings;->access$300()Ljava/lang/String;

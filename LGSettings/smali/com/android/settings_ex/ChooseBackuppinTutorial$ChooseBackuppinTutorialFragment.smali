@@ -54,37 +54,31 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 137
     iget-object v0, p0, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->mSkipButton:Landroid/view/View;
 
     if-ne p1, v0, :cond_1
 
-    .line 139
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0, v3}, Landroid/app/Activity;->setResult(I)V
 
-    .line 140
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
-    .line 165
     :cond_0
     :goto_0
     return-void
 
-    .line 141
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->mNextButton:Landroid/view/View;
 
     if-ne p1, v0, :cond_0
 
-    .line 146
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->getActivity()Landroid/app/Activity;
@@ -95,17 +89,14 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 147
     const/high16 v1, 0x200
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 155
     sget-boolean v1, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v1, :cond_2
 
-    .line 156
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -122,25 +113,21 @@
 
     if-eqz v1, :cond_2
 
-    .line 157
     const-string v1, "PASSWORD_EXPIRE"
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 161
     :cond_2
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 162
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0, v3, v3}, Landroid/app/Activity;->overridePendingTransition(II)V
 
-    .line 163
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -188,12 +175,10 @@
 
     iput-object v6, p0, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->mNextButton:Landroid/view/View;
 
-    .line 94
     iget-object v6, p0, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->mNextButton:Landroid/view/View;
 
     invoke-virtual {v6, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 95
     const v6, 0x7f0b0007
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -202,12 +187,10 @@
 
     iput-object v6, p0, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->mSkipButton:Landroid/view/View;
 
-    .line 96
     iget-object v6, p0, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->mSkipButton:Landroid/view/View;
 
     invoke-virtual {v6, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 97
     const v6, 0x7f0b0046
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -216,7 +199,6 @@
 
     iput-object v6, p0, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->pinAnimaion:Landroid/view/View;
 
-    .line 101
     iget-object v6, p0, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->mCurConfig:Landroid/content/res/Configuration;
 
     iget v6, v6, Landroid/content/res/Configuration;->orientation:I
@@ -225,7 +207,6 @@
 
     if-ne v6, v7, :cond_1
 
-    .line 103
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
@@ -252,43 +233,34 @@
 
     check-cast v1, Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 112
     .local v1, frame2:Landroid/graphics/drawable/BitmapDrawable;
     :goto_0
     const/16 v4, 0x3e8
 
-    .line 114
     .local v4, resonableDuration:I
     new-instance v3, Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-direct {v3}, Landroid/graphics/drawable/AnimationDrawable;-><init>()V
 
-    .line 115
     .local v3, mAnimation:Landroid/graphics/drawable/AnimationDrawable;
     invoke-virtual {v3, v0, v4}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 116
     invoke-virtual {v3, v1, v4}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 118
     iget-object v6, p0, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->pinAnimaion:Landroid/view/View;
 
     invoke-virtual {v6, v3}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 120
     const/4 v6, 0x0
 
     invoke-virtual {v3, v6}, Landroid/graphics/drawable/AnimationDrawable;->setOneShot(Z)V
 
-    .line 121
     invoke-virtual {v3}, Landroid/graphics/drawable/AnimationDrawable;->start()V
 
-    .line 124
     sget-boolean v6, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v6, :cond_0
 
-    .line 125
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
@@ -307,7 +279,6 @@
 
     if-eqz v6, :cond_0
 
-    .line 127
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
@@ -320,7 +291,6 @@
 
     invoke-virtual {v6, v7}, Landroid/view/Window;->addFlags(I)V
 
-    .line 128
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackuppinTutorial$ChooseBackuppinTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6

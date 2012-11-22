@@ -8,7 +8,6 @@
     .locals 0
 
     .prologue
-    .line 19
     invoke-direct {p0}, Lcom/android/settings_ex/deviceinfo/Status;-><init>()V
 
     return-void
@@ -21,15 +20,12 @@
     .parameter "icicle"
 
     .prologue
-    .line 29
     invoke-super {p0, p1}, Lcom/android/settings_ex/deviceinfo/Status;->onCreate(Landroid/os/Bundle;)V
 
-    .line 30
     const v0, 0x7f080348
 
     invoke-super {p0, v0}, Lcom/android/settings_ex/deviceinfo/Status;->setTitle(I)V
 
-    .line 31
     return-void
 .end method
 
@@ -37,10 +33,8 @@
     .locals 0
 
     .prologue
-    .line 45
     invoke-super {p0}, Lcom/android/settings_ex/deviceinfo/Status;->onPause()V
 
-    .line 46
     return-void
 .end method
 
@@ -48,13 +42,10 @@
     .locals 0
 
     .prologue
-    .line 37
     invoke-super {p0}, Lcom/android/settings_ex/deviceinfo/Status;->onResume()V
 
-    .line 38
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/DeviceInfoLgeNetwork;->removeUnnecessaryPreference()V
 
-    .line 39
     return-void
 .end method
 
@@ -245,30 +236,25 @@
 
     aget-object v5, v0, v1
 
-    .line 86
     .local v5, string:Ljava/lang/String;
     invoke-virtual {p0, v5}, Lcom/android/settings_ex/lge/DeviceInfoLgeNetwork;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
-    .line 87
     .local v4, removablePref:Landroid/preference/Preference;
     if-eqz v4, :cond_0
 
-    .line 89
     invoke-super {p0}, Lcom/android/settings_ex/deviceinfo/Status;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v6
 
     invoke-virtual {v6, v4}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 84
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 92
     .end local v4           #removablePref:Landroid/preference/Preference;
     .end local v5           #string:Ljava/lang/String;
     :cond_1

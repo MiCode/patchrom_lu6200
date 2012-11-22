@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 158
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/Memory$1;->this$0:Lcom/android/settings_ex/deviceinfo/Memory;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -62,7 +61,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 163
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/Memory$1;->this$0:Lcom/android/settings_ex/deviceinfo/Memory;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/Memory;->mBUAStorageVolumePreferenceCategory:Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory;
@@ -101,7 +99,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 166
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/Memory$1;->this$0:Lcom/android/settings_ex/deviceinfo/Memory;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/Memory;->mBUAStorageVolumePreferenceCategory:Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory;

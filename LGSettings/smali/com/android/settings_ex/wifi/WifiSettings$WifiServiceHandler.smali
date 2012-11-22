@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 1188
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/settings_ex/wifi/WifiSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -38,7 +37,6 @@
     .parameter "x1"
 
     .prologue
-    .line 1188
     invoke-direct {p0, p1}, Lcom/android/settings_ex/wifi/WifiSettings$WifiServiceHandler;-><init>(Lcom/android/settings_ex/wifi/WifiSettings;)V
 
     return-void
@@ -125,12 +123,10 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 1217
     iget-object v2, v1, Landroid/net/wifi/WpsResult;->pin:Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
-    .line 1218
     iget-object v2, p0, Lcom/android/settings_ex/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/settings_ex/wifi/WifiSettings;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/wifi/WifiSettings;->getResources()Landroid/content/res/Resources;

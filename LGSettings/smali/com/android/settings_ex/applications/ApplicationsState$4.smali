@@ -57,7 +57,6 @@
     .parameter "object2"
 
     .prologue
-    .line 191
     iget-wide v0, p1, Lcom/android/settings_ex/applications/ApplicationsState$AppEntry;->externalSize:J
 
     iget-wide v2, p2, Lcom/android/settings_ex/applications/ApplicationsState$AppEntry;->externalSize:J
@@ -107,7 +106,6 @@
     .parameter "x1"
 
     .prologue
-    .line 187
     check-cast p1, Lcom/android/settings_ex/applications/ApplicationsState$AppEntry;
 
     .end local p1

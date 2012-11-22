@@ -19,6 +19,8 @@
 
 .field mObject:Ljava/lang/Object;
 
+.field mRequireAnnotation:Z
+
 
 # direct methods
 .method constructor <init>()V

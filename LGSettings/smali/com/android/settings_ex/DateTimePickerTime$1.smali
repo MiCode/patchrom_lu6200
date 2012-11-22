@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 50
     iput-object p1, p0, Lcom/android/settings_ex/DateTimePickerTime$1;->this$0:Lcom/android/settings_ex/DateTimePickerTime;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -89,15 +88,12 @@
 
     if-gez v3, :cond_0
 
-    .line 63
     invoke-static {v1, v2}, Landroid/os/SystemClock;->setCurrentTimeMillis(J)Z
 
-    .line 65
     :cond_0
     iget-object v3, p0, Lcom/android/settings_ex/DateTimePickerTime$1;->this$0:Lcom/android/settings_ex/DateTimePickerTime;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/DateTimePickerTime;->finish()V
 
-    .line 66
     return-void
 .end method

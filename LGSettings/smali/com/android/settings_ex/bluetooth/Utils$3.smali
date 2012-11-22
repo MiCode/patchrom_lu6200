@@ -34,20 +34,16 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 217
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 224
     :goto_0
     return-void
 
-    .line 219
     :pswitch_0
     invoke-static {v4}, Lcom/android/settings_ex/bluetooth/Utils;->access$002(Z)Z
 
-    .line 220
     invoke-static {}, Lcom/android/settings_ex/bluetooth/Utils;->access$100()Landroid/content/Context;
 
     move-result-object v0
@@ -66,7 +62,6 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/android/settings_ex/bluetooth/Utils;->showError(Landroid/content/Context;Ljava/lang/String;ILandroid/bluetooth/BluetoothDevice;)V
 
-    .line 221
     invoke-static {}, Lcom/android/settings_ex/bluetooth/Utils;->access$500()Landroid/os/Handler;
 
     move-result-object v0

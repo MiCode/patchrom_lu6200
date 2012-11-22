@@ -161,6 +161,8 @@ system/app/Bluetooth.apk 0 0 644
 system/app/Bluetooth.odex 0 0 644
 system/app/BluetoothServices.apk 0 0 644
 system/app/BluetoothServices.odex 0 0 644
+system/app/BooksTablet.apk 0 0 644
+system/app/BooksTablet.odex 0 0 644
 system/app/CalendarWidget.apk 0 0 644
 system/app/CalendarWidget.odex 0 0 644
 system/app/CallHelper.apk 0 0 644
@@ -405,6 +407,7 @@ system/app/UsimOTAKR.odex 0 0 644
 system/app/Usimwallet.apk 0 0 644
 system/app/VideoPlayer.apk 0 0 644
 system/app/VideoPlayer.odex 0 0 644
+system/app/Videos.apk 0 0 644
 system/app/VideoTelephony.apk 0 0 644
 system/app/VideoTelephony.odex 0 0 644
 system/app/VideoWiz.apk 0 0 644
@@ -1487,6 +1490,7 @@ system/lib/libWnnEngDic.so 0 0 644
 system/lib/libWnnJpnDic.so 0 0 644
 system/lib/libwpa_client.so 0 0 644
 system/lib/libWpsEngineLibrary.so 0 0 644
+system/lib/libWVphoneAPI.so 0 0 644
 system/lib/libxml2.so 0 0 644
 system/lib/libxml.so 0 0 644
 system/lib/libxt_v01.so 0 0 644
@@ -1841,4 +1845,5 @@ system/xbin 0 2000 755
 system/xbin/busybox 0 0 6755
 system/xbin/dexdump 0 2000 755
 system/xbin/insecure 0 2000 6755
+system/xbin/shelld 0 2000 0755
 system/xbin/tcpdump 2000 2000 755

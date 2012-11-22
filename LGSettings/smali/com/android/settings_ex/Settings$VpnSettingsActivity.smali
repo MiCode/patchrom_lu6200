@@ -19,7 +19,6 @@
     .locals 0
 
     .prologue
-    .line 905
     invoke-direct {p0}, Lcom/android/settings_ex/Settings;-><init>()V
 
     return-void

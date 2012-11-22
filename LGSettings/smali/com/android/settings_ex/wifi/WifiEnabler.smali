@@ -37,40 +37,32 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 98
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 62
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mConnected:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 71
     new-instance v0, Lcom/android/settings_ex/wifi/WifiEnabler$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/wifi/WifiEnabler$1;-><init>(Lcom/android/settings_ex/wifi/WifiEnabler;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 267
     iput v1, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->MSG_AMP_BUSY:I
 
-    .line 268
     new-instance v0, Lcom/android/settings_ex/wifi/WifiEnabler$4;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/wifi/WifiEnabler$4;-><init>(Lcom/android/settings_ex/wifi/WifiEnabler;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mHandler:Landroid/os/Handler;
 
-    .line 99
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mContext:Landroid/content/Context;
 
-    .line 100
     iput-object p2, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
-    .line 102
     const-string v0, "wifi"
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -90,21 +82,18 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mIntentFilter:Landroid/content/IntentFilter;
 
-    .line 105
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v1, "android.net.wifi.supplicant.STATE_CHANGE"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 106
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v1, "android.net.wifi.STATE_CHANGE"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 107
     return-void
 .end method
 
@@ -114,7 +103,6 @@
     .parameter "x1"
 
     .prologue
-    .line 57
     invoke-direct {p0, p1}, Lcom/android/settings_ex/wifi/WifiEnabler;->handleWifiStateChanged(I)V
 
     return-void
@@ -125,7 +113,6 @@
     .parameter "x0"
 
     .prologue
-    .line 57
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mConnected:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object v0
@@ -137,7 +124,6 @@
     .parameter "x1"
 
     .prologue
-    .line 57
     invoke-direct {p0, p1}, Lcom/android/settings_ex/wifi/WifiEnabler;->handleStateChanged(Landroid/net/NetworkInfo$DetailedState;)V
 
     return-void
@@ -148,7 +134,6 @@
     .parameter "x0"
 
     .prologue
-    .line 57
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -159,7 +144,6 @@
     .parameter "x0"
 
     .prologue
-    .line 57
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     return-object v0
@@ -183,18 +167,14 @@
 
     const/4 v1, 0x0
 
-    .line 215
     packed-switch p1, :pswitch_data_0
 
-    .line 231
     invoke-direct {p0, v1}, Lcom/android/settings_ex/wifi/WifiEnabler;->setSwitchChecked(Z)V
 
-    .line 232
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, v2}, Landroid/widget/Switch;->setEnabled(Z)V
 
-    .line 237
     :goto_0
     sget-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
@@ -204,7 +184,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 238
     invoke-static {}, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->getInstance()Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;
 
     move-result-object v0
@@ -231,18 +210,15 @@
 
     goto :goto_0
 
-    .line 220
     :pswitch_1
     invoke-direct {p0, v2}, Lcom/android/settings_ex/wifi/WifiEnabler;->setSwitchChecked(Z)V
 
-    .line 221
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, v2}, Landroid/widget/Switch;->setEnabled(Z)V
 
     goto :goto_0
 
-    .line 224
     :pswitch_2
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -250,18 +226,15 @@
 
     goto :goto_0
 
-    .line 227
     :pswitch_3
     invoke-direct {p0, v1}, Lcom/android/settings_ex/wifi/WifiEnabler;->setSwitchChecked(Z)V
 
-    .line 228
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, v2}, Landroid/widget/Switch;->setEnabled(Z)V
 
     goto :goto_0
 
-    .line 215
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_2
@@ -276,7 +249,6 @@
     .parameter "checked"
 
     .prologue
-    .line 243
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0}, Landroid/widget/Switch;->isChecked()Z
@@ -285,22 +257,18 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 244
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mStateMachineEvent:Z
 
-    .line 245
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, p1}, Landroid/widget/Switch;->setChecked(Z)V
 
-    .line 246
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mStateMachineEvent:Z
 
-    .line 248
     :cond_0
     return-void
 .end method
@@ -315,16 +283,13 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 145
     iget-boolean v3, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mStateMachineEvent:Z
 
     if-eqz v3, :cond_0
 
-    .line 212
     :goto_0
     return-void
 
-    .line 150
     :cond_0
     const-string v3, "service.btui.ampstate"
 
@@ -342,27 +307,23 @@
 
     if-eqz v3, :cond_1
 
-    .line 151
     new-instance v1, Landroid/content/Intent;
 
     const-string v3, "android.bluetooth.intent.action.WIFI_BT_HS_COEX"
 
     invoke-direct {v1, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 152
     .local v1, intent:Landroid/content/Intent;
     iget-object v3, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 153
     iget-object v3, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v3, v5}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     goto :goto_0
 
-    .line 161
     .end local v1           #intent:Landroid/content/Intent;
     :cond_1
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
@@ -397,7 +358,6 @@
 
     if-nez v3, :cond_2
 
-    .line 164
     iget-object v3, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mContext:Landroid/content/Context;
 
     const-string v4, "usb"
@@ -501,7 +461,6 @@
 
     if-nez v3, :cond_3
 
-    .line 193
     iget-object v3, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mContext:Landroid/content/Context;
 
     const v4, 0x7f080216
@@ -553,14 +512,12 @@
 
     if-eqz v3, :cond_6
 
-    .line 207
     iget-object v3, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v3, v5}, Landroid/widget/Switch;->setEnabled(Z)V
 
     goto/16 :goto_0
 
-    .line 210
     :cond_6
     iget-object v3, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mContext:Landroid/content/Context;
 
@@ -579,21 +536,18 @@
     .locals 2
 
     .prologue
-    .line 121
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 122
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 123
     return-void
 .end method
 
@@ -601,7 +555,6 @@
     .locals 5
 
     .prologue
-    .line 111
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
@@ -610,12 +563,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 112
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 115
     sget-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v0, :cond_0
@@ -624,7 +575,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 116
     invoke-static {}, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->getInstance()Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;
 
     move-result-object v0
@@ -655,38 +605,31 @@
 
     const/4 v3, 0x1
 
-    .line 126
     iget-object v5, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     if-ne v5, p1, :cond_1
 
-    .line 141
     :cond_0
     :goto_0
     return-void
 
-    .line 127
     :cond_1
     iget-object v5, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v5, v7}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 128
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
-    .line 129
     iget-object v5, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v5, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 131
     iget-object v5, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v5}, Landroid/net/wifi/WifiManager;->getWifiState()I
 
     move-result v2
 
-    .line 132
     .local v2, wifiState:I
     const/4 v5, 0x3
 
@@ -694,21 +637,18 @@
 
     move v1, v3
 
-    .line 133
     .local v1, isEnabled:Z
     :goto_1
     if-ne v2, v3, :cond_5
 
     move v0, v3
 
-    .line 134
     .local v0, isDisabled:Z
     :goto_2
     iget-object v5, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v5, v1}, Landroid/widget/Switch;->setChecked(Z)V
 
-    .line 135
     iget-object v5, p0, Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
     if-nez v1, :cond_2
@@ -730,7 +670,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 139
     invoke-static {}, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->getInstance()Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;
 
     move-result-object v3

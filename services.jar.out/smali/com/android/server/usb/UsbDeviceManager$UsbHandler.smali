@@ -3540,7 +3540,6 @@
     .parameter "set"
 
     .prologue
-    .line 236
     iget-object v0, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->this$0:Lcom/android/server/usb/UsbDeviceManager;
 
     #getter for: Lcom/android/server/usb/UsbDeviceManager;->mContext:Landroid/content/Context;
@@ -3556,45 +3555,37 @@
 
     check-cast v0, Landroid/os/storage/StorageManager;
 
-    .line 237
     .local v0, storageManager:Landroid/os/storage/StorageManager;
     if-nez v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 251
     :goto_0
     return v1
 
-    .line 239
     :cond_0
     if-eqz p1, :cond_2
 
-    .line 240
     invoke-virtual {v0}, Landroid/os/storage/StorageManager;->isUsbMassStorageEnabled()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 241
     const-string v1, "UsbDeviceManager"
 
     const-string v2, "[AUTORUN] enableUsbMassStorage"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 242
     invoke-virtual {v0}, Landroid/os/storage/StorageManager;->enableUsbMassStorage()V
 
-    .line 251
     :cond_1
     :goto_1
     const/4 v1, 0x1
 
     goto :goto_0
 
-    .line 245
     :cond_2
     invoke-virtual {v0}, Landroid/os/storage/StorageManager;->isUsbMassStorageEnabled()Z
 
@@ -3602,14 +3593,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 246
     const-string v1, "UsbDeviceManager"
 
     const-string v2, "[AUTORUN] disableUsbMassStorage"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 247
     invoke-virtual {v0}, Landroid/os/storage/StorageManager;->disableUsbMassStorage()V
 
     goto :goto_1
@@ -3624,7 +3613,6 @@
 
     const/4 v4, 0x0
 
-    .line 662
     iget-object v5, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->this$0:Lcom/android/server/usb/UsbDeviceManager;
 
     #getter for: Lcom/android/server/usb/UsbDeviceManager;->mContext:Landroid/content/Context;
@@ -3640,7 +3628,6 @@
 
     check-cast v2, Landroid/app/KeyguardManager;
 
-    .line 665
     .local v2, keyguardManager:Landroid/app/KeyguardManager;
     iget-object v5, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mCurrentFunctions:Ljava/lang/String;
 
@@ -3651,7 +3638,6 @@
 
     move-result v0
 
-    .line 668
     .local v0, currFuncContainsMSD:Z
     invoke-virtual {v2}, Landroid/app/KeyguardManager;->isKeyguardLocked()Z
 
@@ -3667,7 +3653,6 @@
 
     move v1, v3
 
-    .line 672
     .local v1, isDeviceLocked:Z
     :goto_0
     if-eqz p1, :cond_0
@@ -3680,13 +3665,10 @@
 
     if-nez v1, :cond_0
 
-    .line 673
     invoke-direct {p0, v3}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->setMassStorage(Z)Z
 
-    .line 674
     iput-boolean v3, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mMassStorageEnabled:Z
 
-    .line 678
     :cond_0
     iget-boolean v5, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mMassStorageEnabled:Z
 
@@ -3700,13 +3682,10 @@
 
     if-nez v1, :cond_1
 
-    .line 679
     invoke-direct {p0, v3}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->setMassStorage(Z)Z
 
-    .line 680
     iput-boolean v3, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mMassStorageEnabled:Z
 
-    .line 685
     :cond_1
     iget-boolean v3, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mMassStorageEnabled:Z
 
@@ -3718,13 +3697,10 @@
 
     if-nez v0, :cond_2
 
-    .line 686
     invoke-direct {p0, v4}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->setMassStorage(Z)Z
 
-    .line 687
     iput-boolean v4, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mMassStorageEnabled:Z
 
-    .line 691
     :cond_2
     iget-boolean v3, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mConnected:Z
 
@@ -3734,13 +3710,10 @@
 
     if-eqz v3, :cond_3
 
-    .line 692
     invoke-direct {p0, v4}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->setMassStorage(Z)Z
 
-    .line 693
     iput-boolean v4, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mMassStorageEnabled:Z
 
-    .line 696
     :cond_3
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3772,6 +3745,5 @@
     :cond_4
     move v1, v4
 
-    .line 668
     goto :goto_0
 .end method

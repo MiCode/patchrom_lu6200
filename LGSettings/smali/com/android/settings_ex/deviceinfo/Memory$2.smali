@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 172
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/Memory$2;->this$0:Lcom/android/settings_ex/deviceinfo/Memory;
 
     invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
@@ -100,7 +99,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 178
     iget-object v2, p0, Lcom/android/settings_ex/deviceinfo/Memory$2;->this$0:Lcom/android/settings_ex/deviceinfo/Memory;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/Memory;->mStorageVolumePreferenceCategories:[Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory;
@@ -110,7 +108,6 @@
 
     aget-object v1, v2, v0
 
-    .line 179
     .local v1, svpc:Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory;
     invoke-virtual {v1}, Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory;->getStorageVolume()Landroid/os/storage/StorageVolume;
 
@@ -126,15 +123,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 180
     invoke-virtual {v1}, Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory;->onStorageStateChanged()V
 
-    .line 184
     .end local v1           #svpc:Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory;
     :cond_0
     return-void
 
-    .line 177
     .restart local v1       #svpc:Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory;
     :cond_1
     add-int/lit8 v0, v0, 0x1

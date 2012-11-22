@@ -37,17 +37,14 @@
     .parameter
 
     .prologue
-    .line 325
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageStatsObserver$Stub;-><init>()V
 
-    .line 326
     const-wide/16 v0, 0x0
 
     iput-wide v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsSizeForThisStatsObserver:J
 
-    .line 327
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -63,7 +60,6 @@
     .parameter "x1"
 
     .prologue
-    .line 325
     invoke-direct {p0, p1}, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;-><init>(Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;)V
 
     return-void
@@ -74,7 +70,6 @@
     .parameter "x0"
 
     .prologue
-    .line 325
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsList:Ljava/util/List;
 
     return-object v0
@@ -86,12 +81,10 @@
     .locals 3
 
     .prologue
-    .line 366
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsList:Ljava/util/List;
 
     monitor-enter v1
 
-    .line 367
     :try_start_0
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsList:Ljava/util/List;
 
@@ -130,7 +123,6 @@
     .parameter "succeeded"
 
     .prologue
-    .line 330
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->mStatsObserver:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;
@@ -144,15 +136,12 @@
 
     if-nez v0, :cond_0
 
-    .line 357
     :goto_0
     return-void
 
-    .line 335
     :cond_0
     if-eqz p2, :cond_1
 
-    .line 336
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     iget-object v0, v0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->this$0:Lcom/android/settings_ex/deviceinfo/StorageMeasurement;
@@ -164,7 +153,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 337
     iget-wide v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsSizeForThisStatsObserver:J
 
     iget-wide v2, p1, Landroid/content/pm/PackageStats;->codeSize:J
@@ -177,14 +165,12 @@
 
     iput-wide v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsSizeForThisStatsObserver:J
 
-    .line 350
     :cond_1
     :goto_1
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsList:Ljava/util/List;
 
     monitor-enter v1
 
-    .line 351
     :try_start_0
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsList:Ljava/util/List;
 
@@ -192,7 +178,6 @@
 
     invoke-interface {v0, v2}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 352
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -223,7 +208,6 @@
 
     if-nez v0, :cond_3
 
-    .line 339
     iget-wide v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsSizeForThisStatsObserver:J
 
     iget-wide v2, p1, Landroid/content/pm/PackageStats;->externalObbSize:J
@@ -286,14 +270,12 @@
 
     goto :goto_1
 
-    .line 353
     :cond_4
     :try_start_1
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 355
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     iget-object v0, v0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->this$0:Lcom/android/settings_ex/deviceinfo/StorageMeasurement;
@@ -303,7 +285,6 @@
     #setter for: Lcom/android/settings_ex/deviceinfo/StorageMeasurement;->mAppsSize:J
     invoke-static {v0, v1, v2}, Lcom/android/settings_ex/deviceinfo/StorageMeasurement;->access$602(Lcom/android/settings_ex/deviceinfo/StorageMeasurement;J)J
 
-    .line 356
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->this$1:Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;
 
     #calls: Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler;->onInternalMeasurementComplete()V
@@ -317,24 +298,19 @@
     .parameter "packageName"
 
     .prologue
-    .line 360
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsList:Ljava/util/List;
 
     monitor-enter v1
 
-    .line 361
     :try_start_0
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$MeasurementHandler$StatsObserver;->mAppsList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 362
     monitor-exit v1
 
-    .line 363
     return-void
 
-    .line 362
     :catchall_0
     move-exception v0
 

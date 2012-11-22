@@ -43,19 +43,14 @@
     .parameter "id"
 
     .prologue
-    .line 589
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 590
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$FileInfo;->mFileName:Ljava/lang/String;
 
-    .line 591
     iput-wide p2, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$FileInfo;->mSize:J
 
-    .line 592
     iput-wide p4, p0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$FileInfo;->mId:J
 
-    .line 593
     return-void
 .end method
 
@@ -108,7 +103,6 @@
     .parameter "x0"
 
     .prologue
-    .line 584
     check-cast p1, Lcom/android/settings_ex/deviceinfo/StorageMeasurement$FileInfo;
 
     .end local p1

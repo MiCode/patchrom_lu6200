@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 114
     iput-object p1, p0, Lcom/android/settings_ex/hidden/ApnSettings$1;->this$0:Lcom/android/settings_ex/hidden/ApnSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -53,13 +52,11 @@
 
     if-eqz v4, :cond_2
 
-    .line 119
     #calls: Lcom/android/settings_ex/hidden/ApnSettings;->getMobileDataState(Landroid/content/Intent;)Lcom/android/internal/telephony/Phone$DataState;
     invoke-static {p2}, Lcom/android/settings_ex/hidden/ApnSettings;->access$000(Landroid/content/Intent;)Lcom/android/internal/telephony/Phone$DataState;
 
     move-result-object v3
 
-    .line 120
     .local v3, state:Lcom/android/internal/telephony/Phone$DataState;
     sget-object v4, Lcom/android/settings_ex/hidden/ApnSettings$3;->$SwitchMap$com$android$internal$telephony$Phone$DataState:[I
 
@@ -86,7 +83,6 @@
 
     if-nez v4, :cond_1
 
-    .line 123
     iget-object v4, p0, Lcom/android/settings_ex/hidden/ApnSettings$1;->this$0:Lcom/android/settings_ex/hidden/ApnSettings;
 
     #calls: Lcom/android/settings_ex/hidden/ApnSettings;->fillList()V
@@ -163,7 +159,6 @@
 
     if-eqz v4, :cond_3
 
-    .line 143
     iget-object v4, p0, Lcom/android/settings_ex/hidden/ApnSettings$1;->this$0:Lcom/android/settings_ex/hidden/ApnSettings;
 
     const/4 v5, 0x0

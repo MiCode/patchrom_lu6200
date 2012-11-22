@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 151
     iput-object p1, p0, Lcom/android/settings_ex/widget/ChartSweepView$1;->this$0:Lcom/android/settings_ex/widget/ChartSweepView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,12 +41,10 @@
     .parameter "v"
 
     .prologue
-    .line 153
     iget-object v0, p0, Lcom/android/settings_ex/widget/ChartSweepView$1;->this$0:Lcom/android/settings_ex/widget/ChartSweepView;
 
     #calls: Lcom/android/settings_ex/widget/ChartSweepView;->dispatchRequestEdit()V
     invoke-static {v0}, Lcom/android/settings_ex/widget/ChartSweepView;->access$000(Lcom/android/settings_ex/widget/ChartSweepView;)V
 
-    .line 154
     return-void
 .end method

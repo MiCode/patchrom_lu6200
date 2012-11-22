@@ -44,7 +44,6 @@
     .parameter "checked"
 
     .prologue
-    .line 729
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilitySettings$ToggleSwitch;->mOnBeforeListener:Lcom/android/settings_ex/AccessibilitySettings$ToggleSwitch$OnBeforeCheckedChangeListener;
 
     if-eqz v0, :cond_0
@@ -85,9 +84,7 @@
     .parameter "listener"
 
     .prologue
-    .line 724
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilitySettings$ToggleSwitch;->mOnBeforeListener:Lcom/android/settings_ex/AccessibilitySettings$ToggleSwitch$OnBeforeCheckedChangeListener;
 
-    .line 725
     return-void
 .end method

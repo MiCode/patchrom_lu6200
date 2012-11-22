@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 202
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveService$PowerSaveServiceLocalBinder;->this$0:Lcom/android/settings_ex/powersave/PowerSaveService;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V

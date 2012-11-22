@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 536
     iput-object p1, p0, Lcom/android/settings_ex/UserDictionarySettings$5;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "dialog"
 
     .prologue
-    .line 539
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$5;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     const/4 v1, 0x0

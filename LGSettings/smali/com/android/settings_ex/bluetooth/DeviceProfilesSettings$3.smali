@@ -33,7 +33,6 @@
     .parameter
 
     .prologue
-    .line 490
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings$3;->this$0:Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings$3;->val$device:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
@@ -53,14 +52,12 @@
     .parameter "which"
 
     .prologue
-    .line 492
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings$3;->val$device:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
 
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings$3;->val$profile:Lcom/android/settings_ex/bluetooth/LocalBluetoothProfile;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;->disconnect(Lcom/android/settings_ex/bluetooth/LocalBluetoothProfile;)V
 
-    .line 493
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings$3;->val$profile:Lcom/android/settings_ex/bluetooth/LocalBluetoothProfile;
 
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings$3;->val$device:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;

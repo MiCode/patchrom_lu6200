@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1242
     iput-object p1, p0, Lcom/android/settings_ex/DataUsageSummary$10;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -62,18 +61,15 @@
 
     check-cast v0, Lcom/android/settings_ex/DataUsageSummary$CycleItem;
 
-    .line 1246
     .local v0, cycle:Lcom/android/settings_ex/DataUsageSummary$CycleItem;
     instance-of v1, v0, Lcom/android/settings_ex/DataUsageSummary$CycleChangeItem;
 
     if-eqz v1, :cond_0
 
-    .line 1249
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$10;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-static {v1}, Lcom/android/settings_ex/DataUsageSummary$CycleEditorFragment;->show(Lcom/android/settings_ex/DataUsageSummary;)V
 
-    .line 1252
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$10;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #getter for: Lcom/android/settings_ex/DataUsageSummary;->mCycleSpinner:Landroid/widget/Spinner;
@@ -146,11 +142,9 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1264
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 1265
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$10;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #getter for: Lcom/android/settings_ex/DataUsageSummary;->mChart:Lcom/android/settings_ex/widget/ChartDataUsageView;

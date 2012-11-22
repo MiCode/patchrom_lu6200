@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 595
     iput-object p1, p0, Lcom/android/settings_ex/CryptKeeper$5;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,12 +41,10 @@
     .parameter "v"
 
     .prologue
-    .line 597
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeper$5;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     #calls: Lcom/android/settings_ex/CryptKeeper;->takeEmergencyCallAction()V
     invoke-static {v0}, Lcom/android/settings_ex/CryptKeeper;->access$1000(Lcom/android/settings_ex/CryptKeeper;)V
 
-    .line 598
     return-void
 .end method

@@ -37,19 +37,16 @@
     .locals 1
 
     .prologue
-    .line 33
     sget-object v0, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->mInstance:Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;
 
     if-nez v0, :cond_0
 
-    .line 34
     new-instance v0, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;
 
     invoke-direct {v0}, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;-><init>()V
 
     sput-object v0, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->mInstance:Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;
 
-    .line 36
     :cond_0
     sget-object v0, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->mInstance:Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;
 
@@ -73,7 +70,6 @@
 
     const/4 v4, 0x0
 
-    .line 55
     sget-object v1, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -222,22 +218,18 @@
 
     if-eqz v1, :cond_6
 
-    .line 80
     sget-object v1, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v2, "[LGMDM] WifiP2pSettings Allow mode"
 
     invoke-static {v1, v2}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 81
     invoke-virtual {p5, v7}, Landroid/preference/CheckBoxPreference;->setSummaryOff(Ljava/lang/CharSequence;)V
 
-    .line 82
     invoke-virtual {p5, v5}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_0
 
-    .line 84
     :cond_6
     sget-object v1, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->TAG:Ljava/lang/String;
 
@@ -280,22 +272,18 @@
 
     if-eqz v1, :cond_8
 
-    .line 93
     sget-object v1, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v2, "[LGMDM] WifiP2pEnabler Allow mode"
 
     invoke-static {v1, v2}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 94
     invoke-virtual {p5, v7}, Landroid/preference/CheckBoxPreference;->setSummaryOff(Ljava/lang/CharSequence;)V
 
-    .line 95
     invoke-virtual {p5, v5}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_0
 
-    .line 97
     :cond_8
     sget-object v1, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->TAG:Ljava/lang/String;
 
@@ -327,7 +315,6 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 154
     sget-object v1, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -568,7 +555,6 @@
 
     const/4 v1, 0x0
 
-    .line 109
     sget-object v2, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -635,24 +621,20 @@
 
     if-eqz v2, :cond_3
 
-    .line 116
     sget-object v1, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v2, "[LGMDM] Allow mode"
 
     invoke-static {v1, v2}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 117
     const/4 v1, 0x0
 
     invoke-virtual {p4, v1}, Landroid/preference/CheckBoxPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 118
     invoke-virtual {p4, v0}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_0
 
-    .line 120
     :cond_3
     sget-object v2, Lcom/android/settings_ex/wifi/MDMWifiSettingsAdapter;->TAG:Ljava/lang/String;
 

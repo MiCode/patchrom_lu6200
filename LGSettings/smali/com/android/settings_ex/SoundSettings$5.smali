@@ -25,7 +25,6 @@
     .parameter "x0"
 
     .prologue
-    .line 740
     iput-object p1, p0, Lcom/android/settings_ex/SoundSettings$5;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -44,10 +43,8 @@
 
     const/4 v2, 0x1
 
-    .line 743
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
-    .line 745
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$5;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     #getter for: Lcom/android/settings_ex/SoundSettings;->mRingtonePreference:Landroid/preference/Preference;
@@ -57,7 +54,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 746
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$5;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/SoundSettings$5;->this$0:Lcom/android/settings_ex/SoundSettings;
@@ -81,7 +77,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 750
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$5;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/SoundSettings$5;->this$0:Lcom/android/settings_ex/SoundSettings;
@@ -105,7 +100,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 755
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$5;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     const/16 v1, 0x8
@@ -133,7 +127,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 760
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$5;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     const/16 v1, 0x10

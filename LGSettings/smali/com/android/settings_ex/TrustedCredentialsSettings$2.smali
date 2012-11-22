@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 369
     iput-object p1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$2;->this$0:Lcom/android/settings_ex/TrustedCredentialsSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

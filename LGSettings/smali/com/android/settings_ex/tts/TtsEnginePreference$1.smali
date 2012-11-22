@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 88
     iput-object p1, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$1;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +42,10 @@
     .parameter "isChecked"
 
     .prologue
-    .line 91
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$1;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     #calls: Lcom/android/settings_ex/tts/TtsEnginePreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
     invoke-static {v0, p1, p2}, Lcom/android/settings_ex/tts/TtsEnginePreference;->access$000(Lcom/android/settings_ex/tts/TtsEnginePreference;Landroid/widget/CompoundButton;Z)V
 
-    .line 92
     return-void
 .end method

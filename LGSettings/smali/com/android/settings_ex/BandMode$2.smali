@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 193
     iput-object p1, p0, Lcom/android/settings_ex/BandMode$2;->this$0:Lcom/android/settings_ex/BandMode;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -84,7 +83,6 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/view/Window;->setFeatureInt(II)V
 
-    .line 210
     iget-object v1, p0, Lcom/android/settings_ex/BandMode$2;->this$0:Lcom/android/settings_ex/BandMode;
 
     iget-object v2, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;

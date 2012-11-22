@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 64
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsPreference$2;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,11 +41,9 @@
     .parameter "arg0"
 
     .prologue
-    .line 67
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsPreference$2;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsPreference;
 
     invoke-virtual {v0, p1}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsPreference;->onSettingsButtonClicked(Landroid/view/View;)V
 
-    .line 68
     return-void
 .end method

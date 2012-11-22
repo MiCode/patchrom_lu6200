@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 200
     iput-object p1, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$3;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -43,10 +42,8 @@
 
     const/4 v2, 0x0
 
-    .line 203
     sput-boolean v1, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mStart:Z
 
-    .line 204
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$3;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     #getter for: Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
@@ -56,7 +53,6 @@
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
-    .line 207
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$3;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     #getter for: Lcom/android/settings_ex/lge/MotionSensorCalibration;->mTesting:Ljava/lang/Boolean;
@@ -70,12 +66,10 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 208
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 214
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$3;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     const v1, 0x7f080778
@@ -98,15 +92,12 @@
     #setter for: Lcom/android/settings_ex/lge/MotionSensorCalibration;->mTesting:Ljava/lang/Boolean;
     invoke-static {v0, v1}, Lcom/android/settings_ex/lge/MotionSensorCalibration;->access$102(Lcom/android/settings_ex/lge/MotionSensorCalibration;Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
-    .line 221
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$3;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/lge/MotionSensorCalibration;->finish()V
 
-    .line 222
     return-void
 
-    .line 210
     :pswitch_0
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$3;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 

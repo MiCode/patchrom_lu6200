@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 197
     iput-object p1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcCardTrigger;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     invoke-direct {p0, p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcTrigger;-><init>(Lcom/android/settings_ex/nfc/LGNfcEnabler;)V
@@ -39,10 +38,8 @@
     .parameter "bOn"
 
     .prologue
-    .line 199
     if-nez p1, :cond_0
 
-    .line 200
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcCardTrigger;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     const v1, 0x7f080399

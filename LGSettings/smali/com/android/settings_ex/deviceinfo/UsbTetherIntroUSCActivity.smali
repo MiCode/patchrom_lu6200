@@ -21,13 +21,10 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 23
     invoke-direct {p0}, Lcom/android/internal/app/AlertActivity;-><init>()V
 
-    .line 30
     iput-boolean v0, p0, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->isFinishing:Z
 
-    .line 31
     iput-boolean v0, p0, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->mSelectOk:Z
 
     return-void
@@ -37,7 +34,6 @@
     .locals 7
 
     .prologue
-    .line 52
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v3
@@ -52,7 +48,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->mView:Landroid/view/View;
 
-    .line 54
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->mView:Landroid/view/View;
 
     const v4, 0x7f0b01cb
@@ -123,18 +118,15 @@
 
     move-result-object v1
 
-    .line 58
     .local v1, textlink:Ljava/lang/CharSequence;
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 59
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
-    .line 61
     iget-object v3, p0, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->mView:Landroid/view/View;
 
     return-object v3
@@ -150,28 +142,22 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 67
     packed-switch p2, :pswitch_data_0
 
-    .line 76
     :goto_0
     iput-boolean v1, p0, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->isFinishing:Z
 
-    .line 77
     return-void
 
-    .line 69
     :pswitch_0
     iput-boolean v1, p0, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->mSelectOk:Z
 
-    .line 70
     const/4 v0, -0x1
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->setResult(I)V
 
     goto :goto_0
 
-    .line 73
     :pswitch_1
     const/4 v0, 0x0
 
@@ -192,13 +178,10 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 36
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 38
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    .line 40
     .local v0, p:Lcom/android/internal/app/AlertController$AlertParams;
     const v1, 0x7f0807b6
 
@@ -208,14 +191,12 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    .line 41
     invoke-direct {p0}, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->createView()Landroid/view/View;
 
     move-result-object v1
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    .line 42
     const v1, 0x7f0807b5
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->getString(I)Ljava/lang/String;
@@ -236,13 +217,10 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonText:Ljava/lang/CharSequence;
 
-    .line 45
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 47
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/UsbTetherIntroUSCActivity;->setupAlert()V
 
-    .line 49
     return-void
 .end method
 

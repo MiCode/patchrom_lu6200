@@ -46,12 +46,9 @@
     .parameter "isProcess"
 
     .prologue
-    .line 231
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 232
     iput-boolean p1, p0, Lcom/android/settings_ex/applications/RunningState$BaseItem;->mIsProcess:Z
 
-    .line 233
     return-void
 .end method

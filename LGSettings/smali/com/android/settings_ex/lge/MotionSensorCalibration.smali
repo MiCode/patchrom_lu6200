@@ -51,15 +51,12 @@
     .locals 2
 
     .prologue
-    .line 50
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 54
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mThread:Ljava/lang/Thread;
 
-    .line 56
     const/4 v0, 0x0
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -68,19 +65,16 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mTesting:Ljava/lang/Boolean;
 
-    .line 60
     const-wide/16 v0, 0x0
 
     iput-wide v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mTestTime:J
 
-    .line 200
     new-instance v0, Lcom/android/settings_ex/lge/MotionSensorCalibration$3;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/lge/MotionSensorCalibration$3;-><init>(Lcom/android/settings_ex/lge/MotionSensorCalibration;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->handler:Landroid/os/Handler;
 
-    .line 50
     return-void
 .end method
 
@@ -89,7 +83,6 @@
     .parameter "x0"
 
     .prologue
-    .line 50
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
 
     return-object v0
@@ -100,7 +93,6 @@
     .parameter "x0"
 
     .prologue
-    .line 50
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mTesting:Ljava/lang/Boolean;
 
     return-object v0
@@ -112,7 +104,6 @@
     .parameter "x1"
 
     .prologue
-    .line 50
     iput-object p1, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mTesting:Ljava/lang/Boolean;
 
     return-object p1
@@ -123,7 +114,6 @@
     .parameter "x0"
 
     .prologue
-    .line 50
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mThread:Ljava/lang/Thread;
 
     return-object v0
@@ -505,22 +495,18 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 64
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 66
     const v0, 0x7f060024
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/MotionSensorCalibration;->setContentView(I)V
 
-    .line 67
     const-string v0, "motion"
 
     const-string v1, "x3"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 68
     const-string v0, "sensor"
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/MotionSensorCalibration;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -555,17 +541,14 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
 
-    .line 71
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
 
     if-eqz v0, :cond_0
 
-    .line 72
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0, v2}, Landroid/app/ProgressDialog;->setProgressStyle(I)V
 
-    .line 73
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
 
     const v1, 0x7f080779
@@ -576,12 +559,10 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 74
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0, v2}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    .line 75
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
 
     new-instance v1, Lcom/android/settings_ex/lge/MotionSensorCalibration$1;
@@ -590,7 +571,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
-    .line 91
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->resetsensorbutton:Landroid/widget/Button;
 
     new-instance v1, Lcom/android/settings_ex/lge/MotionSensorCalibration$2;
@@ -613,12 +593,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mThread:Ljava/lang/Thread;
 
-    .line 105
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mThread:Ljava/lang/Thread;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 106
     return-void
 .end method
 
@@ -626,20 +604,16 @@
     .locals 1
 
     .prologue
-    .line 127
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
-    .line 128
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mThread:Ljava/lang/Thread;
 
     if-eqz v0, :cond_0
 
-    .line 129
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mThread:Ljava/lang/Thread;
 
-    .line 131
     :cond_0
     return-void
 .end method
@@ -648,20 +622,16 @@
     .locals 1
 
     .prologue
-    .line 116
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 117
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mSensorManager:Landroid/hardware/SensorManager;
 
     invoke-virtual {v0, p0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
-    .line 118
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->cancel()V
 
-    .line 119
     const/4 v0, 0x0
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -670,15 +640,12 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mTesting:Ljava/lang/Boolean;
 
-    .line 120
     const/4 v0, 0x1
 
     sput-boolean v0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mStart:Z
 
-    .line 121
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/MotionSensorCalibration;->finish()V
 
-    .line 123
     return-void
 .end method
 
@@ -686,10 +653,8 @@
     .locals 3
 
     .prologue
-    .line 110
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 111
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mSensorManager:Landroid/hardware/SensorManager;
 
     iget-object v1, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mSensorManager:Landroid/hardware/SensorManager;

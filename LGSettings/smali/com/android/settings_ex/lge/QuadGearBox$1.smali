@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 44
     iput-object p1, p0, Lcom/android/settings_ex/lge/QuadGearBox$1;->this$0:Lcom/android/settings_ex/lge/QuadGearBox;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -59,21 +58,18 @@
 
     if-eqz v2, :cond_0
 
-    .line 50
     const-string v2, "QuadGearBox"
 
     const-string v5, "ACTION_ECOMODE_CHANGED sent."
 
     invoke-static {v2, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 51
     const-string v2, "com.android.settings_ex.ecomode.CHANGED"
 
     invoke-virtual {p2, v2, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    .line 52
     .local v1, eco_mode:I
     iget-object v2, p0, Lcom/android/settings_ex/lge/QuadGearBox$1;->this$0:Lcom/android/settings_ex/lge/QuadGearBox;
 
@@ -89,7 +85,6 @@
     :goto_0
     invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 53
     iget-object v2, p0, Lcom/android/settings_ex/lge/QuadGearBox$1;->this$0:Lcom/android/settings_ex/lge/QuadGearBox;
 
     iget-object v5, p0, Lcom/android/settings_ex/lge/QuadGearBox$1;->this$0:Lcom/android/settings_ex/lge/QuadGearBox;
@@ -106,7 +101,6 @@
     #calls: Lcom/android/settings_ex/lge/QuadGearBox;->updateImage(Z)V
     invoke-static {v2, v5}, Lcom/android/settings_ex/lge/QuadGearBox;->access$100(Lcom/android/settings_ex/lge/QuadGearBox;Z)V
 
-    .line 54
     iget-object v2, p0, Lcom/android/settings_ex/lge/QuadGearBox$1;->this$0:Lcom/android/settings_ex/lge/QuadGearBox;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/lge/QuadGearBox;->getContentResolver()Landroid/content/ContentResolver;

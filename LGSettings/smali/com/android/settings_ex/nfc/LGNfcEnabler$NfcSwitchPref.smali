@@ -34,30 +34,24 @@
     .parameter "trigger"
 
     .prologue
-    .line 337
     iput-object p1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 338
     iput-object p2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
-    .line 339
     iput-object p3, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mTrigger:Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcTrigger;
 
-    .line 341
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 343
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     const v1, 0x7f0801fd
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setSummaryOn(I)V
 
-    .line 344
     invoke-static {}, Lcom/android/settings_ex/Utils;->hasFeatureNfcP2P()Z
 
     move-result v0
@@ -66,14 +60,12 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 345
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     const v1, 0x7f080209
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setSummaryOff(I)V
 
-    .line 350
     :goto_0
     #getter for: Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
     invoke-static {p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler;->access$000(Lcom/android/settings_ex/nfc/LGNfcEnabler;)Landroid/nfc/NfcAdapter;
@@ -82,18 +74,15 @@
 
     if-nez v0, :cond_0
 
-    .line 351
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setEnabled(Z)V
 
-    .line 352
     :cond_0
     return-void
 
-    .line 347
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
@@ -116,66 +105,55 @@
 
     const/4 v1, 0x0
 
-    .line 376
     packed-switch p1, :pswitch_data_0
 
-    .line 394
     :goto_0
     return-void
 
-    .line 378
     :pswitch_0
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setEnableSwitch(Z)V
 
-    .line 379
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setChecked(Z)V
 
     goto :goto_0
 
-    .line 382
     :pswitch_1
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setEnableSwitch(Z)V
 
-    .line 383
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setChecked(Z)V
 
     goto :goto_0
 
-    .line 386
     :pswitch_2
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setEnableSwitch(Z)V
 
-    .line 387
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setChecked(Z)V
 
     goto :goto_0
 
-    .line 390
     :pswitch_3
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setEnableSwitch(Z)V
 
-    .line 391
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setChecked(Z)V
 
     goto :goto_0
 
-    .line 376
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -202,13 +180,11 @@
 
     move-result v0
 
-    .line 367
     .local v0, bValue:Z
     iget-object v1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v1, v4}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setEnableSwitch(Z)V
 
-    .line 368
     iget-object v1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mTrigger:Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcTrigger;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcTrigger;->trigger(Z)Z
@@ -217,14 +193,12 @@
 
     if-nez v1, :cond_0
 
-    .line 369
     iget-object v1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setEnableSwitch(Z)V
 
-    .line 371
     :cond_0
     const-string v1, "LGNfcEnabler"
 
@@ -256,14 +230,12 @@
     .locals 2
 
     .prologue
-    .line 362
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 363
     return-void
 .end method
 
@@ -271,11 +243,9 @@
     .locals 1
 
     .prologue
-    .line 356
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;->mSwitch:Lcom/android/settings_ex/nfc/NfcSwitchPreference;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/nfc/NfcSwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 357
     return-void
 .end method

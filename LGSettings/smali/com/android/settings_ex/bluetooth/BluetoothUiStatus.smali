@@ -27,27 +27,22 @@
     .parameter "localBluetoothManager"
 
     .prologue
-    .line 95
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 61
     new-instance v0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus$1;-><init>(Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 71
     new-instance v0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus$2;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus$2;-><init>(Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mHandler:Landroid/os/Handler;
 
-    .line 96
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mManager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
 
-    .line 97
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mManager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;->getContext()Landroid/content/Context;
@@ -66,7 +61,6 @@
     .parameter "x1"
 
     .prologue
-    .line 41
     iput p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->oPhoneState:I
 
     return p1
@@ -77,7 +71,6 @@
     .parameter "x0"
 
     .prologue
-    .line 41
     iget v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->nPhoneState:I
 
     return v0
@@ -89,7 +82,6 @@
     .parameter "x1"
 
     .prologue
-    .line 41
     iput p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->nPhoneState:I
 
     return p1
@@ -100,7 +92,6 @@
     .parameter "x0"
 
     .prologue
-    .line 41
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     return-object v0
@@ -111,7 +102,6 @@
     .parameter "x0"
 
     .prologue
-    .line 41
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mManager:Lcom/android/settings_ex/bluetooth/LocalBluetoothManager;
 
     return-object v0
@@ -122,7 +112,6 @@
     .parameter "x0"
 
     .prologue
-    .line 41
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->sendIntentCallState()V
 
     return-void
@@ -147,26 +136,22 @@
 
     if-eq v1, v2, :cond_0
 
-    .line 138
     const-string v1, "btui_call_state_prev"
 
     iget v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->oPhoneState:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 139
     const-string v1, "btui_call_state"
 
     iget v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->nPhoneState:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 140
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 142
     :cond_0
     return-void
 .end method
@@ -218,25 +203,21 @@
     .locals 4
 
     .prologue
-    .line 101
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 103
     .local v0, filter:Landroid/content/IntentFilter;
     const-string v1, "android.bluetooth.adapter.action.STATE_CHANGED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 106
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 108
     new-instance v1, Lcom/android/internal/telephony/PhoneStateIntentReceiver;
 
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mContext:Landroid/content/Context;
@@ -247,19 +228,16 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mPhoneStateReceiver:Lcom/android/internal/telephony/PhoneStateIntentReceiver;
 
-    .line 109
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mPhoneStateReceiver:Lcom/android/internal/telephony/PhoneStateIntentReceiver;
 
     const/16 v2, 0x64
 
     invoke-virtual {v1, v2}, Lcom/android/internal/telephony/PhoneStateIntentReceiver;->notifyPhoneCallState(I)V
 
-    .line 110
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mPhoneStateReceiver:Lcom/android/internal/telephony/PhoneStateIntentReceiver;
 
     invoke-virtual {v1}, Lcom/android/internal/telephony/PhoneStateIntentReceiver;->registerIntent()V
 
-    .line 112
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mContext:Landroid/content/Context;
 
     const-string v2, "phone"
@@ -272,7 +250,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-    .line 113
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothUiStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getCallState()I

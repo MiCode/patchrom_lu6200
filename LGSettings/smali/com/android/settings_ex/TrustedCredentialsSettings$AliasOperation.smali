@@ -38,15 +38,12 @@
     .parameter "certHolder"
 
     .prologue
-    .line 411
     iput-object p1, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$AliasOperation;->this$0:Lcom/android/settings_ex/TrustedCredentialsSettings;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    .line 412
     iput-object p2, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;
 
-    .line 413
     return-void
 .end method
 
@@ -57,7 +54,6 @@
     .parameter "x2"
 
     .prologue
-    .line 409
     invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/TrustedCredentialsSettings$AliasOperation;-><init>(Lcom/android/settings_ex/TrustedCredentialsSettings;Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;)V
 
     return-void
@@ -107,7 +103,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 420
     iget-object v4, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;
 
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mX509Cert:Ljava/security/cert/X509Certificate;
@@ -281,7 +276,6 @@
     .parameter "ok"
 
     .prologue
-    .line 442
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;
 
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mTab:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;

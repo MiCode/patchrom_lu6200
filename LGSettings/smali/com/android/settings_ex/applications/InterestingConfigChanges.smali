@@ -38,7 +38,6 @@
 
     const/4 v2, 0x0
 
-    .line 28
     iget-object v4, p0, Lcom/android/settings_ex/applications/InterestingConfigChanges;->mLastConfiguration:Landroid/content/res/Configuration;
 
     invoke-virtual {p1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;

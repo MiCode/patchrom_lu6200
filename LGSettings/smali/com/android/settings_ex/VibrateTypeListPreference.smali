@@ -53,13 +53,10 @@
     .parameter "attrs"
 
     .prologue
-    .line 29
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 31
     iput-object p1, p0, Lcom/android/settings_ex/VibrateTypeListPreference;->mContext:Landroid/content/Context;
 
-    .line 32
     return-void
 .end method
 
@@ -67,7 +64,6 @@
     .locals 1
 
     .prologue
-    .line 14
     sget v0, Lcom/android/settings_ex/VibrateTypeListPreference;->selectiedPosision:I
 
     return v0
@@ -78,7 +74,6 @@
     .parameter "x0"
 
     .prologue
-    .line 14
     sput p0, Lcom/android/settings_ex/VibrateTypeListPreference;->selectiedPosision:I
 
     return p0
@@ -90,7 +85,6 @@
     .parameter "x1"
 
     .prologue
-    .line 14
     invoke-direct {p0, p1}, Lcom/android/settings_ex/VibrateTypeListPreference;->playVibrate(I)V
 
     return-void
@@ -101,44 +95,36 @@
     .parameter "resid"
 
     .prologue
-    .line 69
     iget-object v5, p0, Lcom/android/settings_ex/VibrateTypeListPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    .line 70
     .local v3, mResource:Landroid/content/res/Resources;
     const/4 v0, 0x0
 
-    .line 71
     .local v0, ar:[I
     const/4 v4, 0x0
 
-    .line 74
     .local v4, out:[J
     :try_start_0
     invoke-virtual {v3, p1}, Landroid/content/res/Resources;->getIntArray(I)[I
 
     move-result-object v0
 
-    .line 75
     if-nez v0, :cond_0
 
     const/4 v5, 0x0
 
-    .line 87
     :goto_0
     return-object v5
 
-    .line 76
     :cond_0
     array-length v5, v0
 
     new-array v4, v5, [J
 
-    .line 77
     const/4 v2, 0x0
 
     .local v2, i:I
@@ -195,17 +181,14 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 82
     sget-object v5, Lcom/android/settings_ex/VibrateTypeListPreference;->DEFAULT_VIBRATE:[J
 
     goto :goto_0
 
-    .line 83
     .end local v1           #e:Landroid/content/res/Resources$NotFoundException;
     :catch_1
     move-exception v1
 
-    .line 84
     .local v1, e:Ljava/lang/NullPointerException;
     const-string v5, "VibrateTypeListPreference"
 
@@ -233,7 +216,6 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 85
     sget-object v5, Lcom/android/settings_ex/VibrateTypeListPreference;->DEFAULT_VIBRATE:[J
 
     goto :goto_0
@@ -313,7 +295,6 @@
     .parameter "vibrateType"
 
     .prologue
-    .line 114
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypeListPreference;->mContext:Landroid/content/Context;
 
     const-string v2, "vibrator"
@@ -423,7 +404,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 135
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypeListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v2
@@ -460,40 +440,33 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 137
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 138
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 141
     .end local v1           #value:Ljava/lang/String;
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/VibrateTypeListPreference;->mVibrator:Landroid/os/Vibrator;
 
     if-eqz v2, :cond_1
 
-    .line 142
     iget-object v2, p0, Lcom/android/settings_ex/VibrateTypeListPreference;->mVibrator:Landroid/os/Vibrator;
 
     invoke-virtual {v2}, Landroid/os/Vibrator;->cancel()V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 148
     :cond_1
     :goto_0
     return-void
 
-    .line 144
     :catch_0
     move-exception v0
 
-    .line 145
     .local v0, e:Ljava/lang/NullPointerException;
     const-string v2, "VibrateTypeListPreference"
 
@@ -509,10 +482,8 @@
     .parameter "builder"
 
     .prologue
-    .line 37
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 
-    .line 39
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypeListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -557,17 +528,14 @@
     .locals 1
 
     .prologue
-    .line 125
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypeListPreference;->mVibrator:Landroid/os/Vibrator;
 
     if-eqz v0, :cond_0
 
-    .line 126
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypeListPreference;->mVibrator:Landroid/os/Vibrator;
 
     invoke-virtual {v0}, Landroid/os/Vibrator;->cancel()V
 
-    .line 127
     :cond_0
     return-void
 .end method

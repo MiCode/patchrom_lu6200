@@ -35,19 +35,14 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 35
     invoke-direct {p0}, Lcom/android/internal/app/AlertActivity;-><init>()V
 
-    .line 39
     iput-boolean v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mDoPowerSave:Z
 
-    .line 48
     iput-boolean v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->checked:Z
 
-    .line 49
     iput-boolean v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->noActivation:Z
 
-    .line 54
     new-instance v0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity$1;-><init>(Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;)V
@@ -63,7 +58,6 @@
     .parameter "x1"
 
     .prologue
-    .line 35
     invoke-direct {p0, p1}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->getPowerSaveModeValue(Landroid/content/Context;)I
 
     move-result v0
@@ -76,7 +70,6 @@
     .parameter "x0"
 
     .prologue
-    .line 35
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mTextView:Landroid/widget/TextView;
 
     return-object v0
@@ -87,7 +80,6 @@
     .parameter "x0"
 
     .prologue
-    .line 35
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
 
     return-object v0
@@ -98,7 +90,6 @@
     .parameter "x0"
 
     .prologue
-    .line 35
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mBatteryImg:Landroid/widget/ImageView;
 
     return-object v0
@@ -110,7 +101,6 @@
     .parameter "x1"
 
     .prologue
-    .line 35
     iput-boolean p1, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->noActivation:Z
 
     return p1
@@ -122,7 +112,6 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 196
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v2
@@ -137,7 +126,6 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mView:Landroid/view/View;
 
-    .line 198
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mView:Landroid/view/View;
 
     const v3, 0x7f0b0110
@@ -150,14 +138,12 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mTextView:Landroid/widget/TextView;
 
-    .line 199
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mTextView:Landroid/widget/TextView;
 
     const/16 v3, 0x8
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 201
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mView:Landroid/view/View;
 
     const v3, 0x7f0b010f
@@ -170,7 +156,6 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mBatteryImg:Landroid/widget/ImageView;
 
-    .line 203
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mView:Landroid/view/View;
 
     const v3, 0x7f0b0111
@@ -319,7 +304,6 @@
 
     if-ne v2, v3, :cond_3
 
-    .line 216
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v3, "power_save_cpu_adjust"
@@ -496,18 +480,15 @@
 
     if-lez v2, :cond_8
 
-    .line 245
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mTextViewSub:Landroid/widget/TextView;
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 247
     :cond_8
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mView:Landroid/view/View;
 
     return-object v2
 
-    .line 225
     :cond_9
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -649,14 +630,12 @@
 
     invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 252
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.android.settings_ex.powersave.POWERSAVE_ACTIVATION"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 253
     .local v0, intent:Landroid/content/Intent;
     const-string v2, "powersave_activation"
 
@@ -669,20 +648,16 @@
     :goto_1
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 254
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 255
     return-void
 
-    .line 251
     .end local v0           #intent:Landroid/content/Intent;
     :cond_0
     const-string v1, "Stop"
 
     goto :goto_0
 
-    .line 253
     .restart local v0       #intent:Landroid/content/Intent;
     :cond_1
     const/4 v1, 0x0
@@ -700,29 +675,22 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 169
     packed-switch p2, :pswitch_data_0
 
-    .line 177
     :goto_0
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->sendDoPowerSave()V
 
-    .line 178
     iput-boolean v1, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->checked:Z
 
-    .line 179
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->finish()V
 
-    .line 180
     return-void
 
-    .line 171
     :pswitch_0
     iput-boolean v1, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mDoPowerSave:Z
 
     goto :goto_0
 
-    .line 174
     :pswitch_1
     const/4 v0, 0x0
 
@@ -743,27 +711,22 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 102
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 104
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
     iput-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mContentResolver:Landroid/content/ContentResolver;
 
-    .line 105
     new-instance v3, Lcom/android/settings_ex/powersave/PowerSave;
 
     invoke-direct {v3, p0}, Lcom/android/settings_ex/powersave/PowerSave;-><init>(Landroid/content/Context;)V
 
     iput-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
 
-    .line 107
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    .line 108
     .local v2, p:Lcom/android/internal/app/AlertController$AlertParams;
     const v3, 0x7f080b65
 
@@ -790,14 +753,12 @@
 
     invoke-virtual {v3, v4, v1, v5}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
-    .line 114
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->createView()Landroid/view/View;
 
     move-result-object v3
 
     iput-object v3, v2, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    .line 115
     const v3, 0x104000a
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->getString(I)Ljava/lang/String;
@@ -806,10 +767,8 @@
 
     iput-object v3, v2, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    .line 116
     iput-object p0, v2, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 117
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
@@ -837,17 +796,13 @@
 
     iput-object v3, v2, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonText:Ljava/lang/CharSequence;
 
-    .line 122
     :goto_0
     iput-object p0, v2, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 125
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->setupAlert()V
 
-    .line 126
     return-void
 
-    .line 121
     :cond_0
     const v3, 0x7f080b75
 
@@ -888,26 +843,21 @@
 
     return v0
 
-    .line 186
     :pswitch_0
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mDoPowerSave:Z
 
-    .line 187
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->sendDoPowerSave()V
 
-    .line 188
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->checked:Z
 
-    .line 189
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->finish()V
 
     goto :goto_0
 
-    .line 184
     nop
 
     :pswitch_data_0
@@ -920,15 +870,12 @@
     .locals 1
 
     .prologue
-    .line 141
     invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onPause()V
 
-    .line 143
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mPowerSaveReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 144
     return-void
 .end method
 
@@ -936,31 +883,25 @@
     .locals 2
 
     .prologue
-    .line 129
     invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onResume()V
 
-    .line 132
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 133
     .local v0, filter:Landroid/content/IntentFilter;
     const-string v1, "android.intent.action.BATTERY_CHANGED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 134
     const-string v1, "android.intent.action.CONFIGURATION_CHANGED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 135
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mPowerSaveReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v1, v0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 137
     return-void
 .end method
 
@@ -968,39 +909,31 @@
     .locals 1
 
     .prologue
-    .line 148
     invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onStop()V
 
-    .line 150
     iget-boolean v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->noActivation:Z
 
     if-eqz v0, :cond_1
 
-    .line 159
     :cond_0
     :goto_0
     return-void
 
-    .line 153
     :cond_1
     iget-boolean v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->checked:Z
 
     if-nez v0, :cond_0
 
-    .line 154
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->mDoPowerSave:Z
 
-    .line 155
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->sendDoPowerSave()V
 
-    .line 156
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->checked:Z
 
-    .line 157
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveWarningPopupActivity;->finish()V
 
     goto :goto_0

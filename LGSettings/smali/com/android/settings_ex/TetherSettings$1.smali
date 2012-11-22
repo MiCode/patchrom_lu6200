@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 384
     iput-object p1, p0, Lcom/android/settings_ex/TetherSettings$1;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "proxy"
 
     .prologue
-    .line 386
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings$1;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     check-cast p2, Landroid/bluetooth/BluetoothPan;
@@ -61,7 +59,6 @@
     .parameter "profile"
 
     .prologue
-    .line 389
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings$1;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     const/4 v1, 0x0

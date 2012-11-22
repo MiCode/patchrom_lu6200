@@ -110,7 +110,6 @@
 
     const/4 v7, 0x0
 
-    .line 75
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
     const-string v5, "ES"
@@ -301,7 +300,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->BAL:Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
-    .line 76
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
     const-string v5, "IL"
@@ -322,7 +320,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->EU:Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
-    .line 77
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
     const-string v5, "US"
@@ -343,7 +340,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->KR:Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
-    .line 78
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
     const-string v5, "COM"
@@ -374,7 +370,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->MX:Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
-    .line 79
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
     const-string v5, "NOT_REGISTERED"
@@ -550,14 +545,12 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->$VALUES:[Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
-    .line 81
     new-instance v4, Ljava/util/HashMap;
 
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->stringToEnum:Ljava/util/Map;
 
-    .line 84
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->values()[Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
     move-result-object v0
@@ -574,7 +567,6 @@
 
     aget-object v1, v0, v2
 
-    .line 85
     .local v1, c:Lcom/android/settings_ex/lgesetting/Config/Config$Country;
     sget-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->stringToEnum:Ljava/util/Map;
 
@@ -584,12 +576,10 @@
 
     invoke-interface {v4, v5, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 84
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 86
     .end local v1           #c:Lcom/android/settings_ex/lgesetting/Config/Config$Country;
     :cond_0
     return-void
@@ -617,7 +607,6 @@
     .parameter
 
     .prologue
-    .line 74
     const-class v0, Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -633,7 +622,6 @@
     .locals 1
 
     .prologue
-    .line 74
     sget-object v0, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->$VALUES:[Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
     invoke-virtual {v0}, [Lcom/android/settings_ex/lgesetting/Config/Config$Country;->clone()Ljava/lang/Object;

@@ -40,38 +40,28 @@
 
     const/4 v1, 0x0
 
-    .line 54
     sput-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
-    .line 56
     sput-boolean v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mMtpAutorun:Z
 
-    .line 57
     sput-boolean v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mNeedDelayLaunch:Z
 
-    .line 59
     sput-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
-    .line 60
     sput-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
-    .line 61
     sput-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mStorageManager:Landroid/os/storage/StorageManager;
 
-    .line 62
     const-string v0, ""
 
     sput-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mDefaultFunction:Ljava/lang/String;
 
-    .line 63
     const-string v0, ""
 
     sput-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
-    .line 69
     sput-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mRejectPackageList:[Ljava/lang/String;
 
-    .line 70
     const/4 v0, 0x6
 
     new-array v0, v0, [Ljava/lang/String;
@@ -119,10 +109,8 @@
     .locals 1
 
     .prologue
-    .line 49
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
-    .line 438
     new-instance v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver$1;-><init>(Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;)V
@@ -136,7 +124,6 @@
     .locals 1
 
     .prologue
-    .line 49
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -292,28 +279,24 @@
 
     if-eqz v5, :cond_0
 
-    .line 547
     sget-object v5, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     const-string v6, "cdrom_storage"
 
     invoke-virtual {v5, v6, v3}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 548
     sget-object v3, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->startAutorunTimer(Landroid/content/Context;)V
 
     move v3, v4
 
-    .line 549
     goto :goto_0
 
     .end local v0           #autorunEnable:Z
     :cond_4
     move v0, v3
 
-    .line 540
     goto :goto_1
 .end method
 
@@ -361,20 +344,16 @@
     .parameter "className"
 
     .prologue
-    .line 412
     const/4 v2, 0x0
 
-    .line 413
     .local v2, isPackageName:Z
     const/4 v1, 0x0
 
-    .line 415
     .local v1, isClassName:Z
     sget-object v3, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mRejectPackageList:[Ljava/lang/String;
 
     if-eqz v3, :cond_0
 
-    .line 416
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -385,7 +364,6 @@
 
     if-ge v0, v3, :cond_0
 
-    .line 417
     sget-object v3, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mRejectPackageList:[Ljava/lang/String;
 
     aget-object v3, v3, v0
@@ -396,17 +374,14 @@
 
     if-eqz v3, :cond_3
 
-    .line 418
     const/4 v2, 0x1
 
-    .line 423
     .end local v0           #i:I
     :cond_0
     sget-object v3, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mRejectClassList:[Ljava/lang/String;
 
     if-eqz v3, :cond_1
 
-    .line 424
     const/4 v0, 0x0
 
     .restart local v0       #i:I
@@ -417,7 +392,6 @@
 
     if-ge v0, v3, :cond_1
 
-    .line 425
     sget-object v3, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mRejectClassList:[Ljava/lang/String;
 
     aget-object v3, v3, v0
@@ -471,19 +445,16 @@
     .locals 18
 
     .prologue
-    .line 267
     const-string v15, "UsbSettingsReceiver"
 
     const-string v16, "[AUTORUN] ===== USB Connection ====="
 
     invoke-static/range {v15 .. v16}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 268
     const/4 v15, 0x1
 
     sput-boolean v15, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbConnected:Z
 
-    .line 270
     const-string v15, "UsbSettingsReceiver"
 
     new-instance v16, Ljava/lang/StringBuilder;
@@ -533,16 +504,13 @@
 
     invoke-static/range {v15 .. v16}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 273
     const/4 v7, 0x0
 
-    .line 274
     .local v7, exit:Z
     sget-boolean v15, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mX3Bug:Z
 
     if-eqz v15, :cond_0
 
-    .line 275
     sget-boolean v15, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
     const/16 v16, 0x1
@@ -551,15 +519,12 @@
 
     if-ne v15, v0, :cond_0
 
-    .line 276
     const/4 v15, 0x0
 
     sput-boolean v15, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 277
     const/4 v7, 0x1
 
-    .line 281
     :cond_0
     sget-object v15, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -641,25 +606,21 @@
 
     if-eqz v15, :cond_15
 
-    .line 285
     :cond_1
     const/4 v15, 0x1
 
     sput-boolean v15, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mMtpAutorun:Z
 
-    .line 286
     const/4 v15, 0x0
 
     sput-boolean v15, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mNeedDelayLaunch:Z
 
-    .line 287
     const-string v15, "ro.factorytest"
 
     invoke-static {v15}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 288
     .local v8, factoryTestStr:Ljava/lang/String;
     const-string v15, "ro.bootmode"
 
@@ -1097,7 +1058,6 @@
 
     if-eqz v15, :cond_13
 
-    .line 366
     sget-object v15, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mIntent:Landroid/content/Intent;
 
     const-string v16, "cdrom_storage"
@@ -1125,14 +1085,11 @@
 
     if-nez v15, :cond_14
 
-    .line 371
     invoke-direct/range {p0 .. p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->startUsbSettings()V
 
-    .line 373
     :cond_14
     return-void
 
-    .line 294
     .end local v1           #Info:Ljava/util/List;,"Ljava/util/List<Landroid/app/ActivityManager$RunningTaskInfo;>;"
     .end local v4           #am:Landroid/app/ActivityManager;
     .end local v9           #in:Ljava/io/BufferedReader;
@@ -1527,7 +1484,6 @@
 
     const/4 v5, 0x1
 
-    .line 457
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -1540,7 +1496,6 @@
 
     move-result v0
 
-    .line 460
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -1576,10 +1531,8 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 468
     if-nez v1, :cond_1
 
-    .line 469
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -1590,7 +1543,6 @@
 
     invoke-static {v0, v1, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 471
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -1626,18 +1578,14 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 479
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 480
     invoke-virtual {v0, v7}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 483
     const-string v1, "extra_usb_launcher"
 
     invoke-virtual {v0, v1, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 484
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mDefaultFunction:Ljava/lang/String;
 
     const-string v2, "pc_suite"
@@ -1690,7 +1638,6 @@
 
     if-nez v0, :cond_0
 
-    .line 493
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mDefaultFunction:Ljava/lang/String;
 
     const-string v1, "ecm"
@@ -1701,7 +1648,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 494
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     const-string v1, "dtf"
@@ -1721,22 +1667,18 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 498
     const-string v1, "android.intent.action.PICK_ACTIVITY"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 499
     invoke-virtual {v0, v7}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 501
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 502
     :cond_5
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mIntent:Landroid/content/Intent;
 
@@ -1778,12 +1720,10 @@
 
     if-nez v0, :cond_6
 
-    .line 505
     const-string v0, "pc_suite"
 
     sput-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
-    .line 506
     const-string v0, "0"
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->changeAutorunMode(Ljava/lang/String;)Z
@@ -1792,10 +1732,8 @@
 
     if-nez v0, :cond_0
 
-    .line 507
     sput-boolean v5, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 508
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
@@ -1816,14 +1754,12 @@
 
     if-eqz v0, :cond_7
 
-    .line 511
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v5}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->setMassStorage(Landroid/content/Context;Z)Z
 
     goto/16 :goto_0
 
-    .line 512
     :cond_7
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mIntent:Landroid/content/Intent;
 
@@ -1869,12 +1805,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 516
     const-string v0, "mtp_only"
 
     sput-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
-    .line 517
     const-string v0, "1"
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->changeAutorunMode(Ljava/lang/String;)Z
@@ -1883,10 +1817,8 @@
 
     if-nez v0, :cond_0
 
-    .line 518
     sput-boolean v5, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 519
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
@@ -1908,20 +1840,16 @@
 
     const/4 v9, 0x1
 
-    .line 79
     sput-object p2, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mIntent:Landroid/content/Intent;
 
-    .line 80
     sput-object p1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
-    .line 81
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mIntent:Landroid/content/Intent;
 
     invoke-virtual {v6}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 83
     .local v0, action:Ljava/lang/String;
     const-string v6, "UsbSettingsReceiver"
 
@@ -1954,12 +1882,10 @@
 
     if-eqz v6, :cond_d
 
-    .line 86
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     if-nez v6, :cond_0
 
-    .line 87
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     sget-object v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
@@ -1974,13 +1900,11 @@
 
     sput-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
-    .line 89
     :cond_0
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
     if-nez v6, :cond_1
 
-    .line 90
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     sget-object v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
@@ -1995,13 +1919,11 @@
 
     sput-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
-    .line 97
     :cond_1
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-static {v6, v10}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->setTetherStatus(Landroid/content/Context;Z)V
 
-    .line 100
     sget-object v6, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
     const-string v7, "u0"
@@ -2052,11 +1974,9 @@
 
     if-eqz v6, :cond_6
 
-    .line 103
     :cond_2
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
-    .line 107
     :goto_0
     sget-object v6, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -2068,10 +1988,8 @@
 
     if-eqz v6, :cond_3
 
-    .line 108
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mX3Bug:Z
 
-    .line 110
     :cond_3
     sget-object v6, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -2153,14 +2071,11 @@
 
     if-eqz v6, :cond_7
 
-    .line 114
     :cond_4
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mMtpAutorun:Z
 
-    .line 115
     sput-boolean v10, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mNeedDelayLaunch:Z
 
-    .line 120
     :goto_1
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
 
@@ -2174,7 +2089,6 @@
 
     if-eqz v6, :cond_c
 
-    .line 121
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mDefaultFunction:Ljava/lang/String;
 
     const-string v7, "charge_only"
@@ -2185,31 +2099,26 @@
 
     if-eqz v6, :cond_8
 
-    .line 122
     const-string v6, "/sys/class/android_usb/android0/f_cdrom_storage/lun/cdrom_usbmode"
 
     const-string v7, "4"
 
     invoke-static {v6, v7}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->writeToFile(Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 264
     :cond_5
     :goto_2
     return-void
 
-    .line 105
     :cond_6
     sput-boolean v10, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
     goto :goto_0
 
-    .line 117
     :cond_7
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mNeedDelayLaunch:Z
 
     goto :goto_1
 
-    .line 124
     :cond_8
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mDefaultFunction:Ljava/lang/String;
 
@@ -2311,10 +2220,8 @@
 
     if-nez v6, :cond_5
 
-    .line 139
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAlreadyObserving:Z
 
-    .line 140
     iget-object v6, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUEventObserver:Landroid/os/UEventObserver;
 
     const-string v7, "DEVPATH=/devices/virtual/misc/usb_autorun"
@@ -2333,14 +2240,12 @@
 
     if-eqz v6, :cond_14
 
-    .line 144
     invoke-static {}, Lcom/android/settings_ex/Utils;->isMonkeyRunning()Z
 
     move-result v6
 
     if-nez v6, :cond_5
 
-    .line 148
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
 
     move-result-object v6
@@ -2357,17 +2262,14 @@
 
     if-nez v6, :cond_e
 
-    .line 149
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAlreadyObserving:Z
 
-    .line 150
     iget-object v6, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUEventObserver:Landroid/os/UEventObserver;
 
     const-string v7, "DEVPATH=/devices/virtual/misc/usb_autorun"
 
     invoke-virtual {v6, v7}, Landroid/os/UEventObserver;->startObserving(Ljava/lang/String;)V
 
-    .line 153
     :cond_e
     sget-object v6, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -2379,16 +2281,13 @@
 
     if-eqz v6, :cond_f
 
-    .line 154
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mX3Bug:Z
 
-    .line 156
     :cond_f
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     if-nez v6, :cond_10
 
-    .line 157
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     sget-object v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
@@ -2403,13 +2302,11 @@
 
     sput-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
-    .line 159
     :cond_10
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
     if-nez v6, :cond_11
 
-    .line 160
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     sget-object v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
@@ -2495,31 +2392,24 @@
 
     if-nez v6, :cond_12
 
-    .line 185
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDirectAutorun:Z
 
-    .line 186
     invoke-direct {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->setUsbConnect()V
 
-    .line 188
     :cond_12
     if-eqz v4, :cond_5
 
-    .line 189
     sput-boolean v10, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDirectAutorun:Z
 
-    .line 190
     invoke-direct {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->setUsbConnect()V
 
     goto/16 :goto_2
 
-    .line 193
     :cond_13
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->setUsbDisconnect()V
 
     goto/16 :goto_2
 
-    .line 195
     .end local v4           #usbConfigured:Z
     .end local v5           #usbConnected:Z
     :cond_14
@@ -2531,7 +2421,6 @@
 
     if-eqz v6, :cond_16
 
-    .line 196
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2605,12 +2494,10 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 202
     if-ne v2, v9, :cond_15
 
     if-ne v3, v9, :cond_15
 
-    .line 203
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2621,17 +2508,14 @@
 
     invoke-static {v6, v7, v10}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 205
     sget-boolean v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mNeedDelayLaunch:Z
 
     if-eqz v6, :cond_5
 
-    .line 206
     invoke-direct {p0}, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->startUsbSettings()V
 
     goto/16 :goto_2
 
-    .line 208
     :cond_15
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
@@ -2682,12 +2566,10 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 213
     sget-boolean v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
     if-eqz v6, :cond_17
 
-    .line 214
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     const-string v7, "pc_suite"
@@ -2698,30 +2580,25 @@
 
     if-eqz v6, :cond_5
 
-    .line 215
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 216
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     sget-object v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v6, v7, v9}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 217
     const-string v6, ""
 
     sput-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     goto/16 :goto_2
 
-    .line 220
     :cond_17
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
     goto/16 :goto_2
 
-    .line 222
     :cond_18
     const-string v6, "android.intent.action.autorun_change_mode"
 
@@ -2756,15 +2633,12 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 224
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
-    .line 225
     sget-boolean v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
     if-nez v6, :cond_5
 
-    .line 226
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     const-string v7, "pc_suite"
@@ -2775,24 +2649,20 @@
 
     if-eqz v6, :cond_19
 
-    .line 227
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 228
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     sget-object v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v6, v7, v9}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 229
     const-string v6, ""
 
     sput-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     goto/16 :goto_2
 
-    .line 230
     :cond_19
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
@@ -2804,24 +2674,20 @@
 
     if-eqz v6, :cond_5
 
-    .line 231
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 232
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     sget-object v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v6, v7, v9}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 233
     const-string v6, ""
 
     sput-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     goto/16 :goto_2
 
-    .line 236
     :cond_1a
     const-string v6, "android.intent.action.autorun_timeout"
 
@@ -2831,7 +2697,6 @@
 
     if-eqz v6, :cond_1c
 
-    .line 237
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     const-string v7, "pc_suite"
@@ -2842,24 +2707,20 @@
 
     if-eqz v6, :cond_1b
 
-    .line 238
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 239
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     sget-object v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v6, v7, v9}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 240
     const-string v6, ""
 
     sput-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     goto/16 :goto_2
 
-    .line 241
     :cond_1b
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
@@ -2871,24 +2732,20 @@
 
     if-eqz v6, :cond_5
 
-    .line 242
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 243
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     sget-object v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     invoke-virtual {v6, v7, v9}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 244
     const-string v6, ""
 
     sput-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mCurrentFunction:Ljava/lang/String;
 
     goto/16 :goto_2
 
-    .line 246
     :cond_1c
     const-string v6, "android.intent.action.MEDIA_MOUNTED"
 
@@ -2963,29 +2820,24 @@
 
     if-eqz v6, :cond_1f
 
-    .line 256
     sget-boolean v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mMountInternalMemory:Z
 
     if-nez v6, :cond_1f
 
-    .line 257
     sput-boolean v9, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 258
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     const-string v7, "charge_only"
 
     invoke-virtual {v6, v7, v9}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 259
     const-string v6, "extra_usb_default_mode"
 
     const-string v7, "charge_only"
 
     invoke-virtual {v1, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 262
     :cond_1f
     sget-object v6, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
@@ -3000,17 +2852,14 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 376
     const-string v1, "UsbSettingsReceiver"
 
     const-string v2, "[AUTORUN] ===== USB Disconnection ====="
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 377
     sput-boolean v4, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbConnected:Z
 
-    .line 379
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -3047,10 +2896,8 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 383
     if-nez v0, :cond_1
 
-    .line 384
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -3061,21 +2908,17 @@
 
     invoke-static {v1, v2, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 400
     :cond_0
     :goto_0
     return-void
 
-    .line 389
     :cond_1
     sget-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mX3Bug:Z
 
     if-nez v1, :cond_2
 
-    .line 390
     sput-boolean v4, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 392
     :cond_2
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mDefaultFunction:Ljava/lang/String;
 
@@ -3095,25 +2938,21 @@
 
     if-eqz v1, :cond_4
 
-    .line 393
     :cond_3
     sget-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
     if-nez v1, :cond_0
 
-    .line 394
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v1, v4}, Landroid/net/ConnectivityManager;->setUsbTethering(Z)I
 
-    .line 395
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-static {v1, v4}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->setTetherStatus(Landroid/content/Context;Z)V
 
     goto :goto_0
 
-    .line 397
     :cond_4
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mDefaultFunction:Ljava/lang/String;
 
@@ -3125,7 +2964,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 398
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;->mContext:Landroid/content/Context;
 
     invoke-static {v1, v4}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->setMassStorage(Landroid/content/Context;Z)Z

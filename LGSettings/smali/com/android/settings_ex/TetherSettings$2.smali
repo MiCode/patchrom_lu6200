@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 486
     iput-object p1, p0, Lcom/android/settings_ex/TetherSettings$2;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/TetherSettings$2;->val$cm:Landroid/net/ConnectivityManager;
@@ -48,7 +47,6 @@
     .parameter "which"
 
     .prologue
-    .line 488
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings$2;->val$cm:Landroid/net/ConnectivityManager;
 
     const/4 v1, 0x1
@@ -59,7 +57,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 489
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings$2;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     #getter for: Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
@@ -71,7 +68,6 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 490
     iget-object v0, p0, Lcom/android/settings_ex/TetherSettings$2;->this$0:Lcom/android/settings_ex/TetherSettings;
 
     #getter for: Lcom/android/settings_ex/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;

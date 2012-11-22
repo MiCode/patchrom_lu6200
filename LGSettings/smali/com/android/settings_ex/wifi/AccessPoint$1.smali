@@ -23,7 +23,6 @@
     .locals 3
 
     .prologue
-    .line 111
     invoke-static {}, Lcom/android/settings_ex/wifi/AccessPoint$PskType;->values()[Lcom/android/settings_ex/wifi/AccessPoint$PskType;
 
     move-result-object v0

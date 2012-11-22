@@ -64,7 +64,6 @@
     .parameter "uid"
 
     .prologue
-    .line 1603
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$AppUsageItem;->uids:[I
 
     #calls: Lcom/android/settings_ex/DataUsageSummary;->contains([II)Z
@@ -74,17 +73,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 1607
     :goto_0
     return-void
 
-    .line 1604
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$AppUsageItem;->uids:[I
 
     array-length v0, v1
 
-    .line 1605
     .local v0, length:I
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$AppUsageItem;->uids:[I
 
@@ -96,7 +92,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$AppUsageItem;->uids:[I
 
-    .line 1606
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$AppUsageItem;->uids:[I
 
     aput p1, v1, v0
@@ -109,7 +104,6 @@
     .parameter "another"
 
     .prologue
-    .line 1611
     iget-wide v0, p1, Lcom/android/settings_ex/DataUsageSummary$AppUsageItem;->total:J
 
     iget-wide v2, p0, Lcom/android/settings_ex/DataUsageSummary$AppUsageItem;->total:J
@@ -126,7 +120,6 @@
     .parameter "x0"
 
     .prologue
-    .line 1594
     check-cast p1, Lcom/android/settings_ex/DataUsageSummary$AppUsageItem;
 
     .end local p1

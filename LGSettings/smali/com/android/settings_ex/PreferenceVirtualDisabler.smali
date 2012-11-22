@@ -48,7 +48,6 @@
     .locals 3
 
     .prologue
-    .line 19
     const-class v0, Lcom/android/settings_ex/PreferenceVirtualDisabler;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -98,52 +97,38 @@
 
     const/4 v1, 0x0
 
-    .line 64
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 33
     new-array v0, v2, [Landroid/content/res/ColorStateList;
 
     iput-object v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOrgTextColor:[Landroid/content/res/ColorStateList;
 
-    .line 34
     new-array v0, v2, [Landroid/content/res/ColorStateList;
 
     iput-object v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mCustomTextColor:[Landroid/content/res/ColorStateList;
 
-    .line 36
     iput-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOrgMoreBackground:Landroid/graphics/drawable/Drawable;
 
-    .line 37
     iput-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOrgMoreImage:Landroid/graphics/drawable/Drawable;
 
-    .line 38
     iput-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualDisabledMoreBackground:Landroid/graphics/drawable/Drawable;
 
-    .line 39
     iput-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualDisabledMoreImage:Landroid/graphics/drawable/Drawable;
 
-    .line 55
     iput-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualDisabledTitleColorState:Landroid/content/res/ColorStateList;
 
-    .line 56
     iput-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualDisabledSummaryColorState:Landroid/content/res/ColorStateList;
 
-    .line 58
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualEnabled:Z
 
-    .line 59
     iput-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOnClickListener:Lcom/android/settings_ex/PreferenceVirtualDisabler$OnPreferenceClickListener;
 
-    .line 61
     iput-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mPreference:Landroid/preference/Preference;
 
-    .line 65
     iput-object p1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mPreference:Landroid/preference/Preference;
 
-    .line 66
     iget-object v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mPreference:Landroid/preference/Preference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/PreferenceVirtualDisabler;->getWidgetLayoutResource()I
@@ -152,14 +137,12 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setWidgetLayoutResource(I)V
 
-    .line 67
     invoke-virtual {p1}, Landroid/preference/Preference;->isEnabled()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualEnabled:Z
 
-    .line 68
     return-void
 .end method
 
@@ -177,12 +160,10 @@
 
     const/4 v5, 0x0
 
-    .line 181
     iget-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualDisabledSummaryColorState:Landroid/content/res/ColorStateList;
 
     if-nez v1, :cond_0
 
-    .line 182
     iget-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mPreference:Landroid/preference/Preference;
 
     invoke-virtual {v1}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
@@ -257,12 +238,10 @@
 
     const/4 v5, 0x0
 
-    .line 170
     iget-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualDisabledTitleColorState:Landroid/content/res/ColorStateList;
 
     if-nez v1, :cond_0
 
-    .line 171
     iget-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mPreference:Landroid/preference/Preference;
 
     invoke-virtual {v1}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
@@ -335,12 +314,10 @@
     .parameter "aColorState"
 
     .prologue
-    .line 166
     iget-object v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mCustomTextColor:[Landroid/content/res/ColorStateList;
 
     aput-object p2, v0, p1
 
-    .line 167
     return-void
 .end method
 
@@ -370,7 +347,6 @@
     .locals 1
 
     .prologue
-    .line 162
     iget-boolean v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualEnabled:Z
 
     return v0
@@ -385,7 +361,6 @@
 
     const/4 v7, 0x0
 
-    .line 98
     iget-object v6, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mCustomTextColor:[Landroid/content/res/ColorStateList;
 
     aget-object v6, v6, v7
@@ -441,51 +416,42 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    .line 110
     .local v2, summary:Landroid/widget/TextView;
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
-    .line 113
     .end local v2           #summary:Landroid/widget/TextView;
     :cond_1
     invoke-virtual {p0}, Lcom/android/settings_ex/PreferenceVirtualDisabler;->getMoreId()I
 
     move-result v1
 
-    .line 114
     .local v1, moreId:I
     if-eqz v1, :cond_2
 
-    .line 115
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 116
     .local v0, more:Landroid/widget/ImageView;
     iget-boolean v6, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualEnabled:Z
 
     if-eqz v6, :cond_5
 
-    .line 117
     iget-object v6, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOrgMoreBackground:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v6}, Landroid/widget/ImageView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 118
     iget-object v6, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOrgMoreImage:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v6}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 124
     .end local v0           #more:Landroid/widget/ImageView;
     :cond_2
     :goto_2
     return-void
 
-    .line 98
     .end local v1           #moreId:I
     .end local v3           #summaryColor:Landroid/content/res/ColorStateList;
     .end local v5           #titleColor:Landroid/content/res/ColorStateList;
@@ -519,7 +485,6 @@
     :goto_3
     invoke-virtual {v0, v6}, Landroid/widget/ImageView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 121
     iget-object v6, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualDisabledMoreImage:Landroid/graphics/drawable/Drawable;
 
     if-nez v6, :cond_7
@@ -531,13 +496,11 @@
 
     goto :goto_2
 
-    .line 120
     :cond_6
     iget-object v6, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualDisabledMoreBackground:Landroid/graphics/drawable/Drawable;
 
     goto :goto_3
 
-    .line 121
     :cond_7
     iget-object v6, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualDisabledMoreImage:Landroid/graphics/drawable/Drawable;
 
@@ -591,23 +554,19 @@
 
     aput-object v6, v4, v5
 
-    .line 135
     invoke-virtual {p0}, Lcom/android/settings_ex/PreferenceVirtualDisabler;->getMoreId()I
 
     move-result v1
 
-    .line 136
     .local v1, moreId:I
     if-eqz v1, :cond_0
 
-    .line 137
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 139
     .local v0, more:Landroid/widget/ImageView;
     invoke-virtual {v0}, Landroid/widget/ImageView;->getBackground()Landroid/graphics/drawable/Drawable;
 
@@ -615,14 +574,12 @@
 
     iput-object v4, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOrgMoreBackground:Landroid/graphics/drawable/Drawable;
 
-    .line 140
     invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
 
     iput-object v4, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOrgMoreImage:Landroid/graphics/drawable/Drawable;
 
-    .line 145
     .end local v0           #more:Landroid/widget/ImageView;
     :cond_0
     return-object p1
@@ -632,7 +589,6 @@
     .locals 2
 
     .prologue
-    .line 89
     iget-object v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOnClickListener:Lcom/android/settings_ex/PreferenceVirtualDisabler$OnPreferenceClickListener;
 
     if-eqz v0, :cond_0
@@ -641,17 +597,14 @@
 
     if-nez v0, :cond_0
 
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOnClickListener:Lcom/android/settings_ex/PreferenceVirtualDisabler$OnPreferenceClickListener;
 
     iget-object v1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mPreference:Landroid/preference/Preference;
 
     invoke-interface {v0, v1}, Lcom/android/settings_ex/PreferenceVirtualDisabler$OnPreferenceClickListener;->onPreferenceClick(Landroid/preference/Preference;)V
 
-    .line 91
     const/4 v0, 0x1
 
-    .line 93
     :goto_0
     return v0
 
@@ -666,10 +619,8 @@
     .parameter "aOnClickListener"
 
     .prologue
-    .line 82
     iput-object p1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOnClickListener:Lcom/android/settings_ex/PreferenceVirtualDisabler$OnPreferenceClickListener;
 
-    .line 83
     return-void
 .end method
 
@@ -682,19 +633,15 @@
 
     const/4 v1, 0x0
 
-    .line 150
     if-eqz p1, :cond_0
 
-    .line 151
     iget-object v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mPreference:Landroid/preference/Preference;
 
     invoke-virtual {v0, p1}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 153
     :cond_0
     iput-boolean p1, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mVirtualEnabled:Z
 
-    .line 154
     if-eqz p1, :cond_1
 
     iget-object v0, p0, Lcom/android/settings_ex/PreferenceVirtualDisabler;->mOrgTextColor:[Landroid/content/res/ColorStateList;

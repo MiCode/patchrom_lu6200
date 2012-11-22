@@ -49,37 +49,31 @@
 
     const/4 v4, 0x0
 
-    .line 125
     iget-object v0, p0, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->mSkipButton:Landroid/view/View;
 
     if-ne p1, v0, :cond_1
 
-    .line 127
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0, v5}, Landroid/app/Activity;->setResult(I)V
 
-    .line 128
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
-    .line 146
     :cond_0
     :goto_0
     return-void
 
-    .line 129
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->mNextButton:Landroid/view/View;
 
     if-ne p1, v0, :cond_0
 
-    .line 130
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -105,22 +99,18 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 133
     const/high16 v2, 0x200
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 134
     const-string v2, "lockscreen.biometric_weak_fallback"
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 137
     sget-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v0, :cond_2
 
-    .line 138
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -137,23 +127,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 139
     const-string v0, "PASSWORD_EXPIRE"
 
     invoke-virtual {v1, v0, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 142
     :cond_2
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 143
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0, v4, v4}, Landroid/app/Activity;->overridePendingTransition(II)V
 
-    .line 144
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -202,17 +188,14 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 75
     const/high16 v1, 0x200
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 76
     const-string v1, "confirm_credentials"
 
     invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 77
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -227,22 +210,18 @@
 
     move-result v1
 
-    .line 79
     const-string v2, "lockscreen.biometric_weak_fallback"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 81
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 82
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
-    .line 84
     :cond_0
     return-void
 .end method
@@ -277,12 +256,10 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->mNextButton:Landroid/view/View;
 
-    .line 91
     iget-object v3, p0, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->mNextButton:Landroid/view/View;
 
     invoke-virtual {v3, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 92
     const v3, 0x7f0b0007
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -291,12 +268,10 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->mSkipButton:Landroid/view/View;
 
-    .line 93
     iget-object v3, p0, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->mSkipButton:Landroid/view/View;
 
     invoke-virtual {v3, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 95
     const v3, 0x7f0b0048
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -354,19 +329,16 @@
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 104
     iget-object v3, p0, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->mPatternView:Lcom/android/internal/widget/LockPatternView;
 
     sget-object v4, Lcom/android/internal/widget/LockPatternView$DisplayMode;->Animate:Lcom/android/internal/widget/LockPatternView$DisplayMode;
 
     invoke-virtual {v3, v4, v0}, Lcom/android/internal/widget/LockPatternView;->setPattern(Lcom/android/internal/widget/LockPatternView$DisplayMode;Ljava/util/List;)V
 
-    .line 105
     iget-object v3, p0, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->mPatternView:Lcom/android/internal/widget/LockPatternView;
 
     invoke-virtual {v3}, Lcom/android/internal/widget/LockPatternView;->disableInput()V
 
-    .line 108
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getCountry()Ljava/lang/String;
 
     move-result-object v3
@@ -379,20 +351,17 @@
 
     if-eqz v3, :cond_0
 
-    .line 109
     iget-object v3, p0, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->gideText:Landroid/widget/TextView;
 
     const v4, 0x7f0809ef
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
-    .line 113
     :cond_0
     sget-boolean v3, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v3, :cond_1
 
-    .line 114
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -411,7 +380,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 116
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -424,7 +392,6 @@
 
     invoke-virtual {v3, v4}, Landroid/view/Window;->addFlags(I)V
 
-    .line 117
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3

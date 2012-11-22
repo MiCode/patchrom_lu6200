@@ -42,7 +42,6 @@
     .locals 1
 
     .prologue
-    .line 379
     new-instance v0, Lcom/android/settings_ex/BrightnessPreference$SavedState$1;
 
     invoke-direct {v0}, Lcom/android/settings_ex/BrightnessPreference$SavedState$1;-><init>()V
@@ -76,14 +75,12 @@
     :goto_0
     iput-boolean v0, p0, Lcom/android/settings_ex/BrightnessPreference$SavedState;->automatic:Z
 
-    .line 361
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/android/settings_ex/BrightnessPreference$SavedState;->progress:I
 
-    .line 362
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
@@ -93,26 +90,22 @@
     :goto_1
     iput-boolean v1, p0, Lcom/android/settings_ex/BrightnessPreference$SavedState;->oldAutomatic:Z
 
-    .line 363
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/android/settings_ex/BrightnessPreference$SavedState;->oldProgress:I
 
-    .line 364
     return-void
 
     :cond_0
     move v0, v2
 
-    .line 360
     goto :goto_0
 
     :cond_1
     move v1, v2
 
-    .line 362
     goto :goto_1
 .end method
 
@@ -140,10 +133,8 @@
 
     const/4 v2, 0x0
 
-    .line 368
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 369
     iget-boolean v0, p0, Lcom/android/settings_ex/BrightnessPreference$SavedState;->automatic:Z
 
     if-eqz v0, :cond_0
@@ -153,12 +144,10 @@
     :goto_0
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 370
     iget v0, p0, Lcom/android/settings_ex/BrightnessPreference$SavedState;->progress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 371
     iget-boolean v0, p0, Lcom/android/settings_ex/BrightnessPreference$SavedState;->oldAutomatic:Z
 
     if-eqz v0, :cond_1
@@ -166,23 +155,19 @@
     :goto_1
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 372
     iget v0, p0, Lcom/android/settings_ex/BrightnessPreference$SavedState;->oldProgress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 373
     return-void
 
     :cond_0
     move v0, v2
 
-    .line 369
     goto :goto_0
 
     :cond_1
     move v1, v2
 
-    .line 371
     goto :goto_1
 .end method

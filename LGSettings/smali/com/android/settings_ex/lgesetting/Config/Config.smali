@@ -29,17 +29,14 @@
     .locals 1
 
     .prologue
-    .line 15
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/android/settings_ex/lgesetting/Config/Config;->initCalled:Z
 
-    .line 21
     sget-object v0, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->OPEN:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     sput-object v0, Lcom/android/settings_ex/lgesetting/Config/Config;->DEFAULT_OPERATOR:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
-    .line 22
     sget-object v0, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->EU:Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
     sput-object v0, Lcom/android/settings_ex/lgesetting/Config/Config;->DEFAULT_COUNTRY:Lcom/android/settings_ex/lgesetting/Config/Config$Country;
@@ -105,10 +102,8 @@
     .locals 1
 
     .prologue
-    .line 101
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->init()V
 
-    .line 103
     sget-object v0, Lcom/android/settings_ex/lgesetting/Config/Config;->mCountry:Ljava/lang/String;
 
     return-object v0
@@ -118,10 +113,8 @@
     .locals 1
 
     .prologue
-    .line 95
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->init()V
 
-    .line 97
     sget-object v0, Lcom/android/settings_ex/lgesetting/Config/Config;->mOperator:Ljava/lang/String;
 
     return-object v0
@@ -133,28 +126,23 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 115
     sget-boolean v0, Lcom/android/settings_ex/lgesetting/Config/Config;->initCalled:Z
 
     if-ne v0, v1, :cond_1
 
-    .line 132
     :cond_0
     :goto_0
     return-void
 
-    .line 118
     :cond_1
     sput-boolean v1, Lcom/android/settings_ex/lgesetting/Config/Config;->initCalled:Z
 
-    .line 120
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->checkNativeCA()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 125
     const-string v0, "Config"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -240,7 +228,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 130
     sget-object v0, Lcom/android/settings_ex/lgesetting/Config/Config;->DEFAULT_COUNTRY:Lcom/android/settings_ex/lgesetting/Config/Config$Country;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/lgesetting/Config/Config$Country;->toString()Ljava/lang/String;
@@ -293,30 +280,24 @@
 
     if-nez v1, :cond_0
 
-    .line 152
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 155
     sput-object p0, Lcom/android/settings_ex/lgesetting/Config/Config;->mCountry:Ljava/lang/String;
 
-    .line 156
     sput-object p1, Lcom/android/settings_ex/lgesetting/Config/Config;->mOperator:Ljava/lang/String;
 
-    .line 173
     sget-object v0, Lcom/android/settings_ex/lgesetting/Config/Config;->mOperator:Ljava/lang/String;
 
     if-nez v0, :cond_2
 
-    .line 174
     const-string v0, "OPEN"
 
     sput-object v0, Lcom/android/settings_ex/lgesetting/Config/Config;->mOperator:Ljava/lang/String;
 
-    .line 178
     :cond_2
     const/4 v0, 0x1
 

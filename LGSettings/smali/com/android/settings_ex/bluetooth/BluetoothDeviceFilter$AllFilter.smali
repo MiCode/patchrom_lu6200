@@ -33,7 +33,6 @@
     .parameter "x0"
 
     .prologue
-    .line 91
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothDeviceFilter$AllFilter;-><init>()V
 
     return-void

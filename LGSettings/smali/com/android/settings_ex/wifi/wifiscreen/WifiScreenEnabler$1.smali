@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 34
     iput-object p1, p0, Lcom/android/settings_ex/wifi/wifiscreen/WifiScreenEnabler$1;->this$0:Lcom/android/settings_ex/wifi/wifiscreen/WifiScreenEnabler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V

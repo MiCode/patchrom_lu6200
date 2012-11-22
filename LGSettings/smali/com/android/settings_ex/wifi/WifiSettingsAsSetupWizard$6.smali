@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 360
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$6;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +42,10 @@
     .parameter "whichButton"
 
     .prologue
-    .line 362
     const/4 v0, 0x1
 
     invoke-static {v0}, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;->access$402(Z)Z
 
-    .line 363
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$6;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;->mMobileNetworkOn:Landroid/preference/CheckBoxPreference;
@@ -60,7 +57,6 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 365
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$6;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;->mMobileNetworkOn:Landroid/preference/CheckBoxPreference;

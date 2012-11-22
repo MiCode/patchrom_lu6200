@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 347
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$4;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +43,6 @@
     .parameter "keyEvent"
 
     .prologue
-    .line 350
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$4;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;->mIsCancelable:Z
@@ -60,12 +58,10 @@
 
     if-nez v0, :cond_0
 
-    .line 351
     invoke-static {p2}, Lcom/android/settings_ex/lgesetting/wireless/DefineBlockKey;->onKey(I)Z
 
     move-result v0
 
-    .line 352
     :goto_0
     return v0
 

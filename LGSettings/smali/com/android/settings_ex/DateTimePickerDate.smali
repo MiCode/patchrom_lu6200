@@ -14,17 +14,14 @@
     .locals 1
 
     .prologue
-    .line 14
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 59
     new-instance v0, Lcom/android/settings_ex/DateTimePickerDate$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/DateTimePickerDate$1;-><init>(Lcom/android/settings_ex/DateTimePickerDate;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/DateTimePickerDate;->datePickerListener:Landroid/app/DatePickerDialog$OnDateSetListener;
 
-    .line 83
     new-instance v0, Lcom/android/settings_ex/DateTimePickerDate$2;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/DateTimePickerDate$2;-><init>(Lcom/android/settings_ex/DateTimePickerDate;)V
@@ -41,20 +38,16 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 19
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 20
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/DateTimePickerDate;->requestWindowFeature(I)Z
 
-    .line 21
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/DateTimePickerDate;->showDialog(I)V
 
-    .line 22
     return-void
 .end method
 
@@ -63,39 +56,31 @@
     .parameter "id"
 
     .prologue
-    .line 30
     packed-switch p1, :pswitch_data_0
 
-    .line 47
     const/4 v0, 0x0
 
-    .line 51
     .local v0, d:Landroid/app/Dialog;
     :goto_0
     if-eqz v0, :cond_0
 
-    .line 52
     iget-object v1, p0, Lcom/android/settings_ex/DateTimePickerDate;->mOnDismissListener:Landroid/content/DialogInterface$OnDismissListener;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 53
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 56
     :cond_0
     return-object v0
 
-    .line 32
     .end local v0           #d:Landroid/app/Dialog;
     :pswitch_0
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v6
 
-    .line 33
     .local v6, calendar:Ljava/util/Calendar;
     new-instance v0, Landroid/app/DatePickerDialog;
 

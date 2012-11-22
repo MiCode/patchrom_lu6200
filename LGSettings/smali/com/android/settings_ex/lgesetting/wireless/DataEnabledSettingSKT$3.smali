@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 102
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$3;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +43,6 @@
     .parameter "keyEvent"
 
     .prologue
-    .line 105
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$3;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     #getter for: Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;->mIsCancelable:Z
@@ -60,12 +58,10 @@
 
     if-nez v0, :cond_0
 
-    .line 106
     invoke-static {p2}, Lcom/android/settings_ex/lgesetting/wireless/DefineBlockKey;->onKey(I)Z
 
     move-result v0
 
-    .line 107
     :goto_0
     return v0
 

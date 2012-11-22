@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 190
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "view"
 
     .prologue
-    .line 193
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;
@@ -52,7 +50,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 196
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;->mWifiOn:Landroid/preference/CheckBoxPreference;
@@ -178,7 +175,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
-    .line 215
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$4;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;->mWifiSettings:Lcom/android/settings_ex/wifi/WifiSettings;

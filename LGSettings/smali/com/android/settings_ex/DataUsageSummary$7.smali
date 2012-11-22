@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1196
     iput-object p1, p0, Lcom/android/settings_ex/DataUsageSummary$7;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,18 +43,15 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1199
     invoke-static {}, Lcom/android/settings_ex/Utils;->isMonkeyRunning()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 1218
     :goto_0
     return-void
 
-    .line 1203
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/DataUsageSummary$7;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
@@ -72,12 +68,10 @@
 
     const/4 v0, 0x1
 
-    .line 1204
     .local v0, restrictBackground:Z
     :goto_1
     if-eqz v0, :cond_3
 
-    .line 1205
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$7;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #calls: Lcom/android/settings_ex/DataUsageSummary;->hasLimitedNetworks()Z
@@ -87,7 +81,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 1209
     iget-object v1, p0, Lcom/android/settings_ex/DataUsageSummary$7;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-static {v1}, Lcom/android/settings_ex/DataUsageSummary$ConfirmAppRestrictFragment;->show(Lcom/android/settings_ex/DataUsageSummary;)V

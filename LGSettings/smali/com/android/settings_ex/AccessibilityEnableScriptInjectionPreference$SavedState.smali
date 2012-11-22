@@ -36,7 +36,6 @@
     .locals 1
 
     .prologue
-    .line 193
     new-instance v0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState$1;
 
     invoke-direct {v0}, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState$1;-><init>()V
@@ -93,7 +92,6 @@
     .parameter "x0"
 
     .prologue
-    .line 174
     iget-boolean v0, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
 
     return v0
@@ -105,7 +103,6 @@
     .parameter "x1"
 
     .prologue
-    .line 174
     iput-boolean p1, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
 
     return p1
@@ -119,10 +116,8 @@
     .parameter "flags"
 
     .prologue
-    .line 184
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 185
     iget-boolean v0, p0, Lcom/android/settings_ex/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
 
     if-eqz v0, :cond_0

@@ -46,7 +46,6 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 205
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -101,12 +100,10 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 210
     invoke-direct {p0, v1}, Lcom/android/settings_ex/VibrateTypePreference;->setAlarm_VibrateType(I)V
 
     move v0, v1
 
-    .line 211
     goto :goto_0
 .end method
 
@@ -116,7 +113,6 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 218
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -171,12 +167,10 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 223
     invoke-direct {p0, v1}, Lcom/android/settings_ex/VibrateTypePreference;->setCalendar_VibrateType(I)V
 
     move v0, v1
 
-    .line 224
     goto :goto_0
 .end method
 
@@ -186,7 +180,6 @@
     .prologue
     const/4 v1, 0x2
 
-    .line 166
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -243,12 +236,10 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 171
     invoke-direct {p0, v1}, Lcom/android/settings_ex/VibrateTypePreference;->setCall_VibrateType(I)V
 
     move v0, v1
 
-    .line 172
     goto :goto_0
 .end method
 
@@ -258,7 +249,6 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 192
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -313,12 +303,10 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 197
     invoke-direct {p0, v1}, Lcom/android/settings_ex/VibrateTypePreference;->setEmail_VibrateType(I)V
 
     move v0, v1
 
-    .line 198
     goto :goto_0
 .end method
 
@@ -328,7 +316,6 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 179
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -383,12 +370,10 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 184
     invoke-direct {p0, v1}, Lcom/android/settings_ex/VibrateTypePreference;->setMessage_VibrateType(I)V
 
     move v0, v1
 
-    .line 185
     goto :goto_0
 .end method
 
@@ -406,7 +391,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 273
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -466,7 +450,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 285
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -526,7 +509,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 237
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -586,7 +568,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 261
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -636,77 +617,66 @@
     .locals 2
 
     .prologue
-    .line 98
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mIncomming_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_entry:[Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
-    .line 99
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mMessage_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_entry:[Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mEmail_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_entry:[Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
-    .line 101
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mAlarm_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_entry:[Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
-    .line 102
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mCalendarPreference:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_entry:[Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
-    .line 104
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mIncomming_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_value:[Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
-    .line 105
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mMessage_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_value:[Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
-    .line 106
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mEmail_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_value:[Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
-    .line 107
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mAlarm_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_value:[Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
-    .line 108
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mCalendarPreference:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_value:[Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
-    .line 109
     return-void
 .end method
 
@@ -714,32 +684,26 @@
     .locals 1
 
     .prologue
-    .line 90
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mIncomming_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/VibrateTypeListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 91
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mMessage_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/VibrateTypeListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 92
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mEmail_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/VibrateTypeListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 93
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mAlarm_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/VibrateTypeListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 94
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mCalendarPreference:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/VibrateTypeListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 95
     return-void
 .end method
 
@@ -757,7 +721,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 249
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -807,7 +770,6 @@
     .locals 2
 
     .prologue
-    .line 113
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mIncomming_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getCall_VibrateType()I
@@ -820,7 +782,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 114
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mMessage_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getMessage_VibrateType()I
@@ -833,7 +794,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 115
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mEmail_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getEmail_VibrateType()I
@@ -846,7 +806,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 116
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mAlarm_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getAlarm_VibrateType()I
@@ -859,7 +818,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 117
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mCalendarPreference:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getCalendar_VibrateType()I
@@ -872,7 +830,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 120
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mIncomming_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->mIncomming_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
@@ -883,7 +840,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 121
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mMessage_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->mMessage_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
@@ -894,7 +850,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 122
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mEmail_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->mEmail_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
@@ -905,7 +860,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 123
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mAlarm_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->mAlarm_vibrateType:Lcom/android/settings_ex/VibrateTypeListPreference;
@@ -916,7 +870,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/VibrateTypeListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 124
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mCalendarPreference:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/VibrateTypePreference;->mCalendarPreference:Lcom/android/settings_ex/VibrateTypeListPreference;
@@ -935,7 +888,6 @@
     .locals 2
 
     .prologue
-    .line 84
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -948,7 +900,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->vibrate_type_entry:[Ljava/lang/CharSequence;
 
-    .line 85
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -993,10 +944,8 @@
     .locals 0
 
     .prologue
-    .line 131
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->setSummary()V
 
-    .line 132
     return-void
 .end method
 
@@ -1007,10 +956,8 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 50
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 51
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateTypePreference;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
@@ -1019,12 +966,10 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 
-    .line 54
     const v0, 0x7f060049
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/VibrateTypePreference;->addPreferencesFromResource(I)V
 
-    .line 55
     const-string v0, "incomming_vibrate"
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/VibrateTypePreference;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -1079,16 +1024,12 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->mCalendarPreference:Lcom/android/settings_ex/VibrateTypeListPreference;
 
-    .line 61
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->setListener()V
 
-    .line 62
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->steArrayList()V
 
-    .line 63
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->setEntiesValues()V
 
-    .line 64
     return-void
 .end method
 
@@ -1096,20 +1037,16 @@
     .locals 1
 
     .prologue
-    .line 76
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
-    .line 77
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->currentPreference:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     if-eqz v0, :cond_0
 
-    .line 78
     iget-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->currentPreference:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/VibrateTypeListPreference;->vibrateStop()V
 
-    .line 79
     :cond_0
     return-void
 .end method
@@ -1144,20 +1081,16 @@
 
     if-eqz v2, :cond_1
 
-    .line 148
     invoke-direct {p0, v1}, Lcom/android/settings_ex/VibrateTypePreference;->setCall_VibrateType(I)V
 
-    .line 158
     :cond_0
     :goto_0
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->updateState()V
 
-    .line 159
     const/4 v2, 0x0
 
     return v2
 
-    .line 149
     :cond_1
     const-string v2, "message_vibrate"
 
@@ -1167,12 +1100,10 @@
 
     if-eqz v2, :cond_2
 
-    .line 150
     invoke-direct {p0, v1}, Lcom/android/settings_ex/VibrateTypePreference;->setMessage_VibrateType(I)V
 
     goto :goto_0
 
-    .line 151
     :cond_2
     const-string v2, "email_vibrate"
 
@@ -1182,12 +1113,10 @@
 
     if-eqz v2, :cond_3
 
-    .line 152
     invoke-direct {p0, v1}, Lcom/android/settings_ex/VibrateTypePreference;->setEmail_VibrateType(I)V
 
     goto :goto_0
 
-    .line 153
     :cond_3
     const-string v2, "alarm_vibrate"
 
@@ -1197,12 +1126,10 @@
 
     if-eqz v2, :cond_4
 
-    .line 154
     invoke-direct {p0, v1}, Lcom/android/settings_ex/VibrateTypePreference;->setAlarm_VibrateType(I)V
 
     goto :goto_0
 
-    .line 155
     :cond_4
     const-string v2, "calendar_vibrate"
 
@@ -1212,7 +1139,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 156
     invoke-direct {p0, v1}, Lcom/android/settings_ex/VibrateTypePreference;->setCalendar_VibrateType(I)V
 
     goto :goto_0
@@ -1224,14 +1150,12 @@
     .parameter "preference"
 
     .prologue
-    .line 138
     move-object v0, p2
 
     check-cast v0, Lcom/android/settings_ex/VibrateTypeListPreference;
 
     iput-object v0, p0, Lcom/android/settings_ex/VibrateTypePreference;->currentPreference:Lcom/android/settings_ex/VibrateTypeListPreference;
 
-    .line 139
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceActivity;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
@@ -1243,12 +1167,9 @@
     .locals 0
 
     .prologue
-    .line 69
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    .line 70
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateTypePreference;->updateState()V
 
-    .line 71
     return-void
 .end method

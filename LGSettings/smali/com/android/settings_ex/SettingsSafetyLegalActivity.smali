@@ -34,7 +34,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mAlert:Lcom/android/internal/app/AlertController;
 
     return-object v0
@@ -46,7 +45,6 @@
     .parameter "x1"
 
     .prologue
-    .line 37
     invoke-direct {p0, p1}, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->showErrorAndFinish(Ljava/lang/String;)V
 
     return-void
@@ -59,12 +57,10 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 94
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_1
 
-    .line 95
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -118,15 +114,12 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 108
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
-    .line 109
     return-void
 
-    .line 102
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
@@ -136,7 +129,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 103
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
@@ -166,7 +158,6 @@
 
     if-nez v0, :cond_0
 
-    .line 125
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->canGoBack()Z
@@ -175,15 +166,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 126
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->goBack()V
 
-    .line 127
     const/4 v0, 0x1
 
-    .line 130
     :goto_0
     return v0
 
@@ -200,10 +188,8 @@
     .parameter "dialog"
 
     .prologue
-    .line 138
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->finish()V
 
-    .line 139
     return-void
 .end method
 
@@ -213,10 +199,8 @@
     .parameter "whichButton"
 
     .prologue
-    .line 134
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->finish()V
 
-    .line 135
     return-void
 .end method
 
@@ -303,7 +287,6 @@
 
     iput-object v6, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
-    .line 64
     iget-object v6, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v6}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
@@ -314,17 +297,14 @@
 
     invoke-virtual {v6, v7}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
-    .line 65
     if-nez p1, :cond_0
 
-    .line 66
     iget-object v6, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v6, v5}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 72
     :goto_0
     iget-object v6, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
@@ -334,10 +314,8 @@
 
     invoke-virtual {v6, v7}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
-    .line 86
     iget-object v4, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    .line 87
     .local v4, p:Lcom/android/internal/app/AlertController$AlertParams;
     const v6, 0x7f0803ea
 
@@ -347,21 +325,16 @@
 
     iput-object v6, v4, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    .line 88
     iget-object v6, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     iput-object v6, v4, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    .line 89
     iput-boolean v8, v4, Lcom/android/internal/app/AlertController$AlertParams;->mForceInverseBackground:Z
 
-    .line 90
     invoke-virtual {p0}, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->setupAlert()V
 
-    .line 91
     return-void
 
-    .line 68
     .end local v4           #p:Lcom/android/internal/app/AlertController$AlertParams;
     :cond_0
     :try_start_1
@@ -384,25 +357,20 @@
     .locals 1
 
     .prologue
-    .line 113
     invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onDestroy()V
 
-    .line 115
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    .line 116
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 117
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
-    .line 119
     :cond_0
     return-void
 .end method
@@ -412,14 +380,11 @@
     .parameter "icicle"
 
     .prologue
-    .line 143
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0, p1}, Landroid/webkit/WebView;->saveState(Landroid/os/Bundle;)Landroid/webkit/WebBackForwardList;
 
-    .line 144
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 145
     return-void
 .end method

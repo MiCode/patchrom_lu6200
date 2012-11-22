@@ -53,74 +53,61 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 91
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 67
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
-    .line 75
     new-instance v0, Lcom/android/settings_ex/nfc/LGNfcEnabler$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/nfc/LGNfcEnabler$1;-><init>(Lcom/android/settings_ex/nfc/LGNfcEnabler;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 92
     iput-object p1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mContext:Landroid/content/Context;
 
-    .line 93
     invoke-static {p1}, Landroid/nfc/NfcAdapter;->getDefaultAdapter(Landroid/content/Context;)Landroid/nfc/NfcAdapter;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
-    .line 95
     invoke-static {}, Lcom/android/settings_ex/Utils;->hasFeatureNfcP2P()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 96
     new-instance v0, Lcom/android/settings_ex/nfc/NfcAdapterProxy;
 
     invoke-direct {v0, p1}, Lcom/android/settings_ex/nfc/NfcAdapterProxy;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapterProxy:Lcom/android/settings_ex/nfc/NfcAdapterProxy;
 
-    .line 101
     :goto_0
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
     if-nez v0, :cond_1
 
-    .line 103
     iput-object v1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mIntentFilter:Landroid/content/IntentFilter;
 
-    .line 104
     const-string v0, "LGNfcEnabler"
 
     const-string v1, "mNfcAdapter is null in LGNfcEnabler()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 109
     :goto_1
     return-void
 
-    .line 98
     :cond_0
     iput-object v1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapterProxy:Lcom/android/settings_ex/nfc/NfcAdapterProxy;
 
     goto :goto_0
 
-    .line 108
     :cond_1
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -140,10 +127,8 @@
     .parameter "androidBeam"
 
     .prologue
-    .line 112
     invoke-direct {p0, p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler;-><init>(Landroid/content/Context;)V
 
-    .line 113
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcCheckPref;
@@ -152,7 +137,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 114
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcbeamScrPref;
@@ -171,10 +155,8 @@
     .parameter "switchBeam"
 
     .prologue
-    .line 131
     invoke-direct {p0, p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler;-><init>(Landroid/content/Context;)V
 
-    .line 132
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamSwitch;
@@ -198,10 +180,8 @@
     .parameter "beam"
 
     .prologue
-    .line 126
     invoke-direct {p0, p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler;-><init>(Landroid/content/Context;)V
 
-    .line 127
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitch;
@@ -214,7 +194,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 128
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamItem;
@@ -239,10 +218,8 @@
     .parameter "beam"
 
     .prologue
-    .line 136
     invoke-direct {p0, p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler;-><init>(Landroid/content/Context;)V
 
-    .line 137
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitch;
@@ -255,7 +232,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 138
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$P2PItem;
@@ -264,7 +240,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 139
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamItem;
@@ -287,17 +262,14 @@
     .parameter "switchNfc"
 
     .prologue
-    .line 118
     invoke-direct {p0, p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler;-><init>(Landroid/content/Context;)V
 
-    .line 119
     invoke-static {}, Lcom/android/settings_ex/Utils;->hasFeatureNfcP2P()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 120
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcSwitchPref;
@@ -336,7 +308,6 @@
     .parameter "x0"
 
     .prologue
-    .line 57
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
     return-object v0
@@ -347,7 +318,6 @@
     .parameter "x0"
 
     .prologue
-    .line 57
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -374,7 +344,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 178
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -383,16 +352,13 @@
 
     check-cast v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;
 
-    .line 179
     .local v1, listener:Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;
     invoke-interface {v1, p1, p2}, Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;->handleNfcStateChanged(II)V
 
-    .line 177
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 182
     .end local v1           #listener:Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;
     :cond_0
     const-string v2, "LGNfcEnabler"
@@ -435,16 +401,13 @@
     .locals 4
 
     .prologue
-    .line 164
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
     if-nez v2, :cond_0
 
-    .line 174
     :goto_0
     return-void
 
-    .line 168
     :cond_0
     const/4 v0, 0x0
 
@@ -458,7 +421,6 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 169
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -467,16 +429,13 @@
 
     check-cast v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;
 
-    .line 170
     .local v1, listener:Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;
     invoke-interface {v1}, Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;->pause()V
 
-    .line 168
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 173
     .end local v1           #listener:Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;
     :cond_1
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mContext:Landroid/content/Context;
@@ -492,22 +451,18 @@
     .locals 5
 
     .prologue
-    .line 143
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
     if-nez v2, :cond_0
 
-    .line 160
     :goto_0
     return-void
 
-    .line 147
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
     invoke-virtual {v2}, Landroid/nfc/NfcAdapter;->isEnabled()Z
 
-    .line 149
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -520,7 +475,6 @@
 
     if-ge v0, v2, :cond_2
 
-    .line 150
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mChangeListener:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -529,7 +483,6 @@
 
     check-cast v1, Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;
 
-    .line 152
     .local v1, listener:Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;
     invoke-static {}, Lcom/android/settings_ex/Utils;->hasFeatureNfcP2P()Z
 
@@ -537,7 +490,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 153
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapterProxy:Lcom/android/settings_ex/nfc/NfcAdapterProxy;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->getAdapterState()I
@@ -552,16 +504,13 @@
 
     invoke-interface {v1, v2, v3}, Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;->handleNfcStateChanged(II)V
 
-    .line 157
     :goto_2
     invoke-interface {v1}, Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;->resume()V
 
-    .line 149
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 155
     :cond_1
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
@@ -579,7 +528,6 @@
 
     goto :goto_2
 
-    .line 159
     .end local v1           #listener:Lcom/android/settings_ex/nfc/LGNfcEnabler$OnNfcStateChangeListener;
     :cond_2
     iget-object v2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mContext:Landroid/content/Context;
@@ -599,21 +547,17 @@
     .parameter "msgID"
 
     .prologue
-    .line 627
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     iget-object v1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 628
     .local v0, AlertDlg:Landroid/app/AlertDialog$Builder;
     invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 629
     invoke-virtual {v0, p2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    .line 630
     const v1, 0x7f08044e
 
     new-instance v2, Lcom/android/settings_ex/nfc/LGNfcEnabler$4;

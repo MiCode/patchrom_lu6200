@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 208
     iput-object p1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamTrigger;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -39,10 +38,8 @@
     .parameter "bOn"
 
     .prologue
-    .line 211
     if-eqz p1, :cond_0
 
-    .line 212
     iget-object v1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamTrigger;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     #getter for: Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;

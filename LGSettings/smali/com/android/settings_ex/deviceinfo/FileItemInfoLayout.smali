@@ -48,12 +48,10 @@
     .parameter "context"
 
     .prologue
-    .line 27
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/android/settings_ex/deviceinfo/FileItemInfoLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 28
     return-void
 .end method
 
@@ -63,12 +61,10 @@
     .parameter "attrs"
 
     .prologue
-    .line 31
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lcom/android/settings_ex/deviceinfo/FileItemInfoLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 32
     return-void
 .end method
 
@@ -92,7 +88,6 @@
     .locals 1
 
     .prologue
-    .line 67
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/FileItemInfoLayout;->mCheckbox:Landroid/widget/CheckBox;
 
     return-object v0
@@ -104,7 +99,6 @@
     .end annotation
 
     .prologue
-    .line 63
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/FileItemInfoLayout;->mCheckbox:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -163,12 +157,10 @@
     .parameter "checked"
 
     .prologue
-    .line 76
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/FileItemInfoLayout;->mCheckbox:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 77
     return-void
 .end method
 
@@ -177,7 +169,6 @@
     .parameter "fileName"
 
     .prologue
-    .line 54
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/FileItemInfoLayout;->mFileNameView:Landroid/widget/TextView;
 
     sget v1, Lcom/android/settings_ex/deviceinfo/FileItemInfoLayout;->mLengthExternalStorageDirPrefix:I
@@ -197,12 +188,10 @@
     .parameter "filesize"
 
     .prologue
-    .line 58
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/FileItemInfoLayout;->mFileSizeView:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 59
     return-void
 .end method
 
@@ -210,7 +199,6 @@
     .locals 1
 
     .prologue
-    .line 39
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/FileItemInfoLayout;->mCheckbox:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 107
     iput-object p1, p0, Lcom/android/settings_ex/CryptKeeperSettings$2$2;->this$1:Lcom/android/settings_ex/CryptKeeperSettings$2;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -66,7 +65,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 113
     iget-object v1, p0, Lcom/android/settings_ex/CryptKeeperSettings$2$2;->this$1:Lcom/android/settings_ex/CryptKeeperSettings$2;
 
     iget-object v1, v1, Lcom/android/settings_ex/CryptKeeperSettings$2;->this$0:Lcom/android/settings_ex/CryptKeeperSettings;

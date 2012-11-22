@@ -37,19 +37,16 @@
     .locals 1
 
     .prologue
-    .line 42
     sget-object v0, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->mInstance:Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;
 
     if-nez v0, :cond_0
 
-    .line 43
     new-instance v0, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;
 
     invoke-direct {v0}, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;-><init>()V
 
     sput-object v0, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->mInstance:Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;
 
-    .line 45
     :cond_0
     sget-object v0, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->mInstance:Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;
 
@@ -67,7 +64,6 @@
 
     const/4 v5, 0x1
 
-    .line 120
     sget-object v7, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -166,7 +162,6 @@
 
     invoke-static {v7, v8}, Lcom/lge/mdm/controller/MDMLog;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 131
     sget-object v7, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -226,14 +221,12 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 134
     sget-object v7, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v8, "checkBluetoothAudioOnly block bluetooth except audio "
 
     invoke-static {v7, v8}, Lcom/lge/mdm/controller/MDMLog;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 147
     .end local v1           #btClass:Landroid/bluetooth/BluetoothClass;
     .end local v3           #isAudioBTClass:Z
     .end local v4           #isAudioOnlyPolicy:Z
@@ -244,37 +237,31 @@
     :cond_0
     move v4, v6
 
-    .line 126
     goto :goto_0
 
     .restart local v4       #isAudioOnlyPolicy:Z
     :cond_1
     move v3, v6
 
-    .line 127
     goto :goto_1
 
     .restart local v3       #isAudioBTClass:Z
     :cond_2
     move v7, v6
 
-    .line 132
     goto :goto_2
 
-    .line 137
     :cond_3
     if-eqz v4, :cond_4
 
     if-nez p1, :cond_4
 
-    .line 138
     const-string v7, "LGMDM"
 
     const-string v8, "LGMDM BT POINT #005"
 
     invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 139
     sget-object v7, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v8, "checkBluetoothAudioOnly block bluetooth "
@@ -300,7 +287,6 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 144
     sget-object v5, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -343,7 +329,6 @@
 
     const/4 v5, 0x0
 
-    .line 100
     sget-object v2, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -375,70 +360,57 @@
 
     move-result v0
 
-    .line 103
     .local v0, btPolicy:I
     if-ne v0, v6, :cond_2
 
-    .line 104
     sget-object v2, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v3, "[LGMDM] Bluetooth Audio only mode"
 
     invoke-static {v2, v3}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 105
     const-string v2, "LGMDM"
 
     const-string v3, "LGMDM BT POINT #003 - They say ALLOW_AUDIOONLY!!"
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 106
     const/4 p3, 0x0
 
-    .line 107
     instance-of v2, p4, Landroid/preference/CheckBoxPreference;
 
     if-eqz v2, :cond_0
 
     move-object v1, p4
 
-    .line 108
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    .line 109
     .local v1, preference:Landroid/preference/CheckBoxPreference;
     invoke-virtual {v1, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 111
     .end local v1           #preference:Landroid/preference/CheckBoxPreference;
     :cond_0
     invoke-virtual {p4, v5}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 112
     const v2, 0x7f080968
 
     invoke-virtual {p4, v2}, Landroid/preference/Preference;->setSummary(I)V
 
-    .line 117
     :cond_1
     :goto_0
     return-void
 
-    .line 113
     :cond_2
     const/4 v2, 0x2
 
     if-ne v0, v2, :cond_1
 
-    .line 114
     sget-object v2, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v3, "[LGMDM] Bluetooth Allow mode"
 
     invoke-static {v2, v3}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 115
     invoke-virtual {p4, v6}, Landroid/preference/Preference;->setEnabled(Z)V
 
     goto :goto_0
@@ -456,7 +428,6 @@
 
     const/4 v2, 0x0
 
-    .line 70
     sget-object v3, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -529,17 +500,14 @@
 
     if-eqz v3, :cond_6
 
-    .line 77
     sget-object v3, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v4, "[LGMDM] Allow Bluetooth mode"
 
     invoke-static {v3, v4}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 78
     if-eqz v0, :cond_5
 
-    .line 79
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->getState()I
 
     move-result v3
@@ -621,11 +589,9 @@
 
     move-result v0
 
-    .line 163
     .local v0, btPolicy:I
     if-ne v0, v2, :cond_1
 
-    .line 164
     sget-object v1, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -648,35 +614,29 @@
 
     invoke-static {v1, v2}, Lcom/lge/mdm/controller/MDMLog;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 165
     sget-object v1, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v2, "[LGMDM] Bluetooth Audio only mode"
 
     invoke-static {v1, v2}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 166
     const/4 v1, 0x0
 
     invoke-virtual {p4, v1}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 167
     const v1, 0x7f080969
 
     invoke-virtual {p4, v1}, Landroid/preference/Preference;->setSummary(I)V
 
-    .line 171
     :cond_0
     :goto_0
     return-void
 
-    .line 168
     :cond_1
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_0
 
-    .line 169
     invoke-virtual {p4, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
     goto :goto_0
@@ -698,13 +658,11 @@
 
     move-result v0
 
-    .line 152
     .local v0, btPolicy:I
     const/4 v3, 0x1
 
     if-ne v0, v3, :cond_0
 
-    .line 153
     sget-object v3, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -767,7 +725,6 @@
     .parameter "textView"
 
     .prologue
-    .line 52
     sget-object v0, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -834,21 +791,18 @@
 
     if-eqz v0, :cond_3
 
-    .line 59
     sget-object v0, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 
     const-string v1, "[LGMDM] Allow bluetooth mode"
 
     invoke-static {v0, v1}, Lcom/lge/mdm/controller/MDMLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 66
     :cond_2
     :goto_1
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 61
     :cond_3
     sget-object v0, Lcom/android/settings_ex/bluetooth/MDMBluetoothSettingsAdapter;->TAG:Ljava/lang/String;
 

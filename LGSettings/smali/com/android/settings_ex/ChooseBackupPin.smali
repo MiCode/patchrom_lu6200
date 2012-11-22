@@ -65,20 +65,16 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 79
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 80
     const v1, 0x7f0808aa
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/ChooseBackupPin;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    .line 81
     .local v0, msg:Ljava/lang/CharSequence;
     invoke-virtual {p0, v0, v0}, Lcom/android/settings_ex/ChooseBackupPin;->showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
-    .line 83
     return-void
 .end method

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 279
     iput-object p1, p0, Lcom/android/settings_ex/ProxySelector$2;->this$0:Lcom/android/settings_ex/ProxySelector;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 281
     iget-object v0, p0, Lcom/android/settings_ex/ProxySelector$2;->this$0:Lcom/android/settings_ex/ProxySelector;
 
     iget-object v0, v0, Lcom/android/settings_ex/ProxySelector;->mHostnameField:Landroid/widget/EditText;
@@ -51,7 +49,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 282
     iget-object v0, p0, Lcom/android/settings_ex/ProxySelector$2;->this$0:Lcom/android/settings_ex/ProxySelector;
 
     iget-object v0, v0, Lcom/android/settings_ex/ProxySelector;->mPortField:Landroid/widget/EditText;
@@ -60,7 +57,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 283
     iget-object v0, p0, Lcom/android/settings_ex/ProxySelector$2;->this$0:Lcom/android/settings_ex/ProxySelector;
 
     iget-object v0, v0, Lcom/android/settings_ex/ProxySelector;->mExclusionListField:Landroid/widget/EditText;

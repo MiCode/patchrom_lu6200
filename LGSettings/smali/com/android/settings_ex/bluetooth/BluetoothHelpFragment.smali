@@ -40,14 +40,12 @@
 
     iput-object v7, p0, Lcom/android/settings_ex/bluetooth/BluetoothHelpFragment;->mContext:Landroid/content/Context;
 
-    .line 33
     iget-object v7, p0, Lcom/android/settings_ex/bluetooth/BluetoothHelpFragment;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object v0
 
-    .line 34
     .local v0, am:Landroid/content/res/AssetManager;
     const-string v7, "html/%y%z/bluetooth_advanced_settings_help.html"
 
@@ -199,12 +197,10 @@
 
     iput-object v7, p0, Lcom/android/settings_ex/bluetooth/BluetoothHelpFragment;->mView:Landroid/webkit/WebView;
 
-    .line 54
     iget-object v7, p0, Lcom/android/settings_ex/bluetooth/BluetoothHelpFragment;->mView:Landroid/webkit/WebView;
 
     invoke-virtual {v7, v5}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
-    .line 56
     new-instance v7, Landroid/app/AlertDialog$Builder;
 
     iget-object v8, p0, Lcom/android/settings_ex/bluetooth/BluetoothHelpFragment;->mContext:Landroid/content/Context;

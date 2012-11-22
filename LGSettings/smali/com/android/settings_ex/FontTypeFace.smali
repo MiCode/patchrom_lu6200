@@ -450,12 +450,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 258
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_certifyNewDownloadFontApp:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 260
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_certifyNewDownloadFontApp:Ljava/lang/reflect/Method;
 
@@ -513,12 +511,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 290
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_countCertifiedDownloadFontApps:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 292
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_countCertifiedDownloadFontApps:Ljava/lang/reflect/Method;
 
@@ -568,12 +564,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 214
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_countNewDownloadFontApps:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 216
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_countNewDownloadFontApps:Ljava/lang/reflect/Method;
 
@@ -622,12 +616,10 @@
     .parameter
 
     .prologue
-    .line 325
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getCertifiedDownloadFontAppFontname:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 327
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getCertifiedDownloadFontAppFontname:Ljava/lang/reflect/Method;
 
@@ -653,32 +645,26 @@
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 334
     :goto_0
     return-object v0
 
-    .line 328
     :catch_0
     move-exception v0
 
-    .line 329
     const-string v0, "FontTypeFace"
 
     const-string v1, "Error : not support font api."
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 330
     const-string v0, "FontTypeFace"
 
     const-string v1, "Notice : use getDefaultFontFaceName api."
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 331
     invoke-static {p0}, Lcom/android/settings_ex/FontTypeFace;->getDefaultFontFaceName(I)Ljava/lang/String;
 
-    .line 334
     :cond_0
     const/4 v0, 0x0
 
@@ -691,12 +677,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 95
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getCurrentDefaultFontIndex:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 97
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getCurrentDefaultFontIndex:Ljava/lang/reflect/Method;
 
@@ -746,12 +730,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 106
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getDefaultFontCount:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 108
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getDefaultFontCount:Ljava/lang/reflect/Method;
 
@@ -800,12 +782,10 @@
     .parameter
 
     .prologue
-    .line 129
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getDefaultFontFaceName:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 131
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getDefaultFontFaceName:Ljava/lang/reflect/Method;
 
@@ -858,12 +838,10 @@
     .parameter
 
     .prologue
-    .line 225
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getNewDownloadFontAppName:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 227
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getNewDownloadFontAppName:Ljava/lang/reflect/Method;
 
@@ -915,12 +893,10 @@
     .locals 3
 
     .prologue
-    .line 247
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getNewDownloadFontAppsDstPath:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 249
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getNewDownloadFontAppsDstPath:Ljava/lang/reflect/Method;
 
@@ -964,12 +940,10 @@
     .locals 3
 
     .prologue
-    .line 236
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getNewDownloadFontAppsSrcPath:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 238
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getNewDownloadFontAppsSrcPath:Ljava/lang/reflect/Method;
 
@@ -1015,12 +989,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 153
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getSystemDefaultFamilyIndex:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 155
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_getSystemDefaultFamilyIndex:Ljava/lang/reflect/Method;
 
@@ -1068,15 +1040,12 @@
     .locals 3
 
     .prologue
-    .line 178
     const/4 v0, 0x0
 
-    .line 180
     sget-object v1, Lcom/android/settings_ex/FontTypeFace;->_CAPP_FONTS:Ljava/lang/reflect/Field;
 
     if-eqz v1, :cond_0
 
-    .line 182
     :try_start_0
     sget-object v1, Lcom/android/settings_ex/FontTypeFace;->_CAPP_FONTS:Ljava/lang/reflect/Field;
 
@@ -1111,12 +1080,10 @@
     .locals 3
 
     .prologue
-    .line 280
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_saveNewDownloadFontApps:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 282
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_saveNewDownloadFontApps:Ljava/lang/reflect/Method;
 
@@ -1155,12 +1122,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 203
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_searchNewDownloadFontApps:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 205
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_searchNewDownloadFontApps:Ljava/lang/reflect/Method;
 
@@ -1209,12 +1174,10 @@
     .parameter
 
     .prologue
-    .line 85
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_selectDefaultFont:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 87
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_selectDefaultFont:Ljava/lang/reflect/Method;
 
@@ -1262,12 +1225,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 269
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_updateNewDownloadFontApp:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 271
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/FontTypeFace;->_updateNewDownloadFontApp:Ljava/lang/reflect/Method;
 

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 221
     iput-object p1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamTriggerInP2P;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     invoke-direct {p0, p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamTrigger;-><init>(Lcom/android/settings_ex/nfc/LGNfcEnabler;)V
@@ -39,12 +38,10 @@
     .parameter "bOn"
 
     .prologue
-    .line 223
     invoke-super {p0, p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamTrigger;->trigger(Z)Z
 
     move-result v0
 
-    .line 224
     .local v0, bRet:Z
     const/4 v1, 0x1
 
@@ -52,7 +49,6 @@
 
     if-nez p1, :cond_0
 
-    .line 225
     iget-object v1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamTriggerInP2P;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     #getter for: Lcom/android/settings_ex/nfc/LGNfcEnabler;->mContext:Landroid/content/Context;

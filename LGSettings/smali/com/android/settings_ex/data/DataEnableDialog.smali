@@ -27,30 +27,24 @@
     .locals 1
 
     .prologue
-    .line 22
     invoke-direct {p0}, Lcom/android/internal/app/AlertActivity;-><init>()V
 
-    .line 23
     const-string v0, "DataEnableDialog"
 
     iput-object v0, p0, Lcom/android/settings_ex/data/DataEnableDialog;->TAG:Ljava/lang/String;
 
-    .line 25
     const-string v0, "android.intent.action.DATA_ENABLE_DIALOG"
 
     iput-object v0, p0, Lcom/android/settings_ex/data/DataEnableDialog;->DATA_ENABLE_DIALOG:Ljava/lang/String;
 
-    .line 27
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
 
-    .line 30
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mCancelable:Z
 
-    .line 81
     new-instance v0, Lcom/android/settings_ex/data/DataEnableDialog$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/data/DataEnableDialog$1;-><init>(Lcom/android/settings_ex/data/DataEnableDialog;)V
@@ -65,7 +59,6 @@
     .parameter "x0"
 
     .prologue
-    .line 22
     iget v0, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
 
     return v0
@@ -77,7 +70,6 @@
     .parameter "x1"
 
     .prologue
-    .line 22
     iput p1, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
 
     return p1
@@ -88,7 +80,6 @@
     .parameter "x0"
 
     .prologue
-    .line 22
     iget-object v0, p0, Lcom/android/settings_ex/data/DataEnableDialog;->tViewDescriptionTitle:Landroid/widget/TextView;
 
     return-object v0
@@ -99,7 +90,6 @@
     .parameter "x0"
 
     .prologue
-    .line 22
     iget-object v0, p0, Lcom/android/settings_ex/data/DataEnableDialog;->tViewDescription:Landroid/widget/TextView;
 
     return-object v0
@@ -264,15 +254,12 @@
     .locals 1
 
     .prologue
-    .line 99
     iget-boolean v0, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mCancelable:Z
 
     if-eqz v0, :cond_0
 
-    .line 100
     invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onBackPressed()V
 
-    .line 102
     :cond_0
     return-void
 .end method
@@ -308,20 +295,16 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 107
     iget v0, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
 
     invoke-direct {p0, p0, v0}, Lcom/android/settings_ex/data/DataEnableDialog;->setDataEnableDB(Landroid/content/Context;I)V
 
-    .line 108
     const/4 v0, -0x1
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/data/DataEnableDialog;->setResult(I)V
 
-    .line 109
     invoke-virtual {p0}, Lcom/android/settings_ex/data/DataEnableDialog;->finish()V
 
-    .line 110
     return-void
 .end method
 
@@ -368,7 +351,6 @@
 
     aput-object v3, v0, v6
 
-    .line 40
     invoke-virtual {p0}, Lcom/android/settings_ex/data/DataEnableDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v3
@@ -389,10 +371,8 @@
 
     iput v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
 
-    .line 44
     iget-object v1, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    .line 45
     .local v1, p:Lcom/android/internal/app/AlertController$AlertParams;
     const v3, 0x7f0803cf
 
@@ -402,26 +382,20 @@
 
     iput-object v3, v1, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    .line 46
     iput-object v0, v1, Lcom/android/internal/app/AlertController$AlertParams;->mItems:[Ljava/lang/CharSequence;
 
-    .line 47
     iget-object v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mItemClickListener:Landroid/content/DialogInterface$OnClickListener;
 
     iput-object v3, v1, Lcom/android/internal/app/AlertController$AlertParams;->mOnClickListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 48
     iget v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
 
     iput v3, v1, Lcom/android/internal/app/AlertController$AlertParams;->mCheckedItem:I
 
-    .line 49
     iput-boolean v6, v1, Lcom/android/internal/app/AlertController$AlertParams;->mIsSingleChoice:Z
 
-    .line 50
     iput-object v2, v1, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    .line 51
     const v3, 0x7f08044e
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/data/DataEnableDialog;->getString(I)Ljava/lang/String;
@@ -430,13 +404,10 @@
 
     iput-object v3, v1, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    .line 52
     iput-object p0, v1, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 54
     invoke-virtual {p0}, Lcom/android/settings_ex/data/DataEnableDialog;->setupAlert()V
 
-    .line 56
     const v3, 0x7f0b0078
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -470,27 +441,23 @@
 
     iput v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
 
-    .line 65
     :cond_0
     iget v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
 
     if-nez v3, :cond_2
 
-    .line 67
     iget-object v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->tViewDescriptionTitle:Landroid/widget/TextView;
 
     const v4, 0x7f0809a7
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
-    .line 68
     iget-object v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->tViewDescription:Landroid/widget/TextView;
 
     const v4, 0x7f0809a9
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
-    .line 74
     :goto_0
     invoke-virtual {p0}, Lcom/android/settings_ex/data/DataEnableDialog;->getIntent()Landroid/content/Intent;
 
@@ -504,19 +471,15 @@
 
     iput-boolean v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mCancelable:Z
 
-    .line 75
     iget-boolean v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mCancelable:Z
 
     if-nez v3, :cond_1
 
-    .line 76
     invoke-virtual {p0, v7}, Lcom/android/settings_ex/data/DataEnableDialog;->setFinishOnTouchOutside(Z)V
 
-    .line 78
     :cond_1
     return-void
 
-    .line 70
     :cond_2
     iget-object v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->tViewDescriptionTitle:Landroid/widget/TextView;
 
@@ -524,7 +487,6 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
-    .line 71
     iget-object v3, p0, Lcom/android/settings_ex/data/DataEnableDialog;->tViewDescription:Landroid/widget/TextView;
 
     const v4, 0x7f0809aa
@@ -567,13 +529,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 152
     const-string v0, "currentPosition"
 
     iget v1, p0, Lcom/android/settings_ex/data/DataEnableDialog;->mClickedPos:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 153
     return-void
 .end method

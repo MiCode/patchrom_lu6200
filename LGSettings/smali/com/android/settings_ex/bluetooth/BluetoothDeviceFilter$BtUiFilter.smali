@@ -32,7 +32,6 @@
     .parameter "x0"
 
     .prologue
-    .line 185
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothDeviceFilter$BtUiFilter;-><init>()V
 
     return-void
@@ -52,7 +51,6 @@
 
     const/4 v3, 0x0
 
-    .line 188
     invoke-static {}, Lcom/android/settings_ex/bluetooth/BluetoothDeviceFilter;->access$900()Landroid/content/Context;
 
     move-result-object v4

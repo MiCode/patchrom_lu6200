@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 861
     iput-object p1, p0, Lcom/android/settings_ex/RadioInfo$11;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,24 +41,20 @@
     .parameter
 
     .prologue
-    .line 863
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 864
     iget-object v1, p0, Lcom/android/settings_ex/RadioInfo$11;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     const-class v2, Lcom/android/settings_ex/BandMode;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 865
     iget-object v1, p0, Lcom/android/settings_ex/RadioInfo$11;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/RadioInfo;->startActivity(Landroid/content/Intent;)V
 
-    .line 866
     const/4 v0, 0x1
 
     return v0

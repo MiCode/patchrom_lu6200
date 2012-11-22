@@ -40,7 +40,6 @@
     .locals 3
 
     .prologue
-    .line 28
     const-class v0, Lcom/android/settings_ex/UsimStateReceiverHelper;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -110,42 +109,32 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 27
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
-    .line 107
     iput-boolean v1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->sContactsLoaded:Z
 
-    .line 109
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mLock:Ljava/lang/Object;
 
-    .line 110
     iput v1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mReceiveFlag:I
 
-    .line 111
     iput v1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mSimState:I
 
-    .line 112
     iput v1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mDownloadState:I
 
-    .line 113
     const/4 v0, 0x3
 
     iput v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mServiceState:I
 
-    .line 114
     iput-boolean v1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mInitialStateNotified:Z
 
-    .line 118
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mUsimService:Lcom/android/internal/telephony/UsimService;
 
-    .line 254
     iput v1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mLastMessage:I
 
     return-void
@@ -157,16 +146,13 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 570
     sget-boolean v5, Lcom/android/settings_ex/UsimStateReceiverHelper;->isSKT:Z
 
     if-nez v5, :cond_0
 
-    .line 588
     :goto_0
     return v4
 
-    .line 573
     :cond_0
     sget-object v5, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
@@ -174,7 +160,6 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 574
     iget-object v5, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -278,19 +263,16 @@
 
     if-nez v5, :cond_1
 
-    .line 583
     sget-object v4, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     const-string v5, ">> Global USIM Download Requires!!"
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 584
     const/4 v4, 0x1
 
     goto :goto_0
 
-    .line 587
     .end local v1           #line1Number:Ljava/lang/String;
     :cond_1
     sget-object v5, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
@@ -310,29 +292,24 @@
 
     const/4 v2, 0x0
 
-    .line 592
     sget-boolean v4, Lcom/android/settings_ex/UsimStateReceiverHelper;->isSKT:Z
 
     if-nez v4, :cond_1
 
-    .line 609
     :cond_0
     :goto_0
     return v2
 
-    .line 601
     :cond_1
     invoke-virtual {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->getUsimType()I
 
     move-result v1
 
-    .line 602
     .local v1, usimtype:I
     invoke-virtual {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->getUsimIsEmpty()I
 
     move-result v0
 
-    .line 603
     .local v0, usimIsEmpty:I
     if-ne v1, v3, :cond_0
 
@@ -351,7 +328,6 @@
     .parameter "aMask"
 
     .prologue
-    .line 473
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mReceiveFlag:I
 
     and-int/2addr v0, p1
@@ -378,7 +354,6 @@
 
     const/4 v3, 0x1
 
-    .line 256
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -413,7 +388,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 257
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mLastMessage:I
 
     if-ne v0, p1, :cond_1
@@ -465,14 +439,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 261
     iget-boolean v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mInitialStateNotified:Z
 
     if-eqz v0, :cond_2
 
     if-lt p1, v4, :cond_2
 
-    .line 262
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     const-string v1, "> consume..."
@@ -481,18 +453,14 @@
 
     goto :goto_0
 
-    .line 266
     :cond_2
     if-lt p1, v4, :cond_3
 
-    .line 267
     iput-boolean v3, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mInitialStateNotified:Z
 
-    .line 269
     :cond_3
     iput p1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mLastMessage:I
 
-    .line 278
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/UsimStateReceiverHelper;->onStateChanged(I)V
 
     goto :goto_0
@@ -505,17 +473,14 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 491
     iget-boolean v1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->sContactsLoaded:Z
 
     if-eqz v1, :cond_1
 
-    .line 503
     :cond_0
     :goto_0
     return-void
 
-    .line 494
     :cond_1
     sget-object v1, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
@@ -568,10 +533,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 499
     iput-boolean v4, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->sContactsLoaded:Z
 
-    .line 501
     invoke-direct {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->onStateChangeReceive()V
 
     goto :goto_0
@@ -584,7 +547,6 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 506
     sget-object v1, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -619,21 +581,17 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 508
     const-string v1, "state"
 
     invoke-virtual {p1, v1, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v0
 
-    .line 509
     .local v0, state:I
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->setServiceState(I)V
 
-    .line 511
     invoke-direct {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->onStateChangeReceive()V
 
-    .line 512
     return-void
 .end method
 
@@ -644,7 +602,6 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 515
     sget-object v2, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -673,20 +630,17 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 517
     const-string v2, "ss"
 
     invoke-virtual {p1, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 519
     .local v0, icc_state:Ljava/lang/String;
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->parseSimState(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 520
     .local v1, state:I
     sget-object v2, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
@@ -710,28 +664,22 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 521
     packed-switch v1, :pswitch_data_0
 
-    .line 553
     sget-object v2, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     const-string v3, "|ignore..."
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 556
     :cond_0
     :goto_0
     invoke-direct {p0, v1}, Lcom/android/settings_ex/UsimStateReceiverHelper;->setSimState(I)V
 
-    .line 557
     invoke-direct {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->onStateChangeReceive()V
 
-    .line 558
     return-void
 
-    .line 525
     :pswitch_0
     invoke-direct {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->isNoIMSIUSIMDownloadRequires()Z
 
@@ -739,12 +687,10 @@
 
     if-eqz v2, :cond_1
 
-    .line 526
     invoke-direct {p0, v5}, Lcom/android/settings_ex/UsimStateReceiverHelper;->setDownloadState(I)V
 
     goto :goto_0
 
-    .line 528
     :cond_1
     const/4 v2, 0x2
 
@@ -760,12 +706,10 @@
 
     if-eqz v2, :cond_0
 
-    .line 534
     invoke-direct {p0, v5}, Lcom/android/settings_ex/UsimStateReceiverHelper;->setDownloadState(I)V
 
     goto :goto_0
 
-    .line 539
     :pswitch_2
     invoke-direct {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->isNoIMSIUSIMDownloadRequires()Z
 
@@ -773,12 +717,10 @@
 
     if-eqz v2, :cond_0
 
-    .line 541
     invoke-direct {p0, v5}, Lcom/android/settings_ex/UsimStateReceiverHelper;->setDownloadState(I)V
 
     goto :goto_0
 
-    .line 546
     :pswitch_3
     invoke-direct {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->isGlobalUSIMDownloadRequires()Z
 
@@ -792,12 +734,10 @@
 
     if-eqz v2, :cond_0
 
-    .line 548
     invoke-direct {p0, v5}, Lcom/android/settings_ex/UsimStateReceiverHelper;->setDownloadState(I)V
 
     goto :goto_0
 
-    .line 521
     nop
 
     :pswitch_data_0
@@ -820,13 +760,11 @@
 
     const/4 v3, 0x2
 
-    .line 284
     monitor-enter p0
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->printState()V
 
-    .line 286
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -851,17 +789,14 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 289
     iget-boolean v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mInitialStateNotified:Z
 
     if-eqz v0, :cond_0
 
-    .line 290
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
-    .line 294
     :cond_0
     invoke-direct {p0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->isNoIMSIUSIMDownloadRequires()Z
 
@@ -869,25 +804,21 @@
 
     if-eqz v0, :cond_2
 
-    .line 296
     iget-boolean v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->sContactsLoaded:Z
 
     if-eqz v0, :cond_1
 
-    .line 297
     const v0, 0x10001
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 470
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 299
     :cond_1
     const/4 v0, 0x2
 
@@ -917,7 +848,6 @@
 
     if-nez v0, :cond_3
 
-    .line 309
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     const-string v1, "> sim state is not yet confirmed"
@@ -926,20 +856,17 @@
 
     goto :goto_0
 
-    .line 314
     :cond_3
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mSimState:I
 
     if-ne v0, v3, :cond_4
 
-    .line 315
     const v0, 0x10005
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto :goto_0
 
-    .line 321
     :cond_4
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mSimState:I
 
@@ -966,14 +893,12 @@
 
     if-eqz v0, :cond_5
 
-    .line 325
     const v0, 0x10003
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto :goto_0
 
-    .line 327
     :cond_5
     const v0, 0x10006
 
@@ -991,7 +916,6 @@
 
     if-nez v0, :cond_7
 
-    .line 336
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     const-string v1, "> download state is not yet confirmed"
@@ -1000,20 +924,17 @@
 
     goto :goto_0
 
-    .line 340
     :cond_7
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mDownloadState:I
 
     if-ne v0, v4, :cond_8
 
-    .line 341
     const v0, 0x10002
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto :goto_0
 
-    .line 348
     :cond_8
     const/4 v0, 0x7
 
@@ -1023,7 +944,6 @@
 
     if-nez v0, :cond_9
 
-    .line 349
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     const-string v1, "> service state is not yet confirmed"
@@ -1032,25 +952,21 @@
 
     goto :goto_0
 
-    .line 353
     :cond_9
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mServiceState:I
 
     if-ne v0, v3, :cond_b
 
-    .line 356
     iget-boolean v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->sContactsLoaded:Z
 
     if-eqz v0, :cond_a
 
-    .line 357
     const v0, 0x10001
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto :goto_0
 
-    .line 359
     :cond_a
     const/4 v0, 0x2
 
@@ -1058,35 +974,29 @@
 
     goto/16 :goto_0
 
-    .line 369
     :cond_b
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mSimState:I
 
     if-ne v0, v4, :cond_11
 
-    .line 372
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mServiceState:I
 
     if-ne v0, v3, :cond_e
 
-    .line 374
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mDownloadState:I
 
     if-ne v0, v3, :cond_d
 
-    .line 379
     iget-boolean v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->sContactsLoaded:Z
 
     if-eqz v0, :cond_c
 
-    .line 380
     const v0, 0x10001
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto/16 :goto_0
 
-    .line 382
     :cond_c
     const/4 v0, 0x2
 
@@ -1102,25 +1012,21 @@
 
     goto/16 :goto_0
 
-    .line 392
     :cond_e
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mDownloadState:I
 
     if-ne v0, v3, :cond_10
 
-    .line 394
     iget-boolean v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->sContactsLoaded:Z
 
     if-eqz v0, :cond_f
 
-    .line 396
     const v0, 0x10001
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto/16 :goto_0
 
-    .line 398
     :cond_f
     const/4 v0, 0x2
 
@@ -1136,30 +1042,25 @@
 
     goto/16 :goto_0
 
-    .line 406
     :cond_11
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mSimState:I
 
     if-ne v0, v3, :cond_15
 
-    .line 409
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mServiceState:I
 
     if-ne v0, v3, :cond_13
 
-    .line 412
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mDownloadState:I
 
     if-ne v0, v3, :cond_12
 
-    .line 415
     const v0, 0x10004
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto/16 :goto_0
 
-    .line 420
     :cond_12
     const v0, 0x10002
 
@@ -1167,20 +1068,17 @@
 
     goto/16 :goto_0
 
-    .line 424
     :cond_13
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mDownloadState:I
 
     if-ne v0, v3, :cond_14
 
-    .line 427
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto/16 :goto_0
 
-    .line 431
     :cond_14
     const v0, 0x10002
 
@@ -1188,30 +1086,25 @@
 
     goto/16 :goto_0
 
-    .line 434
     :cond_15
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mSimState:I
 
     if-ne v0, v5, :cond_19
 
-    .line 437
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mServiceState:I
 
     if-ne v0, v3, :cond_17
 
-    .line 440
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mDownloadState:I
 
     if-ne v0, v3, :cond_16
 
-    .line 443
     const v0, 0x10004
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto/16 :goto_0
 
-    .line 446
     :cond_16
     const v0, 0x10002
 
@@ -1219,20 +1112,17 @@
 
     goto/16 :goto_0
 
-    .line 450
     :cond_17
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mDownloadState:I
 
     if-ne v0, v3, :cond_18
 
-    .line 453
     const v0, 0x10004
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto/16 :goto_0
 
-    .line 456
     :cond_18
     const v0, 0x10002
 
@@ -1248,7 +1138,6 @@
 
     if-ne v0, v1, :cond_1a
 
-    .line 460
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     const-string v1, "IGNORE ready state"
@@ -1265,21 +1154,18 @@
 
     if-ne v0, v1, :cond_1b
 
-    .line 462
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     const-string v1, "IMSI"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 463
     const v0, 0x10001
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/UsimStateReceiverHelper;->notifyStateChanged(I)V
 
     goto/16 :goto_0
 
-    .line 468
     :cond_1b
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
@@ -1308,7 +1194,6 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 562
     sget-object v1, Lcom/android/settings_ex/UsimStateReceiverHelper;->SIM_STATE_TABLE:[Ljava/lang/String;
 
     aget-object v1, v1, v0
@@ -1343,14 +1228,12 @@
     .locals 4
 
     .prologue
-    .line 190
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     const-string v1, "<STATE"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 192
     :try_start_0
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
@@ -1391,7 +1274,6 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 196
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1424,23 +1306,19 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 201
     :goto_1
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mDownloadState:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 213
     :goto_2
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mServiceState:I
 
     packed-switch v0, :pswitch_data_1
 
-    .line 227
     :goto_3
     return-void
 
-    .line 198
     :cond_0
     :try_start_2
     sget-object v0, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
@@ -1560,17 +1438,14 @@
     .parameter "aState"
 
     .prologue
-    .line 174
     iput p1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mDownloadState:I
 
-    .line 175
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mReceiveFlag:I
 
     or-int/lit8 v0, v0, 0x2
 
     iput v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mReceiveFlag:I
 
-    .line 176
     return-void
 .end method
 
@@ -1579,17 +1454,14 @@
     .parameter "aState"
 
     .prologue
-    .line 164
     iput p1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mServiceState:I
 
-    .line 165
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mReceiveFlag:I
 
     or-int/lit8 v0, v0, 0x4
 
     iput v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mReceiveFlag:I
 
-    .line 166
     return-void
 .end method
 
@@ -1598,17 +1470,14 @@
     .parameter "aState"
 
     .prologue
-    .line 169
     iput p1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mSimState:I
 
-    .line 170
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mReceiveFlag:I
 
     or-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mReceiveFlag:I
 
-    .line 171
     return-void
 .end method
 
@@ -1703,7 +1572,6 @@
     .locals 1
 
     .prologue
-    .line 179
     iget v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mSimState:I
 
     return v0
@@ -1713,24 +1581,20 @@
     .locals 4
 
     .prologue
-    .line 630
     const/4 v1, 0x0
 
-    .line 633
     .local v1, isUsimEmpty:I
     :try_start_0
     iget-object v2, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mUsimService:Lcom/android/internal/telephony/UsimService;
 
     if-nez v2, :cond_0
 
-    .line 634
     new-instance v2, Lcom/android/internal/telephony/UsimService;
 
     invoke-direct {v2}, Lcom/android/internal/telephony/UsimService;-><init>()V
 
     iput-object v2, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mUsimService:Lcom/android/internal/telephony/UsimService;
 
-    .line 635
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mUsimService:Lcom/android/internal/telephony/UsimService;
 
@@ -1763,24 +1627,20 @@
     .locals 4
 
     .prologue
-    .line 615
     const/4 v1, 0x0
 
-    .line 618
     .local v1, usimType:I
     :try_start_0
     iget-object v2, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mUsimService:Lcom/android/internal/telephony/UsimService;
 
     if-nez v2, :cond_0
 
-    .line 619
     new-instance v2, Lcom/android/internal/telephony/UsimService;
 
     invoke-direct {v2}, Lcom/android/internal/telephony/UsimService;-><init>()V
 
     iput-object v2, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mUsimService:Lcom/android/internal/telephony/UsimService;
 
-    .line 620
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mUsimService:Lcom/android/internal/telephony/UsimService;
 
@@ -1815,17 +1675,14 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 123
     iput-object p1, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mContext:Landroid/content/Context;
 
-    .line 124
     invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getDefaultPhone()Lcom/android/internal/telephony/Phone;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    .line 125
     return-void
 .end method
 
@@ -1833,12 +1690,10 @@
     .locals 1
 
     .prologue
-    .line 160
     iget-object v0, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, p0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 161
     return-void
 .end method
 
@@ -1867,15 +1722,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 481
     invoke-direct {p0, p2}, Lcom/android/settings_ex/UsimStateReceiverHelper;->onServiceStateChangedReceive(Landroid/content/Intent;)V
 
-    .line 488
     :cond_0
     :goto_0
     return-void
 
-    .line 482
     :cond_1
     const-string v1, "android.intent.action.SIM_STATE_CHANGED"
 
@@ -1885,12 +1737,10 @@
 
     if-eqz v1, :cond_2
 
-    .line 483
     invoke-direct {p0, p2}, Lcom/android/settings_ex/UsimStateReceiverHelper;->onSimStateChangedReceive(Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 484
     :cond_2
     const-string v1, "com.android.phone.ACTION_REFRESH_SIMSEARCH_STATUS"
 
@@ -1910,7 +1760,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 485
     invoke-direct {p0, p2}, Lcom/android/settings_ex/UsimStateReceiverHelper;->onContactsLoadingStateChangedReceive(Landroid/content/Intent;)V
 
     goto :goto_0
@@ -1920,33 +1769,27 @@
     .locals 5
 
     .prologue
-    .line 128
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 129
     .local v0, intentFilter:Landroid/content/IntentFilter;
     const-string v2, "android.intent.action.SERVICE_STATE"
 
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 130
     const-string v2, "android.intent.action.SIM_STATE_CHANGED"
 
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 133
     const-string v2, "com.android.phone.ACTION_REFRESH_SIMSEARCH_STATUS"
 
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 135
     iget-object v2, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 136
     sget-object v2, Lcom/android/settings_ex/UsimStateReceiverHelper;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1971,12 +1814,10 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 140
     iget-boolean v2, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->sContactsLoaded:Z
 
     if-nez v2, :cond_0
 
-    .line 141
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
     move-result-object v2
@@ -1987,20 +1828,17 @@
 
     if-eqz v2, :cond_1
 
-    .line 142
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "com.android.contacts.ACTION_REFRESH_SIMSEARCH_REQUEST"
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 143
     .local v1, myIntent:Landroid/content/Intent;
     iget-object v2, p0, Lcom/android/settings_ex/UsimStateReceiverHelper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 156
     .end local v1           #myIntent:Landroid/content/Intent;
     :cond_0
     :goto_0

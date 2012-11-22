@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 172
     iput-object p1, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndSubtypeEnabler$1;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodAndSubtypeEnabler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

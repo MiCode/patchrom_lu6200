@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 304
     iput-object p1, p0, Lcom/android/settings_ex/SoundSettings$2;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -60,7 +59,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 309
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$2;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     #getter for: Lcom/android/settings_ex/SoundSettings;->mRingtonePreference:Landroid/preference/Preference;
@@ -74,7 +72,6 @@
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 310
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$2;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     #getter for: Lcom/android/settings_ex/SoundSettings;->mLGRingtonePreference:Landroid/preference/Preference;
@@ -105,7 +102,6 @@
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 316
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$2;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     #getter for: Lcom/android/settings_ex/SoundSettings;->mLGNotificationPreference:Landroid/preference/Preference;
@@ -115,7 +111,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 317
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$2;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     #getter for: Lcom/android/settings_ex/SoundSettings;->mLGNotificationPreference:Landroid/preference/Preference;

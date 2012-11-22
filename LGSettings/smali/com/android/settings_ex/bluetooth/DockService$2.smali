@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 528
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/DockService$2;->this$0:Lcom/android/settings_ex/bluetooth/DockService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +43,6 @@
     .parameter "isChecked"
 
     .prologue
-    .line 533
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/DockService$2;->this$0:Lcom/android/settings_ex/bluetooth/DockService;
 
     #getter for: Lcom/android/settings_ex/bluetooth/DockService;->mCheckedItems:[Z

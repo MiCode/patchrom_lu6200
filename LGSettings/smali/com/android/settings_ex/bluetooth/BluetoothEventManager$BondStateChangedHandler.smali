@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 335
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BondStateChangedHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 335
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BondStateChangedHandler;-><init>(Lcom/android/settings_ex/bluetooth/BluetoothEventManager;)V
 
     return-void
@@ -111,21 +109,18 @@
 
     const v0, 0x7f080aff
 
-    .line 473
     .local v0, errorMsg:I
     :goto_1
     invoke-static {p1, p2, v0, p4}, Lcom/android/settings_ex/bluetooth/Utils;->showError(Landroid/content/Context;Ljava/lang/String;ILandroid/bluetooth/BluetoothDevice;)V
 
     goto :goto_0
 
-    .line 420
     .end local v0           #errorMsg:I
     :cond_0
     const v0, 0x7f0801bb
 
     goto :goto_1
 
-    .line 425
     :pswitch_2
     const-string v1, "service.btui.gap.pairByLocal"
 
@@ -294,7 +289,6 @@
     #calls: Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->BtUiBondStateHandle(Landroid/content/Context;Landroid/content/Intent;Landroid/bluetooth/BluetoothDevice;IZ)V
     invoke-static/range {v0 .. v5}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->access$1700(Lcom/android/settings_ex/bluetooth/BluetoothEventManager;Landroid/content/Context;Landroid/content/Intent;Landroid/bluetooth/BluetoothDevice;IZ)V
 
-    .line 350
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BondStateChangedHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->mDeviceManager:Lcom/android/settings_ex/bluetooth/CachedBluetoothDeviceManager;
@@ -306,11 +300,9 @@
 
     move-result-object v6
 
-    .line 351
     .local v6, cachedDevice:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
     if-nez v6, :cond_3
 
-    .line 352
     const-string v0, "BluetoothEventManager"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -339,7 +331,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 354
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$BondStateChangedHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->readPairedDevices()Z
@@ -464,13 +455,11 @@
 
     check-cast v7, Lcom/android/settings_ex/bluetooth/BluetoothCallback;
 
-    .line 369
     .local v7, callback:Lcom/android/settings_ex/bluetooth/BluetoothCallback;
     invoke-interface {v7, v6, v4}, Lcom/android/settings_ex/bluetooth/BluetoothCallback;->onDeviceBondStateChanged(Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;I)V
 
     goto :goto_1
 
-    .line 371
     .end local v7           #callback:Lcom/android/settings_ex/bluetooth/BluetoothCallback;
     .end local v8           #i$:Ljava/util/Iterator;
     :catchall_0
@@ -489,29 +478,24 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 372
     invoke-virtual {v6, v4}, Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;->onBondingStateChanged(I)V
 
-    .line 374
     const/16 v0, 0xa
 
     if-ne v4, v0, :cond_6
 
-    .line 375
     invoke-virtual {p3}, Landroid/bluetooth/BluetoothDevice;->isBluetoothDock()Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 377
     invoke-virtual {p3}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {p1, v0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->removeDockAutoConnectSetting(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 381
     invoke-virtual {p3}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object v0
@@ -527,10 +511,8 @@
 
     if-nez v0, :cond_5
 
-    .line 382
     invoke-virtual {v6, v11}, Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;->setVisible(Z)V
 
-    .line 385
     :cond_5
     const-string v0, "android.bluetooth.device.extra.REASON"
 

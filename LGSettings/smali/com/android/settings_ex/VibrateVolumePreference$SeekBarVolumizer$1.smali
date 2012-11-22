@@ -25,7 +25,6 @@
     .parameter "x0"
 
     .prologue
-    .line 297
     iput-object p1, p0, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer$1;->this$1:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,10 +39,8 @@
     .parameter "selfChange"
 
     .prologue
-    .line 300
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
-    .line 301
     iget-object v1, p0, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer$1;->this$1:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     #getter for: Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;->mSeekBar:Landroid/widget/SeekBar;
@@ -53,7 +50,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 302
     iget-object v1, p0, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer$1;->this$1:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     #getter for: Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;->mContext:Landroid/content/Context;
@@ -73,11 +69,9 @@
 
     move-result v0
 
-    .line 305
     .local v0, volume:I
     if-ltz v0, :cond_0
 
-    .line 306
     iget-object v1, p0, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer$1;->this$1:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     #getter for: Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;->mSeekBar:Landroid/widget/SeekBar;

@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 195
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$3;->val$rssiLevels:[Ljava/lang/CharSequence;
@@ -48,7 +47,6 @@
     .parameter "item"
 
     .prologue
-    .line 197
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->getApplicationContext()Landroid/content/Context;
@@ -100,11 +98,9 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 200
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 201
     return-void
 .end method

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 32
     iput-object p1, p0, Lcom/android/settings_ex/lge/DeviceInfoLgeBattery$1;->this$0:Lcom/android/settings_ex/lge/DeviceInfoLgeBattery;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -55,12 +54,10 @@
 
     if-eqz v3, :cond_1
 
-    .line 38
     invoke-static {p2}, Lcom/android/settings_ex/Utils;->getBatteryPercentage(Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 39
     .local v1, batteryLevel:Ljava/lang/String;
     iget-object v3, p0, Lcom/android/settings_ex/lge/DeviceInfoLgeBattery$1;->this$0:Lcom/android/settings_ex/lge/DeviceInfoLgeBattery;
 
@@ -83,7 +80,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 43
     iget-object v3, p0, Lcom/android/settings_ex/lge/DeviceInfoLgeBattery$1;->this$0:Lcom/android/settings_ex/lge/DeviceInfoLgeBattery;
 
     #getter for: Lcom/android/settings_ex/lge/DeviceInfoLgeBattery;->mBatteryLevel:Landroid/preference/Preference;
@@ -104,7 +100,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 46
     iget-object v3, p0, Lcom/android/settings_ex/lge/DeviceInfoLgeBattery$1;->this$0:Lcom/android/settings_ex/lge/DeviceInfoLgeBattery;
 
     #getter for: Lcom/android/settings_ex/lge/DeviceInfoLgeBattery;->mBatteryStatus:Landroid/preference/Preference;

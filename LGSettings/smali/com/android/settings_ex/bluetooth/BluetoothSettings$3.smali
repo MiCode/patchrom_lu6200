@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 754
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$3;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -53,21 +52,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 758
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
 
-    .line 760
     new-instance v2, Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
     invoke-direct {v2, v1}, Landroid/os/Bundle;-><init>(I)V
 
-    .line 761
     const-string v1, "device"
 
     invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
@@ -76,7 +72,6 @@
 
     invoke-virtual {v2, v1, v0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 763
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$3;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;

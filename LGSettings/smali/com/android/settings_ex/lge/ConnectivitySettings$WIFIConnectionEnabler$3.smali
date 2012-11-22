@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 522
     iput-object p1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$3;->this$1:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     iput p2, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$3;->val$nSoftwareType:I
@@ -48,7 +47,6 @@
     .parameter "whichButton"
 
     .prologue
-    .line 527
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$3;->this$1:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     const/4 v1, 0x1

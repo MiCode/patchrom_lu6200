@@ -27,15 +27,11 @@
     .parameter "color"
 
     .prologue
-    .line 88
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 89
     iput p1, p0, Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory$CategoryInfo;->mTitle:I
 
-    .line 90
     iput p2, p0, Lcom/android/settings_ex/deviceinfo/StorageVolumePreferenceCategory$CategoryInfo;->mColor:I
 
-    .line 91
     return-void
 .end method

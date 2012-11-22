@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 247
     iput-object p1, p0, Lcom/android/settings_ex/DeviceAdminAdd$4;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "which"
 
     .prologue
-    .line 249
     iget-object v0, p0, Lcom/android/settings_ex/DeviceAdminAdd$4;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     iget-object v0, v0, Lcom/android/settings_ex/DeviceAdminAdd;->mDPM:Landroid/app/admin/DevicePolicyManager;
@@ -58,11 +56,9 @@
 
     invoke-virtual {v0, v1}, Landroid/app/admin/DevicePolicyManager;->removeActiveAdmin(Landroid/content/ComponentName;)V
 
-    .line 250
     iget-object v0, p0, Lcom/android/settings_ex/DeviceAdminAdd$4;->this$0:Lcom/android/settings_ex/DeviceAdminAdd;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/DeviceAdminAdd;->finish()V
 
-    .line 251
     return-void
 .end method

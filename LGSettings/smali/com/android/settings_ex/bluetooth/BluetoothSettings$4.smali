@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 907
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,13 +44,11 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 910
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     #calls: Lcom/android/settings_ex/bluetooth/BluetoothSettings;->setSearchFilter(I)V
     invoke-static {v0, p2}, Lcom/android/settings_ex/bluetooth/BluetoothSettings;->access$100(Lcom/android/settings_ex/bluetooth/BluetoothSettings;I)V
 
-    .line 912
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     iget-object v0, v0, Lcom/android/settings_ex/bluetooth/BluetoothSettings;->mScanOptionPreference:Landroid/preference/Preference;
@@ -65,12 +62,10 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 913
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/BluetoothSettings;->removeAllDevices()V
 
-    .line 914
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
@@ -84,7 +79,6 @@
     #calls: Lcom/android/settings_ex/bluetooth/BluetoothSettings;->updateContent(IZ)V
     invoke-static {v0, v1, v2}, Lcom/android/settings_ex/bluetooth/BluetoothSettings;->access$300(Lcom/android/settings_ex/bluetooth/BluetoothSettings;IZ)V
 
-    .line 916
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothSettings;->mAvailableDevicesCategory:Landroid/preference/PreferenceGroup;
@@ -94,7 +88,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 917
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothSettings;->mAvailableDevicesCategory:Landroid/preference/PreferenceGroup;

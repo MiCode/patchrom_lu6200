@@ -31,17 +31,14 @@
     .parameter
 
     .prologue
-    .line 146
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 147
     const-string v0, "2233"
 
     iput-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$4;->BTUI_ENTER_KEY:Ljava/lang/String;
 
-    .line 148
     const-string v0, ""
 
     iput-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$4;->enterBTHidden:Ljava/lang/String;
@@ -67,15 +64,12 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 153
     sparse-switch p2, :sswitch_data_0
 
-    .line 164
     const-string v1, "fail"
 
     iput-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$4;->enterBTHidden:Ljava/lang/String;
 
-    .line 167
     :goto_0
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$4;->enterBTHidden:Ljava/lang/String;
 
@@ -91,20 +85,17 @@
 
     if-eqz v1, :cond_0
 
-    .line 168
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.android.btui.action_btui_hidden_ics"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 169
     .local v0, intent:Landroid/content/Intent;
     const/high16 v1, 0x1080
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 170
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;->getActivity()Landroid/app/Activity;
@@ -113,7 +104,6 @@
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 171
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$4;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;->mAlertDialog:Landroid/app/AlertDialog;

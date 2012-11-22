@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 383
     iput-object p1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$5;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -65,7 +64,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 386
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$5;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     #getter for: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
@@ -75,7 +73,6 @@
 
     if-nez v0, :cond_0
 
-    .line 387
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$5;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     new-instance v1, Landroid/net/wifi/p2p/WifiP2pDevice;
@@ -85,7 +82,6 @@
     #setter for: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
     invoke-static {v0, v1}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$602(Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/net/wifi/p2p/WifiP2pDevice;
 
-    .line 388
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$5;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     #getter for: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
@@ -108,12 +104,10 @@
 
     iput-object p1, v0, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
-    .line 391
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$5;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     #calls: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->updateDevicePref()V
     invoke-static {v0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$700(Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;)V
 
-    .line 392
     return-void
 .end method

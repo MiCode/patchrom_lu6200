@@ -33,7 +33,6 @@
     .parameter
 
     .prologue
-    .line 563
     iput-object p1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$6;->this$1:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     iput-boolean p2, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$6;->val$bEnable:Z
@@ -53,7 +52,6 @@
     .parameter "whichButton"
 
     .prologue
-    .line 568
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$6;->this$1:Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;
 
     iget-boolean v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler$6;->val$bEnable:Z

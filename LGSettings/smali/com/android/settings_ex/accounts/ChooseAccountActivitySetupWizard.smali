@@ -24,15 +24,12 @@
     .locals 1
 
     .prologue
-    .line 44
     invoke-direct {p0}, Lcom/android/settings_ex/accounts/ChooseAccountActivity;-><init>()V
 
-    .line 46
     const-string v0, "ChooseAccountSetup"
 
     iput-object v0, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->TAG:Ljava/lang/String;
 
-    .line 49
     const-string v0, "ro.build.product"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
@@ -41,7 +38,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->targetProduct:Ljava/lang/String;
 
-    .line 52
     new-instance v0, Lcom/android/settings_ex/accounts/AddAccountSettings;
 
     invoke-direct {v0}, Lcom/android/settings_ex/accounts/AddAccountSettings;-><init>()V
@@ -55,12 +51,10 @@
     .locals 8
 
     .prologue
-    .line 122
     invoke-virtual {p0}, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v4
 
-    .line 123
     .local v4, pkg:Landroid/content/pm/PackageManager;
     const/16 v5, 0x2000
 
@@ -124,23 +118,19 @@
 
     if-eqz v5, :cond_0
 
-    .line 131
     iget-object v5, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->TAG:Ljava/lang/String;
 
     const-string v6, "isSNSAvailable true - Twitter"
 
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 132
     const/4 v5, 0x1
 
-    .line 136
     .end local v1           #appname:Ljava/lang/String;
     .end local v3           #pi:Landroid/content/pm/PackageInfo;
     :goto_1
     return v5
 
-    .line 125
     .restart local v1       #appname:Ljava/lang/String;
     .restart local v3       #pi:Landroid/content/pm/PackageInfo;
     :cond_0
@@ -171,7 +161,6 @@
     .parameter "accountType"
 
     .prologue
-    .line 142
     iget-object v1, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -194,12 +183,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 144
     invoke-super {p0, p1}, Lcom/android/settings_ex/accounts/ChooseAccountActivity;->isVisibleAccount(Ljava/lang/String;)Z
 
     move-result v0
 
-    .line 146
     .local v0, bResult:Z
     const-string v1, "com.lge.android.finance.sync"
 
@@ -305,7 +292,6 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 56
     iget-object v4, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->targetProduct:Ljava/lang/String;
 
     const-string v5, "p2"
@@ -316,30 +302,24 @@
 
     if-eqz v4, :cond_0
 
-    .line 58
     const v4, 0x20a01c2
 
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->setTheme(I)V
 
-    .line 60
     :cond_0
     invoke-super {p0, p1}, Lcom/android/settings_ex/accounts/ChooseAccountActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 62
     invoke-virtual {p0}, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
-    .line 63
     .local v0, actionBar:Landroid/app/ActionBar;
     if-eqz v0, :cond_1
 
-    .line 64
     const/4 v4, 0x0
 
     invoke-virtual {v0, v4}, Landroid/app/ActionBar;->setDisplayShowHomeEnabled(Z)V
 
-    .line 65
     invoke-virtual {p0}, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
@@ -352,60 +332,50 @@
 
     invoke-virtual {v0, v4}, Landroid/app/ActionBar;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 68
     :cond_1
     const v4, 0x7f040008
 
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->setContentView(I)V
 
-    .line 69
     new-instance v4, Lcom/android/settings_ex/wifi/indication_class;
 
     invoke-direct {v4, p0, p0}, Lcom/android/settings_ex/wifi/indication_class;-><init>(Landroid/app/Activity;Landroid/content/Context;)V
 
     iput-object v4, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->mIndication_class:Lcom/android/settings_ex/wifi/indication_class;
 
-    .line 71
     iget-object v4, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->mIndication_class:Lcom/android/settings_ex/wifi/indication_class;
 
     if-eqz v4, :cond_2
 
-    .line 73
     const/4 v2, 0x0
 
     .local v2, max:I
     const/4 v3, 0x0
 
-    .line 74
     .local v3, page_num:I
     invoke-virtual {p0}, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 75
     .local v1, intent:Landroid/content/Intent;
     if-eqz v1, :cond_2
 
-    .line 77
     const-string v4, "indication_max"
 
     invoke-virtual {v1, v4, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
 
-    .line 78
     const-string v4, "indication_page"
 
     invoke-virtual {v1, v4, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v3
 
-    .line 79
     iget-object v4, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->mIndication_class:Lcom/android/settings_ex/wifi/indication_class;
 
     invoke-virtual {v4, v2, v3}, Lcom/android/settings_ex/wifi/indication_class;->updatePageIndicator(II)V
 
-    .line 83
     .end local v1           #intent:Landroid/content/Intent;
     .end local v2           #max:I
     .end local v3           #page_num:I
@@ -416,12 +386,10 @@
 
     if-nez v4, :cond_3
 
-    .line 85
     const v4, 0x7f08092a
 
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->setTitle(I)V
 
-    .line 86
     const v4, 0x7f0b0010
 
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->findViewById(I)Landroid/view/View;
@@ -432,7 +400,6 @@
 
     iput-object v4, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->mDescMessage:Landroid/widget/TextView;
 
-    .line 87
     iget-object v4, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->mDescMessage:Landroid/widget/TextView;
 
     const v5, 0x7f0808b3
@@ -455,7 +422,6 @@
 
     iput-object v4, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->mBackButton:Landroid/widget/Button;
 
-    .line 91
     iget-object v4, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->mBackButton:Landroid/widget/Button;
 
     new-instance v5, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard$1;
@@ -475,7 +441,6 @@
 
     iput-object v4, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->mNextButton:Landroid/widget/Button;
 
-    .line 100
     iget-object v4, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->mNextButton:Landroid/widget/Button;
 
     new-instance v5, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard$2;
@@ -494,10 +459,8 @@
     .parameter "event"
 
     .prologue
-    .line 111
     packed-switch p1, :pswitch_data_0
 
-    .line 117
     invoke-super {p0, p1, p2}, Lcom/android/settings_ex/accounts/ChooseAccountActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
@@ -505,18 +468,15 @@
     :goto_0
     return v0
 
-    .line 113
     :pswitch_0
     iget-object v0, p0, Lcom/android/settings_ex/accounts/ChooseAccountActivitySetupWizard;->mBackButton:Landroid/widget/Button;
 
     invoke-virtual {v0}, Landroid/widget/Button;->performClick()Z
 
-    .line 115
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 111
     nop
 
     :pswitch_data_0

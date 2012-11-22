@@ -118,39 +118,29 @@
     .end annotation
 
     .prologue
-    .line 65
     .local p2, requestQueue:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings_ex/fuelgauge/BatterySipper;>;"
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mUidCache:Ljava/util/HashMap;
 
-    .line 66
     iput-object p1, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mContext:Landroid/content/Context;
 
-    .line 67
     iput-object p2, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mRequestQueue:Ljava/util/ArrayList;
 
-    .line 68
     iput-object p3, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mHandler:Landroid/os/Handler;
 
-    .line 69
     iput-object p8, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->values:[D
 
-    .line 70
     iput-object p4, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->name:Ljava/lang/String;
 
-    .line 71
     iput-object p5, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->drainType:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
-    .line 72
     if-lez p6, :cond_0
 
-    .line 73
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -182,14 +172,11 @@
     :cond_2
     if-eqz p7, :cond_3
 
-    .line 77
     invoke-virtual {p0, p7}, Lcom/android/settings_ex/fuelgauge/BatterySipper;->getQuickNameIconForUid(Landroid/os/BatteryStats$Uid;)V
 
-    .line 79
     :cond_3
     iput-object p7, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
 
-    .line 80
     return-void
 .end method
 
@@ -200,7 +187,6 @@
     .parameter "other"
 
     .prologue
-    .line 96
     invoke-virtual {p1}, Lcom/android/settings_ex/fuelgauge/BatterySipper;->getSortValue()D
 
     move-result-wide v0
@@ -221,7 +207,6 @@
     .parameter "x0"
 
     .prologue
-    .line 33
     check-cast p1, Lcom/android/settings_ex/fuelgauge/BatterySipper;
 
     .end local p1
@@ -236,7 +221,6 @@
     .locals 1
 
     .prologue
-    .line 91
     iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->icon:Landroid/graphics/drawable/Drawable;
 
     return-object v0
@@ -484,13 +468,11 @@
 
     move-result-object v18
 
-    .line 198
     .local v18, uidString:Ljava/lang/String;
     new-instance v19, Lcom/android/settings_ex/fuelgauge/BatterySipper$UidToDetail;
 
     invoke-direct/range {v19 .. v19}, Lcom/android/settings_ex/fuelgauge/BatterySipper$UidToDetail;-><init>()V
 
-    .line 199
     .local v19, utd:Lcom/android/settings_ex/fuelgauge/BatterySipper$UidToDetail;
     move-object/from16 v0, p0
 
@@ -568,19 +550,16 @@
 
     goto/16 :goto_0
 
-    .line 169
     .end local v18           #uidString:Ljava/lang/String;
     .end local v19           #utd:Lcom/android/settings_ex/fuelgauge/BatterySipper$UidToDetail;
     :catch_0
     move-exception v20
 
-    .line 155
     :cond_6
     add-int/lit8 v6, v6, 0x1
 
     goto/16 :goto_1
 
-    .line 178
     :cond_7
     move-object v4, v12
 
@@ -660,12 +639,10 @@
 
     if-eqz v20, :cond_5
 
-    .line 187
     move-object/from16 v0, p0
 
     iput-object v14, v0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->defaultPackageName:Ljava/lang/String;
 
-    .line 188
     iget-object v0, v13, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     move-object/from16 v20, v0
@@ -735,34 +712,28 @@
 
     check-cast v5, Lcom/android/settings_ex/fuelgauge/BatterySipper$UidToDetail;
 
-    .line 106
     .local v5, utd:Lcom/android/settings_ex/fuelgauge/BatterySipper$UidToDetail;
     iget-object v6, v5, Lcom/android/settings_ex/fuelgauge/BatterySipper$UidToDetail;->packageName:Ljava/lang/String;
 
     iput-object v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->defaultPackageName:Ljava/lang/String;
 
-    .line 107
     iget-object v6, v5, Lcom/android/settings_ex/fuelgauge/BatterySipper$UidToDetail;->name:Ljava/lang/String;
 
     iput-object v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->name:Ljava/lang/String;
 
-    .line 108
     iget-object v6, v5, Lcom/android/settings_ex/fuelgauge/BatterySipper$UidToDetail;->icon:Landroid/graphics/drawable/Drawable;
 
     iput-object v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->icon:Landroid/graphics/drawable/Drawable;
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 134
     .end local v5           #utd:Lcom/android/settings_ex/fuelgauge/BatterySipper$UidToDetail;
     :goto_0
     return-void
 
-    .line 110
     :catch_0
     move-exception v6
 
-    .line 114
     :cond_0
     iget-object v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mContext:Landroid/content/Context;
 
@@ -790,13 +761,10 @@
 
     iput-object v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->icon:Landroid/graphics/drawable/Drawable;
 
-    .line 118
     if-nez v1, :cond_3
 
-    .line 120
     if-nez v3, :cond_2
 
-    .line 121
     iget-object v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -811,14 +779,12 @@
 
     iput-object v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->name:Ljava/lang/String;
 
-    .line 125
     :cond_1
     :goto_1
     const v6, 0x7f0200eb
 
     iput v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->iconId:I
 
-    .line 126
     iget-object v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -847,7 +813,6 @@
 
     if-eqz v6, :cond_1
 
-    .line 123
     iget-object v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -864,19 +829,16 @@
 
     goto :goto_1
 
-    .line 131
     :cond_3
     iget-object v7, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mRequestQueue:Ljava/util/ArrayList;
 
     monitor-enter v7
 
-    .line 132
     :try_start_1
     iget-object v6, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->mRequestQueue:Ljava/util/ArrayList;
 
     invoke-virtual {v6, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 133
     monitor-exit v7
 
     goto :goto_0
@@ -895,7 +857,6 @@
     .locals 2
 
     .prologue
-    .line 83
     iget-wide v0, p0, Lcom/android/settings_ex/fuelgauge/BatterySipper;->value:D
 
     return-wide v0

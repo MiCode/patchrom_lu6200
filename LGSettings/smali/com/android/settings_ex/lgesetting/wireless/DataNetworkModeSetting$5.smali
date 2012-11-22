@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 377
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$5;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,10 +42,8 @@
     .parameter "aWhich"
 
     .prologue
-    .line 380
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 383
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$5;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;
 
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$5;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;

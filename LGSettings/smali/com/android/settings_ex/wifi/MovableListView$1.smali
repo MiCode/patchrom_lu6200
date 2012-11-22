@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 112
     iput-object p1, p0, Lcom/android/settings_ex/wifi/MovableListView$1;->this$0:Lcom/android/settings_ex/wifi/MovableListView;
 
     invoke-direct {p0}, Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V
@@ -44,7 +43,6 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 116
     iget-object v2, p0, Lcom/android/settings_ex/wifi/MovableListView$1;->this$0:Lcom/android/settings_ex/wifi/MovableListView;
 
     #getter for: Lcom/android/settings_ex/wifi/MovableListView;->mDragView:Landroid/widget/ImageView;
@@ -54,14 +52,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 118
     const/high16 v2, 0x447a
 
     cmpl-float v2, p3, v2
 
     if-lez v2, :cond_0
 
-    .line 120
     iget-object v2, p0, Lcom/android/settings_ex/wifi/MovableListView$1;->this$0:Lcom/android/settings_ex/wifi/MovableListView;
 
     #getter for: Lcom/android/settings_ex/wifi/MovableListView;->mTempRect:Landroid/graphics/Rect;
@@ -99,13 +95,11 @@
 
     if-lez v2, :cond_0
 
-    .line 125
     iget-object v2, p0, Lcom/android/settings_ex/wifi/MovableListView$1;->this$0:Lcom/android/settings_ex/wifi/MovableListView;
 
     #calls: Lcom/android/settings_ex/wifi/MovableListView;->stopDragging()V
     invoke-static {v2}, Lcom/android/settings_ex/wifi/MovableListView;->access$200(Lcom/android/settings_ex/wifi/MovableListView;)V
 
-    .line 126
     iget-object v2, p0, Lcom/android/settings_ex/wifi/MovableListView$1;->this$0:Lcom/android/settings_ex/wifi/MovableListView;
 
     #getter for: Lcom/android/settings_ex/wifi/MovableListView;->mRemoveListener:Lcom/android/settings_ex/wifi/MovableListView$RemoveListener;
@@ -122,13 +116,11 @@
 
     invoke-interface {v2, v3}, Lcom/android/settings_ex/wifi/MovableListView$RemoveListener;->remove(I)V
 
-    .line 127
     iget-object v2, p0, Lcom/android/settings_ex/wifi/MovableListView$1;->this$0:Lcom/android/settings_ex/wifi/MovableListView;
 
     #calls: Lcom/android/settings_ex/wifi/MovableListView;->unExpandViews(Z)V
     invoke-static {v2, v1}, Lcom/android/settings_ex/wifi/MovableListView;->access$500(Lcom/android/settings_ex/wifi/MovableListView;Z)V
 
-    .line 133
     .end local v0           #r:Landroid/graphics/Rect;
     :cond_0
     :goto_0

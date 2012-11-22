@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 264
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$5;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 2
 
     .prologue
-    .line 266
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$5;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mWaitDialog:Landroid/app/ProgressDialog;
@@ -51,7 +49,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 267
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$5;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mWaitDialog:Landroid/app/ProgressDialog;
@@ -61,7 +58,6 @@
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
-    .line 268
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$5;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     const/4 v1, 0x0

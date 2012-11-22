@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 256
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$DeviceFoundHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 256
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$DeviceFoundHandler;-><init>(Lcom/android/settings_ex/bluetooth/BluetoothEventManager;)V
 
     return-void
@@ -187,11 +185,9 @@
 
     move-result-object v1
 
-    .line 267
     .local v1, cachedDevice:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
     if-nez v1, :cond_1
 
-    .line 268
     iget-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$DeviceFoundHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->mDeviceManager:Lcom/android/settings_ex/bluetooth/CachedBluetoothDeviceManager;
@@ -240,17 +236,13 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 272
     const/4 v2, 0x1
 
-    .line 275
     :cond_1
     invoke-virtual {v1, v4}, Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;->setRssi(S)V
 
-    .line 276
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;->setBtClass(Landroid/bluetooth/BluetoothClass;)V
 
-    .line 278
     invoke-virtual {p3}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object v5
@@ -261,28 +253,22 @@
 
     if-nez v5, :cond_2
 
-    .line 280
     invoke-virtual {v1, v3}, Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;->setName(Ljava/lang/String;)V
 
-    .line 281
     :cond_2
     const/4 v5, 0x1
 
     invoke-virtual {v1, v5}, Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;->setVisible(Z)V
 
-    .line 284
     if-eqz v2, :cond_3
 
-    .line 285
     iget-object v5, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$DeviceFoundHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     #calls: Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->dispatchDeviceAdded(Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;)V
     invoke-static {v5, v1}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->access$1600(Lcom/android/settings_ex/bluetooth/BluetoothEventManager;Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;)V
 
-    .line 286
     const/4 v2, 0x0
 
-    .line 289
     :cond_3
     return-void
 .end method

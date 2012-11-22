@@ -33,7 +33,6 @@
     .parameter
 
     .prologue
-    .line 627
     iput-object p1, p0, Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment$3;->this$0:Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment;
 
     iput-object p2, p0, Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment$3;->val$pin:Ljava/lang/String;
@@ -51,7 +50,6 @@
     .locals 4
 
     .prologue
-    .line 630
     iget-object v0, p0, Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment$3;->this$0:Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment;
 
     #getter for: Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
@@ -72,7 +70,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/internal/widget/LockPatternUtils;->saveLockPassword(Ljava/lang/String;IZ)V
 
-    .line 631
     iget-object v0, p0, Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment$3;->this$0:Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment;
 
     #getter for: Lcom/android/settings_ex/ChooseLockPassword$ChooseLockPasswordFragment;->confirmHandler:Landroid/os/Handler;

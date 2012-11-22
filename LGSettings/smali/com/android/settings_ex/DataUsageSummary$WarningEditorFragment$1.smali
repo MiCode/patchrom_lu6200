@@ -39,7 +39,6 @@
     .parameter
 
     .prologue
-    .line 1948
     iput-object p1, p0, Lcom/android/settings_ex/DataUsageSummary$WarningEditorFragment$1;->this$0:Lcom/android/settings_ex/DataUsageSummary$WarningEditorFragment;
 
     iput-object p2, p0, Lcom/android/settings_ex/DataUsageSummary$WarningEditorFragment$1;->val$bytesPicker:Landroid/widget/NumberPicker;
@@ -63,12 +62,10 @@
     .parameter "which"
 
     .prologue
-    .line 1951
     iget-object v2, p0, Lcom/android/settings_ex/DataUsageSummary$WarningEditorFragment$1;->val$bytesPicker:Landroid/widget/NumberPicker;
 
     invoke-virtual {v2}, Landroid/widget/NumberPicker;->clearFocus()V
 
-    .line 1953
     iget-object v2, p0, Lcom/android/settings_ex/DataUsageSummary$WarningEditorFragment$1;->val$bytesPicker:Landroid/widget/NumberPicker;
 
     invoke-virtual {v2}, Landroid/widget/NumberPicker;->getValue()I
@@ -89,7 +86,6 @@
 
     invoke-virtual {v2, v3, v0, v1}, Lcom/android/settings_ex/net/NetworkPolicyEditor;->setPolicyWarningBytes(Landroid/net/NetworkTemplate;J)V
 
-    .line 1955
     iget-object v2, p0, Lcom/android/settings_ex/DataUsageSummary$WarningEditorFragment$1;->val$target:Lcom/android/settings_ex/DataUsageSummary;
 
     const/4 v3, 0x0

@@ -35,7 +35,6 @@
     .parameter
 
     .prologue
-    .line 174
     iput-object p1, p0, Lcom/android/settings_ex/CryptKeeper$ValidationTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -49,7 +48,6 @@
     .parameter "x1"
 
     .prologue
-    .line 174
     invoke-direct {p0, p1}, Lcom/android/settings_ex/CryptKeeper$ValidationTask;-><init>(Lcom/android/settings_ex/CryptKeeper;)V
 
     return-void
@@ -64,7 +62,6 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 177
     iget-object v4, p0, Lcom/android/settings_ex/CryptKeeper$ValidationTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     #calls: Lcom/android/settings_ex/CryptKeeper;->getMountService()Landroid/os/storage/IMountService;
@@ -195,13 +192,11 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 200
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeper$ValidationTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     #setter for: Lcom/android/settings_ex/CryptKeeper;->mValidationComplete:Z
     invoke-static {v0, v2}, Lcom/android/settings_ex/CryptKeeper;->access$402(Lcom/android/settings_ex/CryptKeeper;Z)Z
 
-    .line 201
     sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     invoke-virtual {v0, p1}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
@@ -210,30 +205,25 @@
 
     if-eqz v0, :cond_0
 
-    .line 202
     const-string v0, "CryptKeeper"
 
     const-string v1, "Incomplete, or corrupted encryption detected. Prompting user to wipe."
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 203
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeper$ValidationTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     #setter for: Lcom/android/settings_ex/CryptKeeper;->mEncryptionGoneBad:Z
     invoke-static {v0, v2}, Lcom/android/settings_ex/CryptKeeper;->access$502(Lcom/android/settings_ex/CryptKeeper;Z)Z
 
-    .line 207
     :goto_0
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeper$ValidationTask;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     #calls: Lcom/android/settings_ex/CryptKeeper;->setupUi()V
     invoke-static {v0}, Lcom/android/settings_ex/CryptKeeper;->access$600(Lcom/android/settings_ex/CryptKeeper;)V
 
-    .line 208
     return-void
 
-    .line 205
     :cond_0
     const-string v0, "CryptKeeper"
 

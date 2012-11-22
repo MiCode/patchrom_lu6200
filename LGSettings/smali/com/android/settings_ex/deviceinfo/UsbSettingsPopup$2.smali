@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 205
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -679,24 +678,20 @@
 
     invoke-virtual {v4, v0}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 386
     const v17, 0x1010355
 
     move/from16 v0, v17
 
     invoke-virtual {v4, v0}, Landroid/app/AlertDialog$Builder;->setIconAttribute(I)Landroid/app/AlertDialog$Builder;
 
-    .line 387
     const v17, 0x7f080282
 
     move/from16 v0, v17
 
     invoke-virtual {v4, v0}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 388
     invoke-virtual {v4, v3}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    .line 389
     new-instance v17, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2$9;
 
     move-object/from16 v0, v17

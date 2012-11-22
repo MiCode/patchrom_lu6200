@@ -54,56 +54,40 @@
 
     const/4 v1, 0x0
 
-    .line 23
     sput-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunTimer:Ljava/util/Timer;
 
-    .line 24
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunChanging:Z
 
-    .line 52
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbSettingsRun:Z
 
-    .line 53
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbConnected:Z
 
-    .line 54
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDirectAutorun:Z
 
-    .line 55
     sput-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mTimerContext:Landroid/content/Context;
 
-    .line 63
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mOldversion:Z
 
-    .line 64
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 65
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAlreadyObserving:Z
 
-    .line 66
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mDoNotFinish:Z
 
-    .line 67
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mX3Bug:Z
 
-    .line 69
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mMountSDCard:Z
 
-    .line 70
     const-string v0, ""
 
     sput-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mStateSDCard:Ljava/lang/String;
 
-    .line 71
     sput-boolean v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mMountInternalMemory:Z
 
-    .line 72
     const-string v0, ""
 
     sput-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mStateInternalMemory:Ljava/lang/String;
 
-    .line 73
     sput v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mStorageVolumeNum:I
 
     return-void
@@ -124,7 +108,6 @@
     .locals 1
 
     .prologue
-    .line 19
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mTimerContext:Landroid/content/Context;
 
     return-object v0
@@ -136,36 +119,29 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 138
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunTimer:Ljava/util/Timer;
 
     if-eqz v0, :cond_0
 
-    .line 139
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunTimer:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 
-    .line 140
     sput-object v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunTimer:Ljava/util/Timer;
 
-    .line 142
     const-string v0, "UsbSettingsControl"
 
     const-string v1, "[AUTORUN] cancelAutorunTimer()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 145
     :cond_0
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunChanging:Z
 
-    .line 146
     sput-object v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mTimerContext:Landroid/content/Context;
 
-    .line 147
     return-void
 .end method
 
@@ -187,43 +163,34 @@
 
     check-cast v3, Landroid/os/storage/StorageManager;
 
-    .line 169
     .local v3, storageManager:Landroid/os/storage/StorageManager;
     if-nez v3, :cond_0
 
-    .line 205
     :goto_0
     return-void
 
-    .line 171
     :cond_0
     const-string v2, ""
 
-    .line 172
     .local v2, state:Ljava/lang/String;
     invoke-virtual {v3}, Landroid/os/storage/StorageManager;->getVolumeList()[Landroid/os/storage/StorageVolume;
 
     move-result-object v5
 
-    .line 173
     .local v5, storageVolumes:[Landroid/os/storage/StorageVolume;
     array-length v1, v5
 
-    .line 174
     .local v1, length:I
     sput v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mStorageVolumeNum:I
 
-    .line 175
     const/4 v0, 0x0
 
     .local v0, i:I
     :goto_1
     if-ge v0, v1, :cond_3
 
-    .line 176
     aget-object v4, v5, v0
 
-    .line 177
     .local v4, storageVolume:Landroid/os/storage/StorageVolume;
     invoke-virtual {v4}, Landroid/os/storage/StorageVolume;->isRemovable()Z
 
@@ -240,13 +207,10 @@
 
     move-result-object v2
 
-    .line 179
     sput-object v2, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mStateSDCard:Ljava/lang/String;
 
-    .line 181
     sput-boolean v8, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mMountSDCard:Z
 
-    .line 182
     const-string v6, "mounted"
 
     invoke-virtual {v6, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -255,26 +219,21 @@
 
     if-nez v6, :cond_1
 
-    .line 183
     sput-boolean v8, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mMountSDCard:Z
 
-    .line 175
     :goto_2
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 185
     :cond_1
     sput-boolean v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mMountSDCard:Z
 
     goto :goto_2
 
-    .line 187
     :cond_2
     sput-boolean v7, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mMountInternalMemory:Z
 
-    .line 188
     invoke-virtual {v4}, Landroid/os/storage/StorageVolume;->getPath()Ljava/lang/String;
 
     move-result-object v6
@@ -453,7 +412,6 @@
     .locals 1
 
     .prologue
-    .line 164
     sget-boolean v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunChanging:Z
 
     return v0
@@ -463,20 +421,16 @@
     .locals 4
 
     .prologue
-    .line 208
     const/4 v0, 0x0
 
-    .line 209
     .local v0, isMassStorageEnable:Z
     sget v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mStorageVolumeNum:I
 
     if-gtz v1, :cond_0
 
-    .line 232
     :goto_0
     return v0
 
-    .line 212
     :cond_0
     sget v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mStorageVolumeNum:I
 
@@ -484,7 +438,6 @@
 
     if-ne v1, v2, :cond_3
 
-    .line 213
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mStateSDCard:Ljava/lang/String;
 
     const-string v2, "mounted"
@@ -549,7 +502,6 @@
 
     if-ne v1, v2, :cond_8
 
-    .line 218
     sget-object v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mStateSDCard:Ljava/lang/String;
 
     const-string v2, "mounted"
@@ -767,33 +719,27 @@
     .parameter "context"
 
     .prologue
-    .line 150
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunTimer:Ljava/util/Timer;
 
     if-eqz v0, :cond_0
 
-    .line 151
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunTimer:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 
-    .line 152
     const/4 v0, 0x0
 
     sput-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunTimer:Ljava/util/Timer;
 
-    .line 155
     :cond_0
     sput-object p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mTimerContext:Landroid/content/Context;
 
-    .line 157
     new-instance v0, Ljava/util/Timer;
 
     invoke-direct {v0}, Ljava/util/Timer;-><init>()V
 
     sput-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunTimer:Ljava/util/Timer;
 
-    .line 158
     sget-object v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunTimer:Ljava/util/Timer;
 
     new-instance v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl$autorunTimerTask;
@@ -804,12 +750,10 @@
 
     invoke-virtual {v0, v1, v2, v3}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
 
-    .line 159
     const/4 v0, 0x1
 
     sput-boolean v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mAutorunChanging:Z
 
-    .line 160
     const-string v0, "UsbSettingsControl"
 
     new-instance v1, Ljava/lang/StringBuilder;

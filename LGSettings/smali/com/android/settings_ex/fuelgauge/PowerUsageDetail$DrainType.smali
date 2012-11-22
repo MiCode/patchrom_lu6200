@@ -56,7 +56,6 @@
 
     const/4 v3, 0x0
 
-    .line 59
     new-instance v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
     const-string v1, "IDLE"
@@ -65,7 +64,6 @@
 
     sput-object v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;->IDLE:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
-    .line 60
     new-instance v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
     const-string v1, "CELL"
@@ -74,7 +72,6 @@
 
     sput-object v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;->CELL:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
-    .line 61
     new-instance v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
     const-string v1, "PHONE"
@@ -83,7 +80,6 @@
 
     sput-object v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;->PHONE:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
-    .line 62
     new-instance v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
     const-string v1, "WIFI"
@@ -92,7 +88,6 @@
 
     sput-object v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;->WIFI:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
-    .line 63
     new-instance v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
     const-string v1, "BLUETOOTH"
@@ -101,7 +96,6 @@
 
     sput-object v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;->BLUETOOTH:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
-    .line 64
     new-instance v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
     const-string v1, "SCREEN"
@@ -112,7 +106,6 @@
 
     sput-object v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;->SCREEN:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
-    .line 65
     new-instance v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
     const-string v1, "APP"
@@ -187,7 +180,6 @@
     .parameter
 
     .prologue
-    .line 58
     const-class v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -203,7 +195,6 @@
     .locals 1
 
     .prologue
-    .line 58
     sget-object v0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;->$VALUES:[Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
     invoke-virtual {v0}, [Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;->clone()Ljava/lang/Object;

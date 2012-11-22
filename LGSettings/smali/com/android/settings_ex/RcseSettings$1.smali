@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 173
     iput-object p1, p0, Lcom/android/settings_ex/RcseSettings$1;->this$0:Lcom/android/settings_ex/RcseSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -47,26 +46,22 @@
 
     const/4 v4, 0x0
 
-    .line 175
     iget-object v3, p0, Lcom/android/settings_ex/RcseSettings$1;->this$0:Lcom/android/settings_ex/RcseSettings;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/RcseSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 176
     .local v0, mContentResolver:Landroid/content/ContentResolver;
     new-instance v2, Landroid/content/ContentValues;
 
     invoke-direct {v2}, Landroid/content/ContentValues;-><init>()V
 
-    .line 177
     .local v2, row:Landroid/content/ContentValues;
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 178
     .local v1, mIntent:Landroid/content/Intent;
     iget-object v3, p0, Lcom/android/settings_ex/RcseSettings$1;->this$0:Lcom/android/settings_ex/RcseSettings;
 
@@ -115,12 +110,10 @@
 
     invoke-virtual {v0, v3, v2, v5, v5}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 183
     const-string v3, "com.lge.ims.action.SETTINGS_CHANGED"
 
     invoke-virtual {v1, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 184
     iget-object v3, p0, Lcom/android/settings_ex/RcseSettings$1;->this$0:Lcom/android/settings_ex/RcseSettings;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/RcseSettings;->getActivity()Landroid/app/Activity;

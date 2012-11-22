@@ -57,7 +57,6 @@
     .parameter "object2"
 
     .prologue
-    .line 160
     iget-object v0, p0, Lcom/android/settings_ex/applications/ApplicationsState$1;->sCollator:Ljava/text/Collator;
 
     iget-object v1, p1, Lcom/android/settings_ex/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
@@ -77,7 +76,6 @@
     .parameter "x1"
 
     .prologue
-    .line 152
     check-cast p1, Lcom/android/settings_ex/applications/ApplicationsState$AppEntry;
 
     .end local p1

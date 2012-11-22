@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 33
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -95,13 +94,11 @@
 
     invoke-static {v2}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->access$002(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 41
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;
 
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->updateScreen()V
     invoke-static {v2}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->access$100(Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;)V
 
-    .line 44
     .end local v1           #rcv_data:Ljava/lang/String;
     :cond_0
     return-void

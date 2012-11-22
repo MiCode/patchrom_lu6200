@@ -35,7 +35,6 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 47
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -80,7 +79,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 203
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -119,23 +117,19 @@
 
     if-eqz v3, :cond_2
 
-    .line 212
     iget-object v3, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     aget-object v4, v1, v0
 
     invoke-virtual {v3, v4}, Lcom/android/settings_ex/DoubleTitleListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 213
     iget-object v3, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/DoubleTitleListPreference;->setValueIndex(I)V
 
-    .line 217
     :cond_0
     return-void
 
-    .line 207
     .end local v0           #i:I
     .end local v1           #summaries:[Ljava/lang/CharSequence;
     .end local v2           #values:[Ljava/lang/CharSequence;
@@ -166,30 +160,25 @@
     .locals 2
 
     .prologue
-    .line 51
     invoke-direct {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->isPortraitOri()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->isPortrait:Z
 
-    .line 52
     iget-boolean v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->isPortrait:Z
 
     if-eqz v0, :cond_0
 
-    .line 53
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     sget-object v1, Landroid/widget/ImageView$ScaleType;->CENTER:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 58
     :goto_0
     return-void
 
-    .line 56
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
@@ -207,13 +196,10 @@
     .parameter "newConfig"
 
     .prologue
-    .line 63
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 64
     invoke-direct {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->updateUi()V
 
-    .line 65
     return-void
 .end method
 
@@ -228,26 +214,21 @@
 
     const/4 v2, 0x0
 
-    .line 69
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 70
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 71
     .local v0, resolver:Landroid/content/ContentResolver;
     const v1, 0x7f06001a
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/lge/FrontKeyLight;->addPreferencesFromResource(I)V
 
-    .line 72
     const v1, 0x7f040034
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/lge/FrontKeyLight;->setContentView(I)V
 
-    .line 75
     const-string v1, "front_key_light_prevalue"
 
     invoke-static {v0, v1, v4}, Lcom/lge/provider/SettingsEx$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
@@ -278,7 +259,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mTurnOnFrontKeyLight:Landroid/preference/CheckBoxPreference;
 
-    .line 80
     iget-object v3, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mTurnOnFrontKeyLight:Landroid/preference/CheckBoxPreference;
 
     const-string v1, "frontkey_led_timeout"
@@ -305,7 +285,6 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
-    .line 86
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     const v2, 0x7f080782
@@ -316,7 +295,6 @@
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/DoubleTitleListPreference;->setMainTitle(Ljava/lang/String;)V
 
-    .line 87
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     const v2, 0x7f080783
@@ -338,21 +316,18 @@
 
     if-eqz v1, :cond_0
 
-    .line 91
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     const v2, 0x7f09007e
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/DoubleTitleListPreference;->setEntryValues(I)V
 
-    .line 92
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     const v2, 0x7f09007d
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/DoubleTitleListPreference;->setEntries(I)V
 
-    .line 94
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
@@ -368,7 +343,6 @@
 
     invoke-virtual {v1, v2}, Lcom/android/settings_ex/DoubleTitleListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 97
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mTurnOnFrontKeyLight:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -388,14 +362,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 100
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     const v2, 0x7f020162
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 107
     :goto_1
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
@@ -405,25 +377,20 @@
 
     invoke-direct {p0, v1}, Lcom/android/settings_ex/lge/FrontKeyLight;->updateFrontKeyLEDTimeoutSummary(Ljava/lang/Object;)V
 
-    .line 122
     :goto_2
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/DoubleTitleListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 124
     invoke-direct {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->updateUi()V
 
-    .line 125
     return-void
 
     :cond_1
     move v1, v2
 
-    .line 80
     goto :goto_0
 
-    .line 101
     :cond_2
     sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -435,7 +402,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 102
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     const v2, 0x7f020161
@@ -456,14 +422,12 @@
 
     if-eqz v1, :cond_4
 
-    .line 104
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_1
 
-    .line 106
     :cond_4
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
@@ -485,14 +449,12 @@
 
     if-eqz v1, :cond_6
 
-    .line 112
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     const v2, 0x7f02015e
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 119
     :goto_3
     iget v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->preLightDurationValue:I
 
@@ -516,7 +478,6 @@
 
     if-eqz v1, :cond_7
 
-    .line 114
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     const v2, 0x7f02015d
@@ -537,14 +498,12 @@
 
     if-eqz v1, :cond_8
 
-    .line 116
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_3
 
-    .line 118
     :cond_8
     iget-object v1, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
@@ -603,10 +562,8 @@
 
     invoke-static {v2, v3, v1}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 189
     invoke-direct {p0, p2}, Lcom/android/settings_ex/lge/FrontKeyLight;->updateFrontKeyLEDTimeoutSummary(Ljava/lang/Object;)V
 
-    .line 193
     .end local v1           #value:I
     :cond_0
     const/4 v2, 0x0
@@ -624,12 +581,10 @@
 
     const/16 v3, 0x5dc
 
-    .line 131
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mTurnOnFrontKeyLight:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_0
 
-    .line 133
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mTurnOnFrontKeyLight:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -638,7 +593,6 @@
 
     if-nez v0, :cond_4
 
-    .line 135
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/DoubleTitleListPreference;->getValue()Ljava/lang/String;
@@ -651,7 +605,6 @@
 
     iput v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->preLightDurationValue:I
 
-    .line 136
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -662,7 +615,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 139
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -673,7 +625,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 141
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -697,14 +648,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 145
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     const v1, 0x7f02015e
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 176
     :cond_0
     :goto_0
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceActivity;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
@@ -725,7 +674,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 147
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     const v1, 0x7f02015d
@@ -746,14 +694,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 149
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_0
 
-    .line 151
     :cond_3
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
@@ -777,7 +723,6 @@
 
     iput v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->preLightDurationValue:I
 
-    .line 159
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -788,7 +733,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 160
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/FrontKeyLight;->getContentResolver()Landroid/content/ContentResolver;
@@ -807,7 +751,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/DoubleTitleListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 163
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mFrontKeyLightDuration:Lcom/android/settings_ex/DoubleTitleListPreference;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/DoubleTitleListPreference;->getValue()Ljava/lang/String;
@@ -827,7 +770,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 165
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     const v1, 0x7f020162
@@ -848,7 +790,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 167
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     const v1, 0x7f020161
@@ -869,14 +810,12 @@
 
     if-eqz v0, :cond_7
 
-    .line 169
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto/16 :goto_0
 
-    .line 171
     :cond_7
     iget-object v0, p0, Lcom/android/settings_ex/lge/FrontKeyLight;->mCustomImagePreference:Landroid/widget/ImageView;
 

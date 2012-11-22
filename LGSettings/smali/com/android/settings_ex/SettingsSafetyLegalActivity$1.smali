@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 72
     iput-object p1, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity$1;->this$0:Lcom/android/settings_ex/SettingsSafetyLegalActivity;
 
     invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V
@@ -40,7 +39,6 @@
     .parameter "url"
 
     .prologue
-    .line 76
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity$1;->this$0:Lcom/android/settings_ex/SettingsSafetyLegalActivity;
 
     #getter for: Lcom/android/settings_ex/SettingsSafetyLegalActivity;->mAlert:Lcom/android/internal/app/AlertController;
@@ -70,12 +68,10 @@
     .parameter "failingUrl"
 
     .prologue
-    .line 82
     iget-object v0, p0, Lcom/android/settings_ex/SettingsSafetyLegalActivity$1;->this$0:Lcom/android/settings_ex/SettingsSafetyLegalActivity;
 
     #calls: Lcom/android/settings_ex/SettingsSafetyLegalActivity;->showErrorAndFinish(Ljava/lang/String;)V
     invoke-static {v0, p4}, Lcom/android/settings_ex/SettingsSafetyLegalActivity;->access$100(Lcom/android/settings_ex/SettingsSafetyLegalActivity;Ljava/lang/String;)V
 
-    .line 83
     return-void
 .end method

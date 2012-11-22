@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 211
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$4;->val$serviceStatus:[Ljava/lang/CharSequence;
@@ -48,7 +47,6 @@
     .parameter "item"
 
     .prologue
-    .line 213
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->getApplicationContext()Landroid/content/Context;
@@ -85,24 +83,20 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    .line 214
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.android.phone.bt_sig_svc_level"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 215
     .local v0, i:Landroid/content/Intent;
     const-string v1, "svc_level"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 216
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$4;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 217
     return-void
 .end method

@@ -76,7 +76,6 @@
 
     const/4 v7, 0x0
 
-    .line 53
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     const-string v5, "ATT"
@@ -93,7 +92,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->VZW:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
-    .line 54
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     const-string v5, "TMO"
@@ -102,7 +100,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->TMO:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
-    .line 55
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     const-string v5, "SKT"
@@ -111,7 +108,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->SKT:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
-    .line 56
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     const-string v5, "OPEN"
@@ -120,7 +116,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->OPEN:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
-    .line 57
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     const-string v5, "KT"
@@ -131,7 +126,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->KT:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
-    .line 58
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     const-string v5, "LGT"
@@ -162,7 +156,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->TCL:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
-    .line 59
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     const-string v5, "KDDI"
@@ -173,7 +166,6 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->KDDI:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
-    .line 60
     new-instance v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     const-string v5, "NOT_REGISTERED"
@@ -247,14 +239,12 @@
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->$VALUES:[Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
-    .line 62
     new-instance v4, Ljava/util/HashMap;
 
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
     sput-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->stringToEnum:Ljava/util/Map;
 
-    .line 65
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->values()[Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     move-result-object v0
@@ -271,7 +261,6 @@
 
     aget-object v3, v0, v1
 
-    .line 66
     .local v3, o:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
     sget-object v4, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->stringToEnum:Ljava/util/Map;
 
@@ -281,12 +270,10 @@
 
     invoke-interface {v4, v5, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 65
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 67
     .end local v3           #o:Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
     :cond_0
     return-void
@@ -314,7 +301,6 @@
     .parameter
 
     .prologue
-    .line 52
     const-class v0, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -330,7 +316,6 @@
     .locals 1
 
     .prologue
-    .line 52
     sget-object v0, Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->$VALUES:[Lcom/android/settings_ex/lgesetting/Config/Config$Operator;
 
     invoke-virtual {v0}, [Lcom/android/settings_ex/lgesetting/Config/Config$Operator;->clone()Ljava/lang/Object;

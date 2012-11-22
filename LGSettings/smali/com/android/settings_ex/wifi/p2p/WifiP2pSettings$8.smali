@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 489
     iput-object p1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$8;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -73,19 +72,16 @@
     .locals 2
 
     .prologue
-    .line 491
     const-string v0, "WifiP2pSettings"
 
     const-string v1, " create group success"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 494
     const/4 v0, 0x1
 
     invoke-static {v0}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$1002(Z)Z
 
-    .line 496
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$8;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     invoke-static {}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->getWifiP2pStatus()Ljava/lang/Boolean;
@@ -99,7 +95,6 @@
     #calls: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->updateMenuGroupOwner(Z)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->access$1200(Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;Z)V
 
-    .line 498
     iget-object v0, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$8;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     #getter for: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->mPassword:Landroid/preference/Preference;

@@ -16,13 +16,10 @@
     .locals 0
 
     .prologue
-    .line 39
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 40
     invoke-direct {p0}, Lcom/android/settings_ex/PinSettingsUtils;->initFilename()V
 
-    .line 41
     return-void
 .end method
 
@@ -31,16 +28,12 @@
     .parameter "context"
 
     .prologue
-    .line 43
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 44
     iput-object p1, p0, Lcom/android/settings_ex/PinSettingsUtils;->context:Landroid/content/Context;
 
-    .line 45
     invoke-direct {p0}, Lcom/android/settings_ex/PinSettingsUtils;->initFilename()V
 
-    .line 46
     return-void
 .end method
 
@@ -48,12 +41,10 @@
     .locals 2
 
     .prologue
-    .line 49
     iget-object v0, p0, Lcom/android/settings_ex/PinSettingsUtils;->sLGPasswordFilename:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    .line 50
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -480,11 +471,9 @@
     .parameter "password"
 
     .prologue
-    .line 112
     iget-object v0, p0, Lcom/android/settings_ex/PinSettingsUtils;->sLGPasswordFilename:Ljava/lang/String;
 
     invoke-direct {p0, v0, p1}, Lcom/android/settings_ex/PinSettingsUtils;->savePasswordFile(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 113
     return-void
 .end method

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 276
     iput-object p1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$2;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +42,10 @@
     .parameter "which"
 
     .prologue
-    .line 279
     const/4 v1, -0x1
 
     if-ne p2, v1, :cond_0
 
-    .line 280
     iget-object v1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$2;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     #getter for: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->mConnectDialog:Lcom/android/settings_ex/wifi/p2p/WifiP2pDialog;
@@ -71,7 +68,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 282
     iget-object v1, p0, Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings$2;->this$0:Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;
 
     #getter for: Lcom/android/settings_ex/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;

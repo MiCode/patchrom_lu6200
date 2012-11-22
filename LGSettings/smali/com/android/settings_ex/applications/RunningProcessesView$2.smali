@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 459
     iput-object p1, p0, Lcom/android/settings_ex/applications/RunningProcessesView$2;->this$0:Lcom/android/settings_ex/applications/RunningProcessesView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 462
     iget-object v0, p0, Lcom/android/settings_ex/applications/RunningProcessesView$2;->this$0:Lcom/android/settings_ex/applications/RunningProcessesView;
 
     iget-object v0, v0, Lcom/android/settings_ex/applications/RunningProcessesView;->mAdapter:Lcom/android/settings_ex/applications/RunningProcessesView$ServiceListAdapter;

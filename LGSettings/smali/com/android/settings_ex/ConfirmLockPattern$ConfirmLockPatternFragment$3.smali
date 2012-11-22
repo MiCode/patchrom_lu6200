@@ -26,7 +26,6 @@
     .parameter "x1"
 
     .prologue
-    .line 365
     iput-object p1, p0, Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment$3;->this$0:Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     invoke-direct {p0, p2, p3, p4, p5}, Landroid/os/CountDownTimer;-><init>(JJ)V
@@ -40,7 +39,6 @@
     .locals 2
 
     .prologue
-    .line 378
     iget-object v0, p0, Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment$3;->this$0:Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     const/4 v1, 0x0
@@ -48,7 +46,6 @@
     #setter for: Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;->mNumWrongConfirmAttempts:I
     invoke-static {v0, v1}, Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;->access$302(Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;I)I
 
-    .line 379
     iget-object v0, p0, Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment$3;->this$0:Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     sget-object v1, Lcom/android/settings_ex/ConfirmLockPattern$Stage;->NeedToUnlock:Lcom/android/settings_ex/ConfirmLockPattern$Stage;
@@ -65,7 +62,6 @@
     .parameter "millisUntilFinished"
 
     .prologue
-    .line 369
     iget-object v1, p0, Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment$3;->this$0:Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     #getter for: Lcom/android/settings_ex/ConfirmLockPattern$ConfirmLockPatternFragment;->mHeaderTextView:Landroid/widget/TextView;

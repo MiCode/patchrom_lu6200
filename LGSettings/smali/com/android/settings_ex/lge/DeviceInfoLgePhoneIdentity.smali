@@ -12,10 +12,8 @@
     .locals 1
 
     .prologue
-    .line 24
     invoke-direct {p0}, Lcom/android/settings_ex/deviceinfo/Status;-><init>()V
 
-    .line 29
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/DeviceInfoLgePhoneIdentity;->mPhone:Lcom/android/internal/telephony/Phone;
@@ -30,22 +28,18 @@
     .parameter "icicle"
 
     .prologue
-    .line 35
     invoke-super {p0, p1}, Lcom/android/settings_ex/deviceinfo/Status;->onCreate(Landroid/os/Bundle;)V
 
-    .line 36
     const v2, 0x7f080311
 
     invoke-super {p0, v2}, Lcom/android/settings_ex/deviceinfo/Status;->setTitle(I)V
 
-    .line 38
     invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getDefaultPhone()Lcom/android/internal/telephony/Phone;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/android/settings_ex/lge/DeviceInfoLgePhoneIdentity;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    .line 40
     new-instance v1, Landroid/preference/Preference;
 
     const/4 v2, 0x0
@@ -76,17 +70,13 @@
 
     invoke-virtual {v2, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
-    .line 50
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/DeviceInfoLgePhoneIdentity;->removeUnnecessaryPreference()V
 
-    .line 76
     return-void
 
-    .line 44
     :catch_0
     move-exception v0
 
-    .line 45
     .local v0, e:Ljava/lang/RuntimeException;
     const v2, 0x7f080056
 
@@ -99,10 +89,8 @@
     .locals 0
 
     .prologue
-    .line 90
     invoke-super {p0}, Lcom/android/settings_ex/deviceinfo/Status;->onPause()V
 
-    .line 91
     return-void
 .end method
 
@@ -110,13 +98,10 @@
     .locals 0
 
     .prologue
-    .line 82
     invoke-super {p0}, Lcom/android/settings_ex/deviceinfo/Status;->onResume()V
 
-    .line 83
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/DeviceInfoLgePhoneIdentity;->removeUnnecessaryPreference()V
 
-    .line 84
     return-void
 .end method
 
@@ -721,20 +706,17 @@
 
     aput-object v12, v4, v11
 
-    .line 210
     .local v4, keyStrings_3G_LTE:[Ljava/lang/String;
     const/16 v11, 0xd
 
     if-ne v8, v11, :cond_2
 
-    .line 211
     const-string v11, "DeviceInfoLgePhoneIdentity"
 
     const-string v12, "LTE !!!"
 
     invoke-static {v11, v12}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 212
     iget-object v11, p0, Lcom/android/settings_ex/lge/DeviceInfoLgePhoneIdentity;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v11}, Lcom/android/internal/telephony/Phone;->getPhoneName()Ljava/lang/String;
@@ -787,30 +769,25 @@
 
     aget-object v10, v0, v1
 
-    .line 241
     .local v10, string:Ljava/lang/String;
     invoke-virtual {p0, v10}, Lcom/android/settings_ex/lge/DeviceInfoLgePhoneIdentity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v9
 
-    .line 242
     .local v9, removablePref:Landroid/preference/Preference;
     if-eqz v9, :cond_0
 
-    .line 244
     invoke-super {p0}, Lcom/android/settings_ex/deviceinfo/Status;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v11
 
     invoke-virtual {v11, v9}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 239
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 218
     .end local v0           #arr$:[Ljava/lang/String;
     .end local v1           #i$:I
     .end local v2           #keyStrings:[Ljava/lang/String;
@@ -850,7 +827,6 @@
 
     invoke-static {v11, v12}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 225
     iget-object v11, p0, Lcom/android/settings_ex/lge/DeviceInfoLgePhoneIdentity;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v11}, Lcom/android/internal/telephony/Phone;->getPhoneName()Ljava/lang/String;

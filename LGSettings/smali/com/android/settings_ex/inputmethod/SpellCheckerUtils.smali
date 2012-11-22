@@ -12,7 +12,6 @@
     .locals 1
 
     .prologue
-    .line 24
     const-class v0, Lcom/android/settings_ex/inputmethod/SpellCheckerUtils;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 254
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/Status$SerialHandler;->this$0:Lcom/android/settings_ex/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -219,7 +218,6 @@
 
     if-gt v3, v4, :cond_1
 
-    .line 280
     iget-object v4, p0, Lcom/android/settings_ex/deviceinfo/Status$SerialHandler;->this$0:Lcom/android/settings_ex/deviceinfo/Status;
 
     const-string v5, "serial_number"

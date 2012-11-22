@@ -30,15 +30,12 @@
     .parameter "viewToBeFocused"
 
     .prologue
-    .line 186
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->this$0:Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 187
     iput-object p2, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->mViewToBeFocused:Landroid/view/View;
 
-    .line 188
     return-void
 .end method
 
@@ -48,7 +45,6 @@
     .locals 4
 
     .prologue
-    .line 193
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->this$0:Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
@@ -64,11 +60,9 @@
 
     move-result v0
 
-    .line 195
     .local v0, showSoftInputResult:Z
     if-eqz v0, :cond_0
 
-    .line 196
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->this$0:Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mActivity:Lcom/android/settings_ex/wifi/WifiSettingsForSetupWizardXL;

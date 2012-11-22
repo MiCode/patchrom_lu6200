@@ -29,11 +29,9 @@
     .locals 1
 
     .prologue
-    .line 244
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/applications/RunningState$BaseItem;-><init>(Z)V
 
-    .line 245
     return-void
 .end method

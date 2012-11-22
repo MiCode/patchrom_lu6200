@@ -43,31 +43,25 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 69
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 71
     const v1, 0x7f04002d
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/CryptKeeperConfirm$Blank;->setContentView(I)V
 
-    .line 73
     invoke-static {}, Lcom/android/settings_ex/Utils;->isMonkeyRunning()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 74
     invoke-virtual {p0}, Lcom/android/settings_ex/CryptKeeperConfirm$Blank;->finish()V
 
-    .line 78
     :cond_0
     sget-boolean v1, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v1, :cond_1
 
-    .line 79
     invoke-static {}, Lcom/android/settings_ex/MDMSettingsAdapter;->getInstance()Lcom/android/settings_ex/MDMSettingsAdapter;
 
     move-result-object v1
@@ -78,7 +72,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 80
     invoke-virtual {p0}, Lcom/android/settings_ex/CryptKeeperConfirm$Blank;->getWindow()Landroid/view/Window;
 
     move-result-object v1
@@ -97,13 +90,11 @@
 
     check-cast v0, Landroid/app/StatusBarManager;
 
-    .line 86
     .local v0, sbm:Landroid/app/StatusBarManager;
     const/high16 v1, 0x177
 
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
-    .line 97
     iget-object v1, p0, Lcom/android/settings_ex/CryptKeeperConfirm$Blank;->mHandler:Landroid/os/Handler;
 
     new-instance v2, Lcom/android/settings_ex/CryptKeeperConfirm$Blank$1;

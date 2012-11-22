@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 565
     iput-object p1, p0, Lcom/android/settings_ex/WirelessSettings$2;->this$0:Lcom/android/settings_ex/WirelessSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "proxy"
 
     .prologue
-    .line 567
     iget-object v0, p0, Lcom/android/settings_ex/WirelessSettings$2;->this$0:Lcom/android/settings_ex/WirelessSettings;
 
     check-cast p2, Landroid/bluetooth/BluetoothPan;
@@ -61,7 +59,6 @@
     .parameter "profile"
 
     .prologue
-    .line 570
     iget-object v0, p0, Lcom/android/settings_ex/WirelessSettings$2;->this$0:Lcom/android/settings_ex/WirelessSettings;
 
     const/4 v1, 0x0

@@ -25,7 +25,6 @@
     .locals 1
 
     .prologue
-    .line 17
     const-class v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -69,22 +68,16 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 30
     iput v2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mMode:I
 
-    .line 31
     iput v2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mOption:I
 
-    .line 41
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
-    .line 42
     iput p2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mMode:I
 
-    .line 43
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -99,7 +92,6 @@
 
     iput v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mOption:I
 
-    .line 45
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
@@ -114,7 +106,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->cm:Landroid/net/ConnectivityManager;
 
-    .line 47
     sget-object v0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -162,13 +153,10 @@
     .parameter "isMode"
 
     .prologue
-    .line 52
     if-eqz p1, :cond_0
 
-    .line 53
     iget v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mMode:I
 
-    .line 55
     :goto_0
     return v0
 
@@ -188,7 +176,6 @@
 
     const/4 v5, 0x0
 
-    .line 61
     sget-object v7, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->TAG:Ljava/lang/String;
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -221,14 +208,12 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 62
     sget-object v7, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->TAG:Ljava/lang/String;
 
     const-string v8, "onDataNetworkModeChange"
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 63
     iget-object v7, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -256,7 +241,6 @@
 
     invoke-static {v7, v8, v9}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 72
     iget-object v7, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -269,35 +253,30 @@
 
     invoke-static {v7, v8, v9}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 74
     sget-object v7, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->TAG:Ljava/lang/String;
 
     const-string v8, "setMobileDataEnabled(true)"
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 75
     iget-object v7, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->cm:Landroid/net/ConnectivityManager;
 
     const/4 v8, 0x1
 
     invoke-virtual {v7, v8}, Landroid/net/ConnectivityManager;->setMobileDataEnabled(Z)V
 
-    .line 77
     sget-object v7, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->TAG:Ljava/lang/String;
 
     const-string v8, "sendBroadcast(dataNetworkChange)"
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 78
     new-instance v3, Landroid/content/Intent;
 
     const-string v7, "com.android.phone.DATA_NETWORK_POAB"
 
     invoke-direct {v3, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 79
     .local v3, dataNetworkChange:Landroid/content/Intent;
     const-string v7, "networkState"
 
@@ -305,38 +284,31 @@
 
     invoke-virtual {v3, v7, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 80
     iget-object v7, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 93
     .end local v3           #dataNetworkChange:Landroid/content/Intent;
     :cond_0
     :goto_0
     iput p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mMode:I
 
-    .line 94
     iput p2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mOption:I
 
-    .line 96
     if-ne p1, v6, :cond_3
 
     move v2, v5
 
-    .line 97
     .local v2, dataMode:I
     :goto_1
     if-ne v2, v6, :cond_4
 
     move v0, v5
 
-    .line 102
     .local v0, bDataEnable:Z
     :goto_2
     if-ne p1, v6, :cond_1
 
-    .line 103
     iget-object v7, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -349,7 +321,6 @@
 
     invoke-static {v7, v8, v9}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 104
     iget-object v7, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -370,70 +341,58 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 107
     new-instance v3, Landroid/content/Intent;
 
     const-string v7, "com.android.phone.DATA_NETWORK_POAB"
 
     invoke-direct {v3, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 108
     .restart local v3       #dataNetworkChange:Landroid/content/Intent;
     const-string v7, "networkState"
 
     invoke-virtual {v3, v7, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 109
     iget-object v7, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 112
     iput p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mMode:I
 
-    .line 113
     iput p2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mOption:I
 
-    .line 130
     .end local v0           #bDataEnable:Z
     .end local v2           #dataMode:I
     .end local v3           #dataNetworkChange:Landroid/content/Intent;
     :goto_3
     return-void
 
-    .line 82
     :cond_2
     if-nez p1, :cond_0
 
-    .line 83
     sget-object v7, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->TAG:Ljava/lang/String;
 
     const-string v8, "setMobileDataEnabled(false)"
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 84
     iget-object v7, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->cm:Landroid/net/ConnectivityManager;
 
     const/4 v8, 0x0
 
     invoke-virtual {v7, v8}, Landroid/net/ConnectivityManager;->setMobileDataEnabled(Z)V
 
-    .line 86
     sget-object v7, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->TAG:Ljava/lang/String;
 
     const-string v8, "sendBroadcast(dataNetworkChange)"
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 87
     new-instance v3, Landroid/content/Intent;
 
     const-string v7, "com.android.phone.DATA_NETWORK_POAB"
 
     invoke-direct {v3, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 88
     .restart local v3       #dataNetworkChange:Landroid/content/Intent;
     const-string v7, "networkState"
 
@@ -441,7 +400,6 @@
 
     invoke-virtual {v3, v7, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 89
     iget-object v7, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
@@ -469,7 +427,6 @@
 
     invoke-static {v7, v8, v9}, Lcom/lge/provider/SettingsEx$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 122
     iget-object v7, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
 
     iget-object v8, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mContext:Landroid/content/Context;
@@ -567,17 +524,13 @@
 
     if-eq v2, v3, :cond_1
 
-    .line 139
     :cond_0
     const/4 v0, 0x1
 
-    .line 140
     iput v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mMode:I
 
-    .line 141
     iput v2, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeManager;->mOption:I
 
-    .line 144
     :cond_1
     return v0
 .end method

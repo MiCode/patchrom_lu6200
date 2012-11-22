@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 685
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -38,7 +37,6 @@
     .parameter "x1"
 
     .prologue
-    .line 685
     invoke-direct {p0, p1}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;-><init>(Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;)V
 
     return-void

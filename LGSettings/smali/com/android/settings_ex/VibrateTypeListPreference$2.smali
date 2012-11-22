@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 50
     iput-object p1, p0, Lcom/android/settings_ex/VibrateTypeListPreference$2;->this$0:Lcom/android/settings_ex/VibrateTypeListPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

@@ -34,25 +34,20 @@
     .parameter "trig"
 
     .prologue
-    .line 457
     iput-object p1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamSwitch;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 458
     iput-object p2, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamSwitch;->mSwitch:Landroid/widget/Switch;
 
-    .line 459
     iput-object p3, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamSwitch;->mTrigger:Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamTrigger;
 
-    .line 460
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamSwitch;->mSwitch:Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 462
     #getter for: Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
     invoke-static {p1}, Lcom/android/settings_ex/nfc/LGNfcEnabler;->access$000(Lcom/android/settings_ex/nfc/LGNfcEnabler;)Landroid/nfc/NfcAdapter;
 
@@ -60,18 +55,15 @@
 
     if-nez v0, :cond_0
 
-    .line 463
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamSwitch;->mSwitch:Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setEnabled(Z)V
 
-    .line 467
     :goto_0
     return-void
 
-    .line 465
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamSwitch;->mSwitch:Landroid/widget/Switch;
 
@@ -107,12 +99,10 @@
     .parameter "desiredState"
 
     .prologue
-    .line 480
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamSwitch;->mTrigger:Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamTrigger;
 
     invoke-virtual {v0, p2}, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamTrigger;->trigger(Z)Z
 
-    .line 481
     return-void
 .end method
 
@@ -120,14 +110,12 @@
     .locals 2
 
     .prologue
-    .line 477
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamSwitch;->mSwitch:Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 478
     return-void
 .end method
 
@@ -135,11 +123,9 @@
     .locals 1
 
     .prologue
-    .line 471
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$BeamSwitch;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 472
     return-void
 .end method

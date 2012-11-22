@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 196
     iput-object p1, p0, Lcom/android/settings_ex/RcseSettings$3;->this$0:Lcom/android/settings_ex/RcseSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

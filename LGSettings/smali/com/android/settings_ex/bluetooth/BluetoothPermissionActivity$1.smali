@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 77
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -79,7 +78,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 86
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;
 
     const/4 v3, 0x1
@@ -87,13 +85,11 @@
     #setter for: Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;->mUserConfirmed:Z
     invoke-static {v2, v3}, Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;->access$102(Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;Z)Z
 
-    .line 88
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity$1;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;
 
     #calls: Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;->dismissDialog()V
     invoke-static {v2}, Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;->access$200(Lcom/android/settings_ex/bluetooth/BluetoothPermissionActivity;)V
 
-    .line 91
     .end local v1           #device:Landroid/bluetooth/BluetoothDevice;
     :cond_0
     return-void

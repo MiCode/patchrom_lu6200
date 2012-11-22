@@ -14,13 +14,10 @@
     .parameter "insetBoundsSides"
 
     .prologue
-    .line 29
     invoke-direct {p0, p1}, Lcom/android/settings_ex/drawable/DrawableWrapper;-><init>(Landroid/graphics/drawable/Drawable;)V
 
-    .line 30
     iput p2, p0, Lcom/android/settings_ex/drawable/InsetBoundsDrawable;->mInsetBoundsSides:I
 
-    .line 31
     return-void
 .end method
 
@@ -34,7 +31,6 @@
     .parameter "bottom"
 
     .prologue
-    .line 35
     iget v0, p0, Lcom/android/settings_ex/drawable/InsetBoundsDrawable;->mInsetBoundsSides:I
 
     add-int/2addr v0, p1

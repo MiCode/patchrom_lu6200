@@ -103,12 +103,10 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 102
     iget v1, p0, Lcom/android/settings_ex/applications/CanBeOnSdCardChecker;->mInstallLocation:I
 
     if-ne v1, v3, :cond_0
 
-    .line 105
     const/4 v0, 0x1
 
     goto :goto_0

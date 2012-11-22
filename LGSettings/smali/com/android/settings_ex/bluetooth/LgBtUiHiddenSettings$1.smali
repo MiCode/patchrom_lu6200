@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 72
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V

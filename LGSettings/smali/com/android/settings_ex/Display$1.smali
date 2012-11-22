@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 115
     iput-object p1, p0, Lcom/android/settings_ex/Display$1;->this$0:Lcom/android/settings_ex/Display;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,10 +44,8 @@
     .parameter "id"
 
     .prologue
-    .line 118
     if-nez p3, :cond_0
 
-    .line 119
     iget-object v0, p0, Lcom/android/settings_ex/Display$1;->this$0:Lcom/android/settings_ex/Display;
 
     #getter for: Lcom/android/settings_ex/Display;->mCurConfig:Landroid/content/res/Configuration;
@@ -60,23 +57,19 @@
 
     iput v1, v0, Landroid/content/res/Configuration;->fontScale:F
 
-    .line 126
     :goto_0
     iget-object v0, p0, Lcom/android/settings_ex/Display$1;->this$0:Lcom/android/settings_ex/Display;
 
     #calls: Lcom/android/settings_ex/Display;->updateFontScale()V
     invoke-static {v0}, Lcom/android/settings_ex/Display;->access$100(Lcom/android/settings_ex/Display;)V
 
-    .line 127
     return-void
 
-    .line 120
     :cond_0
     const/4 v0, 0x2
 
     if-ne p3, v0, :cond_1
 
-    .line 121
     iget-object v0, p0, Lcom/android/settings_ex/Display$1;->this$0:Lcom/android/settings_ex/Display;
 
     #getter for: Lcom/android/settings_ex/Display;->mCurConfig:Landroid/content/res/Configuration;

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 611
     iput-object p1, p0, Lcom/android/settings_ex/IccLockSettings$7;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "arg1"
 
     .prologue
-    .line 613
     iget-object v0, p0, Lcom/android/settings_ex/IccLockSettings$7;->this$0:Lcom/android/settings_ex/IccLockSettings;
 
     const/4 v1, 0x0

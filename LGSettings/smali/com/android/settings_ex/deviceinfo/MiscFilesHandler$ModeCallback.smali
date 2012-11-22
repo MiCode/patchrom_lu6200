@@ -32,15 +32,12 @@
     .parameter "context"
 
     .prologue
-    .line 83
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 84
     iput-object p2, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->mContext:Landroid/content/Context;
 
-    .line 85
     #getter for: Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mAdapter:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
     invoke-static {p1}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->access$000(Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;)Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
 
@@ -142,14 +139,12 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 99
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->getListView()Landroid/widget/ListView;
 
     move-result-object v10
 
-    .line 100
     .local v10, lv:Landroid/widget/ListView;
     invoke-interface {p2}, Landroid/view/MenuItem;->getItemId()I
 
@@ -179,13 +174,11 @@
 
     move-result v6
 
-    .line 105
     .local v6, checkedCount:I
     iget v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->mDataCount:I
 
     if-le v6, v0, :cond_0
 
-    .line 106
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -222,18 +215,15 @@
 
     throw v0
 
-    .line 109
     :cond_0
     iget v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->mDataCount:I
 
     if-lez v0, :cond_5
 
-    .line 110
     new-instance v11, Ljava/util/ArrayList;
 
     invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
 
-    .line 111
     .local v11, toRemove:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Object;>;"
     const/4 v9, 0x0
 
@@ -243,26 +233,22 @@
 
     if-ge v9, v0, :cond_4
 
-    .line 112
     invoke-virtual {v7, v9}, Landroid/util/SparseBooleanArray;->get(I)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 111
     :goto_2
     add-int/lit8 v9, v9, 0x1
 
     goto :goto_1
 
-    .line 116
     :cond_1
     sget-boolean v0, Lcom/android/settings_ex/deviceinfo/StorageMeasurement;->LOGV:Z
 
     if-eqz v0, :cond_2
 
-    .line 117
     const-string v0, "MemorySettings"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -323,10 +309,8 @@
 
     if-eqz v0, :cond_3
 
-    .line 122
     invoke-direct {p0, v8}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->deleteDir(Ljava/io/File;)Z
 
-    .line 126
     :goto_3
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;
 
@@ -361,7 +345,6 @@
 
     invoke-virtual {v0, v11}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;->removeAll(Ljava/util/List;)V
 
-    .line 129
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mAdapter:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
@@ -371,7 +354,6 @@
 
     invoke-virtual {v0}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;->notifyDataSetChanged()V
 
-    .line 130
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mAdapter:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
@@ -385,7 +367,6 @@
 
     iput v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->mDataCount:I
 
-    .line 131
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;
 
     new-instance v1, Landroid/content/Intent;
@@ -478,20 +459,17 @@
     .parameter "menu"
 
     .prologue
-    .line 89
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->getMenuInflater()Landroid/view/MenuInflater;
 
     move-result-object v0
 
-    .line 90
     .local v0, inflater:Landroid/view/MenuInflater;
     const v1, 0x7f100001
 
     invoke-virtual {v0, v1, p2}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
-    .line 91
     const/4 v1, 0x1
 
     return v1
@@ -514,20 +492,17 @@
     .parameter "checked"
 
     .prologue
-    .line 175
     iget-object v6, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;
 
     invoke-virtual {v6}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
 
-    .line 176
     .local v2, lv:Landroid/widget/ListView;
     invoke-virtual {v2}, Landroid/widget/ListView;->getCheckedItemCount()I
 
     move-result v3
 
-    .line 177
     .local v3, numChecked:I
     iget-object v6, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;
 
@@ -595,14 +570,12 @@
 
     if-ge v1, v6, :cond_1
 
-    .line 184
     invoke-virtual {v0, v1}, Landroid/util/SparseBooleanArray;->get(I)Z
 
     move-result v6
 
     if-eqz v6, :cond_0
 
-    .line 186
     iget-object v6, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mAdapter:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;

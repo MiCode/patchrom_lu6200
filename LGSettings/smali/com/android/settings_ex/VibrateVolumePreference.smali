@@ -34,23 +34,18 @@
     .parameter "attrs"
 
     .prologue
-    .line 68
     invoke-direct {p0, p1, p2}, Landroid/preference/SeekBarDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 62
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/settings_ex/VibrateVolumePreference;->current_vibrateMode:I
 
-    .line 69
     iput-object p1, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mContext:Landroid/content/Context;
 
-    .line 70
     const v0, 0x7f040072
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/VibrateVolumePreference;->setDialogLayoutResource(I)V
 
-    .line 74
     const-string v0, "audio"
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -71,17 +66,14 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 162
     iget-object v2, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     if-eqz v2, :cond_2
 
-    .line 163
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateVolumePreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
-    .line 164
     .local v0, dialog:Landroid/app/Dialog;
     if-eqz v0, :cond_1
 
@@ -106,29 +98,24 @@
 
     move-result-object v1
 
-    .line 168
     .local v1, view:Landroid/view/View;
     if-eqz v1, :cond_0
 
     invoke-virtual {v1, v4}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    .line 169
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;->revertVolume()V
 
-    .line 171
     .end local v1           #view:Landroid/view/View;
     :cond_1
     iget-object v2, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;->stop()V
 
-    .line 172
     iput-object v4, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
-    .line 175
     .end local v0           #dialog:Landroid/app/Dialog;
     :cond_2
     return-void
@@ -140,17 +127,14 @@
     .locals 1
 
     .prologue
-    .line 111
     const v0, 0x104000a
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/VibrateVolumePreference;->setPositiveButtonText(I)V
 
-    .line 112
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/VibrateVolumePreference;->setNegativeButtonText(Ljava/lang/CharSequence;)V
 
-    .line 113
     return-void
 .end method
 
@@ -158,38 +142,30 @@
     .locals 2
 
     .prologue
-    .line 147
     iget-object v1, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     if-eqz v1, :cond_0
 
-    .line 148
     iget-object v1, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;->stopSample()V
 
-    .line 149
     iget-object v1, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;->revertVolume()V
 
-    .line 151
     :cond_0
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateVolumePreference;->cleanup()V
 
-    .line 153
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateVolumePreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
-    .line 154
     .local v0, dialog:Landroid/app/Dialog;
     if-eqz v0, :cond_1
 
-    .line 155
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 157
     :cond_1
     return-void
 .end method
@@ -248,7 +224,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 98
     new-instance v1, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/VibrateVolumePreference;->getContext()Landroid/content/Context;
@@ -279,26 +254,21 @@
     .parameter "positiveResult"
 
     .prologue
-    .line 137
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onDialogClosed(Z)V
 
-    .line 139
     if-nez p1, :cond_0
 
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     if-eqz v0, :cond_0
 
-    .line 140
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;->revertVolume()V
 
-    .line 143
     :cond_0
     invoke-direct {p0}, Lcom/android/settings_ex/VibrateVolumePreference;->cleanup()V
 
-    .line 144
     return-void
 .end method
 
@@ -313,17 +283,14 @@
 
     const/4 v1, 0x1
 
-    .line 117
     iget-object v3, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     if-nez v3, :cond_1
 
-    .line 131
     :cond_0
     :goto_0
     return v1
 
-    .line 118
     :cond_1
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
@@ -333,29 +300,24 @@
 
     move v0, v1
 
-    .line 119
     .local v0, isdown:Z
     :goto_1
     packed-switch p2, :pswitch_data_0
 
     move v1, v2
 
-    .line 131
     goto :goto_0
 
     .end local v0           #isdown:Z
     :cond_2
     move v0, v2
 
-    .line 118
     goto :goto_1
 
-    .line 121
     .restart local v0       #isdown:Z
     :pswitch_0
     if-eqz v0, :cond_0
 
-    .line 122
     iget-object v2, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     const/4 v3, -0x1
@@ -364,18 +326,15 @@
 
     goto :goto_0
 
-    .line 126
     :pswitch_1
     if-eqz v0, :cond_0
 
-    .line 127
     iget-object v2, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-virtual {v2, v1}, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;->changeVolumeBy(I)V
 
     goto :goto_0
 
-    .line 119
     :pswitch_data_0
     .packed-switch 0x18
         :pswitch_1
@@ -403,32 +362,26 @@
 
     if-nez v0, :cond_2
 
-    .line 202
     :cond_0
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
-    .line 211
     :cond_1
     :goto_0
     return-void
 
-    .line 206
     :cond_2
     check-cast p1, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;
 
-    .line 207
     invoke-virtual {p1}, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/preference/SeekBarDialogPreference;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
-    .line 208
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     if-eqz v0, :cond_1
 
-    .line 209
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-virtual {p1}, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;->getVolumeStore()Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;
@@ -445,7 +398,6 @@
     .parameter "volumizer"
 
     .prologue
-    .line 178
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     if-eqz v0, :cond_0
@@ -454,12 +406,10 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 179
     iget-object v0, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;->stopSample()V
 
-    .line 181
     :cond_0
     return-void
 .end method
@@ -481,25 +431,21 @@
 
     if-eqz v2, :cond_0
 
-    .line 195
     .end local v1           #superState:Landroid/os/Parcelable;
     :goto_0
     return-object v1
 
-    .line 191
     .restart local v1       #superState:Landroid/os/Parcelable;
     :cond_0
     new-instance v0, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;
 
     invoke-direct {v0, v1}, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;-><init>(Landroid/os/Parcelable;)V
 
-    .line 192
     .local v0, myState:Lcom/android/settings_ex/VibrateVolumePreference$SavedState;
     iget-object v2, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     if-eqz v2, :cond_1
 
-    .line 193
     iget-object v2, p0, Lcom/android/settings_ex/VibrateVolumePreference;->mSeekBarVolumizer:Lcom/android/settings_ex/VibrateVolumePreference$SeekBarVolumizer;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/VibrateVolumePreference$SavedState;->getVolumeStore()Lcom/android/settings_ex/VibrateVolumePreference$VolumeStore;

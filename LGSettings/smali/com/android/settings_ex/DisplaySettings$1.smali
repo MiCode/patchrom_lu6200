@@ -25,7 +25,6 @@
     .parameter "x0"
 
     .prologue
-    .line 137
     iput-object p1, p0, Lcom/android/settings_ex/DisplaySettings$1;->this$0:Lcom/android/settings_ex/DisplaySettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,12 +39,10 @@
     .parameter "selfChange"
 
     .prologue
-    .line 140
     iget-object v0, p0, Lcom/android/settings_ex/DisplaySettings$1;->this$0:Lcom/android/settings_ex/DisplaySettings;
 
     #calls: Lcom/android/settings_ex/DisplaySettings;->updateAccelerometerRotationCheckbox()V
     invoke-static {v0}, Lcom/android/settings_ex/DisplaySettings;->access$000(Lcom/android/settings_ex/DisplaySettings;)V
 
-    .line 141
     return-void
 .end method

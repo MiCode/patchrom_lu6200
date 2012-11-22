@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 147
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/Utils$2;->val$cachedDevice:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,18 +42,15 @@
     .parameter "which"
 
     .prologue
-    .line 149
     const-string v0, "service.btui.gap.pairByLocal"
 
     const-string v1, "1"
 
     invoke-static {v0, v1}, Lcom/android/settings_ex/bluetooth/Utils;->BtUiPropertySet(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 150
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/Utils$2;->val$cachedDevice:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;->startPairing()Z
 
-    .line 151
     return-void
 .end method

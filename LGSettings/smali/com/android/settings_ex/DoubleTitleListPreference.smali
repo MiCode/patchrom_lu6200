@@ -19,12 +19,10 @@
     .parameter "context"
 
     .prologue
-    .line 24
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/android/settings_ex/DoubleTitleListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 25
     return-void
 .end method
 
@@ -36,16 +34,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 20
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 16
     iput-object v0, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mTitleRes:Ljava/lang/String;
 
-    .line 17
     iput-object v0, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mSubTitleRes:Ljava/lang/String;
 
-    .line 21
     return-void
 .end method
 
@@ -56,10 +50,8 @@
     .parameter "builder"
 
     .prologue
-    .line 29
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 
-    .line 31
     invoke-virtual {p0}, Lcom/android/settings_ex/DoubleTitleListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -97,7 +89,6 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mTitle:Landroid/widget/TextView;
 
-    .line 38
     iget-object v2, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mTitle:Landroid/widget/TextView;
 
     if-eqz v2, :cond_0
@@ -106,14 +97,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 40
     iget-object v2, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mTitle:Landroid/widget/TextView;
 
     iget-object v3, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mTitleRes:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 43
     :cond_0
     const v2, 0x7f0b00ad
 
@@ -125,7 +114,6 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mSubTitle:Landroid/widget/TextView;
 
-    .line 44
     iget-object v2, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mSubTitle:Landroid/widget/TextView;
 
     if-eqz v2, :cond_1
@@ -134,14 +122,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 46
     iget-object v2, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mSubTitle:Landroid/widget/TextView;
 
     iget-object v3, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mSubTitleRes:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 49
     :cond_1
     return-void
 .end method
@@ -151,10 +137,8 @@
     .parameter "res"
 
     .prologue
-    .line 62
     iput-object p1, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mTitleRes:Ljava/lang/String;
 
-    .line 63
     return-void
 .end method
 
@@ -163,10 +147,8 @@
     .parameter "res"
 
     .prologue
-    .line 65
     iput-object p1, p0, Lcom/android/settings_ex/DoubleTitleListPreference;->mSubTitleRes:Ljava/lang/String;
 
-    .line 66
     return-void
 .end method
 
@@ -175,10 +157,8 @@
     .parameter "state"
 
     .prologue
-    .line 53
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->showDialog(Landroid/os/Bundle;)V
 
-    .line 55
     invoke-virtual {p0}, Lcom/android/settings_ex/DoubleTitleListPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 271
     iput-object p1, p0, Lcom/android/settings_ex/ProxySelector$1;->this$0:Lcom/android/settings_ex/ProxySelector;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "v"
 
     .prologue
-    .line 273
     iget-object v0, p0, Lcom/android/settings_ex/ProxySelector$1;->this$0:Lcom/android/settings_ex/ProxySelector;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/ProxySelector;->saveToDb()Z
@@ -51,7 +49,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 274
     iget-object v0, p0, Lcom/android/settings_ex/ProxySelector$1;->this$0:Lcom/android/settings_ex/ProxySelector;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/ProxySelector;->getActivity()Landroid/app/Activity;

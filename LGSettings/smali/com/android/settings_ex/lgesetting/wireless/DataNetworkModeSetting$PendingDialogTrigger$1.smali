@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 560
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$PendingDialogTrigger$1;->this$1:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$PendingDialogTrigger;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,12 +38,10 @@
     .parameter "msg"
 
     .prologue
-    .line 562
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 590
     invoke-static {}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;->access$800()Ljava/lang/String;
 
     move-result-object v1
@@ -98,7 +95,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 567
     invoke-static {}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;->access$800()Ljava/lang/String;
 
     move-result-object v1
@@ -154,7 +150,6 @@
 
     move-result v0
 
-    .line 577
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$PendingDialogTrigger$1;->this$1:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$PendingDialogTrigger;
 
     const/4 v3, 0x0
@@ -162,15 +157,12 @@
     #setter for: Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$PendingDialogTrigger;->mPendingDialogID:I
     invoke-static {v1, v3}, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$PendingDialogTrigger;->access$1002(Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$PendingDialogTrigger;I)I
 
-    .line 578
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 581
     if-nez v0, :cond_1
 
-    .line 582
     iget-object v1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$PendingDialogTrigger$1;->this$1:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$PendingDialogTrigger;
 
     iget-object v1, v1, Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting$PendingDialogTrigger;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataNetworkModeSetting;

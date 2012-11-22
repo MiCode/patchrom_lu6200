@@ -56,24 +56,20 @@
     .locals 2
 
     .prologue
-    .line 41
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
-    .line 94
     new-instance v0, Lcom/android/settings_ex/powersave/PowerSaveSettings$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings$1;-><init>(Lcom/android/settings_ex/powersave/PowerSaveSettings;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 122
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->handler:Landroid/os/Handler;
 
-    .line 123
     new-instance v0, Lcom/android/settings_ex/powersave/PowerSaveSettings$2;
 
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->handler:Landroid/os/Handler;
@@ -90,7 +86,6 @@
     .parameter "x0"
 
     .prologue
-    .line 41
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBattery:Landroid/preference/Preference;
 
     return-object v0
@@ -101,7 +96,6 @@
     .parameter "x0"
 
     .prologue
-    .line 41
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
 
     return-object v0
@@ -112,7 +106,6 @@
     .parameter "x0"
 
     .prologue
-    .line 41
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -126,7 +119,6 @@
 
     const/4 v2, 0x0
 
-    .line 302
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleWifi:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -146,7 +138,6 @@
     :goto_0
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setChecked(Z)V
 
-    .line 304
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleSync:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -166,7 +157,6 @@
     :goto_1
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setChecked(Z)V
 
-    .line 306
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleBluetooth:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -186,7 +176,6 @@
     :goto_2
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setChecked(Z)V
 
-    .line 312
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleTouch:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -206,7 +195,6 @@
     :goto_3
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setChecked(Z)V
 
-    .line 320
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mEcoMode:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -226,7 +214,6 @@
     :goto_4
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setChecked(Z)V
 
-    .line 325
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -246,7 +233,6 @@
     :goto_5
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->setChecked(Z)V
 
-    .line 327
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -267,7 +253,6 @@
 
     invoke-virtual {v0, v3}, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->setValue(Ljava/lang/String;)V
 
-    .line 330
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -287,7 +272,6 @@
     :goto_6
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setChecked(Z)V
 
-    .line 332
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -308,7 +292,6 @@
 
     invoke-virtual {v0, v3}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setValue(Ljava/lang/String;)V
 
-    .line 335
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -328,7 +311,6 @@
     :goto_7
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setChecked(Z)V
 
-    .line 337
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -349,22 +331,18 @@
 
     invoke-virtual {v0, v3}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setValue(Ljava/lang/String;)V
 
-    .line 340
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateSummary(Landroid/preference/Preference;)V
 
-    .line 342
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateSummary(Landroid/preference/Preference;)V
 
-    .line 343
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateSummary(Landroid/preference/Preference;)V
 
-    .line 345
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBatteryPercentage:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -444,12 +422,10 @@
     .locals 3
 
     .prologue
-    .line 230
     const v1, 0x7f060027
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->addPreferencesFromResource(I)V
 
-    .line 232
     const-string v1, "power_save_mode"
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -460,12 +436,10 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveMode:Lcom/android/settings_ex/powersave/PowerSaveListPreference;
 
-    .line 233
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveMode:Lcom/android/settings_ex/powersave/PowerSaveListPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 235
     const-string v1, "power_saving_items_category"
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -487,12 +461,10 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleWifi:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
-    .line 237
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleWifi:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnTreeClickListener(Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$OnTreeClickListener;)V
 
-    .line 238
     const-string v1, "toggle_power_save_sync"
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -503,12 +475,10 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleSync:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
-    .line 239
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleSync:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnTreeClickListener(Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$OnTreeClickListener;)V
 
-    .line 240
     const-string v1, "toggle_power_save_bluetooth"
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -519,12 +489,10 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleBluetooth:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
-    .line 241
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleBluetooth:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnTreeClickListener(Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$OnTreeClickListener;)V
 
-    .line 254
     const-string v1, "power_save_ecomode"
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -535,21 +503,18 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mEcoMode:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
-    .line 255
     invoke-static {}, Lcom/android/settings_ex/lge/OverlayUtils;->isX3Model()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 256
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSavingItemsCategory:Landroid/preference/PreferenceCategory;
 
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mEcoMode:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 262
     :goto_0
     const-string v1, "power_save_brightness"
 
@@ -561,17 +526,14 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
-    .line 263
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 264
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->setOnTreeClickListener(Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$OnTreeClickListener;)V
 
-    .line 266
     const-string v1, "power_save_screen_timeout"
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -582,17 +544,14 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
-    .line 267
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 268
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnTreeClickListener(Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$OnTreeClickListener;)V
 
-    .line 270
     const-string v1, "power_save_front_led"
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -614,14 +573,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 272
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSavingItemsCategory:Landroid/preference/PreferenceCategory;
 
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 278
     :goto_1
     const-string v1, "toggle_power_save_touch"
 
@@ -652,14 +609,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 281
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSavingItemsCategory:Landroid/preference/PreferenceCategory;
 
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleTouch:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 297
     :goto_2
     const-string v1, "power_save_battery"
 
@@ -680,44 +635,37 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBatteryPercentage:Landroid/preference/CheckBoxPreference;
 
-    .line 299
     return-void
 
-    .line 258
     .end local v0           #hapticfeedback:Ljava/lang/String;
     :cond_0
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mEcoMode:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 259
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mEcoMode:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnTreeClickListener(Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$OnTreeClickListener;)V
 
     goto/16 :goto_0
 
-    .line 274
     :cond_1
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 275
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnTreeClickListener(Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$OnTreeClickListener;)V
 
     goto :goto_1
 
-    .line 284
     .restart local v0       #hapticfeedback:Ljava/lang/String;
     :cond_2
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleTouch:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 285
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleTouch:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v1, p0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->setOnTreeClickListener(Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference$OnTreeClickListener;)V
@@ -839,7 +787,6 @@
 
     invoke-static {v4, v5, v3}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 527
     iget-object v4, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -854,24 +801,20 @@
 
     move-result v0
 
-    .line 528
     .local v0, enabled:I
     if-lez v0, :cond_0
 
-    .line 529
     new-instance v1, Landroid/content/Intent;
 
     const-string v4, "com.android.settings_ex.powersave.action.MODE_CHANGED"
 
     invoke-direct {v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 530
     .local v1, intent:Landroid/content/Intent;
     iget-object v4, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 532
     .end local v1           #intent:Landroid/content/Intent;
     :cond_0
     return-void
@@ -892,7 +835,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 492
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveMode:Lcom/android/settings_ex/powersave/PowerSaveListPreference;
 
     const v4, 0x7f080b38
@@ -927,12 +869,10 @@
 
     if-eqz v3, :cond_1
 
-    .line 496
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveMode:Lcom/android/settings_ex/powersave/PowerSaveListPreference;
 
     invoke-virtual {v3, v2}, Lcom/android/settings_ex/powersave/PowerSaveListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 497
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveMode:Lcom/android/settings_ex/powersave/PowerSaveListPreference;
 
     invoke-virtual {v3}, Lcom/android/settings_ex/powersave/PowerSaveListPreference;->getEntry()Ljava/lang/CharSequence;
@@ -980,7 +920,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 501
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveMode:Lcom/android/settings_ex/powersave/PowerSaveListPreference;
 
     const v4, 0x7f080b66
@@ -1100,7 +1039,6 @@
     .locals 5
 
     .prologue
-    .line 352
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1137,23 +1075,18 @@
 
     const/4 v0, 0x1
 
-    .line 356
     .local v0, isChecked:Z
     :goto_0
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->setItemMenuEnabled(Z)V
 
-    .line 358
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveMode:Lcom/android/settings_ex/powersave/PowerSaveListPreference;
 
     invoke-virtual {v2, v1}, Lcom/android/settings_ex/powersave/PowerSaveListPreference;->setValue(Ljava/lang/String;)V
 
-    .line 359
     invoke-direct {p0, v1}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updatePowerSaverModeSummary(Ljava/lang/Object;)V
 
-    .line 360
     return-void
 
-    .line 355
     .end local v0           #isChecked:Z
     :cond_0
     const/4 v0, 0x0
@@ -1166,14 +1099,12 @@
     .parameter "preference"
 
     .prologue
-    .line 544
     instance-of v0, p1, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-eqz v0, :cond_0
 
     move-object v0, p1
 
-    .line 545
     check-cast v0, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;->isChecked()Z
@@ -1182,54 +1113,45 @@
 
     if-eqz v0, :cond_1
 
-    .line 546
     const-string v0, ""
 
     invoke-virtual {p1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 547
     const-string v0, "%s"
 
     invoke-virtual {p1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 561
     :cond_0
     :goto_0
     return-void
 
-    .line 550
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     if-ne p1, v0, :cond_2
 
-    .line 551
     const v0, 0x7f080b48
 
     invoke-virtual {p1, v0}, Landroid/preference/Preference;->setSummary(I)V
 
     goto :goto_0
 
-    .line 553
     :cond_2
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v0, :cond_3
 
-    .line 554
     const v0, 0x7f080b70
 
     invoke-virtual {p1, v0}, Landroid/preference/Preference;->setSummary(I)V
 
     goto :goto_0
 
-    .line 556
     :cond_3
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v0, :cond_0
 
-    .line 557
     const v0, 0x7f080b71
 
     invoke-virtual {p1, v0}, Landroid/preference/Preference;->setSummary(I)V
@@ -1250,18 +1172,15 @@
 
     const/4 v2, 0x0
 
-    .line 163
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    .line 164
     .local v1, activity:Landroid/app/Activity;
     new-instance v0, Landroid/widget/Switch;
 
     invoke-direct {v0, v1}, Landroid/widget/Switch;-><init>(Landroid/content/Context;)V
 
-    .line 165
     .local v0, actionBarSwitch:Landroid/widget/Switch;
     instance-of v5, v1, Landroid/preference/PreferenceActivity;
 
@@ -1332,7 +1251,6 @@
 
     iput-object v5, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveEnabler:Lcom/android/settings_ex/powersave/PowerSaveEnabler;
 
-    .line 181
     iget-object v5, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -1349,17 +1267,14 @@
 
     const/4 v2, 0x1
 
-    .line 182
     .local v2, isEnabled:Z
     :cond_2
     iget-object v5, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveEnabler:Lcom/android/settings_ex/powersave/PowerSaveEnabler;
 
     invoke-virtual {v5, v2}, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->setSwitchChecked(Z)V
 
-    .line 183
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
-    .line 184
     return-void
 .end method
 
@@ -1368,10 +1283,8 @@
     .parameter
 
     .prologue
-    .line 135
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 137
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -1382,13 +1295,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mContext:Landroid/content/Context;
 
-    .line 139
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->initPreference()V
 
-    .line 140
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->checkPreference()V
 
-    .line 142
     new-instance v0, Lcom/android/settings_ex/powersave/PowerSave;
 
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mContext:Landroid/content/Context;
@@ -1397,7 +1307,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
 
-    .line 148
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -1412,7 +1321,6 @@
 
     if-lez v0, :cond_0
 
-    .line 150
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSave:Lcom/android/settings_ex/powersave/PowerSave;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSave;->isRunningPowerSaveService()Z
@@ -1437,12 +1345,10 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 153
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 158
     :cond_0
     return-void
 .end method
@@ -1453,10 +1359,8 @@
     .parameter "inflater"
 
     .prologue
-    .line 475
     invoke-super {p0, p1, p2}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
-    .line 476
     return-void
 .end method
 
@@ -1464,10 +1368,8 @@
     .locals 0
 
     .prologue
-    .line 225
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onDestroy()V
 
-    .line 226
     return-void
 .end method
 
@@ -1520,10 +1422,8 @@
     .locals 2
 
     .prologue
-    .line 207
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onPause()V
 
-    .line 208
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -1532,17 +1432,14 @@
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
-    .line 211
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveEnabler:Lcom/android/settings_ex/powersave/PowerSaveEnabler;
 
     if-eqz v0, :cond_0
 
-    .line 212
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveEnabler:Lcom/android/settings_ex/powersave/PowerSaveEnabler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->pause()V
 
-    .line 215
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getActivity()Landroid/app/Activity;
 
@@ -1562,110 +1459,90 @@
     .parameter "objValue"
 
     .prologue
-    .line 434
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveMode:Lcom/android/settings_ex/powersave/PowerSaveListPreference;
 
     if-ne p1, v0, :cond_1
 
-    .line 435
     invoke-direct {p0, p2}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->setPowerSaveModeAllowed(Ljava/lang/Object;)V
 
-    .line 436
     invoke-direct {p0, p2}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updatePowerSaverModeSummary(Ljava/lang/Object;)V
 
-    .line 467
     :cond_0
     :goto_0
     const/4 v0, 0x1
 
     return v0
 
-    .line 437
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     if-ne p1, v0, :cond_2
 
-    .line 438
     instance-of v0, p2, Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
 
-    .line 441
     const-string v0, "power_save_brightness"
 
     invoke-direct {p0, v0, p2}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->setPowerSaveListValue(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 442
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateSummary(Landroid/preference/Preference;)V
 
     goto :goto_0
 
-    .line 444
     :cond_2
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mEcoMode:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v0, :cond_3
 
-    .line 445
     instance-of v0, p2, Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
 
-    .line 448
     const-string v0, "power_save_cpu"
 
     invoke-direct {p0, v0, p2}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->setPowerSaveListValue(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 449
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mEcoMode:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateSummary(Landroid/preference/Preference;)V
 
     goto :goto_0
 
-    .line 451
     :cond_3
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v0, :cond_4
 
-    .line 452
     instance-of v0, p2, Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
 
-    .line 455
     const-string v0, "power_save_screen_timeout"
 
     invoke-direct {p0, v0, p2}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->setPowerSaveListValue(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 456
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateSummary(Landroid/preference/Preference;)V
 
     goto :goto_0
 
-    .line 459
     :cond_4
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v0, :cond_0
 
-    .line 460
     instance-of v0, p2, Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
 
-    .line 463
     const-string v0, "power_save_front_led"
 
     invoke-direct {p0, v0, p2}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->setPowerSaveListValue(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 464
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateSummary(Landroid/preference/Preference;)V
@@ -1679,12 +1556,10 @@
     .parameter "preference"
 
     .prologue
-    .line 365
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveMode:Lcom/android/settings_ex/powersave/PowerSaveListPreference;
 
     if-ne p2, v1, :cond_1
 
-    .line 377
     :cond_0
     :goto_0
     invoke-super {p0, p1, p2}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
@@ -1693,13 +1568,11 @@
 
     return v1
 
-    .line 368
     :cond_1
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBatteryPercentage:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_0
 
-    .line 369
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1719,14 +1592,12 @@
     :goto_1
     invoke-static {v2, v3, v1}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 373
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.android.settings_ex.powersave.action.BATTERY_INDICATOR_CHANGED"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 374
     .local v0, intent:Landroid/content/Intent;
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mContext:Landroid/content/Context;
 
@@ -1746,17 +1617,14 @@
     .locals 5
 
     .prologue
-    .line 188
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
-    .line 189
     const-string v2, "power_save_started"
 
     invoke-static {v2}, Lcom/lge/provider/SettingsEx$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 190
     .local v1, uri:Landroid/net/Uri;
     const-string v2, "PowerSaveSettings"
 
@@ -1784,7 +1652,6 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 191
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1795,32 +1662,26 @@
 
     invoke-virtual {v2, v1, v3, v4}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 194
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveEnabler:Lcom/android/settings_ex/powersave/PowerSaveEnabler;
 
     if-eqz v2, :cond_0
 
-    .line 195
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveEnabler:Lcom/android/settings_ex/powersave/PowerSaveEnabler;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/powersave/PowerSaveEnabler;->resume()V
 
-    .line 197
     :cond_0
     invoke-direct {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateState()V
 
-    .line 199
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 200
     .local v0, filter:Landroid/content/IntentFilter;
     const-string v2, "android.intent.action.BATTERY_CHANGED"
 
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 202
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -1837,10 +1698,8 @@
     .locals 0
 
     .prologue
-    .line 220
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onStop()V
 
-    .line 221
     return-void
 .end method
 
@@ -1862,12 +1721,10 @@
 
     const/4 v1, 0x0
 
-    .line 382
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleWifi:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v2, :cond_2
 
-    .line 383
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1893,16 +1750,13 @@
     :cond_1
     move v0, v1
 
-    .line 383
     goto :goto_0
 
-    .line 386
     :cond_2
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleSync:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v2, :cond_4
 
-    .line 387
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1927,13 +1781,11 @@
 
     goto :goto_2
 
-    .line 390
     :cond_4
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleBluetooth:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v2, :cond_6
 
-    .line 391
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1958,13 +1810,11 @@
 
     goto :goto_3
 
-    .line 394
     :cond_6
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleGps:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v2, :cond_8
 
-    .line 395
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1989,13 +1839,11 @@
 
     goto :goto_4
 
-    .line 398
     :cond_8
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleNfc:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v2, :cond_a
 
-    .line 399
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2020,13 +1868,11 @@
 
     goto :goto_5
 
-    .line 402
     :cond_a
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleAnimations:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v2, :cond_c
 
-    .line 403
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2051,13 +1897,11 @@
 
     goto :goto_6
 
-    .line 406
     :cond_c
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mEcoMode:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v2, :cond_e
 
-    .line 407
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2082,13 +1926,11 @@
 
     goto :goto_7
 
-    .line 412
     :cond_e
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     if-ne p1, v2, :cond_10
 
-    .line 413
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2106,7 +1948,6 @@
     :goto_8
     invoke-static {v2, v3, v0}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 415
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mBrightness:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateSummary(Landroid/preference/Preference;)V
@@ -2116,16 +1957,13 @@
     :cond_f
     move v0, v1
 
-    .line 413
     goto :goto_8
 
-    .line 417
     :cond_10
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v2, :cond_12
 
-    .line 418
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2143,7 +1981,6 @@
     :goto_9
     invoke-static {v2, v3, v0}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 420
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mScreenTimeout:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateSummary(Landroid/preference/Preference;)V
@@ -2153,16 +1990,13 @@
     :cond_11
     move v0, v1
 
-    .line 418
     goto :goto_9
 
-    .line 422
     :cond_12
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v2, :cond_14
 
-    .line 423
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2180,7 +2014,6 @@
     :goto_a
     invoke-static {v2, v3, v0}, Lcom/lge/provider/SettingsEx$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 425
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mFrontLed:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     invoke-direct {p0, v0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->updateSummary(Landroid/preference/Preference;)V
@@ -2190,16 +2023,13 @@
     :cond_13
     move v0, v1
 
-    .line 423
     goto :goto_a
 
-    .line 427
     :cond_14
     iget-object v2, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mToggleTouch:Lcom/android/settings_ex/powersave/PowerSaveCheckBoxPreference;
 
     if-ne p1, v2, :cond_0
 
-    .line 428
     invoke-virtual {p0}, Lcom/android/settings_ex/powersave/PowerSaveSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2234,7 +2064,6 @@
 
     const/4 v2, 0x0
 
-    .line 569
     iget-object v3, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSaveMode:Lcom/android/settings_ex/powersave/PowerSaveListPreference;
 
     if-nez p1, :cond_0
@@ -2244,7 +2073,6 @@
     :goto_0
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/powersave/PowerSaveListPreference;->setEnabled(Z)V
 
-    .line 570
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveSettings;->mPowerSavingItemsCategory:Landroid/preference/PreferenceCategory;
 
     if-nez p1, :cond_1

@@ -38,18 +38,14 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 37
     invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
-    .line 43
     iput-boolean v1, p0, Lcom/android/settings_ex/RcseSettings;->hasIccCard:Z
 
-    .line 44
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/RcseSettings;->mCheckBoxService:Landroid/preference/CheckBoxPreference;
 
-    .line 45
     iput-boolean v1, p0, Lcom/android/settings_ex/RcseSettings;->bRcs_e_service_in_DB:Z
 
     return-void
@@ -60,7 +56,6 @@
     .parameter "x0"
 
     .prologue
-    .line 37
     iget-object v0, p0, Lcom/android/settings_ex/RcseSettings;->mCheckBoxService:Landroid/preference/CheckBoxPreference;
 
     return-object v0
@@ -70,7 +65,6 @@
     .locals 1
 
     .prologue
-    .line 37
     sget-object v0, Lcom/android/settings_ex/RcseSettings;->IMSI:Ljava/lang/String;
 
     return-object v0
@@ -82,25 +76,20 @@
     .prologue
     const/4 v8, 0x1
 
-    .line 236
     const/4 v6, 0x0
 
-    .line 237
     .local v6, mAgreement:Z
     const/4 v7, 0x0
 
-    .line 238
     .local v7, mCursor:Landroid/database/Cursor;
     const/4 v0, 0x0
 
-    .line 240
     .local v0, mContentResolver:Landroid/content/ContentResolver;
     :try_start_0
     invoke-virtual {p0}, Lcom/android/settings_ex/RcseSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 241
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -222,12 +211,10 @@
 
     const/4 v2, 0x0
 
-    .line 87
     invoke-virtual {p0}, Lcom/android/settings_ex/RcseSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 88
     .local v0, mContentResolver:Landroid/content/ContentResolver;
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -300,35 +287,29 @@
     :goto_0
     iput-boolean v1, p0, Lcom/android/settings_ex/RcseSettings;->bRcs_e_service_in_DB:Z
 
-    .line 94
     iget-object v1, p0, Lcom/android/settings_ex/RcseSettings;->mCheckBoxService:Landroid/preference/CheckBoxPreference;
 
     iget-boolean v2, p0, Lcom/android/settings_ex/RcseSettings;->bRcs_e_service_in_DB:Z
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 96
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 99
     :cond_0
     iget-boolean v1, p0, Lcom/android/settings_ex/RcseSettings;->hasIccCard:Z
 
     if-nez v1, :cond_1
 
-    .line 100
     iget-object v1, p0, Lcom/android/settings_ex/RcseSettings;->mCheckBoxService:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v8}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 102
     :cond_1
     return-void
 
     :cond_2
     move v1, v8
 
-    .line 93
     goto :goto_0
 .end method
 
@@ -388,22 +369,18 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 196
     new-instance v2, Lcom/android/settings_ex/RcseSettings$3;
 
     invoke-direct {v2, p0}, Lcom/android/settings_ex/RcseSettings$3;-><init>(Lcom/android/settings_ex/RcseSettings;)V
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 212
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v1
 
-    .line 215
     invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
-    .line 216
     return-void
 .end method
 
@@ -432,15 +409,12 @@
 
     sput-object v2, Lcom/android/settings_ex/RcseSettings;->IMSI:Ljava/lang/String;
 
-    .line 225
     sget-object v2, Lcom/android/settings_ex/RcseSettings;->IMSI:Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
-    .line 226
     const/4 v1, 0x1
 
-    .line 227
     const-string v2, "JJJJJ"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -487,33 +461,26 @@
     .parameter "data"
 
     .prologue
-    .line 264
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 265
     invoke-direct {p0}, Lcom/android/settings_ex/RcseSettings;->checkAgreement()Z
 
     move-result v0
 
-    .line 267
     .local v0, mAgreement:Z
     packed-switch p1, :pswitch_data_0
 
-    .line 275
     :cond_0
     :goto_0
     return-void
 
-    .line 269
     :pswitch_0
     if-nez v0, :cond_0
 
-    .line 270
     invoke-virtual {p0}, Lcom/android/settings_ex/RcseSettings;->finish()V
 
     goto :goto_0
 
-    .line 267
     nop
 
     :pswitch_data_0
@@ -528,12 +495,10 @@
     .parameter "arg1"
 
     .prologue
-    .line 155
     invoke-virtual {p0}, Lcom/android/settings_ex/RcseSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 157
     .local v0, resolver:Landroid/content/ContentResolver;
     iget-object v1, p0, Lcom/android/settings_ex/RcseSettings;->mCheckBoxService:Landroid/preference/CheckBoxPreference;
 
@@ -553,10 +518,8 @@
     .parameter "newConfig"
 
     .prologue
-    .line 144
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 145
     return-void
 .end method
 
@@ -567,15 +530,12 @@
     .prologue
     const/4 v9, 0x1
 
-    .line 50
     invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 52
     const v6, 0x7f04008c
 
     invoke-virtual {p0, v6}, Lcom/android/settings_ex/RcseSettings;->addPreferencesFromResource(I)V
 
-    .line 53
     const-string v6, "rcs_e_service"
 
     invoke-virtual {p0, v6}, Lcom/android/settings_ex/RcseSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -652,31 +612,26 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 63
     invoke-direct {p0}, Lcom/android/settings_ex/RcseSettings;->readIMSI()Z
 
-    .line 64
     invoke-direct {p0}, Lcom/android/settings_ex/RcseSettings;->checkAgreement()Z
 
     move-result v6
 
     if-nez v6, :cond_0
 
-    .line 65
     const-string v6, "JJJJJ"
 
     const-string v7, "INININ"
 
     invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 66
     new-instance v4, Landroid/content/Intent;
 
     const-string v6, "com.lge.ims.ac.AC_TERMS_REQUEST"
 
     invoke-direct {v4, v6}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 67
     .local v4, itTerm:Landroid/content/Intent;
     invoke-virtual {p0}, Lcom/android/settings_ex/RcseSettings;->getActivity()Landroid/app/Activity;
 
@@ -697,22 +652,18 @@
 
     invoke-virtual {v1, v6, v7}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 70
     const/high16 v6, 0x3400
 
     invoke-virtual {v1, v6}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 71
     const-string v6, "type"
 
     const-string v7, "starter_activity"
 
     invoke-virtual {v1, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 72
     invoke-virtual {p0, v1, v9}, Lcom/android/settings_ex/RcseSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 74
     .end local v1           #intent:Landroid/content/Intent;
     .end local v4           #itTerm:Landroid/content/Intent;
     :cond_0
@@ -730,18 +681,15 @@
 
     check-cast v5, Landroid/preference/PreferenceGroup;
 
-    .line 77
     .local v5, parentPreference:Landroid/preference/PreferenceGroup;
     const-string v6, "rcs_e_terms"
 
     invoke-static {v0, v5, v6, v9}, Lcom/android/settings_ex/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
-    .line 79
     const-string v6, "rcs_e_privacy"
 
     invoke-static {v0, v5, v6, v9}, Lcom/android/settings_ex/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
-    .line 82
     return-void
 .end method
 
@@ -765,30 +713,25 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 117
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 118
     .local v1, mIntent:Landroid/content/Intent;
     invoke-virtual {p0}, Lcom/android/settings_ex/RcseSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 120
     .local v0, mContentResolver:Landroid/content/ContentResolver;
     new-instance v2, Landroid/content/ContentValues;
 
     invoke-direct {v2}, Landroid/content/ContentValues;-><init>()V
 
-    .line 123
     .local v2, row:Landroid/content/ContentValues;
     iget-object v3, p0, Lcom/android/settings_ex/RcseSettings;->mCheckBoxService:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v3, :cond_0
 
-    .line 124
     iget-object v3, p0, Lcom/android/settings_ex/RcseSettings;->mCheckBoxService:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -835,19 +778,16 @@
 
     invoke-virtual {v0, v3, v2, v5, v5}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 128
     const-string v3, "com.lge.ims.action.SETTINGS_CHANGED"
 
     invoke-virtual {v1, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 129
     invoke-virtual {p0}, Lcom/android/settings_ex/RcseSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
     invoke-virtual {v3, v1}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 138
     :cond_0
     :goto_0
     invoke-super {p0, p1, p2}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
@@ -856,11 +796,9 @@
 
     return v3
 
-    .line 131
     :cond_1
     invoke-direct {p0}, Lcom/android/settings_ex/RcseSettings;->rcs_e_service_dialog()V
 
-    .line 132
     iget-object v3, p0, Lcom/android/settings_ex/RcseSettings;->mCheckBoxService:Landroid/preference/CheckBoxPreference;
 
     iget-boolean v4, p0, Lcom/android/settings_ex/RcseSettings;->bRcs_e_service_in_DB:Z
@@ -874,20 +812,16 @@
     .locals 1
 
     .prologue
-    .line 108
     invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
-    .line 109
     invoke-direct {p0}, Lcom/android/settings_ex/RcseSettings;->init_UI()V
 
-    .line 110
     invoke-direct {p0}, Lcom/android/settings_ex/RcseSettings;->checkAgreement()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 113
     :cond_0
     return-void
 .end method

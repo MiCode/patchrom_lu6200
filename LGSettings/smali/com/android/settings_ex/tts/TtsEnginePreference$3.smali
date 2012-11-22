@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 156
     iput-object p1, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$3;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -71,7 +70,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 161
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$3;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     #getter for: Lcom/android/settings_ex/tts/TtsEnginePreference;->mRadioButton:Landroid/widget/RadioButton;
@@ -104,7 +102,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 165
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$3;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     #getter for: Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
@@ -138,7 +135,6 @@
 
     invoke-interface {v0, v1}, Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;->setCurrentChecked(Landroid/widget/Checkable;)V
 
-    .line 168
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$3;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     #getter for: Lcom/android/settings_ex/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;
@@ -154,7 +150,6 @@
 
     invoke-interface {v0, v1}, Lcom/android/settings_ex/tts/TtsEnginePreference$RadioButtonGroupState;->setCurrentKey(Ljava/lang/String;)V
 
-    .line 169
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$3;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     iget-object v1, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$3;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;

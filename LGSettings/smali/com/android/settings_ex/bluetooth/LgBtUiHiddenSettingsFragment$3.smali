@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 480
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "dialog"
 
     .prologue
-    .line 482
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     const-string v1, "[BTUI] ### OnOff Test : onCancel()... STOP test"
@@ -50,7 +48,6 @@
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->BtUiLog(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$300(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Ljava/lang/String;)V
 
-    .line 483
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     const/4 v1, 0x0
@@ -58,12 +55,10 @@
     #setter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mOnOffTest:Z
     invoke-static {v0, v1}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$002(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Z)Z
 
-    .line 484
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$3;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->closeOnOffTestDialog()V
     invoke-static {v0}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$600(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;)V
 
-    .line 485
     return-void
 .end method

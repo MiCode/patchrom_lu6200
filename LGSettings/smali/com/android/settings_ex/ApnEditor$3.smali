@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1046
     iput-object p1, p0, Lcom/android/settings_ex/ApnEditor$3;->this$0:Lcom/android/settings_ex/ApnEditor;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +44,6 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1049
     iget-object v0, p0, Lcom/android/settings_ex/ApnEditor$3;->this$0:Lcom/android/settings_ex/ApnEditor;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
@@ -61,11 +59,9 @@
 
     invoke-virtual {v0, v1, v2, v2}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 1050
     iget-object v0, p0, Lcom/android/settings_ex/ApnEditor$3;->this$0:Lcom/android/settings_ex/ApnEditor;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/ApnEditor;->finish()V
 
-    .line 1051
     return-void
 .end method

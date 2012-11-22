@@ -73,16 +73,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 108
     sput v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->beforeConfirm:I
 
-    .line 109
     sput v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->afterConfirm:I
 
-    .line 110
     sput v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->checkConfig:I
 
-    .line 111
     sput-boolean v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->nextClick:Z
 
     return-void
@@ -92,32 +88,26 @@
     .locals 1
 
     .prologue
-    .line 153
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
-    .line 91
     const/4 v0, 0x4
 
     iput v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordMinLength:I
 
-    .line 92
     const/16 v0, 0x10
 
     iput v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordMaxLength:I
 
-    .line 93
     sget-object v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->Introduction:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     iput-object v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mUiStage:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
-    .line 117
     new-instance v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$1;-><init>(Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;)V
 
     iput-object v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mHandler:Landroid/os/Handler;
 
-    .line 155
     return-void
 .end method
 
@@ -125,7 +115,6 @@
     .locals 4
 
     .prologue
-    .line 303
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -158,7 +147,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 305
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -167,14 +155,12 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 306
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-virtual {v1}, Landroid/app/Activity;->finish()V
 
-    .line 310
     :goto_0
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getActivity()Landroid/app/Activity;
 
@@ -202,7 +188,6 @@
     .locals 6
 
     .prologue
-    .line 255
     iget-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v4}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -247,23 +232,18 @@
 
     if-ne v4, v5, :cond_3
 
-    .line 265
     invoke-direct {p0, v3}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->validatePassword(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 266
     if-nez v1, :cond_2
 
-    .line 268
     iput-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mFirstPin:Ljava/lang/String;
 
-    .line 269
     sget-object v4, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->NeedToConfirm:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->updateStage(Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;)V
 
-    .line 270
     iget-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     const-string v5, ""
@@ -272,22 +252,18 @@
 
     goto :goto_0
 
-    .line 273
     :cond_2
     invoke-direct {p0, v3}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->validatePassword(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 274
     .local v0, error:Ljava/lang/String;
     if-eqz v0, :cond_0
 
-    .line 275
     iget-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mHeaderText:Landroid/widget/TextView;
 
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 276
     iget-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mNextButton:Landroid/widget/Button;
 
     const/4 v5, 0x0
@@ -305,12 +281,10 @@
 
     if-ne v4, v5, :cond_0
 
-    .line 280
     invoke-direct {p0, v3}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->validatePassword(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 281
     iget-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mFirstPin:Ljava/lang/String;
 
     invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -319,7 +293,6 @@
 
     if-eqz v4, :cond_4
 
-    .line 282
     new-instance v4, Lcom/android/settings_ex/PinSettingsUtils;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getActivity()Landroid/app/Activity;
@@ -334,12 +307,10 @@
 
     iput-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mSavePin:Lcom/android/settings_ex/PinSettingsUtils;
 
-    .line 283
     iget-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mSavePin:Lcom/android/settings_ex/PinSettingsUtils;
 
     invoke-virtual {v4, v3}, Lcom/android/settings_ex/PinSettingsUtils;->savePasswrod(Ljava/lang/String;)V
 
-    .line 284
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
@@ -358,7 +329,6 @@
 
     invoke-virtual {v4, v5, v2}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 286
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
@@ -376,12 +346,10 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 292
     sget-object v4, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->ConfirmWrong:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->updateStage(Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;)V
 
-    .line 293
     iget-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->visible:Landroid/widget/CheckBox;
 
     invoke-virtual {v4}, Landroid/widget/CheckBox;->isChecked()Z
@@ -408,7 +376,6 @@
 
     const/4 v4, 0x0
 
-    .line 348
     iget-object v5, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v5}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -433,21 +400,17 @@
 
     if-ne v5, v6, :cond_3
 
-    .line 352
     iget v5, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordMinLength:I
 
     if-ge v0, v5, :cond_1
 
-    .line 353
     invoke-direct {p0, v2}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->validatePassword(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 354
     .local v1, msg:Ljava/lang/String;
     if-nez v0, :cond_0
 
-    .line 355
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mHeaderText:Landroid/widget/TextView;
 
     iget-object v5, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mUiStage:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
@@ -456,18 +419,15 @@
 
     invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(I)V
 
-    .line 358
     :goto_0
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mDescText:Landroid/widget/TextView;
 
     invoke-virtual {v3, v7}, Landroid/widget/TextView;->setText(I)V
 
-    .line 359
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mNextButton:Landroid/widget/Button;
 
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 386
     .end local v1           #msg:Ljava/lang/String;
     :goto_1
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mNextButton:Landroid/widget/Button;
@@ -490,55 +450,46 @@
 
     goto :goto_0
 
-    .line 362
     .end local v1           #msg:Ljava/lang/String;
     :cond_1
     invoke-direct {p0, v2}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->validatePassword(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 364
     .restart local v1       #msg:Ljava/lang/String;
     if-nez v1, :cond_2
 
-    .line 366
     iget-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mHeaderText:Landroid/widget/TextView;
 
     const v5, 0x7f0808f4
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
-    .line 367
     iget-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mDescText:Landroid/widget/TextView;
 
     invoke-virtual {v4, v7}, Landroid/widget/TextView;->setText(I)V
 
-    .line 368
     iget-object v4, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mNextButton:Landroid/widget/Button;
 
     invoke-virtual {v4, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
     goto :goto_1
 
-    .line 372
     :cond_2
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mHeaderText:Landroid/widget/TextView;
 
     invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 373
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mDescText:Landroid/widget/TextView;
 
     invoke-virtual {v3, v7}, Landroid/widget/TextView;->setText(I)V
 
-    .line 374
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mNextButton:Landroid/widget/Button;
 
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     goto :goto_1
 
-    .line 379
     .end local v1           #msg:Ljava/lang/String;
     :cond_3
     iget-object v5, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mHeaderText:Landroid/widget/TextView;
@@ -549,21 +500,18 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
-    .line 380
     iget-object v5, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mCancelButton:Landroid/widget/Button;
 
     const v6, 0x7f0801a2
 
     invoke-virtual {v5, v6}, Landroid/widget/Button;->setText(I)V
 
-    .line 381
     iget-object v5, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mDescText:Landroid/widget/TextView;
 
     const-string v6, ""
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 382
     iget-object v5, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mNextButton:Landroid/widget/Button;
 
     if-lez v0, :cond_4
@@ -571,7 +519,6 @@
     :goto_2
     invoke-virtual {v5, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 383
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPassword:Landroid/widget/EditText;
 
     const/4 v4, 0x6
@@ -592,14 +539,12 @@
     .parameter "password"
 
     .prologue
-    .line 235
     iget-object v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mUiStage:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     sget-object v1, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->Introduction:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     if-ne v0, v1, :cond_1
 
-    .line 236
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -608,18 +553,15 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 238
     const v0, 0x7f0808f3
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 251
     :goto_0
     return-object v0
 
-    .line 240
     :cond_0
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -706,33 +648,27 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 394
     sget v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->beforeConfirm:I
 
     sget v1, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->afterConfirm:I
 
     if-ne v0, v1, :cond_2
 
-    .line 395
     const-string v0, "hong"
 
     const-string v1, "@@"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 396
     sput v2, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->beforeConfirm:I
 
-    .line 411
     :cond_0
     :goto_0
     invoke-direct {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->updateUi()V
 
-    .line 413
     :cond_1
     return-void
 
-    .line 399
     :cond_2
     iget-object v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mUiStage:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
@@ -740,7 +676,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 400
     iget-object v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->visible:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -759,23 +694,19 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 402
     sget-boolean v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->nextClick:Z
 
     if-eqz v0, :cond_1
 
-    .line 405
     sget-object v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->NeedToConfirm:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     iput-object v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mUiStage:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
-    .line 407
     :cond_3
     sget-object v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->NeedToConfirm:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     iput-object v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mUiStage:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
-    .line 408
     sput-boolean v2, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->nextClick:Z
 
     goto :goto_0
@@ -799,21 +730,18 @@
     .parameter "checked"
 
     .prologue
-    .line 426
     iget-object v2, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->visible:Landroid/widget/CheckBox;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Landroid/widget/CheckBox;->playSoundEffect(I)V
 
-    .line 428
     iget-object v2, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getSelectionStart()I
 
     move-result v1
 
-    .line 429
     .local v1, selectionStart:I
     iget-object v2, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
@@ -821,25 +749,21 @@
 
     move-result v0
 
-    .line 431
     .local v0, selectionEnd:I
     if-eqz p2, :cond_0
 
-    .line 433
     iget-object v2, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     const/4 v3, 0x2
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setInputType(I)V
 
-    .line 434
     iget-object v2, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     sget-object v3, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->typeface:Landroid/graphics/Typeface;
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 440
     :goto_0
     iget-object v2, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
@@ -866,30 +790,25 @@
     .parameter "v"
 
     .prologue
-    .line 314
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 323
     :goto_0
     return-void
 
-    .line 316
     :sswitch_0
     invoke-direct {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->handleNext()V
 
     goto :goto_0
 
-    .line 320
     :sswitch_1
     invoke-direct {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->handleCancel()V
 
     goto :goto_0
 
-    .line 314
     :sswitch_data_0
     .sparse-switch
         0x7f0b0009 -> :sswitch_0
@@ -902,20 +821,16 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 159
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 161
     sget v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->afterConfirm:I
 
     sput v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->beforeConfirm:I
 
-    .line 162
     const/4 v0, 0x1
 
     sput v0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->afterConfirm:I
 
-    .line 164
     return-void
 .end method
 
@@ -947,12 +862,10 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mCancelButton:Landroid/widget/Button;
 
-    .line 171
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mCancelButton:Landroid/widget/Button;
 
     invoke-virtual {v3, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 172
     const v3, 0x7f0b0009
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -963,12 +876,10 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mNextButton:Landroid/widget/Button;
 
-    .line 173
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mNextButton:Landroid/widget/Button;
 
     invoke-virtual {v3, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 174
     const v3, 0x7f0b0042
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -979,29 +890,24 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPassword:Landroid/widget/EditText;
 
-    .line 175
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPassword:Landroid/widget/EditText;
 
     iput-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
-    .line 176
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     const/16 v4, 0x12
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setInputType(I)V
 
-    .line 177
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v3, p0}, Landroid/widget/TextView;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
-    .line 178
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v3, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 179
     const v3, 0x7f0b0043
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1012,19 +918,16 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->visible:Landroid/widget/CheckBox;
 
-    .line 180
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->visible:Landroid/widget/CheckBox;
 
     const v4, 0x7f0808ac
 
     invoke-virtual {v3, v4}, Landroid/widget/CheckBox;->setText(I)V
 
-    .line 181
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->visible:Landroid/widget/CheckBox;
 
     invoke-virtual {v3, p0}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 182
     const v3, 0x7f0b0040
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1046,7 +949,6 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mDescText:Landroid/widget/TextView;
 
-    .line 184
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getTypeface()Landroid/graphics/Typeface;
@@ -1055,22 +957,18 @@
 
     sput-object v3, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->typeface:Landroid/graphics/Typeface;
 
-    .line 186
     if-nez p3, :cond_2
 
-    .line 187
     sget-object v3, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->Introduction:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->updateStage(Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;)V
 
-    .line 199
     :cond_0
     :goto_0
     sget-boolean v3, Lcom/lge/config/ConfigBuildFlags;->CAPP_MDM:Z
 
     if-eqz v3, :cond_1
 
-    .line 200
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -1089,7 +987,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 202
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -1102,7 +999,6 @@
 
     invoke-virtual {v3, v4}, Landroid/view/Window;->addFlags(I)V
 
-    .line 203
     invoke-virtual {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -1130,25 +1026,21 @@
 
     iput-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mFirstPin:Ljava/lang/String;
 
-    .line 192
     const-string v3, "ui_stage"
 
     invoke-virtual {p3, v3}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 193
     .local v1, state:Ljava/lang/String;
     if-eqz v1, :cond_0
 
-    .line 194
     invoke-static {v1}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;->valueOf(Ljava/lang/String;)Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     move-result-object v3
 
     iput-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mUiStage:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
-    .line 195
     iget-object v3, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mUiStage:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->updateStage(Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;)V
@@ -1174,14 +1066,11 @@
 
     if-ne p2, v0, :cond_1
 
-    .line 338
     :cond_0
     invoke-direct {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->handleNext()V
 
-    .line 339
     const/4 v0, 0x1
 
-    .line 341
     :goto_0
     return v0
 
@@ -1195,17 +1084,14 @@
     .locals 2
 
     .prologue
-    .line 218
     iget-object v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 219
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
-    .line 220
     return-void
 .end method
 
@@ -1213,15 +1099,12 @@
     .locals 1
 
     .prologue
-    .line 212
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
-    .line 213
     iget-object v0, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mUiStage:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->updateStage(Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;)V
 
-    .line 214
     return-void
 .end method
 
@@ -1244,14 +1127,12 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 226
     const-string v0, "first_pin"
 
     iget-object v1, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mFirstPin:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 227
     return-void
 .end method
 
@@ -1272,12 +1153,9 @@
     .parameter "stage"
 
     .prologue
-    .line 230
     iput-object p1, p0, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->mUiStage:Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment$Stage;
 
-    .line 231
     invoke-direct {p0}, Lcom/android/settings_ex/ChooseBackupPin$ChooseBackupPinFragment;->updateUi()V
 
-    .line 232
     return-void
 .end method

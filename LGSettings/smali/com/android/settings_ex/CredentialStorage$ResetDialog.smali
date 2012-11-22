@@ -30,12 +30,10 @@
     .parameter
 
     .prologue
-    .line 209
     iput-object p1, p0, Lcom/android/settings_ex/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings_ex/CredentialStorage;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 210
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, p1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -91,7 +89,6 @@
     .parameter "x1"
 
     .prologue
-    .line 204
     invoke-direct {p0, p1}, Lcom/android/settings_ex/CredentialStorage$ResetDialog;-><init>(Lcom/android/settings_ex/CredentialStorage;)V
 
     return-void
@@ -132,15 +129,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 226
     iget-boolean v0, p0, Lcom/android/settings_ex/CredentialStorage$ResetDialog;->mResetConfirmed:Z
 
     if-eqz v0, :cond_0
 
-    .line 227
     iput-boolean v3, p0, Lcom/android/settings_ex/CredentialStorage$ResetDialog;->mResetConfirmed:Z
 
-    .line 228
     new-instance v0, Lcom/android/settings_ex/CredentialStorage$ResetKeyStoreAndKeyChain;
 
     iget-object v1, p0, Lcom/android/settings_ex/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings_ex/CredentialStorage;

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 300
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$DeviceDisappearedHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 300
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$DeviceDisappearedHandler;-><init>(Lcom/android/settings_ex/bluetooth/BluetoothEventManager;)V
 
     return-void
@@ -56,7 +54,6 @@
     .parameter "device"
 
     .prologue
-    .line 303
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$DeviceDisappearedHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->mDeviceManager:Lcom/android/settings_ex/bluetooth/CachedBluetoothDeviceManager;
@@ -68,11 +65,9 @@
 
     move-result-object v0
 
-    .line 304
     .local v0, cachedDevice:Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;
     if-nez v0, :cond_1
 
-    .line 305
     const-string v3, "BluetoothEventManager"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -108,7 +103,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 309
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/BluetoothEventManager$DeviceDisappearedHandler;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothEventManager;
 
     #getter for: Lcom/android/settings_ex/bluetooth/BluetoothEventManager;->mCallbacks:Ljava/util/Collection;
@@ -145,13 +139,11 @@
 
     check-cast v1, Lcom/android/settings_ex/bluetooth/BluetoothCallback;
 
-    .line 311
     .local v1, callback:Lcom/android/settings_ex/bluetooth/BluetoothCallback;
     invoke-interface {v1, v0}, Lcom/android/settings_ex/bluetooth/BluetoothCallback;->onDeviceDeleted(Lcom/android/settings_ex/bluetooth/CachedBluetoothDevice;)V
 
     goto :goto_1
 
-    .line 313
     .end local v1           #callback:Lcom/android/settings_ex/bluetooth/BluetoothCallback;
     .end local v2           #i$:Ljava/util/Iterator;
     :catchall_0

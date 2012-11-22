@@ -27,7 +27,6 @@
     .parameter "x2"
 
     .prologue
-    .line 442
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule2$1;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule2;
 
     invoke-direct {p0, p2, p3, p4}, Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;-><init>(Landroid/content/Context;II)V

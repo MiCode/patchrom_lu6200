@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 314
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings_ex/wifi/WifiStatusTest;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 2
 
     .prologue
-    .line 316
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings_ex/wifi/WifiStatusTest;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiStatusTest;->mPingIpAddr:Landroid/widget/TextView;
@@ -58,7 +56,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 317
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings_ex/wifi/WifiStatusTest;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiStatusTest;->mPingHostname:Landroid/widget/TextView;
@@ -75,7 +72,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 318
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings_ex/wifi/WifiStatusTest;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiStatusTest;->mHttpClientTest:Landroid/widget/TextView;

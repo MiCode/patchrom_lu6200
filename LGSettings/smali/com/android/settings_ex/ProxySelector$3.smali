@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 287
     iput-object p1, p0, Lcom/android/settings_ex/ProxySelector$3;->this$0:Lcom/android/settings_ex/ProxySelector;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,11 +41,9 @@
     .parameter "v"
 
     .prologue
-    .line 290
     iget-object v0, p0, Lcom/android/settings_ex/ProxySelector$3;->this$0:Lcom/android/settings_ex/ProxySelector;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/ProxySelector;->populateFields()V
 
-    .line 291
     return-void
 .end method

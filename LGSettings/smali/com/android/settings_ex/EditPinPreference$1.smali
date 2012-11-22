@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 155
     iput-object p1, p0, Lcom/android/settings_ex/EditPinPreference$1;->this$0:Lcom/android/settings_ex/EditPinPreference;
 
     iput-object p2, p0, Lcom/android/settings_ex/EditPinPreference$1;->val$editText:Landroid/widget/EditText;
@@ -46,7 +45,6 @@
     .locals 4
 
     .prologue
-    .line 157
     iget-object v2, p0, Lcom/android/settings_ex/EditPinPreference$1;->this$0:Lcom/android/settings_ex/EditPinPreference;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/EditPinPreference;->getContext()Landroid/content/Context;

@@ -47,49 +47,39 @@
     .end annotation
 
     .prologue
-    .line 49
     .local p4, authorities:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 50
     iput-object p2, p0, Lcom/android/settings_ex/AccountPreference;->mAccount:Landroid/accounts/Account;
 
-    .line 51
     iput-object p4, p0, Lcom/android/settings_ex/AccountPreference;->mAuthorities:Ljava/util/ArrayList;
 
-    .line 52
     iput-object p3, p0, Lcom/android/settings_ex/AccountPreference;->mProviderIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 53
     const v0, 0x7f040005
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/AccountPreference;->setWidgetLayoutResource(I)V
 
-    .line 54
     iget-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mAccount:Landroid/accounts/Account;
 
     iget-object v0, v0, Landroid/accounts/Account;->name:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/AccountPreference;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 55
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/AccountPreference;->setPersistent(Z)V
 
-    .line 56
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/AccountPreference;->setSyncStatus(I)V
 
-    .line 57
     iget-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mProviderIcon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/AccountPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
-    .line 58
     return-void
 .end method
 
@@ -126,7 +116,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 145
     invoke-virtual {p0}, Lcom/android/settings_ex/AccountPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -281,20 +270,16 @@
     .parameter "other"
 
     .prologue
-    .line 151
     instance-of v0, p1, Lcom/android/settings_ex/AccountPreference;
 
     if-nez v0, :cond_0
 
-    .line 153
     const/4 v0, 0x1
 
-    .line 157
     .end local p1
     :goto_0
     return v0
 
-    .line 155
     .restart local p1
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings_ex/AccountPreference;->getOrder()I
@@ -307,7 +292,6 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 156
     invoke-virtual {p0}, Lcom/android/settings_ex/AccountPreference;->getOrder()I
 
     move-result v0
@@ -360,7 +344,6 @@
     .locals 1
 
     .prologue
-    .line 61
     iget-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mAccount:Landroid/accounts/Account;
 
     return-object v0
@@ -379,7 +362,6 @@
     .end annotation
 
     .prologue
-    .line 65
     iget-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mAuthorities:Ljava/util/ArrayList;
 
     return-object v0
@@ -404,7 +386,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
-    .line 73
     iget-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
     iget v1, p0, Lcom/android/settings_ex/AccountPreference;->mStatus:I
@@ -415,7 +396,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 74
     iget-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
     iget v1, p0, Lcom/android/settings_ex/AccountPreference;->mStatus:I
@@ -435,20 +415,16 @@
     .parameter "icon"
 
     .prologue
-    .line 78
     iput-object p1, p0, Lcom/android/settings_ex/AccountPreference;->mProviderIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 79
     iget-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mProviderIconView:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    .line 80
     iget-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mProviderIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 82
     :cond_0
     return-void
 .end method
@@ -458,15 +434,12 @@
     .parameter "status"
 
     .prologue
-    .line 85
     iput p1, p0, Lcom/android/settings_ex/AccountPreference;->mStatus:I
 
-    .line 86
     iget-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    .line 87
     iget-object v0, p0, Lcom/android/settings_ex/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
     invoke-direct {p0, p1}, Lcom/android/settings_ex/AccountPreference;->getSyncStatusIcon(I)I

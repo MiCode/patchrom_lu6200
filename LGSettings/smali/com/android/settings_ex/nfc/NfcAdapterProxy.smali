@@ -28,30 +28,24 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 22
     sput-boolean v6, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->mHasAddonAdapter:Z
 
-    .line 24
     const/16 v4, 0xa
 
     sput v4, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->STATE_DISCOVERY_OFF:I
 
-    .line 25
     const/16 v4, 0xb
 
     sput v4, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->STATE_DISCOVERY_ON:I
 
-    .line 26
     const/16 v4, 0xc
 
     sput v4, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->STATE_TURNING_DISCOVERY_ON:I
 
-    .line 27
     const/16 v4, 0xd
 
     sput v4, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->STATE_TURNING_DISCOVERY_OFF:I
 
-    .line 34
     :try_start_0
     const-string v4, "com.lge.nfcaddon.NfcAdapterAddon"
 
@@ -153,16 +147,13 @@
 
     move-result-object v0
 
-    .line 43
     .local v0, addonObj:Ljava/lang/Object;
     if-nez v0, :cond_0
 
-    .line 44
     const/4 v4, 0x0
 
     sput-boolean v4, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->mHasAddonAdapter:Z
 
-    .line 49
     :goto_0
     const-string v4, "NfcAdapterProxy"
 
@@ -188,17 +179,14 @@
 
     goto :goto_0
 
-    .line 51
     .end local v0           #addonObj:Ljava/lang/Object;
     .end local v3           #m:Ljava/lang/reflect/Method;
     :catch_0
     move-exception v2
 
-    .line 52
     .local v2, e:Ljava/lang/Exception;
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 53
     sput-boolean v6, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->mHasAddonAdapter:Z
 
     goto :goto_1
@@ -211,16 +199,12 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 60
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 29
     iput-object v2, p0, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->mNfcAdapterAddonCls:Ljava/lang/Class;
 
-    .line 30
     iput-object v2, p0, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->mNfcAdapterAddonObj:Ljava/lang/Object;
 
-    .line 62
     :try_start_0
     const-string v2, "com.lge.nfcaddon.NfcAdapterAddon"
 
@@ -230,7 +214,6 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->mNfcAdapterAddonCls:Ljava/lang/Class;
 
-    .line 63
     iget-object v3, p0, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->mNfcAdapterAddonCls:Ljava/lang/Class;
 
     const-string v4, "getNfcAdapterAddon"
@@ -287,7 +270,6 @@
     .locals 1
 
     .prologue
-    .line 58
     sget-boolean v0, Lcom/android/settings_ex/nfc/NfcAdapterProxy;->mHasAddonAdapter:Z
 
     return v0

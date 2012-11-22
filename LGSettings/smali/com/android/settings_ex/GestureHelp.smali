@@ -81,71 +81,50 @@
 
     const/4 v0, 0x0
 
-    .line 38
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 41
     iput v2, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
-    .line 42
     iput v2, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
 
-    .line 44
     iput v1, p0, Lcom/android/settings_ex/GestureHelp;->start:F
 
-    .line 45
     iput v1, p0, Lcom/android/settings_ex/GestureHelp;->end:F
 
-    .line 47
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->title:Landroid/widget/TextView;
 
-    .line 48
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
-    .line 49
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->description:Landroid/widget/TextView;
 
-    .line 50
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->navigation0:Landroid/widget/ImageView;
 
-    .line 51
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->navigation1:Landroid/widget/ImageView;
 
-    .line 52
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->navigation2:Landroid/widget/ImageView;
 
-    .line 53
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->navigation3:Landroid/widget/ImageView;
 
-    .line 54
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->navigation4:Landroid/widget/ImageView;
 
-    .line 55
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->navigation5:Landroid/widget/ImageView;
 
-    .line 56
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->navigation6:Landroid/widget/ImageView;
 
-    .line 58
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
-    .line 59
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
-    .line 60
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mPrevious:Landroid/widget/Button;
 
-    .line 61
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mNext:Landroid/widget/Button;
 
-    .line 76
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mHandler:Landroid/os/Handler;
 
-    .line 77
     new-instance v0, Lcom/android/settings_ex/GestureHelp$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/GestureHelp$1;-><init>(Lcom/android/settings_ex/GestureHelp;)V
@@ -160,7 +139,6 @@
     .parameter "x0"
 
     .prologue
-    .line 38
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     return-object v0
@@ -171,7 +149,6 @@
     .parameter "x0"
 
     .prologue
-    .line 38
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     return-object v0
@@ -182,7 +159,6 @@
     .parameter "x0"
 
     .prologue
-    .line 38
     iget v0, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
     return v0
@@ -193,7 +169,6 @@
     .parameter "x0"
 
     .prologue
-    .line 38
     invoke-direct {p0}, Lcom/android/settings_ex/GestureHelp;->next()V
 
     return-void
@@ -204,7 +179,6 @@
     .parameter "x0"
 
     .prologue
-    .line 38
     invoke-direct {p0}, Lcom/android/settings_ex/GestureHelp;->previous()V
 
     return-void
@@ -227,7 +201,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 345
     iget-object v1, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -254,14 +227,12 @@
     .locals 2
 
     .prologue
-    .line 111
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
-    .line 113
     const v0, 0x7f0b000b
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/GestureHelp;->findViewById(I)Landroid/view/View;
@@ -393,62 +364,52 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->navigation6:Landroid/widget/ImageView;
 
-    .line 126
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureHelp;->navigation0:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 127
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureHelp;->navigation1:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 128
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureHelp;->navigation2:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 129
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureHelp;->navigation3:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 130
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureHelp;->navigation4:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 131
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureHelp;->navigation5:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 132
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureHelp;->navigation6:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 134
     invoke-direct {p0}, Lcom/android/settings_ex/GestureHelp;->setDefaultSettings()V
 
-    .line 135
     invoke-direct {p0}, Lcom/android/settings_ex/GestureHelp;->rearrangedViewPage()V
 
-    .line 136
     return-void
 .end method
 
@@ -456,14 +417,12 @@
     .locals 6
 
     .prologue
-    .line 298
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v2}, Landroid/widget/ViewFlipper;->getDisplayedChild()I
 
     move-result v1
 
-    .line 299
     .local v1, childId:I
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
@@ -471,18 +430,15 @@
 
     move-result v0
 
-    .line 301
     .local v0, childCount:I
     iget v2, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
     if-eq v1, v2, :cond_0
 
-    .line 302
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/GestureHelp;->stopAnimation(Landroid/graphics/drawable/AnimationDrawable;)V
 
-    .line 303
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     const/high16 v3, 0x7f05
@@ -493,7 +449,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 304
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f050005
@@ -504,19 +459,16 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 306
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     add-int/lit8 v3, v1, 0x1
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setDisplayedChild(I)V
 
-    .line 307
     add-int/lit8 v2, v1, 0x1
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/GestureHelp;->setAnimationView(I)V
 
-    .line 308
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->mHandler:Landroid/os/Handler;
 
     iget-object v3, p0, Lcom/android/settings_ex/GestureHelp;->mRunnable:Ljava/lang/Runnable;
@@ -534,14 +486,12 @@
     .locals 6
 
     .prologue
-    .line 312
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v2}, Landroid/widget/ViewFlipper;->getDisplayedChild()I
 
     move-result v1
 
-    .line 313
     .local v1, childId:I
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
@@ -549,16 +499,13 @@
 
     move-result v0
 
-    .line 315
     .local v0, childCount:I
     if-eqz v1, :cond_1
 
-    .line 316
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/GestureHelp;->stopAnimation(Landroid/graphics/drawable/AnimationDrawable;)V
 
-    .line 317
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f05000a
@@ -569,7 +516,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setInAnimation(Landroid/view/animation/Animation;)V
 
-    .line 318
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     const v3, 0x7f05000f
@@ -580,19 +526,16 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V
 
-    .line 320
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     add-int/lit8 v3, v1, -0x1
 
     invoke-virtual {v2, v3}, Landroid/widget/ViewFlipper;->setDisplayedChild(I)V
 
-    .line 321
     add-int/lit8 v2, v1, -0x1
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/GestureHelp;->setAnimationView(I)V
 
-    .line 322
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->mHandler:Landroid/os/Handler;
 
     iget-object v3, p0, Lcom/android/settings_ex/GestureHelp;->mRunnable:Ljava/lang/Runnable;
@@ -601,19 +544,16 @@
 
     invoke-virtual {v2, v3, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 324
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_0
 
-    .line 325
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->mPrevious:Landroid/widget/Button;
 
     const/4 v3, 0x4
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 327
     :cond_0
     iget-object v2, p0, Lcom/android/settings_ex/GestureHelp;->mNext:Landroid/widget/Button;
 
@@ -664,17 +604,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 140
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v3}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 141
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v6}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 143
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -689,7 +626,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 144
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -702,7 +638,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 146
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -713,56 +648,46 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 147
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 149
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 150
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v6}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 152
     iget v0, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
     add-int/lit8 v0, v0, -0x2
 
     iput v0, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
-    .line 236
     :goto_0
     return-void
 
-    .line 154
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v5}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 155
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v4}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 156
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v3}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 157
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v6}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 159
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -777,7 +702,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 160
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -792,7 +716,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 161
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -807,7 +730,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 162
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -820,7 +742,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 164
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -831,7 +752,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 165
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -842,7 +762,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 166
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -853,34 +772,28 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 167
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 169
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 170
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 171
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 172
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v6}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 174
     iget v0, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
     add-int/lit8 v0, v0, -0x4
@@ -901,12 +814,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 177
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v4}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 179
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -919,7 +830,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 181
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -930,12 +840,10 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 183
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 185
     iget v0, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
     add-int/lit8 v0, v0, -0x1
@@ -979,13 +887,11 @@
 
     if-eqz v0, :cond_4
 
-    .line 188
     :cond_3
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v3}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 189
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -998,7 +904,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 190
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1009,12 +914,10 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 191
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 192
     iget v0, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
     add-int/lit8 v0, v0, -0x1
@@ -1023,23 +926,19 @@
 
     goto/16 :goto_0
 
-    .line 194
     :cond_4
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v5}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 195
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v4}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 196
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v3}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 198
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1054,7 +953,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 199
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1069,7 +967,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 200
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1082,7 +979,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 202
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1093,7 +989,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 203
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1104,29 +999,24 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 204
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 206
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 207
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 208
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 210
     iget v0, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
     add-int/lit8 v0, v0, -0x3
@@ -1135,23 +1025,19 @@
 
     goto/16 :goto_0
 
-    .line 216
     :cond_5
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v5}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 217
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v4}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 218
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->vf:Landroid/widget/ViewFlipper;
 
     invoke-virtual {v0, v3}, Landroid/widget/ViewFlipper;->removeViewAt(I)V
 
-    .line 220
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1166,7 +1052,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 221
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1181,7 +1066,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 222
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1194,7 +1078,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 224
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1205,7 +1088,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 225
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
@@ -1216,29 +1098,24 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 226
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/android/settings_ex/GestureHelp;->NAVIGATION_PAGE_COUNT:I
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 228
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 229
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 230
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 232
     iget v0, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
     add-int/lit8 v0, v0, -0x3
@@ -1254,7 +1131,6 @@
     .parameter "drawable"
 
     .prologue
-    .line 350
     invoke-virtual {p0, p1}, Lcom/android/settings_ex/GestureHelp;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1263,12 +1139,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageView:Landroid/view/View;
 
-    .line 351
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageView:Landroid/view/View;
 
     invoke-virtual {v0, p2}, Landroid/view/View;->setBackgroundResource(I)V
 
-    .line 352
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mImageView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
@@ -1287,7 +1161,6 @@
     .locals 2
 
     .prologue
-    .line 255
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mNext:Landroid/widget/Button;
 
     new-instance v1, Lcom/android/settings_ex/GestureHelp$2;
@@ -1296,7 +1169,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 266
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mPrevious:Landroid/widget/Button;
 
     new-instance v1, Lcom/android/settings_ex/GestureHelp$3;
@@ -1324,37 +1196,30 @@
 
     if-ge v1, v4, :cond_0
 
-    .line 241
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    .line 242
     .local v3, viewItem:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     invoke-virtual {p0, v3, v1}, Lcom/android/settings_ex/GestureHelp;->setViewItemGroup(Ljava/util/HashMap;I)Ljava/util/HashMap;
 
     move-result-object v3
 
-    .line 243
     iget-object v4, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 240
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 245
     .end local v3           #viewItem:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     :cond_0
     const v2, 0x7f0b00b3
 
-    .line 246
     .local v2, id:I
     const v0, 0x7f02007a
 
-    .line 248
     .local v0, drawable:I
     iget-object v4, p0, Lcom/android/settings_ex/GestureHelp;->title:Landroid/widget/TextView;
 
@@ -1362,24 +1227,20 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
-    .line 249
     iget-object v4, p0, Lcom/android/settings_ex/GestureHelp;->description:Landroid/widget/TextView;
 
     const v5, 0x7f080707
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
-    .line 250
     iget-object v4, p0, Lcom/android/settings_ex/GestureHelp;->navigation0:Landroid/widget/ImageView;
 
     const v5, 0x7f020072
 
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 251
     invoke-direct {p0, v2, v0}, Lcom/android/settings_ex/GestureHelp;->setAnimationView(II)V
 
-    .line 252
     return-void
 .end method
 
@@ -1390,33 +1251,26 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 86
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 87
     const v0, 0x7f040052
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/GestureHelp;->setContentView(I)V
 
-    .line 88
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
-    .line 89
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
-    .line 91
     invoke-direct {p0}, Lcom/android/settings_ex/GestureHelp;->initView()V
 
-    .line 92
     invoke-direct {p0}, Lcom/android/settings_ex/GestureHelp;->setButtonListener()V
 
-    .line 93
     return-void
 .end method
 
@@ -1424,15 +1278,12 @@
     .locals 1
 
     .prologue
-    .line 103
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 104
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/GestureHelp;->stopAnimation(Landroid/graphics/drawable/AnimationDrawable;)V
 
-    .line 107
     return-void
 .end method
 
@@ -1440,10 +1291,8 @@
     .locals 4
 
     .prologue
-    .line 97
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 98
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp;->mHandler:Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureHelp;->mRunnable:Ljava/lang/Runnable;
@@ -1463,10 +1312,8 @@
     .prologue
     const/16 v10, 0x457
 
-    .line 358
     invoke-direct {p0}, Lcom/android/settings_ex/GestureHelp;->clearNavigation()V
 
-    .line 359
     iget-object v8, p0, Lcom/android/settings_ex/GestureHelp;->animationViewArrayList:Ljava/util/ArrayList;
 
     invoke-virtual {v8, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1573,18 +1420,15 @@
 
     move-result v4
 
-    .line 369
     .local v4, mPreviousRes:I
     iget-object v8, p0, Lcom/android/settings_ex/GestureHelp;->title:Landroid/widget/TextView;
 
     invoke-virtual {v8, v6}, Landroid/widget/TextView;->setText(I)V
 
-    .line 370
     iget-object v8, p0, Lcom/android/settings_ex/GestureHelp;->description:Landroid/widget/TextView;
 
     invoke-virtual {v8, v0}, Landroid/widget/TextView;->setText(I)V
 
-    .line 371
     iget-object v8, p0, Lcom/android/settings_ex/GestureHelp;->mImageViewArray:Ljava/util/ArrayList;
 
     invoke-virtual {v8, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1595,40 +1439,32 @@
 
     invoke-virtual {v8, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 372
     iget v8, p0, Lcom/android/settings_ex/GestureHelp;->PAGE_COUNT:I
 
     if-ne v8, p1, :cond_2
 
-    .line 373
     iget-object v8, p0, Lcom/android/settings_ex/GestureHelp;->mNext:Landroid/widget/Button;
 
     const v9, 0x7f0808c7
 
     invoke-virtual {v8, v9}, Landroid/widget/Button;->setText(I)V
 
-    .line 377
     :cond_0
     :goto_0
     if-eq v4, v10, :cond_1
 
-    .line 378
     iget-object v8, p0, Lcom/android/settings_ex/GestureHelp;->mPrevious:Landroid/widget/Button;
 
     invoke-virtual {v8, v4}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 380
     :cond_1
     invoke-direct {p0, v2, v1}, Lcom/android/settings_ex/GestureHelp;->setAnimationView(II)V
 
-    .line 381
     return-void
 
-    .line 374
     :cond_2
     if-eq v3, v10, :cond_0
 
-    .line 375
     iget-object v8, p0, Lcom/android/settings_ex/GestureHelp;->mNext:Landroid/widget/Button;
 
     invoke-virtual {v8, v3}, Landroid/widget/Button;->setText(I)V

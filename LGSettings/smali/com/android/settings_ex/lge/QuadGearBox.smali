@@ -19,10 +19,8 @@
     .locals 1
 
     .prologue
-    .line 32
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
-    .line 44
     new-instance v0, Lcom/android/settings_ex/lge/QuadGearBox$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/lge/QuadGearBox$1;-><init>(Lcom/android/settings_ex/lge/QuadGearBox;)V
@@ -37,7 +35,6 @@
     .parameter "x0"
 
     .prologue
-    .line 32
     iget-object v0, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mQuadGearboxPreference:Landroid/preference/CheckBoxPreference;
 
     return-object v0
@@ -49,7 +46,6 @@
     .parameter "x1"
 
     .prologue
-    .line 32
     invoke-direct {p0, p1}, Lcom/android/settings_ex/lge/QuadGearBox;->updateImage(Z)V
 
     return-void
@@ -80,13 +76,11 @@
 
     move-result v1
 
-    .line 88
     .local v1, db_eco_mode:I
     invoke-static {p0}, Lcom/android/settings_ex/lge/OverlayUtils;->getCPUMode(Landroid/content/Context;)I
 
     move-result v0
 
-    .line 90
     .local v0, core_state_mode:I
     if-ne v0, v7, :cond_0
 
@@ -99,15 +93,12 @@
 
     if-nez v1, :cond_2
 
-    .line 91
     :cond_1
     const/4 v2, 0x1
 
-    .line 93
     :cond_2
     if-nez v2, :cond_3
 
-    .line 94
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/QuadGearBox;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
@@ -135,23 +126,19 @@
     .parameter "on"
 
     .prologue
-    .line 99
     const/4 v0, 0x1
 
     if-ne p1, v0, :cond_0
 
-    .line 100
     iget-object v0, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mCustomImagePreference:Lcom/android/settings_ex/CustomImagePreference2;
 
     const v1, 0x7f020106
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/CustomImagePreference2;->setImage(I)V
 
-    .line 103
     :goto_0
     return-void
 
-    .line 102
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mCustomImagePreference:Lcom/android/settings_ex/CustomImagePreference2;
 
@@ -171,21 +158,17 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 62
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 63
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/QuadGearBox;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    .line 64
     .local v1, resolver:Landroid/content/ContentResolver;
     const v2, 0x7f06002d
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/lge/QuadGearBox;->addPreferencesFromResource(I)V
 
-    .line 65
     const-string v2, "quad_gearbox_image"
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/lge/QuadGearBox;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -196,15 +179,12 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mCustomImagePreference:Lcom/android/settings_ex/CustomImagePreference2;
 
-    .line 66
     iget-object v2, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mCustomImagePreference:Lcom/android/settings_ex/CustomImagePreference2;
 
     invoke-virtual {v2, v3}, Lcom/android/settings_ex/CustomImagePreference2;->setSelectable(Z)V
 
-    .line 68
     invoke-direct {p0}, Lcom/android/settings_ex/lge/QuadGearBox;->syncCoreState()V
 
-    .line 69
     const-string v2, "checkbox_quad_gearbox"
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/lge/QuadGearBox;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -215,7 +195,6 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mQuadGearboxPreference:Landroid/preference/CheckBoxPreference;
 
-    .line 70
     iget-object v4, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mQuadGearboxPreference:Landroid/preference/CheckBoxPreference;
 
     const-string v2, "eco_mode"
@@ -231,12 +210,10 @@
     :goto_0
     invoke-virtual {v4, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 71
     iget-object v2, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mQuadGearboxPreference:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 72
     iget-object v2, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mQuadGearboxPreference:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -245,30 +222,25 @@
 
     invoke-direct {p0, v2}, Lcom/android/settings_ex/lge/QuadGearBox;->updateImage(Z)V
 
-    .line 74
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 75
     .local v0, filter:Landroid/content/IntentFilter;
     const-string v2, "com.android.settings_ex.ecomode.CHANGED"
 
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 76
     iget-object v2, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mQuadGearBoxReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v2, v0}, Lcom/android/settings_ex/lge/QuadGearBox;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 77
     return-void
 
     .end local v0           #filter:Landroid/content/IntentFilter;
     :cond_0
     move v2, v3
 
-    .line 70
     goto :goto_0
 .end method
 
@@ -276,15 +248,12 @@
     .locals 1
 
     .prologue
-    .line 81
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onDestroy()V
 
-    .line 82
     iget-object v0, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mQuadGearBoxReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/QuadGearBox;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 83
     return-void
 .end method
 
@@ -296,17 +265,14 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 108
     iget-object v1, p0, Lcom/android/settings_ex/lge/QuadGearBox;->mQuadGearboxPreference:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v1, :cond_0
 
     move-object v0, p2
 
-    .line 110
     check-cast v0, Ljava/lang/Boolean;
 
-    .line 111
     .local v0, newValue:Ljava/lang/Boolean;
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -326,7 +292,6 @@
     :goto_0
     invoke-static {p0, v1}, Lcom/android/settings_ex/lge/OverlayUtils;->setCPUMode(Landroid/content/Context;I)V
 
-    .line 113
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/QuadGearBox;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3

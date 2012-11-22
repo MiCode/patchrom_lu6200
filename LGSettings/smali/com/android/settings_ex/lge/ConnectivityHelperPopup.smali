@@ -14,15 +14,12 @@
     .locals 1
 
     .prologue
-    .line 19
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 21
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/ConnectivityHelperPopup;->view:Landroid/view/View;
 
-    .line 22
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/lge/ConnectivityHelperPopup;->mOldversion:Z
@@ -49,7 +46,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/lge/ConnectivityHelperPopup;->setTitle(I)V
 
-    .line 30
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/lge/ConnectivityHelperPopup;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v16
@@ -283,7 +279,6 @@
 
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 47
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
 
     move-result-object v16
@@ -786,7 +781,6 @@
 
     if-nez v16, :cond_2
 
-    .line 89
     invoke-static {}, Lcom/android/settings_ex/lgesetting/Config/Config;->getOperator()Ljava/lang/String;
 
     move-result-object v16

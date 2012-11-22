@@ -33,24 +33,19 @@
     .parameter "handler"
 
     .prologue
-    .line 72
     iput-object p1, p0, Lcom/android/settings_ex/SettingsLicenseActivity$LicenseFileLoader;->this$0:Lcom/android/settings_ex/SettingsLicenseActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 73
     iput-object p2, p0, Lcom/android/settings_ex/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
 
-    .line 74
     iput-object p3, p0, Lcom/android/settings_ex/SettingsLicenseActivity$LicenseFileLoader;->mHandler:Landroid/os/Handler;
 
-    .line 75
     const/4 v0, 0x0
 
     #setter for: Lcom/android/settings_ex/SettingsLicenseActivity;->mQuit:Z
     invoke-static {p1, v0}, Lcom/android/settings_ex/SettingsLicenseActivity;->access$002(Lcom/android/settings_ex/SettingsLicenseActivity;Z)Z
 
-    .line 76
     return-void
 .end method
 
@@ -238,27 +233,22 @@
 
     move-result-object v4
 
-    .line 119
     .local v4, msg:Landroid/os/Message;
     if-nez v6, :cond_2
 
-    .line 120
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v8
 
     iput-object v8, v4, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 122
     :cond_2
     iget-object v8, p0, Lcom/android/settings_ex/SettingsLicenseActivity$LicenseFileLoader;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v8, v4}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 123
     return-void
 
-    .line 91
     .end local v4           #msg:Landroid/os/Message;
     .restart local v7       #tmp:[C
     :cond_3

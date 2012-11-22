@@ -21,13 +21,10 @@
     .parameter "saveedInstanceState"
 
     .prologue
-    .line 13
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 14
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothCoexDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    .line 15
     .local v0, p:Lcom/android/internal/app/AlertController$AlertParams;
     const v1, 0x7f080c2a
 
@@ -55,9 +52,7 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    .line 18
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothCoexDialog;->setupAlert()V
 
-    .line 19
     return-void
 .end method

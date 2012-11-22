@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 670
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilitySettings$SettingsPackageMonitor;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     invoke-direct {p0}, Lcom/android/internal/content/PackageMonitor;-><init>()V
@@ -38,7 +37,6 @@
     .parameter "x1"
 
     .prologue
-    .line 670
     invoke-direct {p0, p1}, Lcom/android/settings_ex/AccessibilitySettings$SettingsPackageMonitor;-><init>(Lcom/android/settings_ex/AccessibilitySettings;)V
 
     return-void
@@ -52,7 +50,6 @@
     .parameter "uid"
 
     .prologue
-    .line 674
     iget-object v1, p0, Lcom/android/settings_ex/AccessibilitySettings$SettingsPackageMonitor;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     #getter for: Lcom/android/settings_ex/AccessibilitySettings;->mHandler:Landroid/os/Handler;
@@ -87,7 +84,6 @@
     .parameter "reason"
 
     .prologue
-    .line 680
     iget-object v1, p0, Lcom/android/settings_ex/AccessibilitySettings$SettingsPackageMonitor;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     #getter for: Lcom/android/settings_ex/AccessibilitySettings;->mHandler:Landroid/os/Handler;
@@ -122,7 +118,6 @@
     .parameter "reason"
 
     .prologue
-    .line 686
     iget-object v1, p0, Lcom/android/settings_ex/AccessibilitySettings$SettingsPackageMonitor;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     #getter for: Lcom/android/settings_ex/AccessibilitySettings;->mHandler:Landroid/os/Handler;
@@ -157,7 +152,6 @@
     .parameter "uid"
 
     .prologue
-    .line 692
     iget-object v1, p0, Lcom/android/settings_ex/AccessibilitySettings$SettingsPackageMonitor;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     #getter for: Lcom/android/settings_ex/AccessibilitySettings;->mHandler:Landroid/os/Handler;

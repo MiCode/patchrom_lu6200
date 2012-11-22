@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 354
     iput-object p1, p0, Lcom/android/settings_ex/GestureSettings$1;->this$0:Lcom/android/settings_ex/GestureSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,14 +42,12 @@
     .parameter "arg1"
 
     .prologue
-    .line 358
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings$1;->this$0:Lcom/android/settings_ex/GestureSettings;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/GestureSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 359
     .local v0, resolver:Landroid/content/ContentResolver;
     iget-object v1, p0, Lcom/android/settings_ex/GestureSettings$1;->this$0:Lcom/android/settings_ex/GestureSettings;
 

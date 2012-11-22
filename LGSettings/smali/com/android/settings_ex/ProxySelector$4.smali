@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 294
     iput-object p1, p0, Lcom/android/settings_ex/ProxySelector$4;->this$0:Lcom/android/settings_ex/ProxySelector;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

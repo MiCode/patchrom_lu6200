@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 77
     iput-object p1, p0, Lcom/android/settings_ex/GestureHelp$1;->this$0:Lcom/android/settings_ex/GestureHelp;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 2
 
     .prologue
-    .line 79
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp$1;->this$0:Lcom/android/settings_ex/GestureHelp;
 
     iget-object v1, p0, Lcom/android/settings_ex/GestureHelp$1;->this$0:Lcom/android/settings_ex/GestureHelp;

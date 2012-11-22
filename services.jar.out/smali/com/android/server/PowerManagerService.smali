@@ -5829,7 +5829,6 @@
 
     iput v0, p0, Lcom/android/server/PowerManagerService;->mShortKeylightDelay:I
 
-    .line 2987
     sget-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_KEYLED_TIMEOUT:Z
 
     if-eqz v0, :cond_0
@@ -12057,7 +12056,6 @@
     .locals 3
 
     .prologue
-    .line 3187
     iget-object v0, p0, Lcom/android/server/PowerManagerService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -12074,17 +12072,14 @@
 
     iput v0, p0, Lcom/android/server/PowerManagerService;->mKeyledTimeoutDelay:I
 
-    .line 3188
     iget v0, p0, Lcom/android/server/PowerManagerService;->mKeyledTimeoutDelay:I
 
     if-gez v0, :cond_0
 
-    .line 3189
     const v0, 0x3b9aca00
 
     iput v0, p0, Lcom/android/server/PowerManagerService;->mKeyledTimeoutDelay:I
 
-    .line 3191
     :cond_0
     return-void
 .end method

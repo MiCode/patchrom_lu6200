@@ -37,27 +37,22 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 52
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 35
     new-instance v2, Landroid/graphics/Paint;
 
     invoke-direct {v2}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v2, p0, Lcom/android/settings_ex/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
 
-    .line 39
     iput v3, p0, Lcom/android/settings_ex/deviceinfo/PercentageBarChart;->mMinTickWidth:I
 
-    .line 54
     sget-object v2, Lcom/android/settings_ex/R$styleable;->PercentageBarChart:[I
 
     invoke-virtual {p1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 55
     .local v0, a:Landroid/content/res/TypedArray;
     invoke-virtual {v0, v3, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -74,23 +69,19 @@
 
     move-result v1
 
-    .line 57
     .local v1, emptyColor:I
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 59
     iget-object v2, p0, Lcom/android/settings_ex/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v2, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 60
     iget-object v2, p0, Lcom/android/settings_ex/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
 
     sget-object v3, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 61
     return-void
 .end method
 
@@ -100,21 +91,17 @@
     .parameter "color"
 
     .prologue
-    .line 116
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    .line 117
     .local v0, p:Landroid/graphics/Paint;
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 118
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 120
     new-instance v1, Lcom/android/settings_ex/deviceinfo/PercentageBarChart$Entry;
 
     invoke-direct {v1, p0, v0}, Lcom/android/settings_ex/deviceinfo/PercentageBarChart$Entry;-><init>(FLandroid/graphics/Paint;)V
@@ -129,15 +116,12 @@
     .parameter "canvas"
 
     .prologue
-    .line 65
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 67
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/deviceinfo/PercentageBarChart;->getPaddingLeft()I
 
     move-result v15
 
-    .line 68
     .local v15, left:I
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/deviceinfo/PercentageBarChart;->getWidth()I
 
@@ -149,13 +133,11 @@
 
     sub-int v16, v1, v3
 
-    .line 69
     .local v16, right:I
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/deviceinfo/PercentageBarChart;->getPaddingTop()I
 
     move-result v17
 
-    .line 70
     .local v17, top:I
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ex/deviceinfo/PercentageBarChart;->getHeight()I
 
@@ -206,7 +188,6 @@
 
     check-cast v12, Lcom/android/settings_ex/deviceinfo/PercentageBarChart$Entry;
 
-    .line 79
     .local v12, e:Lcom/android/settings_ex/deviceinfo/PercentageBarChart$Entry;
     iget v1, v12, Lcom/android/settings_ex/deviceinfo/PercentageBarChart$Entry;->percentage:F
 
@@ -252,14 +233,12 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 97
     .end local v12           #e:Lcom/android/settings_ex/deviceinfo/PercentageBarChart$Entry;
     .end local v13           #entryWidth:F
     .end local v14           #i$:Ljava/util/Iterator;
     :goto_2
     return-void
 
-    .line 82
     .restart local v12       #e:Lcom/android/settings_ex/deviceinfo/PercentageBarChart$Entry;
     .restart local v14       #i$:Ljava/util/Iterator;
     :cond_0
@@ -339,12 +318,10 @@
     .parameter "color"
 
     .prologue
-    .line 105
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 106
     return-void
 .end method
 
@@ -362,10 +339,8 @@
     .end annotation
 
     .prologue
-    .line 124
     .local p1, entries:Ljava/util/Collection;,"Ljava/util/Collection<Lcom/android/settings_ex/deviceinfo/PercentageBarChart$Entry;>;"
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/PercentageBarChart;->mEntries:Ljava/util/Collection;
 
-    .line 125
     return-void
 .end method

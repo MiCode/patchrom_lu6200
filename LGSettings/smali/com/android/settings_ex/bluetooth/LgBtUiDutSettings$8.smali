@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 327
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$8;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 2
 
     .prologue
-    .line 329
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$8;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mDutDialog:Landroid/app/AlertDialog;
@@ -51,7 +49,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 330
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$8;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->mDutDialog:Landroid/app/AlertDialog;
@@ -61,7 +58,6 @@
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 331
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$8;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     const/4 v1, 0x0

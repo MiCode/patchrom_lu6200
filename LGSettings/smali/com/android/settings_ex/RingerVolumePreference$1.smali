@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 122
     iput-object p1, p0, Lcom/android/settings_ex/RingerVolumePreference$1;->this$0:Lcom/android/settings_ex/RingerVolumePreference;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,12 +38,10 @@
     .parameter "msg"
 
     .prologue
-    .line 124
     iget-object v0, p0, Lcom/android/settings_ex/RingerVolumePreference$1;->this$0:Lcom/android/settings_ex/RingerVolumePreference;
 
     #calls: Lcom/android/settings_ex/RingerVolumePreference;->updateSlidersAndMutedStates()V
     invoke-static {v0}, Lcom/android/settings_ex/RingerVolumePreference;->access$000(Lcom/android/settings_ex/RingerVolumePreference;)V
 
-    .line 125
     return-void
 .end method

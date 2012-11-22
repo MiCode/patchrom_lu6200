@@ -27,16 +27,12 @@
     .parameter "height"
 
     .prologue
-    .line 436
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
-    .line 437
     iput p1, p0, Lcom/android/settings_ex/ActivityPicker$EmptyDrawable;->mWidth:I
 
-    .line 438
     iput p2, p0, Lcom/android/settings_ex/ActivityPicker$EmptyDrawable;->mHeight:I
 
-    .line 439
     return-void
 .end method
 
@@ -55,7 +51,6 @@
     .locals 1
 
     .prologue
-    .line 448
     iget v0, p0, Lcom/android/settings_ex/ActivityPicker$EmptyDrawable;->mHeight:I
 
     return v0
@@ -65,7 +60,6 @@
     .locals 1
 
     .prologue
-    .line 443
     iget v0, p0, Lcom/android/settings_ex/ActivityPicker$EmptyDrawable;->mWidth:I
 
     return v0
@@ -75,7 +69,6 @@
     .locals 1
 
     .prologue
-    .line 458
     iget v0, p0, Lcom/android/settings_ex/ActivityPicker$EmptyDrawable;->mHeight:I
 
     return v0
@@ -85,7 +78,6 @@
     .locals 1
 
     .prologue
-    .line 453
     iget v0, p0, Lcom/android/settings_ex/ActivityPicker$EmptyDrawable;->mWidth:I
 
     return v0

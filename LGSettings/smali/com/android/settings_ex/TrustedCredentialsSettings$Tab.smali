@@ -54,7 +54,6 @@
 
     const/4 v2, 0x0
 
-    .line 59
     new-instance v0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     const-string v1, "SYSTEM"
@@ -73,7 +72,6 @@
 
     sput-object v0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->SYSTEM:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
-    .line 65
     new-instance v6, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     const-string v7, "USER"
@@ -131,28 +129,20 @@
     .end annotation
 
     .prologue
-    .line 78
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 79
     iput-object p3, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mTag:Ljava/lang/String;
 
-    .line 80
     iput p4, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mLabel:I
 
-    .line 81
     iput p5, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mView:I
 
-    .line 82
     iput p6, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mProgress:I
 
-    .line 83
     iput p7, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mList:I
 
-    .line 84
     iput-boolean p8, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mCheckbox:Z
 
-    .line 85
     return-void
 .end method
 
@@ -161,7 +151,6 @@
     .parameter "x0"
 
     .prologue
-    .line 58
     iget-boolean v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mCheckbox:Z
 
     return v0
@@ -172,7 +161,6 @@
     .parameter "x0"
 
     .prologue
-    .line 58
     iget v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mProgress:I
 
     return v0
@@ -184,7 +172,6 @@
     .parameter "x1"
 
     .prologue
-    .line 58
     invoke-direct {p0, p1}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->getAliases(Lorg/apache/harmony/xnet/provider/jsse/TrustedCertificateStore;)Ljava/util/Set;
 
     move-result-object v0
@@ -199,7 +186,6 @@
     .parameter "x2"
 
     .prologue
-    .line 58
     invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->deleted(Lorg/apache/harmony/xnet/provider/jsse/TrustedCertificateStore;Ljava/lang/String;)Z
 
     move-result v0
@@ -213,7 +199,6 @@
     .parameter "x1"
 
     .prologue
-    .line 58
     invoke-direct {p0, p1}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->getButtonLabel(Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;)I
 
     move-result v0
@@ -227,7 +212,6 @@
     .parameter "x1"
 
     .prologue
-    .line 58
     invoke-direct {p0, p1}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->getButtonConfirmation(Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;)I
 
     move-result v0
@@ -242,7 +226,6 @@
     .parameter "x2"
 
     .prologue
-    .line 58
     invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->postOperationUpdate(ZLcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;)V
 
     return-void
@@ -253,7 +236,6 @@
     .parameter "x0"
 
     .prologue
-    .line 58
     iget v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mView:I
 
     return v0
@@ -264,7 +246,6 @@
     .parameter "x0"
 
     .prologue
-    .line 58
     iget v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mLabel:I
 
     return v0
@@ -275,7 +256,6 @@
     .parameter "x0"
 
     .prologue
-    .line 58
     iget-object v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mTag:Ljava/lang/String;
 
     return-object v0
@@ -286,7 +266,6 @@
     .parameter "x0"
 
     .prologue
-    .line 58
     iget v0, p0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->mList:I
 
     return v0
@@ -300,7 +279,6 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 96
     sget-object v1, Lcom/android/settings_ex/TrustedCredentialsSettings$4;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
 
     invoke-virtual {p0}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->ordinal()I
@@ -357,7 +335,6 @@
     .end annotation
 
     .prologue
-    .line 87
     sget-object v0, Lcom/android/settings_ex/TrustedCredentialsSettings$4;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
 
     invoke-virtual {p0}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->ordinal()I
@@ -407,7 +384,6 @@
     .parameter "certHolder"
 
     .prologue
-    .line 117
     sget-object v0, Lcom/android/settings_ex/TrustedCredentialsSettings$4;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
 
     invoke-virtual {p0}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->ordinal()I
@@ -468,7 +444,6 @@
     .parameter "certHolder"
 
     .prologue
-    .line 105
     sget-object v0, Lcom/android/settings_ex/TrustedCredentialsSettings$4;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
 
     invoke-virtual {p0}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->ordinal()I
@@ -530,10 +505,8 @@
     .parameter "certHolder"
 
     .prologue
-    .line 129
     if-eqz p1, :cond_2
 
-    .line 130
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mTab:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
     invoke-static {p2}, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->access$100(Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;)Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
@@ -543,7 +516,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 131
     #getter for: Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->mDeleted:Z
     invoke-static {p2}, Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;->access$000(Lcom/android/settings_ex/TrustedCredentialsSettings$CertHolder;)Z
 
@@ -610,7 +582,6 @@
     .parameter
 
     .prologue
-    .line 58
     const-class v0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -626,7 +597,6 @@
     .locals 1
 
     .prologue
-    .line 58
     sget-object v0, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->$VALUES:[Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     invoke-virtual {v0}, [Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->clone()Ljava/lang/Object;

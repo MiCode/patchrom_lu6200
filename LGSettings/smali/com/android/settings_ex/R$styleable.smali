@@ -83,21 +83,18 @@
 
     sput-object v0, Lcom/android/settings_ex/R$styleable;->ChartSweepView:[I
 
-    .line 11157
     new-array v0, v4, [I
 
     fill-array-data v0, :array_4
 
     sput-object v0, Lcom/android/settings_ex/R$styleable;->ChartView:[I
 
-    .line 11207
     new-array v0, v4, [I
 
     fill-array-data v0, :array_5
 
     sput-object v0, Lcom/android/settings_ex/R$styleable;->CheckableRealtiveLayout:[I
 
-    .line 11248
     new-array v0, v3, [I
 
     const v1, 0x7f010001
@@ -106,14 +103,12 @@
 
     sput-object v0, Lcom/android/settings_ex/R$styleable;->IconPreferenceScreen:[I
 
-    .line 11273
     new-array v0, v4, [I
 
     fill-array-data v0, :array_6
 
     sput-object v0, Lcom/android/settings_ex/R$styleable;->PercentageBarChart:[I
 
-    .line 11322
     new-array v0, v3, [I
 
     const v1, 0x7f010013

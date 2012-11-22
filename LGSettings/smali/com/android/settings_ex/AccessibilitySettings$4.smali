@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 611
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilitySettings$4;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,14 +42,12 @@
     .parameter "which"
 
     .prologue
-    .line 616
     iget-object v3, p0, Lcom/android/settings_ex/AccessibilitySettings$4;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     const/4 v4, 0x1
 
     invoke-virtual {v3, v4}, Lcom/android/settings_ex/AccessibilitySettings;->removeDialog(I)V
 
-    .line 617
     const-string v3, "ro.screenreader.market"
 
     const-string v4, "market://search?q=pname:com.google.android.marvin.talkback"
@@ -73,12 +70,10 @@
 
     invoke-direct {v0, v3, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 622
     .local v0, marketIntent:Landroid/content/Intent;
     iget-object v3, p0, Lcom/android/settings_ex/AccessibilitySettings$4;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     invoke-virtual {v3, v0}, Lcom/android/settings_ex/AccessibilitySettings;->startActivity(Landroid/content/Intent;)V
 
-    .line 623
     return-void
 .end method

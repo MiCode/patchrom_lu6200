@@ -20,7 +20,6 @@
     .parameter "x0"
 
     .prologue
-    .line 27
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -33,7 +32,6 @@
     .parameter "context"
 
     .prologue
-    .line 55
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -55,7 +53,6 @@
     .parameter "addr"
 
     .prologue
-    .line 142
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -110,7 +107,6 @@
     .parameter "addr"
 
     .prologue
-    .line 138
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -146,7 +142,6 @@
     .parameter "endTimestamp"
 
     .prologue
-    .line 118
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v1
@@ -194,7 +189,6 @@
     .parameter "deviceAddress"
 
     .prologue
-    .line 109
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v1
@@ -231,7 +225,6 @@
     .parameter "addr"
 
     .prologue
-    .line 153
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v1
@@ -276,7 +269,6 @@
     .parameter "autoConnect"
 
     .prologue
-    .line 147
     invoke-static {p0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v1

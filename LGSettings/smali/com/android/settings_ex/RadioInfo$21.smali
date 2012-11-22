@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1007
     iput-object p1, p0, Lcom/android/settings_ex/RadioInfo$21;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,12 +41,10 @@
     .parameter "v"
 
     .prologue
-    .line 1009
     iget-object v0, p0, Lcom/android/settings_ex/RadioInfo$21;->this$0:Lcom/android/settings_ex/RadioInfo;
 
     #calls: Lcom/android/settings_ex/RadioInfo;->refreshSmsc()V
     invoke-static {v0}, Lcom/android/settings_ex/RadioInfo;->access$4000(Lcom/android/settings_ex/RadioInfo;)V
 
-    .line 1010
     return-void
 .end method

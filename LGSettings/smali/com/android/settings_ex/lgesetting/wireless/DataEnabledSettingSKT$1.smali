@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 89
     iput-object p1, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$1;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +42,10 @@
     .parameter "which"
 
     .prologue
-    .line 91
     iget-object v0, p0, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT$1;->this$0:Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;
 
     #calls: Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;->putSettingsSecureDB()V
     invoke-static {v0}, Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;->access$000(Lcom/android/settings_ex/lgesetting/wireless/DataEnabledSettingSKT;)V
 
-    .line 92
     return-void
 .end method

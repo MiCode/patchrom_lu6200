@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 174
     iput-object p1, p0, Lcom/android/settings_ex/hidden/ApnSettings$2;->this$0:Lcom/android/settings_ex/hidden/ApnSettings;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
@@ -53,28 +52,23 @@
 
     if-eqz v0, :cond_0
 
-    .line 178
     if-eqz p1, :cond_1
 
-    .line 179
     iget-object v0, p0, Lcom/android/settings_ex/hidden/ApnSettings$2;->this$0:Lcom/android/settings_ex/hidden/ApnSettings;
 
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Lcom/android/settings_ex/hidden/ApnSettings;->csActive:Z
 
-    .line 183
     :goto_0
     iget-object v0, p0, Lcom/android/settings_ex/hidden/ApnSettings$2;->this$0:Lcom/android/settings_ex/hidden/ApnSettings;
 
     #calls: Lcom/android/settings_ex/hidden/ApnSettings;->fillList()V
     invoke-static {v0}, Lcom/android/settings_ex/hidden/ApnSettings;->access$200(Lcom/android/settings_ex/hidden/ApnSettings;)V
 
-    .line 185
     :cond_0
     return-void
 
-    .line 181
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/hidden/ApnSettings$2;->this$0:Lcom/android/settings_ex/hidden/ApnSettings;
 

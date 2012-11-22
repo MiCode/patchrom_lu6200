@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 87
     iput-object p1, p0, Lcom/android/settings_ex/MasterClearConfirm$1$2;->this$1:Lcom/android/settings_ex/MasterClearConfirm$1;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -54,18 +53,15 @@
 
     if-eqz v0, :cond_0
 
-    .line 92
     iget-object v0, p0, Lcom/android/settings_ex/MasterClearConfirm$1$2;->this$1:Lcom/android/settings_ex/MasterClearConfirm$1;
 
     iget-object v0, v0, Lcom/android/settings_ex/MasterClearConfirm$1;->this$0:Lcom/android/settings_ex/MasterClearConfirm;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/MasterClearConfirm;->sendCDMAFactoryRequest()V
 
-    .line 116
     :goto_0
     return-void
 
-    .line 95
     :cond_0
     iget-object v0, p0, Lcom/android/settings_ex/MasterClearConfirm$1$2;->this$1:Lcom/android/settings_ex/MasterClearConfirm$1;
 
@@ -85,7 +81,6 @@
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 97
     iget-object v0, p0, Lcom/android/settings_ex/MasterClearConfirm$1$2;->this$1:Lcom/android/settings_ex/MasterClearConfirm$1;
 
     iget-object v0, v0, Lcom/android/settings_ex/MasterClearConfirm$1;->this$0:Lcom/android/settings_ex/MasterClearConfirm;
@@ -97,10 +92,8 @@
 
     if-eqz v0, :cond_1
 
-    .line 98
     invoke-static {}, Lcom/android/settings_ex/lge/OverlayUtils;->initNV()V
 
-    .line 99
     iget-object v0, p0, Lcom/android/settings_ex/MasterClearConfirm$1$2;->this$1:Lcom/android/settings_ex/MasterClearConfirm$1;
 
     iget-object v0, v0, Lcom/android/settings_ex/MasterClearConfirm$1;->this$0:Lcom/android/settings_ex/MasterClearConfirm;
@@ -110,11 +103,9 @@
 
     goto :goto_0
 
-    .line 110
     :cond_1
     invoke-static {}, Lcom/android/settings_ex/lge/OverlayUtils;->initNV()V
 
-    .line 111
     iget-object v0, p0, Lcom/android/settings_ex/MasterClearConfirm$1$2;->this$1:Lcom/android/settings_ex/MasterClearConfirm$1;
 
     iget-object v0, v0, Lcom/android/settings_ex/MasterClearConfirm$1;->this$0:Lcom/android/settings_ex/MasterClearConfirm;

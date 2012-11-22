@@ -47,17 +47,14 @@
     .parameter "whichSize"
 
     .prologue
-    .line 229
     iget-object v0, p0, Lcom/android/settings_ex/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/settings_ex/applications/ApplicationsState$AppEntry;
 
     iget-object v0, v0, Lcom/android/settings_ex/applications/ApplicationsState$AppEntry;->sizeStr:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    .line 230
     packed-switch p2, :pswitch_data_0
 
-    .line 238
     iget-object v0, p0, Lcom/android/settings_ex/applications/ManageApplications$AppViewHolder;->appSize:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/android/settings_ex/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/settings_ex/applications/ApplicationsState$AppEntry;
@@ -107,7 +104,6 @@
 
     if-nez v0, :cond_0
 
-    .line 242
     iget-object v0, p0, Lcom/android/settings_ex/applications/ManageApplications$AppViewHolder;->appSize:Landroid/widget/TextView;
 
     #getter for: Lcom/android/settings_ex/applications/ManageApplications;->mInvalidSizeStr:Ljava/lang/CharSequence;

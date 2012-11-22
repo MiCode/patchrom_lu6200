@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 83
     iput-object p1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$1$1;->this$1:Lcom/android/settings_ex/AirplaneModeEnabler$1;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
@@ -38,7 +37,6 @@
     .locals 3
 
     .prologue
-    .line 85
     iget-object v1, p0, Lcom/android/settings_ex/AirplaneModeEnabler$1$1;->this$1:Lcom/android/settings_ex/AirplaneModeEnabler$1;
 
     const/4 v2, 0x4

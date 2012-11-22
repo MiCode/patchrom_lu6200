@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 75
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -79,7 +78,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 83
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     const/4 v3, 0x0
@@ -87,18 +85,15 @@
     #setter for: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->isWaitBtOff:Z
     invoke-static {v2, v3}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->access$002(Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;Z)Z
 
-    .line 84
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->closePleaseWaitDialog()V
     invoke-static {v2}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->access$100(Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;)V
 
-    .line 85
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/bluetooth/LgBtUiDutSettings;->createDutDialog()V
 
-    .line 89
     .end local v1           #state:I
     :cond_0
     return-void

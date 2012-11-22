@@ -49,15 +49,12 @@
 
     const/4 v4, 0x0
 
-    .line 51
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 52
     const v2, 0x7f060021
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/lge/LedLightSetting;->addPreferencesFromResource(I)V
 
-    .line 53
     const-string v2, "front_key_screen"
 
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/lge/LedLightSetting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -66,13 +63,11 @@
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    .line 55
     .local v0, parent:Landroid/preference/PreferenceScreen;
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    .line 57
     .local v1, resolver:Landroid/content/ContentResolver;
     const-string v2, "front_key_area_mail"
 
@@ -192,12 +187,10 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_email:Landroid/preference/CheckBoxPreference;
 
-    .line 71
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->pf_key_area_mail:Landroid/preference/Preference;
 
     invoke-virtual {v2, v4}, Landroid/preference/Preference;->setSelectable(Z)V
 
-    .line 73
     iget-object v5, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_all:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -217,7 +210,6 @@
     :goto_0
     invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 75
     iget-object v5, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_missed:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -237,7 +229,6 @@
     :goto_1
     invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 77
     iget-object v5, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_messaging:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -257,7 +248,6 @@
     :goto_2
     invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 79
     iget-object v5, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_voice_mail:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -277,7 +267,6 @@
     :goto_3
     invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 81
     iget-object v5, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_sms:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -297,7 +286,6 @@
     :goto_4
     invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 83
     iget-object v5, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_felica:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -317,7 +305,6 @@
     :goto_5
     invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 85
     iget-object v5, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_alarm:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -337,7 +324,6 @@
     :goto_6
     invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 87
     iget-object v5, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_calendar_reminder:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -357,7 +343,6 @@
     :goto_7
     invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 89
     iget-object v5, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_social_event:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -377,7 +362,6 @@
     :goto_8
     invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 91
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_email:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -406,101 +390,83 @@
 
     if-eqz v2, :cond_a
 
-    .line 97
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_messaging:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 98
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_voice_mail:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 99
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_alarm:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 100
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_calendar_reminder:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 101
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_social_event:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 102
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_email:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 120
     :goto_a
     return-void
 
     :cond_0
     move v2, v4
 
-    .line 73
     goto/16 :goto_0
 
     :cond_1
     move v2, v4
 
-    .line 75
     goto/16 :goto_1
 
     :cond_2
     move v2, v4
 
-    .line 77
     goto/16 :goto_2
 
     :cond_3
     move v2, v4
 
-    .line 79
     goto/16 :goto_3
 
     :cond_4
     move v2, v4
 
-    .line 81
     goto/16 :goto_4
 
     :cond_5
     move v2, v4
 
-    .line 83
     goto/16 :goto_5
 
     :cond_6
     move v2, v4
 
-    .line 85
     goto :goto_6
 
     :cond_7
     move v2, v4
 
-    .line 87
     goto :goto_7
 
     :cond_8
     move v2, v4
 
-    .line 89
     goto :goto_8
 
     :cond_9
     move v3, v4
 
-    .line 91
     goto :goto_9
 
-    .line 104
     :cond_a
     const-string v2, "DCM"
 
@@ -514,35 +480,29 @@
 
     if-eqz v2, :cond_b
 
-    .line 106
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_messaging:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 107
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_voice_mail:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     goto :goto_a
 
-    .line 111
     :cond_b
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->pf_key_area_mail:Landroid/preference/Preference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 112
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_sms:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 113
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_felica:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 114
     iget-object v2, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_social_event:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
@@ -560,12 +520,10 @@
 
     const/4 v3, 0x0
 
-    .line 126
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_missed:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_2
 
-    .line 128
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_missed:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -574,7 +532,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 129
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -599,10 +556,8 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 136
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/LedLightSetting;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 252
     .end local v0           #intent:Landroid/content/Intent;
     :cond_0
     :goto_1
@@ -624,13 +579,11 @@
 
     goto :goto_0
 
-    .line 140
     :cond_2
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_all:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_4
 
-    .line 142
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_all:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -639,7 +592,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 143
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -664,12 +616,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 149
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/LedLightSetting;->sendBroadcast(Landroid/content/Intent;)V
 
     goto :goto_1
 
-    .line 145
     .end local v0           #intent:Landroid/content/Intent;
     :cond_3
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -682,13 +632,11 @@
 
     goto :goto_2
 
-    .line 152
     :cond_4
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_messaging:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_6
 
-    .line 154
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_messaging:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -697,7 +645,6 @@
 
     if-eqz v1, :cond_5
 
-    .line 155
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -722,12 +669,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 161
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/LedLightSetting;->sendBroadcast(Landroid/content/Intent;)V
 
     goto :goto_1
 
-    .line 157
     .end local v0           #intent:Landroid/content/Intent;
     :cond_5
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -740,13 +685,11 @@
 
     goto :goto_3
 
-    .line 164
     :cond_6
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_voice_mail:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_8
 
-    .line 166
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_voice_mail:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -755,7 +698,6 @@
 
     if-eqz v1, :cond_7
 
-    .line 167
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -780,12 +722,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 173
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/LedLightSetting;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_1
 
-    .line 169
     .end local v0           #intent:Landroid/content/Intent;
     :cond_7
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -798,13 +738,11 @@
 
     goto :goto_4
 
-    .line 176
     :cond_8
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_sms:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_a
 
-    .line 178
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_sms:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -813,7 +751,6 @@
 
     if-eqz v1, :cond_9
 
-    .line 179
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -838,12 +775,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 185
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/LedLightSetting;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_1
 
-    .line 181
     .end local v0           #intent:Landroid/content/Intent;
     :cond_9
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -856,13 +791,11 @@
 
     goto :goto_5
 
-    .line 188
     :cond_a
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_felica:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_c
 
-    .line 190
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_felica:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -871,7 +804,6 @@
 
     if-eqz v1, :cond_b
 
-    .line 191
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -896,12 +828,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 197
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/LedLightSetting;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_1
 
-    .line 193
     .end local v0           #intent:Landroid/content/Intent;
     :cond_b
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -914,13 +844,11 @@
 
     goto :goto_6
 
-    .line 200
     :cond_c
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_alarm:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_e
 
-    .line 202
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_alarm:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -929,7 +857,6 @@
 
     if-eqz v1, :cond_d
 
-    .line 203
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -954,12 +881,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 209
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/LedLightSetting;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_1
 
-    .line 205
     .end local v0           #intent:Landroid/content/Intent;
     :cond_d
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -972,13 +897,11 @@
 
     goto :goto_7
 
-    .line 212
     :cond_e
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_calendar_reminder:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_10
 
-    .line 214
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_calendar_reminder:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -987,7 +910,6 @@
 
     if-eqz v1, :cond_f
 
-    .line 215
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -1012,12 +934,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 221
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/LedLightSetting;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_1
 
-    .line 217
     .end local v0           #intent:Landroid/content/Intent;
     :cond_f
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -1030,13 +950,11 @@
 
     goto :goto_8
 
-    .line 225
     :cond_10
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_social_event:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_12
 
-    .line 227
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_social_event:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -1045,7 +963,6 @@
 
     if-eqz v1, :cond_11
 
-    .line 228
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -1070,12 +987,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 234
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/LedLightSetting;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_1
 
-    .line 230
     .end local v0           #intent:Landroid/content/Intent;
     :cond_11
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
@@ -1088,13 +1003,11 @@
 
     goto :goto_9
 
-    .line 237
     :cond_12
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_email:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v1, :cond_0
 
-    .line 239
     iget-object v1, p0, Lcom/android/settings_ex/lge/LedLightSetting;->ck_front_key_email:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
@@ -1103,7 +1016,6 @@
 
     if-eqz v1, :cond_13
 
-    .line 240
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -1128,12 +1040,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 246
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/lge/LedLightSetting;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_1
 
-    .line 242
     .end local v0           #intent:Landroid/content/Intent;
     :cond_13
     invoke-virtual {p0}, Lcom/android/settings_ex/lge/LedLightSetting;->getContentResolver()Landroid/content/ContentResolver;

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 91
     iput-object p1, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$2;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,12 +41,10 @@
     .parameter "v"
 
     .prologue
-    .line 93
     sget-boolean v0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mStart:Z
 
     if-eqz v0, :cond_0
 
-    .line 94
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$2;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
@@ -56,12 +53,10 @@
 
     iput-wide v1, v0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mTestTime:J
 
-    .line 95
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/android/settings_ex/lge/MotionSensorCalibration;->mStart:Z
 
-    .line 97
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$2;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     #getter for: Lcom/android/settings_ex/lge/MotionSensorCalibration;->mProgress:Landroid/app/ProgressDialog;
@@ -71,7 +66,6 @@
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->show()V
 
-    .line 99
     iget-object v0, p0, Lcom/android/settings_ex/lge/MotionSensorCalibration$2;->this$0:Lcom/android/settings_ex/lge/MotionSensorCalibration;
 
     const/4 v1, 0x1

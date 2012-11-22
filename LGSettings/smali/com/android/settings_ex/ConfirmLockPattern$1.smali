@@ -23,7 +23,6 @@
     .locals 3
 
     .prologue
-    .line 260
     invoke-static {}, Lcom/android/settings_ex/ConfirmLockPattern$Stage;->values()[Lcom/android/settings_ex/ConfirmLockPattern$Stage;
 
     move-result-object v0

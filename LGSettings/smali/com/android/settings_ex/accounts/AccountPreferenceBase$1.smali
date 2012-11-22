@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 95
     iput-object p1, p0, Lcom/android/settings_ex/accounts/AccountPreferenceBase$1;->this$0:Lcom/android/settings_ex/accounts/AccountPreferenceBase;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "which"
 
     .prologue
-    .line 97
     iget-object v0, p0, Lcom/android/settings_ex/accounts/AccountPreferenceBase$1;->this$0:Lcom/android/settings_ex/accounts/AccountPreferenceBase;
 
     #getter for: Lcom/android/settings_ex/accounts/AccountPreferenceBase;->mHandler:Landroid/os/Handler;

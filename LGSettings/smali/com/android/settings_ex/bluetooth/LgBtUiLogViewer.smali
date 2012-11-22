@@ -18,12 +18,10 @@
     .locals 1
 
     .prologue
-    .line 30
     const/high16 v0, 0x4170
 
     sput v0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->mFontSize:F
 
-    .line 31
     const-string v0, ""
 
     sput-object v0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->log_dump:Ljava/lang/String;
@@ -35,10 +33,8 @@
     .locals 1
 
     .prologue
-    .line 22
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 33
     new-instance v0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer$1;-><init>(Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;)V
@@ -52,7 +48,6 @@
     .locals 1
 
     .prologue
-    .line 22
     sget-object v0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->log_dump:Ljava/lang/String;
 
     return-object v0
@@ -63,7 +58,6 @@
     .parameter "x0"
 
     .prologue
-    .line 22
     sput-object p0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->log_dump:Ljava/lang/String;
 
     return-object p0
@@ -74,7 +68,6 @@
     .parameter "x0"
 
     .prologue
-    .line 22
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->updateScreen()V
 
     return-void
@@ -108,20 +101,16 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 49
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 50
     const-string v0, "Log Viewer"
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 51
     const v0, 0x7f04001e
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->setContentView(I)V
 
-    .line 52
     const v0, 0x7f0b003b
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->findViewById(I)Landroid/view/View;
@@ -171,15 +160,12 @@
     .locals 1
 
     .prologue
-    .line 77
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
-    .line 78
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 79
     return-void
 .end method
 
@@ -216,14 +202,12 @@
 
     if-gez v0, :cond_0
 
-    .line 110
     sget v0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->mFontSize:F
 
     add-float/2addr v0, v3
 
     sput v0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->mFontSize:F
 
-    .line 111
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -234,16 +218,13 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 112
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->updateScreen()V
 
     :cond_0
     move v0, v1
 
-    .line 114
     goto :goto_0
 
-    .line 116
     :pswitch_1
     sget v0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->mFontSize:F
 
@@ -253,14 +234,12 @@
 
     if-lez v0, :cond_1
 
-    .line 117
     sget v0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->mFontSize:F
 
     sub-float/2addr v0, v3
 
     sput v0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->mFontSize:F
 
-    .line 118
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -271,16 +250,13 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 119
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->updateScreen()V
 
     :cond_1
     move v0, v1
 
-    .line 121
     goto :goto_0
 
-    .line 107
     :pswitch_data_0
     .packed-switch 0x18
         :pswitch_0
@@ -308,21 +284,17 @@
     :goto_0
     return v0
 
-    .line 98
     :pswitch_0
     const-string v0, ""
 
     sput-object v0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->log_dump:Ljava/lang/String;
 
-    .line 99
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->updateScreen()V
 
-    .line 100
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 96
     nop
 
     :pswitch_data_0
@@ -346,29 +318,23 @@
     .locals 2
 
     .prologue
-    .line 57
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 58
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->updateScreen()V
 
-    .line 60
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 61
     .local v0, intentFilter:Landroid/content/IntentFilter;
     const-string v1, "com.android.btui.log_viewer"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 62
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v1, v0}, Lcom/android/settings_ex/bluetooth/LgBtUiLogViewer;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 63
     return-void
 .end method
 

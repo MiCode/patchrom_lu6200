@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 227
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/Status$1;->this$0:Lcom/android/settings_ex/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -78,7 +77,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 234
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/Status$1;->this$0:Lcom/android/settings_ex/deviceinfo/Status;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/Status;->mBatteryLevel:Landroid/preference/Preference;
@@ -88,7 +86,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 235
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/Status$1;->this$0:Lcom/android/settings_ex/deviceinfo/Status;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/Status;->mBatteryLevel:Landroid/preference/Preference;
@@ -113,7 +110,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 238
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/Status$1;->this$0:Lcom/android/settings_ex/deviceinfo/Status;
 
     #getter for: Lcom/android/settings_ex/deviceinfo/Status;->mBatteryStatus:Landroid/preference/Preference;

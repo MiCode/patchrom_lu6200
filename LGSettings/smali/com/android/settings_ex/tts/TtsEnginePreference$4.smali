@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 179
     iput-object p1, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$4;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -106,7 +105,6 @@
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 186
     iget-object v0, p0, Lcom/android/settings_ex/tts/TtsEnginePreference$4;->this$0:Lcom/android/settings_ex/tts/TtsEnginePreference;
 
     #getter for: Lcom/android/settings_ex/tts/TtsEnginePreference;->mVoiceCheckData:Landroid/content/Intent;

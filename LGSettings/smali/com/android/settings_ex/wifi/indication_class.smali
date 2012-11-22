@@ -27,10 +27,8 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/wifi/indication_class;->mActivity:Landroid/app/Activity;
 
-    .line 28
     iput-object p1, p0, Lcom/android/settings_ex/wifi/indication_class;->mActivity:Landroid/app/Activity;
 
-    .line 29
     iget-object v1, p0, Lcom/android/settings_ex/wifi/indication_class;->mActivity:Landroid/app/Activity;
 
     const v2, 0x7f0b019a
@@ -106,14 +104,12 @@
 
     if-ge v1, v5, :cond_2
 
-    .line 89
     new-instance v2, Landroid/widget/ImageView;
 
     iget-object v5, p0, Lcom/android/settings_ex/wifi/indication_class;->mActivity:Landroid/app/Activity;
 
     invoke-direct {v2, v5}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 90
     .local v2, indicationImg:Landroid/widget/ImageView;
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
@@ -157,18 +153,15 @@
 
     invoke-virtual {v3, v5, v6, v7, v8}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
-    .line 103
     iget-object v5, p0, Lcom/android/settings_ex/wifi/indication_class;->indication_LinearLayout:Landroid/widget/LinearLayout;
 
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 87
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 97
     :cond_1
     const v5, 0x7f020133
 

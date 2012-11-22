@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 58
     iput-object p1, p0, Lcom/android/settings_ex/MediaFormat$1;->this$0:Lcom/android/settings_ex/MediaFormat;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,18 +41,15 @@
     .parameter "v"
 
     .prologue
-    .line 61
     invoke-static {}, Lcom/android/settings_ex/Utils;->isMonkeyRunning()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 72
     :goto_0
     return-void
 
-    .line 64
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -61,13 +57,11 @@
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 65
     .local v0, intent:Landroid/content/Intent;
     sget-object v2, Lcom/android/internal/os/storage/ExternalStorageFormatter;->COMPONENT_NAME:Landroid/content/ComponentName;
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 67
     iget-object v2, p0, Lcom/android/settings_ex/MediaFormat$1;->this$0:Lcom/android/settings_ex/MediaFormat;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/MediaFormat;->getIntent()Landroid/content/Intent;
@@ -82,18 +76,15 @@
 
     check-cast v1, Landroid/os/storage/StorageVolume;
 
-    .line 69
     .local v1, storageVolume:Landroid/os/storage/StorageVolume;
     const-string v2, "storage_volume"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 70
     iget-object v2, p0, Lcom/android/settings_ex/MediaFormat$1;->this$0:Lcom/android/settings_ex/MediaFormat;
 
     invoke-virtual {v2, v0}, Lcom/android/settings_ex/MediaFormat;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 71
     iget-object v2, p0, Lcom/android/settings_ex/MediaFormat$1;->this$0:Lcom/android/settings_ex/MediaFormat;
 
     invoke-virtual {v2}, Lcom/android/settings_ex/MediaFormat;->finish()V

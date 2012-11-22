@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 70
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$1;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -78,7 +77,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 76
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard$1;->this$0:Lcom/android/settings_ex/wifi/WifiSettingsAsSetupWizard;
 
     const-string v2, "wifi_state"

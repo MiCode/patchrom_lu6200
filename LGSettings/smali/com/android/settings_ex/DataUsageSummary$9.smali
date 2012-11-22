@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 1229
     iput-object p1, p0, Lcom/android/settings_ex/DataUsageSummary$9;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -68,11 +67,9 @@
 
     check-cast v0, Lcom/android/settings_ex/DataUsageSummary$AppUsageItem;
 
-    .line 1235
     .local v0, app:Lcom/android/settings_ex/DataUsageSummary$AppUsageItem;
     if-eqz v0, :cond_0
 
-    .line 1236
     iget-object v3, p0, Lcom/android/settings_ex/DataUsageSummary$9;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     #getter for: Lcom/android/settings_ex/DataUsageSummary;->mUidDetailProvider:Lcom/android/settings_ex/net/UidDetailProvider;
@@ -92,7 +89,6 @@
 
     move-result-object v2
 
-    .line 1237
     .local v2, detail:Lcom/android/settings_ex/net/UidDetail;
     iget-object v3, p0, Lcom/android/settings_ex/DataUsageSummary$9;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
@@ -102,7 +98,6 @@
 
     invoke-static {v3, v4, v5}, Lcom/android/settings_ex/DataUsageSummary$AppDetailsFragment;->show(Lcom/android/settings_ex/DataUsageSummary;[ILjava/lang/CharSequence;)V
 
-    .line 1239
     .end local v2           #detail:Lcom/android/settings_ex/net/UidDetail;
     :cond_0
     return-void

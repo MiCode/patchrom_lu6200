@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 438
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver$1;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsReceiver;
 
     invoke-direct {p0}, Landroid/os/UEventObserver;-><init>()V

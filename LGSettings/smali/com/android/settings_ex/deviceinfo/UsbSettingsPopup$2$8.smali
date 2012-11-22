@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 316
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2$8;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -46,15 +45,12 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 319
     const/4 v1, 0x4
 
     if-ne p2, v1, :cond_1
 
-    .line 324
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
-    .line 325
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2$8;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;
 
     iget-object v1, v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
@@ -66,10 +62,8 @@
 
     invoke-virtual {v1}, Landroid/app/ProgressDialog;->cancel()V
 
-    .line 327
     sput-boolean v0, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->mUsbModeChanging:Z
 
-    .line 328
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2$8;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;
 
     iget-object v1, v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
@@ -90,7 +84,6 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
-    .line 329
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2$8;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;
 
     iget-object v1, v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
@@ -107,7 +100,6 @@
     #setter for: Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->mDefaultFunction:Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;->access$002(Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 331
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2$8;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;
 
     iget-object v1, v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;
@@ -125,7 +117,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 332
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2$8;->this$1:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;
 
     iget-object v1, v1, Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup$2;->this$0:Lcom/android/settings_ex/deviceinfo/UsbSettingsPopup;

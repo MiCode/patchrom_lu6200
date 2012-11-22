@@ -58,17 +58,14 @@
     .locals 1
 
     .prologue
-    .line 41
     invoke-direct {p0}, Landroid/preference/PreferenceFragment;-><init>()V
 
-    .line 66
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mHandler:Landroid/os/Handler;
 
-    .line 69
     new-instance v0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment$1;
 
     invoke-direct {v0, p0}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment$1;-><init>(Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;)V
@@ -84,7 +81,6 @@
     .parameter "x1"
 
     .prologue
-    .line 41
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->initPreference(Landroid/content/Intent;)V
 
     return-void
@@ -95,7 +91,6 @@
     .parameter "x0"
 
     .prologue
-    .line 41
     invoke-direct {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->initPreference()V
 
     return-void
@@ -116,12 +111,10 @@
 
     if-ge v0, v3, :cond_1
 
-    .line 265
     sget-object v3, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mSvcNames:[Ljava/lang/String;
 
     aget-object v2, v3, v0
 
-    .line 266
     .local v2, svcName:Ljava/lang/String;
     invoke-direct {p0, v2}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->isServiceSupported(Ljava/lang/String;)Z
 
@@ -129,7 +122,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 267
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mProfileContainer:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v3, v0}, Landroid/preference/PreferenceGroup;->getPreference(I)Landroid/preference/Preference;
@@ -138,18 +130,15 @@
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    .line 268
     .local v1, pref:Landroid/preference/CheckBoxPreference;
     invoke-direct {p0, v1, v2}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->updatePreference(Landroid/preference/CheckBoxPreference;Ljava/lang/String;)V
 
-    .line 264
     .end local v1           #pref:Landroid/preference/CheckBoxPreference;
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 271
     .end local v2           #svcName:Ljava/lang/String;
     :cond_1
     return-void
@@ -235,38 +224,31 @@
 
     if-eqz v4, :cond_3
 
-    .line 226
     if-nez v0, :cond_2
 
-    .line 228
     iget-object v4, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mFtpCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v7}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 232
     :goto_1
     iget-object v4, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mFtpCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 233
     iget-object v4, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mFtpCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 261
     :cond_0
     :goto_2
     return-void
 
-    .line 219
     .end local v0           #result:Z
     :cond_1
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 230
     .restart local v0       #result:Z
     :cond_2
     iget-object v4, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mFtpCheckBox:Landroid/preference/CheckBoxPreference;
@@ -289,28 +271,23 @@
 
     if-eqz v4, :cond_0
 
-    .line 238
     if-nez v0, :cond_4
 
-    .line 240
     iget-object v4, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mPbapCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v7}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 244
     :goto_3
     iget-object v4, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mPbapCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 245
     iget-object v4, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mPbapCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_2
 
-    .line 242
     :cond_4
     iget-object v4, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mPbapCheckBox:Landroid/preference/CheckBoxPreference;
 
@@ -407,10 +384,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 192
     if-eqz p3, :cond_1
 
-    .line 193
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mSvcMgr:Lcom/broadcom/bt/service/framework/IServiceManager;
 
     invoke-interface {v1, p2}, Lcom/broadcom/bt/service/framework/IServiceManager;->enableService(Ljava/lang/String;)V
@@ -583,15 +558,12 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 90
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 92
     const v0, 0x7f060008
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->addPreferencesFromResource(I)V
 
-    .line 93
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
@@ -663,10 +635,8 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 113
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onPause()V
 
-    .line 115
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -675,24 +645,20 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 116
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Landroid/app/Activity;->unbindService(Landroid/content/ServiceConnection;)V
 
-    .line 117
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mFtpCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 118
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mPbapCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 120
     return-void
 .end method
 
@@ -758,14 +724,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 156
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mFtpCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    .line 157
     .local v0, enable:Z
     const-string v1, "bluetooth_ftp"
 
@@ -778,18 +742,15 @@
 
     invoke-direct {p0, p1, v1, v2}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->setSvcState(Landroid/preference/Preference;Ljava/lang/String;Z)Z
 
-    .line 158
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mFtpCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 172
     .end local v0           #enable:Z
     :cond_0
     :goto_0
     return v4
 
-    .line 160
     .restart local p2
     :cond_1
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
@@ -804,14 +765,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 161
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mPbapCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    .line 162
     .restart local v0       #enable:Z
     const-string v1, "bluetooth_pbap"
 
@@ -824,7 +783,6 @@
 
     invoke-direct {p0, p1, v1, v2}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->setSvcState(Landroid/preference/Preference;Ljava/lang/String;Z)Z
 
-    .line 163
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mPbapCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
@@ -851,7 +809,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 145
     new-instance v0, Lcom/android/settings_ex/bluetooth/BluetoothHelpFragment;
 
     invoke-direct {v0}, Lcom/android/settings_ex/bluetooth/BluetoothHelpFragment;-><init>()V
@@ -899,7 +856,6 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 129
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -908,18 +864,15 @@
 
     invoke-virtual {v2, v1, p0, v3}, Landroid/app/Activity;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
-    .line 131
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 132
     .local v0, intentFilter:Landroid/content/IntentFilter;
     const-string v2, "broadcom.bt.intent.action.BT_SVC_STATE_CHANGE"
 
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 133
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -928,17 +881,14 @@
 
     invoke-virtual {v2, v3, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 135
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mFtpCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 136
     iget-object v2, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mPbapCheckBox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 138
     return-void
 .end method
 
@@ -948,14 +898,12 @@
     .parameter "arg1"
 
     .prologue
-    .line 177
     invoke-static {p2}, Lcom/broadcom/bt/service/framework/IServiceManager$Stub;->asInterface(Landroid/os/IBinder;)Lcom/broadcom/bt/service/framework/IServiceManager;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mSvcMgr:Lcom/broadcom/bt/service/framework/IServiceManager;
 
-    .line 178
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/android/settings_ex/bluetooth/BluetoothAdvancedSettingsFragment$2;

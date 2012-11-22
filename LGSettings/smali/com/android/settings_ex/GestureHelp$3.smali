@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 266
     iput-object p1, p0, Lcom/android/settings_ex/GestureHelp$3;->this$0:Lcom/android/settings_ex/GestureHelp;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,12 +41,10 @@
     .parameter "v"
 
     .prologue
-    .line 269
     iget-object v0, p0, Lcom/android/settings_ex/GestureHelp$3;->this$0:Lcom/android/settings_ex/GestureHelp;
 
     #calls: Lcom/android/settings_ex/GestureHelp;->previous()V
     invoke-static {v0}, Lcom/android/settings_ex/GestureHelp;->access$400(Lcom/android/settings_ex/GestureHelp;)V
 
-    .line 270
     return-void
 .end method

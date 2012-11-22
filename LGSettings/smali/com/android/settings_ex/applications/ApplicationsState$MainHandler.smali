@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 315
     iput-object p1, p0, Lcom/android/settings_ex/applications/ApplicationsState$MainHandler;->this$0:Lcom/android/settings_ex/applications/ApplicationsState;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -57,7 +56,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 328
     iget-object v0, p0, Lcom/android/settings_ex/applications/ApplicationsState$MainHandler;->this$0:Lcom/android/settings_ex/applications/ApplicationsState;
 
     iget-object v1, v0, Lcom/android/settings_ex/applications/ApplicationsState;->mCurCallbacks:Lcom/android/settings_ex/applications/ApplicationsState$Callbacks;
@@ -78,7 +76,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 333
     iget-object v0, p0, Lcom/android/settings_ex/applications/ApplicationsState$MainHandler;->this$0:Lcom/android/settings_ex/applications/ApplicationsState;
 
     iget-object v0, v0, Lcom/android/settings_ex/applications/ApplicationsState;->mCurCallbacks:Lcom/android/settings_ex/applications/ApplicationsState$Callbacks;
@@ -95,7 +92,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 338
     iget-object v0, p0, Lcom/android/settings_ex/applications/ApplicationsState$MainHandler;->this$0:Lcom/android/settings_ex/applications/ApplicationsState;
 
     iget-object v0, v0, Lcom/android/settings_ex/applications/ApplicationsState;->mCurCallbacks:Lcom/android/settings_ex/applications/ApplicationsState$Callbacks;
@@ -112,7 +108,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 343
     iget-object v0, p0, Lcom/android/settings_ex/applications/ApplicationsState$MainHandler;->this$0:Lcom/android/settings_ex/applications/ApplicationsState;
 
     iget-object v1, v0, Lcom/android/settings_ex/applications/ApplicationsState;->mCurCallbacks:Lcom/android/settings_ex/applications/ApplicationsState$Callbacks;
@@ -133,7 +128,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 348
     iget-object v0, p0, Lcom/android/settings_ex/applications/ApplicationsState$MainHandler;->this$0:Lcom/android/settings_ex/applications/ApplicationsState;
 
     iget-object v0, v0, Lcom/android/settings_ex/applications/ApplicationsState;->mCurCallbacks:Lcom/android/settings_ex/applications/ApplicationsState$Callbacks;
@@ -150,7 +144,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 353
     iget-object v0, p0, Lcom/android/settings_ex/applications/ApplicationsState$MainHandler;->this$0:Lcom/android/settings_ex/applications/ApplicationsState;
 
     iget-object v1, v0, Lcom/android/settings_ex/applications/ApplicationsState;->mCurCallbacks:Lcom/android/settings_ex/applications/ApplicationsState$Callbacks;

@@ -26,12 +26,10 @@
     .parameter
 
     .prologue
-    .line 172
     iput-object p1, p0, Lcom/android/settings_ex/applications/RunningState$1;->this$0:Lcom/android/settings_ex/applications/RunningState;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 173
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/settings_ex/applications/RunningState$1;->mNextUpdate:I
@@ -113,28 +111,23 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 189
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/applications/RunningState$1;->removeMessages(I)V
 
-    .line 190
     invoke-virtual {p0, v3}, Lcom/android/settings_ex/applications/RunningState$1;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v0
 
-    .line 191
     .local v0, m:Landroid/os/Message;
     const-wide/16 v1, 0x3e8
 
     invoke-virtual {p0, v0, v1, v2}, Lcom/android/settings_ex/applications/RunningState$1;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 193
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningState$1;->this$0:Lcom/android/settings_ex/applications/RunningState;
 
     iget-object v1, v1, Lcom/android/settings_ex/applications/RunningState;->mRefreshUiListener:Lcom/android/settings_ex/applications/RunningState$OnRefreshUiListener;
 
     if-eqz v1, :cond_0
 
-    .line 196
     iget-object v1, p0, Lcom/android/settings_ex/applications/RunningState$1;->this$0:Lcom/android/settings_ex/applications/RunningState;
 
     iget-object v1, v1, Lcom/android/settings_ex/applications/RunningState;->mRefreshUiListener:Lcom/android/settings_ex/applications/RunningState$OnRefreshUiListener;
@@ -143,14 +136,12 @@
 
     invoke-interface {v1, v2}, Lcom/android/settings_ex/applications/RunningState$OnRefreshUiListener;->onRefreshUi(I)V
 
-    .line 197
     const/4 v1, 0x0
 
     iput v1, p0, Lcom/android/settings_ex/applications/RunningState$1;->mNextUpdate:I
 
     goto :goto_0
 
-    .line 177
     nop
 
     :pswitch_data_0

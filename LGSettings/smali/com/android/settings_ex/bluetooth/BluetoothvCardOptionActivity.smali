@@ -36,27 +36,22 @@
 
     const/4 v10, 0x1
 
-    .line 37
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 39
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
 
-    .line 40
     .local v9, vCardOptionItem:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings_ex/bluetooth/BluetoothvCardOptionActivity$vCardOption;>;"
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 42
     .local v2, mList:Ljava/util/List;,"Ljava/util/List<Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;>;"
     new-instance v6, Ljava/util/HashMap;
 
     invoke-direct {v6}, Ljava/util/HashMap;-><init>()V
 
-    .line 43
     .local v6, item:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v1, "option_name"
 
@@ -136,23 +131,18 @@
 
     invoke-direct/range {v0 .. v5}, Landroid/widget/SimpleAdapter;-><init>(Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V
 
-    .line 56
     .local v0, sAdapter:Landroid/widget/SimpleAdapter;
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/bluetooth/BluetoothvCardOptionActivity;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 58
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothvCardOptionActivity;->getListView()Landroid/widget/ListView;
 
     move-result-object v8
 
-    .line 59
     .local v8, listView:Landroid/widget/ListView;
     invoke-virtual {v8, v11}, Landroid/widget/ListView;->setItemsCanFocus(Z)V
 
-    .line 60
     invoke-virtual {v8, v10}, Landroid/widget/ListView;->setChoiceMode(I)V
 
-    .line 64
     const-string v1, "persist.service.btui.nested"
 
     const-string v3, "0"
@@ -200,27 +190,21 @@
     .parameter "id"
 
     .prologue
-    .line 80
     invoke-super/range {p0 .. p5}, Landroid/app/ListActivity;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
 
-    .line 82
     if-nez p3, :cond_0
 
-    .line 84
     const-string v0, "persist.service.btui.nested"
 
     const-string v1, "0"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 93
     :goto_0
     invoke-virtual {p0}, Lcom/android/settings_ex/bluetooth/BluetoothvCardOptionActivity;->finish()V
 
-    .line 94
     return-void
 
-    .line 89
     :cond_0
     const-string v0, "persist.service.btui.nested"
 

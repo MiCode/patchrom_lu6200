@@ -82,7 +82,6 @@
 
     sput-boolean v0, Lcom/android/settings_ex/lgesetting/Utils;->CARRIER_SKT:Z
 
-    .line 24
     sget-boolean v0, Lcom/android/settings_ex/lgesetting/Utils;->COUNTRY_KR:Z
 
     if-eqz v0, :cond_1
@@ -96,7 +95,6 @@
     :goto_0
     sput-boolean v0, Lcom/android/settings_ex/lgesetting/Utils;->COUNTRY_OPERATOR_LGUPLUS:Z
 
-    .line 25
     sget-boolean v0, Lcom/android/settings_ex/lgesetting/Utils;->COUNTRY_KR:Z
 
     if-eqz v0, :cond_2
@@ -110,7 +108,6 @@
     :goto_1
     sput-boolean v0, Lcom/android/settings_ex/lgesetting/Utils;->COUNTRY_OPERATOR_KT:Z
 
-    .line 26
     sget-boolean v0, Lcom/android/settings_ex/lgesetting/Utils;->COUNTRY_KR:Z
 
     if-eqz v0, :cond_3
@@ -124,7 +121,6 @@
     :goto_2
     sput-boolean v0, Lcom/android/settings_ex/lgesetting/Utils;->COUNTRY_OPERATOR_SKT:Z
 
-    .line 27
     sget-boolean v0, Lcom/android/settings_ex/lgesetting/Utils;->COUNTRY_KR:Z
 
     if-eqz v0, :cond_4

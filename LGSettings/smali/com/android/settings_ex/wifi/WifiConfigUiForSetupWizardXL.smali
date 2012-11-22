@@ -46,20 +46,16 @@
     .parameter "edit"
 
     .prologue
-    .line 62
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 47
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mHandler:Landroid/os/Handler;
 
-    .line 63
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mActivity:Lcom/android/settings_ex/wifi/WifiSettingsForSetupWizardXL;
 
-    .line 64
     const v0, 0x7f0b023e
 
     invoke-virtual {p1, v0}, Lcom/android/settings_ex/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
@@ -81,13 +77,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mCancelButton:Landroid/widget/Button;
 
-    .line 66
     iput-object p3, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mAccessPoint:Lcom/android/settings_ex/wifi/AccessPoint;
 
-    .line 67
     iput-boolean p4, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mEdit:Z
 
-    .line 68
     const-string v0, "layout_inflater"
 
     invoke-virtual {p1, v0}, Lcom/android/settings_ex/wifi/WifiSettingsForSetupWizardXL;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -98,7 +91,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mInflater:Landroid/view/LayoutInflater;
 
-    .line 70
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0400bb
@@ -111,7 +103,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mView:Landroid/view/View;
 
-    .line 71
     new-instance v0, Lcom/android/settings_ex/wifi/WifiConfigController;
 
     iget-object v1, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mView:Landroid/view/View;
@@ -133,7 +124,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
 
-    .line 76
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mView:Landroid/view/View;
 
     const v1, 0x7f0b01ff
@@ -148,17 +138,14 @@
 
     if-nez v0, :cond_1
 
-    .line 77
     const v0, 0x7f0b01e4
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->requestFocusAndShowKeyboard(I)V
 
-    .line 82
     :cond_0
     :goto_0
     return-void
 
-    .line 78
     :cond_1
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mView:Landroid/view/View;
 
@@ -187,7 +174,6 @@
     .parameter "x0"
 
     .prologue
-    .line 36
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
 
     return-object v0
@@ -198,7 +184,6 @@
     .parameter "x0"
 
     .prologue
-    .line 36
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mActivity:Lcom/android/settings_ex/wifi/WifiSettingsForSetupWizardXL;
 
     return-object v0
@@ -210,7 +195,6 @@
     .locals 1
 
     .prologue
-    .line 171
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mActivity:Lcom/android/settings_ex/wifi/WifiSettingsForSetupWizardXL;
 
     return-object v0
@@ -220,7 +204,6 @@
     .locals 1
 
     .prologue
-    .line 123
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mController:Lcom/android/settings_ex/wifi/WifiConfigController;
 
     return-object v0
@@ -240,7 +223,6 @@
     .locals 1
 
     .prologue
-    .line 133
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mInflater:Landroid/view/LayoutInflater;
 
     return-object v0
@@ -250,7 +232,6 @@
     .locals 1
 
     .prologue
-    .line 138
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
     return-object v0
@@ -262,15 +243,12 @@
     .parameter "hasFocus"
 
     .prologue
-    .line 205
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 206
     if-eqz p2, :cond_0
 
-    .line 207
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;
@@ -291,36 +269,30 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 89
     iget-object v2, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mView:Landroid/view/View;
 
     invoke-virtual {v2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 90
     .local v1, viewToBeFocused:Landroid/view/View;
     if-nez v1, :cond_1
 
-    .line 91
     const-string v2, "SetupWizard"
 
     const-string v3, "password field to be focused not found."
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 111
     :cond_0
     :goto_0
     return-void
 
-    .line 92
     :cond_1
     instance-of v2, v1, Landroid/widget/EditText;
 
     if-nez v2, :cond_2
 
-    .line 93
     const-string v2, "SetupWizard"
 
     const-string v3, "password field is not EditText"
@@ -337,14 +309,12 @@
 
     if-eqz v2, :cond_3
 
-    .line 96
     const-string v2, "SetupWizard"
 
     const-string v3, "Already focused"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 97
     iget-object v2, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-virtual {v2, v1, v6}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
@@ -416,14 +386,12 @@
     .parameter "text"
 
     .prologue
-    .line 164
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mCancelButton:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 167
     return-void
 .end method
 
@@ -441,19 +409,16 @@
     .parameter "text"
 
     .prologue
-    .line 153
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 154
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiConfigUiForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 155
     return-void
 .end method
 

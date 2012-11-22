@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 62
     iput-object p1, p0, Lcom/android/settings_ex/inputmethod/InputMethodPreference$1;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
     .parameter "arg0"
 
     .prologue
-    .line 65
     iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodPreference$1;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodPreference;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/inputmethod/InputMethodPreference;->isEnabled()Z
@@ -65,7 +63,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 69
     iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodPreference$1;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodPreference;
 
     const/4 v1, 0x0
@@ -85,7 +82,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 72
     iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodPreference$1;->this$0:Lcom/android/settings_ex/inputmethod/InputMethodPreference;
 
     const/4 v1, 0x1

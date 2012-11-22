@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 488
     iput-object p1, p0, Lcom/android/settings_ex/CryptKeeper$4;->this$0:Lcom/android/settings_ex/CryptKeeper;
 
     iput-object p2, p0, Lcom/android/settings_ex/CryptKeeper$4;->val$imm:Landroid/view/inputmethod/InputMethodManager;
@@ -46,7 +45,6 @@
     .locals 3
 
     .prologue
-    .line 490
     iget-object v0, p0, Lcom/android/settings_ex/CryptKeeper$4;->val$imm:Landroid/view/inputmethod/InputMethodManager;
 
     const/4 v1, 0x0

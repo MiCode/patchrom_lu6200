@@ -33,7 +33,6 @@
     .parameter
 
     .prologue
-    .line 266
     iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->this$1:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
 
     iput-object p2, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listView:Landroid/widget/ListView;
@@ -53,13 +52,11 @@
     .parameter "isChecked"
 
     .prologue
-    .line 270
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listView:Landroid/widget/ListView;
 
     iget v1, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listPosition:I
 
     invoke-virtual {v0, v1, p2}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
-    .line 271
     return-void
 .end method

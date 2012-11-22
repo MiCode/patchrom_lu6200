@@ -33,7 +33,7 @@
     .parameter
 
     .prologue
-    .line 1210
+    .line 1233
     iput-object p1, p0, Landroid/webkit/BrowserFrame$2;->this$0:Landroid/webkit/BrowserFrame;
 
     iput-object p2, p0, Landroid/webkit/BrowserFrame$2;->val$sslError:Landroid/net/http/SslError;
@@ -53,14 +53,14 @@
     .locals 1
 
     .prologue
-    .line 1222
+    .line 1245
     new-instance v0, Landroid/webkit/BrowserFrame$2$2;
 
     invoke-direct {v0, p0}, Landroid/webkit/BrowserFrame$2$2;-><init>(Landroid/webkit/BrowserFrame$2;)V
 
     invoke-virtual {p0, v0}, Landroid/webkit/BrowserFrame$2;->post(Ljava/lang/Runnable;)Z
 
-    .line 1227
+    .line 1250
     return-void
 .end method
 
@@ -68,7 +68,7 @@
     .locals 2
 
     .prologue
-    .line 1213
+    .line 1236
     invoke-static {}, Landroid/webkit/SslCertLookupTable;->getInstance()Landroid/webkit/SslCertLookupTable;
 
     move-result-object v0
@@ -77,13 +77,13 @@
 
     invoke-virtual {v0, v1}, Landroid/webkit/SslCertLookupTable;->setIsAllowed(Landroid/net/http/SslError;)V
 
-    .line 1214
+    .line 1237
     new-instance v0, Landroid/webkit/BrowserFrame$2$1;
 
     invoke-direct {v0, p0}, Landroid/webkit/BrowserFrame$2$1;-><init>(Landroid/webkit/BrowserFrame$2;)V
 
     invoke-virtual {p0, v0}, Landroid/webkit/BrowserFrame$2;->post(Ljava/lang/Runnable;)Z
 
-    .line 1219
+    .line 1242
     return-void
 .end method

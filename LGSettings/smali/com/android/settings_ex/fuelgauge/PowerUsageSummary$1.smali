@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 110
     iput-object p1, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageSummary$1;->this$0:Lcom/android/settings_ex/fuelgauge/PowerUsageSummary;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -55,12 +54,10 @@
 
     if-eqz v4, :cond_0
 
-    .line 116
     invoke-static {p2}, Lcom/android/settings_ex/Utils;->getBatteryPercentage(Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 117
     .local v1, batteryLevel:Ljava/lang/String;
     iget-object v4, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageSummary$1;->this$0:Lcom/android/settings_ex/fuelgauge/PowerUsageSummary;
 

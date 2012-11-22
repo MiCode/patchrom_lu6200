@@ -36,12 +36,10 @@
     .parameter "context"
 
     .prologue
-    .line 454
     iput-object p1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 450
     const/4 v0, 0x0
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -62,10 +60,8 @@
     :goto_0
     iput-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mOSPConnection:Landroid/content/ServiceConnection;
 
-    .line 455
     iput-object p2, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mContext:Landroid/content/Context;
 
-    .line 456
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mContext:Landroid/content/Context;
 
     const-string v1, "connectivity"
@@ -100,24 +96,18 @@
 
     const/4 v6, 0x0
 
-    .line 629
     const-string v2, ""
 
-    .line 630
     .local v2, message:Ljava/lang/String;
     const-string v0, ""
 
-    .line 631
     .local v0, action:Ljava/lang/String;
     if-ne p2, v3, :cond_2
 
-    .line 632
     const-string v2, "linkcloud_settings"
 
-    .line 633
     const-string v0, "com.android.settings_ex.WIFIConnectionStatus"
 
-    .line 640
     :cond_0
     :goto_0
     iget-object v7, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
@@ -131,27 +121,22 @@
 
     move-result v4
 
-    .line 641
     .local v4, oldValue:I
     if-eqz p1, :cond_3
 
-    .line 642
     .local v3, newValue:I
     :goto_1
     if-eq v4, v3, :cond_1
 
-    .line 643
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 644
     .local v1, intent:Landroid/content/Intent;
     const-string v6, "connected"
 
     invoke-virtual {v1, v6, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 645
     iget-object v6, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mContext:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -160,7 +145,6 @@
 
     invoke-static {v6, v2, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 646
     iget-object v6, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     invoke-virtual {v6}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getActivity()Landroid/app/Activity;
@@ -169,30 +153,25 @@
 
     invoke-virtual {v6, v1}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 648
     if-ne p2, v8, :cond_1
 
-    .line 649
     invoke-direct {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->isOSPWIFIConnected()Z
 
     move-result v6
 
     if-eqz v6, :cond_1
 
-    .line 650
     new-instance v5, Landroid/content/Intent;
 
     const-string v6, "com.lge.osp.NOTI_DISCONNECT"
 
     invoke-direct {v5, v6}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 651
     .local v5, stopIntent:Landroid/content/Intent;
     const-string v6, "com.lge.osp"
 
     invoke-virtual {v5, v6}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 652
     iget-object v6, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     invoke-virtual {v6}, Lcom/android/settings_ex/lge/ConnectivitySettings;->getActivity()Landroid/app/Activity;
@@ -201,22 +180,18 @@
 
     invoke-virtual {v6, v5}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 656
     .end local v1           #intent:Landroid/content/Intent;
     .end local v5           #stopIntent:Landroid/content/Intent;
     :cond_1
     return-void
 
-    .line 635
     .end local v3           #newValue:I
     .end local v4           #oldValue:I
     :cond_2
     if-ne p2, v8, :cond_0
 
-    .line 636
     const-string v2, "osp_wifi_settings"
 
-    .line 637
     const-string v0, "com.android.settings_ex.OSPWIFIConnectionStatus"
 
     goto :goto_0
@@ -236,7 +211,6 @@
     .parameter "x2"
 
     .prologue
-    .line 438
     invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->SendWIFIConnectionStatus(ZI)V
 
     return-void
@@ -265,7 +239,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 603
     invoke-static {}, Lcom/android/settings_ex/lge/ConnectivitySettings;->access$900()Ljava/lang/reflect/Method;
 
     move-result-object v4
@@ -291,13 +264,11 @@
 
     move-result v2
 
-    .line 604
     .local v2, transport:I
     const/4 v3, 0x2
 
     if-ne v2, v3, :cond_0
 
-    .line 605
     invoke-static {}, Lcom/android/settings_ex/lge/ConnectivitySettings;->access$1000()Ljava/lang/reflect/Method;
 
     move-result-object v4
@@ -401,22 +372,17 @@
 
     if-ne p1, v6, :cond_2
 
-    .line 499
     const/4 v2, 0x1
 
-    .line 508
     .local v2, nSoftwareType:I
     :goto_1
     if-eqz v0, :cond_5
 
-    .line 509
     const-string v1, ""
 
-    .line 510
     .local v1, message:Ljava/lang/String;
     if-ne v2, v4, :cond_4
 
-    .line 511
     iget-object v5, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     const v6, 0x7f0807da
@@ -505,12 +471,10 @@
     .restart local v2       #nSoftwareType:I
     goto :goto_1
 
-    .line 513
     .restart local v1       #message:Ljava/lang/String;
     :cond_4
     if-ne v2, v8, :cond_0
 
-    .line 514
     iget-object v5, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     const v6, 0x7f0807d9
@@ -530,7 +494,6 @@
 
     if-eqz v6, :cond_9
 
-    .line 541
     iget-object v6, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     const v7, 0x7f0807be
@@ -539,11 +502,9 @@
 
     move-result-object v1
 
-    .line 542
     .restart local v1       #message:Ljava/lang/String;
     if-ne v2, v4, :cond_8
 
-    .line 544
     iget-object v6, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     #calls: Lcom/android/settings_ex/lge/ConnectivitySettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -557,11 +518,9 @@
 
     move-result v3
 
-    .line 545
     .local v3, pcsuiteWifiConnectionStatus:I
     if-ne v3, v4, :cond_7
 
-    .line 546
     iget-object v5, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     const v6, 0x7f0807bf
@@ -637,19 +596,16 @@
 
     goto :goto_4
 
-    .line 552
     .end local v3           #pcsuiteWifiConnectionStatus:I
     :cond_8
     if-ne v2, v8, :cond_6
 
-    .line 553
     invoke-direct {p0}, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->isOSPWIFIConnected()Z
 
     move-result v5
 
     if-eqz v5, :cond_6
 
-    .line 554
     iget-object v5, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     const v6, 0x7f0807c0
@@ -683,7 +639,6 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 478
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     #getter for: Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
@@ -693,7 +648,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 479
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     #getter for: Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
@@ -714,7 +668,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 482
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     #getter for: Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
@@ -743,19 +696,16 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mOSPServiceBound:Ljava/lang/Boolean;
 
-    .line 488
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mOSPConnection:Landroid/content/ServiceConnection;
 
     if-eqz v0, :cond_2
 
-    .line 489
     iget-object v0, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mOSPConnection:Landroid/content/ServiceConnection;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
-    .line 491
     :cond_2
     return-void
 .end method
@@ -764,7 +714,6 @@
     .locals 4
 
     .prologue
-    .line 461
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     #getter for: Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
@@ -774,7 +723,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 462
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     #getter for: Lcom/android/settings_ex/lge/ConnectivitySettings;->mPCSuiteWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
@@ -795,7 +743,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 465
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     #getter for: Lcom/android/settings_ex/lge/ConnectivitySettings;->mOSPWIFIConnectionOnOff:Landroid/preference/CheckBoxPreference;
@@ -828,12 +775,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 472
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mOSPConnection:Landroid/content/ServiceConnection;
 
     if-eqz v1, :cond_2
 
-    .line 473
     iget-object v1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$WIFIConnectionEnabler;->mOSPConnection:Landroid/content/ServiceConnection;

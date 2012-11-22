@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 170
     iput-object p1, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$1;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -72,14 +71,11 @@
 
     move-result v1
 
-    .line 179
     .local v1, usbConfigured:Z
     if-eqz v2, :cond_1
 
-    .line 180
     if-eqz v1, :cond_0
 
-    .line 181
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$1;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     const/4 v4, 0x1
@@ -87,7 +83,6 @@
     #setter for: Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbConnection:Z
     invoke-static {v3, v4}, Lcom/android/settings_ex/lge/ConnectivitySettings;->access$002(Lcom/android/settings_ex/lge/ConnectivitySettings;Z)Z
 
-    .line 182
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$1;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     iget-object v4, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$1;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
@@ -120,7 +115,6 @@
     #setter for: Lcom/android/settings_ex/lge/ConnectivitySettings;->mUsbConnection:Z
     invoke-static {v3, v4}, Lcom/android/settings_ex/lge/ConnectivitySettings;->access$002(Lcom/android/settings_ex/lge/ConnectivitySettings;Z)Z
 
-    .line 187
     iget-object v3, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$1;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;
 
     iget-object v4, p0, Lcom/android/settings_ex/lge/ConnectivitySettings$1;->this$0:Lcom/android/settings_ex/lge/ConnectivitySettings;

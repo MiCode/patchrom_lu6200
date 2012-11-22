@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 69
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,13 +42,11 @@
     .parameter "which"
 
     .prologue
-    .line 72
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     #setter for: Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->mClickedIndex:I
     invoke-static {v1, p2}, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->access$302(Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;I)I
 
-    .line 73
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-virtual {v1}, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->getContext()Landroid/content/Context;
@@ -68,19 +65,16 @@
 
     move-result v0
 
-    .line 74
     .local v0, activated:I
     const/4 v1, 0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 75
     iget-object v1, p0, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$1;->this$0:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->setPreviewBrightness(I)V
     invoke-static {v1, p2}, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->access$400(Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;I)V
 
-    .line 76
     :cond_0
     return-void
 .end method

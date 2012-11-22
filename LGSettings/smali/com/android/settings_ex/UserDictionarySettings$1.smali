@@ -30,7 +30,6 @@
     .parameter
 
     .prologue
-    .line 360
     iput-object p1, p0, Lcom/android/settings_ex/UserDictionarySettings$1;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     iput-object p2, p0, Lcom/android/settings_ex/UserDictionarySettings$1;->val$activity:Landroid/app/Activity;
@@ -48,7 +47,6 @@
     .parameter "which"
 
     .prologue
-    .line 362
     iget-object v0, p0, Lcom/android/settings_ex/UserDictionarySettings$1;->this$0:Lcom/android/settings_ex/UserDictionarySettings;
 
     #getter for: Lcom/android/settings_ex/UserDictionarySettings;->mAutoReturn:Z

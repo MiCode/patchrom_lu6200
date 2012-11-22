@@ -57,11 +57,9 @@
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 133
     .end local v0           #intent:Landroid/content/Intent;
     :cond_0
     invoke-static {}, Lcom/android/settings_ex/deviceinfo/UsbSettingsControl;->cancelAutorunTimer()V
 
-    .line 134
     return-void
 .end method

@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 114
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -87,7 +86,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 124
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     iget-object v4, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
@@ -104,17 +102,14 @@
     #setter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->ONOFF_INTERVAL:I
     invoke-static {v3, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$102(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;I)I
 
-    .line 125
     const/16 v3, 0xb
 
     if-ne v2, v3, :cond_5
 
-    .line 126
     const/16 v3, 0xc
 
     if-ne v1, v3, :cond_4
 
-    .line 127
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     const-string v4, "[BTUI] ### OnOff Test : ON success"
@@ -122,7 +117,6 @@
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->BtUiLog(Ljava/lang/String;)V
     invoke-static {v3, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$300(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Ljava/lang/String;)V
 
-    .line 128
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->ONOFF_INTERVAL:I
@@ -196,7 +190,6 @@
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->BtUiLog(Ljava/lang/String;)V
     invoke-static {v3, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$300(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Ljava/lang/String;)V
 
-    .line 136
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
@@ -220,20 +213,17 @@
 
     if-ne v1, v7, :cond_2
 
-    .line 168
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #setter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mDoTurnOn:Z
     invoke-static {v3, v6}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$1002(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Z)Z
 
-    .line 169
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     const/16 v4, 0x1f4
 
     invoke-virtual {v3, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->BtUiSleep(I)V
 
-    .line 170
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
@@ -243,20 +233,17 @@
 
     invoke-virtual {v3}, Landroid/bluetooth/BluetoothAdapter;->enable()Z
 
-    .line 173
     :cond_2
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #setter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mIsSspDebug:Z
     invoke-static {v3, v6}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$1102(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Z)Z
 
-    .line 175
     .end local v1           #newState:I
     .end local v2           #prevState:I
     :cond_3
     return-void
 
-    .line 138
     .restart local v1       #newState:I
     .restart local v2       #prevState:I
     :cond_4
@@ -306,13 +293,11 @@
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->BtUiLog(Ljava/lang/String;)V
     invoke-static {v3, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$300(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Ljava/lang/String;)V
 
-    .line 139
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->closeOnOffTestDialog()V
     invoke-static {v3}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$600(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;)V
 
-    .line 140
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -349,7 +334,6 @@
     #setter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mDispMsg:Ljava/lang/String;
     invoke-static {v3, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$702(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 141
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->onOnOffTestDialog()V
@@ -357,21 +341,17 @@
 
     goto/16 :goto_1
 
-    .line 144
     :cond_5
     const/16 v3, 0xd
 
     if-ne v2, v3, :cond_1
 
-    .line 145
     if-ne v1, v7, :cond_7
 
-    .line 146
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     invoke-static {v3}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$508(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;)I
 
-    .line 147
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -408,7 +388,6 @@
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->BtUiLog(Ljava/lang/String;)V
     invoke-static {v3, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$300(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Ljava/lang/String;)V
 
-    .line 148
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mOnOffDialog:Landroid/app/AlertDialog;
@@ -449,7 +428,6 @@
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 149
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->ONOFF_INTERVAL:I
@@ -523,7 +501,6 @@
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->BtUiLog(Ljava/lang/String;)V
     invoke-static {v3, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$300(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Ljava/lang/String;)V
 
-    .line 157
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #getter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
@@ -583,13 +560,11 @@
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->BtUiLog(Ljava/lang/String;)V
     invoke-static {v3, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$300(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Ljava/lang/String;)V
 
-    .line 160
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->closeOnOffTestDialog()V
     invoke-static {v3}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$600(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;)V
 
-    .line 161
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -626,7 +601,6 @@
     #setter for: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->mDispMsg:Ljava/lang/String;
     invoke-static {v3, v4}, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->access$702(Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 162
     iget-object v3, p0, Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;
 
     #calls: Lcom/android/settings_ex/bluetooth/LgBtUiHiddenSettingsFragment;->onOnOffTestDialog()V

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 119
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,14 +42,12 @@
     .parameter "which"
 
     .prologue
-    .line 121
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;
 
     iget-object v1, v1, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;->mLocalAdapter:Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;
 
     if-eqz v1, :cond_0
 
-    .line 122
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;
 
     iget-object v1, v1, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;->mDeviceNameView:Landroid/widget/EditText;
@@ -87,14 +84,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 124
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment$2;->this$0:Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;
 
     iget-object v1, v1, Lcom/android/settings_ex/bluetooth/BluetoothNameDialogFragment;->mLocalAdapter:Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;
 
     invoke-virtual {v1, v0}, Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;->setName(Ljava/lang/String;)V
 
-    .line 126
     .end local v0           #deviceName:Ljava/lang/String;
     :cond_0
     return-void

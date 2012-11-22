@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 55
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiApEnabler$1;->this$0:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -55,7 +54,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 60
     iget-object v4, p0, Lcom/android/settings_ex/wifi/WifiApEnabler$1;->this$0:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     const-string v5, "wifi_state"
@@ -141,7 +139,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 71
     iget-object v4, p0, Lcom/android/settings_ex/wifi/WifiApEnabler$1;->this$0:Lcom/android/settings_ex/wifi/WifiApEnabler;
 
     #calls: Lcom/android/settings_ex/wifi/WifiApEnabler;->enableWifiCheckBox()V

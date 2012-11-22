@@ -41,18 +41,13 @@
     .parameter "target"
 
     .prologue
-    .line 264
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 265
     iput p1, p0, Lcom/android/settings_ex/HanziToPinyin$Token;->type:I
 
-    .line 266
     iput-object p2, p0, Lcom/android/settings_ex/HanziToPinyin$Token;->source:Ljava/lang/String;
 
-    .line 267
     iput-object p3, p0, Lcom/android/settings_ex/HanziToPinyin$Token;->target:Ljava/lang/String;
 
-    .line 268
     return-void
 .end method

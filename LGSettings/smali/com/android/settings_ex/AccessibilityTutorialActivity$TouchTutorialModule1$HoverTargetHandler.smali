@@ -26,12 +26,10 @@
     .parameter
 
     .prologue
-    .line 291
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 295
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;->mInsideTarget:Z
@@ -45,7 +43,6 @@
     .parameter "x1"
 
     .prologue
-    .line 291
     invoke-direct {p0, p1}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;-><init>(Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;)V
 
     return-void
@@ -59,10 +56,8 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 298
     iput-boolean v3, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;->mInsideTarget:Z
 
-    .line 299
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;
 
     #getter for: Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mHandler:Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;
@@ -82,12 +77,10 @@
     .locals 1
 
     .prologue
-    .line 303
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;->mInsideTarget:Z
 
-    .line 304
     return-void
 .end method
 
@@ -100,22 +93,18 @@
 
     const/4 v4, 0x0
 
-    .line 308
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 320
     :goto_0
     return-void
 
-    .line 310
     :pswitch_0
     iget-boolean v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;->mInsideTarget:Z
 
     if-eqz v0, :cond_0
 
-    .line 311
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;
 
     const v1, 0x7f0806a0
@@ -154,7 +143,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->addInstruction(I[Ljava/lang/Object;)V
 
-    .line 316
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;->this$0:Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;
 
     const/4 v1, 0x4

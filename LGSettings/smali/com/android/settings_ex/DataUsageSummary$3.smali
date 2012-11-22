@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 703
     iput-object p1, p0, Lcom/android/settings_ex/DataUsageSummary$3;->this$0:Lcom/android/settings_ex/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 126
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences$1;->val$context:Landroid/content/Context;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 4
 
     .prologue
-    .line 128
     iget-object v1, p0, Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences$1;->val$context:Landroid/content/Context;
 
     #calls: Lcom/android/settings_ex/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;

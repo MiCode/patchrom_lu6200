@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 1880
     iput-object p1, p0, Lcom/android/settings_ex/RingtonePicker$9;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
@@ -41,11 +40,9 @@
     .parameter "newState"
 
     .prologue
-    .line 1883
     iget-object v0, p0, Lcom/android/settings_ex/RingtonePicker$9;->this$0:Lcom/android/settings_ex/RingtonePicker;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/RingtonePicker;->finish()V
 
-    .line 1884
     return-void
 .end method

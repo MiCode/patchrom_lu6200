@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 172
     iput-object p1, p0, Lcom/android/settings_ex/wifi/WifiEnabler$3;->this$0:Lcom/android/settings_ex/wifi/WifiEnabler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +42,6 @@
     .parameter "which"
 
     .prologue
-    .line 175
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler$3;->this$0:Lcom/android/settings_ex/wifi/WifiEnabler;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
@@ -55,7 +53,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setChecked(Z)V
 
-    .line 176
     iget-object v0, p0, Lcom/android/settings_ex/wifi/WifiEnabler$3;->this$0:Lcom/android/settings_ex/wifi/WifiEnabler;
 
     #getter for: Lcom/android/settings_ex/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;

@@ -33,13 +33,10 @@
     .prologue
     const/4 v0, -0x1
 
-    .line 726
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 730
     iput v0, p0, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->mcc:I
 
-    .line 731
     iput v0, p0, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;->mnc:I
 
     return-void
@@ -50,7 +47,6 @@
     .parameter "x0"
 
     .prologue
-    .line 726
     invoke-direct {p0}, Lcom/android/settings_ex/DisplaySettings$LocaleConfiguration;-><init>()V
 
     return-void

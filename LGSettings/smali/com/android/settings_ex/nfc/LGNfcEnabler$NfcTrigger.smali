@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 185
     iput-object p1, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcTrigger;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -39,7 +38,6 @@
     .parameter "bOn"
 
     .prologue
-    .line 188
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcTrigger;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     #getter for: Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
@@ -49,10 +47,8 @@
 
     invoke-virtual {v0}, Landroid/nfc/NfcAdapter;->isEnabled()Z
 
-    .line 189
     if-eqz p1, :cond_0
 
-    .line 190
     iget-object v0, p0, Lcom/android/settings_ex/nfc/LGNfcEnabler$NfcTrigger;->this$0:Lcom/android/settings_ex/nfc/LGNfcEnabler;
 
     #getter for: Lcom/android/settings_ex/nfc/LGNfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;

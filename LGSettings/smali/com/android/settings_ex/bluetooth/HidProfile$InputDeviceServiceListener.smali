@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 42
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/HidProfile$InputDeviceServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/HidProfile;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 42
     invoke-direct {p0, p1}, Lcom/android/settings_ex/bluetooth/HidProfile$InputDeviceServiceListener;-><init>(Lcom/android/settings_ex/bluetooth/HidProfile;)V
 
     return-void
@@ -55,7 +53,6 @@
     .parameter "proxy"
 
     .prologue
-    .line 46
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile$InputDeviceServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/HidProfile;
 
     check-cast p2, Landroid/bluetooth/BluetoothInputDevice;
@@ -64,7 +61,6 @@
     #setter for: Lcom/android/settings_ex/bluetooth/HidProfile;->mService:Landroid/bluetooth/BluetoothInputDevice;
     invoke-static {v0, p2}, Lcom/android/settings_ex/bluetooth/HidProfile;->access$002(Lcom/android/settings_ex/bluetooth/HidProfile;Landroid/bluetooth/BluetoothInputDevice;)Landroid/bluetooth/BluetoothInputDevice;
 
-    .line 47
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile$InputDeviceServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/HidProfile;
 
     const/4 v1, 0x1
@@ -81,7 +77,6 @@
     .parameter "profile"
 
     .prologue
-    .line 51
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile$InputDeviceServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/HidProfile;
 
     const/4 v1, 0x0
@@ -89,7 +84,6 @@
     #setter for: Lcom/android/settings_ex/bluetooth/HidProfile;->mProfileReady:Z
     invoke-static {v0, v1}, Lcom/android/settings_ex/bluetooth/HidProfile;->access$102(Lcom/android/settings_ex/bluetooth/HidProfile;Z)Z
 
-    .line 52
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/HidProfile$InputDeviceServiceListener;->this$0:Lcom/android/settings_ex/bluetooth/HidProfile;
 
     const/4 v1, 0x0

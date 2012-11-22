@@ -23,7 +23,6 @@
     .locals 3
 
     .prologue
-    .line 205
     invoke-static {}, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;->values()[Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$DrainType;
 
     move-result-object v0

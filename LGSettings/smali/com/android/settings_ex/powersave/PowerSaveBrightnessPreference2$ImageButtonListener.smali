@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 30
     iput-object p1, p0, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$ImageButtonListener;->this$0:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 30
     invoke-direct {p0, p1}, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$ImageButtonListener;-><init>(Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;)V
 
     return-void
@@ -54,13 +52,11 @@
     .parameter "v"
 
     .prologue
-    .line 33
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$ImageButtonListener;->this$0:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     #calls: Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->initPreview()V
     invoke-static {v0}, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;->access$100(Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;)V
 
-    .line 34
     iget-object v0, p0, Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2$ImageButtonListener;->this$0:Lcom/android/settings_ex/powersave/PowerSaveBrightnessPreference2;
 
     const/4 v1, 0x0

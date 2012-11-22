@@ -39,7 +39,6 @@
     .parameter "x0"
 
     .prologue
-    .line 55
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mAdapter:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
 
     return-object v0
@@ -50,7 +49,6 @@
     .parameter "x0"
 
     .prologue
-    .line 55
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mNumSelectedFormat:Ljava/lang/String;
 
     return-object v0
@@ -61,7 +59,6 @@
     .parameter "x0"
 
     .prologue
-    .line 55
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mNumBytesSelectedFormat:Ljava/lang/String;
 
     return-object v0
@@ -72,7 +69,6 @@
     .parameter "x0"
 
     .prologue
-    .line 55
     iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mInflater:Landroid/view/LayoutInflater;
 
     return-object v0
@@ -87,18 +83,14 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 64
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 65
     invoke-virtual {p0, v2}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->setFinishOnTouchOutside(Z)V
 
-    .line 66
     const v1, 0x7f080626
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->setTitle(I)V
 
-    .line 67
     const v1, 0x7f080627
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->getString(I)Ljava/lang/String;
@@ -116,14 +108,12 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mNumBytesSelectedFormat:Ljava/lang/String;
 
-    .line 69
     new-instance v1, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
 
     invoke-direct {v1, p0, p0}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;-><init>(Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;Landroid/app/Activity;)V
 
     iput-object v1, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mAdapter:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
 
-    .line 70
     const-string v1, "layout_inflater"
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -134,37 +124,30 @@
 
     iput-object v1, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mInflater:Landroid/view/LayoutInflater;
 
-    .line 71
     const v1, 0x7f04009a
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->setContentView(I)V
 
-    .line 72
     invoke-virtual {p0}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
-    .line 73
     .local v0, lv:Landroid/widget/ListView;
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setItemsCanFocus(Z)V
 
-    .line 74
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setChoiceMode(I)V
 
-    .line 75
     new-instance v1, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;
 
     invoke-direct {v1, p0, p0}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$ModeCallback;-><init>(Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;Landroid/content/Context;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setMultiChoiceModeListener(Landroid/widget/AbsListView$MultiChoiceModeListener;)V
 
-    .line 76
     iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->mAdapter:Lcom/android/settings_ex/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
 
     invoke-virtual {p0, v1}, Lcom/android/settings_ex/deviceinfo/MiscFilesHandler;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 77
     return-void
 .end method

@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 22
     iput-object p1, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;->this$0:Lcom/android/settings_ex/QuietTimeSwitchPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .parameter "x1"
 
     .prologue
-    .line 22
     invoke-direct {p0, p1}, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;-><init>(Lcom/android/settings_ex/QuietTimeSwitchPreference;)V
 
     return-void
@@ -82,7 +80,6 @@
 
     invoke-static {v0, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 27
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;->this$0:Lcom/android/settings_ex/QuietTimeSwitchPreference;
 
     #getter for: Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -131,10 +128,8 @@
 
     invoke-static {v0, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 30
     if-ne v1, p2, :cond_0
 
-    .line 31
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;->this$0:Lcom/android/settings_ex/QuietTimeSwitchPreference;
 
     #getter for: Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -155,7 +150,6 @@
 
     invoke-virtual {v0, v3, v4}, Lcom/android/settings_ex/QuietTimeInfo;->setDBSaveTime(J)V
 
-    .line 32
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;->this$0:Lcom/android/settings_ex/QuietTimeSwitchPreference;
 
     #getter for: Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -176,7 +170,6 @@
 
     invoke-virtual {v0, p2}, Lcom/android/settings_ex/QuietTimeInfo;->SetSilentModeState(Z)V
 
-    .line 35
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;->this$0:Lcom/android/settings_ex/QuietTimeSwitchPreference;
 
     #getter for: Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -186,7 +179,6 @@
 
     invoke-virtual {v0, v2}, Lcom/android/settings_ex/QuietTimeInfo;->setTime(Z)V
 
-    .line 36
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;->this$0:Lcom/android/settings_ex/QuietTimeSwitchPreference;
 
     #getter for: Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -196,12 +188,10 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings_ex/QuietTimeInfo;->setTime(Z)V
 
-    .line 37
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;->this$0:Lcom/android/settings_ex/QuietTimeSwitchPreference;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/QuietTimeSwitchPreference;->SetQuietTimeSummary()V
 
-    .line 39
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;->this$0:Lcom/android/settings_ex/QuietTimeSwitchPreference;
 
     #getter for: Lcom/android/settings_ex/QuietTimeSwitchPreference;->mQuietTimeInfo:Lcom/android/settings_ex/QuietTimeInfo;
@@ -217,17 +207,14 @@
 
     invoke-virtual {v0, v1, p2}, Lcom/android/settings_ex/QuietTimeInfo;->TimedSilentReceiverEnable(Landroid/content/Context;Z)V
 
-    .line 41
     iget-object v0, p0, Lcom/android/settings_ex/QuietTimeSwitchPreference$Listener;->this$0:Lcom/android/settings_ex/QuietTimeSwitchPreference;
 
     invoke-virtual {v0, p2}, Lcom/android/settings_ex/QuietTimeSwitchPreference;->setChecked(Z)V
 
-    .line 42
     return-void
 
     :cond_1
     move v0, v2
 
-    .line 27
     goto :goto_0
 .end method

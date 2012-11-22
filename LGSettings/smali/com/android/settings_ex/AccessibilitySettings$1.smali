@@ -25,7 +25,6 @@
     .parameter "x0"
 
     .prologue
-    .line 159
     iput-object p1, p0, Lcom/android/settings_ex/AccessibilitySettings$1;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,12 +39,10 @@
     .parameter "selfChange"
 
     .prologue
-    .line 162
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilitySettings$1;->this$0:Lcom/android/settings_ex/AccessibilitySettings;
 
     #calls: Lcom/android/settings_ex/AccessibilitySettings;->updateRotationCheckbox()V
     invoke-static {v0}, Lcom/android/settings_ex/AccessibilitySettings;->access$100(Lcom/android/settings_ex/AccessibilitySettings;)V
 
-    .line 163
     return-void
 .end method

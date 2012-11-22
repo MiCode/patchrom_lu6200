@@ -60,20 +60,16 @@
 
     if-eqz v3, :cond_2
 
-    .line 113
     iget-object v3, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mHolder:Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;
 
     iget-object v2, v3, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->size:Landroid/widget/TextView;
 
-    .line 135
     :cond_0
     :goto_0
     if-eqz v2, :cond_1
 
-    .line 136
     iput-boolean v5, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mSetBackground:Z
 
-    .line 137
     iget-wide v6, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mFirstRunTime:J
 
     const-wide/16 v8, 0x0
@@ -131,19 +127,16 @@
 
     if-nez v3, :cond_3
 
-    .line 118
     iget-object v3, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mItem:Lcom/android/settings_ex/applications/RunningState$BaseItem;
 
     iput-object v1, v3, Lcom/android/settings_ex/applications/RunningState$BaseItem;->mCurSizeStr:Ljava/lang/String;
 
-    .line 119
     iget-object v3, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mHolder:Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;
 
     iget-object v3, v3, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->size:Landroid/widget/TextView;
 
     invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 122
     :cond_3
     iget-object v3, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mItem:Lcom/android/settings_ex/applications/RunningState$BaseItem;
 
@@ -151,15 +144,12 @@
 
     if-eqz v3, :cond_5
 
-    .line 124
     iget-boolean v3, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mSetBackground:Z
 
     if-nez v3, :cond_0
 
-    .line 125
     iput-boolean v4, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mSetBackground:Z
 
-    .line 126
     iget-object v3, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mHolder:Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;
 
     iget-object v3, v3, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->uptime:Landroid/widget/TextView;
@@ -186,19 +176,16 @@
 
     if-eqz v3, :cond_0
 
-    .line 131
     iget-object v3, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mHolder:Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;
 
     iget-object v2, v3, Lcom/android/settings_ex/applications/RunningProcessesView$ViewHolder;->uptime:Landroid/widget/TextView;
 
     goto :goto_0
 
-    .line 143
     .end local v1           #size:Ljava/lang/String;
     :cond_6
     const/4 v0, 0x0
 
-    .line 144
     .local v0, isService:Z
     iget-object v3, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mItem:Lcom/android/settings_ex/applications/RunningState$BaseItem;
 
@@ -206,7 +193,6 @@
 
     if-eqz v3, :cond_7
 
-    .line 145
     iget-object v3, p0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mItem:Lcom/android/settings_ex/applications/RunningState$BaseItem;
 
     check-cast v3, Lcom/android/settings_ex/applications/RunningState$MergedItem;

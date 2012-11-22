@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 605
     iput-object p1, p0, Lcom/android/settings_ex/SoundSettings$3;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +44,6 @@
 
     const/4 v2, 0x1
 
-    .line 607
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$3;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     #getter for: Lcom/android/settings_ex/SoundSettings;->mRingtonePreference:Landroid/preference/Preference;
@@ -55,7 +53,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 608
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$3;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/SoundSettings$3;->this$0:Lcom/android/settings_ex/SoundSettings;
@@ -79,7 +76,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 612
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$3;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     iget-object v1, p0, Lcom/android/settings_ex/SoundSettings$3;->this$0:Lcom/android/settings_ex/SoundSettings;
@@ -103,7 +99,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 620
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$3;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     const/16 v1, 0x8
@@ -131,7 +126,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 625
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$3;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     const/16 v1, 0x10
@@ -159,7 +153,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 635
     iget-object v0, p0, Lcom/android/settings_ex/SoundSettings$3;->this$0:Lcom/android/settings_ex/SoundSettings;
 
     const/16 v1, 0x20

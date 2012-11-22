@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 174
     iput-object p1, p0, Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 2
 
     .prologue
-    .line 176
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment;
 
     iget-object v0, v0, Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment;->mLocalAdapter:Lcom/android/settings_ex/bluetooth/LocalBluetoothAdapter;
@@ -54,7 +52,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 177
     iget-object v0, p0, Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment$1;->this$0:Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment;
 
     iget-object v0, v0, Lcom/android/settings_ex/bluetooth/DeviceListPreferenceFragment;->mBtnSearch:Landroid/widget/Button;

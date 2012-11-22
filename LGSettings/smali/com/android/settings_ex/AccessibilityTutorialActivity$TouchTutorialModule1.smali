@@ -45,19 +45,16 @@
     .parameter "controller"
 
     .prologue
-    .line 341
     const v0, 0x7f040001
 
     const v1, 0x7f08069c
 
     invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TutorialModule;-><init>(Landroid/content/Context;Lcom/android/settings_ex/AccessibilityTutorialActivity;II)V
 
-    .line 335
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mTouched:I
 
-    .line 344
     new-instance v0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;
 
     const/4 v1, 0x0
@@ -66,7 +63,6 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mHandler:Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;
 
-    .line 346
     new-instance v0, Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;
 
     const v1, 0x7f040003
@@ -77,12 +73,10 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mAppsAdapter:Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;
 
-    .line 348
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mAppsAdapter:Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;
 
     invoke-virtual {v0, p0}, Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;->setOnHoverListener(Landroid/view/View$OnHoverListener;)V
 
-    .line 350
     const v0, 0x7f0b0002
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->findViewById(I)Landroid/view/View;
@@ -93,19 +87,16 @@
 
     iput-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mAllApps:Landroid/widget/GridView;
 
-    .line 351
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mAllApps:Landroid/widget/GridView;
 
     iget-object v1, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mAppsAdapter:Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 352
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mAllApps:Landroid/widget/GridView;
 
     invoke-virtual {v0, p0}, Landroid/widget/GridView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 354
     const v0, 0x7f0b0009
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->findViewById(I)Landroid/view/View;
@@ -114,12 +105,10 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnHoverListener(Landroid/view/View$OnHoverListener;)V
 
-    .line 356
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->setSkipVisible(Z)V
 
-    .line 357
     return-void
 .end method
 
@@ -128,7 +117,6 @@
     .parameter "x0"
 
     .prologue
-    .line 286
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mHandler:Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;
 
     return-object v0
@@ -139,7 +127,6 @@
     .parameter "x0"
 
     .prologue
-    .line 286
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mTargetName:Ljava/lang/CharSequence;
 
     return-object v0
@@ -201,22 +188,18 @@
 
     if-ne v0, v5, :cond_3
 
-    .line 365
     iget v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mTouched:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mTouched:I
 
-    .line 367
     iget v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mTouched:I
 
     if-lt v0, v1, :cond_2
 
-    .line 368
     invoke-virtual {p0, v1, v2}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->setFlag(IZ)V
 
-    .line 369
     const v0, 0x7f08069f
 
     new-array v1, v2, [Ljava/lang/Object;
@@ -227,20 +210,17 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->addInstruction(I[Ljava/lang/Object;)V
 
-    .line 375
     :cond_1
     :goto_1
     invoke-virtual {p1, v3}, Landroid/view/View;->setEnabled(Z)V
 
     goto :goto_0
 
-    .line 371
     :cond_2
     iget v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mTouched:I
 
     if-ne v0, v2, :cond_1
 
-    .line 372
     const v0, 0x7f08069e
 
     new-array v1, v3, [Ljava/lang/Object;
@@ -271,7 +251,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 378
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->hasFlag(I)Z
 
     move-result v0
@@ -284,17 +263,14 @@
 
     if-ne v0, v5, :cond_4
 
-    .line 380
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mHandler:Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;->enteredTarget()V
 
-    .line 381
     invoke-virtual {p0, v4, v2}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->setFlag(IZ)V
 
     goto :goto_0
 
-    .line 382
     :cond_4
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -304,14 +280,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 383
     iget-object v0, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mHandler:Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;
 
     invoke-virtual {v0}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1$HoverTargetHandler;->exitedTarget()V
 
     goto :goto_0
 
-    .line 361
     nop
 
     :pswitch_data_0
@@ -361,10 +335,8 @@
 
     if-ne p3, v1, :cond_0
 
-    .line 396
     invoke-virtual {p0, v2, v4}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->setFlag(IZ)V
 
-    .line 397
     invoke-virtual {p0}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -387,10 +359,8 @@
 
     invoke-virtual {p0, v1, v2}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->addInstruction(I[Ljava/lang/Object;)V
 
-    .line 400
     invoke-virtual {p0, v4}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->setNextVisible(Z)V
 
-    .line 402
     .end local v0           #nextText:Ljava/lang/CharSequence;
     :cond_0
     return-void
@@ -404,14 +374,12 @@
 
     const/4 v4, 0x0
 
-    .line 406
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mAllApps:Landroid/widget/GridView;
 
     invoke-virtual {v2}, Landroid/widget/GridView;->getFirstVisiblePosition()I
 
     move-result v0
 
-    .line 407
     .local v0, first:I
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mAllApps:Landroid/widget/GridView;
 
@@ -419,11 +387,9 @@
 
     move-result v1
 
-    .line 409
     .local v1, last:I
     iput v4, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mTargetPosition:I
 
-    .line 410
     iget-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mAppsAdapter:Lcom/android/settings_ex/AccessibilityTutorialActivity$AppsAdapter;
 
     iget v3, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mTargetPosition:I
@@ -434,16 +400,13 @@
 
     iput-object v2, p0, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->mTargetName:Ljava/lang/CharSequence;
 
-    .line 412
     const v2, 0x7f08069d
 
     new-array v3, v4, [Ljava/lang/Object;
 
     invoke-virtual {p0, v2, v3}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->addInstruction(I[Ljava/lang/Object;)V
 
-    .line 413
     invoke-virtual {p0, v5, v5}, Lcom/android/settings_ex/AccessibilityTutorialActivity$TouchTutorialModule1;->setFlag(IZ)V
 
-    .line 414
     return-void
 .end method

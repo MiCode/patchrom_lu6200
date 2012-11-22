@@ -27,7 +27,6 @@
     .parameter
 
     .prologue
-    .line 119
     iput-object p1, p0, Lcom/android/settings_ex/MasterClearConfirm$1$1;->this$1:Lcom/android/settings_ex/MasterClearConfirm$1;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
