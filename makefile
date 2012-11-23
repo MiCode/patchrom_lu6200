@@ -49,6 +49,9 @@ local-zip-misc:
 	cp other/system_etc/* $(ZIP_DIR)/system/etc/
 	cp other/system_xbin/* $(ZIP_DIR)/system/xbin/
 
+	@echo use old morningcall
+	cp other/morningcall $(ZIP_DIR)/system/bin/morningcall
+
 	@echo customize lge-res
 	./customize_lge-res.sh
 
