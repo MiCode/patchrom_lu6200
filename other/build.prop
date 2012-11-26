@@ -229,3 +229,16 @@ ro.config.sms_received_sound=FadeIn.ogg
 ro.config.sms_delivered_sound=MessageComplete.ogg
 ro.hwui.texture_cache_size=48
 telephony.lteOnCdmaDevice=0
+
+persist.sys.haptic.long.weak=0,0,1,10,20,0,21
+persist.sys.haptic.long.normal=0,0,1,30,20,0,21
+persist.sys.haptic.long.strong=0,0,1,80,30,0,21
+persist.sys.haptic.down.weak=0,10,5,-5,5
+persist.sys.haptic.down.normal=0,30,5,-5,5
+persist.sys.haptic.down.strong=0,80,10,-5,5
+persist.sys.haptic.up.weak=0,10,5,-5,5
+persist.sys.haptic.up.normal=0,30,5,-5,5
+persist.sys.haptic.up.strong=0,80,10,-5,5
+persist.sys.haptic.tap.weak=0,10,5,-5,5
+persist.sys.haptic.tap.normal=0,30,10,-5,5
+persist.sys.haptic.tap.strong=0,80,5,-5,5
