@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="icon" id="0x7f020000" />
+    <public type="layout" name="compatibility_mode_list" id="0x7f030000" />
+    <public type="layout" name="compatibility_mode_list_item" id="0x7f030001" />
+    <public type="string" name="sp_screen_optimization_NORMAL" id="0x7f040000" />
+    <public type="string" name="sp_no_items_NORMAL" id="0x7f040001" />
+    <public type="style" name="Theme_Settings" id="0x7f050000" />
+    <public type="id" name="LinearLayout01" id="0x7f060000" />
+    <public type="id" name="app_icon" id="0x7f060001" />
+    <public type="id" name="Name" id="0x7f060002" />
+    <public type="id" name="LinearLayout02" id="0x7f060003" />
+    <public type="id" name="CheckBox01" id="0x7f060004" />
+</resources>

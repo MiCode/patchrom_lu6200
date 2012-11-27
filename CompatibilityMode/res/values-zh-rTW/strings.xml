@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sp_screen_optimization_NORMAL">寬高比糾正</string>
+    <string name="sp_no_items_NORMAL">沒有任何項目。</string>
+</resources>

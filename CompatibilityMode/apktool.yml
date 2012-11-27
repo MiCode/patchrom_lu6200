@@ -1,0 +1,7 @@
+version: 1.4.4.f5dfd72
+apkFileName: CompatibilityMode.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 2

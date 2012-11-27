@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stock_settings">附加设置</string>
+    <string name="autofit_screen_title">宽高比纠正</string>
+    <string name="autofit_screen_summary">更改所下载应用程序的分辨率以适合屏幕尺寸要求</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sp_screen_optimization_NORMAL">屏幕优化</string>
+    <string name="sp_no_items_NORMAL">无项目。</string>
+</resources>

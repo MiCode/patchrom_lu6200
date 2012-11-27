@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.stocksettings" 
+	android:sharedUserId="android.uid.system" >
+    
+    <application android:label="Stock Settings"
+        android:theme="@miui:style/Theme.Light" >
+        <activity android:name="StockSettings" android:exported="false" android:process="com.android.settings"
+            android:theme="@miui:style/Theme.Light" 
+            android:label="@string/stock_settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
+                <action android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.DeviceSpecial" />
+        </activity>
+    </application>    
+</manifest>

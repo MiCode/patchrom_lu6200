@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="stock_settings">Stock Settings</string>
+	<string name="autofit_screen_title">Aspect ratio correction</string>
+	<string name="autofit_screen_summary">Change the resolution size of downloaded applications to fit the screen size</string>
+</resources>
