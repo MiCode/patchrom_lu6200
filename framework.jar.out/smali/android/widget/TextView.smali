@@ -13582,28 +13582,26 @@
     .parameter "styleIndex"
 
     .prologue
-    .line 1158
     const/4 v0, 0x0
 
-    .line 1159
     .local v0, tf:Landroid/graphics/Typeface;
     packed-switch p1, :pswitch_data_0
 
-    .line 1179
     :goto_0
+    invoke-static {v0, p1, p2}, Landroid/graphics/MiuiTypeface;->getChangedTypeface(Landroid/graphics/Typeface;II)Landroid/graphics/Typeface;
+
+    move-result-object v0
+
     invoke-virtual {p0, v0, p2}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
 
-    .line 1180
     return-void
 
-    .line 1162
     :pswitch_0
     sget-boolean v1, Lcom/lge/config/ConfigBuildFlags;->CAPP_FONTS:Z
 
     if-eqz v1, :cond_0
 
-    .line 1163
-    const-string/jumbo v1, "sans-serif"
+    const-string v1, "sans-serif"
 
     const/4 v2, 0x0
 
@@ -34234,12 +34232,14 @@
 
     invoke-virtual {v4, v2}, Landroid/text/TextPaint;->setFakeBoldText(Z)V
 
-    .line 1270
     iget-object v2, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
     invoke-virtual {v2, v3}, Landroid/text/TextPaint;->setTextSkewX(F)V
 
-    .line 1271
+    invoke-static {p1}, Landroid/graphics/MiuiTypeface;->getDefaultTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
+
+    move-result-object p1
+
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
     goto :goto_3
