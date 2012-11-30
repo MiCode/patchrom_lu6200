@@ -20,7 +20,7 @@
 
 .field static final HOME_APP_ADJ:I = 0x6
 
-.field static final MAX_HIDDEN_APPS:I = 0xf
+.field static final MAX_HIDDEN_APPS:I = 0x19
 
 .field static final MIN_CRASH_INTERVAL:I = 0xea60
 
