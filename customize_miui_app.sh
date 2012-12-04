@@ -34,8 +34,8 @@ if [ $1 = "Phone" ];then
         exit 1
     done
 
-	#echo "Merge Phone's xml"
-	#$XMLMERGYTOOL $1/res/values $2/res/values
+	echo "Merge Phone's xml"
+	$XMLMERGYTOOL $1/res/values $2/res/values
 
 	echo "replace functions"
 	$PORT_ROOT/lu6200/replace_functions_IccCard.sh $2
