@@ -62,7 +62,7 @@
     return-void
 .end method
 
-.method static synthetic access$8600(Landroid/widget/TextView$ChangeWatcher;)V
+.method static synthetic access$8000(Landroid/widget/TextView$ChangeWatcher;)V
     .locals 0
     .parameter "x0"
 
@@ -81,7 +81,7 @@
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->mEasyEditSpanController:Landroid/widget/TextView$EasyEditSpanController;
 
     #calls: Landroid/widget/TextView$EasyEditSpanController;->hide()V
-    invoke-static {v0}, Landroid/widget/TextView$EasyEditSpanController;->access$1300(Landroid/widget/TextView$EasyEditSpanController;)V
+    invoke-static {v0}, Landroid/widget/TextView$EasyEditSpanController;->access$1000(Landroid/widget/TextView$EasyEditSpanController;)V
 
     .line 8365
     return-void
@@ -129,8 +129,8 @@
     .line 8311
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
-    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v0}, Landroid/widget/TextView;->access$1700(Landroid/widget/TextView;)Landroid/content/Context;
+    #getter for: Landroid/widget/TextView;->mContext:Landroid/content/Context;
+    invoke-static {v0}, Landroid/widget/TextView;->access$1400(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -147,12 +147,12 @@
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mInputType:I
-    invoke-static {v0}, Landroid/widget/TextView;->access$1800(Landroid/widget/TextView;)I
+    invoke-static {v0}, Landroid/widget/TextView;->access$1500(Landroid/widget/TextView;)I
 
     move-result v0
 
     #calls: Landroid/widget/TextView;->isPasswordInputType(I)Z
-    invoke-static {v0}, Landroid/widget/TextView;->access$1900(I)Z
+    invoke-static {v0}, Landroid/widget/TextView;->access$1600(I)Z
 
     move-result v0
 
@@ -161,7 +161,7 @@
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     #calls: Landroid/widget/TextView;->hasPasswordTransformationMethod()Z
-    invoke-static {v0}, Landroid/widget/TextView;->access$2000(Landroid/widget/TextView;)Z
+    invoke-static {v0}, Landroid/widget/TextView;->access$1700(Landroid/widget/TextView;)Z
 
     move-result v0
 
@@ -179,7 +179,7 @@
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     #calls: Landroid/widget/TextView;->sendBeforeTextChanged(Ljava/lang/CharSequence;III)V
-    invoke-static {v0, p1, p2, p3, p4}, Landroid/widget/TextView;->access$2100(Landroid/widget/TextView;Ljava/lang/CharSequence;III)V
+    invoke-static {v0, p1, p2, p3, p4}, Landroid/widget/TextView;->access$1800(Landroid/widget/TextView;Ljava/lang/CharSequence;III)V
 
     .line 8318
     return-void
@@ -295,8 +295,8 @@
     .line 8328
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
-    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v0}, Landroid/widget/TextView;->access$2200(Landroid/widget/TextView;)Landroid/content/Context;
+    #getter for: Landroid/widget/TextView;->mContext:Landroid/content/Context;
+    invoke-static {v0}, Landroid/widget/TextView;->access$1900(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v0
 

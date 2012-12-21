@@ -89,15 +89,13 @@
     .parameter "actionPopupWindow"
 
     .prologue
-    .line 11843
-    iput-object p1, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
+    iput-object p1, p0, Landroid/widget/TextView$SelectionEndHandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
 
-    .line 11844
     return-void
 .end method
 
 .method public updatePosition(FF)V
-    .locals 3
+    .locals 4
     .parameter "x"
     .parameter "y"
 
@@ -121,10 +119,20 @@
     .local v1, selectionStart:I
     if-gt v0, v1, :cond_0
 
-    .line 11837
-    iget-object v2, p0, Landroid/widget/TextView$SelectionEndHandleView;->this$0:Landroid/widget/TextView;
+    add-int/lit8 v2, v1, 0x1
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->getSelectionEnd()I
+    iget-object v3, p0, Landroid/widget/TextView$SelectionEndHandleView;->this$0:Landroid/widget/TextView;
+
+    #getter for: Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
+    invoke-static {v3}, Landroid/widget/TextView;->access$500(Landroid/widget/TextView;)Ljava/lang/CharSequence;
+
+    move-result-object v3
+
+    invoke-interface {v3}, Ljava/lang/CharSequence;->length()I
+
+    move-result v3
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->min(II)I
 
     move-result v0
 
@@ -147,7 +155,7 @@
     iget-object v0, p0, Landroid/widget/TextView$SelectionEndHandleView;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
-    invoke-static {v0}, Landroid/widget/TextView;->access$800(Landroid/widget/TextView;)Ljava/lang/CharSequence;
+    invoke-static {v0}, Landroid/widget/TextView;->access$500(Landroid/widget/TextView;)Ljava/lang/CharSequence;
 
     move-result-object v0
 

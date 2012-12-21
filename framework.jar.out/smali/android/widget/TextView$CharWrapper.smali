@@ -51,7 +51,7 @@
     return-void
 .end method
 
-.method static synthetic access$302(Landroid/widget/TextView$CharWrapper;[C)[C
+.method static synthetic access$102(Landroid/widget/TextView$CharWrapper;[C)[C
     .locals 0
     .parameter "x0"
     .parameter "x1"

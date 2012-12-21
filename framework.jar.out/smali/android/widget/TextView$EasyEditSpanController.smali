@@ -54,7 +54,7 @@
     return-void
 .end method
 
-.method static synthetic access$1300(Landroid/widget/TextView$EasyEditSpanController;)V
+.method static synthetic access$1000(Landroid/widget/TextView$EasyEditSpanController;)V
     .locals 0
     .parameter "x0"
 
@@ -191,7 +191,7 @@
     iget-object v0, p0, Landroid/widget/TextView$EasyEditSpanController;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
-    invoke-static {v0}, Landroid/widget/TextView;->access$800(Landroid/widget/TextView;)Ljava/lang/CharSequence;
+    invoke-static {v0}, Landroid/widget/TextView;->access$500(Landroid/widget/TextView;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -278,7 +278,7 @@
     iget-object v1, p0, Landroid/widget/TextView$EasyEditSpanController;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
-    invoke-static {v1}, Landroid/widget/TextView;->access$800(Landroid/widget/TextView;)Ljava/lang/CharSequence;
+    invoke-static {v1}, Landroid/widget/TextView;->access$500(Landroid/widget/TextView;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -339,7 +339,7 @@
     iget-object v1, p0, Landroid/widget/TextView$EasyEditSpanController;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
-    invoke-static {v1}, Landroid/widget/TextView;->access$800(Landroid/widget/TextView;)Ljava/lang/CharSequence;
+    invoke-static {v1}, Landroid/widget/TextView;->access$500(Landroid/widget/TextView;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -351,7 +351,7 @@
     iget-object v1, p0, Landroid/widget/TextView$EasyEditSpanController;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
-    invoke-static {v1}, Landroid/widget/TextView;->access$800(Landroid/widget/TextView;)Ljava/lang/CharSequence;
+    invoke-static {v1}, Landroid/widget/TextView;->access$500(Landroid/widget/TextView;)Ljava/lang/CharSequence;
 
     move-result-object v1
 

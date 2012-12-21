@@ -45,7 +45,7 @@
     iget-object v0, p0, Landroid/widget/TextView$EasyEditSpanController$1;->this$1:Landroid/widget/TextView$EasyEditSpanController;
 
     #calls: Landroid/widget/TextView$EasyEditSpanController;->hide()V
-    invoke-static {v0}, Landroid/widget/TextView$EasyEditSpanController;->access$1300(Landroid/widget/TextView$EasyEditSpanController;)V
+    invoke-static {v0}, Landroid/widget/TextView$EasyEditSpanController;->access$1000(Landroid/widget/TextView$EasyEditSpanController;)V
 
     .line 8167
     return-void

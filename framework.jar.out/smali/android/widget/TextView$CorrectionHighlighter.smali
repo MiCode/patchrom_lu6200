@@ -85,7 +85,7 @@
     return-void
 .end method
 
-.method static synthetic access$600(Landroid/widget/TextView$CorrectionHighlighter;Z)V
+.method static synthetic access$300(Landroid/widget/TextView$CorrectionHighlighter;Z)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -115,7 +115,7 @@
 
     .line 6217
     :cond_0
-    invoke-static {}, Landroid/widget/TextView;->access$900()Landroid/graphics/RectF;
+    invoke-static {}, Landroid/widget/TextView;->access$600()Landroid/graphics/RectF;
 
     move-result-object v9
 
@@ -125,7 +125,7 @@
     :try_start_0
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mPath:Landroid/graphics/Path;
 
-    invoke-static {}, Landroid/widget/TextView;->access$900()Landroid/graphics/RectF;
+    invoke-static {}, Landroid/widget/TextView;->access$600()Landroid/graphics/RectF;
 
     move-result-object v1
 
@@ -153,7 +153,7 @@
     const/4 v2, 0x1
 
     #calls: Landroid/widget/TextView;->getVerticalOffset(Z)I
-    invoke-static {v1, v2}, Landroid/widget/TextView;->access$1000(Landroid/widget/TextView;Z)I
+    invoke-static {v1, v2}, Landroid/widget/TextView;->access$700(Landroid/widget/TextView;Z)I
 
     move-result v1
 
@@ -168,7 +168,7 @@
 
     const-wide/16 v1, 0x10
 
-    invoke-static {}, Landroid/widget/TextView;->access$900()Landroid/graphics/RectF;
+    invoke-static {}, Landroid/widget/TextView;->access$600()Landroid/graphics/RectF;
 
     move-result-object v3
 
@@ -178,7 +178,7 @@
 
     add-int/2addr v3, v7
 
-    invoke-static {}, Landroid/widget/TextView;->access$900()Landroid/graphics/RectF;
+    invoke-static {}, Landroid/widget/TextView;->access$600()Landroid/graphics/RectF;
 
     move-result-object v4
 
@@ -188,7 +188,7 @@
 
     add-int/2addr v4, v8
 
-    invoke-static {}, Landroid/widget/TextView;->access$900()Landroid/graphics/RectF;
+    invoke-static {}, Landroid/widget/TextView;->access$600()Landroid/graphics/RectF;
 
     move-result-object v5
 
@@ -198,7 +198,7 @@
 
     add-int/2addr v5, v7
 
-    invoke-static {}, Landroid/widget/TextView;->access$900()Landroid/graphics/RectF;
+    invoke-static {}, Landroid/widget/TextView;->access$600()Landroid/graphics/RectF;
 
     move-result-object v6
 
@@ -234,7 +234,7 @@
     :try_start_1
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
-    invoke-static {}, Landroid/widget/TextView;->access$900()Landroid/graphics/RectF;
+    invoke-static {}, Landroid/widget/TextView;->access$600()Landroid/graphics/RectF;
 
     move-result-object v1
 
@@ -242,7 +242,7 @@
 
     float-to-int v1, v1
 
-    invoke-static {}, Landroid/widget/TextView;->access$900()Landroid/graphics/RectF;
+    invoke-static {}, Landroid/widget/TextView;->access$600()Landroid/graphics/RectF;
 
     move-result-object v2
 
@@ -250,7 +250,7 @@
 
     float-to-int v2, v2
 
-    invoke-static {}, Landroid/widget/TextView;->access$900()Landroid/graphics/RectF;
+    invoke-static {}, Landroid/widget/TextView;->access$600()Landroid/graphics/RectF;
 
     move-result-object v3
 
@@ -258,7 +258,7 @@
 
     float-to-int v3, v3
 
-    invoke-static {}, Landroid/widget/TextView;->access$900()Landroid/graphics/RectF;
+    invoke-static {}, Landroid/widget/TextView;->access$600()Landroid/graphics/RectF;
 
     move-result-object v4
 
@@ -283,7 +283,7 @@
     const/4 v1, 0x0
 
     #setter for: Landroid/widget/TextView;->mCorrectionHighlighter:Landroid/widget/TextView$CorrectionHighlighter;
-    invoke-static {v0, v1}, Landroid/widget/TextView;->access$1102(Landroid/widget/TextView;Landroid/widget/TextView$CorrectionHighlighter;)Landroid/widget/TextView$CorrectionHighlighter;
+    invoke-static {v0, v1}, Landroid/widget/TextView;->access$802(Landroid/widget/TextView;Landroid/widget/TextView$CorrectionHighlighter;)Landroid/widget/TextView$CorrectionHighlighter;
 
     .line 6236
     return-void
@@ -333,7 +333,7 @@
     iget-object v5, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mHighlightColor:I
-    invoke-static {v5}, Landroid/widget/TextView;->access$700(Landroid/widget/TextView;)I
+    invoke-static {v5}, Landroid/widget/TextView;->access$400(Landroid/widget/TextView;)I
 
     move-result v5
 
@@ -341,12 +341,11 @@
 
     move-result v4
 
-    .line 6194
     .local v4, highlightColorAlpha:I
     iget-object v5, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mHighlightColor:I
-    invoke-static {v5}, Landroid/widget/TextView;->access$700(Landroid/widget/TextView;)I
+    invoke-static {v5}, Landroid/widget/TextView;->access$400(Landroid/widget/TextView;)I
 
     move-result v5
 
@@ -400,7 +399,7 @@
     iget-object v4, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
-    invoke-static {v4}, Landroid/widget/TextView;->access$800(Landroid/widget/TextView;)Ljava/lang/CharSequence;
+    invoke-static {v4}, Landroid/widget/TextView;->access$500(Landroid/widget/TextView;)Ljava/lang/CharSequence;
 
     move-result-object v4
 

@@ -188,7 +188,7 @@
     iget-object v6, p0, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionSpanComparator;->this$1:Landroid/widget/TextView$SuggestionsPopupWindow;
 
     #getter for: Landroid/widget/TextView$SuggestionsPopupWindow;->mSpansLengths:Ljava/util/HashMap;
-    invoke-static {v6}, Landroid/widget/TextView$SuggestionsPopupWindow;->access$4400(Landroid/widget/TextView$SuggestionsPopupWindow;)Ljava/util/HashMap;
+    invoke-static {v6}, Landroid/widget/TextView$SuggestionsPopupWindow;->access$4100(Landroid/widget/TextView$SuggestionsPopupWindow;)Ljava/util/HashMap;
 
     move-result-object v6
 
@@ -205,7 +205,7 @@
     iget-object v6, p0, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionSpanComparator;->this$1:Landroid/widget/TextView$SuggestionsPopupWindow;
 
     #getter for: Landroid/widget/TextView$SuggestionsPopupWindow;->mSpansLengths:Ljava/util/HashMap;
-    invoke-static {v6}, Landroid/widget/TextView$SuggestionsPopupWindow;->access$4400(Landroid/widget/TextView$SuggestionsPopupWindow;)Ljava/util/HashMap;
+    invoke-static {v6}, Landroid/widget/TextView$SuggestionsPopupWindow;->access$4100(Landroid/widget/TextView$SuggestionsPopupWindow;)Ljava/util/HashMap;
 
     move-result-object v6
 

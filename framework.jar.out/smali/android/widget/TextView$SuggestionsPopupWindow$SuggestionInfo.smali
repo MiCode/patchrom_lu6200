@@ -55,8 +55,8 @@
 
     iget-object v1, v1, Landroid/widget/TextView$SuggestionsPopupWindow;->this$0:Landroid/widget/TextView;
 
-    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Landroid/widget/TextView;->access$3900(Landroid/widget/TextView;)Landroid/content/Context;
+    #getter for: Landroid/widget/TextView;->mContext:Landroid/content/Context;
+    invoke-static {v1}, Landroid/widget/TextView;->access$3600(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v1
 

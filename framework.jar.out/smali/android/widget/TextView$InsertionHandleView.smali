@@ -241,7 +241,7 @@
     iget-object v4, p0, Landroid/widget/TextView$InsertionHandleView;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mSquaredTouchSlopDistance:I
-    invoke-static {v4}, Landroid/widget/TextView;->access$7000(Landroid/widget/TextView;)I
+    invoke-static {v4}, Landroid/widget/TextView;->access$6600(Landroid/widget/TextView;)I
 
     move-result v4
 
@@ -251,12 +251,11 @@
 
     if-gez v4, :cond_0
 
-    .line 11707
-    iget-object v4, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
+    iget-object v4, p0, Landroid/widget/TextView$InsertionHandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
 
     if-eqz v4, :cond_1
 
-    iget-object v4, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
+    iget-object v4, p0, Landroid/widget/TextView$InsertionHandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
 
     invoke-virtual {v4}, Landroid/widget/TextView$ActionPopupWindow;->isShowing()Z
 
@@ -264,8 +263,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 11709
-    iget-object v4, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
+    iget-object v4, p0, Landroid/widget/TextView$InsertionHandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
 
     invoke-virtual {v4}, Landroid/widget/TextView$ActionPopupWindow;->hide()V
 
@@ -284,21 +282,10 @@
     .restart local v1       #deltaY:F
     .restart local v2       #distanceSquared:F
     :cond_1
-    iget-object v4, p0, Landroid/widget/TextView$InsertionHandleView;->this$0:Landroid/widget/TextView;
-
-    #calls: Landroid/widget/TextView;->canPaste()Z
-    invoke-static {v4}, Landroid/widget/TextView;->access$5800(Landroid/widget/TextView;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    .line 11711
     invoke-virtual {p0}, Landroid/widget/TextView$InsertionHandleView;->showWithActionPopup()V
 
     goto :goto_1
 
-    .line 11719
     .end local v0           #deltaX:F
     .end local v1           #deltaY:F
     .end local v2           #distanceSquared:F
@@ -307,7 +294,6 @@
 
     goto :goto_0
 
-    .line 11695
     nop
 
     :pswitch_data_0
@@ -331,7 +317,7 @@
 
     move-result-wide v2
 
-    invoke-static {}, Landroid/widget/TextView;->access$6900()J
+    invoke-static {}, Landroid/widget/TextView;->access$6500()J
 
     move-result-wide v4
 
@@ -404,7 +390,7 @@
     iget-object v0, p0, Landroid/widget/TextView$InsertionHandleView;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
-    invoke-static {v0}, Landroid/widget/TextView;->access$800(Landroid/widget/TextView;)Ljava/lang/CharSequence;
+    invoke-static {v0}, Landroid/widget/TextView;->access$500(Landroid/widget/TextView;)Ljava/lang/CharSequence;
 
     move-result-object v0
 

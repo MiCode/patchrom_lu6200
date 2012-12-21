@@ -36,8 +36,8 @@
 
     iget-object v0, v0, Landroid/widget/TextView$SuggestionsPopupWindow;->this$0:Landroid/widget/TextView;
 
-    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v0}, Landroid/widget/TextView;->access$4000(Landroid/widget/TextView;)Landroid/content/Context;
+    #getter for: Landroid/widget/TextView;->mContext:Landroid/content/Context;
+    invoke-static {v0}, Landroid/widget/TextView;->access$3700(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -76,7 +76,7 @@
     iget-object v0, p0, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionAdapter;->this$1:Landroid/widget/TextView$SuggestionsPopupWindow;
 
     #getter for: Landroid/widget/TextView$SuggestionsPopupWindow;->mNumberOfSuggestions:I
-    invoke-static {v0}, Landroid/widget/TextView$SuggestionsPopupWindow;->access$4100(Landroid/widget/TextView$SuggestionsPopupWindow;)I
+    invoke-static {v0}, Landroid/widget/TextView$SuggestionsPopupWindow;->access$3800(Landroid/widget/TextView$SuggestionsPopupWindow;)I
 
     move-result v0
 
@@ -92,7 +92,7 @@
     iget-object v0, p0, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionAdapter;->this$1:Landroid/widget/TextView$SuggestionsPopupWindow;
 
     #getter for: Landroid/widget/TextView$SuggestionsPopupWindow;->mSuggestionInfos:[Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;
-    invoke-static {v0}, Landroid/widget/TextView$SuggestionsPopupWindow;->access$4200(Landroid/widget/TextView$SuggestionsPopupWindow;)[Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;
+    invoke-static {v0}, Landroid/widget/TextView$SuggestionsPopupWindow;->access$3900(Landroid/widget/TextView$SuggestionsPopupWindow;)[Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;
 
     move-result-object v0
 
@@ -140,7 +140,7 @@
     iget-object v3, v3, Landroid/widget/TextView$SuggestionsPopupWindow;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mTextEditSuggestionItemLayout:I
-    invoke-static {v3}, Landroid/widget/TextView;->access$4300(Landroid/widget/TextView;)I
+    invoke-static {v3}, Landroid/widget/TextView;->access$4000(Landroid/widget/TextView;)I
 
     move-result v3
 
@@ -157,7 +157,7 @@
     iget-object v2, p0, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionAdapter;->this$1:Landroid/widget/TextView$SuggestionsPopupWindow;
 
     #getter for: Landroid/widget/TextView$SuggestionsPopupWindow;->mSuggestionInfos:[Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;
-    invoke-static {v2}, Landroid/widget/TextView$SuggestionsPopupWindow;->access$4200(Landroid/widget/TextView$SuggestionsPopupWindow;)[Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;
+    invoke-static {v2}, Landroid/widget/TextView$SuggestionsPopupWindow;->access$3900(Landroid/widget/TextView$SuggestionsPopupWindow;)[Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;
 
     move-result-object v2
 

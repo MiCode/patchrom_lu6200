@@ -42,8 +42,7 @@
     .locals 1
 
     .prologue
-    .line 11798
-    iget-object v0, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
+    iget-object v0, p0, Landroid/widget/TextView$SelectionStartHandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
 
     return-object v0
 .end method
@@ -95,12 +94,13 @@
 .end method
 
 .method public updatePosition(FF)V
-    .locals 3
+    .locals 4
     .parameter "x"
     .parameter "y"
 
     .prologue
-    .line 11785
+    const/4 v3, 0x0
+
     iget-object v2, p0, Landroid/widget/TextView$SelectionStartHandleView;->this$0:Landroid/widget/TextView;
 
     invoke-virtual {v2, p1, p2}, Landroid/widget/TextView;->getOffsetForPosition(FF)I
@@ -119,18 +119,15 @@
     .local v1, selectionEnd:I
     if-lt v0, v1, :cond_0
 
-    .line 11792
-    iget-object v2, p0, Landroid/widget/TextView$SelectionStartHandleView;->this$0:Landroid/widget/TextView;
+    add-int/lit8 v2, v1, -0x1
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->getSelectionStart()I
+    invoke-static {v3, v2}, Ljava/lang/Math;->max(II)I
 
     move-result v0
 
     .line 11794
     :cond_0
-    const/4 v2, 0x0
-
-    invoke-virtual {p0, v0, v2}, Landroid/widget/TextView$SelectionStartHandleView;->positionAtCursorOffset(IZ)V
+    invoke-virtual {p0, v0, v3}, Landroid/widget/TextView$SelectionStartHandleView;->positionAtCursorOffset(IZ)V
 
     .line 11795
     return-void
@@ -145,7 +142,7 @@
     iget-object v0, p0, Landroid/widget/TextView$SelectionStartHandleView;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
-    invoke-static {v0}, Landroid/widget/TextView;->access$800(Landroid/widget/TextView;)Ljava/lang/CharSequence;
+    invoke-static {v0}, Landroid/widget/TextView;->access$500(Landroid/widget/TextView;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
