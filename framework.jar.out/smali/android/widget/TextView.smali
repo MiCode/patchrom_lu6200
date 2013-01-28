@@ -7464,7 +7464,7 @@
     return v0
 .end method
 
-.method private hideControllers()V
+.method protected hideControllers()V
     .locals 0
 
     .prologue
@@ -19455,7 +19455,7 @@
     invoke-virtual {v1}, Landroid/widget/TextView$SelectionModifierCursorController;->onDetached()V
 
     :cond_4
-    invoke-direct {p0}, Landroid/widget/TextView;->hideControllers()V
+    invoke-virtual {p0}, Landroid/widget/TextView;->hideControllers()V
 
     invoke-virtual {p0}, Landroid/widget/TextView;->resetResolvedDrawables()V
 
@@ -21469,7 +21469,7 @@
     move-result v8
 
     .restart local v8       #selEnd:I
-    invoke-direct {p0}, Landroid/widget/TextView;->hideControllers()V
+    invoke-virtual {p0}, Landroid/widget/TextView;->hideControllers()V
 
     iget-object v0, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
@@ -21491,7 +21491,7 @@
     goto :goto_3
 
     :cond_f
-    invoke-direct {p0}, Landroid/widget/TextView;->hideControllers()V
+    invoke-virtual {p0}, Landroid/widget/TextView;->hideControllers()V
 
     invoke-direct {p0}, Landroid/widget/TextView;->downgradeEasyCorrectionSpans()V
 
@@ -23733,7 +23733,7 @@
     iput-boolean v0, p0, Landroid/widget/TextView;->mTemporaryDetach:Z
 
     :cond_0
-    invoke-direct {p0}, Landroid/widget/TextView;->hideControllers()V
+    invoke-virtual {p0}, Landroid/widget/TextView;->hideControllers()V
 
     return-void
 .end method
@@ -24097,7 +24097,7 @@
 
     .local v4, selectAllGotFocus:Z
     :goto_3
-    invoke-direct {p0}, Landroid/widget/TextView;->hideControllers()V
+    invoke-virtual {p0}, Landroid/widget/TextView;->hideControllers()V
 
     if-nez v4, :cond_a
 
@@ -24236,7 +24236,7 @@
 
     if-eqz p2, :cond_0
 
-    invoke-direct {p0}, Landroid/widget/TextView;->hideControllers()V
+    invoke-virtual {p0}, Landroid/widget/TextView;->hideControllers()V
 
     :cond_0
     return-void
@@ -24290,7 +24290,7 @@
     iput-boolean v1, v0, Landroid/widget/TextView$InputContentType;->enterDown:Z
 
     :cond_3
-    invoke-direct {p0}, Landroid/widget/TextView;->hideControllers()V
+    invoke-virtual {p0}, Landroid/widget/TextView;->hideControllers()V
 
     iget-object v0, p0, Landroid/widget/TextView;->mSuggestionsPopupWindow:Landroid/widget/TextView$SuggestionsPopupWindow;
 
@@ -26607,7 +26607,7 @@
     iput-object p1, v0, Landroid/widget/TextView$InputMethodState;->mExtracting:Landroid/view/inputmethod/ExtractedTextRequest;
 
     :cond_0
-    invoke-direct {p0}, Landroid/widget/TextView;->hideControllers()V
+    invoke-virtual {p0}, Landroid/widget/TextView;->hideControllers()V
 
     return-void
 .end method
@@ -28757,7 +28757,7 @@
     iput-object v0, p0, Landroid/widget/TextView;->mSuggestionsPopupWindow:Landroid/widget/TextView$SuggestionsPopupWindow;
 
     :cond_0
-    invoke-direct {p0}, Landroid/widget/TextView;->hideControllers()V
+    invoke-virtual {p0}, Landroid/widget/TextView;->hideControllers()V
 
     iget-object v0, p0, Landroid/widget/TextView;->mSuggestionsPopupWindow:Landroid/widget/TextView$SuggestionsPopupWindow;
 
