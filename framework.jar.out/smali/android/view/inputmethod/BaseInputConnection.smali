@@ -1863,7 +1863,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    iput-boolean v3, v2, Landroid/widget/TextView;->mIsHandleShowing:Z
+    #iput-boolean v3, v2, Landroid/widget/TextView;->mIsHandleShowing:Z
 
     goto :goto_1
 .end method
